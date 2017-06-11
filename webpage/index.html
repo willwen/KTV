@@ -5,15 +5,18 @@
 		</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src = "init.js"></script>
-		
-
 	</head>
 	<body>
 		<form onsubmit = "updateLyrics(); return false;">
-			  <input type="checkbox" id="eng" checked>English<br>
+  			  <input type="checkbox" id="pinyin" checked> PinYin<br>
 			  <input type="checkbox" id="cn" checked> Chinese Char<br>
-			  <input type="checkbox" id="pinyin" checked> PinYin<br>
+			  <input type="checkbox" id="eng" checked> English<br><br>
 			  <input type="submit" value="Submit" >
 		</form>
+		<audio controls>
+		 <source src="1 平凡之路-朴树.mp3"
+		         type='audio/mp3'>
+		 <p>Your user agent does not support the HTML5 Audio element OR the file cannot be found.</p>
+		</audio>
 	</body>
 </html>

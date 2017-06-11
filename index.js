@@ -8,6 +8,7 @@ var app = express();
 
 
 app.use(express.static('webpage'))
+app.use(express.static('songs'))
 
 
 app.listen(process.env.PORT || 8080, function() {
