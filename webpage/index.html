@@ -4,19 +4,28 @@
 			Lyrics Database
 		</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel = "stylesheet" type = "text/css" href="style.css"/>
 		<script src = "init.js"></script>
+
 	</head>
 	<body>
+		<div>
 		<form onsubmit = "updateLyrics(); return false;">
   			  <input type="checkbox" id="pinyin" checked> PinYin<br>
 			  <input type="checkbox" id="cn" checked> Chinese Char<br>
 			  <input type="checkbox" id="eng" checked> English<br><br>
 			  <input type="submit" value="Submit" >
 		</form>
-		<audio controls>
-		 <source src="1 平凡之路-朴树.mp3"
-		         type='audio/mp3'>
-		 <p>Your user agent does not support the HTML5 Audio element OR the file cannot be found.</p>
-		</audio>
+		</div>
+		<footer class = "footer">
+			<div id = "audioContainer">
+			<audio controls>
+			 <source src="1 平凡之路-朴树.mp3"
+			         type='audio/mp3'>
+			</audio>
+			</div>
+		</footer>
 	</body>
 </html>
