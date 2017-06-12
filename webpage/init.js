@@ -1,19 +1,19 @@
 $(document).ready(function(){
 	addTimeUpdateListener();
 
+	$(window).keypress(function(e) {
+	    if (e.which === 32) {
+
+			$("#audioPlayer").prop("paused") ? $("#audioPlayer").trigger("play") : $("#audioPlayer").trigger("pause");
+
+	    }
+	});
 	// $(document.body).append($('<div/>', {
  //        id: 'div1',
  //        text: 'test'
  //    }));
- //   $(document.body).append($('<input />', {
- //   		type: 'checkbox',
- //   		id: 'cb', 
- //   		value: 'what',
- //   		text: 'english' 
- //   	}));
+});
 
-}
-)
 var isPinYin;
 var isChar;
 var isEng;
@@ -97,15 +97,22 @@ function httpGetAsync(path, callback)
 var currentLine = 0;
 
 function updateLine(){
-	var time = Math.round($("#audioPlayer").prop("currentTime"));
+	if(times == undefined)
+		return;
 	var convertedToSeconds = Math.floor(times[currentLine]/100) * 60 + times[currentLine]%100;
-	// if(times[currentLine] === "")
-	// 	return;
+	if(convertedToSeconds == 0 && currentLine != 0){
+		currentLine++;
+		return;
+	}
+	var time = Math.round($("#audioPlayer").prop("currentTime"));
+	
+	
 	if (time >= convertedToSeconds)
 	{
+		$("#line" + (currentLine - 2)).css('color','#000000')
 		$("#line" + (currentLine - 1)).css('color','#000000')
-		$("#line" + currentLine).css('color','#85DB18')
-		$("#line" + (currentLine + 1)).css('color','#A7C520')
+		$("#line" + currentLine).css('color','#66d9ef')
+		// $("#line" + (currentLine + 1)).css('color','#A7C520')
 		currentLine++;
 	}
 }
