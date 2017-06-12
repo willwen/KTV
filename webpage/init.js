@@ -1,18 +1,22 @@
-// $(document).ready(function(){
-// 	// $(document.body).append($('<div/>', {
-//  //        id: 'div1',
-//  //        text: 'test'
-//  //    }));
-//  //   $(document.body).append($('<input />', {
-//  //   		type: 'checkbox',
-//  //   		id: 'cb', 
-//  //   		value: 'what',
-//  //   		text: 'english' 
-//  //   	}));
+$(document).ready(function(){
+	addTimeUpdateListener();
 
-// }
-// )
-var val;
+	// $(document.body).append($('<div/>', {
+ //        id: 'div1',
+ //        text: 'test'
+ //    }));
+ //   $(document.body).append($('<input />', {
+ //   		type: 'checkbox',
+ //   		id: 'cb', 
+ //   		value: 'what',
+ //   		text: 'english' 
+ //   	}));
+
+}
+)
+var isPinYin;
+var isChar;
+var isEng;
 
 function updateLyrics(){
 	// 0 = no lyrics
@@ -23,51 +27,60 @@ function updateLyrics(){
 	// 5 = cn char and pinyin
 	// 6 = english and pinyin
 	// 7 = all
-	var isEng = $('#eng').is(':checked');
-	var isChar = $('#cn').is(':checked');
-	var isPinYin = $('#pinyin').is(':checked');
+	isEng = $('#eng').is(':checked');
+	isChar = $('#cn').is(':checked');
+	isPinYin = $('#pinyin').is(':checked');
 
 
-	if(!isEng && !isChar && !isPinYin){
-		val = 0;
-	}
-	else if(isEng && !isChar && !isPinYin){
-		val = 1;
-	}
-	else if(!isEng && isChar && !isPinYin){
-		val = 2;
-	}
-	else if(!isEng && !isChar && isPinYin){
-		val = 3;
-	}
-	else if(isEng && isChar && !isPinYin){
-		val = 4;
-	}
-	else if(!isEng && isChar && isPinYin){
-		val = 5;
-	}
-	else if(isEng && !isChar && isPinYin){
-		val = 6;
-	}
-	else if(isEng && isChar && isPinYin){
-		val = 7;
-	}
+	// if(!isEng && !isChar && !isPinYin){
+	// 	val = 0;
+	// }
+	// else if(isEng && !isChar && !isPinYin){
+	// 	val = 1;
+	// }
+	// else if(!isEng && isChar && !isPinYin){
+	// 	val = 2;
+	// }
+	// else if(!isEng && !isChar && isPinYin){
+	// 	val = 3;
+	// }
+	// else if(isEng && isChar && !isPinYin){
+	// 	val = 4;
+	// }
+	// else if(!isEng && isChar && isPinYin){
+	// 	val = 5;
+	// }
+	// else if(isEng && !isChar && isPinYin){
+	// 	val = 6;
+	// }
+	// else if(isEng && isChar && isPinYin){
+	// 	val = 7;
+	// }
 	// alert(val);
 	httpGetAsync("song", updateDiv);
 	return;
 }
+var times;
 function updateDiv(responseObj){
+	$('#lyricsBody').empty();
 	var resp = JSON.parse(responseObj);
 	var eng = resp.engArray;
 	var cnChar = resp.cnArray;
 	var pinyin = resp.pinyinArray;
-	// alert(eng[0]);
-
+	times = resp.timesArray;
+	var lineNumber = 0;
 	for (i in eng){
-		$(document.body).append("<div>"+pinyin[i]+ "<br/>" +
-			cnChar[i] + "<br/>" + eng[i] + "<br/></div><br/>")
+		var divBody = "<div id ='line" + lineNumber+ "'>";
+		if(isPinYin)
+			divBody += pinyin[i]+ "<br/>";
+		if(isChar)
+			divBody += cnChar[i] + "<br/>";
+		if(isEng)
+			divBody += eng[i] + "<br/>"
+		$("#lyricsBody").append(divBody + "</div><br/>");
+		lineNumber++;
 	}
-	alert("done");
+	// alert("done");
 
 }
 //https://stackoverflow.com/questions/247483/http-get-request-in-javascript
@@ -80,4 +93,24 @@ function httpGetAsync(path, callback)
     }
     xmlHttp.open("GET", path, true); // true for asynchronous 
     xmlHttp.send(null);
+}
+var currentLine = 0;
+
+function updateLine(){
+	var time = Math.round($("#audioPlayer").prop("currentTime"));
+	var convertedToSeconds = Math.floor(times[currentLine]/100) * 60 + times[currentLine]%100;
+	// if(times[currentLine] === "")
+	// 	return;
+	if (time >= convertedToSeconds)
+	{
+		$("#line" + (currentLine - 1)).css('color','#000000')
+		$("#line" + currentLine).css('color','#85DB18')
+		$("#line" + (currentLine + 1)).css('color','#A7C520')
+		currentLine++;
+	}
+}
+
+function addTimeUpdateListener(){
+	var temp = $("#audioPlayer");
+	temp.on('timeupdate', updateLine);
 }

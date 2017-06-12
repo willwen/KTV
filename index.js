@@ -20,6 +20,8 @@ app.get('/song', function (req, res){
 	var engArray = fs.readFileSync('eng1.txt').toString().split("\n");
 	var cnArray = fs.readFileSync('cn1.txt').toString().split("\n");
 	var pinyinArray = fs.readFileSync('pinyin1.txt').toString().split("\n");
-	var lyrics = {engArray, cnArray, pinyinArray};
+	var timesArray = fs.readFileSync('times1.txt').toString().split("\n");
+
+	var lyrics = {engArray, cnArray, pinyinArray, timesArray};
 	res.end(JSON.stringify(lyrics, 'utf-8'));
 });

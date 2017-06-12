@@ -1,4 +1,11 @@
-#audioContainer {
+#audioPlayer {
     position: fixed;
     bottom: 0;
+	width: 90%;
+
+}
+
+body{
+	margin: 10;
+	padding: 10;
 }
