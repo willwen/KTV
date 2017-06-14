@@ -1,68 +1,50 @@
 $(document).ready(function(){
+	//set a hook that runs every time a audio player steps
 	addTimeUpdateListener();
 
+	//set space bar listener to pause/play audio
 	$(window).keypress(function(e) {
 	    if (e.which === 32) {
-
-			$("#audioPlayer").prop("paused") ? $("#audioPlayer").trigger("play") : $("#audioPlayer").trigger("pause");
-
+	    	toggleAudioPlayer();
 	    }
 	});
-	// $(document.body).append($('<div/>', {
- //        id: 'div1',
- //        text: 'test'
- //    }));
+
+	$('#searchbar').keyup(function(){
+		// alert($(this).val());
+     	httpGetAsync("query", queryResult);
+    });
 });
 
-var isPinYin;
-var isChar;
-var isEng;
+function queryResult(responseObj){
+	alert(JSON.parse(responseObj));
 
+}
+//toggle play/pause on the audio player
+function toggleAudioPlayer(){
+	$("#audioPlayer").prop("paused") ? $("#audioPlayer").trigger("play") : $("#audioPlayer").trigger("pause");
+}
+
+//send a AJAX request to server
 function updateLyrics(){
-	// 0 = no lyrics
-	// 1 = just english
-	// 2 = just cn char
-	// 3 = just pinyin
-	// 4 = english and cn char
-	// 5 = cn char and pinyin
-	// 6 = english and pinyin
-	// 7 = all
-	isEng = $('#eng').is(':checked');
-	isChar = $('#cn').is(':checked');
-	isPinYin = $('#pinyin').is(':checked');
-
-
-	// if(!isEng && !isChar && !isPinYin){
-	// 	val = 0;
-	// }
-	// else if(isEng && !isChar && !isPinYin){
-	// 	val = 1;
-	// }
-	// else if(!isEng && isChar && !isPinYin){
-	// 	val = 2;
-	// }
-	// else if(!isEng && !isChar && isPinYin){
-	// 	val = 3;
-	// }
-	// else if(isEng && isChar && !isPinYin){
-	// 	val = 4;
-	// }
-	// else if(!isEng && isChar && isPinYin){
-	// 	val = 5;
-	// }
-	// else if(isEng && !isChar && isPinYin){
-	// 	val = 6;
-	// }
-	// else if(isEng && isChar && isPinYin){
-	// 	val = 7;
-	// }
-	// alert(val);
 	httpGetAsync("song", updateDiv);
 	return;
 }
+
+//function to skip audio player to certain time period
+function skipToTime(lineNumber){
+	return '$("#audioPlayer").prop("currentTime",' + timestampToSeconds(times[lineNumber]) + ')';
+
+}
+//global array to that maps line number (the index of the array)
+//to the timestamp of the song
 var times;
+
+//when received a response from server, update div with payload
 function updateDiv(responseObj){
 	$('#lyricsBody').empty();
+	var isEng = $('#eng').is(':checked');
+	var isChar = $('#cn').is(':checked');
+	var isPinYin = $('#pinyin').is(':checked');
 	var resp = JSON.parse(responseObj);
 	var eng = resp.engArray;
 	var cnChar = resp.cnArray;
@@ -73,15 +55,24 @@ function updateDiv(responseObj){
 		var divBody = "<div id ='line" + lineNumber+ "'>";
 		if(isPinYin)
 			divBody += pinyin[i]+ "<br/>";
-		if(isChar)
-			divBody += cnChar[i] + "<br/>";
+		if(isChar){
+			divBody += '<span id = "char' + lineNumber + '"">'
+				+ cnChar[i] + "</span>" +"<br/>";
+		}
 		if(isEng)
 			divBody += eng[i] + "<br/>"
 		$("#lyricsBody").append(divBody + "</div><br/>");
+		if(isChar){
+			$("#char" + lineNumber).dblclick(function (){
+				skipToTime(i);
+				$("#audioPlayer").trigger("play"); 
+			});
+			$("#char" + lineNumber).hover(function (){
+				Math.floor(times[i]/100) + ':' + times[i]%100;
+			});
+		}
 		lineNumber++;
 	}
-	// alert("done");
-
 }
 //https://stackoverflow.com/questions/247483/http-get-request-in-javascript
 function httpGetAsync(path, callback)
@@ -94,18 +85,19 @@ function httpGetAsync(path, callback)
     xmlHttp.open("GET", path, true); // true for asynchronous 
     xmlHttp.send(null);
 }
+
+
 var currentLine = 0;
 
 function updateLine(){
 	if(times == undefined)
 		return;
-	var convertedToSeconds = Math.floor(times[currentLine]/100) * 60 + times[currentLine]%100;
+	var convertedToSeconds = timestampToSeconds(times[currentLine]);
 	if(convertedToSeconds == 0 && currentLine != 0){
 		currentLine++;
 		return;
 	}
 	var time = Math.round($("#audioPlayer").prop("currentTime"));
-	
 	
 	if (time >= convertedToSeconds)
 	{
@@ -120,4 +112,8 @@ function updateLine(){
 function addTimeUpdateListener(){
 	var temp = $("#audioPlayer");
 	temp.on('timeupdate', updateLine);
+}
+
+function timestampToSeconds(timestamp){
+	return Math.floor(timestamp/100) * 60 + timestamp%100;
 }

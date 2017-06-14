@@ -2,10 +2,10 @@ var url = require('url'),
     fs = require('fs'),
     querystring = require('querystring'),
     express = require('express'),
-	port = 8080;
+	port = 8080,
+	mongodb = require('mongodb');
 
 var app = express();
-
 
 app.use(express.static('webpage'))
 app.use(express.static('songs'))
@@ -24,4 +24,23 @@ app.get('/song', function (req, res){
 
 	var lyrics = {engArray, cnArray, pinyinArray, timesArray};
 	res.end(JSON.stringify(lyrics, 'utf-8'));
+});
+
+app.get('/query', function (req,res){
+	var MongoClient = mongodb.MongoClient;
+	var url = 'mongodb://localhost:27017/songs'
+	MongoClient.connect(url, function(err, db){
+		if(err)
+			console.log('unable to connect to server', err);
+		else{
+			console.log('connection established');
+			var collection = db.collection('songs');
+			collection.find({}).toArray(function(err, result) {
+			    if (err) throw err;
+			    console.log(result);
+			    res.send(result);
+			    db.close();
+		  	});
+		}
+	})
 });
