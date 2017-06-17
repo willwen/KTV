@@ -1,4 +1,6 @@
 ^ sticky, always need to refactor code >_<
+^do input parsing on search term
+
 
 Features to include
 
