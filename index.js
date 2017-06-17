@@ -6,7 +6,8 @@ var url = require('url'),
 	mongodb = require('mongodb'),
 	bodyParser = require('body-parser');
 
-
+// var mongoURL = "mongodb://localhost:27017/songs"
+var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
 var app = express();
 
 app.use(express.static('webpage'))
@@ -34,7 +35,7 @@ app.get('/song', function (req, res){
 
 app.post('/query', function (req,res){
 	var MongoClient = mongodb.MongoClient;
-	var url = 'mongodb://localhost:27017/songs'
+	var url = mongoURL
 
 	console.log(req.body.search);
 
