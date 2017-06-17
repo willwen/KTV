@@ -1,30 +1,65 @@
-#audioPlayer {
-    position: fixed;
-    bottom: 0;
-	width: 90%;
-
+* {
+  box-sizing: border-box;
 }
 
-body{
-	margin: 10;
-	padding: 10;
-	font-family: Consolas,monaco,monospace；
+
+#resultsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
-input[type=text] {
-    width: 130px;
+
+#songSearchInput{
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 1px;
     font-size: 16px;
     background-color: white;
     background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 7px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    /*-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;*/
 }
 
-input[type=text]:focus {
-    width: 75%;
+
+#resultsList li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#resultsList li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#resultsList li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+body{
+	font-family: Consolas,monaco,monospace;
+  margin-bottom:40px;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 35px;
+  background-color: #f5f5f5;
+}
+
+
+
+#audioPlayer {
+    width: 100%;
 }

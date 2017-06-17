@@ -9,11 +9,33 @@ $(document).ready(function(){
 	    }
 	});
 
-	$('#searchbar').keyup(function(){
+	$('#songSearchInput').keyup(function(){
 		// alert($(this).val());
-     	httpGetAsync("query", queryResult);
+		$('#resultsList').css('display', 'inline')
+		httpPostAsync("query", {search: $('#songSearchInput').val()}, showResults);
     });
+    $('#songSearchInput').focusout(function(){
+		// $('#resultsList').css('display', 'none')
+	});
+
 });
+
+function simpleSearch(){
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("songSearchInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
 
 function queryResult(responseObj){
 	alert(JSON.parse(responseObj));
@@ -24,9 +46,8 @@ function toggleAudioPlayer(){
 	$("#audioPlayer").prop("paused") ? $("#audioPlayer").trigger("play") : $("#audioPlayer").trigger("pause");
 }
 
-//send a AJAX request to server
-function updateLyrics(){
-	httpGetAsync("song", updateDiv);
+function updateAudioPlayer(sourceUrl){
+	$("#audioPlayer").attr("src", sourceUrl);
 	return;
 }
 
@@ -45,11 +66,11 @@ function updateDiv(responseObj){
 	var isEng = $('#eng').is(':checked');
 	var isChar = $('#cn').is(':checked');
 	var isPinYin = $('#pinyin').is(':checked');
-	var resp = JSON.parse(responseObj);
-	var eng = resp.engArray;
-	var cnChar = resp.cnArray;
-	var pinyin = resp.pinyinArray;
-	times = resp.timesArray;
+	// var resp = JSON.parse(responseObj);
+	var eng = responseObj.engArray;
+	var cnChar = responseObj.cnArray;
+	var pinyin = responseObj.pinyinArray;
+	times = responseObj.timesArray;
 	var lineNumber = 0;
 	for (i in eng){
 		var divBody = "<div id ='line" + lineNumber+ "'>";
@@ -73,17 +94,40 @@ function updateDiv(responseObj){
 		}
 		lineNumber++;
 	}
+	updateAudioPlayer(responseObj.songPath);
+}
+
+function showResults(responseObj){
+	$("#resultsList").empty();
+	responseObj.forEach(function(element){
+		var html = '<li><button class = "button well" id = ' + element.file_name + '>'
+		+ element.cn_char +' - '+ element.artist + '</span></button></li>';
+		$("#resultsList").append(html);
+		$("#" + element.file_name).click(function(){
+			httpGetAsync('song', {id: element.file_name}, updateDiv);
+			return false;
+		});
+	})
+
+
+
 }
 //https://stackoverflow.com/questions/247483/http-get-request-in-javascript
-function httpGetAsync(path, callback)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", path, true); // true for asynchronous 
-    xmlHttp.send(null);
+function httpGetAsync(path, data, callback){
+	$.ajax({
+	  url: path,
+	  data: data,
+	  success: callback
+	});
+}
+
+function httpPostAsync(path, data, callback){
+	$.ajax({
+	  type: "POST",
+	  url: path,
+	  data: data,
+	  success: callback
+	});
 }
 
 

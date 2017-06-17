@@ -3,43 +3,54 @@ var url = require('url'),
     querystring = require('querystring'),
     express = require('express'),
 	port = 8080,
-	mongodb = require('mongodb');
+	mongodb = require('mongodb'),
+	bodyParser = require('body-parser');
+
 
 var app = express();
 
 app.use(express.static('webpage'))
 app.use(express.static('songs'))
 
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 app.listen(process.env.PORT || 8080, function() {
     console.log('Listening on port 8080!')
 })
 
 app.get('/song', function (req, res){
+	var id = req.query.id
 	res.writeHead(200, {'Content-type': 'application/json'});
-	var engArray = fs.readFileSync('eng1.txt').toString().split("\n");
-	var cnArray = fs.readFileSync('cn1.txt').toString().split("\n");
-	var pinyinArray = fs.readFileSync('pinyin1.txt').toString().split("\n");
-	var timesArray = fs.readFileSync('times1.txt').toString().split("\n");
-
-	var lyrics = {engArray, cnArray, pinyinArray, timesArray};
+	var engArray = fs.readFileSync('songs/'+ id + '/' + id +' eng.txt').toString().split("\n");
+	var cnArray = fs.readFileSync('songs/'+ id + '/' + id +' cn.txt').toString().split("\n");
+	var pinyinArray = fs.readFileSync('songs/'+ id + '/' + id +' pinyin.txt').toString().split("\n");
+	var timesArray = fs.readFileSync('songs/'+ id + '/' + id +' times.txt').toString().split("\n");
+	var songPath = id + '/' + id +'.mp3'
+	var lyrics = {engArray, cnArray, pinyinArray, timesArray,songPath};
 	res.end(JSON.stringify(lyrics, 'utf-8'));
 });
 
-app.get('/query', function (req,res){
+app.post('/query', function (req,res){
 	var MongoClient = mongodb.MongoClient;
 	var url = 'mongodb://localhost:27017/songs'
+
+	console.log(req.body.search);
+
 	MongoClient.connect(url, function(err, db){
 		if(err)
 			console.log('unable to connect to server', err);
 		else{
 			console.log('connection established');
 			var collection = db.collection('songs');
-			collection.find({}).toArray(function(err, result) {
-			    if (err) throw err;
-			    console.log(result);
-			    res.send(result);
-			    db.close();
+			var regexValue='\.*'+req.body.search+'\.';
+			var query = {"searchTerm" : {$regex: new RegExp(regexValue, 'i')}}
+			collection.find(query).toArray(function(err, result) {
+				    if (err) throw err;
+			   		console.log(result);
+				    res.send(result);
+				    db.close();
 		  	});
 		}
 	})

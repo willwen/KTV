@@ -1,0 +1,35 @@
+^ sticky, always need to refactor code >_<
+
+Features to include
+
+
+
+space bar and backspace hotkeys
+	- space bar, should only pause not scroll
+	- backspace to go back 5sec
+
+dbl click link to jump to time
+
+fix time frame
+
+Auto scrolling
+
+ball that bounces on the words
+
+add album image to bottom right
+
+add more songs to database
+
+be able to add notes and recordings
+
+
+
+
+UI:
+Add TITLE AND AUTHOR PLS?!?!
+
+3 checkbox collapsable after lyrics displayed
+
+bigger searchbar
+
+better search results UI
