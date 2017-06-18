@@ -4,6 +4,7 @@ var url = require('url'),
     express = require('express'),
 	port = 8080,
 	mongodb = require('mongodb'),
+	xssfilters = require('xss-filters'),
 	bodyParser = require('body-parser');
 
 // var mongoURL = "mongodb://localhost:27017/songs"
@@ -12,6 +13,8 @@ var app = express();
 
 app.use(express.static('webpage'))
 app.use(express.static('songs'))
+app.use(express.static('favicons'))
+
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -22,7 +25,7 @@ app.listen(process.env.PORT || 8080, function() {
 })
 
 app.get('/song', function (req, res){
-	var id = req.query.id
+	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
 	res.writeHead(200, {'Content-type': 'application/json'});
 	var engArray = fs.readFileSync('songs/'+ id + '/' + id +' eng.txt').toString().split("\n");
 	var cnArray = fs.readFileSync('songs/'+ id + '/' + id +' cn.txt').toString().split("\n");
@@ -37,7 +40,9 @@ app.post('/query', function (req,res){
 	var MongoClient = mongodb.MongoClient;
 	var url = mongoURL
 
-	console.log(req.body.search);
+	//dont inject me...
+	var cleansedQuery = xssfilters.inHTMLData(req.body.search);
+	console.log(cleansedQuery);
 
 	MongoClient.connect(url, function(err, db){
 		if(err)
@@ -45,7 +50,7 @@ app.post('/query', function (req,res){
 		else{
 			console.log('connection established');
 			var collection = db.collection('songs');
-			var regexValue='\.*'+req.body.search+'\.';
+			var regexValue='\.*'+ cleansedQuery +'\.';
 			var query = {"searchTerm" : {$regex: new RegExp(regexValue, 'i')}}
 			collection.find(query).toArray(function(err, result) {
 				    if (err) throw err;

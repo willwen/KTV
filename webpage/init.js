@@ -2,24 +2,36 @@ $(document).ready(function(){
 	//set a hook that runs every time a audio player steps
 	addTimeUpdateListener();
 
-	//set space bar listener to pause/play audio
+	window.addEventListener('keydown', function(e) {
+	  if(e.keyCode == 32 && e.target == document.body) {
+		toggleAudioPlayer(); // space bar to toggle audio player
+		e.preventDefault(); // and prevent scrolling
+	  }
+	});
+
+
+	$('#songSearchInput').keyup(function(){
+		$('#resultsList').css('display', 'inline')
+		httpPostAsync("query", {search: $('#songSearchInput').val()}, showResults);
+    });
+
+});
+
+
+//set space bar listener to pause/play audio
+function addSpaceBarPlayPauseHook(){
 	$(window).keypress(function(e) {
 	    if (e.which === 32) {
 	    	toggleAudioPlayer();
 	    }
 	});
 
-	$('#songSearchInput').keyup(function(){
-		// alert($(this).val());
-		$('#resultsList').css('display', 'inline')
-		httpPostAsync("query", {search: $('#songSearchInput').val()}, showResults);
-    });
-    $('#songSearchInput').focusout(function(){
-		// $('#resultsList').css('display', 'none')
-	});
+}
 
-});
+function removeSpaceBarPlayPauseHook(){
+	$(window).unbind("keypress");
 
+}
 function simpleSearch(){
     var input, filter, ul, li, a, i;
     input = document.getElementById("songSearchInput");
@@ -95,15 +107,19 @@ function updateDiv(responseObj){
 		lineNumber++;
 	}
 	updateAudioPlayer(responseObj.songPath);
+	hideResultsList();
 }
-
+function hideResultsList(){
+	$('#resultsList').css('display', 'none')
+}
 function showResults(responseObj){
 	$("#resultsList").empty();
 	responseObj.forEach(function(element){
-		var html = '<li><button class = "button well" id = ' + element.file_name + '>'
+		var html = '<li><button class = "button list-group-item list-group-item-action" id = ' + element.file_name + '>'
 		+ element.cn_char +' - '+ element.artist + '</span></button></li>';
 		$("#resultsList").append(html);
 		$("#" + element.file_name).click(function(){
+			$("#title").text(element.cn_char + "-" + element.artist);
 			httpGetAsync('song', {id: element.file_name}, updateDiv);
 			return false;
 		});

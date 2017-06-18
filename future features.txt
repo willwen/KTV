@@ -4,7 +4,9 @@
 
 Features to include
 
+test on safar broswers (specifically mobile)
 
+disable space bar in search bar
 
 space bar and backspace hotkeys
 	- space bar, should only pause not scroll
