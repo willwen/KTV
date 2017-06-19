@@ -1,6 +1,10 @@
 ^ sticky, always need to refactor code >_<
 	try catch statements to prevent server crashes
 		liek when you cant find the file "4 eng.txt"
+		
+*chengdu, lyrics , line 1, fix to wine
+*fix scrolling time back shouldnt break the text highlighting
+
 Features to include:
 
 piaoxiangbeifang.
