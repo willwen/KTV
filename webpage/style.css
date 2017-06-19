@@ -9,10 +9,27 @@
   margin: 0;
   display: none;
 }
+
 ul{
   margin-left:10px;
   margin-right:10px;
 }
+
+#title{
+  text-align: center;
+  width: 65%;
+  margin:0 auto;
+}
+
+#lyricsContainer{
+  text-align: center;
+}
+
+#lyricsBody{
+  text-align: left;
+  display: inline-block;
+}
+
 #songSearchInput{
     box-sizing: border-box;
     font-size: 16px;

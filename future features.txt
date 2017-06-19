@@ -1,26 +1,27 @@
 ^ sticky, always need to refactor code >_<
-^do input parsing on search term
+	try catch statements to prevent server crashes
 
+Features to include:
 
-Features to include
+piaoxiangbeifang.
+	add a simplified chinese?
+Auto scrolling
+fix time frame
+make lyrics size bigger
+** check boxes can dynamically hide
+	class = "cn  lyric"
+bootstrap and jquery static files
 
-test on safar broswers (specifically mobile)
-
-disable space bar in search bar
-
-space bar and backspace hotkeys
-	- space bar, should only pause not scroll
+add a timestamp aref link to jump to time
+- helper button to show keys:
 	- backspace to go back 5sec
 
-dbl click link to jump to time
+- adjust speed of audio player?
 
-fix time frame
-
-Auto scrolling
+test on safari broswers (specifically mobile)
+	- verified?
 
 ball that bounces on the words
-
-add album image to bottom right
 
 add more songs to database
 
@@ -31,9 +32,9 @@ be able to add notes and recordings
 
 UI:
 Add TITLE AND AUTHOR PLS?!?!
-
-3 checkbox collapsable after lyrics displayed
-
-bigger searchbar
+add album image to bottom right
 
 better search results UI
+bigger searchbar
+
+3 checkbox collapsable after lyrics displayed
