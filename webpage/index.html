@@ -31,8 +31,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script src="init.js">
-	</script>
+	<script src="const.js"></script>
+	<script src="init.js"></script>
+	
 </head>
 <body>
 	<div class="jumbotron text-center">
@@ -51,19 +52,20 @@
 			<div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-4">
 				<form onsubmit="updateLyrics(); return false;">
 					<div class="checkbox">
-						<label><input checked id="pinyin" type="checkbox"> PinYin</label>
+						<label><input checked id="pinyinCB" type="checkbox"> PinYin</label>
 					</div>
 					<div class="checkbox">
-						<label><input checked id="cn" type="checkbox"> Chinese Char</label>
+						<label><input checked id="cnCB" type="checkbox"> Chinese Char</label>
 					</div>
 					<div class="checkbox">
-						<label><input checked id="eng" type="checkbox"> English</label>
+						<label><input checked id="engCB" type="checkbox"> English</label>
 					</div>
 				</form>
 			</div>
 		</div><!--End Row Div-->
 		<div class="row">
-			<h1 id="title" class = "page-header"></h1>
+			<h1 id="titleLine" class = "page-header"></h1>
+			<br/>
 			<div id="lyricsContainer">
 				<div id='lyricsBody'></div>
 			</div>
