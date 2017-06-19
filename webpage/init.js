@@ -94,12 +94,9 @@ function updateDiv(responseObj){
 	var lineNumber = 0;
 	for (i in eng){
 		var divBody = "<div id ='"+ genericLinePrefix + lineNumber + "'>";
-		if(isPinYin)
-			divBody += "<div class= '" + pinyinLyricsLineClass + "'>" + pinyin[i]+ "</div>";
-		if(isChar)
-			divBody += "<div class = '" + cnCharLyricsLineClass + "'>" + cnChar[i] + "</div>";
-		if(isEng)
-			divBody += "<div class = '" +englishLyricsLineClass + "'>" + eng[i] + "</div>";
+		divBody += "<div class= '" + pinyinLyricsLineClass + "'>" + pinyin[i]+ "</div>";
+		divBody += "<div class = '" + cnCharLyricsLineClass + "'>" + cnChar[i] + "</div>";
+		divBody += "<div class = '" +englishLyricsLineClass + "'>" + eng[i] + "</div>";
 
 		
 		$("#" + lyricsBodyID).append(divBody + "</div><br/>");

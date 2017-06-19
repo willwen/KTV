@@ -1,2 +1,3 @@
-{"_id":{"$oid":"594073f0f7e1c60d1688a372"},"pinyin":"pingfanzhilu","cn_char":"平凡之路","file_name":"1","artist":"朴树","searchTerm":"pingfanzhilu 平凡之路 朴树"}
-{"_id":{"$oid":"59407711f7e1c60d1688a373"},"pinyin":"chengdu","cn_char":"成都","file_name":"2","artist":"赵磊","searchTerm":"chengdu 成都 赵磊"}
+{"_id":{"$oid":"594073f0f7e1c60d1688a372"},"title_pinyin":"pingfanzhilu","cn_char":"平凡之路","file_name":"1","artist":"朴树","artist_pinyin":"pushu","searchTerm":"pingfanzhilu 平凡之路 朴树 pushu"}
+{"_id":{"$oid":"59407711f7e1c60d1688a373"},"title_pinyin":"chengdu","cn_char":"成都","file_name":"2","artist":"赵雷","artist_pinyin":"zhaolei","searchTerm":"chengdu 成都 赵雷 zhaolei"}
+{"_id":{"$oid":"59473640a6f4478fa5b78752"},"title_pinyin":"piaoxiangbeifang","cn_char":"漂向北方","file_name":"3","artist":"黃明志","artist_pinyin":"Namewee","searchTerm":"piaoxiangbeifang 漂向北方 黃明志 Namewee"}

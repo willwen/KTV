@@ -1,6 +1,6 @@
 ^ sticky, always need to refactor code >_<
 	try catch statements to prevent server crashes
-
+		liek when you cant find the file "4 eng.txt"
 Features to include:
 
 piaoxiangbeifang.
