@@ -7,10 +7,16 @@
 Features to include:
 
 only show checkboxes after song selected
+
 piaoxiangbeifang.
+	english spell check
 	
 Auto scrolling
-fix time frame
+	https://stackoverflow.com/questions/210717/using-jquery-to-center-a-div-on-the-screen
+	use div to center on screen
+	currentLine var should be reset when switching or finishing a song.
+	
+fix time frame of songs
 
 add a timestamp aref link to jump to time
 - helper button to show keys:
