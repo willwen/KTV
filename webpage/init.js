@@ -16,6 +16,14 @@ $(document).ready(function(){
     });
 
     setCheckBoxListeners();
+ //    jQuery.fn.center = function () {
+	//     this.css("position","absolute");
+	//     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+	//                                                 $(window).scrollTop()) + "px");
+	//     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+	//                                                 $(window).scrollLeft()) + "px");
+	//     return this;
+	// }
 
 });
 
@@ -41,24 +49,16 @@ function setCheckBoxListeners(){
 		});
 	});
 	$("#" + englishCheckBoxID).change(function(){
-	var en_cb = this;
-	$("." + englishLyricsLineClass).each(function(i, obj){
-		if(en_cb.checked)
-			$(obj).show();
-		else
-			$(obj).hide();
+		var en_cb = this;
+		$("." + englishLyricsLineClass).each(function(i, obj){
+			if(en_cb.checked)
+				$(obj).show();
+			else
+				$(obj).hide();
+		});
 	});
-});
 }
-// //set space bar listener to pause/play audio
-// function addSpaceBarPlayPauseHook(){
-// 	$(window).keypress(function(e) {
-// 	    if (e.which === 32) {
-// 	    	toggleAudioPlayer();
-// 	    }
-// 	});
 
-// }
 
 //toggle play/pause on the audio player
 function toggleAudioPlayer(){
@@ -170,6 +170,7 @@ function updateLine(){
 		$("#" + genericLinePrefix + (currentLine - 1)).css('color','#000000')
 		$("#" + genericLinePrefix + currentLine).css('color','#66d9ef')
 		// $("#line" + (currentLine + 1)).css('color','#A7C520')
+  		 $(window).scrollTo($("#" + genericLinePrefix + currentLine), {duration: 1000, over :{top :-7}});
 		currentLine++;
 	}
 }
