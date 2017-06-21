@@ -16,15 +16,6 @@ $(document).ready(function(){
     });
 
     setCheckBoxListeners();
- //    jQuery.fn.center = function () {
-	//     this.css("position","absolute");
-	//     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
-	//                                                 $(window).scrollTop()) + "px");
-	//     this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
-	//                                                 $(window).scrollLeft()) + "px");
-	//     return this;
-	// }
-
 });
 
 function setCheckBoxListeners(){
@@ -57,6 +48,20 @@ function setCheckBoxListeners(){
 				$(obj).hide();
 		});
 	});
+
+	$("#" + wantScrollCheckBoxID).change(function(){
+		if(this.checked)
+			wantScroll = true;
+		else
+			wantScroll = false;
+	});
+
+	$("#" + wantLineNumbersCheckBoxID).change(function(){
+		if(this.checked)
+			$("." + lineNumberID).css("visibility", "visible");
+		else
+			$("." + lineNumberID).css("visibility", "hidden");
+	});
 }
 
 
@@ -79,27 +84,42 @@ function skipToTime(lineNumber){
 //to the timestamp of the song
 var times;
 
+var wantScroll = true;
 //when received a response from server, update div with payload
 function updateDiv(responseObj){
 	$("#" + lyricsBodyID).empty();
-	var isEng = $("#" + englishCheckBoxID).is(":checked");
-	var isChar = $("#" + cnCharCheckBoxID).is(":checked");
-	var isPinYin = $("#" + pinyinCheckBoxID).is(":checked");
 
-	var eng = responseObj.engArray;
-	var cnChar = responseObj.cnArray;
 	var pinyin = responseObj.pinyinArray;
+	var cnChar = responseObj.cnArray;
+	var eng = responseObj.engArray;
 	times = responseObj.timesArray;
 
-	var lineNumber = 0;
-	for (i in eng){
-		var divBody = "<div id ='"+ genericLinePrefix + lineNumber + "'>";
-		divBody += "<div class= '" + pinyinLyricsLineClass + "'>" + pinyin[i]+ "</div>";
-		divBody += "<div class = '" + cnCharLyricsLineClass + "'>" + cnChar[i] + "</div>";
-		divBody += "<div class = '" +englishLyricsLineClass + "'>" + eng[i] + "</div>";
+	//show lyrics container
+	$("#" + lyricsContainerID).css("visibility", "visible");
+	var lineNumber = 1;
+	for (i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
+		//each lyric line takes up a row
+		var rowDiv = $("<div></div>" , {class: 'row'});
+		//the line number takes the left side of that row
+			var lineNumberDiv = $("<div></div>" , {class: 'col-xs-1 lineIndex'});
+				var lineNumberAnchor = $("<a></a>", {id : 'lineNumber'+ lineNumber}).text(lineNumber);
 
-		
-		$("#" + lyricsBodyID).append(divBody + "</div><br/>");
+				lineNumberDiv.append(lineNumberAnchor);			
+			rowDiv.append(lineNumberDiv);
+			//the lyrics take up the right side
+			var lyricsDiv = $("<div></div>" , {class: 'col-xs-11', id: genericLinePrefix + lineNumber});
+				//create three divs for the three languages and append them to the lyrics
+				var pinyinLine = $("<div></div>" , {class: pinyinLyricsLineClass + "col-xs-12"}).text(pinyin[i]);
+				var cnLine = $("<div></div>" , {class: cnCharLyricsLineClass + "col-xs-12"}).text(cnChar[i]);
+				var engLine = $("<div></div>" , {class: englishLyricsLineClass + "col-xs-12"}).text(eng[i]);
+				lyricsDiv.append(pinyinLine);
+				lyricsDiv.append(cnLine);
+				lyricsDiv.append(engLine);
+			rowDiv.append(lyricsDiv);
+
+		$("#" + lyricsBodyID).append(rowDiv);
+		var lineBreak = $("<br/>")
+		$("#" + lyricsBodyID).append(lineBreak);
 		// if(isChar){
 		// 	$("#char" + lineNumber).dblclick(function (){
 		// 		skipToTime(i);
@@ -125,6 +145,9 @@ function showResults(responseObj){
 		$("#" + resultsListID).append(html);
 		$("#" + element.file_name).click(function(){
 			$("#" + titleLineID).text(element.cn_char + " - " + element.artist);
+			$("#" + optionsID).collapse('show');
+			//reset song line
+			currentLine = 0;
 			httpGetAsync("song", {id: element.file_name}, updateDiv);
 			return false;
 		});
@@ -166,11 +189,13 @@ function updateLine(){
 	
 	if (time >= convertedToSeconds)
 	{
-		$("#" + genericLinePrefix + (currentLine - 2)).css('color','#000000')
-		$("#" + genericLinePrefix + (currentLine - 1)).css('color','#000000')
-		$("#" + genericLinePrefix + currentLine).css('color','#66d9ef')
+		$("#" + genericLinePrefix + (currentLine - 2)).css('color','#FFF')
+		$("#" + genericLinePrefix + (currentLine - 1)).css('color','#FFF')
+		$("#" + genericLinePrefix + currentLine).css('color','#a6e22e')
 		// $("#line" + (currentLine + 1)).css('color','#A7C520')
-  		 $(window).scrollTo($("#" + genericLinePrefix + currentLine), {duration: 1000, over :{top :-7}});
+		//docs: https://github.com/flesler/jquery.scrollTo
+		if(wantScroll)
+  			$(window).scrollTo($("#" + genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 1000, offset :{top :-400}});
 		currentLine++;
 	}
 }

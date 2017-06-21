@@ -1,9 +1,40 @@
 * {
   box-sizing: border-box;
+  font-family: Consolas,monaco,monospace;
+
+}
+
+#title{
+  text-align: center;
+  width: 65%;
+  margin:0 auto;
+}
+
+
+
+body{
+  margin-bottom:40px;
+}
+
+.gradient {
+  background: #283048; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left right, #283048 , #859398); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left right, #283048 , #859398); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left right, #283048 , #859398); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #283048 , #859398); /* Standard syntax */
 }
 
 #lyricsContainer{
-  font-size: 16px;
+  font-size: 19px;
+  visibility: hidden;
+  text-align: center;
+  color: #FFF;
+}
+
+#lyricsBody{
+  margin-top: 50px;
+  text-align: left;
+  display: inline-block;
 }
 
 #resultsList {
@@ -13,25 +44,29 @@
   display: none;
 }
 
+.lineIndex{
+  font-size: 30px;
+  color: #f92672;
+}
+
 ul{
   margin-left:10px;
   margin-right:10px;
 }
-
-#title{
-  text-align: center;
-  width: 65%;
-  margin:0 auto;
+.displayLanguages{
+  font-weight: bold;
+  float: left;
+}
+.playbackOptions{
+  font-weight: bold;
+  float: right;
+  text-align: right;
+}
+.playbackOptions>div , .displayLanguages>div{
+  font-weight: normal;
 }
 
-#lyricsContainer{
-  text-align: center;
-}
 
-#lyricsBody{
-  text-align: left;
-  display: inline-block;
-}
 
 #songSearchInput{
     box-sizing: border-box;
@@ -41,8 +76,6 @@ ul{
     background-position: 10px 7px; 
     background-repeat: no-repeat;
     padding: 8px 20px 8px 40px;
-    /*-webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;*/
 }
 
 
@@ -66,11 +99,6 @@ ul{
   background-color: #eee;
 }
 
-body{
-	font-family: Consolas,monaco,monospace;
-  margin-bottom:40px;
-}
-
 
 .footer {
   position: fixed;
@@ -80,8 +108,6 @@ body{
   height: 35px;
   background-color: #f5f5f5;
 }
-
-
 
 #audioPlayer {
     width: 100%;

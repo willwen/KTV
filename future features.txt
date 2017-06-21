@@ -13,6 +13,7 @@ sublime:
 	yellow e6db74
 	pink f92672
 	orange fd971f
+	green a6e22e
 
 give mongo.js script to easily add new song
 
