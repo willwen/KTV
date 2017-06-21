@@ -18,9 +18,6 @@ sublime:
 give mongo.js script to easily add new song
 
 only show checkboxes after song selected
-
-piaoxiangbeifang.
-	english spell check
 	
 Auto scrolling (pretty much done)
 	https://stackoverflow.com/questions/210717/using-jquery-to-center-a-div-on-the-screen
@@ -51,7 +48,7 @@ UI:
 Add TITLE AND AUTHOR PLS?!?!
 add album image to bottom right
 
-better search results UI
+better search results UI (so it doesn't take up the full computer screen)
 bigger searchbar
 
 3 checkbox collapsable after lyrics displayed
