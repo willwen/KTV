@@ -6,12 +6,22 @@
 
 Features to include:
 
+give better color scheme!!
+sublime:
+	background 272722
+	lighter gray 75715e
+	yellow e6db74
+	pink f92672
+	orange fd971f
+
+give mongo.js script to easily add new song
+
 only show checkboxes after song selected
 
 piaoxiangbeifang.
 	english spell check
 	
-Auto scrolling
+Auto scrolling (pretty much done)
 	https://stackoverflow.com/questions/210717/using-jquery-to-center-a-div-on-the-screen
 	use div to center on screen
 	currentLine var should be reset when switching or finishing a song.
