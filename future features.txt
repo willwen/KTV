@@ -6,6 +6,18 @@
 
 Features to include:
 
+all songs / directory listing
+
+more options in collapse panel
+
+add a timestamp aref link to jump to time
+- helper button to show keys:
+	- backspace to go back 5sec
+
+ball that bounces on the words
+
+
+
 give better color scheme!!
 sublime:
 	background 272722
@@ -16,26 +28,16 @@ sublime:
 	green a6e22e
 
 give mongo.js script to easily add new song
-
-only show checkboxes after song selected
-	
-Auto scrolling (pretty much done)
-	https://stackoverflow.com/questions/210717/using-jquery-to-center-a-div-on-the-screen
-	use div to center on screen
-	currentLine var should be reset when switching or finishing a song.
 	
 fix time frame of songs
 
-add a timestamp aref link to jump to time
-- helper button to show keys:
-	- backspace to go back 5sec
 
 - adjust speed of audio player?
 
 test on safari broswers (specifically mobile)
 	- verified?
 
-ball that bounces on the words
+
 
 add more songs to database
 

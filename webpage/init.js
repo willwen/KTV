@@ -89,10 +89,10 @@ var wantScroll = true;
 function updateDiv(responseObj){
 	$("#" + lyricsBodyID).empty();
 
-	var pinyin = responseObj.pinyinArray;
-	var cnChar = responseObj.cnArray;
-	var eng = responseObj.engArray;
-	times = responseObj.timesArray;
+	var pinyin = responseObj['pinyin.txt'];
+	var cnChar = responseObj['cn.txt'];
+	var eng = responseObj['eng.txt'];
+	times = responseObj['times.txt'];
 
 	//show lyrics container
 	$("#" + lyricsContainerID).css("visibility", "visible");

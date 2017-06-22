@@ -27,12 +27,20 @@ app.listen(process.env.PORT || 8080, function() {
 app.get('/song', function (req, res){
 	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
 	res.writeHead(200, {'Content-type': 'application/json'});
-	var engArray = fs.readFileSync('songs/'+ id + '/' + id +' eng.txt').toString().split("\n");
-	var cnArray = fs.readFileSync('songs/'+ id + '/' + id +' cn.txt').toString().split("\n");
-	var pinyinArray = fs.readFileSync('songs/'+ id + '/' + id +' pinyin.txt').toString().split("\n");
-	var timesArray = fs.readFileSync('songs/'+ id + '/' + id +' times.txt').toString().split("\n");
-	var songPath = id + '/' + id +'.mp3'
-	var lyrics = {engArray, cnArray, pinyinArray, timesArray,songPath};
+	var lyrics = {};
+	var files = ['pinyin.txt',  'cn.txt', 'eng.txt', 'times.txt'];
+	files.forEach(function(item){
+		try{
+		 	lyrics[item] = fs.readFileSync('songs/'+ id + '/' + id + ' ' + item).toString().split("\n");
+		}
+		catch (err){
+			console.log(err)
+			lyrics[item] = "Error finding file";
+		}
+
+	})
+
+	lyrics['songPath'] = id + '/' + id +'.mp3'
 	res.end(JSON.stringify(lyrics, 'utf-8'));
 });
 
