@@ -6,15 +6,18 @@
 
 Features to include:
 
-PREVENT KIDS FROM HITTING ENTER ON THE INPUT BOX
+fix margin offset by a percentage instead
 
-all songs / directory listing
+- helper button to show keys:
+	- backspace to go back 5sec
+
+do regex on file grabbing  (\w*\.mp3) so you can name the songs
+
+refactor more code into jqueryCreating elements
 
 more options in collapse panel
 
-add a timestamp aref link to jump to time
-- helper button to show keys:
-	- backspace to go back 5sec
+
 
 ball that bounces on the words
 
@@ -22,14 +25,15 @@ ball that bounces on the words
 
 give better color scheme!!
 sublime:
-	background 272722
+	foreground: F8F8F2
+	background 272822
 	lighter gray 75715e
 	yellow e6db74
-	pink f92672
-	orange fd971f
-	green a6e22e
+	pink F92672
+	orange FD971F
+	green A6E22E
+	blue 66D9EF
 
-give mongo.js script to easily add new song
 	
 fix time frame of songs
 
@@ -56,3 +60,16 @@ better search results UI (so it doesn't take up the full computer screen)
 bigger searchbar
 
 3 checkbox collapsable after lyrics displayed
+
+
+Gradients:
+
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left right, #283048, #859398);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left right, #283048, #859398);
+   For Opera 11.1 to 12.0 
+  background: -moz-linear-gradient(left right, #283048, #859398);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #283048, #859398);
+  /* Standard syntax */

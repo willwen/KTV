@@ -1,41 +1,68 @@
+/**
+  General Stylings
+**/
+
+
+/*Set Border Box and Font
+  Border Box means elements should have padding and border included in the element's total width and height
+*/
+
 * {
   box-sizing: border-box;
-  font-family: Consolas,monaco,monospace;
-
+  font-family: Consolas, monaco, monospace;
 }
 
-#title{
+/*When Links are hovered over, give that funny pointer*/
+
+a {
+  cursor: pointer;
+}
+
+/*Give a Margin so the musicplayer has space*/
+
+body {
+  margin-bottom: 40px;
+}
+
+/**
+  Top Banner Stylings
+**/
+
+#title {
   text-align: center;
   width: 65%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-
-
-body{
-  margin-bottom:40px;
+/**
+  Search Bar Stylings
+**/
+.searchDiv{
+  display:block;
+  height: 40px;
+  width: 75%;
+  margin: 0 auto;
 }
 
-.gradient {
-  background: #283048; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left right, #283048 , #859398); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left right, #283048 , #859398); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left right, #283048 , #859398); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #283048 , #859398); /* Standard syntax */
+#songSearchInput {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 7px;
+  background-repeat: no-repeat;
+  padding: 8px 20px 8px 40px;
 }
 
-#lyricsContainer{
-  font-size: 19px;
-  visibility: hidden;
+.allSongsDiv {
   text-align: center;
-  color: #FFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#lyricsBody{
-  margin-top: 50px;
-  text-align: left;
-  display: inline-block;
-}
+/**
+  Results List Stylings
+**/
 
 #resultsList {
   list-style-type: none;
@@ -43,45 +70,14 @@ body{
   margin: 0;
   display: none;
 }
-
-.lineIndex{
-  font-size: 30px;
-  color: #f92672;
+ul {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-ul{
-  margin-left:10px;
-  margin-right:10px;
-}
-.displayLanguages{
-  font-weight: bold;
-  float: left;
-}
-.playbackOptions{
-  font-weight: bold;
-  float: right;
-  text-align: right;
-}
-.playbackOptions>div , .displayLanguages>div{
-  font-weight: normal;
-}
-
-
-
-#songSearchInput{
-    box-sizing: border-box;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 7px; 
-    background-repeat: no-repeat;
-    padding: 8px 20px 8px 40px;
-}
-
-
 #resultsList li a {
   border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
+  margin-top: -1px;
+  /* Prevent double borders */
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
@@ -89,26 +85,84 @@ ul{
   color: black;
   display: block
 }
-
 #resultsList li a.header {
   background-color: #e2e2e2;
   cursor: default;
 }
-
 #resultsList li a:hover:not(.header) {
   background-color: #eee;
 }
 
+/**
+  Options Stylings
+**/
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 35px;
-  background-color: #f5f5f5;
+#options {
+  margin-top: 10px;
+}
+.displayLanguages {
+  font-weight: bold;
+}
+.playbackOptions {
+  font-weight: bold;
+  text-align: right;
+}
+.playbackOptions>div, .displayLanguages>div {
+  font-weight: normal;
 }
 
+/**
+  Lyric Display Stylings
+**/
+
+.gradient {
+  background: #272822;
+
+}
+
+#lyricsBody {
+  font-size: 19px;
+  visibility: hidden;
+  color: #F8F8F2;
+  margin-top: 10px;
+  padding: 40px;
+}
+
+/**
+  Line Number Stylings
+**/
+
+.lineIndex {
+  font-size: 30px;
+  color: #66D9EF;
+}
+
+.lineAnchor:hover {
+  color: #FFF;
+}
+.tooltip-inner {
+  background-color: #FD971F;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+/**
+  Footer and Audio Player Stylings
+**/
+
+/*Display block because inline will tak eup the whole line
+need to define with of 90% so the margin knows how much to cut*/
+.audioContainer{
+  display:block;
+  margin: 0 auto;
+  width: 95%;
+}
+/*Fixed audio player at the bottom, taking up 90 of the screen*/
 #audioPlayer {
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  /* Set the fixed height of the footer here */
+  height:35px;
+  background-color: #f5f5f5;
 }

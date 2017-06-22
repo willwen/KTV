@@ -24,13 +24,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
 	<script>
-	window.jQuery || document.write('<script src="jquery.min.js">\x3C/script>')
+	   window.jQuery || document.write('<script src="jquery.min.js">\x3C/script>')
 	</script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script>
 	<script>
-	$.fn.modal || document.write('<script src="bootstrap.min.js">\x3C/script>')
+	   $.fn.modal || document.write('<script src="bootstrap.min.js">\x3C/script>')
 	</script>
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js">
 	</script>
@@ -42,58 +42,74 @@
 </head>
 <body>
 	<div class="hidden" id="bootstrapCssTest"></div>
-	<div class="jumbotron text-center">
-		<h1>Chinese Song Karaoke</h1>
-		<p>Work in Progress by Will Wen.</p><a href="https://github.com/willwen">GitHub</a>
-	</div>
-	<div class="container-fluid text-center">
-		<form class="form-inline">
-			<input class="form-control" id="songSearchInput" name="search" placeholder="Song Search..." size="50" type="text">
-		</form>
-	</div>
-	<ul class="list-group" id="resultsList"></ul>
 	<div class="container">
-		<div class = "row">
-			<div class="collapse" id="options">
-				<form onsubmit="return false;">
-					<span class = "displayLanguages"> Display Languages:
-						<div class="checkbox">
-							<label><input checked id="pinyinCB" type="checkbox"> PinYin</label>
-						</div>
-						<div class="checkbox">
-							<label><input checked id="cnCB" type="checkbox"> Chinese Char</label>
-						</div>
-						<div class="checkbox">
-							<label><input checked id="engCB" type="checkbox"> English</label>
-						</div>
-					</span>
-					<span class = "playbackOptions"> Playback Options:
-						<div class="checkbox">
-							<label><input checked id="wantScrolling" type="checkbox"> Scrolling</label>
-						</div>
-						<div class="checkbox">
-							<label><input checked id="lineNumbers" type="checkbox"> Line Numbers</label>
-						</div>
-					</span>
-				</form>
+		<div class="row">
+			<div class="col-xs-12 jumbotron text-center">
+				<h1>Chinese Songs Karaoke</h1>
+				<p>Work in Progress by Will Wen.</p><a href="https://github.com/willwen/KTV">GitHub</a>
 			</div>
 		</div>
 		<div class="row">
-			<h1 class="page-header" id="titleLine"></h1><br>
-			<div class="gradient col-lg-12 col-md-12 col-sm-12 col-xs-12" id="lyricsContainer">
-				<div id='lyricsBody'></div>
+			<div class = "searchDiv">
+				<form class="col-xs-12 center-text">
+					<input class="form-control" id="songSearchInput" name="search" placeholder="Song Search..." size="50" type="text">
+				</form>
 			</div>
 		</div>
-	</div><!--End container Div-->
-	<footer class="footer">
-		<div id="container">
-			<audio controls="" id="audioPlayer" preload="auto"></audio>
+		<div class = "clearfix"></div>
+		<div class = "row allSongsDiv">
+			<a id="allSongsAnchor">All Songs</a>
 		</div>
-	</footer>
+		<div class="row">
+			<ul class="list-group" id="resultsList"></ul>
+		</div>
+		<div class = "clearfix"></div>
+
+
+		<div class="row optionsMenu collapse" id="options">
+			<div class = "displayLanguages col-xs-6">
+				<form onsubmit="return false;">
+					<span>Display Languages:</span>
+					<div class="checkbox">
+						<span><label><input checked id="pinyinCB" type="checkbox">PinYin</label></span>
+					</div><span></span>
+					<div class="checkbox">
+						<span><label><input checked id="cnCB" type="checkbox">Chinese Char</label></span>
+					</div><span></span>
+					<div class="checkbox">
+						<span><label><input checked id="engCB" type="checkbox">English</label></span></div>
+				</form>
+			</div>
+			<div class = "playbackOptions col-xs-6">
+				<form onsubmit="return false;">
+					<span>Playback Options:</span>
+					<div class="checkbox">
+						<span><label><input checked id="wantScrolling" type="checkbox">Scrolling</label></span>
+					</div>
+					<div class="checkbox">
+						<span><label><input checked id="lineNumbers" type="checkbox">Line Numbers</label></span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class = "clearfix"></div>
+
+		<div class="row">
+			<h1 class=" col-xs-12 page-header" id="titleLine"></h1><br>
+		</div>
+		<div class="row">
+			<div class = "gradient col-xs-12" id='lyricsBody'></div>
+		</div>
+
+	</div>
+	<div class="audioContainer">
+		<audio controls="true" id="audioPlayer"></audio>
+	</div>
+
 	<script type="text/javascript">
-	       if ($('#bootstrapCssTest').is(':visible') === true) {
-	           $('<link href="bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
-	       }
+	          if ($('#bootstrapCssTest').is(':visible') === true) {
+	              $('<link href="bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
+	          }
 	</script>
 </body>
 </html>
