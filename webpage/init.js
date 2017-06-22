@@ -109,9 +109,9 @@ function updateDiv(responseObj){
 			//the lyrics take up the right side
 			var lyricsDiv = $("<div></div>" , {class: 'col-xs-11', id: genericLinePrefix + lineNumber});
 				//create three divs for the three languages and append them to the lyrics
-				var pinyinLine = $("<div></div>" , {class: pinyinLyricsLineClass + "col-xs-12"}).text(pinyin[i]);
-				var cnLine = $("<div></div>" , {class: cnCharLyricsLineClass + "col-xs-12"}).text(cnChar[i]);
-				var engLine = $("<div></div>" , {class: englishLyricsLineClass + "col-xs-12"}).text(eng[i]);
+				var pinyinLine = $("<div></div>" , {class: pinyinLyricsLineClass + " " +  "col-xs-12"}).text(pinyin[i]);
+				var cnLine = $("<div></div>" , {class: cnCharLyricsLineClass + " " + "col-xs-12"}).text(cnChar[i]);
+				var engLine = $("<div></div>" , {class: englishLyricsLineClass + " " + "col-xs-12"}).text(eng[i]);
 				lyricsDiv.append(pinyinLine);
 				lyricsDiv.append(cnLine);
 				lyricsDiv.append(engLine);
