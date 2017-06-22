@@ -189,9 +189,9 @@ function updateLine(){
 	
 	if (time >= convertedToSeconds)
 	{
-		$("#" + genericLinePrefix + (currentLine - 2)).css('color','#FFF')
 		$("#" + genericLinePrefix + (currentLine - 1)).css('color','#FFF')
-		$("#" + genericLinePrefix + currentLine).css('color','#a6e22e')
+		$("#" + genericLinePrefix + (currentLine )).css('color','#FFF')
+		$("#" + genericLinePrefix + (currentLine + 1)).css('color','#a6e22e')
 		// $("#line" + (currentLine + 1)).css('color','#A7C520')
 		//docs: https://github.com/flesler/jquery.scrollTo
 		if(wantScroll)

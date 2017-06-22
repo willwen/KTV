@@ -6,6 +6,8 @@
 
 Features to include:
 
+PREVENT KIDS FROM HITTING ENTER ON THE INPUT BOX
+
 all songs / directory listing
 
 more options in collapse panel
