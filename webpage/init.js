@@ -27,19 +27,25 @@ $(document).ready(function(){
     
     setCheckBoxListeners();
 });
+
 function scaleScrolling(){
    var winWidth =  $(window).width();
-   if(winWidth < 768 ){
-      console.log('Window Width: '+ winWidth + 'class used: col-xs');
-      scrollingOffset = -170;
-   }else if( winWidth <= 991){
-      console.log('Window Width: '+ winWidth + 'class used: col-sm');
-    	scrollingOffset = -270;
-   }else if( winWidth <= 1199){
-      console.log('Window Width: '+ winWidth + 'class used: col-md');
-   }else{
-      console.log('Window Width: '+ winWidth + 'class used: col-lg');
-   }
+   var winHeight = $(window).height();
+   console.log("window height: " + $(window).height());
+   scrollingOffset =-1 * Math.round(winHeight * .35);
+   // if(winWidth < 768 ){
+   //    console.log('Window Width: '+ winWidth + 'class used: col-xs');
+   //    scrollingOffset = -170;
+   // }else if( winWidth <= 991){
+   //    console.log('Window Width: '+ winWidth + 'class used: col-sm');
+   //  	scrollingOffset = -270;
+   // }else if( winWidth <= 1199){
+   //    console.log('Window Width: '+ winWidth + 'class used: col-md');
+   // }else{
+   //    console.log('Window Width: '+ winWidth + 'class used: col-lg');
+  	// 	scrollingOffset = -350;
+
+   // }
 }
 
 var scrollingOffset = -400;
@@ -133,26 +139,27 @@ function updateDiv(responseObj){
 	var lineNumber = 1;
 	for (i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
 		//each lyric line takes up a row
-		var rowDiv = $("<div></div>" , {class: "row lyricLine"});
+		var rowDiv = $("<div></div>" , {class: "row lyricLine equal"});
 		//the line number takes the left side of that row
-			var lineNumberDiv = $("<div></div>" , {class: "col-xs-1 lineIndex"});
+			var lineNumberDiv = $("<div></div>" , {class: "col-xs-1 lineIndex vertical-center"});
 				var lineNumberAnchor = $("<a></a>", {id : "lineNumber"+ lineNumber , class: "lineAnchor",  "data-toggle": "tooltip"}).text(lineNumber);
 
 				lineNumberDiv.append(lineNumberAnchor);			
 			rowDiv.append(lineNumberDiv);
 			//the lyrics take up the right side
-			var lyricsDiv = $("<div></div>" , {class: "col-xs-11 lyricWords", id: genericLinePrefix + lineNumber});
+			var lyricsDiv = $("<div></div>" , {class: "col-xs-10 lyricWords", id: genericLinePrefix + lineNumber});
 				//create three divs for the three languages and append them to the lyrics
-				var pinyinLine = $("<div></div>" , {class: pinyinLyricsLineClass + " " +  "col-xs-12"}).text(pinyin[i]);
-				var cnLine = $("<div></div>" , {class: cnCharLyricsLineClass + " " + "col-xs-12"}).text(cnChar[i]);
-				var engLine = $("<div></div>" , {class: englishLyricsLineClass + " " + "col-xs-12"}).text(eng[i]);
+				//" " +  "col-xs-12"
+				var pinyinLine = $("<div></div>" , {class: pinyinLyricsLineClass}).text(pinyin[i]);
+				var cnLine = $("<div></div>" , {class: cnCharLyricsLineClass}).text(cnChar[i]);
+				var engLine = $("<div></div>" , {class: englishLyricsLineClass}).text(eng[i]);
 				lyricsDiv.append(pinyinLine);
 				lyricsDiv.append(cnLine);
 				lyricsDiv.append(engLine);
 			rowDiv.append(lyricsDiv);
 
 		$("#" + lyricsBodyID).append(rowDiv);
-		var lineBreak = $("<br/>")
+		var lineBreak = $("<br/>", {class: "clearfix"});
 		$("#" + lyricsBodyID).append(lineBreak);
 		lineNumberAnchor.on("click", {"line":i}, function (event){
 				//wipe color off current ones:
@@ -221,6 +228,7 @@ function httpPostAsync(path, data, callback){
 var currentLine = 0;
 
 function updateLine(){
+	console.log("updating line");
 	if(times == undefined)
 		return;
 	var convertedToSeconds = timestampToSeconds(times[currentLine]);
@@ -237,9 +245,11 @@ function updateLine(){
 		$("#" + genericLinePrefix + (currentLine + 1)).css('color', highlightColor);
 
 		//docs: https://github.com/flesler/jquery.scrollTo
+		console.log("scrolling val: " + scrollingOffset);
+		currentLine++;
+
 		if(wantScroll)
   			$(window).scrollTo($("#" + genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 1000, offset :{top :scrollingOffset}});
-		currentLine++;
 	}
 }
 
@@ -250,4 +260,26 @@ function addTimeUpdateListener(){
 
 function timestampToSeconds(timestamp){
 	return Math.floor(timestamp/100) * 60 + timestamp%100;
+}
+
+function toggleLineLyrics(lineNum){
+	
+	var isPinYin = $("#" + cnCharCheckBoxID).is(':checked');
+	var isCnChar = $("#" + cnCharCheckBoxID).is(':checked');
+	var isEng = $("#" + cnCharCheckBoxID).is(':checked');
+
+	//if all are currently displayed,
+	//this click will hide all except cn Char
+	if(isPinYin && isCnChar && isEng){
+		$("#" + genericLinePrefix + lineNum).children("." + pinyinLyricsLineClass).css("display", "none");
+		$("#" + genericLinePrefix + lineNum).children("." + englishLyricsLineClass).css("display", "none");
+	}
+	else{
+		//if pinyin or english is hidden
+		//this click will show all
+		$("#" + genericLinePrefix + lineNum).children("." + pinyinLyricsLineClass).css("display", "block");
+		$("#" + genericLinePrefix + lineNum).children("." + cnCharLyricsLineClass).css("display", "block");
+		$("#" + genericLinePrefix + lineNum).children("." + englishLyricsLineClass).css("display", "block");
+	}
+	
 }

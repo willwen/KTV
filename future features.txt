@@ -6,11 +6,10 @@
 
 Features to include:
 
-text lines are too large / line numbers are too clunky on small screen
+Invalid regular expression: /.*[./: Unterminated character class
 
-make the line number the center of the lyric line, and maybe add a right border
-
-double tap lyric to show all langs
+single tap lyric to show all langs
+	F92672
 
 - helper button to show keys:
 	- backspace to go back 5sec
@@ -31,13 +30,13 @@ give better color scheme!!
 sublime:
 	foreground: F8F8F2
 	background 272822
-	lighter gray 75715e
+	white 75715e
 	yellow e6db74
 	pink F92672
 	orange FD971F
 	green A6E22E
 	blue 66D9EF
-
+	grey 75715E
 	
 fix time frame of songs
 

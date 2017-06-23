@@ -27,12 +27,12 @@ body {
 /**
   Top Banner Stylings
 **/
-
-#title {
-  text-align: center;
-  width: 65%;
-  margin: 0 auto;
+.welcome{
+  font-size: 2em;
 }
+.githubLink{
+  font-size: .6em;
+ }
 
 /**
   Search Bar Stylings
@@ -46,7 +46,7 @@ body {
 
 #songSearchInput {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1.3em;
   background-color: white;
   background-image: url('searchicon.png');
   background-position: 10px 7px;
@@ -58,6 +58,7 @@ body {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 1.4em;
 }
 
 /**
@@ -69,6 +70,7 @@ body {
   padding: 0;
   margin: 0;
   display: none;
+  font-size: 1.4em;
 }
 ul {
   margin-left: 10px;
@@ -81,7 +83,7 @@ ul {
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.8em;
   color: black;
   display: block
 }
@@ -121,19 +123,56 @@ ul {
 }
 
 #lyricsBody {
-  font-size: 19px;
   visibility: hidden;
   color: #F8F8F2;
   margin-top: 10px;
   padding: 40px;
 }
+@media(max-width:767px){#lyricsBody{
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 10px;
+}}
+@media(min-width:768px){#lyricsBody{
+    font-size: 1.3em;
+}}
+@media(min-width:992px){#lyricsBody{
+    font-size: 1.5em;
+}}
+@media(min-width:1200px){#lyricsBody{
+    font-size: 1.7em;
+}}
 
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
 /**
   Line Number Stylings
 **/
 
 .lineIndex {
-  font-size: 30px;
+/*  border-left: 6px solid red */
+  border-right: 5px solid #75715E;
+  font-size: 1.5em;
+
+  background: #272822;
+}
+@media(max-width:767px){.lineIndex{
+  font-size: 1em;
+  border-right-width: 3px;
+  padding-right: 24px;
+}}
+
+/*https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
+*/
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.lineAnchor{
   color: #66D9EF;
 }
 
@@ -142,8 +181,8 @@ ul {
 }
 .tooltip-inner {
   background-color: #FD971F;
-  color: #FFFFFF;
-  font-size: 20px;
+  color: #272822;
+  font-size: 1.75em;
 }
 
 /**
