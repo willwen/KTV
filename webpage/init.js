@@ -21,24 +21,26 @@ $(document).ready(function(){
     })
 
     //https://stackoverflow.com/questions/25783702/how-to-determine-which-grid-option-is-currently-used
-    $(window).on('resize',function(){
-       var winWidth =  $(window).width();
-       if(winWidth < 768 ){
-          console.log('Window Width: '+ winWidth + 'class used: col-xs');
-          scrollingOffset = -200;
-       }else if( winWidth <= 991){
-          console.log('Window Width: '+ winWidth + 'class used: col-sm');
-       }else if( winWidth <= 1199){
-          console.log('Window Width: '+ winWidth + 'class used: col-md');
-       }else{
-          console.log('Window Width: '+ winWidth + 'class used: col-lg');
-       }
-    });
-
+    $(window).on('resize', scaleScrolling);
+    scaleScrolling();
 
     
     setCheckBoxListeners();
 });
+function scaleScrolling(){
+   var winWidth =  $(window).width();
+   if(winWidth < 768 ){
+      console.log('Window Width: '+ winWidth + 'class used: col-xs');
+      scrollingOffset = -170;
+   }else if( winWidth <= 991){
+      console.log('Window Width: '+ winWidth + 'class used: col-sm');
+    	scrollingOffset = -270;
+   }else if( winWidth <= 1199){
+      console.log('Window Width: '+ winWidth + 'class used: col-md');
+   }else{
+      console.log('Window Width: '+ winWidth + 'class used: col-lg');
+   }
+}
 
 var scrollingOffset = -400;
 
