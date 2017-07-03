@@ -20,6 +20,10 @@ refactor more code into jqueryCreating elements
 
 more options in collapse panel
 
+collapse all songs once clicked on
+
+display time stamp next to the lyrics?
+
 
 
 ball that bounces on the words

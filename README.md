@@ -10,9 +10,9 @@ How to install on local dev environment:
 5) do a "npm install"
 6) Install Mongodb from https://www.mongodb.com/
 7) add the Mongodb executables to your System Path (computer , properties, advanced system settings, environment variables...)
-8) In Git Bash, run "mongod --dbpath=$KTV/KTV/data". Keep this terminal running for the duration of your development
+8) In Git Bash, run "mongod --dbpath data/". Keep this terminal running for the duration of your development
 9) In another Git Bash terminal, import the songs.json file:
-  first go to "mongo script" directory: "cd mongo\ script"
+  first go to "mongo script" directory: "cd mongo\ script/"
   "mongoimport --db songs --collection songs --file songs.json"
   exit back to KTV: "cd .."
 10) In index.js, uncomment out line 10: "var mongoURL = "mongodb://localhost:27017/songs", and comment out line 11.
