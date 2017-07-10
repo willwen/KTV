@@ -1,35 +1,20 @@
-^ sticky, always need to refactor code >_<
-	try catch statements to prevent server crashes
-		liek when you cant find the file "4 eng.txt"
-		
-*fix scrolling time back shouldnt break the text highlighting
-
-Features to include:
-
-Invalid regular expression: /.*[./: Unterminated character class
-
-single tap lyric to show all langs
-	F92672
-
-- helper button to show keys:
-	- backspace to go back 5sec
-
-do regex on file grabbing  (\w*\.mp3) so you can name the songs
-
-refactor more code into jqueryCreating elements
-
-more options in collapse panel
-
-collapse all songs once clicked on
-
-display time stamp next to the lyrics?
+0 add despacito :)
+1 allow clicking (anchor jumping) on empty lines
+2 Invalid regular expression: /.*[./: Unterminated character class
+3 do regex on file grabbing  (\w*\.mp3) so you can name the songs
+4 single tap lyric to show all langs
+5 helper button to show keys:
+6 fix scrolling time back shouldnt break the text highlighting
+7 add album image to bottom right
+8 test on chrome mobile broswer (some empty unused whitespace_
 
 
-
+Refactor to react
 ball that bounces on the words
+	look at previously used karaoke formats
+be able to add notes and recordings
 
-
-
+----------------------------------------
 give better color scheme!!
 sublime:
 	foreground: F8F8F2
@@ -41,33 +26,6 @@ sublime:
 	green A6E22E
 	blue 66D9EF
 	grey 75715E
-	
-fix time frame of songs
-
-
-- adjust speed of audio player?
-
-test on safari broswers (specifically mobile)
-	- verified?
-
-
-
-add more songs to database
-
-be able to add notes and recordings
-
-
-
-
-UI:
-Add TITLE AND AUTHOR PLS?!?!
-add album image to bottom right
-
-better search results UI (so it doesn't take up the full computer screen)
-bigger searchbar
-
-3 checkbox collapsable after lyrics displayed
-
 
 Gradients:
 
