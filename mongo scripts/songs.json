@@ -1,6 +1,7 @@
 {"_id":{"$oid":"594073f0f7e1c60d1688a372"},"title_pinyin":"pingfanzhilu","cn_char":"平凡之路","file_name":"1","artist":"朴树","artist_pinyin":"pushu","searchTerm":"pingfanzhilu 平凡之路 朴树 pushu"}
 {"_id":{"$oid":"59407711f7e1c60d1688a373"},"title_pinyin":"chengdu","cn_char":"成都","file_name":"2","artist":"赵雷","artist_pinyin":"zhaolei","searchTerm":"chengdu 成都 赵雷 zhaolei"}
 {"_id":{"$oid":"59473640a6f4478fa5b78752"},"title_pinyin":"piaoxiangbeifang","cn_char":"漂向北方","file_name":"3","artist":"黃明志","artist_pinyin":"Namewee","searchTerm":"piaoxiangbeifang 漂向北方 黃明志 Namewee"}
+<<<<<<< HEAD
 {"_id":{"$oid":"594aebb257cb7adde337b1a8"},"title_pinyin":"lanlianhua","cn_char":"蓝莲花","file_name":"4","artist":"许巍","artist_pinyin":"xuwei","searchTerm":"lanlianhua 蓝莲花 许巍 xuwei"}
 {"_id":{"$oid":"594aebd757cb7adde337b1a9"},"title_pinyin":"cengjingdeni","cn_char":"曾经的你","file_name":"5","artist":"许巍","artist_pinyin":"xuwei","searchTerm":"cengjingdeni 曾经的你 许巍 xuwei"}
 {"_id":{"$oid":"5962cf33434ad49d87d3cb1d"},"title_pinyin":"Despacito","cn_char":"Despacito","file_name":"7","artist":"Luis Fonsi feat. Daddy Yankee","artist_pinyin":"","searchTerm":"Despacito Luis Fonsi Daddy Yankee"}
