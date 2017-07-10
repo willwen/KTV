@@ -3,4 +3,5 @@
 {"_id":{"$oid":"59473640a6f4478fa5b78752"},"title_pinyin":"piaoxiangbeifang","cn_char":"漂向北方","file_name":"3","artist":"黃明志","artist_pinyin":"Namewee","searchTerm":"piaoxiangbeifang 漂向北方 黃明志 Namewee"}
 {"_id":{"$oid":"594aebb257cb7adde337b1a8"},"title_pinyin":"lanlianhua","cn_char":"蓝莲花","file_name":"4","artist":"许巍","artist_pinyin":"xuwei","searchTerm":"lanlianhua 蓝莲花 许巍 xuwei"}
 {"_id":{"$oid":"594aebd757cb7adde337b1a9"},"title_pinyin":"cengjingdeni","cn_char":"曾经的你","file_name":"5","artist":"许巍","artist_pinyin":"xuwei","searchTerm":"cengjingdeni 曾经的你 许巍 xuwei"}
+{"title_pinyin": "zaijian", n_char": "再见", file_name": "6", "artist": "G.E.M. 邓紫棋", "artist_pinyin": "G.E.M. dengziqi ", "searchTerm": "gem G.E.M. dengziqi zaijian 再见 邓紫棋"} 
 {"_id":{"$oid":"5962cf33434ad49d87d3cb1d"},"title_pinyin":"Despacito","cn_char":"Despacito","file_name":"7","artist":"Luis Fonsi feat. Daddy Yankee","artist_pinyin":"","searchTerm":"Despacito Luis Fonsi Daddy Yankee"}
