@@ -31,21 +31,8 @@ $(document).ready(function(){
 function scaleScrolling(){
    var winWidth =  $(window).width();
    var winHeight = $(window).height();
-   console.log("window height: " + $(window).height());
+   //console.log("window height: " + $(window).height());
    scrollingOffset =-1 * Math.round(winHeight * .35);
-   // if(winWidth < 768 ){
-   //    console.log('Window Width: '+ winWidth + 'class used: col-xs');
-   //    scrollingOffset = -170;
-   // }else if( winWidth <= 991){
-   //    console.log('Window Width: '+ winWidth + 'class used: col-sm');
-   //  	scrollingOffset = -270;
-   // }else if( winWidth <= 1199){
-   //    console.log('Window Width: '+ winWidth + 'class used: col-md');
-   // }else{
-   //    console.log('Window Width: '+ winWidth + 'class used: col-lg');
-  	// 	scrollingOffset = -350;
-
-   // }
 }
 
 var scrollingOffset = -400;
@@ -228,7 +215,7 @@ function httpPostAsync(path, data, callback){
 var currentLine = 0;
 
 function updateLine(){
-	console.log("updating line");
+	//console.log("updating line");
 	if(times == undefined)
 		return;
 	var convertedToSeconds = timestampToSeconds(times[currentLine]);
@@ -245,7 +232,7 @@ function updateLine(){
 		$("#" + genericLinePrefix + (currentLine + 1)).css('color', highlightColor);
 
 		//docs: https://github.com/flesler/jquery.scrollTo
-		console.log("scrolling val: " + scrollingOffset);
+		//console.log("scrolling val: " + scrollingOffset);
 		currentLine++;
 
 		if(wantScroll)
