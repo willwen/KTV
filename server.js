@@ -14,6 +14,7 @@ var app = express();
 app.use(express.static('webpage'))
 app.use(express.static('songs'))
 app.use(express.static('favicons'))
+app.use(express.static('dist'))
 
 
 app.use(bodyParser.urlencoded({

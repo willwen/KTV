@@ -1,5 +1,5 @@
 
-class SongLyrics extends React.Component {
+export default class SongLyrics extends React.Component {
   render() {
     return (
 		<div className="row">

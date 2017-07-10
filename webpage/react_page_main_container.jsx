@@ -1,4 +1,15 @@
-class MainContainer extends React.Component {
+import ReactDOM from 'react-dom';
+
+import PageHeader from './react_page_header.jsx'
+import SearchBar from './react_search_bar.jsx'
+import SearchResults from './react_search_results.jsx'
+import OptionsMenu from './react_options_menu.jsx'
+import SongTitle from './react_song_title.jsx'
+import SongLyrics from './react_song_lyrics_body.jsx'
+import AudioPlayer from './react_audio_player.jsx'
+
+
+export default class MainContainer extends React.Component {
 	constructor(){
 		super();
 		this.state={

@@ -1,4 +1,4 @@
-class SongTitle extends React.Component {
+export default class SongTitle extends React.Component {
   render() {
     return (
 		<div className="row">

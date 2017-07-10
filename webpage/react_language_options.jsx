@@ -1,4 +1,4 @@
-class LanguageOptions extends React.Component {
+export default class LanguageOptions extends React.Component {
   modifyOptions(e){
   	e.preventDefault();
   }

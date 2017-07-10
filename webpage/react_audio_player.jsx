@@ -1,5 +1,5 @@
 
-class AudioPlayer extends React.Component {
+export default class AudioPlayer extends React.Component {
   	constructor(props, context){
   		super(props, context);
   		this.highlightLine = this.highlightLine.bind(this);

@@ -1,4 +1,4 @@
-class PlaybackOptions extends React.Component {
+export default class PlaybackOptions extends React.Component {
 	modifyOptions(e){
 		e.preventDefault();
 	}

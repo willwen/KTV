@@ -1,4 +1,4 @@
-class SearchBar extends React.Component {
+export default class SearchBar extends React.Component {
   render() {
     return (
 		<div className="row">
