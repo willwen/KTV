@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//set a hook that runs every time a audio player steps
-	addTimeUpdateListener();
+	// addTimeUpdateListener();
 
 	window.addEventListener("keydown", function(e) {
 	  if(e.keyCode == 32 && e.target == document.body) {
@@ -176,7 +176,7 @@ function updateDiv(responseObj){
 			seconds = "0" + seconds;
 		var time = minutes + ":" + seconds;
 		//initialize tooltip according to bootstrap.js tooltips
-		lineNumberAnchor.tooltip({title: time});
+		// lineNumberAnchor.tooltip({title: time});
 		lineNumber++;
 	}
 	updateAudioPlayer(responseObj.songPath);
@@ -195,7 +195,7 @@ function showResults(responseObj){
 		$("#" + resultsListID).append(li);
 		$("#" + element.file_name).click(function(){
 			$("#" + titleLineID).text(element.cn_char + " - " + element.artist);
-			$("#" + optionsID).collapse('show');
+			// $("#" + optionsID).collapse('show');
 			//reset song line
 			currentLine = 0;
 			httpGetAsync("song", {id: element.file_name}, updateDiv);

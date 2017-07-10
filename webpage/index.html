@@ -4,6 +4,7 @@
 	<title>Lyrics Database</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
 	<link href="/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
 	<link href="/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
 	<link href="/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
@@ -23,93 +24,41 @@
 	<meta content="#ffffff" name="theme-color">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
-	<script>
-	   window.jQuery || document.write('<script src="jquery.min.js">\x3C/script>')
-	</script>
+
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script>
-	<script>
-	   $.fn.modal || document.write('<script src="bootstrap.min.js">\x3C/script>')
-	</script>
 	<script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js">
 	</script>
+    <!--ES6 and JSX Transpiling -->
+    <script src="https://unpkg.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/remarkable@1.7.1/dist/remarkable.min.js"></script>
+
+	
+	
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script src="const.js">
-	</script>
-	<script src="init.js">
-	</script>
 </head>
 <body>
-	<div class="hidden" id="bootstrapCssTest"></div>
-	<div class="container">
-		<div class="row">
-			<div class="welcome col-xs-12 jumbotron text-center">
-				<h1>Chinese Songs Karaoke</h1>
-				<p>Work in Progress by Will Wen.</p><a href="https://github.com/willwen/KTV" class = "githubLink">GitHub</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class = "searchDiv">
-				<form class="col-xs-12 center-text">
-					<input class="form-control" id="songSearchInput" name="search" placeholder="Song Search..." size="50" type="text">
-				</form>
-			</div>
-		</div>
-		<div class = "clearfix"></div>
-		<div class = "row allSongsDiv">
-			<a id="allSongsAnchor">All Songs</a>
-		</div>
-		<div class="row">
-			<ul class="list-group" id="resultsList"></ul>
-		</div>
-		<div class = "clearfix"></div>
+ 	<div id="content"></div>
+ 	<script type="text/babel" src="react_audio_player.jsx"></script>
 
+ 	<script type="text/babel" src="react_song_lyrics_body.jsx"></script>
 
-		<div class="row optionsMenu collapse" id="options">
-			<div class = "displayLanguages col-xs-6">
-				<form onsubmit="return false;">
-					<span>Display Languages:</span>
-					<div class="checkbox">
-						<span><label><input checked id="pinyinCB" type="checkbox">PinYin</label></span>
-					</div><span></span>
-					<div class="checkbox">
-						<span><label><input checked id="cnCB" type="checkbox">Chinese Char</label></span>
-					</div><span></span>
-					<div class="checkbox">
-						<span><label><input checked id="engCB" type="checkbox">English</label></span></div>
-				</form>
-			</div>
-			<div class = "playbackOptions col-xs-6">
-				<form onsubmit="return false;">
-					<span>Playback Options:</span>
-					<div class="checkbox">
-						<span><label><input checked id="wantScrolling" type="checkbox">Scrolling</label></span>
-					</div>
-					<div class="checkbox">
-						<span><label><input checked id="lineNumbers" type="checkbox">Line Numbers</label></span>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class = "clearfix"></div>
+ 	<script type="text/babel" src="react_song_title.jsx"></script>
 
-		<div class="row">
-			<h1 class=" col-xs-12 page-header" id="titleLine"></h1><br>
-		</div>
-		<div class="row">
-			<div class = "gradient col-xs-12" id='lyricsBody'></div>
-		</div>
+	<script type="text/babel" src="react_language_options.jsx"></script>
+	<script type="text/babel" src="react_playback_options.jsx"></script>
+	<script type="text/babel" src="react_options_menu.jsx"></script>
 
-	</div>
-	<div class="audioContainer">
-		<audio controls="true" id="audioPlayer"></audio>
-	</div>
-
-	<script type="text/javascript">
-	          if ($('#bootstrapCssTest').is(':visible') === true) {
-	              $('<link href="bootstrap.min.css" rel="stylesheet" type="text/css" />').appendTo('head');
-	          }
-	</script>
+	<script type="text/babel" src="react_search_results.jsx"></script>
+ 	<script type="text/babel" src="react_search_bar.jsx"></script>
+	<script type="text/babel" src="react_page_header.jsx"></script>
+    <script type="text/babel" src="react_page_main_container.jsx"></script>
+	
+	<script src="const.js"></script>
+	<script src="init.js"></script>
 </body>
 </html>
