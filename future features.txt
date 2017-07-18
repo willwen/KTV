@@ -1,12 +1,16 @@
-0 add despacito :)
+0 Mongodb to contain all your songs/
 1 allow clicking (anchor jumping) on empty lines
 2 Invalid regular expression: /.*[./: Unterminated character class
 3 do regex on file grabbing  (\w*\.mp3) so you can name the songs
 4 single tap lyric to show all langs
 5 helper button to show keys:
+	legend on side, space to pause play, x to disable scrolling
 6 fix scrolling time back shouldnt break the text highlighting
 7 add album image to bottom right
 8 test on chrome mobile broswer (some empty unused whitespace_
+9 disable click on newline entries
+10 bug when they user changes time in the bottom player
+11 header search bar to make searching easy
 
 
 Refactor to react
