@@ -17,9 +17,7 @@ app.use(express.static('favicons'))
 app.use(express.static('dist'))
 
 
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(bodyParser.json());
 
 app.listen(process.env.PORT || 8080, function() {
     console.log('Listening on port 8080!')
@@ -48,7 +46,7 @@ app.get('/song', function (req, res){
 app.post('/query', function (req,res){
 	var MongoClient = mongodb.MongoClient;
 	var url = mongoURL
-
+	
 	//dont inject me...
 	var cleansedQuery = xssfilters.inHTMLData(req.body.search);
 	console.log(cleansedQuery);

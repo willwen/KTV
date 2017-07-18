@@ -21,5 +21,5 @@ module.exports = {
   new webpack.ProvidePlugin({
     "React": "react",
   }),
-  ]
+  ],
 };﻿

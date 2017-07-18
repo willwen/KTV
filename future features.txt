@@ -7,7 +7,7 @@
 6 fix scrolling time back shouldnt break the text highlighting
 7 add album image to bottom right
 8 test on chrome mobile broswer (some empty unused whitespace_
-
+9 results list should highlight what text matched (regex)
 
 Refactor to react
 ball that bounces on the words

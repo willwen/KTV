@@ -10,10 +10,10 @@ $(document).ready(function(){
 	});
 
 
-	$("#" + searchBarID).keyup(function(){
-		$("#" + resultsListID).css("display", "inline");
-		httpPostAsync("query", {search: $("#" + searchBarID).val()}, showResults);
-    });
+	// $("#" + searchBarID).keyup(function(){
+	// 	$("#" + resultsListID).css("display", "inline");
+	// 	httpPostAsync("query", {search: $("#" + searchBarID).val()}, showResults);
+ //    });
 
     $("#" + allSongsAnchorID).click(function(){
 		$("#" + resultsListID).css("display", "inline");
