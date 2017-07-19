@@ -1,40 +1,47 @@
-const searchBarID = "songSearchInput";
-const resultsListID = "resultsList";
+function timestampToSeconds(timestamp){
+	return Math.floor(timestamp/100) * 60 + timestamp%100;
+}
 
-const allSongsAnchorID = "allSongsAnchor";
+const ConstsClass = {
+	searchBarID : "songSearchInput",
+	resultsListID : "resultsList",
 
-const titleLineID = "titleLine"
+	allSongsAnchorID : "allSongsAnchor",
 
-
-//Checkboxes:
-//langauges
-const pinyinCheckBoxID = "pinyinCB";
-const cnCharCheckBoxID = "cnCB";
-const englishCheckBoxID = "engCB";
-//options:
-const optionsID = "options"
-const wantScrollCheckBoxID = "wantScrolling";
-const wantLineNumbersCheckBoxID= "lineNumbers";
+	titleLineID : "titleLine",
 
 
-const lyricsBodyID = "lyricsBody";
-
-//lyricLeft
-const lineNumberID= "lineIndex";
-
-//lyricRight Lines: pinyin, cn, english
-const pinyinLyricsLineClass = "pinyinLine";
-const cnCharLyricsLineClass = "cnLine";
-const englishLyricsLineClass = "engLine";
-
-
+	//Checkboxes:
+	//langauges
+	pinyinCheckBoxID : "pinyinCB",
+	cnCharCheckBoxID : "cnCB",
+	englishCheckBoxID : "engCB",
+	//options:
+	optionsID : "options",
+	wantScrollCheckBoxID : "wantScrolling",
+	wantLineNumbersCheckBoxID: "lineNumbers",
 
 
-const genericLinePrefix = "line";
+	lyricsBodyID : "lyricsBody",
+
+	//lyricLeft
+	lineNumberID: "lineIndex",
+
+	//lyricRight Lines: pinyin, cn, english
+	pinyinLyricsLineClass : "pinyinLine",
+	cnCharLyricsLineClass : "cnLine",
+	englishLyricsLineClass : "engLine",
 
 
-const audioPlayerID = "audioPlayer";
 
-//colors
-const foregroundColor = "#F8F8F2"
-const highlightColor = "#a6e22e"
+
+	genericLinePrefix : "line",
+
+
+	audioPlayerID : "audioPlayer",
+
+	//colors
+	foregroundColor : "#F8F8F2",
+	highlightColor : "#a6e22e"
+}
+export default {ConstsClass, timestampToSeconds}

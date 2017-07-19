@@ -12,10 +12,11 @@ export default class SearchPanel extends React.Component {
             }
 		}
 		this.showResults = this.showResults.bind(this);
+		this.requestData = this.requestData.bind(this);
+
 	}
 
 	sendAjaxSearch(queryText){
-		// console.log(queryText);
 		axios.post("query", {'search': queryText} ).then(this.showResults).catch(error => console.log(error));;
 
 	}
@@ -27,17 +28,24 @@ export default class SearchPanel extends React.Component {
 		e.preventDefault();
 		axios.post("query", {'search': ""} ).then(this.showResults).catch(error => console.log(error));;
 	}
-  render() {
-    return (
-    	<div>
-	  	<SearchBar onTextChanged = {this.sendAjaxSearch.bind(this)}/>
-	  	<div className = "clearfix"></div>
-		<div className = "row allSongsDiv">
-			<a id="allSongsAnchor" onClick={this.retrieveAll.bind(this)}>All Songs</a>
-		</div>
-	  	<SearchResults results={this.state.dbResults} styling = {this.state.resultsStyling}/>
-		<div className = "clearfix"></div>
-		</div>
-    );
-  }
+
+	requestData(id, title, artist){
+		this.setState({resultsStyling: {display: "none"}});
+		console.log("results shoudl be hidden");
+		this.props.getData(id, title, artist);
+	}
+
+    render() {
+    	return (
+	    	<div>
+		  	<SearchBar onTextChanged = {this.sendAjaxSearch.bind(this)}/>
+		  	<div className = "clearfix"></div>
+			<div className = "row allSongsDiv">
+				<a id="allSongsAnchor" onClick={this.retrieveAll.bind(this)}>All Songs</a>
+			</div>
+		  	<SearchResults results={this.state.dbResults} styling = {this.state.resultsStyling} fetchSongData={this.requestData}/>
+			<div className = "clearfix"></div>
+			</div>
+	    );
+    }
 }
