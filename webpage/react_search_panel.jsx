@@ -31,7 +31,6 @@ export default class SearchPanel extends React.Component {
 
 	requestData(id, title, artist){
 		this.setState({resultsStyling: {display: "none"}});
-		console.log("results shoudl be hidden");
 		this.props.getData(id, title, artist);
 	}
 
