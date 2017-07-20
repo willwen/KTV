@@ -1,6 +1,7 @@
-import ConstsClass from './const.js'
-import timestampToSeconds from './const.js'
+import Constants from './const.js'
 import $ from 'jquery'
+import {Tooltip} from 'react-bootstrap'
+import {OverlayTrigger} from 'react-bootstrap'
 
 export default class SongLyrics extends React.Component {
 	constructor(props){
@@ -9,13 +10,15 @@ export default class SongLyrics extends React.Component {
 
 	anchorClick(lineNum){
 		//wipe color off current ones:
-		$("#" +  ConstsClass.genericLinePrefix + (this.props.currentLine - 1)).css('color','#FFF')
-		$("#" + ConstsClass.genericLinePrefix + (this.props.currentLine )).css('color','#FFF')
-		$("#" + ConstsClass.genericLinePrefix + (this.props.currentLine + 1)).css('color','#FFF')
-		let newTime = timestampToSeconds(this.props.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
+		$("#" +  Constants.ConstsClass.genericLinePrefix + (this.props.currentLine - 1)).css('color','#FFF')
+		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine )).css('color','#FFF')
+		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine + 1)).css('color','#FFF')
+		let newTime = Constants.timestampToSeconds(this.props.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
 		this.props.skipToTime(lineNum, newTime);
 	}
-
+	componentDidUpdate(){
+		// $('[data-toggle="tooltip"]').tooltip();
+	}
 
 
 	render() {
@@ -39,16 +42,19 @@ export default class SongLyrics extends React.Component {
 				var time = minutes + ":" + seconds;
 
 				//each lyric line takes up a row
+				var tooltip = (<Tooltip id= {time} className = "tooltip"><strong>{time}</strong></Tooltip>);
 				var rowDiv = 
 					(<div key= {"rowNumber"+ lineNumber} className="row">
 						<div className= " lyricLine equal">
 						<div className="col-xs-1 lineIndex vertical-center">
-							<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor"  data-toggle="tooltip" title={time} onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
+							<OverlayTrigger placement="top" overlay={tooltip}>
+								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
+							</OverlayTrigger>
 						</div>
-						<div className= "col-xs-10 lyricWords" id = {ConstsClass.genericLinePrefix + lineNumber}>
-							<div className = {ConstsClass.pinyinLyricsLineClass}> {pinyin[i]}</div>
-							<div className = {ConstsClass.cnCharLyricsLineClass}> {cnChar[i]}</div>
-							<div className = {ConstsClass.englishLyricsLineClass}> {eng[i]}</div>
+						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
+							<div className = {Constants.ConstsClass.pinyinLyricsLineClass}> {pinyin[i]}</div>
+							<div className = {Constants.ConstsClass.cnCharLyricsLineClass}> {cnChar[i]}</div>
+							<div className = {Constants.ConstsClass.englishLyricsLineClass}> {eng[i]}</div>
 						</div>
 						</div>
 						<br className = "clearfix"></br>

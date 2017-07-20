@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//set a hook that runs every time a audio player steps
-	// addTimeUpdateListener();
+	addTimeUpdateListener();
 
 	window.addEventListener("keydown", function(e) {
 	  if(e.keyCode == 32 && e.target == document.body) {
@@ -10,10 +10,10 @@ $(document).ready(function(){
 	});
 
 
-	// $("#" + searchBarID).keyup(function(){
-	// 	$("#" + resultsListID).css("display", "inline");
-	// 	httpPostAsync("query", {search: $("#" + searchBarID).val()}, showResults);
- //    });
+	$("#" + searchBarID).keyup(function(){
+		$("#" + resultsListID).css("display", "inline");
+		httpPostAsync("query", {search: $("#" + searchBarID).val()}, showResults);
+    });
 
     $("#" + allSongsAnchorID).click(function(){
 		$("#" + resultsListID).css("display", "inline");
@@ -31,21 +31,8 @@ $(document).ready(function(){
 function scaleScrolling(){
    var winWidth =  $(window).width();
    var winHeight = $(window).height();
-   console.log("window height: " + $(window).height());
+   //console.log("window height: " + $(window).height());
    scrollingOffset =-1 * Math.round(winHeight * .35);
-   // if(winWidth < 768 ){
-   //    console.log('Window Width: '+ winWidth + 'class used: col-xs');
-   //    scrollingOffset = -170;
-   // }else if( winWidth <= 991){
-   //    console.log('Window Width: '+ winWidth + 'class used: col-sm');
-   //  	scrollingOffset = -270;
-   // }else if( winWidth <= 1199){
-   //    console.log('Window Width: '+ winWidth + 'class used: col-md');
-   // }else{
-   //    console.log('Window Width: '+ winWidth + 'class used: col-lg');
-  	// 	scrollingOffset = -350;
-
-   // }
 }
 
 var scrollingOffset = -400;
@@ -176,7 +163,7 @@ function updateDiv(responseObj){
 			seconds = "0" + seconds;
 		var time = minutes + ":" + seconds;
 		//initialize tooltip according to bootstrap.js tooltips
-		// lineNumberAnchor.tooltip({title: time});
+		lineNumberAnchor.tooltip({title: time});
 		lineNumber++;
 	}
 	updateAudioPlayer(responseObj.songPath);
@@ -195,7 +182,7 @@ function showResults(responseObj){
 		$("#" + resultsListID).append(li);
 		$("#" + element.file_name).click(function(){
 			$("#" + titleLineID).text(element.cn_char + " - " + element.artist);
-			// $("#" + optionsID).collapse('show');
+			$("#" + optionsID).collapse('show');
 			//reset song line
 			currentLine = 0;
 			httpGetAsync("song", {id: element.file_name}, updateDiv);
@@ -228,7 +215,7 @@ function httpPostAsync(path, data, callback){
 var currentLine = 0;
 
 function updateLine(){
-	console.log("updating line");
+	//console.log("updating line");
 	if(times == undefined)
 		return;
 	var convertedToSeconds = timestampToSeconds(times[currentLine]);
@@ -245,7 +232,7 @@ function updateLine(){
 		$("#" + genericLinePrefix + (currentLine + 1)).css('color', highlightColor);
 
 		//docs: https://github.com/flesler/jquery.scrollTo
-		console.log("scrolling val: " + scrollingOffset);
+		//console.log("scrolling val: " + scrollingOffset);
 		currentLine++;
 
 		if(wantScroll)

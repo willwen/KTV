@@ -22,19 +22,19 @@ export default class MainContainer extends React.Component {
 			cn: [],
 			eng: [],
 			times : [],
-			songPath: ''
+			songPath: '',
+			scrollingOffset: -400
 		};
 		this.setCurrentLine = this.setCurrentLine.bind(this);
 		this.getData = this.getData.bind(this);
 		this.updateData = this.updateData.bind(this);
 		// this.componentDidMount = this.componentDidMount.bind(this);
 	}
-	componenetWillMount(){
+	componentWillMount(){
 
 	}
 	componentDidMount(){
 		//enable all tooltips
-	    // $('[data-toggle="tooltip"]').tooltip();
 	    let audioPlayer = this.refs.audioPlayer;
     	window.addEventListener("keydown", function(e) {
 		  if(e.keyCode == 32 && e.target == document.body) {
@@ -42,7 +42,18 @@ export default class MainContainer extends React.Component {
 			e.preventDefault(); // and prevent scrolling
 		  }
 		});
+
+	    $(window).on('resize', this.scaleScrolling);
+  	  	this.scaleScrolling();
+
 	}
+	scaleScrolling(){
+	   var winWidth =  $(window).width();
+	   var winHeight = $(window).height();
+	   //console.log("window height: " + $(window).height());
+	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .35))});
+	}
+
 	setCurrentLine(val){
 		this.setState({currentLine : val});
 	}
@@ -56,13 +67,14 @@ export default class MainContainer extends React.Component {
 	updateData(response){
 		console.log(response);
 		this.setState({
+			currentLine: 0,
 			pinyin : response.data['pinyin.txt'],
 			cn : response.data['cn.txt'],
 			eng : response.data['eng.txt'],
 			times : response.data['times.txt'],
 			songPath : response.data['songPath']
 		})
-
+		this.refs.optionsMenu.toggleCollapse();
 		this.refs.audioPlayer.setSong(this.state.songPath);
 	}
 
@@ -79,7 +91,7 @@ export default class MainContainer extends React.Component {
 		      <div className="container">
 		      	<PageHeader/>
 		      	<SearchPanel getData={this.getData}/>
-				<OptionsMenu/>
+				<OptionsMenu ref="optionsMenu"/>
 				<div className = "clearfix"></div>
 				<SongTitle title = {this.state.currentTitle} artist = {this.state.currentArtist}/>
 				<SongLyrics currentLine={this.state.currentLine}
@@ -92,7 +104,8 @@ export default class MainContainer extends React.Component {
 		      <AudioPlayer ref="audioPlayer" times={this.state.times}
 		      	updateCurrentLine = {this.setCurrentLine}
 		      	currentLine = {this.state.currentLine}
-		      	onLineChange = {this.setCurrentLine}/>
+		      	onLineChange = {this.setCurrentLine}
+		      	scrollOffset = {this.state.scrollingOffset}/>
 		  </div>
 		);
 	}

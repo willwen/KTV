@@ -1,6 +1,6 @@
-import ConstsClass from './const.js'
+import Constants from './const.js'
 import $ from 'jquery'
-
+import scrollTo from 'jquery.scrollTo'
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
   		super(props, context);
@@ -10,26 +10,33 @@ export default class AudioPlayer extends React.Component {
 		this.checkTimes = this.checkTimes.bind(this);
 	}
 	componentDidMount(){
-		console.log("set listener");
 		this.refs.audioHTML.ontimeupdate = this.checkTimes;
 	}
 
 	checkTimes(){
-		console.log("checking times")
 		if(this.props.times.length !=0){
 			let times = this.props.times;
 			let currentLine = this.props.currentLine;
-			let convertedToSeconds = ConstsClass.timestampToSeconds(times[currentLine]);
-			let time = this.refs.audioHTML.currentTime;
+			console.log(currentLine);
+			let convertedToSeconds = Constants.timestampToSeconds(times[currentLine]);
+			let time = Math.round(this.refs.audioHTML.currentTime);
+
+			if(convertedToSeconds == 0 && currentLine != 0){
+				this.props.updateCurrentLine(currentLine + 1);
+				return;
+			}
+
 			if (time >= convertedToSeconds)
 			{
-				
-				this.updateLine();
+				var t0 = performance.now();
+				this.updateLine(currentLine);
+				var t1 = performance.now();
+				console.log("Call to colorLines took " + (t1 - t0) + " milliseconds.")
 				//docs: https://github.com/flesler/jquery.scrollTo
 				// console.log("scrolling val: " + scrollingOffset);
 				this.props.updateCurrentLine(currentLine + 1);
 				// if(wantScroll)
-		  		// 	$(window).scrollTo($("#" + genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 1000, offset :{top :scrollingOffset}});
+		  			$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 1000, offset :{top : this.props.scrollOffset}});
 			}
 		}
 
@@ -42,22 +49,19 @@ export default class AudioPlayer extends React.Component {
 		this.refs.audioHTML.play();
 	}
 
-	togglePlayer(){
-		this.refs.audioHTML.paused ? this.refs.audioHTML.play() : this.refs.audioHTML.pause();
-	}
-
-	updateLine(){
-		console.log("updating line");
-		$("#" + ConstsClass.genericLinePrefix + (currentLine - 1)).css('color', foregroundColor);
-		$("#" + ConstsClass.genericLinePrefix + (currentLine )).css('color', foregroundColor);
-		$("#" + ConstsClass.genericLinePrefix + (currentLine + 1)).css('color', highlightColor);
-	}
-
-
 	setSong(songSource){
 		this.refs.audioHTML.src = songSource;
 	}
 
+	togglePlayer(){
+		this.refs.audioHTML.paused ? this.refs.audioHTML.play() : this.refs.audioHTML.pause();
+	}
+
+	updateLine(currentLine){
+		$("#" + Constants.ConstsClass.genericLinePrefix + (currentLine - 1)).css('color', Constants.ConstsClass.foregroundColor);
+		$("#" + Constants.ConstsClass.genericLinePrefix + (currentLine )).css('color', Constants.ConstsClass.foregroundColor);
+		$("#" + Constants.ConstsClass.genericLinePrefix + (currentLine + 1)).css('color', Constants.ConstsClass.highlightColor);	
+	}
 
 	render() {
 		return (
