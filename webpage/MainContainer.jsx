@@ -1,12 +1,12 @@
 import ReactDOM from 'react-dom';
 
-import PageHeader from './react_page_header.jsx'
-import SearchPanel from './react_search_panel.jsx'
+import PageHeader from './Header.jsx'
+import SearchPanel from './SearchPanel.jsx'
 
-import OptionsMenu from './react_options_menu.jsx'
-import SongTitle from './react_song_title.jsx'
-import SongLyrics from './react_song_lyrics_body.jsx'
-import AudioPlayer from './react_audio_player.jsx'
+import OptionsMenu from './OptionsMenu.jsx'
+import SongTitle from './SongTitle.jsx'
+import SongLyrics from './LyricsBody.jsx'
+import AudioPlayer from './AudioPlayer.jsx'
 
 import axios from 'axios'
 import $ from 'jquery'
@@ -23,15 +23,27 @@ export default class MainContainer extends React.Component {
 			eng: [],
 			times : [],
 			songPath: '',
-			scrollingOffset: -400
+			scrollingOffset: -400,
+			allowScrolling : true,
+			showLineNums: true,
+			showPinyin: true,
+			showCn: true,
+			showEng: true,
 		};
 		this.setCurrentLine = this.setCurrentLine.bind(this);
 		this.getData = this.getData.bind(this);
 		this.updateData = this.updateData.bind(this);
-		// this.componentDidMount = this.componentDidMount.bind(this);
 	}
-	componentWillMount(){
 
+	toggleScrolling(){
+	  	this.setState({
+	  		allowScrolling : !this.state.allowScrolling
+	  	})
+	}
+	toggleLineNums(){
+	  	this.setState({
+	  		showLineNums : !this.state.showLineNums
+	  	})
 	}
 	componentDidMount(){
 		//enable all tooltips
@@ -42,15 +54,21 @@ export default class MainContainer extends React.Component {
 			e.preventDefault(); // and prevent scrolling
 		  }
 		});
-
-	    $(window).on('resize', this.scaleScrolling);
-  	  	this.scaleScrolling();
-
+		
+  	  	window.addEventListener("resize", this.scaleScrolling);
 	}
+	componentWillUnmount(){
+		window.removeEventListener("resize", this.scaleScrolling);
+	}
+	componentWillMount(){
+		this.scaleScrolling = this.scaleScrolling.bind(this);
+	  	this.scaleScrolling();
+	}
+
 	scaleScrolling(){
 	   var winWidth =  $(window).width();
 	   var winHeight = $(window).height();
-	   //console.log("window height: " + $(window).height());
+	   console.log("window height: " + $(window).height());
 	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .35))});
 	}
 
@@ -84,6 +102,21 @@ export default class MainContainer extends React.Component {
 		this.refs.audioPlayer.setCurrentTime(timeToSet);
 		this.setState({currentLine : lineToSet});
 	}
+	togglePinyin(isChecked){
+	  	this.setState({
+	  		showPinyin : !this.state.showPinyin
+	  	})
+	}
+	toggleCn(isChecked){
+	  	this.setState({
+	  		showCn :  !this.state.showCn
+	  	})
+	}
+	toggleEng(isChecked){
+	  	this.setState({
+	  		showEng :  !this.state.showEng
+	  	})
+	}
 
 	render() {
 		return (
@@ -91,7 +124,12 @@ export default class MainContainer extends React.Component {
 		      <div className="container">
 		      	<PageHeader/>
 		      	<SearchPanel getData={this.getData}/>
-				<OptionsMenu ref="optionsMenu"/>
+				<OptionsMenu ref="optionsMenu" 
+					togglePinyin = {this.togglePinyin.bind(this)}
+					toggleCn = {this.toggleCn.bind(this)}
+					toggleEng = {this.toggleEng.bind(this)}
+					toggleScrolling = {this.toggleScrolling.bind(this)}
+					toggleLineNums = {this.toggleLineNums.bind(this)}/>
 				<div className = "clearfix"></div>
 				<SongTitle title = {this.state.currentTitle} artist = {this.state.currentArtist}/>
 				<SongLyrics currentLine={this.state.currentLine}
@@ -99,13 +137,18 @@ export default class MainContainer extends React.Component {
 					pinyin = {this.state.pinyin}
 					cnChar = {this.state.cn} 
 					eng = {this.state.eng} 
-					skipToTime={this.skipToLine.bind(this)}/>
+					skipToTime={this.skipToLine.bind(this)}
+					showLineNums = {this.state.showLineNums}
+					showPinyin = {this.state.showPinyin}
+					showCn = {this.state.showCn}
+					showEng = {this.state.showEng}/>
 		      </div>
 		      <AudioPlayer ref="audioPlayer" times={this.state.times}
 		      	updateCurrentLine = {this.setCurrentLine}
 		      	currentLine = {this.state.currentLine}
 		      	onLineChange = {this.setCurrentLine}
-		      	scrollOffset = {this.state.scrollingOffset}/>
+		      	scrollOffset = {this.state.scrollingOffset}
+		      	allowScrolling = {this.state.allowScrolling}/>
 		  </div>
 		);
 	}

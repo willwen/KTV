@@ -1,4 +1,4 @@
-import Constants from './const.js'
+import Constants from './Constants.jsx'
 import $ from 'jquery'
 import {Tooltip} from 'react-bootstrap'
 import {OverlayTrigger} from 'react-bootstrap'
@@ -6,6 +6,11 @@ import {OverlayTrigger} from 'react-bootstrap'
 export default class SongLyrics extends React.Component {
 	constructor(props){
 		super(props);
+		this.state = {
+			// pinyinStyling:{},
+			// cnStyling:{},
+			// engStyling:{}
+		}
 	}
 
 	anchorClick(lineNum){
@@ -17,13 +22,41 @@ export default class SongLyrics extends React.Component {
 		this.props.skipToTime(lineNum, newTime);
 	}
 	componentDidUpdate(){
-		// $('[data-toggle="tooltip"]').tooltip();
 	}
 
 
 	render() {
 		let style = {};
 		let lyricsBody = [];
+
+		let lineNumberStyling = {}
+		if(this.props.showLineNums){
+			lineNumberStyling = {visibility: "visible"}
+		}
+		else{
+			lineNumberStyling = {visibility: "hidden"}
+		}
+		let pinyinStyling = {};
+		if(this.props.showPinyin){
+			pinyinStyling = {display: "block"}
+		}
+		else{
+			pinyinStyling = {display: "none"}
+		}
+		let cnStyling = {};
+		if(this.props.showCn){
+			cnStyling = {display: "block"}
+		}
+		else{
+			cnStyling = {display: "none"}
+		}
+		let engStyling = {};
+		if(this.props.showEng){
+			engStyling = {display: "block"}
+		}
+		else{
+			engStyling = {display: "none"}
+		}
 
 		if(this.props.pinyin.length > 0){
 			style = {"visibility" : "visible"};
@@ -46,15 +79,15 @@ export default class SongLyrics extends React.Component {
 				var rowDiv = 
 					(<div key= {"rowNumber"+ lineNumber} className="row">
 						<div className= " lyricLine equal">
-						<div className="col-xs-1 lineIndex vertical-center">
+						<div className="col-xs-1 lineIndex vertical-center" style = {lineNumberStyling}>
 							<OverlayTrigger placement="top" overlay={tooltip}>
 								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
 							</OverlayTrigger>
 						</div>
 						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
-							<div className = {Constants.ConstsClass.pinyinLyricsLineClass}> {pinyin[i]}</div>
-							<div className = {Constants.ConstsClass.cnCharLyricsLineClass}> {cnChar[i]}</div>
-							<div className = {Constants.ConstsClass.englishLyricsLineClass}> {eng[i]}</div>
+							<div className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}> {pinyin[i]}</div>
+							<div className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}> {cnChar[i]}</div>
+							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={engStyling}> {eng[i]}</div>
 						</div>
 						</div>
 						<br className = "clearfix"></br>

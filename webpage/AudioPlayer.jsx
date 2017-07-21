@@ -1,6 +1,7 @@
-import Constants from './const.js'
+import Constants from './Constants.jsx'
 import $ from 'jquery'
 import scrollTo from 'jquery.scrollTo'
+
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
   		super(props, context);
@@ -35,7 +36,7 @@ export default class AudioPlayer extends React.Component {
 				//docs: https://github.com/flesler/jquery.scrollTo
 				// console.log("scrolling val: " + scrollingOffset);
 				this.props.updateCurrentLine(currentLine + 1);
-				// if(wantScroll)
+				if(this.props.allowScrolling)
 		  			$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 1000, offset :{top : this.props.scrollOffset}});
 			}
 		}

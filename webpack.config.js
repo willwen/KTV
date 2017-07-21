@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './webpage/react_page_main_container.jsx',
+  entry: './webpage/MainContainer.jsx',
   output: { path: __dirname + '/dist', filename: 'bundle.js', pathinfo : true },
   watch: true,
   module: {

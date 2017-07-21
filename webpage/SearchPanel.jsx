@@ -1,5 +1,5 @@
-import SearchBar from './react_search_bar.jsx'
-import SearchResults from './react_search_results.jsx'
+import SearchBar from './SearchBar.jsx'
+import SearchResults from './SearchResults.jsx'
 import axios from 'axios'
 
 export default class SearchPanel extends React.Component {
