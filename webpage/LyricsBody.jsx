@@ -20,6 +20,7 @@ export default class SongLyrics extends React.Component {
 		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine + 1)).css('color','#FFF')
 		let newTime = Constants.timestampToSeconds(this.props.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
 		this.props.skipToTime(lineNum, newTime);
+		$("#" + Constants.ConstsClass.genericLinePrefix + lineNum).css('color', Constants.ConstsClass.highlightColor)
 	}
 	componentDidUpdate(){
 	}
