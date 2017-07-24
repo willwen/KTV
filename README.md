@@ -19,5 +19,8 @@ How to install on local dev environment:
 11) Run node index.js
 12) In web browser, go to localhost:8080
 
-  
-  
+13) Now you need to start webpack , which compiles all ES6 and JSX code (aka React) to bundle.js
+	in $KTV, run:
+	npm run webpack
+
+	It will say webpack is watching the files.

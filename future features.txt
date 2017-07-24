@@ -1,3 +1,5 @@
+- need to figure out how to send multiple files in a ajax response
+	~ formdata() ?
 0 Mongodb to contain all your songs/
 1 allow clicking (anchor jumping) on empty lines
 	disable click on newline entries
