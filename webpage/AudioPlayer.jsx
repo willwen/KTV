@@ -5,8 +5,7 @@ import scrollTo from 'jquery.scrollTo'
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
   		super(props, context);
-  		this.state={
-  		};
+
 		this.updateLine = this.updateLine.bind(this);
 		this.checkTimes = this.checkTimes.bind(this);
 	}
@@ -18,7 +17,6 @@ export default class AudioPlayer extends React.Component {
 		if(this.props.times.length !=0){
 			let times = this.props.times;
 			let currentLine = this.props.currentLine;
-			console.log(currentLine);
 			let convertedToSeconds = Constants.timestampToSeconds(times[currentLine]);
 			let time = Math.round(this.refs.audioHTML.currentTime);
 
@@ -32,7 +30,6 @@ export default class AudioPlayer extends React.Component {
 				var t0 = performance.now();
 				this.updateLine(currentLine);
 				var t1 = performance.now();
-				console.log("Call to colorLines took " + (t1 - t0) + " milliseconds.")
 				//docs: https://github.com/flesler/jquery.scrollTo
 				// console.log("scrolling val: " + scrollingOffset);
 				this.props.updateCurrentLine(currentLine + 1);

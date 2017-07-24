@@ -31,7 +31,11 @@ Unconscious of the forlorn nights they’ve experienced,
 dilililidilililidada
 dilililidilililidada
 dilililidilililidada
+<<<<<<< HEAD
 They wake up from yestreen drunkenness.
+=======
+They wake up from yesterday's drunkenness.
+>>>>>>> 8bce611e2437204da6ee158d4e5dfc8dee1fb6da
 
 Every time when you’re sad and grieved,
 Go alone to see the sea.
@@ -51,6 +55,7 @@ How many are waking?
 Let’s finish the cup of wine,
 And widen our vision and mind like the sea.
 Having experienced the warmth and cold of life
+<<<<<<< HEAD
 You will feel the innocence of the warm smile.
 
 Translated by Peter Jingcheng Xu
