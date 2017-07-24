@@ -5,23 +5,18 @@ export default class OptionsMenu extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {};
-		this.toggleCollapse = this.toggleCollapse.bind(this);
-	}
-	toggleCollapse(){
-		console.log("attempted toggle")
-		this.setState({ open: !this.state.open });
 	}
 
 	render() {
 		return (
-			<Collapse in ={this.state.open}>
+			<Collapse in ={this.props.open}>
 			<div className="row optionsMenu" id="options">
-				<LanguageOptions togglePinyin = {this.props.togglePinyin}
-					toggleCn = {this.props.toggleCn}
-					toggleEng = {this.props.toggleEng}/>
+				<LanguageOptions togglePinyin = {this.props.options.togglePinyin}
+					toggleCn = {this.props.options.toggleCn}
+					toggleEng = {this.props.options.toggleEng}/>
 				<PlaybackOptions
-					toggleScrolling = {this.props.toggleScrolling}
-					toggleLineNums = {this.props.toggleLineNums}/>
+					toggleScrolling = {this.props.options.toggleScrolling}
+					toggleLineNums = {this.props.options.toggleLineNums}/>
 			</div>
 			</Collapse>
 		);

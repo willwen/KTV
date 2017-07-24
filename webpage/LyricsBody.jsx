@@ -3,14 +3,9 @@ import $ from 'jquery'
 import {Tooltip} from 'react-bootstrap'
 import {OverlayTrigger} from 'react-bootstrap'
 
-export default class SongLyrics extends React.Component {
+export default class LyricsBody extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = {
-			// pinyinStyling:{},
-			// cnStyling:{},
-			// engStyling:{}
-		}
 	}
 
 	anchorClick(lineNum){
@@ -18,12 +13,11 @@ export default class SongLyrics extends React.Component {
 		$("#" +  Constants.ConstsClass.genericLinePrefix + (this.props.currentLine - 1)).css('color','#FFF')
 		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine )).css('color','#FFF')
 		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine + 1)).css('color','#FFF')
-		let newTime = Constants.timestampToSeconds(this.props.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
+		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
 		this.props.skipToTime(lineNum, newTime);
 		$("#" + Constants.ConstsClass.genericLinePrefix + lineNum).css('color', Constants.ConstsClass.highlightColor)
 	}
-	componentDidUpdate(){
-	}
+
 
 
 	render() {
@@ -31,43 +25,28 @@ export default class SongLyrics extends React.Component {
 		let lyricsBody = [];
 
 		let lineNumberStyling = {}
-		if(this.props.showLineNums){
-			lineNumberStyling = {visibility: "visible"}
-		}
-		else{
-			lineNumberStyling = {visibility: "hidden"}
-		}
-		let pinyinStyling = {};
-		if(this.props.showPinyin){
-			pinyinStyling = {display: "block"}
-		}
-		else{
-			pinyinStyling = {display: "none"}
-		}
-		let cnStyling = {};
-		if(this.props.showCn){
-			cnStyling = {display: "block"}
-		}
-		else{
-			cnStyling = {display: "none"}
-		}
-		let engStyling = {};
-		if(this.props.showEng){
-			engStyling = {display: "block"}
-		}
-		else{
-			engStyling = {display: "none"}
-		}
+		this.props.options.showLineNums ? 
+			(lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
 
-		if(this.props.pinyin.length > 0){
+		let pinyinStyling = {};
+		this.props.options.showPinyin ?
+			(pinyinStyling = {display: "block"}):(pinyinStyling = {display: "none"});
+
+		let cnStyling = {};
+		this.props.options.showCn ? (cnStyling = {display: "block"}) : (cnStyling = {display: "none"});
+
+		let engStyling = {};
+		this.props.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
+
+		if(this.props.lyrics.pinyin.length > 0){
 			style = {"visibility" : "visible"};
 			let lineNumber = 1;
-			let pinyin = this.props.pinyin;
-			let cnChar = this.props.cnChar;
-			let eng = this.props.eng;
-
+			let pinyin = this.props.lyrics.pinyin;
+			let cnChar = this.props.lyrics.cn;
+			let eng = this.props.lyrics.eng;
+			let times = this.props.lyrics.times;
 			for (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
-				var times = this.props.times;
+				
 				var minutes = Math.floor(times[i]/100);
 				var seconds = times[i]%100;
 				if (seconds < 10)
@@ -103,9 +82,7 @@ export default class SongLyrics extends React.Component {
 		let lines = lyricsBody.map(line => {
 			return line;
 		})
-		// updateAudioPlayer(responseObj.songPath);
-		// hideResultsList();
-
+		
 		return (
 			<div className="row">
 				<div className = "gradient col-xs-12" id='lyricsBody' style = {style}>

@@ -11,27 +11,27 @@ export default class SearchPanel extends React.Component {
                 display: "hidden"
             }
 		}
-		this.showResults = this.showResults.bind(this);
+		this.showSearchResults = this.showSearchResults.bind(this);
 		this.requestData = this.requestData.bind(this);
 
 	}
 
 	sendAjaxSearch(queryText){
-		axios.post("query", {'search': queryText} ).then(this.showResults).catch(error => console.log(error));;
+		axios.get("query", {params: {'search': queryText}} ).then(this.showSearchResults).catch(error => console.log(error));;
 
 	}
-	showResults(response){
+	showSearchResults(response){
 		this.setState({dbResults:response.data, resultsStyling: {display: "inline"}});
 	}
 
 	retrieveAll(e){
 		e.preventDefault();
-		axios.post("query", {'search': ""} ).then(this.showResults).catch(error => console.log(error));;
+		axios.get("query", {params: {'search': ""}} ).then(this.showSearchResults).catch(error => console.log(error));;
 	}
 
 	requestData(id, title, artist){
 		this.setState({resultsStyling: {display: "none"}});
-		this.props.getData(id, title, artist);
+		this.props.getSongLyrics(id, title, artist);
 	}
 
     render() {

@@ -5,6 +5,8 @@ export default class PlaybackOptions extends React.Component {
 			wantScrolling: true,
 			showLineNums: true
 		}
+		this.toggleScrolling = this.toggleScrolling.bind(this);
+		this.toggleLineNums = this.toggleScrolling.bind(this);
 	}
 	toggleScrolling(){
 		this.setState({
@@ -25,10 +27,10 @@ export default class PlaybackOptions extends React.Component {
 			<form onSubmit={this.modifyOptions}>
 				<span>Playback Options:</span>
 				<div className="checkbox">
-					<span><label><input checked={this.state.wantScrolling} onChange={this.toggleScrolling.bind(this)} id="wantScrolling" type="checkbox"/>Scrolling</label></span>
+					<span><label><input checked={this.state.wantScrolling} onChange={this.toggleScrolling} id="wantScrolling" type="checkbox"/>Scrolling</label></span>
 				</div>
 				<div className="checkbox">
-					<span><label><input checked={this.state.showLineNums} onChange={this.toggleLineNums.bind(this)} id="lineNumbers" type="checkbox"/>Line Numbers</label></span>
+					<span><label><input checked={this.state.showLineNums} onChange={this.toggleLineNums} id="lineNumbers" type="checkbox"/>Line Numbers</label></span>
 				</div>
 			</form>
 		</div>
