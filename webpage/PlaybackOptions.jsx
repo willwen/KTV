@@ -6,7 +6,7 @@ export default class PlaybackOptions extends React.Component {
 			showLineNums: true
 		}
 		this.toggleScrolling = this.toggleScrolling.bind(this);
-		this.toggleLineNums = this.toggleScrolling.bind(this);
+		this.toggleLineNums = this.toggleLineNums.bind(this);
 	}
 	toggleScrolling(){
 		this.setState({

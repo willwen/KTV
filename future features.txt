@@ -1,20 +1,20 @@
 0 Mongodb to contain all your songs/
 1 allow clicking (anchor jumping) on empty lines
-2 Invalid regular expression: /.*[./: Unterminated character class
+	disable click on newline entries
 3 do regex on file grabbing  (\w*\.mp3) so you can name the songs
 4 single tap lyric to show all langs
 5 helper button to show keys:
 	legend on side, space to pause play, x to disable scrolling
 6 fix scrolling time back shouldnt break the text highlighting
+	- kinda fixed, not the best
+	- bug when they user changes time in the bottom player
 7 add album image to bottom right
 8 test on chrome mobile broswer (some empty unused whitespace_
+	firefox has weird audio bar
 8.5 results list should highlight what text matched (regex)
-
-9 disable click on newline entries
-10 bug when they user changes time in the bottom player
+9 changing song doesnt remove previously highlighted text
 11 header search bar to make searching easy
 
-Refactor to react
 ball that bounces on the words
 	look at previously used karaoke formats
 be able to add notes and recordings

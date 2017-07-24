@@ -30591,6 +30591,8 @@ var MainContainer = function (_React$Component) {
 		_this.togglePinyin = _this.togglePinyin.bind(_this);
 		_this.toggleEng = _this.toggleEng.bind(_this);
 		_this.toggleCn = _this.toggleCn.bind(_this);
+		_this.toggleScrolling = _this.toggleScrolling.bind(_this);
+		_this.toggleLineNums = _this.toggleLineNums.bind(_this);
 		_this.scaleScrolling = _this.scaleScrolling.bind(_this);
 		_this.skipToLine = _this.skipToLine.bind(_this);
 		return _this;
@@ -30678,7 +30680,12 @@ var MainContainer = function (_React$Component) {
 					React.createElement(_SearchPanel2.default, { getSongLyrics: this.getSongLyrics }),
 					React.createElement(_OptionsMenu2.default, {
 						options: this.state.options,
-						open: this.state.areOptionsInflated
+						open: this.state.areOptionsInflated,
+						togglePinyin: this.togglePinyin,
+						toggleCn: this.toggleCn,
+						toggleEng: this.toggleEng,
+						toggleLineNums: this.toggleLineNums,
+						toggleScrolling: this.toggleScrolling
 					}),
 					React.createElement('div', { className: 'clearfix' }),
 					React.createElement(_SongTitle2.default, {
@@ -30703,46 +30710,47 @@ var MainContainer = function (_React$Component) {
 	}, {
 		key: 'toggleScrolling',
 		value: function toggleScrolling() {
+			var temp = this.state.options;
+			temp['allowScrolling'] = !this.state.options.allowScrolling;
 			this.setState({
-				options: {
-					allowScrolling: !this.state.allowScrolling
-				}
+				options: temp
 			});
 		}
 	}, {
 		key: 'toggleLineNums',
 		value: function toggleLineNums() {
+			var temp = this.state.options;
+			temp['showLineNums'] = !this.state.options.showLineNums;
 			this.setState({
-				options: {
-					showLineNums: !this.state.showLineNums
-				}
+				options: temp
 			});
 		}
 	}, {
 		key: 'togglePinyin',
 		value: function togglePinyin(isChecked) {
+			var temp = this.state.options;
+			temp['showPinyin'] = !this.state.options.showPinyin;
 			this.setState({
-				options: {
-					showPinyin: !this.state.showPinyin
-				}
+				options: temp
 			});
 		}
 	}, {
 		key: 'toggleCn',
 		value: function toggleCn(isChecked) {
+			var temp = this.state.options;
+			temp['showCn'] = !this.state.options.showCn;
 			this.setState({
-				options: {
-					showCn: !this.state.showCn
-				}
+				options: temp
 			});
 		}
 	}, {
 		key: 'toggleEng',
 		value: function toggleEng(isChecked) {
+			//shallow merging
+			var temp = this.state.options;
+			temp['showEng'] = !this.state.options.showEng;
 			this.setState({
-				options: {
-					showEng: !this.state.showEng
-				}
+				options: temp
 			});
 		}
 	}]);
@@ -44530,12 +44538,14 @@ var OptionsMenu = function (_React$Component) {
 				React.createElement(
 					'div',
 					{ className: 'row optionsMenu', id: 'options' },
-					React.createElement(_LanguageOptions2.default, { togglePinyin: this.props.options.togglePinyin,
-						toggleCn: this.props.options.toggleCn,
-						toggleEng: this.props.options.toggleEng }),
+					React.createElement(_LanguageOptions2.default, {
+						togglePinyin: this.props.togglePinyin,
+						toggleCn: this.props.toggleCn,
+						toggleEng: this.props.toggleEng }),
 					React.createElement(_PlaybackOptions2.default, {
-						toggleScrolling: this.props.options.toggleScrolling,
-						toggleLineNums: this.props.options.toggleLineNums })
+						toggleLineNums: this.props.toggleLineNums,
+						toggleScrolling: this.props.toggleScrolling
+					})
 				)
 			);
 		}
@@ -44737,7 +44747,7 @@ var PlaybackOptions = function (_React$Component) {
 			showLineNums: true
 		};
 		_this.toggleScrolling = _this.toggleScrolling.bind(_this);
-		_this.toggleLineNums = _this.toggleScrolling.bind(_this);
+		_this.toggleLineNums = _this.toggleLineNums.bind(_this);
 		return _this;
 	}
 

@@ -11,12 +11,14 @@ export default class OptionsMenu extends React.Component {
 		return (
 			<Collapse in ={this.props.open}>
 			<div className="row optionsMenu" id="options">
-				<LanguageOptions togglePinyin = {this.props.options.togglePinyin}
-					toggleCn = {this.props.options.toggleCn}
-					toggleEng = {this.props.options.toggleEng}/>
+				<LanguageOptions 
+					togglePinyin = {this.props.togglePinyin}
+					toggleCn = {this.props.toggleCn}
+					toggleEng = {this.props.toggleEng}/>
 				<PlaybackOptions
-					toggleScrolling = {this.props.options.toggleScrolling}
-					toggleLineNums = {this.props.options.toggleLineNums}/>
+					toggleLineNums = {this.props.toggleLineNums}
+					toggleScrolling = {this.props.toggleScrolling}
+					/>
 			</div>
 			</Collapse>
 		);

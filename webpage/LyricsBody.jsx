@@ -25,12 +25,10 @@ export default class LyricsBody extends React.Component {
 		let lyricsBody = [];
 
 		let lineNumberStyling = {}
-		this.props.options.showLineNums ? 
-			(lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
+		this.props.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
 
 		let pinyinStyling = {};
-		this.props.options.showPinyin ?
-			(pinyinStyling = {display: "block"}):(pinyinStyling = {display: "none"});
+		this.props.options.showPinyin ?	(pinyinStyling = {display: "block"}):(pinyinStyling = {display: "none"});
 
 		let cnStyling = {};
 		this.props.options.showCn ? (cnStyling = {display: "block"}) : (cnStyling = {display: "none"});

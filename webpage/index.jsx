@@ -41,10 +41,11 @@ export default class MainContainer extends React.Component {
 		this.togglePinyin = this.togglePinyin.bind(this);
 		this.toggleEng = this.toggleEng.bind(this);
 		this.toggleCn = this.toggleCn.bind(this); 
+		this.toggleScrolling = this.toggleScrolling.bind(this);
+	  	this.toggleLineNums = this.toggleLineNums.bind(this);
 		this.scaleScrolling = this.scaleScrolling.bind(this);
 		this.skipToLine = this.skipToLine.bind(this);
 	}
-
 	componentWillMount(){
 	  	this.scaleScrolling();
 	}
@@ -116,6 +117,11 @@ export default class MainContainer extends React.Component {
 				<OptionsMenu
 					options = {this.state.options}
 					open = {this.state.areOptionsInflated}
+					togglePinyin = {this.togglePinyin}
+					toggleCn = {this.toggleCn}
+					toggleEng = {this.toggleEng}
+					toggleLineNums = {this.toggleLineNums}
+					toggleScrolling = {this.toggleScrolling}
 				/>
 				<div className = "clearfix"></div>
 				<SongTitle 
@@ -138,38 +144,39 @@ export default class MainContainer extends React.Component {
 
 	//toggles:
 	toggleScrolling(){
+		let temp = this.state.options;
+		temp['allowScrolling'] = !this.state.options.allowScrolling
 	  	this.setState({
-	  		options:{
-	  			allowScrolling : !this.state.allowScrolling
-	  		}
+  			options : temp
 	  	});
 	}
 	toggleLineNums(){
+		let temp = this.state.options;
+		temp['showLineNums'] = !this.state.options.showLineNums
 	  	this.setState({
-	  		options: {
-	  			showLineNums : !this.state.showLineNums
-	  		}
+  			options : temp
 	  	});
 	}
-		togglePinyin(isChecked){
+	togglePinyin(isChecked){
+		let temp = this.state.options;
+		temp['showPinyin'] = !this.state.options.showPinyin
 	  	this.setState({
-	  		options: {
-	  			showPinyin : !this.state.showPinyin
-	  		}
+  			options : temp
 	  	});
 	}
 	toggleCn(isChecked){
+		let temp = this.state.options;
+		temp['showCn'] = !this.state.options.showCn
 	  	this.setState({
-	  		options: {
-	  			showCn : !this.state.showCn
-	  		}
+	  		options : temp
 	  	});
 	}
 	toggleEng(isChecked){
+		//shallow merging
+		let temp = this.state.options;
+		temp['showEng'] = !this.state.options.showEng
 	  	this.setState({
-	  		options: {
-	  			showEng :  !this.state.showEng
-	  		}
+	  		options : temp
 	  	});
 	}
 }
