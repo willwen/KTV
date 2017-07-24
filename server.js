@@ -8,8 +8,8 @@ var url = require('url'),
 	bodyParser = require('body-parser'),
 	escapeStringRegexp = require('escape-string-regexp');
 
-// var mongoURL = "mongodb://localhost:27017/songs"
-var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
+var mongoURL = "mongodb://mongodb:27017/songs"
+// var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
 var app = express();
 
 app.use(express.static('webpage'))
@@ -44,12 +44,12 @@ app.get('/song', function (req, res){
 	res.end(JSON.stringify(lyrics, 'utf-8'));
 	// var MongoClient = mongodb.MongoClient;
 	// var url = mongoURL
-	// MongoClient.connect(url, function(err, db){
+	// MongoClient.connect(url, function(err, seed){
 	// 	if(err)
 	// 		console.log('unable to connect to server', err);
 	// 	else{
 	// 		console.log('connection established');
-	// 		var collection = db.collection('songs');
+	// 		var collection = seed.collection('songs');
 	// 		var query = {"file_name" : id.toString()}
 	// 		try{
 	// 			collection.findOne(query, function(err, songData){
@@ -63,13 +63,13 @@ app.get('/song', function (req, res){
 
 	// 					// console.log(songData.cnCharLyrics.buffer.toString());
 	// 					res.end(JSON.stringify(temp), 'utf-8');
-	// 					db.close();
+	// 					seed.close();
 	// 			  	}
 	// 			  	else{
 	// 			  		throw new Error ('Song not found');
 	// 			  	}
 	// 			});
-				
+
 	// 		}
 	// 		catch (err){
 	// 			console.log(err);
@@ -86,7 +86,7 @@ app.get('/song', function (req, res){
 	// 			    engLyrics: 'Song Not Found'
 	// 			};
 	// 		    res.end(JSON.stringify(placeholder), 'utf-8');
-	// 		    db.close();
+	// 		    seed.close();
 	// 		}
 	// 	}
 	// })
@@ -96,7 +96,7 @@ app.get('/song', function (req, res){
 app.get('/query', function (req,res){
 	var MongoClient = mongodb.MongoClient;
 	var url = mongoURL
-	
+
 	//dont inject me...
 	var cleansedQuery = xssfilters.inHTMLData(req.query.search);
 	//and dont fail a regex
