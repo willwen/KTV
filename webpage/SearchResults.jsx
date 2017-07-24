@@ -17,7 +17,7 @@ export default class SearchResults extends React.Component {
             resultItems = this.props.results.map(result => {
                 return ( <li key = {result.file_name}>
                             <button id = {result.file_name}
-                            className = "button list-group-item list-group-item-action" 
+                            className = "button list-group-item list-group-item-action"
                             onClick={this.handleClick.bind(this, result.file_name, result.cn_char , result.artist)}> 
                                 {result.cn_char} - {result.artist} 
                             </button> 
