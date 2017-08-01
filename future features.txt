@@ -1,5 +1,6 @@
 - need to figure out how to send multiple files in a ajax response
 	~ formdata() ?
+-1 merge tyler's PR (Remember to git stash pop)
 0 Mongodb to contain all your songs/
 1 allow clicking (anchor jumping) on empty lines
 	disable click on newline entries
@@ -15,6 +16,7 @@
 	firefox has weird audio bar
 8.5 results list should highlight what text matched (regex)
 9 changing song doesnt remove previously highlighted text
+10 add a loading SVG
 11 header search bar to make searching easy
 
 ball that bounces on the words

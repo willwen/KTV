@@ -26,3 +26,11 @@ then visit localhost:8080. no need to mongod anymore
 
 3) to go back to master
 git checkout master
+
+
+4) to push / deploy to heroku
+make sure you are logged in
+heroku login
+git add .
+git commit -m "blah"
+git push heroku master
