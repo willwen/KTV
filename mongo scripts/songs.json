@@ -7,3 +7,4 @@
 {"_id":{"$oid":"5962cf33434ad49d87d3cb1d"},"title_pinyin":"Despacito","cn_char":"Despacito","file_name":"7","artist":"Luis Fonsi feat. Daddy Yankee","artist_pinyin":"","searchTerm":"Despacito Luis Fonsi Daddy Yankee"}
 {"_id":{"$oid":"59750e43dd96a220ad148f1e"},"title_pinyin":"dangni","cn_char":"当你","file_name":"8","artist":"林俊杰","artist_pinyin":"JJ Lin Jun Jie","searchTerm":"dangni 当你 林俊杰 JJ Lin Jun Jie"}
 {"_id":{"$oid":"59750e43dd96a220ad148f1f"},"title_pinyin":"ziyiwei","cn_char":"自以為","file_name":"9","artist":"方大同 x 徐佳瑩 ","artist_pinyin":"fangdatong xujiaying","searchTerm":"ziyiwei 自以為 方大同 徐佳瑩 fangdatong xujiaying"}
+{"title_pinyin":"zainierbianshuo","cn_char":"在你耳边说","file_name":"10","artist":"周兴杰","artist_pinyin":"Eric Chou Zhou Xingjie","searchTerm":"Eric Chou Zhou Xingjie zainierbianshuo 在你耳边说 周兴杰"}
