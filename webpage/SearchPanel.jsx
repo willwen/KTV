@@ -16,6 +16,10 @@ export default class SearchPanel extends React.Component {
 
 	}
 
+	componentDidMount(){
+		this.sendAjaxSearch("");
+	}
+
 	sendAjaxSearch(queryText){
 		axios.get("query", {params: {'search': queryText}} ).then(this.showSearchResults).catch(error => console.log(error));;
 
