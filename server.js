@@ -2,7 +2,7 @@ var url = require('url'),
     fs = require('fs'),
     querystring = require('querystring'),
     express = require('express'),
-	port = 8080,
+	port = 8081,
 	mongodb = require('mongodb'),
 	xssfilters = require('xss-filters'),
 	bodyParser = require('body-parser'),
@@ -20,8 +20,8 @@ app.use(express.static('dist'))
 //for post requests
 app.use(bodyParser.json());
 
-app.listen(process.env.PORT || 8080, function() {
-    console.log('Listening on port 8080!')
+app.listen(process.env.PORT || port, function() {
+    console.log('Listening on port %s!', port)
 })
 
 app.get('/song', function (req, res){

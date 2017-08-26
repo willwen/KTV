@@ -9,19 +9,25 @@ export default class LyricsBody extends React.Component {
 	}
 
 	anchorClick(lineNum){
-		//wipe color off current ones:
-		$("#" +  Constants.ConstsClass.genericLinePrefix + (this.props.currentLine - 1)).css('color','#FFF')
-		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine )).css('color','#FFF')
-		$("#" + Constants.ConstsClass.genericLinePrefix + (this.props.currentLine + 1)).css('color','#FFF')
 		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
+		//wipe color off current ones:
+		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine - 1)).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine )).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine + 1)).css('color',Constants.ConstsClass.foregroundColor)
 		this.props.skipToTime(lineNum, newTime);
-		$("#" + Constants.ConstsClass.genericLinePrefix + lineNum).css('color', Constants.ConstsClass.highlightColor)
+		$("#" + Constants.ConstsClass.lyricLine + lineNum).css('color', Constants.ConstsClass.highlightColor)
 	}
 
-
+	incrementLineColor(lineNum){
+		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
+		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine - 1)).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine)).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine + 1)).css('color',Constants.ConstsClass.highlightColor)
+		
+	}
 
 	render() {
-		let style = {};
+		let style = {};  
 		let lyricsBody = [];
 
 		let lineNumberStyling = {}
@@ -53,14 +59,22 @@ export default class LyricsBody extends React.Component {
 				var time = minutes + ":" + seconds;
 
 				//each lyric line takes up a row
-				var tooltip = (<Tooltip id= {time} className = "tooltip"><strong>{time}</strong></Tooltip>);
+				let tooltip;
+				let overlayTrigger;				
+				if((lineNumber == 1 || time != "0:00") && time!="NaN:NaN"){
+					tooltip = (<Tooltip id= {time} className = "tooltip"><strong>{time}</strong></Tooltip>);
+					overlayTrigger = (<OverlayTrigger placement="top" overlay={tooltip}>
+								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
+							</OverlayTrigger>)
+				}
+				else{
+					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
+				}
 				var rowDiv = 
 					(<div key= {"rowNumber"+ lineNumber} className="row">
-						<div className= " lyricLine equal">
+						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-xs-1 lineIndex vertical-center" style = {lineNumberStyling}>
-							<OverlayTrigger placement="top" overlay={tooltip}>
-								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
-							</OverlayTrigger>
+							{overlayTrigger}
 						</div>
 						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
 							<div className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}> {pinyin[i]}</div>

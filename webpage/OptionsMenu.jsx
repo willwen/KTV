@@ -18,6 +18,7 @@ export default class OptionsMenu extends React.Component {
 				<PlaybackOptions
 					toggleLineNums = {this.props.toggleLineNums}
 					toggleScrolling = {this.props.toggleScrolling}
+					toggleVisualizer = {this.props.toggleVisualizer}
 					/>
 			</div>
 			</Collapse>

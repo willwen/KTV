@@ -23,6 +23,8 @@ const ConstsClass = {
 
 
 	lyricsBodyID : "lyricsBody",
+	//whole line of lyric with line number
+	lyricLine: "lyricLine",
 
 	//lyricLeft
 	lineNumberID: "lineIndex",
@@ -41,7 +43,8 @@ const ConstsClass = {
 	audioPlayerID : "audioPlayer",
 
 	//colors
-    foregroundColor : "rgba(255,255,255,0.5)",
-	highlightColor : "#fff"
+	foregroundColor : "rgba(255,255,255,0.5)",
+	highlightColor : "#000"
+
 }
 export default {ConstsClass, timestampToSeconds}

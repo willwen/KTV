@@ -21,6 +21,7 @@
     "jquery.scrollto": "^2.1.2",
     "mongodb": "^2.2.28",
     "react-bootstrap": "^0.31.1",
+    "react-svg": "^2.1.21",
     "webpack": "^3.3.0",
     "xss-filters": "^1.2.7"
   },

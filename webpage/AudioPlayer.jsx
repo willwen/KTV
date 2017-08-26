@@ -1,13 +1,15 @@
 import Constants from './Constants.jsx'
 import $ from 'jquery'
 import scrollTo from 'jquery.scrollTo'
-
+import ReactSVG from 'react-svg'
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
   		super(props, context);
 
+  		this.togglePlayer = this.togglePlayer.bind(this);
 		this.updateLine = this.updateLine.bind(this);
 		this.checkTimes = this.checkTimes.bind(this);
+		this.getAudioPlayer = this.getAudioPlayer.bind(this);
 	}
 	componentDidMount(){
 		this.refs.audioHTML.ontimeupdate = this.checkTimes;
@@ -42,6 +44,16 @@ export default class AudioPlayer extends React.Component {
 		
 	}
 
+	increaseVolume(){
+		if(this.refs.audioHTML.volume != 1.0)
+			this.refs.audioHTML.volume = this.refs.audioHTML.volume + .1;
+	}
+
+	decreaseVolume(){
+		if(this.refs.audioHTML.volume > .1)
+			this.refs.audioHTML.volume = this.refs.audioHTML.volume - .1;	
+	}
+
 	setCurrentTime(newTime){
 		this.refs.audioHTML.currentTime = newTime;
 		this.refs.audioHTML.play();
@@ -51,23 +63,51 @@ export default class AudioPlayer extends React.Component {
 		this.refs.audioHTML.src = songSource;
 	}
 
+	getAudioPlayer(){
+		return this.refs.audioHTML;
+	}
+
 	togglePlayer(){
-		this.refs.audioHTML.paused ? this.refs.audioHTML.play() : this.refs.audioHTML.pause();
+		if(this.refs.audioHTML.paused){
+			// $("#circle").attr("class", "play");
+			// $("#from_pause_to_play")[0].beginElement();
+			this.refs.audioHTML.play()
+		}
+		else{
+			// $("#circle").attr("class", "");
+			// $("#from_play_to_pause")[0].beginElement();
+		    this.refs.audioHTML.pause();
+		}
 	}
 
 	updateLine(currentLine){
-		$("#" + Constants.ConstsClass.genericLinePrefix + (currentLine - 1)).css('color', Constants.ConstsClass.foregroundColor);
-		$("#" + Constants.ConstsClass.genericLinePrefix + (currentLine )).css('color', Constants.ConstsClass.foregroundColor);
-		$("#" + Constants.ConstsClass.genericLinePrefix + (currentLine + 1)).css('color', Constants.ConstsClass.highlightColor);	
+		this.props.changeLineColor(currentLine);
 	}
 
 	render() {
 		return (
-			<div className="audioContainer">
-				<audio controls="true" ref="audioHTML" id="audioPlayer" ></audio>
-			</div> 
+			<div>
+
+				<div className="audioContainer">
+					<audio controls="true" ref="audioHTML" id="audioPlayer" ></audio>
+				</div> 
+			</div>
 		);
 	}
 }
 
 
+/**
+	<ReactSVG
+	path="playPause.svg"
+	callback={svg => console.log(svg)}
+	className="example"
+	style = {{
+		"position":"absolute",
+		top: "0px"
+		// "paddingTop": "10vh",
+		// margin: "0px auto",
+		// display: "block"
+	}}
+		/>
+**/
