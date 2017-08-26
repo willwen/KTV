@@ -30605,8 +30605,8 @@ var ConstsClass = {
 	audioPlayerID: "audioPlayer",
 
 	//colors
-	foregroundColor: "#F8F8F2",
-	highlightColor: "#a6e22e"
+	foregroundColor: "rgba(255,255,255,0.5)",
+	highlightColor: "#fff"
 };
 exports.default = { ConstsClass: ConstsClass, timestampToSeconds: timestampToSeconds };
 
