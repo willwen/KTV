@@ -87,7 +87,6 @@ export default class AudioPlayer extends React.Component {
 	render() {
 		return (
 			<div>
-
 				<div className="audioContainer">
 					<audio controls="true" ref="audioHTML" id="audioPlayer" ></audio>
 				</div> 

@@ -84,6 +84,7 @@ export default class MainContainer extends React.Component {
 
 	setCanvas(){
 		var audio = this.refs.audioPlayer.refs.audioHTML;
+		var AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
 		var context = new AudioContext()
 	    var src = context.createMediaElementSource(audio);
 	    var analyser = context.createAnalyser();
@@ -124,7 +125,10 @@ export default class MainContainer extends React.Component {
 
 
 				barHeight = dataArray[i];
-
+				// if(barHeight!=0){
+				// 	console.log("not zero:")
+				// 	console.log(barHeight)
+				// }
 				var r = barHeight + (25 * (i/bufferLength));
 				var g = 250 * (i/bufferLength);
 				var b = 240;
@@ -140,7 +144,7 @@ export default class MainContainer extends React.Component {
 				x += barWidth + 1;
       		}
 		}
-		this.refs.audioPlayer.togglePlayer(); // start by playing
+		// this.refs.audioPlayer.togglePlayer(); // start by playing
 	    renderFrame();
 	}
 

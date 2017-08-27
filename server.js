@@ -2,14 +2,14 @@ var url = require('url'),
     fs = require('fs'),
     querystring = require('querystring'),
     express = require('express'),
-	port = 8081,
+	port = 8080,
 	mongodb = require('mongodb'),
 	xssfilters = require('xss-filters'),
 	bodyParser = require('body-parser'),
 	escapeStringRegexp = require('escape-string-regexp');
 
-var mongoURL = "mongodb://mongodb:27017/songs"
-// var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
+//var mongoURL = "mongodb://mongodb:27017/songs"
+var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
 var app = express();
 
 app.use(express.static('webpage'))
