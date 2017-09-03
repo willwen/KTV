@@ -1,9 +1,11 @@
 - need to figure out how to send multiple files in a ajax response
 	~ formdata() ?
 -1 merge tyler's PR (Remember to git stash pop)
+
+0 results list should highlight what text matched (regex)
+1 make the div centered so you can show visualizer on left and right
+2 make hotkey for scrolling
 0 Mongodb to contain all your songs/
-1 allow clicking (anchor jumping) on empty lines
-	disable click on newline entries
 3 do regex on file grabbing  (\w*\.mp3) so you can name the songs
 4 single tap lyric to show all langs
 5 helper button to show keys:
@@ -14,8 +16,7 @@
 7 add album image to bottom right
 8 test on chrome mobile broswer (some empty unused whitespace_
 	firefox has weird audio bar
-8.5 results list should highlight what text matched (regex)
-9 changing song doesnt remove previously highlighted text
+
 10 add a loading SVG
 11 header search bar to make searching easy
 

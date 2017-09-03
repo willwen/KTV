@@ -13,30 +13,29 @@ $(document).ready(function(){
 		charTimes[index] = time;
 		var ele = $('#' + index);
 		var temp = $('<span></span>').text(time);
-     	// temp.innerHTML = time;
 	    ele.append(temp);
-
 		index++;
-		e.preventDefault(); // and prevent scrolling
+
+		e.preventDefault(); // and prevent backspace default
 	  }
 	});
 
-	$("#audioPlayer").on('timeupdate', function(){
-		if(english.test(charLyrics[index])){
-			charTimes[index] = 0;
-			index++;
-			console.log("deteched english , updated");
-		}
-		if(staticTimes){
-			if((this.currentTime >= (staticTimes[playbackIndex]-0.6)) || staticTimes[playbackIndex]==0){
-				$("#" + (playbackIndex-1)).removeAttr( 'style' );
-				$("#" + playbackIndex).css("color", "blue")
-				// console.log(this.currentTime + ">=" + (staticTimes[playbackIndex]-0.4)+ " aka char#" + playbackIndex)
-				playbackIndex++;
-			}
+	// $("#audioPlayer").on('timeupdate', function(){
+	// 	if(english.test(charLyrics[index])){
+	// 		charTimes[index] = 0;
+	// 		index++;
+	// 		console.log("deteched english , updated");
+	// 	}
+	// 	if(staticTimes){
+	// 		if((this.currentTime >= (staticTimes[playbackIndex]-0.6)) || staticTimes[playbackIndex]==0){
+	// 			$("#" + (playbackIndex-1)).removeAttr( 'style' );
+	// 			$("#" + playbackIndex).css("color", "blue")
+	// 			// console.log(this.currentTime + ">=" + (staticTimes[playbackIndex]-0.4)+ " aka char#" + playbackIndex)
+	// 			playbackIndex++;
+	// 		}
 
-		}
-	});
+	// 	}
+	// });
 	var count = 0;
 	for (var c in charLyrics) {
 		var newElement;
@@ -56,21 +55,45 @@ $(document).ready(function(){
 	}
 });
 
-var lyrics = `徘徊着的 在路上的
-你要走吗 via via
-易碎的 骄傲着
-那也曾是我的模样
-沸腾着的 不安着的
-你要去哪 via via
-谜一样的 沉默着的
-故事你真的在听吗
+var lyrics = `窗外的麻雀　在电线杆上多嘴
+妳說这一句　很有夏天的感觉
+手中的铅笔　在纸上来来回回
+我用几行字形容妳是我的谁
 
-我曾经跨过山和大海
-也穿过人山人海
-我曾经拥有着一切
-转眼都飘散如烟
-我曾经失落失望失掉所有方向
-直到看见平凡才是唯一的答案`
+秋刀鱼的滋味　猫跟妳都想了解
+初恋的香味就这样被我们寻回
+那温暖　的阳光　像刚摘的　鲜艳草莓
+你說妳舍不得吃掉这一种感觉
+
+雨下整夜　我的爱溢出就像雨水
+院子落叶　跟我的思念厚厚一叠
+几句是非　也无法将我的热情冷却
+妳出现在我诗的每一页
+
+雨下整夜　我的爱溢出就像雨水
+窗台蝴蝶　像诗里纷飞的美丽章节
+我接着写　把永远爱妳写进诗的结尾
+妳是我唯一想要的了解
+
+雨下整夜　我的爱溢出就像雨水
+院子落叶　跟我的思念厚厚一叠
+几句是非　也无法将我的热情冷却
+妳出现在我诗的每一页
+
+那饱满的稻穗　幸福了这个季节
+而妳的脸颊像田里熟透的番茄
+妳突然对我说　七里香的名字很美
+我此刻却只想亲吻妳倔强的嘴
+
+雨下整夜　我的爱溢出就像雨水
+院子落叶　跟我的思念厚厚一叠
+几句是非　也无法将我的热情冷却
+妳出现在我诗的每一页
+
+整夜　我的爱溢出就像雨水
+窗台蝴蝶　像诗里纷飞的美丽章节
+把永远爱妳写进诗的结尾
+妳是我唯一想要的了解`
 
 var charLyrics = lyrics.split("");
 var charTimes = [];
@@ -80,8 +103,9 @@ var english = /^[A-Za-z0-9 \n]*$/;
 var newline = /\n/;
 
 var playbackIndex = 0;
-var staticTimes = [11.820964, 12.272076, 12.680091, 12.868268, 0, 13.321589, 13.788317, 14.115166, 14.288791, 0, 17.715872, 18.063907, 18.437981, 18.609151, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23.447083, 23.786179, 24.120882, 0, 24.821939, 25.216991, 25.577796]
-  var audioPlayerID = "audioPlayer"
+var staticTimes = []
+var audioPlayerID = "audioPlayer"
+
 //toggle play/pause on the audio player
 function toggleAudioPlayer(){
 	$("#" + audioPlayerID).prop("paused") ? $("#" + audioPlayerID).trigger("play") : $("#" + audioPlayerID).trigger("pause");

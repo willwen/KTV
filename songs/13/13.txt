@@ -1,0 +1,11 @@
+周杰倫 Jay Chou _ 七里香
+common jasmine orange
+
+{
+    "title_pinyin": "Qī lǐ xiāng",
+    "cn_char": "七里香",
+    "file_name": "13",
+    "artist": "周杰倫 Jay Chou",
+    "artist_pinyin": "Zhōujiélún",
+    "searchTerm": "Qi li xiang 七里香 周杰倫 Jay Chou Zhou jie lun"
+}
