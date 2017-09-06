@@ -20,8 +20,8 @@ app.use(express.static('dist'))
 //for post requests
 app.use(bodyParser.json());
 
-app.listen(process.env.PORT || port, function() {
-    console.log('Listening on port %s!', port)
+var server = app.listen(process.env.PORT || port, function() {
+    console.log('Listening on port %s!', server.address().port)
 })
 
 app.get('/song', function (req, res){

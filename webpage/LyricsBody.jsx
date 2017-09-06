@@ -12,18 +12,23 @@ export default class LyricsBody extends React.Component {
 		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
 		//wipe color off current ones:
 		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine - 1)).css('color',Constants.ConstsClass.foregroundColor)
-		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine )).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine)).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine)).css("font-weight", "");
 		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine + 1)).css('color',Constants.ConstsClass.foregroundColor)
+
 		this.props.skipToTime(lineNum, newTime);
 		$("#" + Constants.ConstsClass.lyricLine + lineNum).css('color', Constants.ConstsClass.highlightColor)
+		$("#" + Constants.ConstsClass.lyricLine + lineNum).css("font-weight", "bolder");
 	}
 
 	incrementLineColor(lineNum){
-		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
 		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine - 1)).css('color',Constants.ConstsClass.foregroundColor)
+  		
 		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine)).css('color',Constants.ConstsClass.foregroundColor)
+		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine)).css("font-weight", "");
+  		
 		$("#" + Constants.ConstsClass.lyricLine + (this.props.currentLine + 1)).css('color',Constants.ConstsClass.highlightColor)
-		
+		$("#" +  Constants.ConstsClass.lyricLine + (this.props.currentLine + 1)).css("font-weight", "bolder");
 	}
 
 	render() {
