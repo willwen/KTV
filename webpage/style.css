@@ -108,10 +108,6 @@ a:hover {
     font-size: 2em;
 }
 
-.githubLink {
-    font-size: .6em;
-}
-
 /**
   Search Bar Stylings
 **/
@@ -217,7 +213,7 @@ ul {
 
 #lyricsBody {
     visibility: hidden;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255, 1);
     margin-top: 10px;
     padding: 40px;
     font-family: Consolas, monaco, monospace;
@@ -280,9 +276,9 @@ ul {
     align-items: center;
 }
 
-.lineAnchor {
+/*.lineAnchor {
     color: rgba(255, 255, 255, 0.25);
-}
+}*/
 
 .lineAnchor:hover {
     color: #FFF;
@@ -295,6 +291,27 @@ ul {
 }
 
 /**
+Visualizer Canvas
+**/
+.canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
+/** Pause Play SVG Animations
+**/
+
+#circle {
+	transition: stroke-dashoffset 300ms ease-in;
+	stroke-dashoffset: 0;
+	fill: none;
+}
+#circle.play {
+	stroke-dashoffset: 314;
+}
+
+/**
   Footer and Audio Player Stylings
 **/
 
@@ -304,6 +321,7 @@ need to define with of 90% so the margin knows how much to cut*/
     display: block;
     margin: 0 auto;
     width: 95%;
+    height:300px;
 }
 
 /*Fixed audio player at the bottom, taking up 90 of the screen*/

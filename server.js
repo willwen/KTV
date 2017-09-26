@@ -6,6 +6,7 @@ var url = require('url'),
 	mongodb = require('mongodb'),
 	xssfilters = require('xss-filters'),
 	bodyParser = require('body-parser'),
+	glob = require("glob"),
 	escapeStringRegexp = require('escape-string-regexp');
 
 //var mongoURL = "mongodb://mongodb:27017/songs"
@@ -31,7 +32,11 @@ app.get('/song', function (req, res){
 	var files = ['pinyin.txt',  'cn.txt', 'eng.txt', 'times.txt'];
 	files.forEach(function(item){
 		try{
-		 	lyrics[item] = fs.readFileSync('songs/'+ id + '/' + id + ' ' + item).toString().split("\n");
+			
+			var files = glob.sync('songs/'+ id + '*/' + id + ' ' + item)
+			console.log(files)
+			lyrics[item] = fs.readFileSync(files[0]).toString().split("\n");	
+		 	
 		}
 		catch (err){
 			console.log(err)
@@ -39,9 +44,19 @@ app.get('/song', function (req, res){
 		}
 
 	})
+	glob('songs/' + id + '*/*.mp3', function(err, files){
+		if(err){
+			lyrics['songFile'] = "mp3 file not found"
+			throw err
+		}
+		else{
+			lyrics['songFile'] = files[0].split("songs/")[1]
+		}
 
-	lyrics['songFile'] = id + '/' + id +'.mp3'
-	res.end(JSON.stringify(lyrics, 'utf-8'));
+		res.end(JSON.stringify(lyrics, 'utf-8'));
+
+	})
+	
 	// var MongoClient = mongodb.MongoClient;
 	// var url = mongoURL
 	// MongoClient.connect(url, function(err, seed){

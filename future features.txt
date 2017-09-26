@@ -1,16 +1,20 @@
--1 Bold the current text
+* fix bolded on lines before newline
+
+1 results list should highlight what text matched (regex)
+change jp, cn, spanish , for particular songs
+
 0 play pause, vol up , vol down SVG
 .5 make a popup help box on load
-1 results list should highlight what text matched (regex)
+
+should be able to disable canvas all together
+-1 Bold the current text
 2 make the div centered so you can show visualizer on left and right
 	- visualzier bucket size should be variable
 	- visualizer should be toggable
 	- work on a ios https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/PlayingandSynthesizingSounds.html
 2.5 show English on the song titles
 
-*TimePickerTool 
 
-3 do regex on file grabbing  (\w*\.mp3) so you can name the songs
 4 single tap lyric to show all langs
 
 6 fix scrolling time back shouldnt break the text highlighting
