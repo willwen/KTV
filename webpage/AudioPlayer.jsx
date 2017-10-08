@@ -36,7 +36,7 @@ export default class AudioPlayer extends React.Component {
 				// console.log("scrolling val: " + scrollingOffset);
 				this.props.updateCurrentLine(currentLine + 1);
 				if(this.props.allowScrolling)
-		  			$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 1000, offset :{top : this.props.scrollOffset}});
+		  			$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});
 			}
 		}
 

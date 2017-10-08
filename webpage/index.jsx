@@ -50,6 +50,8 @@ export default class MainContainer extends React.Component {
 		this.skipToLine = this.skipToLine.bind(this);
 		this.changeLineColor = this.changeLineColor.bind(this)
 		// this.renderFrame = this.renderFrame.bind(this);
+		this.setCanvas = this.setCanvas.bind(this)
+
 	}
 	componentWillMount(){
 	  	this.scaleScrolling();
@@ -75,6 +77,8 @@ export default class MainContainer extends React.Component {
 		});
 		
   	  	window.addEventListener("resize", this.scaleScrolling);
+  		this.setCanvas();
+
 	}
 	componentWillUnmount(){
 		window.removeEventListener("resize", this.scaleScrolling);
@@ -178,7 +182,7 @@ export default class MainContainer extends React.Component {
 			areOptionsInflated: true//!this.state.areOptionsInflated
 		});
 		this.refs.audioPlayer.setSong(this.state.songPath);
-		this.setCanvas();
+		this.refs.lyricsBody.clearLyrics();
 	}
 
 	
