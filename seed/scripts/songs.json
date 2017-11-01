@@ -12,3 +12,4 @@
 {"_id":{"$oid":"59a0b49ff36d281bbd02fbc6"},"title_pinyin":"Zhōng wú yàn","cn_char":"鍾無艷","file_name":"12","artist":"Kay Tse 謝安琪","artist_pinyin":"xiè'ān qí","searchTerm":"Zhōng wú yàn 鍾無艷 Kay Tse 謝安琪 xiè'ān qí"}
 {"_id":{"$oid":"59ab6799734d1d25a0f5ca32"},"title_pinyin":"Qī lǐ xiāng","cn_char":"七里香","file_name":"13","artist":"周杰倫 Jay Chou","artist_pinyin":"Zhōujiélún","searchTerm":"Qi li xiang 七里香 周杰倫 Jay Chou Zhou jie lun"}
 {"_id":{"$oid":"59b7f3a9f36d284a7e7bd826"},"title_pinyin":"Qíngtiān","cn_char":"晴天","file_name":"14","artist":"周杰倫 Jay Chou","artist_pinyin":"Zhōujiélún","searchTerm":"Qing Tian 晴天 周杰倫 Jay Chou Zhou jie lun"}
+{"_id":{"$oid":"59c7cd6b734d1d72c63058a6"},"title_pinyin":"Lóng quán","cn_char":"龍拳","file_name":"15","artist":"周杰倫 Jay Chou","artist_pinyin":"Zhōujiélún","searchTerm":"Long quan 龍拳 周杰倫 Jay Chou Zhou jie lun"}

@@ -1,0 +1,370 @@
+/**
+  General Stylings
+**/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700');
+
+/*Set Border Box and Font
+  Border Box means elements should have padding and border included in the element's total width and height
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+/*When Links are hovered over, give that funny pointer*/
+
+a {
+    cursor: pointer;
+}
+
+/*Header Styles*/
+.header img {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.fa {
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border-color: white;
+    color: white;
+}
+
+.nav {
+    margin-top: 35px;
+    margin-right: 25px;
+    float: right;
+}
+
+.nav p {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/*Give a Margin so the musicplayer has space*/
+
+body {
+    color: #fff;
+    margin-bottom: 40px;
+    background: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/**
+  Bootstrap Overrides
+ */
+h1, a {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    opacity: 0.8;
+    text-transform: none;
+}
+
+a:hover {
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.jumbotron {
+    background: transparent;
+}
+
+.jumbotron h1 {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.jumbotron p {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.list-group li {
+    overflow: hidden;
+    margin-bottom: -1px;
+}
+
+.list-group li:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.list-group li:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.list-group-item.button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 !important;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.list-group-item.button:hover,
+.list-group-item.button:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+/**
+  Top Banner Stylings
+**/
+.welcome {
+    font-size: 2em;
+}
+
+/**
+  Search Bar Stylings
+**/
+.searchDiv {
+    display: block;
+    height: 40px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#songSearchInput {
+    box-sizing: border-box;
+    font-size: 1.3em;
+    background: white url('searchicon.png') no-repeat 15px center;
+    padding: 10px 20px 8px 50px;
+    box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.allSongsDiv {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    padding: 25px 0;
+}
+
+.allSongsDiv a {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+/**
+  Results List Stylings
+**/
+#resultsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    font-size: 1.4em;
+}
+
+ul {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#resultsList li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: black;
+    display: block
+}
+
+#resultsList li a.header {
+    background-color: #e2e2e2;
+    cursor: default;
+}
+
+#resultsList li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+/**
+  Options Stylings
+**/
+
+#options {
+    margin-top: 10px;
+}
+
+.displayLanguages {
+    font-weight: bold;
+}
+
+.playbackOptions {
+    font-weight: bold;
+    text-align: right;
+}
+
+.playbackOptions > div, .displayLanguages > div {
+    font-weight: normal;
+}
+
+/**
+  Lyric Display Stylings
+**/
+
+.gradient {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+
+}
+
+#lyricsBody {
+    visibility: hidden;
+    color: rgba(255,255,255, 1);
+    margin-top: 10px;
+    padding: 40px;
+    font-family: Consolas, monaco, monospace;
+}
+
+@media (max-width: 767px) {
+    #lyricsBody {
+        font-size: 1em;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    #lyricsBody {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 992px) {
+    #lyricsBody {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    #lyricsBody {
+        font-size: 1.7em;
+    }
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+/**
+  Line Number Stylings
+**/
+
+.lineIndex {
+    /*  border-left: 6px solid red */
+    border-right: 3px solid rgba(255, 255, 255, 0.15);
+    font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+    .lineIndex {
+        font-size: 1em;
+        border-right-width: 3px;
+        padding-right: 24px;
+    }
+}
+
+/*https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
+*/
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+/*.lineAnchor {
+    color: rgba(255, 255, 255, 0.25);
+}*/
+
+.lineAnchor:hover {
+    color: #FFF;
+}
+
+.tooltip-inner {
+    background-color: #FD971F;
+    color: #272822;
+    font-size: 1.75em;
+}
+
+/**
+Visualizer Canvas
+**/
+.canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
+/** Pause Play SVG Animations
+**/
+
+#circle {
+	transition: stroke-dashoffset 300ms ease-in;
+	stroke-dashoffset: 0;
+	fill: none;
+}
+#circle.play {
+	stroke-dashoffset: 314;
+}
+
+/**
+  Footer and Audio Player Stylings
+**/
+
+/*Display block because inline will tak eup the whole line
+need to define with of 90% so the margin knows how much to cut*/
+.audioContainer {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height:300px;
+}
+
+/*Fixed audio player at the bottom, taking up 90 of the screen*/
+#audioPlayer {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    /* Set the fixed height of the footer here */
+    height: 35px;
+    background-color: #f5f5f5;
+}

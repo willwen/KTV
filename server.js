@@ -13,10 +13,12 @@ var url = require('url'),
 var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
 var app = express();
 
-app.use(express.static('webpage'))
+app.use(express.static('webpage/index'))
+app.use(express.static('webpage/treesearch'))
 app.use(express.static('songs'))
 app.use(express.static('favicons'))
 app.use(express.static('dist'))
+app.use(express.static('images'))
 
 //for post requests
 app.use(bodyParser.json());
@@ -24,8 +26,10 @@ app.use(bodyParser.json());
 var server = app.listen(process.env.PORT || port, function() {
     console.log('Listening on port %s!', server.address().port)
 })
-
-app.get('/song', function (req, res){
+app.get('/treefind', function(req,res){
+	res.sendFile(__dirname + '/webpage/treesearch/treesearch.html')
+})
+app.get('/getSong', function (req, res){
 	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
 	res.writeHead(200, {'Content-type': 'application/json'});
 	var lyrics = {};
@@ -54,8 +58,46 @@ app.get('/song', function (req, res){
 		}
 
 		res.end(JSON.stringify(lyrics, 'utf-8'));
+	})
+
+
+
+});
+
+app.get('/song', function (req, res){
+	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
+	// res.writeHead(200, {'Content-type': 'application/json'});
+	var lyrics = {};
+	var files = ['pinyin.txt',  'cn.txt', 'eng.txt', 'times.txt'];
+	files.forEach(function(item){
+		try{
+			
+			var files = glob.sync('songs/'+ id + '*/' + id + ' ' + item)
+			console.log(files)
+			lyrics[item] = fs.readFileSync(files[0]).toString().split("\n");	
+		 	
+		}
+		catch (err){
+			console.log(err)
+			lyrics[item] = "Error finding file";
+		}
 
 	})
+	glob('songs/' + id + '*/*.mp3', function(err, files){
+		if(err){
+			lyrics['songFile'] = "mp3 file not found"
+			throw err
+		}
+		else{
+			lyrics['songFile'] = files[0].split("songs/")[1]
+		}
+
+
+
+	})
+		// lyrics
+	res.sendFile(__dirname + '/webpage/song/index.html')
+
 	
 	// var MongoClient = mongodb.MongoClient;
 	// var url = mongoURL
@@ -107,6 +149,43 @@ app.get('/song', function (req, res){
 	// })
 
 });
+app.get('/artists', function(req,res){
+	var MongoClient = mongodb.MongoClient;
+	var url = mongoURL
+
+	MongoClient.connect(url, function(err, db){
+		if(err)
+			console.log('unable to connect to server', err);
+		else{
+			console.log('connection established');
+			var collection = db.collection('songs');
+			var query = [{$sort:{artist:-1}},{$group: {_id:"$artist", songs: {$push: "$$ROOT"}}}]
+			try{
+				collection.aggregate(query).toArray(function(err, result) {
+					    if (err) throw err;
+				   		console.log(result);
+					    res.send(result);
+					    db.close();
+			  	});
+			}
+			catch (err){
+				console.log(err);
+				var placeholder = [];
+				placeholder.push({
+					_id: 9999,
+				    title_pinyin: 'No Results Found',
+				    cn_char: 'No Results Found',
+				    file_name: '1',
+				    artist: '',
+				    artist_pinyin: '',
+				    searchTerm: 'No Results Found'});
+			    res.send(placeholder);
+			    db.close();
+			}
+		}
+	})
+})
+
 
 app.get('/query', function (req,res){
 	var MongoClient = mongodb.MongoClient;

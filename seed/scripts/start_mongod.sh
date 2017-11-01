@@ -1,4 +1,2 @@
 #!/bin/bash
-mongod --dbpath ../data/
-
-$SHELL
+mongod --dbpath ../../data/
