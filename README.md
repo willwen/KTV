@@ -28,17 +28,17 @@ webpack.config.js - webpack configuration that transpiles react to javascript.
 4) ```npm install ```
 5) the mongodb can be local or remote (heroku's mlab server)
 	In server.js , we see:
-	```
-	var mongoURL = "mongodb://localhost:27017/songs"
-	var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
-	```
+	``` var mongoURL = "mongodb://localhost:27017/songs"```
+	```var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"```
+	
 	Choose one link.
 	
 	If you chose localhost:
-	
 		add Mongodb executables to your System Path (Windows: computer , properties, advanced system settings, environment variables...). 
+		
 		``` cd seed/scripts/ ```
 		``` ./mongod --dbpath ../../data/ ``` - Keep this terminal running for the duration of your development
+		
 		
 	Import the songs.json file:
   		``` mongoimport --db songs --collection songs --file songs.json```
