@@ -32,21 +32,25 @@ webpack.config.js - webpack configuration that transpiles react to javascript.
 	var mongoURL = "mongodb://localhost:27017/songs"
 	var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
 	```
-	choose one link.
+	Choose one link.
+	
 	If you chose localhost:
+	
 		add Mongodb executables to your System Path (Windows: computer , properties, advanced system settings, environment variables...). 
 		``` cd seed/scripts/ ```
 		``` ./mongod --dbpath ../../data/ ``` - Keep this terminal running for the duration of your development
-9) In another Git Bash terminal, import the songs.json file:
-  first go to "mongo script" directory: "cd $KTV/KTV/mongo\ script/"
-  "mongoimport --db songs --collection songs --file songs.json"
-  exit back to KTV: "cd .."
-10) In index.js, uncomment out line 10: "var mongoURL = "mongodb://localhost:27017/songs", and comment out line 11.
-11) Run node index.js
-12) In web browser, go to localhost:8080
+		
+	Import the songs.json file:
+  		``` mongoimport --db songs --collection songs --file songs.json```
+		
+6) ```PORT=8080 node server.js ```
+7) In web browser, go to localhost:8080
 
-13) Now you need to start webpack , which compiles all ES6 and JSX code (aka React) to bundle.js
+8) Now you need to start webpack , which compiles all ES6 and JSX code (aka React) to bundle.js
 	in $KTV, run:
 	npm run webpack
 
 	It will say webpack is watching the files.
+9)If you want to do react development (aka mess with the code in webpage/)
+``` npm run webpack ```
+It will detect any file changes in webpage/* and generate a dist/bundle.js file, which is what index.html uses
