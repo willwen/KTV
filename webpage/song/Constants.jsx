@@ -44,7 +44,7 @@ const ConstsClass = {
 
 	//colors
 	foregroundColor : "rgba(255,255,255,0.5)",
-	highlightColor : "#000"
+	highlightColor : "rgb(255, 238, 6)"
 
 }
 export default {ConstsClass, timestampToSeconds}

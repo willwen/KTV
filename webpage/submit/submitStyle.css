@@ -56,15 +56,28 @@ a {
     font-size: 20px;
     color: white;
 }
-
+.container .jumbotron{
+    margin-bottom: 0px;
+}
+.jumbotron h1{
+    font-size: 50px;
+}
 /*Give a Margin so the musicplayer has space*/
 
 body {
-    color: #fff;
     margin-bottom: 40px;
     background: #667eea;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+.help-block{
+    color:#ff7a7a;
+}
+label{
+    color: #ffffff;
+}
+
+.form-group-lg .form-control { font-size:.8em; }
+
 
 /**
   Bootstrap Overrides
@@ -241,7 +254,7 @@ ul {
 **/
 
 .gradient {
-    background: rgba(86, 86, 86, 0.8) ;
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 6px;
 
 }

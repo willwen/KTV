@@ -14,6 +14,8 @@ var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3
 var app = express();
 
 app.use(express.static('webpage/index'))
+app.use(express.static('webpage/submit'))
+app.use(express.static('webpage/song'))
 app.use(express.static('webpage/treesearch'))
 app.use(express.static('songs'))
 app.use(express.static('favicons'))
@@ -28,6 +30,10 @@ var server = app.listen(process.env.PORT || port, function() {
 })
 app.get('/treefind', function(req,res){
 	res.sendFile(__dirname + '/webpage/treesearch/treesearch.html')
+})
+
+app.get('/submit', function(req,res){
+	res.sendFile(__dirname + '/webpage/submit/index.html')
 })
 app.get('/getSong', function (req, res){
 	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID

@@ -2,6 +2,9 @@ import Constants from './Constants.jsx'
 import $ from 'jquery'
 import scrollTo from 'jquery.scrollTo'
 import ReactSVG from 'react-svg'
+import AudioAnimations from './AudioAnimations.jsx'
+
+
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
   		super(props, context);
@@ -10,6 +13,9 @@ export default class AudioPlayer extends React.Component {
 		this.updateLine = this.updateLine.bind(this);
 		this.checkTimes = this.checkTimes.bind(this);
 		this.getAudioPlayer = this.getAudioPlayer.bind(this);
+		this.state = {
+			action : "none"
+		}
 	}
 	componentDidMount(){
 		this.refs.audioHTML.ontimeupdate = this.checkTimes;
@@ -45,15 +51,26 @@ export default class AudioPlayer extends React.Component {
 	}
 
 	increaseVolume(){
+		var that = this
+		this.setState({action : "vol_up"});
+		setTimeout(function(){
+				this.setState({"action": "none"})
+		}.bind(this), 2000)
 		if(this.refs.audioHTML.volume != 1.0)
 			this.refs.audioHTML.volume = this.refs.audioHTML.volume + .1;
 	}
 
 	decreaseVolume(){
+		this.setState({action : "vol_down"});
+		setTimeout(function(){
+				this.setState({"action": "none"})
+		}.bind(this), 2000)
 		if(this.refs.audioHTML.volume > .1)
 			this.refs.audioHTML.volume = this.refs.audioHTML.volume - .1;	
 	}
+	resetAction(){
 
+	}
 	setCurrentTime(newTime){
 		this.refs.audioHTML.currentTime = newTime;
 		this.refs.audioHTML.play();
@@ -69,13 +86,17 @@ export default class AudioPlayer extends React.Component {
 
 	togglePlayer(){
 		if(this.refs.audioHTML.paused){
-			// $("#circle").attr("class", "play");
-			// $("#from_pause_to_play")[0].beginElement();
+			this.setState({action : "play"});
+			setTimeout(function(){
+				this.setState({"action": "none"})
+			}.bind(this), 2000)
 			this.refs.audioHTML.play()
 		}
 		else{
-			// $("#circle").attr("class", "");
-			// $("#from_play_to_pause")[0].beginElement();
+			this.setState({action : "pause"});
+			setTimeout(function(){
+				this.setState({"action": "none"})
+			}.bind(this), 2000)
 		    this.refs.audioHTML.pause();
 		}
 	}
@@ -90,7 +111,9 @@ export default class AudioPlayer extends React.Component {
 				<div className="audioContainer">
 					<audio controls="true" ref="audioHTML" id="audioPlayer" ></audio>
 				</div> 
+				<AudioAnimations action = {this.state.action}/>
 			</div>
+
 		);
 	}
 }

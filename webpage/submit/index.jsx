@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 
 import PageHeader from './Header.jsx'
-import SearchPanel from './SearchPanel.jsx'
+import Form from './Form.jsx'
 
 import axios from 'axios'
 import $ from 'jquery'
@@ -9,30 +9,33 @@ import $ from 'jquery'
 export default class MainContainer extends React.Component {
 	constructor(){
 		super();
-		this.state={
-		};
-
+	
+		// this.getParameterByName = this.getParameterByName.bind(this)
 	}
 	componentWillMount(){
+	  	
 	}
 	componentDidMount(){
+		
 
 	}
 	componentWillUnmount(){
+	
 	}
 
 
 
 	
-
 	render() {
 		return (
-			<div>
-			  <div className="container">
-		      	<PageHeader/>
-		      	<SearchPanel/>
-				<div className = "clearfix"></div>
-			  </div>
+			<div className="container">
+			<div className = "row">
+		      <PageHeader/>
+		      </div>
+		      <div className = "row form">
+		      	<Form/>
+		      </div>
+		      
 		  </div>
 		);
 	}

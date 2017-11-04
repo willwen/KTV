@@ -1,7 +1,9 @@
 /**
   General Stylings
 **/
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700');
+
 
 /*Set Border Box and Font
   Border Box means elements should have padding and border included in the element's total width and height
@@ -16,13 +18,16 @@ html {
     min-height: 100%;
 }
 
+
 /*When Links are hovered over, give that funny pointer*/
 
 a {
     cursor: pointer;
 }
 
+
 /*Header Styles*/
+
 .header img {
     width: 50px;
     height: auto;
@@ -57,6 +62,7 @@ a {
     color: white;
 }
 
+
 /*Give a Margin so the musicplayer has space*/
 
 body {
@@ -66,10 +72,13 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+
 /**
   Bootstrap Overrides
  */
-h1, a {
+
+h1,
+a {
     color: #fff;
 }
 
@@ -136,16 +145,20 @@ a:hover {
     background: rgba(255, 255, 255, 0.45);
 }
 
+
 /**
   Top Banner Stylings
 **/
+
 .welcome {
     font-size: 2em;
 }
 
+
 /**
   Search Bar Stylings
 **/
+
 .searchDiv {
     display: block;
     height: 40px;
@@ -178,9 +191,11 @@ a:hover {
     font-size: 0.9em;
 }
 
+
 /**
   Results List Stylings
 **/
+
 #resultsList {
     list-style-type: none;
     padding: 0;
@@ -215,6 +230,7 @@ ul {
     background-color: #eee;
 }
 
+
 /**
   Options Stylings
 **/
@@ -232,23 +248,24 @@ ul {
     text-align: right;
 }
 
-.playbackOptions > div, .displayLanguages > div {
+.playbackOptions>div,
+.displayLanguages>div {
     font-weight: normal;
 }
+
 
 /**
   Lyric Display Stylings
 **/
 
 .gradient {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(64, 64, 64, 0.9);
     border-radius: 6px;
-
 }
 
 #lyricsBody {
     visibility: hidden;
-    color: rgba(255,255,255, 1);
+    color: rgba(255, 255, 255, 1);
     margin-top: 10px;
     padding: 40px;
     font-family: Consolas, monaco, monospace;
@@ -286,6 +303,7 @@ ul {
     flex-wrap: wrap;
 }
 
+
 /**
   Line Number Stylings
 **/
@@ -304,12 +322,15 @@ ul {
     }
 }
 
+
 /*https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
 */
+
 .vertical-center {
     display: flex;
     align-items: center;
 }
+
 
 /*.lineAnchor {
     color: rgba(255, 255, 255, 0.25);
@@ -325,41 +346,51 @@ ul {
     font-size: 1.75em;
 }
 
+
 /**
 Visualizer Canvas
 **/
+
 .canvas {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: -100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
 }
+
+
 /** Pause Play SVG Animations
 **/
 
 #circle {
-	transition: stroke-dashoffset 300ms ease-in;
-	stroke-dashoffset: 0;
-	fill: none;
+    transition: stroke-dashoffset 300ms ease-in;
+    stroke-dashoffset: 0;
+    fill: none;
 }
+
 #circle.play {
-	stroke-dashoffset: 314;
+    stroke-dashoffset: 314;
 }
+
 
 /**
   Footer and Audio Player Stylings
 **/
 
+
 /*Display block because inline will tak eup the whole line
 need to define with of 90% so the margin knows how much to cut*/
+
 .audioContainer {
     display: block;
     margin: 0 auto;
     width: 95%;
-    height:300px;
+    height: 300px;
 }
 
+
 /*Fixed audio player at the bottom, taking up 90 of the screen*/
+
 #audioPlayer {
     position: fixed;
     bottom: 0;
@@ -367,4 +398,27 @@ need to define with of 90% so the margin knows how much to cut*/
     /* Set the fixed height of the footer here */
     height: 35px;
     background-color: #f5f5f5;
+}
+
+
+/*When User hits Play Pause*/
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    /*show in the front*/
+}
+
+@-webkit-keyframes fadein{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.transition{
+    -webkit-animation: fadein 2s ease 1 normal forwards;
+
 }

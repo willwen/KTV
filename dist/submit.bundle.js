@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 491);
+/******/ 	return __webpack_require__(__webpack_require__.s = 500);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -56299,1108 +56299,15 @@ exports.createChainedFunction = _createChainedFunction3.default;
 exports.ValidComponentChildren = _ValidComponentChildren3.default;
 
 /***/ }),
-/* 470 */
-/*!*********************************************************!*\
-  !*** ./node_modules/jquery.scrollTo/jquery.scrollTo.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/*!
- * jQuery.scrollTo
- * Copyright (c) 2007-2015 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com
- * Licensed under MIT
- * http://flesler.blogspot.com/2007/10/jqueryscrollto.html
- * @projectDescription Lightweight, cross-browser and highly customizable animated scrolling with jQuery
- * @author Ariel Flesler
- * @version 2.1.2
- */
-;(function (factory) {
-	'use strict';
-
-	if (true) {
-		// AMD
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ 128)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else if (typeof module !== 'undefined' && module.exports) {
-		// CommonJS
-		module.exports = factory(require('jquery'));
-	} else {
-		// Global
-		factory(jQuery);
-	}
-})(function ($) {
-	'use strict';
-
-	var $scrollTo = $.scrollTo = function (target, duration, settings) {
-		return $(window).scrollTo(target, duration, settings);
-	};
-
-	$scrollTo.defaults = {
-		axis: 'xy',
-		duration: 0,
-		limit: true
-	};
-
-	function isWin(elem) {
-		return !elem.nodeName || $.inArray(elem.nodeName.toLowerCase(), ['iframe', '#document', 'html', 'body']) !== -1;
-	}
-
-	$.fn.scrollTo = function (target, duration, settings) {
-		if ((typeof duration === 'undefined' ? 'undefined' : _typeof(duration)) === 'object') {
-			settings = duration;
-			duration = 0;
-		}
-		if (typeof settings === 'function') {
-			settings = { onAfter: settings };
-		}
-		if (target === 'max') {
-			target = 9e9;
-		}
-
-		settings = $.extend({}, $scrollTo.defaults, settings);
-		// Speed is still recognized for backwards compatibility
-		duration = duration || settings.duration;
-		// Make sure the settings are given right
-		var queue = settings.queue && settings.axis.length > 1;
-		if (queue) {
-			// Let's keep the overall duration
-			duration /= 2;
-		}
-		settings.offset = both(settings.offset);
-		settings.over = both(settings.over);
-
-		return this.each(function () {
-			// Null target yields nothing, just like jQuery does
-			if (target === null) return;
-
-			var win = isWin(this),
-			    elem = win ? this.contentWindow || window : this,
-			    $elem = $(elem),
-			    targ = target,
-			    attr = {},
-			    toff;
-
-			switch (typeof targ === 'undefined' ? 'undefined' : _typeof(targ)) {
-				// A number will pass the regex
-				case 'number':
-				case 'string':
-					if (/^([+-]=?)?\d+(\.\d+)?(px|%)?$/.test(targ)) {
-						targ = both(targ);
-						// We are done
-						break;
-					}
-					// Relative/Absolute selector
-					targ = win ? $(targ) : $(targ, elem);
-				/* falls through */
-				case 'object':
-					if (targ.length === 0) return;
-					// DOMElement / jQuery
-					if (targ.is || targ.style) {
-						// Get the real position of the target
-						toff = (targ = $(targ)).offset();
-					}
-			}
-
-			var offset = $.isFunction(settings.offset) && settings.offset(elem, targ) || settings.offset;
-
-			$.each(settings.axis.split(''), function (i, axis) {
-				var Pos = axis === 'x' ? 'Left' : 'Top',
-				    pos = Pos.toLowerCase(),
-				    key = 'scroll' + Pos,
-				    prev = $elem[key](),
-				    max = $scrollTo.max(elem, axis);
-
-				if (toff) {
-					// jQuery / DOMElement
-					attr[key] = toff[pos] + (win ? 0 : prev - $elem.offset()[pos]);
-
-					// If it's a dom element, reduce the margin
-					if (settings.margin) {
-						attr[key] -= parseInt(targ.css('margin' + Pos), 10) || 0;
-						attr[key] -= parseInt(targ.css('border' + Pos + 'Width'), 10) || 0;
-					}
-
-					attr[key] += offset[pos] || 0;
-
-					if (settings.over[pos]) {
-						// Scroll to a fraction of its width/height
-						attr[key] += targ[axis === 'x' ? 'width' : 'height']() * settings.over[pos];
-					}
-				} else {
-					var val = targ[pos];
-					// Handle percentage values
-					attr[key] = val.slice && val.slice(-1) === '%' ? parseFloat(val) / 100 * max : val;
-				}
-
-				// Number or 'number'
-				if (settings.limit && /^\d+$/.test(attr[key])) {
-					// Check the limits
-					attr[key] = attr[key] <= 0 ? 0 : Math.min(attr[key], max);
-				}
-
-				// Don't waste time animating, if there's no need.
-				if (!i && settings.axis.length > 1) {
-					if (prev === attr[key]) {
-						// No animation needed
-						attr = {};
-					} else if (queue) {
-						// Intermediate animation
-						animate(settings.onAfterFirst);
-						// Don't animate this axis again in the next iteration.
-						attr = {};
-					}
-				}
-			});
-
-			animate(settings.onAfter);
-
-			function animate(callback) {
-				var opts = $.extend({}, settings, {
-					// The queue setting conflicts with animate()
-					// Force it to always be true
-					queue: true,
-					duration: duration,
-					complete: callback && function () {
-						callback.call(elem, targ, settings);
-					}
-				});
-				$elem.animate(attr, opts);
-			}
-		});
-	};
-
-	// Max scrolling position, works on quirks mode
-	// It only fails (not too badly) on IE, quirks mode.
-	$scrollTo.max = function (elem, axis) {
-		var Dim = axis === 'x' ? 'Width' : 'Height',
-		    scroll = 'scroll' + Dim;
-
-		if (!isWin(elem)) return elem[scroll] - $(elem)[Dim.toLowerCase()]();
-
-		var size = 'client' + Dim,
-		    doc = elem.ownerDocument || elem.document,
-		    html = doc.documentElement,
-		    body = doc.body;
-
-		return Math.max(html[scroll], body[scroll]) - Math.min(html[size], body[size]);
-	};
-
-	function both(val) {
-		return $.isFunction(val) || $.isPlainObject(val) ? val : { top: val, left: val };
-	}
-
-	// Add special hooks so that window scroll properties can be animated
-	$.Tween.propHooks.scrollLeft = $.Tween.propHooks.scrollTop = {
-		get: function get(t) {
-			return $(t.elem)[t.prop]();
-		},
-		set: function set(t) {
-			var curr = this.get(t);
-			// If interrupt is true and user scrolled, stop animating
-			if (t.options.interrupt && t._last && t._last !== curr) {
-				return $(t.elem).stop();
-			}
-			var next = Math.round(t.now);
-			// Don't waste CPU
-			// Browsers don't render floating point scroll
-			if (curr !== next) {
-				$(t.elem)[t.prop](next);
-				t._last = this.get(t);
-			}
-		}
-	};
-
-	// AMD requirement
-	return $scrollTo;
-});
-
-/***/ }),
-/* 471 */
-/*!*********************************************!*\
-  !*** ./node_modules/react-svg/lib/index.js ***!
-  \*********************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-  };
-}();
-
-var _react = __webpack_require__(/*! react */ 0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(/*! prop-types */ 8);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _server = __webpack_require__(/*! react-dom/server */ 472);
-
-var _server2 = _interopRequireDefault(_server);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
-
-// See: https://github.com/webpack/react-starter/issues/37
-var isBrowser = typeof window !== 'undefined';
-var SVGInjector = isBrowser ? __webpack_require__(/*! svg-injector */ 476) : undefined;
-
-var ReactSVG = function (_Component) {
-  _inherits(ReactSVG, _Component);
-
-  function ReactSVG() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, ReactSVG);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ReactSVG.__proto__ || Object.getPrototypeOf(ReactSVG)).call.apply(_ref, [this].concat(args))), _this), _this.refCallback = function (container) {
-      if (!container) {
-        _this.removeSVG();
-        return;
-      }
-
-      _this.container = container;
-      _this.renderSVG();
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  _createClass(ReactSVG, [{
-    key: 'renderSVG',
-    value: function renderSVG() {
-      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
-      var each = props.callback,
-          className = props.className,
-          evalScripts = props.evalScripts,
-          path = props.path,
-          style = props.style;
-
-      var div = document.createElement('div');
-      div.innerHTML = _server2.default.renderToStaticMarkup(_react2.default.createElement('div', null, _react2.default.createElement('div', {
-        className: className,
-        'data-src': path,
-        style: style
-      })));
-
-      var wrapper = this.container.appendChild(div.firstChild);
-
-      SVGInjector(wrapper.firstChild, {
-        evalScripts: evalScripts,
-        each: each
-      });
-    }
-  }, {
-    key: 'removeSVG',
-    value: function removeSVG() {
-      this.container.removeChild(this.container.firstChild);
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      this.removeSVG();
-      this.renderSVG(nextProps);
-    }
-  }, {
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate() {
-      return false;
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement('div', { ref: this.refCallback });
-    }
-  }]);
-
-  return ReactSVG;
-}(_react.Component);
-
-ReactSVG.defaultProps = {
-  callback: function callback() {},
-  className: '',
-  evalScripts: 'once',
-  style: {}
-};
-ReactSVG.propTypes = {
-  callback: _propTypes2.default.func,
-  className: _propTypes2.default.string,
-  evalScripts: _propTypes2.default.oneOf(['always', 'once', 'never']),
-  path: _propTypes2.default.string.isRequired,
-  style: _propTypes2.default.object
-};
-exports.default = ReactSVG;
-module.exports = exports['default'];
-
-/***/ }),
-/* 472 */
-/*!******************************************!*\
-  !*** ./node_modules/react-dom/server.js ***!
-  \******************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(/*! ./lib/ReactDOMServer */ 473);
-
-/***/ }),
-/* 473 */
-/*!******************************************************!*\
-  !*** ./node_modules/react-dom/lib/ReactDOMServer.js ***!
-  \******************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var ReactDefaultInjection = __webpack_require__(/*! ./ReactDefaultInjection */ 213);
-var ReactServerRendering = __webpack_require__(/*! ./ReactServerRendering */ 474);
-var ReactVersion = __webpack_require__(/*! ./ReactVersion */ 218);
-
-ReactDefaultInjection.inject();
-
-var ReactDOMServer = {
-  renderToString: ReactServerRendering.renderToString,
-  renderToStaticMarkup: ReactServerRendering.renderToStaticMarkup,
-  version: ReactVersion
-};
-
-module.exports = ReactDOMServer;
-
-/***/ }),
-/* 474 */
-/*!************************************************************!*\
-  !*** ./node_modules/react-dom/lib/ReactServerRendering.js ***!
-  \************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 12);
-
-var React = __webpack_require__(/*! react/lib/React */ 41);
-var ReactDOMContainerInfo = __webpack_require__(/*! ./ReactDOMContainerInfo */ 216);
-var ReactDefaultBatchingStrategy = __webpack_require__(/*! ./ReactDefaultBatchingStrategy */ 215);
-var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 22);
-var ReactMarkupChecksum = __webpack_require__(/*! ./ReactMarkupChecksum */ 217);
-var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 42);
-var ReactServerBatchingStrategy = __webpack_require__(/*! ./ReactServerBatchingStrategy */ 475);
-var ReactServerRenderingTransaction = __webpack_require__(/*! ./ReactServerRenderingTransaction */ 214);
-var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 26);
-
-var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 63);
-var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 129);
-var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 10);
-
-var pendingTransactions = 0;
-
-/**
- * @param {ReactElement} element
- * @return {string} the HTML markup
- */
-function renderToStringImpl(element, makeStaticMarkup) {
-  var transaction;
-  try {
-    ReactUpdates.injection.injectBatchingStrategy(ReactServerBatchingStrategy);
-
-    transaction = ReactServerRenderingTransaction.getPooled(makeStaticMarkup);
-
-    pendingTransactions++;
-
-    return transaction.perform(function () {
-      var componentInstance = instantiateReactComponent(element, true);
-      var markup = ReactReconciler.mountComponent(componentInstance, transaction, null, ReactDOMContainerInfo(), emptyObject, 0 /* parentDebugID */
-      );
-      if (process.env.NODE_ENV !== 'production') {
-        ReactInstrumentation.debugTool.onUnmountComponent(componentInstance._debugID);
-      }
-      if (!makeStaticMarkup) {
-        markup = ReactMarkupChecksum.addChecksumToMarkup(markup);
-      }
-      return markup;
-    }, null);
-  } finally {
-    pendingTransactions--;
-    ReactServerRenderingTransaction.release(transaction);
-    // Revert to the DOM batching strategy since these two renderers
-    // currently share these stateful modules.
-    if (!pendingTransactions) {
-      ReactUpdates.injection.injectBatchingStrategy(ReactDefaultBatchingStrategy);
-    }
-  }
-}
-
-/**
- * Render a ReactElement to its initial HTML. This should only be used on the
- * server.
- * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostring
- */
-function renderToString(element) {
-  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToString(): You must pass a valid ReactElement.') : _prodInvariant('46') : void 0;
-  return renderToStringImpl(element, false);
-}
-
-/**
- * Similar to renderToString, except this doesn't create extra DOM attributes
- * such as data-react-id that React uses internally.
- * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostaticmarkup
- */
-function renderToStaticMarkup(element) {
-  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToStaticMarkup(): You must pass a valid ReactElement.') : _prodInvariant('47') : void 0;
-  return renderToStringImpl(element, true);
-}
-
-module.exports = {
-  renderToString: renderToString,
-  renderToStaticMarkup: renderToStaticMarkup
-};
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 1)))
-
-/***/ }),
-/* 475 */
-/*!*******************************************************************!*\
-  !*** ./node_modules/react-dom/lib/ReactServerBatchingStrategy.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var ReactServerBatchingStrategy = {
-  isBatchingUpdates: false,
-  batchedUpdates: function batchedUpdates(callback) {
-    // Don't do anything here. During the server rendering we don't want to
-    // schedule any updates. We will simply ignore them.
-  }
-};
-
-module.exports = ReactServerBatchingStrategy;
-
-/***/ }),
-/* 476 */
-/*!***************************************************!*\
-  !*** ./node_modules/svg-injector/svg-injector.js ***!
-  \***************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_RESULT__;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- * SVGInjector v1.1.3 - Fast, caching, dynamic inline SVG DOM injection library
- * https://github.com/iconic/SVGInjector
- *
- * Copyright (c) 2014-2015 Waybury <hello@waybury.com>
- * @license MIT
- */
-
-(function (window, document) {
-
-  'use strict';
-
-  // Environment
-
-  var isLocal = window.location.protocol === 'file:';
-  var hasSvgSupport = document.implementation.hasFeature('http://www.w3.org/TR/SVG11/feature#BasicStructure', '1.1');
-
-  function uniqueClasses(list) {
-    list = list.split(' ');
-
-    var hash = {};
-    var i = list.length;
-    var out = [];
-
-    while (i--) {
-      if (!hash.hasOwnProperty(list[i])) {
-        hash[list[i]] = 1;
-        out.unshift(list[i]);
-      }
-    }
-
-    return out.join(' ');
-  }
-
-  /**
-   * cache (or polyfill for <= IE8) Array.forEach()
-   * source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
-   */
-  var forEach = Array.prototype.forEach || function (fn, scope) {
-    if (this === void 0 || this === null || typeof fn !== 'function') {
-      throw new TypeError();
-    }
-
-    /* jshint bitwise: false */
-    var i,
-        len = this.length >>> 0;
-    /* jshint bitwise: true */
-
-    for (i = 0; i < len; ++i) {
-      if (i in this) {
-        fn.call(scope, this[i], i, this);
-      }
-    }
-  };
-
-  // SVG Cache
-  var svgCache = {};
-
-  var injectCount = 0;
-  var injectedElements = [];
-
-  // Request Queue
-  var requestQueue = [];
-
-  // Script running status
-  var ranScripts = {};
-
-  var cloneSvg = function cloneSvg(sourceSvg) {
-    return sourceSvg.cloneNode(true);
-  };
-
-  var queueRequest = function queueRequest(url, callback) {
-    requestQueue[url] = requestQueue[url] || [];
-    requestQueue[url].push(callback);
-  };
-
-  var processRequestQueue = function processRequestQueue(url) {
-    for (var i = 0, len = requestQueue[url].length; i < len; i++) {
-      // Make these calls async so we avoid blocking the page/renderer
-      /* jshint loopfunc: true */
-      (function (index) {
-        setTimeout(function () {
-          requestQueue[url][index](cloneSvg(svgCache[url]));
-        }, 0);
-      })(i);
-      /* jshint loopfunc: false */
-    }
-  };
-
-  var loadSvg = function loadSvg(url, callback) {
-    if (svgCache[url] !== undefined) {
-      if (svgCache[url] instanceof SVGSVGElement) {
-        // We already have it in cache, so use it
-        callback(cloneSvg(svgCache[url]));
-      } else {
-        // We don't have it in cache yet, but we are loading it, so queue this request
-        queueRequest(url, callback);
-      }
-    } else {
-
-      if (!window.XMLHttpRequest) {
-        callback('Browser does not support XMLHttpRequest');
-        return false;
-      }
-
-      // Seed the cache to indicate we are loading this URL already
-      svgCache[url] = {};
-      queueRequest(url, callback);
-
-      var httpRequest = new XMLHttpRequest();
-
-      httpRequest.onreadystatechange = function () {
-        // readyState 4 = complete
-        if (httpRequest.readyState === 4) {
-
-          // Handle status
-          if (httpRequest.status === 404 || httpRequest.responseXML === null) {
-            callback('Unable to load SVG file: ' + url);
-
-            if (isLocal) callback('Note: SVG injection ajax calls do not work locally without adjusting security setting in your browser. Or consider using a local webserver.');
-
-            callback();
-            return false;
-          }
-
-          // 200 success from server, or 0 when using file:// protocol locally
-          if (httpRequest.status === 200 || isLocal && httpRequest.status === 0) {
-
-            /* globals Document */
-            if (httpRequest.responseXML instanceof Document) {
-              // Cache it
-              svgCache[url] = httpRequest.responseXML.documentElement;
-            }
-            /* globals -Document */
-
-            // IE9 doesn't create a responseXML Document object from loaded SVG,
-            // and throws a "DOM Exception: HIERARCHY_REQUEST_ERR (3)" error when injected.
-            //
-            // So, we'll just create our own manually via the DOMParser using
-            // the the raw XML responseText.
-            //
-            // :NOTE: IE8 and older doesn't have DOMParser, but they can't do SVG either, so...
-            else if (DOMParser && DOMParser instanceof Function) {
-                var xmlDoc;
-                try {
-                  var parser = new DOMParser();
-                  xmlDoc = parser.parseFromString(httpRequest.responseText, 'text/xml');
-                } catch (e) {
-                  xmlDoc = undefined;
-                }
-
-                if (!xmlDoc || xmlDoc.getElementsByTagName('parsererror').length) {
-                  callback('Unable to parse SVG file: ' + url);
-                  return false;
-                } else {
-                  // Cache it
-                  svgCache[url] = xmlDoc.documentElement;
-                }
-              }
-
-            // We've loaded a new asset, so process any requests waiting for it
-            processRequestQueue(url);
-          } else {
-            callback('There was a problem injecting the SVG: ' + httpRequest.status + ' ' + httpRequest.statusText);
-            return false;
-          }
-        }
-      };
-
-      httpRequest.open('GET', url);
-
-      // Treat and parse the response as XML, even if the
-      // server sends us a different mimetype
-      if (httpRequest.overrideMimeType) httpRequest.overrideMimeType('text/xml');
-
-      httpRequest.send();
-    }
-  };
-
-  // Inject a single element
-  var injectElement = function injectElement(el, evalScripts, pngFallback, callback) {
-
-    // Grab the src or data-src attribute
-    var imgUrl = el.getAttribute('data-src') || el.getAttribute('src');
-
-    // We can only inject SVG
-    if (!/\.svg/i.test(imgUrl)) {
-      callback('Attempted to inject a file with a non-svg extension: ' + imgUrl);
-      return;
-    }
-
-    // If we don't have SVG support try to fall back to a png,
-    // either defined per-element via data-fallback or data-png,
-    // or globally via the pngFallback directory setting
-    if (!hasSvgSupport) {
-      var perElementFallback = el.getAttribute('data-fallback') || el.getAttribute('data-png');
-
-      // Per-element specific PNG fallback defined, so use that
-      if (perElementFallback) {
-        el.setAttribute('src', perElementFallback);
-        callback(null);
-      }
-      // Global PNG fallback directoriy defined, use the same-named PNG
-      else if (pngFallback) {
-          el.setAttribute('src', pngFallback + '/' + imgUrl.split('/').pop().replace('.svg', '.png'));
-          callback(null);
-        }
-        // um...
-        else {
-            callback('This browser does not support SVG and no PNG fallback was defined.');
-          }
-
-      return;
-    }
-
-    // Make sure we aren't already in the process of injecting this element to
-    // avoid a race condition if multiple injections for the same element are run.
-    // :NOTE: Using indexOf() only _after_ we check for SVG support and bail,
-    // so no need for IE8 indexOf() polyfill
-    if (injectedElements.indexOf(el) !== -1) {
-      return;
-    }
-
-    // Remember the request to inject this element, in case other injection
-    // calls are also trying to replace this element before we finish
-    injectedElements.push(el);
-
-    // Try to avoid loading the orginal image src if possible.
-    el.setAttribute('src', '');
-
-    // Load it up
-    loadSvg(imgUrl, function (svg) {
-
-      if (typeof svg === 'undefined' || typeof svg === 'string') {
-        callback(svg);
-        return false;
-      }
-
-      var imgId = el.getAttribute('id');
-      if (imgId) {
-        svg.setAttribute('id', imgId);
-      }
-
-      var imgTitle = el.getAttribute('title');
-      if (imgTitle) {
-        svg.setAttribute('title', imgTitle);
-      }
-
-      // Concat the SVG classes + 'injected-svg' + the img classes
-      var classMerge = [].concat(svg.getAttribute('class') || [], 'injected-svg', el.getAttribute('class') || []).join(' ');
-      svg.setAttribute('class', uniqueClasses(classMerge));
-
-      var imgStyle = el.getAttribute('style');
-      if (imgStyle) {
-        svg.setAttribute('style', imgStyle);
-      }
-
-      // Copy all the data elements to the svg
-      var imgData = [].filter.call(el.attributes, function (at) {
-        return (/^data-\w[\w\-]*$/.test(at.name)
-        );
-      });
-      forEach.call(imgData, function (dataAttr) {
-        if (dataAttr.name && dataAttr.value) {
-          svg.setAttribute(dataAttr.name, dataAttr.value);
-        }
-      });
-
-      // Make sure any internally referenced clipPath ids and their
-      // clip-path references are unique.
-      //
-      // This addresses the issue of having multiple instances of the
-      // same SVG on a page and only the first clipPath id is referenced.
-      //
-      // Browsers often shortcut the SVG Spec and don't use clipPaths
-      // contained in parent elements that are hidden, so if you hide the first
-      // SVG instance on the page, then all other instances lose their clipping.
-      // Reference: https://bugzilla.mozilla.org/show_bug.cgi?id=376027
-
-      // Handle all defs elements that have iri capable attributes as defined by w3c: http://www.w3.org/TR/SVG/linking.html#processingIRI
-      // Mapping IRI addressable elements to the properties that can reference them:
-      var iriElementsAndProperties = {
-        'clipPath': ['clip-path'],
-        'color-profile': ['color-profile'],
-        'cursor': ['cursor'],
-        'filter': ['filter'],
-        'linearGradient': ['fill', 'stroke'],
-        'marker': ['marker', 'marker-start', 'marker-mid', 'marker-end'],
-        'mask': ['mask'],
-        'pattern': ['fill', 'stroke'],
-        'radialGradient': ['fill', 'stroke']
-      };
-
-      var element, elementDefs, properties, currentId, newId;
-      Object.keys(iriElementsAndProperties).forEach(function (key) {
-        element = key;
-        properties = iriElementsAndProperties[key];
-
-        elementDefs = svg.querySelectorAll('defs ' + element + '[id]');
-        for (var i = 0, elementsLen = elementDefs.length; i < elementsLen; i++) {
-          currentId = elementDefs[i].id;
-          newId = currentId + '-' + injectCount;
-
-          // All of the properties that can reference this element type
-          var referencingElements;
-          forEach.call(properties, function (property) {
-            // :NOTE: using a substring match attr selector here to deal with IE "adding extra quotes in url() attrs"
-            referencingElements = svg.querySelectorAll('[' + property + '*="' + currentId + '"]');
-            for (var j = 0, referencingElementLen = referencingElements.length; j < referencingElementLen; j++) {
-              referencingElements[j].setAttribute(property, 'url(#' + newId + ')');
-            }
-          });
-
-          elementDefs[i].id = newId;
-        }
-      });
-
-      // Remove any unwanted/invalid namespaces that might have been added by SVG editing tools
-      svg.removeAttribute('xmlns:a');
-
-      // Post page load injected SVGs don't automatically have their script
-      // elements run, so we'll need to make that happen, if requested
-
-      // Find then prune the scripts
-      var scripts = svg.querySelectorAll('script');
-      var scriptsToEval = [];
-      var script, scriptType;
-
-      for (var k = 0, scriptsLen = scripts.length; k < scriptsLen; k++) {
-        scriptType = scripts[k].getAttribute('type');
-
-        // Only process javascript types.
-        // SVG defaults to 'application/ecmascript' for unset types
-        if (!scriptType || scriptType === 'application/ecmascript' || scriptType === 'application/javascript') {
-
-          // innerText for IE, textContent for other browsers
-          script = scripts[k].innerText || scripts[k].textContent;
-
-          // Stash
-          scriptsToEval.push(script);
-
-          // Tidy up and remove the script element since we don't need it anymore
-          svg.removeChild(scripts[k]);
-        }
-      }
-
-      // Run/Eval the scripts if needed
-      if (scriptsToEval.length > 0 && (evalScripts === 'always' || evalScripts === 'once' && !ranScripts[imgUrl])) {
-        for (var l = 0, scriptsToEvalLen = scriptsToEval.length; l < scriptsToEvalLen; l++) {
-
-          // :NOTE: Yup, this is a form of eval, but it is being used to eval code
-          // the caller has explictely asked to be loaded, and the code is in a caller
-          // defined SVG file... not raw user input.
-          //
-          // Also, the code is evaluated in a closure and not in the global scope.
-          // If you need to put something in global scope, use 'window'
-          new Function(scriptsToEval[l])(window); // jshint ignore:line
-        }
-
-        // Remember we already ran scripts for this svg
-        ranScripts[imgUrl] = true;
-      }
-
-      // :WORKAROUND:
-      // IE doesn't evaluate <style> tags in SVGs that are dynamically added to the page.
-      // This trick will trigger IE to read and use any existing SVG <style> tags.
-      //
-      // Reference: https://github.com/iconic/SVGInjector/issues/23
-      var styleTags = svg.querySelectorAll('style');
-      forEach.call(styleTags, function (styleTag) {
-        styleTag.textContent += '';
-      });
-
-      // Replace the image with the svg
-      el.parentNode.replaceChild(svg, el);
-
-      // Now that we no longer need it, drop references
-      // to the original element so it can be GC'd
-      delete injectedElements[injectedElements.indexOf(el)];
-      el = null;
-
-      // Increment the injected count
-      injectCount++;
-
-      callback(svg);
-    });
-  };
-
-  /**
-   * SVGInjector
-   *
-   * Replace the given elements with their full inline SVG DOM elements.
-   *
-   * :NOTE: We are using get/setAttribute with SVG because the SVG DOM spec differs from HTML DOM and
-   * can return other unexpected object types when trying to directly access svg properties.
-   * ex: "className" returns a SVGAnimatedString with the class value found in the "baseVal" property,
-   * instead of simple string like with HTML Elements.
-   *
-   * @param {mixes} Array of or single DOM element
-   * @param {object} options
-   * @param {function} callback
-   * @return {object} Instance of SVGInjector
-   */
-  var SVGInjector = function SVGInjector(elements, options, done) {
-
-    // Options & defaults
-    options = options || {};
-
-    // Should we run the scripts blocks found in the SVG
-    // 'always' - Run them every time
-    // 'once' - Only run scripts once for each SVG
-    // [false|'never'] - Ignore scripts
-    var evalScripts = options.evalScripts || 'always';
-
-    // Location of fallback pngs, if desired
-    var pngFallback = options.pngFallback || false;
-
-    // Callback to run during each SVG injection, returning the SVG injected
-    var eachCallback = options.each;
-
-    // Do the injection...
-    if (elements.length !== undefined) {
-      var elementsLoaded = 0;
-      forEach.call(elements, function (element) {
-        injectElement(element, evalScripts, pngFallback, function (svg) {
-          if (eachCallback && typeof eachCallback === 'function') eachCallback(svg);
-          if (done && elements.length === ++elementsLoaded) done(elementsLoaded);
-        });
-      });
-    } else {
-      if (elements) {
-        injectElement(elements, evalScripts, pngFallback, function (svg) {
-          if (eachCallback && typeof eachCallback === 'function') eachCallback(svg);
-          if (done) done(1);
-          elements = null;
-        });
-      } else {
-        if (done) done(0);
-      }
-    }
-  };
-
-  /* global module, exports: true, define */
-  // Node.js or CommonJS
-  if (( false ? 'undefined' : _typeof(module)) === 'object' && _typeof(module.exports) === 'object') {
-    module.exports = exports = SVGInjector;
-  }
-  // AMD support
-  else if (true) {
-      !(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
-        return SVGInjector;
-      }.call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    }
-    // Otherwise, attach to window as global
-    else if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object') {
-        window.SVGInjector = SVGInjector;
-      }
-  /* global -module, -exports, -define */
-})(window, document);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 220)(module)))
-
-/***/ }),
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
 /* 477 */,
-/* 478 */
-/*!************************************!*\
-  !*** ./webpage/song/Constants.jsx ***!
-  \************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-function timestampToSeconds(timestamp) {
-	return Math.floor(timestamp / 100) * 60 + timestamp % 100;
-}
-
-var ConstsClass = {
-	searchBarID: "songSearchInput",
-	resultsListID: "resultsList",
-
-	allSongsAnchorID: "allSongsAnchor",
-
-	titleLineID: "titleLine",
-
-	//Checkboxes:
-	//langauges
-	pinyinCheckBoxID: "pinyinCB",
-	cnCharCheckBoxID: "cnCB",
-	englishCheckBoxID: "engCB",
-	//options:
-	optionsID: "options",
-	wantScrollCheckBoxID: "wantScrolling",
-	wantLineNumbersCheckBoxID: "lineNumbers",
-
-	lyricsBodyID: "lyricsBody",
-	//whole line of lyric with line number
-	lyricLine: "lyricLine",
-
-	//lyricLeft
-	lineNumberID: "lineIndex",
-
-	//lyricRight Lines: pinyin, cn, english
-	pinyinLyricsLineClass: "pinyinLine",
-	cnCharLyricsLineClass: "cnLine",
-	englishLyricsLineClass: "engLine",
-
-	genericLinePrefix: "line",
-
-	audioPlayerID: "audioPlayer",
-
-	//colors
-	foregroundColor: "rgba(255,255,255,0.5)",
-	highlightColor: "rgb(255, 238, 6)"
-
-};
-exports.default = { ConstsClass: ConstsClass, timestampToSeconds: timestampToSeconds };
-
-/***/ }),
+/* 478 */,
 /* 479 */,
 /* 480 */,
 /* 481 */,
@@ -57413,10 +56320,19 @@ exports.default = { ConstsClass: ConstsClass, timestampToSeconds: timestampToSec
 /* 488 */,
 /* 489 */,
 /* 490 */,
-/* 491 */
-/*!********************************!*\
-  !*** ./webpage/song/index.jsx ***!
-  \********************************/
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */
+/*!**********************************!*\
+  !*** ./webpage/submit/index.jsx ***!
+  \**********************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
@@ -57434,29 +56350,13 @@ var _reactDom = __webpack_require__(/*! react-dom */ 20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Visualizer = __webpack_require__(/*! ./Visualizer.jsx */ 492);
-
-var _Visualizer2 = _interopRequireDefault(_Visualizer);
-
-var _Header = __webpack_require__(/*! ./Header.jsx */ 493);
+var _Header = __webpack_require__(/*! ./Header.jsx */ 501);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _OptionsMenu = __webpack_require__(/*! ./OptionsMenu.jsx */ 494);
+var _Form = __webpack_require__(/*! ./Form.jsx */ 502);
 
-var _OptionsMenu2 = _interopRequireDefault(_OptionsMenu);
-
-var _SongTitle = __webpack_require__(/*! ./SongTitle.jsx */ 497);
-
-var _SongTitle2 = _interopRequireDefault(_SongTitle);
-
-var _LyricsBody = __webpack_require__(/*! ./LyricsBody.jsx */ 498);
-
-var _LyricsBody2 = _interopRequireDefault(_LyricsBody);
-
-var _AudioPlayer = __webpack_require__(/*! ./AudioPlayer.jsx */ 499);
-
-var _AudioPlayer2 = _interopRequireDefault(_AudioPlayer);
+var _Form2 = _interopRequireDefault(_Form);
 
 var _axios = __webpack_require__(/*! axios */ 221);
 
@@ -57480,313 +56380,37 @@ var MainContainer = function (_React$Component) {
 	function MainContainer() {
 		_classCallCheck(this, MainContainer);
 
-		var _this = _possibleConstructorReturn(this, (MainContainer.__proto__ || Object.getPrototypeOf(MainContainer)).call(this));
+		return _possibleConstructorReturn(this, (MainContainer.__proto__ || Object.getPrototypeOf(MainContainer)).call(this));
 
-		_this.state = {
-			currentTitle: '',
-			currentArtist: '',
-			currentLine: 0,
-			areOptionsInflated: true, //opposite is collapsed
-			lyrics: {
-				pinyin: [],
-				cn: [],
-				eng: [],
-				times: []
-			},
-			songPath: '',
-			scrollingOffset: -400,
-			options: {
-				showPinyin: true,
-				showCn: true,
-				showEng: true,
-				allowScrolling: true,
-				showLineNums: true,
-				showVisualizer: true
-			}
-		};
-		_this.setCurrentLine = _this.setCurrentLine.bind(_this);
-		_this.getSongLyrics = _this.getSongLyrics.bind(_this);
-		_this.handleNewLyrics = _this.handleNewLyrics.bind(_this);
-		_this.togglePinyin = _this.togglePinyin.bind(_this);
-		_this.toggleEng = _this.toggleEng.bind(_this);
-		_this.toggleCn = _this.toggleCn.bind(_this);
-		_this.toggleScrolling = _this.toggleScrolling.bind(_this);
-		_this.toggleLineNums = _this.toggleLineNums.bind(_this);
-		_this.toggleVisualizer = _this.toggleVisualizer.bind(_this);
-		_this.scaleScrolling = _this.scaleScrolling.bind(_this);
-		_this.skipToLine = _this.skipToLine.bind(_this);
-		_this.changeLineColor = _this.changeLineColor.bind(_this);
-		// this.renderFrame = this.renderFrame.bind(this);
-		_this.setCanvas = _this.setCanvas.bind(_this);
-		_this.getParameterByName = _this.getParameterByName.bind(_this);
-		return _this;
+		// this.getParameterByName = this.getParameterByName.bind(this)
 	}
 
 	_createClass(MainContainer, [{
 		key: 'componentWillMount',
-		value: function componentWillMount() {
-			this.scaleScrolling();
-		}
+		value: function componentWillMount() {}
 	}, {
 		key: 'componentDidMount',
-		value: function componentDidMount() {
-			var id = this.getParameterByName('id');
-			var title = this.getParameterByName('title');
-			var artist = this.getParameterByName('artist');
-			this.getSongLyrics(id, title, artist);
-
-			//enable all tooltips
-			var audioPlayer = this.refs.audioPlayer;
-			window.addEventListener("keydown", function (e) {
-				if (e.keyCode == 32 && e.target == document.body) {
-					audioPlayer.togglePlayer(); // space bar to toggle audio player
-					e.preventDefault(); // and prevent scrolling
-				}
-				//set + and - listeners for volume
-
-				else if (e.keyCode == 187 && e.target == document.body) {
-						audioPlayer.increaseVolume(); // increase audio player
-						e.preventDefault();
-					} else if (e.keyCode == 189 && e.target == document.body) {
-						audioPlayer.decreaseVolume(); // decrease audio player
-						e.preventDefault();
-					}
-			});
-
-			window.addEventListener("resize", this.scaleScrolling);
-			this.setCanvas();
-		}
+		value: function componentDidMount() {}
 	}, {
 		key: 'componentWillUnmount',
-		value: function componentWillUnmount() {
-			window.removeEventListener("resize", this.scaleScrolling);
-		}
-	}, {
-		key: 'setCanvas',
-		value: function setCanvas() {
-			var audio = this.refs.audioPlayer.refs.audioHTML;
-			var AudioContext = window.AudioContext || window.webkitAudioContext; // Safari and old versions of Chrome
-			var context = new AudioContext();
-			var src = context.createMediaElementSource(audio);
-			var analyser = context.createAnalyser();
-
-			var canvas = this.refs.canvas;
-			canvas.width = window.innerWidth;
-			canvas.height = window.innerHeight;
-			var ctx = canvas.getContext("2d");
-
-			src.connect(analyser);
-			analyser.connect(context.destination);
-
-			analyser.fftSize = 256;
-
-			var bufferLength = analyser.frequencyBinCount;
-
-			var dataArray = new Uint8Array(bufferLength);
-
-			var WIDTH = canvas.width;
-			var HEIGHT = canvas.height;
-
-			var barWidth = WIDTH / bufferLength * 2.5;
-			var barHeight;
-			var x = 0;
-			var heightScale = HEIGHT / 255;
-
-			function renderFrame() {
-				requestAnimationFrame(renderFrame);
-
-				var x = 0;
-
-				//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.
-				analyser.getByteFrequencyData(dataArray);
-				ctx.clearRect(0, 0, canvas.width, canvas.height);
-				// ctx.fillStyle = "rgba(0,0,0,0)";
-
-				for (var i = 0; i < bufferLength; i++) {
-
-					barHeight = dataArray[i];
-					// if(barHeight!=0){
-					// 	console.log("not zero:")
-					// 	console.log(barHeight)
-					// }
-					var r = barHeight + 25 * (i / bufferLength);
-					var g = 250 * (i / bufferLength);
-					var b = 240;
-
-					ctx.fillStyle = "rgba(" + r + "," + g + "," + b + ", .25)";
-					ctx.fillRect(x, HEIGHT - barHeight * heightScale, barWidth, barHeight * heightScale);
-					//add a top border line
-					ctx.beginPath();
-					ctx.moveTo(x, HEIGHT - barHeight * heightScale);
-					ctx.lineTo(x + barWidth, HEIGHT - barHeight * heightScale);
-					ctx.closePath();
-					ctx.stroke();
-					x += barWidth + 1;
-				}
-			}
-			// this.refs.audioPlayer.togglePlayer(); // start by playing
-			renderFrame();
-		}
-		//Thank you https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144
-
-	}, {
-		key: 'getParameterByName',
-		value: function getParameterByName(name, url) {
-			if (!url) url = window.location.href;
-			name = name.replace(/[\[\]]/g, "\\$&");
-			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-			    results = regex.exec(url);
-			if (!results) return null;
-			if (!results[2]) return '';
-			return decodeURIComponent(results[2].replace(/\+/g, " "));
-		}
-	}, {
-		key: 'scaleScrolling',
-		value: function scaleScrolling() {
-			var winWidth = (0, _jquery2.default)(window).width();
-			var winHeight = (0, _jquery2.default)(window).height();
-			this.setState({ scrollingOffset: -1 * Math.round(winHeight * .35) });
-		}
-	}, {
-		key: 'setCurrentLine',
-		value: function setCurrentLine(val) {
-			this.setState({ currentLine: val });
-		}
-	}, {
-		key: 'getSongLyrics',
-		value: function getSongLyrics(id, title, artist) {
-			_axios2.default.get("getSong", { params: { 'id': id } }).then(this.handleNewLyrics).catch(function (error) {
-				return console.log(error);
-			});
-			this.setState({ currentTitle: title, currentArtist: artist, currentLine: 0 });
-		}
-		//called when a user clicks on a new song
-
-	}, {
-		key: 'handleNewLyrics',
-		value: function handleNewLyrics(response) {
-			console.log(response);
-			this.setState({
-				currentLine: 0,
-				lyrics: {
-					cn: response.data['cn.txt'],
-					eng: response.data['eng.txt'],
-					pinyin: response.data['pinyin.txt'],
-					times: response.data['times.txt']
-				},
-				songPath: response.data['songFile'],
-				areOptionsInflated: true //!this.state.areOptionsInflated
-			});
-			this.refs.audioPlayer.setSong(this.state.songPath);
-			this.refs.lyricsBody.clearLyrics();
-		}
-	}, {
-		key: 'skipToLine',
-		value: function skipToLine(lineToSet, timeToSet) {
-			this.refs.audioPlayer.setCurrentTime(timeToSet);
-			this.setState({ currentLine: lineToSet });
-		}
+		value: function componentWillUnmount() {}
 	}, {
 		key: 'render',
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
-				React.createElement('canvas', { className: 'canvas', ref: 'canvas' }),
+				{ className: 'container' },
 				React.createElement(
 					'div',
-					{ className: 'container' },
-					React.createElement(_Header2.default, null),
-					React.createElement(_OptionsMenu2.default, {
-						options: this.state.options,
-						open: this.state.areOptionsInflated,
-						togglePinyin: this.togglePinyin,
-						toggleCn: this.toggleCn,
-						toggleEng: this.toggleEng,
-						toggleLineNums: this.toggleLineNums,
-						toggleScrolling: this.toggleScrolling,
-						toggleVisualizer: this.toggleVisualizer
-					}),
-					React.createElement('div', { className: 'clearfix' }),
-					React.createElement(_SongTitle2.default, {
-						title: this.state.currentTitle,
-						artist: this.state.currentArtist }),
-					React.createElement(_LyricsBody2.default, { ref: 'lyricsBody', currentLine: this.state.currentLine,
-						lyrics: this.state.lyrics,
-						skipToTime: this.skipToLine,
-						options: this.state.options })
+					{ className: 'row' },
+					React.createElement(_Header2.default, null)
 				),
-				React.createElement(_AudioPlayer2.default, { ref: 'audioPlayer',
-					times: this.state.lyrics.times,
-					updateCurrentLine: this.setCurrentLine,
-					currentLine: this.state.currentLine,
-					scrollOffset: this.state.scrollingOffset,
-					allowScrolling: this.state.options.allowScrolling,
-					changeLineColor: this.changeLineColor })
+				React.createElement(
+					'div',
+					{ className: 'row form' },
+					React.createElement(_Form2.default, null)
+				)
 			);
-		}
-	}, {
-		key: 'changeLineColor',
-		value: function changeLineColor(currentLine) {
-			this.refs.lyricsBody.incrementLineColor(currentLine);
-		}
-
-		//toggles:
-
-	}, {
-		key: 'toggleScrolling',
-		value: function toggleScrolling() {
-			var temp = this.state.options;
-			temp['allowScrolling'] = !this.state.options.allowScrolling;
-			this.setState({
-				options: temp
-			});
-		}
-	}, {
-		key: 'toggleLineNums',
-		value: function toggleLineNums() {
-			var temp = this.state.options;
-			temp['showLineNums'] = !this.state.options.showLineNums;
-			this.setState({
-				options: temp
-			});
-		}
-	}, {
-		key: 'toggleVisualizer',
-		value: function toggleVisualizer() {
-			var temp = this.state.options;
-			temp['showVisualizer'] = !this.state.options.showVisualizer;
-			this.setState({
-				options: temp
-			});
-		}
-	}, {
-		key: 'togglePinyin',
-		value: function togglePinyin(isChecked) {
-			var temp = this.state.options;
-			temp['showPinyin'] = !this.state.options.showPinyin;
-			this.setState({
-				options: temp
-			});
-		}
-	}, {
-		key: 'toggleCn',
-		value: function toggleCn(isChecked) {
-			var temp = this.state.options;
-			temp['showCn'] = !this.state.options.showCn;
-			this.setState({
-				options: temp
-			});
-		}
-	}, {
-		key: 'toggleEng',
-		value: function toggleEng(isChecked) {
-			//shallow merging
-			var temp = this.state.options;
-			temp['showEng'] = !this.state.options.showEng;
-			this.setState({
-				options: temp
-			});
 		}
 	}]);
 
@@ -57800,124 +56424,10 @@ _reactDom2.default.render(React.createElement(MainContainer, null), document.get
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
 
 /***/ }),
-/* 492 */
-/*!*************************************!*\
-  !*** ./webpage/song/Visualizer.jsx ***!
-  \*************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Visualizer = function (_React$Component) {
-	_inherits(Visualizer, _React$Component);
-
-	function Visualizer() {
-		_classCallCheck(this, Visualizer);
-
-		return _possibleConstructorReturn(this, (Visualizer.__proto__ || Object.getPrototypeOf(Visualizer)).apply(this, arguments));
-	}
-
-	_createClass(Visualizer, [{
-		key: "setCanvas",
-
-		// constructor(){
-		// 	super()
-		// 	this.setCanvas = this.setCanvas.bind(this);
-		// }
-
-		value: function setCanvas() {
-			var audio = this.props.audioSrc;
-			var context = new AudioContext();
-			var src = context.createMediaElementSource(audio);
-			var analyser = context.createAnalyser();
-
-			var canvas = this.refs.canvas;
-			canvas.width = window.innerWidth;
-			canvas.height = window.innerHeight;
-			var ctx = canvas.getContext("2d");
-
-			src.connect(analyser);
-			analyser.connect(context.destination);
-
-			analyser.fftSize = 256;
-
-			var bufferLength = analyser.frequencyBinCount;
-
-			var dataArray = new Uint8Array(bufferLength);
-
-			var WIDTH = canvas.width;
-			var HEIGHT = canvas.height;
-
-			var barWidth = WIDTH / bufferLength * 2.5;
-			var barHeight;
-			var x = 0;
-			var heightScale = HEIGHT / 255;
-
-			function renderFrame() {
-				requestAnimationFrame(renderFrame);
-
-				var x = 0;
-
-				//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.
-				analyser.getByteFrequencyData(dataArray);
-				ctx.clearRect(0, 0, canvas.width, canvas.height);
-				// ctx.fillStyle = "rgba(0,0,0,0)";
-
-				for (var i = 0; i < bufferLength; i++) {
-
-					barHeight = dataArray[i];
-
-					var r = barHeight + 25 * (i / bufferLength);
-					var g = 250 * (i / bufferLength);
-					var b = 240;
-
-					ctx.fillStyle = "rgba(" + r + "," + g + "," + b + ", .25)";
-					ctx.fillRect(x, HEIGHT - barHeight * heightScale, barWidth, barHeight * heightScale);
-					//add a top border line
-					ctx.beginPath();
-					ctx.moveTo(x, HEIGHT - barHeight * heightScale);
-					ctx.lineTo(x + barWidth, HEIGHT - barHeight * heightScale);
-					ctx.closePath();
-					ctx.stroke();
-					x += barWidth + 1;
-				}
-			}
-			this.refs.audioPlayer.togglePlayer(); // start by playing
-			renderFrame();
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return React.createElement("canvas", { ref: "canvas", className: "canvas" });
-		}
-	}]);
-
-	return Visualizer;
-}(React.Component);
-
-exports.default = Visualizer;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
-
-/***/ }),
-/* 493 */
-/*!*********************************!*\
-  !*** ./webpage/song/Header.jsx ***!
-  \*********************************/
+/* 501 */
+/*!***********************************!*\
+  !*** ./webpage/submit/Header.jsx ***!
+  \***********************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
@@ -57951,7 +56461,7 @@ var PageHeader = function (_React$Component) {
 				value: function render() {
 						return React.createElement(
 								"div",
-								{ className: "row" },
+								null,
 								React.createElement(
 										"div",
 										{ className: "header" },
@@ -57990,8 +56500,12 @@ var PageHeader = function (_React$Component) {
 								),
 								React.createElement(
 										"div",
-										{ className: "clearfix" },
-										" "
+										{ className: "welcome col-xs-12 jumbotron text-center" },
+										React.createElement(
+												"h1",
+												null,
+												"Submit a Song to KTV God"
+										)
 								)
 						);
 				}
@@ -58004,87 +56518,10 @@ exports.default = PageHeader;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
 
 /***/ }),
-/* 494 */
-/*!**************************************!*\
-  !*** ./webpage/song/OptionsMenu.jsx ***!
-  \**************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _LanguageOptions = __webpack_require__(/*! ./LanguageOptions.jsx */ 495);
-
-var _LanguageOptions2 = _interopRequireDefault(_LanguageOptions);
-
-var _PlaybackOptions = __webpack_require__(/*! ./PlaybackOptions.jsx */ 496);
-
-var _PlaybackOptions2 = _interopRequireDefault(_PlaybackOptions);
-
-var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 219);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var OptionsMenu = function (_React$Component) {
-	_inherits(OptionsMenu, _React$Component);
-
-	function OptionsMenu(props) {
-		_classCallCheck(this, OptionsMenu);
-
-		var _this = _possibleConstructorReturn(this, (OptionsMenu.__proto__ || Object.getPrototypeOf(OptionsMenu)).call(this, props));
-
-		_this.state = {};
-		return _this;
-	}
-
-	_createClass(OptionsMenu, [{
-		key: 'render',
-		value: function render() {
-			return React.createElement(
-				_reactBootstrap.Collapse,
-				{ 'in': this.props.open },
-				React.createElement(
-					'div',
-					{ className: 'row optionsMenu', id: 'options' },
-					React.createElement(_LanguageOptions2.default, {
-						togglePinyin: this.props.togglePinyin,
-						toggleCn: this.props.toggleCn,
-						toggleEng: this.props.toggleEng }),
-					React.createElement(_PlaybackOptions2.default, {
-						toggleLineNums: this.props.toggleLineNums,
-						toggleScrolling: this.props.toggleScrolling,
-						toggleVisualizer: this.props.toggleVisualizer
-					})
-				)
-			);
-		}
-	}]);
-
-	return OptionsMenu;
-}(React.Component);
-
-exports.default = OptionsMenu;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
-
-/***/ }),
-/* 495 */
-/*!******************************************!*\
-  !*** ./webpage/song/LanguageOptions.jsx ***!
-  \******************************************/
+/* 502 */
+/*!*********************************!*\
+  !*** ./webpage/submit/Form.jsx ***!
+  \*********************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
@@ -58098,840 +56535,185 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 219);
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LanguageOptions = function (_React$Component) {
-  _inherits(LanguageOptions, _React$Component);
+var Form = function (_React$Component) {
+  _inherits(Form, _React$Component);
 
-  function LanguageOptions(props) {
-    _classCallCheck(this, LanguageOptions);
+  function Form(props) {
+    _classCallCheck(this, Form);
 
-    var _this = _possibleConstructorReturn(this, (LanguageOptions.__proto__ || Object.getPrototypeOf(LanguageOptions)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 
-    _this.state = {
-      pinyinChecked: true,
-      cnChecked: true,
-      enChecked: true
-    };
+    _this.state = {};
+
+    _this.handleChange = _this.handleChange.bind(_this);
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
     return _this;
   }
 
-  _createClass(LanguageOptions, [{
-    key: "modifyOptions",
-    value: function modifyOptions(e) {
-      e.preventDefault();
+  _createClass(Form, [{
+    key: 'handleChange',
+    value: function handleChange(event) {
+      var target = event.target;
+      var value = target.value;
+      var name = target.id;
+      this.setState(_defineProperty({}, name, value));
     }
   }, {
-    key: "changePinyin",
-    value: function changePinyin() {
-      var _this2 = this;
-
-      this.setState({
-        pinyinChecked: !this.state.pinyinChecked
-      }, function () {
-        _this2.props.togglePinyin(_this2.state.pinyinChecked);
-      });
+    key: 'handleSubmit',
+    value: function handleSubmit(event) {
+      alert('A name was submitted: ' + JSON.stringify(this.state));
+      event.preventDefault();
     }
   }, {
-    key: "changeCn",
-    value: function changeCn() {
-      var _this3 = this;
-
-      this.setState({
-        cnChecked: !this.state.cnChecked
-      }, function () {
-        _this3.props.toggleCn(_this3.state.cnChecked);
-      });
-    }
-  }, {
-    key: "changeEng",
-    value: function changeEng() {
-      var _this4 = this;
-
-      this.setState({
-        enChecked: !this.state.enChecked
-      }, function () {
-        _this4.props.toggleEng(_this4.state.enChecked);
-      });
-    }
-  }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       return React.createElement(
-        "div",
-        { className: "displayLanguages col-xs-6" },
+        'form',
+        { onSubmit: this.handleSubmit },
         React.createElement(
-          "form",
-          { onSubmit: this.modifyOptions },
+          'div',
+          { className: 'row' },
           React.createElement(
-            "span",
-            null,
-            "Display Languages:"
+            'div',
+            { className: 'col-xs-3' },
+            React.createElement(
+              _reactBootstrap.FormGroup,
+              { bsSize: 'small', controlId: 'song' },
+              React.createElement(
+                _reactBootstrap.ControlLabel,
+                null,
+                'Song Title:'
+              ),
+              React.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: '\u6B4C\u66F2\u540D', onChange: this.handleChange })
+            )
           ),
           React.createElement(
-            "div",
-            { className: "checkbox" },
+            'div',
+            { className: 'col-xs-3' },
             React.createElement(
-              "span",
-              null,
+              _reactBootstrap.FormGroup,
+              { bsSize: 'small', controlId: 'artist' },
               React.createElement(
-                "label",
+                _reactBootstrap.ControlLabel,
                 null,
-                React.createElement("input", { id: "pinyinCB", type: "checkbox",
-                  checked: this.state.pinyinChecked,
-                  onChange: this.changePinyin.bind(this) }),
-                "PinYin"
+                'Artist Name:'
+              ),
+              React.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: '\u827A\u672F\u5BB6', onChange: this.handleChange })
+            )
+          )
+        ),
+        React.createElement(
+          'div',
+          { className: 'row' },
+          React.createElement(
+            'div',
+            { className: 'col-xs-4' },
+            React.createElement(
+              _reactBootstrap.FormGroup,
+              { bsSize: 'large', controlId: 'cnLyrics' },
+              React.createElement(
+                _reactBootstrap.ControlLabel,
+                null,
+                'Chinese Character Lyrics:'
+              ),
+              React.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: '\u4E2D\u6587\u6B4C\u8BCD', onChange: this.handleChange }),
+              React.createElement(
+                _reactBootstrap.HelpBlock,
+                null,
+                'Insert the Chinese Lyrics here.'
               )
             )
           ),
-          React.createElement("span", null),
           React.createElement(
-            "div",
-            { className: "checkbox" },
+            'div',
+            { className: 'col-xs-4' },
             React.createElement(
-              "span",
-              null,
+              _reactBootstrap.FormGroup,
+              { bsSize: 'large', controlId: 'pinyinLyrics' },
               React.createElement(
-                "label",
+                _reactBootstrap.ControlLabel,
                 null,
-                React.createElement("input", { id: "cnCB", type: "checkbox",
-                  checked: this.state.cnChecked,
-                  onChange: this.changeCn.bind(this) }),
-                "Chinese Char"
+                'Pinyin Lyrics:'
+              ),
+              React.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: '\u62FC\u97F3', onChange: this.handleChange }),
+              React.createElement(
+                _reactBootstrap.HelpBlock,
+                null,
+                'Insert the Pinyin of the Chinese Characters here.'
               )
             )
           ),
-          React.createElement("span", null),
           React.createElement(
-            "div",
-            { className: "checkbox" },
+            'div',
+            { className: 'col-xs-4' },
             React.createElement(
-              "span",
-              null,
+              _reactBootstrap.FormGroup,
+              { bsSize: 'large', controlId: 'engLyrics' },
               React.createElement(
-                "label",
+                _reactBootstrap.ControlLabel,
                 null,
-                React.createElement("input", { id: "engCB", type: "checkbox",
-                  checked: this.state.enChecked,
-                  onChange: this.changeEng.bind(this) }),
-                "English"
+                'English Translation:'
+              ),
+              React.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: '\u82F1\u6587\u7FFB\u8BD1', onChange: this.handleChange }),
+              React.createElement(
+                _reactBootstrap.HelpBlock,
+                null,
+                'Insert the English Translation of the Lyrics here.'
               )
             )
           )
-        )
-      );
-    }
-  }]);
-
-  return LanguageOptions;
-}(React.Component);
-
-exports.default = LanguageOptions;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
-
-/***/ }),
-/* 496 */
-/*!******************************************!*\
-  !*** ./webpage/song/PlaybackOptions.jsx ***!
-  \******************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PlaybackOptions = function (_React$Component) {
-	_inherits(PlaybackOptions, _React$Component);
-
-	function PlaybackOptions(props) {
-		_classCallCheck(this, PlaybackOptions);
-
-		var _this = _possibleConstructorReturn(this, (PlaybackOptions.__proto__ || Object.getPrototypeOf(PlaybackOptions)).call(this, props));
-
-		_this.state = {
-			wantScrolling: true,
-			showLineNums: true,
-			showVisualizer: true
-		};
-		_this.toggleScrolling = _this.toggleScrolling.bind(_this);
-		_this.toggleLineNums = _this.toggleLineNums.bind(_this);
-		_this.toggleVisualizer = _this.toggleVisualizer.bind(_this);
-		return _this;
-	}
-
-	_createClass(PlaybackOptions, [{
-		key: "toggleScrolling",
-		value: function toggleScrolling() {
-			var _this2 = this;
-
-			this.setState({
-				wantScrolling: !this.state.wantScrolling
-			}, function () {
-				return _this2.props.toggleScrolling();
-			});
-		}
-	}, {
-		key: "toggleLineNums",
-		value: function toggleLineNums() {
-			var _this3 = this;
-
-			this.setState({
-				showLineNums: !this.state.showLineNums
-			}, function () {
-				return _this3.props.toggleLineNums();
-			});
-		}
-	}, {
-		key: "toggleVisualizer",
-		value: function toggleVisualizer() {
-			var _this4 = this;
-
-			this.setState({
-				showVisualizer: !this.state.showVisualizer
-			}, function () {
-				return _this4.props.showVisualizer();
-			});
-		}
-	}, {
-		key: "modifyOptions",
-		value: function modifyOptions(e) {
-			e.preventDefault();
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return React.createElement(
-				"div",
-				{ className: "playbackOptions col-xs-6" },
-				React.createElement(
-					"form",
-					{ onSubmit: this.modifyOptions },
-					React.createElement(
-						"span",
-						null,
-						"Playback Options:"
-					),
-					React.createElement(
-						"div",
-						{ className: "checkbox" },
-						React.createElement(
-							"span",
-							null,
-							React.createElement(
-								"label",
-								null,
-								React.createElement("input", { checked: this.state.wantScrolling, onChange: this.toggleScrolling, id: "wantScrolling", type: "checkbox" }),
-								"Scrolling"
-							)
-						)
-					),
-					React.createElement(
-						"div",
-						{ className: "checkbox" },
-						React.createElement(
-							"span",
-							null,
-							React.createElement(
-								"label",
-								null,
-								React.createElement("input", { checked: this.state.showLineNums, onChange: this.toggleLineNums, id: "lineNumbers", type: "checkbox" }),
-								"Line Numbers"
-							)
-						)
-					),
-					React.createElement(
-						"div",
-						{ className: "checkbox" },
-						React.createElement(
-							"span",
-							null,
-							React.createElement(
-								"label",
-								null,
-								React.createElement("input", { checked: this.state.showVisualizer, onChange: this.toggleVisualizer, id: "visualizer", type: "checkbox" }),
-								"Visualizer"
-							)
-						)
-					)
-				)
-			);
-		}
-	}]);
-
-	return PlaybackOptions;
-}(React.Component);
-
-exports.default = PlaybackOptions;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
-
-/***/ }),
-/* 497 */
-/*!************************************!*\
-  !*** ./webpage/song/SongTitle.jsx ***!
-  \************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SongTitle = function (_React$Component) {
-  _inherits(SongTitle, _React$Component);
-
-  function SongTitle() {
-    _classCallCheck(this, SongTitle);
-
-    return _possibleConstructorReturn(this, (SongTitle.__proto__ || Object.getPrototypeOf(SongTitle)).apply(this, arguments));
-  }
-
-  _createClass(SongTitle, [{
-    key: "render",
-    value: function render() {
-      var title = '';
-      if (this.props.title && this.props.artist) title = this.props.title + " - " + this.props.artist;
-      return React.createElement(
-        "div",
-        { className: "row" },
-        React.createElement(
-          "h1",
-          { className: " col-xs-12 page-header", id: "titleLine" },
-          title
         ),
-        React.createElement("br", null)
+        React.createElement(
+          _reactBootstrap.FormGroup,
+          { controlId: 'audioFile' },
+          React.createElement(
+            _reactBootstrap.ControlLabel,
+            null,
+            'MP3 Upload'
+          ),
+          React.createElement(_reactBootstrap.FormControl, { type: 'file', onChange: this.handleChange }),
+          React.createElement(
+            _reactBootstrap.HelpBlock,
+            null,
+            'Example block-level help text here.'
+          )
+        ),
+        React.createElement(
+          _reactBootstrap.FormGroup,
+          { bsSize: 'large', controlId: 'times' },
+          React.createElement(
+            _reactBootstrap.ControlLabel,
+            null,
+            'Line Timings:'
+          ),
+          React.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: '\u65F6\u95F4\u8F74', onChange: this.handleChange }),
+          React.createElement(
+            _reactBootstrap.HelpBlock,
+            null,
+            'Insert the Timings of Line Transitions of the Lyrics here.'
+          )
+        ),
+        React.createElement('input', { type: 'submit', value: 'Submit' })
       );
     }
   }]);
 
-  return SongTitle;
+  return Form;
 }(React.Component);
+// <input type="text" value={this.state.chineseCharLyrics} onChange={this.handleChange} />
 
-exports.default = SongTitle;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
 
-/***/ }),
-/* 498 */
-/*!*************************************!*\
-  !*** ./webpage/song/LyricsBody.jsx ***!
-  \*************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Constants = __webpack_require__(/*! ./Constants.jsx */ 478);
-
-var _Constants2 = _interopRequireDefault(_Constants);
-
-var _jquery = __webpack_require__(/*! jquery */ 128);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 219);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var LyricsBody = function (_React$Component) {
-	_inherits(LyricsBody, _React$Component);
-
-	function LyricsBody(props) {
-		_classCallCheck(this, LyricsBody);
-
-		var _this = _possibleConstructorReturn(this, (LyricsBody.__proto__ || Object.getPrototypeOf(LyricsBody)).call(this, props));
-
-		_this.state = {
-			lines: [],
-			lineStyles: []
-		};
-
-		_this.clearLyrics = _this.clearLyrics.bind(_this);
-		return _this;
-	}
-
-	_createClass(LyricsBody, [{
-		key: 'anchorClick',
-		value: function anchorClick(lineNum) {
-			var newTime = _Constants2.default.timestampToSeconds(this.props.lyrics.times[lineNum - 1]); //minus one because lyrics start at 0 while currentLine starts at 1
-
-			var style = this.state.lineStyles;
-			//wipe color off current ones:
-			style[this.props.currentLine - 1] = { "color": _Constants2.default.ConstsClass.foregroundColor };
-			style[this.props.currentLine] = { "color": _Constants2.default.ConstsClass.foregroundColor, "fontWeight": "normal" };
-			style[this.props.currentLine + 1] = { "color": _Constants2.default.ConstsClass.foregroundColor };
-
-			style[lineNum - 1] = { "color": _Constants2.default.ConstsClass.highlightColor, "fontWeight": "bolder" };
-
-			this.props.skipToTime(lineNum, newTime);
-
-			this.setState({ lineStyles: style });
-		}
-	}, {
-		key: 'clearLyrics',
-		value: function clearLyrics() {
-			this.setState({
-				lines: [],
-				lineStyles: []
-			});
-		}
-	}, {
-		key: 'incrementLineColor',
-		value: function incrementLineColor(lineNum) {
-			var style = this.state.lineStyles;
-			//wipe color off current ones:
-			style[this.props.currentLine - 2] = { "color": _Constants2.default.ConstsClass.foregroundColor, "fontWeight": "normal" };
-			style[this.props.currentLine - 1] = { "color": _Constants2.default.ConstsClass.foregroundColor, "fontWeight": "normal" };
-			style[this.props.currentLine] = { "color": _Constants2.default.ConstsClass.highlightColor, "fontWeight": "bolder"
-
-				// style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "bolder"}
-
-
-			};this.setState({ lineStyles: style });
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			var bodyStyle = {};
-			var lyricsBody = [];
-
-			var lineNumberStyling = {};
-			this.props.options.showLineNums ? lineNumberStyling = { visibility: "visible" } : lineNumberStyling = { visibility: "hidden" };
-
-			var pinyinStyling = {};
-			this.props.options.showPinyin ? pinyinStyling = { display: "block" } : pinyinStyling = { display: "none" };
-
-			var cnStyling = {};
-			this.props.options.showCn ? cnStyling = { display: "block" } : cnStyling = { display: "none" };
-
-			var engStyling = {};
-			this.props.options.showEng ? engStyling = { display: "block" } : engStyling = { display: "none" };
-
-			if (this.props.lyrics.pinyin.length > 0) {
-				bodyStyle = { "visibility": "visible" };
-				var lineNumber = 1;
-				var pinyin = this.props.lyrics.pinyin;
-				var cnChar = this.props.lyrics.cn;
-				var eng = this.props.lyrics.eng;
-				var times = this.props.lyrics.times;
-				for (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++) {
-					var lineStyle = this.state.lineStyles[i];
-
-					var minutes = Math.floor(times[i] / 100);
-					var seconds = times[i] % 100;
-					if (seconds < 10) seconds = "0" + seconds;
-					//used for tooltip
-					var time = minutes + ":" + seconds;
-
-					//each lyric line takes up a row
-					var tooltip = void 0;
-					var overlayTrigger = void 0;
-					if ((lineNumber == 1 || time != "0:00") && time != "NaN:NaN") {
-						tooltip = React.createElement(
-							_reactBootstrap.Tooltip,
-							{ id: time, className: 'tooltip' },
-							React.createElement(
-								'strong',
-								null,
-								time
-							)
-						);
-						overlayTrigger = React.createElement(
-							_reactBootstrap.OverlayTrigger,
-							{ placement: 'top', overlay: tooltip },
-							React.createElement(
-								'a',
-								{ id: "lineNumber" + lineNumber, className: 'lineAnchor', onClick: this.anchorClick.bind(this, lineNumber) },
-								lineNumber
-							)
-						);
-					} else {
-						overlayTrigger = React.createElement(
-							'a',
-							{ id: "lineNumber" + lineNumber, className: 'lineAnchor' },
-							lineNumber
-						);
-					}
-					var rowDiv = React.createElement(
-						'div',
-						{ key: "rowNumber" + lineNumber, className: 'row', style: lineStyle },
-						React.createElement(
-							'div',
-							{ className: _Constants2.default.ConstsClass.lyricLine + "  equal", id: _Constants2.default.ConstsClass.lyricLine + lineNumber },
-							React.createElement(
-								'div',
-								{ className: 'col-xs-1 lineIndex vertical-center', style: lineNumberStyling },
-								overlayTrigger
-							),
-							React.createElement(
-								'div',
-								{ className: 'col-xs-10 lyricWords', id: _Constants2.default.ConstsClass.genericLinePrefix + lineNumber },
-								React.createElement(
-									'div',
-									{ className: _Constants2.default.ConstsClass.pinyinLyricsLineClass, style: pinyinStyling },
-									' ',
-									pinyin[i]
-								),
-								React.createElement(
-									'div',
-									{ className: _Constants2.default.ConstsClass.cnCharLyricsLineClass, style: cnStyling },
-									' ',
-									cnChar[i]
-								),
-								React.createElement(
-									'div',
-									{ className: _Constants2.default.ConstsClass.englishLyricsLineClass, style: engStyling },
-									' ',
-									eng[i]
-								)
-							)
-						),
-						React.createElement('br', { className: 'clearfix' })
-					);
-					lyricsBody.push(rowDiv);
-					lineNumber++;
-				}
-			} else bodyStyle = { "visibility": "hidden" };
-
-			this.state.lines = lyricsBody.map(function (line) {
-				return line;
-			});
-
-			return React.createElement(
-				'div',
-				{ className: 'row' },
-				React.createElement(
-					'div',
-					{ className: 'gradient col-xs-12', id: 'lyricsBody', style: bodyStyle },
-					this.state.lines
-				)
-			);
-		}
-	}]);
-
-	return LyricsBody;
-}(React.Component);
-
-exports.default = LyricsBody;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
-
-/***/ }),
-/* 499 */
-/*!**************************************!*\
-  !*** ./webpage/song/AudioPlayer.jsx ***!
-  \**************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Constants = __webpack_require__(/*! ./Constants.jsx */ 478);
-
-var _Constants2 = _interopRequireDefault(_Constants);
-
-var _jquery = __webpack_require__(/*! jquery */ 128);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _jquery3 = __webpack_require__(/*! jquery.scrollTo */ 470);
-
-var _jquery4 = _interopRequireDefault(_jquery3);
-
-var _reactSvg = __webpack_require__(/*! react-svg */ 471);
-
-var _reactSvg2 = _interopRequireDefault(_reactSvg);
-
-var _AudioAnimations = __webpack_require__(/*! ./AudioAnimations.jsx */ 530);
-
-var _AudioAnimations2 = _interopRequireDefault(_AudioAnimations);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AudioPlayer = function (_React$Component) {
-	_inherits(AudioPlayer, _React$Component);
-
-	function AudioPlayer(props, context) {
-		_classCallCheck(this, AudioPlayer);
-
-		var _this = _possibleConstructorReturn(this, (AudioPlayer.__proto__ || Object.getPrototypeOf(AudioPlayer)).call(this, props, context));
-
-		_this.togglePlayer = _this.togglePlayer.bind(_this);
-		_this.updateLine = _this.updateLine.bind(_this);
-		_this.checkTimes = _this.checkTimes.bind(_this);
-		_this.getAudioPlayer = _this.getAudioPlayer.bind(_this);
-		_this.state = {
-			action: "none"
-		};
-		return _this;
-	}
-
-	_createClass(AudioPlayer, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			this.refs.audioHTML.ontimeupdate = this.checkTimes;
-		}
-	}, {
-		key: 'checkTimes',
-		value: function checkTimes() {
-			if (this.props.times.length != 0) {
-				var times = this.props.times;
-				var currentLine = this.props.currentLine;
-				var convertedToSeconds = _Constants2.default.timestampToSeconds(times[currentLine]);
-				var time = Math.round(this.refs.audioHTML.currentTime);
-
-				if (convertedToSeconds == 0 && currentLine != 0) {
-					this.props.updateCurrentLine(currentLine + 1);
-					return;
-				}
-
-				if (time >= convertedToSeconds) {
-					var t0 = performance.now();
-					this.updateLine(currentLine);
-					var t1 = performance.now();
-					//docs: https://github.com/flesler/jquery.scrollTo
-					// console.log("scrolling val: " + scrollingOffset);
-					this.props.updateCurrentLine(currentLine + 1);
-					if (this.props.allowScrolling) (0, _jquery2.default)(window).scrollTo((0, _jquery2.default)("#" + _Constants2.default.ConstsClass.genericLinePrefix + currentLine), { axis: 'y', interrupt: true, duration: 500, offset: { top: this.props.scrollOffset } });
-				}
-			}
-		}
-	}, {
-		key: 'increaseVolume',
-		value: function increaseVolume() {
-			var that = this;
-			this.setState({ action: "vol_up" });
-			setTimeout(function () {
-				this.setState({ "action": "none" });
-			}.bind(this), 2000);
-			if (this.refs.audioHTML.volume != 1.0) this.refs.audioHTML.volume = this.refs.audioHTML.volume + .1;
-		}
-	}, {
-		key: 'decreaseVolume',
-		value: function decreaseVolume() {
-			this.setState({ action: "vol_down" });
-			setTimeout(function () {
-				this.setState({ "action": "none" });
-			}.bind(this), 2000);
-			if (this.refs.audioHTML.volume > .1) this.refs.audioHTML.volume = this.refs.audioHTML.volume - .1;
-		}
-	}, {
-		key: 'resetAction',
-		value: function resetAction() {}
-	}, {
-		key: 'setCurrentTime',
-		value: function setCurrentTime(newTime) {
-			this.refs.audioHTML.currentTime = newTime;
-			this.refs.audioHTML.play();
-		}
-	}, {
-		key: 'setSong',
-		value: function setSong(songSource) {
-			this.refs.audioHTML.src = songSource;
-		}
-	}, {
-		key: 'getAudioPlayer',
-		value: function getAudioPlayer() {
-			return this.refs.audioHTML;
-		}
-	}, {
-		key: 'togglePlayer',
-		value: function togglePlayer() {
-			if (this.refs.audioHTML.paused) {
-				this.setState({ action: "play" });
-				setTimeout(function () {
-					this.setState({ "action": "none" });
-				}.bind(this), 2000);
-				this.refs.audioHTML.play();
-			} else {
-				this.setState({ action: "pause" });
-				setTimeout(function () {
-					this.setState({ "action": "none" });
-				}.bind(this), 2000);
-				this.refs.audioHTML.pause();
-			}
-		}
-	}, {
-		key: 'updateLine',
-		value: function updateLine(currentLine) {
-			this.props.changeLineColor(currentLine);
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'div',
-					{ className: 'audioContainer' },
-					React.createElement('audio', { controls: 'true', ref: 'audioHTML', id: 'audioPlayer' })
-				),
-				React.createElement(_AudioAnimations2.default, { action: this.state.action })
-			);
-		}
-	}]);
-
-	return AudioPlayer;
-}(React.Component);
-
-/**
-	<ReactSVG
-	path="playPause.svg"
-	callback={svg => console.log(svg)}
-	className="example"
-	style = {{
-		"position":"absolute",
-		top: "0px"
-		// "paddingTop": "10vh",
-		// margin: "0px auto",
-		// display: "block"
-	}}
-		/>
-**/
-
-
-exports.default = AudioPlayer;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
-
-/***/ }),
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */,
-/* 511 */,
-/* 512 */,
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */,
-/* 518 */,
-/* 519 */,
-/* 520 */,
-/* 521 */,
-/* 522 */,
-/* 523 */,
-/* 524 */,
-/* 525 */,
-/* 526 */,
-/* 527 */,
-/* 528 */,
-/* 529 */,
-/* 530 */
-/*!******************************************!*\
-  !*** ./webpage/song/AudioAnimations.jsx ***!
-  \******************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(React) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AudioAnimations = function (_React$Component) {
-  _inherits(AudioAnimations, _React$Component);
-
-  function AudioAnimations(props, context) {
-    _classCallCheck(this, AudioAnimations);
-
-    return _possibleConstructorReturn(this, (AudioAnimations.__proto__ || Object.getPrototypeOf(AudioAnimations)).call(this, props, context));
-  }
-
-  _createClass(AudioAnimations, [{
-    key: "render",
-    value: function render() {
-      var popup = void 0;
-      if (this.props.action == "none") {
-        popup = null;
-      } else {
-        popup = React.createElement(
-          "div",
-          { id: this.props.action, className: "centered" },
-          React.createElement("img", { className: "transition", height: "300px", width: "300px", src: this.props.action + ".png" })
-        );
-      }
-      return popup;
-    }
-  }]);
-
-  return AudioAnimations;
-}(React.Component);
-
-exports.default = AudioAnimations;
+exports.default = Form;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 0)))
 
 /***/ })

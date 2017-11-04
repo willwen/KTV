@@ -12,7 +12,6 @@ export default class SearchPanel extends React.Component {
             }
 		}
 		this.showSearchResults = this.showSearchResults.bind(this);
-		this.requestData = this.requestData.bind(this);
 
 	}
 
@@ -33,11 +32,6 @@ export default class SearchPanel extends React.Component {
 		axios.get("query", {params: {'search': ""}} ).then(this.showSearchResults).catch(error => console.log(error));;
 	}
 
-	requestData(id, title, artist){
-		this.setState({resultsStyling: {display: "none"}});
-		this.props.getSongLyrics(id, title, artist);
-	}
-
     render() {
     	return (
 	    	<div>
@@ -46,7 +40,7 @@ export default class SearchPanel extends React.Component {
 			<div className = "row allSongsDiv">
 				<a id="allSongsAnchor" onClick={this.retrieveAll.bind(this)}>All Songs</a>
 			</div>
-		  	<SearchResults results={this.state.dbResults} styling = {this.state.resultsStyling} fetchSongData={this.requestData}/>
+		  	<SearchResults results={this.state.dbResults} styling = {this.state.resultsStyling} />
 			<div className = "clearfix"></div>
 			</div>
 	    );

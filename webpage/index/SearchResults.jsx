@@ -7,20 +7,17 @@ export default class SearchResults extends React.Component {
 
         }
     }
-    handleClick(id, title, artist){
-        this.props.fetchSongData(id, title, artist);
-    }
+    
     render() {
         let resultItems;
         if (this.props.results) {
 
             resultItems = this.props.results.map(result => {
+                let path = "/song?id="+result.file_name+"&title="+result.cn_char+"&artist="+result.artist
                 return ( <li key = {result.file_name}>
-                            <button id = {result.file_name}
-                            className = "button list-group-item list-group-item-action"
-                            onClick={this.handleClick.bind(this, result.file_name, result.cn_char , result.artist)}> 
+                            <a className = "list-group-item list-group-item-action" href={path}>
                                 {result.cn_char} - {result.artist} 
-                            </button> 
+                            </a> 
                         </li >)
             })
         }

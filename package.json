@@ -17,6 +17,7 @@
     "express": "^4.15.3",
     "glob": "^7.1.2",
     "mongodb": "^2.2.28",
+    "react-router": "^4.2.0",
     "xss-filters": "^1.2.7"
   },
   "repository": {

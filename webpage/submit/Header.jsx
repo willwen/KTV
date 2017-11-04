@@ -11,15 +11,11 @@ export default class PageHeader extends React.Component {
                         <p>Submit a Song</p>
                     </a>
 	    		</div>
+
 	    	</div>
-			<div className="row">
-				<div className="welcome col-xs-12 jumbotron text-center">
-					<h1>Become a Karaoke God</h1>
-					<a href="https://github.com/willwen/KTV" target="_blank" className="fa fa-github"></a>
-	    			<a href="https://www.linkedin.com/in/will-wen-52480559/" className="fa fa-linkedin"></a>
-					<div>Press Space to Play/Pause, (+/-) for volume control</div>
-				</div>
-			</div>
+	    	<div className="welcome col-xs-12 jumbotron text-center">
+	    		<h1>Submit a Song to KTV God</h1>
+	    	</div>
 		</div>
     );
   }
