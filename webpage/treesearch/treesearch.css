@@ -25,19 +25,16 @@
 }
 */
 .childLevelIcon{
-	width: 70%;
-	height: 70%;
-	margin-top: 8px;
+	width: 10%;
 }
 
 .item{
 	/*flex-grow: 1;*/
 	/*15px top and bottom are to space icons vertically away */
 	/*left and right are 3%, adding up to 6%*/
-	margin:10px .5% 10px .5%;
-	padding: 0px 2.5% 0px 2.5%;
-	font-size: 1.5em;
-	width: 14%;
+	/*margin:10px .5% 10px .5%;*/
+	/*padding: 0px 2.5% 0px 2.5%;*/
+	font-size: 1em;
 	/*flex-basis: 14%; allows 100% ( - 6% * 5 from left and right margins ) /5 =  to fit on each row*/
 	text-align: center;
 	border-bottom: medium solid rgba(255,255,255,0);
