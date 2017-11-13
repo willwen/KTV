@@ -6,6 +6,7 @@
 - Clicking on icon should take you home
 
 ### Medium Effort
+- Optimizing caching
 - Fix treefind bootstrap sizing
 - Results list should highlight what text matched (regex)
 - Make a popup help box on load
@@ -15,6 +16,7 @@
 - Show English on the song titles
 
 ### Larger Features
+- Readjust canvas size if resized
 - See microphone freq side by side with song
 - Add audacity instrumentals.
 - Change jp, cn, spanish , for particular songs
