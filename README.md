@@ -1,6 +1,6 @@
 # KTV (Karaoke God)
-## [Chinese Song Karaoke Web App](ktvgod.me)
-<img src="screnshots/1.PNG"></img>
+## [Chinese Song Karaoke Web App](http://ktvgod.me)
+<img src="screenshots/1.PNG"></img>
 
 ## Developers
 
