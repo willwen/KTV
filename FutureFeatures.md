@@ -1,24 +1,34 @@
+### Quick Fixes
+- Fix extra white pixels on play.png
 - Add name to front page, remove play pause helper
 - Italicize non native text
 - Bring Chinese all to Simplified
 - Clicking on icon should take you home
-- See microphone freq side by side with song
-- Add audacity instrumentals.
+
+### Medium Effort
 - Fix treefind bootstrap sizing
 - Results list should highlight what text matched (regex)
-- Change jp, cn, spanish , for particular songs
-- Should be able to disable canvas all together
 - Make a popup help box on load
+- Add album image to bottom right
+	- Add album images to treesearch
+- Single tap lyric to show all langs
+- Show English on the song titles
+
+### Larger Features
+- See microphone freq side by side with song
+- Add audacity instrumentals.
+- Change jp, cn, spanish , for particular songs
+	- need to refactor DB schema
+- Should be able to disable canvas all together
+	- and disable audio analyzer.
 - Visualzier bucket size should be variable
 	- smaller esp for mobile
 	- Work on a ios
 https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/PlayingandSynthesizingSounds.html
-- Add album image to bottom right
-	- Add album images to treesearch
+
 - Fix scrolling time back shouldnt break the text highlighting
 	- Bug when they user changes time in the bottom player
-- Single tap lyric to show all langs
-- Show English on the song titles
+
 - Firefox has weird audio bar
 	- react-jplayer
 - Ball that bounces on the words
