@@ -5,21 +5,21 @@
 ## Developers
 
 ### Directory Structure:
-TimePickerTool - serparate web app that helps to manually time pick lyrics for songs
-data - mongodb data store
-dist - webpack output directory (transpiled react code that is used in production)
-favicons - favicon used for main webpage
-images - artist, song, album image resources
-seed - dockerfile
-seed/scripts - mongodb shell scripts to start, import, and export the JSON database KTV uses.
-songs - lyrics, timestamps for each song
-webpage - html, react, css, javascript code
-Jenkinfile - \[In Progress\] support Jenkins CICD
-futurefeatures.txt - a list of enhancements I plan to develop/fix
-insertSong.js - a script that song object into mongodb
-package.json - node dependencies :)
-sever.js - main server app, handles routes, queries to DB
-webpack.config.js - webpack configuration that transpiles react to javascript.
+- TimePickerTool - serparate web app that helps to manually time pick lyrics for songs
+- data - mongodb data store 
+- dist - webpack output directory (transpiled react code that is used in production)
+- favicons - favicon used for main webpage
+- images - artist, song, album image resources
+- seed - dockerfile
+- seed/scripts - mongodb shell scripts to start, import, and export the JSON database KTV uses.
+- songs - lyrics, timestamps for each song
+- webpage - html, react, css, javascript code
+- Jenkinfile - \[In Progress\] support Jenkins CICD
+- futurefeatures.txt - a list of enhancements I plan to develop/fix
+- insertSong.js - a script that song object into mongodb
+- package.json - node dependencies :)
+- sever.js - main server app, handles routes, queries to DB
+- webpack.config.js - webpack configuration that transpiles react to javascript.
 
 ### How to install on local dev environment:
 1) Install Git, Node.js, Mongodb
