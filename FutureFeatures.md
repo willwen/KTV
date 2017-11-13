@@ -1,29 +1,27 @@
-- add name to front page, remove play pause helper
-italcize non native text
-clicking on icon should take you home
-see microphone freq side by side with song
-add audacity instrumentals.
-fix treefind bootstrap sizing
-results list should highlight what text matched (regex)
-change jp, cn, spanish , for particular songs
-should be able to disable canvas all together
-make a popup help box on load
-visualzier bucket size should be variable
-	smaller esp for mobile
-work on a ios
-https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/Pl
-ayingandSynthesizingSounds.html
-add album image to bottom right
-	add album images to treesearch
-fix scrolling time back shouldnt break the text highlighting
-	- bug when they user changes time in the bottom player
-single tap lyric to show all langs
-show English on the song titles
-
-
-firefox has weird audio bar
-	react-jplayer
-ball that bounces on the words
+- Add name to front page, remove play pause helper
+- Italicize non native text
+- Bring Chinese all to Simplified
+- Clicking on icon should take you home
+- See microphone freq side by side with song
+- Add audacity instrumentals.
+- Fix treefind bootstrap sizing
+- Results list should highlight what text matched (regex)
+- Change jp, cn, spanish , for particular songs
+- Should be able to disable canvas all together
+- Make a popup help box on load
+- Visualzier bucket size should be variable
+	- smaller esp for mobile
+	- Work on a ios
+https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/PlayingandSynthesizingSounds.html
+- Add album image to bottom right
+	- Add album images to treesearch
+- Fix scrolling time back shouldnt break the text highlighting
+	- Bug when they user changes time in the bottom player
+- Single tap lyric to show all langs
+- Show English on the song titles
+- Firefox has weird audio bar
+	- react-jplayer
+- Ball that bounces on the words
 	look at previously used karaoke formats
 
 
