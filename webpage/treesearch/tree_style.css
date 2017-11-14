@@ -10,7 +10,7 @@
 .level{
 	display: flex;	
 	/* items all aligned on bottom margin*/
-	align-items: flex-end;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	/* makes new icons on new rows start on the far left*/
 	justify-content: center;
@@ -24,17 +24,25 @@
 	margin-top: 8px;
 }
 */
+a:focus, a:hover {
+    color: #FFF !important;
+    text-decoration: underline;
+}
+
 .childLevelIcon{
-	width: 10%;
+	width: 70%;
+	height: 70%;
+	margin-top: 8px;
 }
 
 .item{
 	/*flex-grow: 1;*/
 	/*15px top and bottom are to space icons vertically away */
 	/*left and right are 3%, adding up to 6%*/
-	/*margin:10px .5% 10px .5%;*/
+	margin:10px .5% 10px .5%;
 	/*padding: 0px 2.5% 0px 2.5%;*/
-	font-size: 1em;
+	font-size: 1.5em;
+	width: 14%;
 	/*flex-basis: 14%; allows 100% ( - 6% * 5 from left and right margins ) /5 =  to fit on each row*/
 	text-align: center;
 	border-bottom: medium solid rgba(255,255,255,0);
@@ -48,11 +56,11 @@
 	display: inline-block;
 
 	/* allows overflowed text from whitespace: nowrap to still be centered */
-	margin-left: -100%;
-	margin-right: -100%;
+/*	margin-left: -100%;
+	margin-right: -100%;*/
 	
 }
-
+/*
 .nowrap{
 	white-space: nowrap;
-}
+}*/

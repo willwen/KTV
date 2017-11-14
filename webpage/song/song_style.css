@@ -1,116 +1,3 @@
-/**
-  General Stylings
-**/
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700');
-
-
-/*Set Border Box and Font
-  Border Box means elements should have padding and border included in the element's total width and height
-*/
-
-* {
-    box-sizing: border-box;
-    font-family: Lato, sans-serif;
-}
-
-html {
-    min-height: 100%;
-}
-
-
-/*When Links are hovered over, give that funny pointer*/
-
-a {
-    cursor: pointer;
-}
-
-
-/*Header Styles*/
-
-.header img {
-    width: 50px;
-    height: auto;
-    float: left;
-    margin-top: 35px;
-    margin-left: 25px;
-}
-
-.fa {
-    margin: 5px;
-    padding: 20px;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    border-color: white;
-    color: white;
-}
-
-.nav {
-    margin-top: 35px;
-    margin-right: 25px;
-    float: right;
-}
-
-.nav p {
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    color: white;
-}
-
-
-/*Give a Margin so the musicplayer has space*/
-
-body {
-    color: #fff;
-    margin-bottom: 40px;
-    background: #667eea;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-
-/**
-  Bootstrap Overrides
- */
-
-h1,
-a {
-    color: #fff;
-}
-
-a {
-    color: #fff;
-    opacity: 0.8;
-    text-transform: none;
-}
-
-a:hover {
-    color: #fff;
-    opacity: 1;
-    text-decoration: none;
-}
-
-.jumbotron {
-    background: transparent;
-}
-
-.jumbotron h1 {
-    font-family: Montserrat, sans-serif;
-    text-transform: uppercase;
-    text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-    letter-spacing: 2px;
-    color: #fff;
-}
-
-.jumbotron p {
-    color: #fff;
-    opacity: 0.8;
-}
-
 .form-control {
     height: 50px;
 }
@@ -143,15 +30,6 @@ a:hover {
 .list-group-item.button:focus {
     color: #fff;
     background: rgba(255, 255, 255, 0.45);
-}
-
-
-/**
-  Top Banner Stylings
-**/
-
-.welcome {
-    font-size: 2em;
 }
 
 
@@ -297,10 +175,15 @@ ul {
     }
 }
 
-.equal {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
+.pinyinLine {
+    font-style: italic;
+}
+.cnLine {
+    letter-spacing: 2px;
+}
+
+.engLine {
+    font-style: italic;
 }
 
 
@@ -320,30 +203,6 @@ ul {
         border-right-width: 3px;
         padding-right: 24px;
     }
-}
-
-
-/*https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
-*/
-
-.vertical-center {
-    display: flex;
-    align-items: center;
-}
-
-
-/*.lineAnchor {
-    color: rgba(255, 255, 255, 0.25);
-}*/
-
-.lineAnchor:hover {
-    color: #FFF;
-}
-
-.tooltip-inner {
-    background-color: #FD971F;
-    color: #272822;
-    font-size: 1.75em;
 }
 
 

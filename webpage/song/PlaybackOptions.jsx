@@ -40,7 +40,7 @@ export default class PlaybackOptions extends React.Component {
 					<span><label><input checked={this.state.showLineNums} onChange={this.toggleLineNums} id="lineNumbers" type="checkbox"/>Line Numbers</label></span>
 				</div>
 				<div className="checkbox">
-					<span><label><input checked={this.state.showVisualizer} onChange={this.toggleVisualizer} id="visualizer" type="checkbox"/>Visualizer</label></span>
+					<span><label><input checked={this.state.showVisualizer} onChange={this.toggleVisualizer} id="visualizer" type="checkbox" disabled="true"/>Visualizer</label></span>
 				</div>
 			</form>
 		</div>

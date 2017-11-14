@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 
-import PageHeader from './Header.jsx'
+import PageHeader from '../SharedReactComponents/Header.jsx'
 import Form from './Form.jsx'
 
 import axios from 'axios'

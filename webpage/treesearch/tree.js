@@ -142,7 +142,7 @@ function createAnchor(element, level) {
                 })
             }
             //highlight myself
-            $(this).css("background-color", "#d9edf7");
+            $(this).css("background-color", "#00000080");
         })
     }
     //attatch and ID if it has one

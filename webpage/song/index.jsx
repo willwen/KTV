@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 
 import Visualizer from './Visualizer.jsx'
-import PageHeader from './Header.jsx'
+import PageHeader from '../SharedReactComponents/Header.jsx'
 
 import OptionsMenu from './OptionsMenu.jsx'
 import SongTitle from './SongTitle.jsx'
@@ -183,7 +183,6 @@ export default class MainContainer extends React.Component {
 	}
 	//called when a user clicks on a new song
 	handleNewLyrics(response){
-		console.log(response);
 		this.setState({
 			currentLine: 0,
 			lyrics: {
