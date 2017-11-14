@@ -1,11 +1,8 @@
 ### Quick Fixes
-- Fix extra white pixels on play.png
-- Add name to front page, remove play pause helper
-- Italicize non native text
-- Bring Chinese all to Simplified
-- Clicking on icon should take you home
+
 
 ### Medium Effort
+- write treesearch in react
 - Optimizing caching
 - Fix treefind bootstrap sizing
 - Results list should highlight what text matched (regex)
