@@ -4,9 +4,13 @@
 	
 
 ### Medium Effort
+
+- Redirect all HTTP to HTTPS
+- Optimizing caching
+	- Service worker https://www.youtube.com/watch?v=4uQMl7mFB6g
 - Audacity to detect lyric timings
 - write treesearch in react
-- Optimizing caching
+
 - Fix treefind bootstrap sizing
 - Results list should highlight what text matched (regex)
 - Make a popup help box on load
