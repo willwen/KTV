@@ -1,7 +1,7 @@
 ### Quick Fixes
 - Add Snyk security test
 	https://snyk.io/test/github/
-	
+- drastically reduce webpack bundle size & image sizes	
 
 ### Medium Effort
 
