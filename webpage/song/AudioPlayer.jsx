@@ -1,7 +1,6 @@
 import Constants from './Constants.jsx'
 import $ from 'jquery'
 import scrollTo from 'jquery.scrollTo'
-import ReactSVG from 'react-svg'
 import AudioAnimations from './AudioAnimations.jsx'
 
 
@@ -117,19 +116,3 @@ export default class AudioPlayer extends React.Component {
 		);
 	}
 }
-
-
-/**
-	<ReactSVG
-	path="playPause.svg"
-	callback={svg => console.log(svg)}
-	className="example"
-	style = {{
-		"position":"absolute",
-		top: "0px"
-		// "paddingTop": "10vh",
-		// margin: "0px auto",
-		// display: "block"
-	}}
-		/>
-**/
