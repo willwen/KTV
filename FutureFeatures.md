@@ -1,7 +1,10 @@
 ### Quick Fixes
-
+- Add Snyk security test
+	https://snyk.io/test/github/
+	
 
 ### Medium Effort
+- Audacity to detect lyric timings
 - write treesearch in react
 - Optimizing caching
 - Fix treefind bootstrap sizing
@@ -11,7 +14,8 @@
 	- Add album images to treesearch
 - Single tap lyric to show all langs
 - Show English on the song titles
-
+- remove scrollTo Dependency on jQuery
+	- https://github.com/flyingant/react-scroll-to-component
 ### Larger Features
 - Readjust canvas size if resized
 - See microphone freq side by side with song
