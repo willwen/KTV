@@ -69,7 +69,7 @@ body {
     color: #654597;
     margin-bottom: 40px;
     /*background: #654597;*/
-    background: linear-gradient(225deg, #B760E6 0%, #E2ADF2 100%);
+    background: linear-gradient(135deg, #E2ADF2 0%, #B760E6 100%);
 }
 
 
@@ -81,13 +81,13 @@ body {
 
 a {
     color: #fff;
-    opacity: 0.9;
+    opacity: 0.8;
     text-transform: none;
 }
 
 a:hover {
     color: #fff;
-    opacity: 0.7;
+    opacity: 1;
     text-decoration: none !important;
 }
 

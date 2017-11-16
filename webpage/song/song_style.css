@@ -136,8 +136,13 @@ ul {
   Lyric Display Stylings
 **/
 
+#titleLine {
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
 .gradient {
-    background: rgba(64, 64, 64, 0.9);
+    background: rgba(50, 50, 50, 0.3);
     border-radius: 6px;
 }
 
@@ -192,7 +197,7 @@ ul {
 **/
 
 .lineIndex {
-    /*  border-left: 6px solid red */
+      /*border-left: 6px solid red */
     border-right: 3px solid rgba(255, 255, 255, 0.15);
     font-size: 1.5em;
 }
