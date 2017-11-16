@@ -66,10 +66,10 @@ a {
 /*Give a Margin so the musicplayer has space*/
 
 body {
-    color: #fff;
+    color: #654597;
     margin-bottom: 40px;
-    background: #667eea;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /*background: #654597;*/
+    background: linear-gradient(135deg, #E2ADF2 0%, #B760E6 100%);
 }
 
 
@@ -77,21 +77,18 @@ body {
   Bootstrap Overrides
  */
 
-h1,
-a {
-    color: #fff;
-}
+
 
 a {
     color: #fff;
-    opacity: 0.6;
+    opacity: 0.8;
     text-transform: none;
 }
 
 a:hover {
     color: #fff;
     opacity: 1;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .jumbotron {
@@ -104,11 +101,11 @@ a:hover {
     text-transform: uppercase;
     text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
     letter-spacing: 2px;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .jumbotron p {
-    color: #fff;
+    /*color: #fff;*/
     opacity: 0.8;
 }
 
@@ -147,9 +144,18 @@ a:hover {
     color: #FFF;
 }
 
-.tooltip-inner {
+.tooltip-inner { /* what is this */
     background-color: #FD971F;
     color: #272822;
     font-size: 1.75em;
 }
 
+::selection { 
+    background: #574AE2; 
+    color: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #574AE2;
+}

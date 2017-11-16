@@ -136,14 +136,19 @@ ul {
   Lyric Display Stylings
 **/
 
+#titleLine {
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
 .gradient {
-    background: rgba(64, 64, 64, 0.9);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 }
 
 #lyricsBody {
     visibility: hidden;
-    color: rgba(255, 255, 255, 1);
+    color: #222A68;
     margin-top: 10px;
     padding: 40px;
     font-family: Consolas, monaco, monospace;
@@ -179,7 +184,7 @@ ul {
     font-style: italic;
 }
 .cnLine {
-    letter-spacing: 2px;
+    letter-spacing: 10px;
 }
 
 .engLine {
@@ -192,7 +197,7 @@ ul {
 **/
 
 .lineIndex {
-    /*  border-left: 6px solid red */
+      /*border-left: 6px solid red */
     border-right: 3px solid rgba(255, 255, 255, 0.15);
     font-size: 1.5em;
 }

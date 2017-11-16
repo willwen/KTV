@@ -26,6 +26,7 @@
     padding: 10px 20px 8px 50px;
     box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.25);
     border: none;
+    color: #574AE2;
 }
 
 .allSongsDiv {
@@ -38,7 +39,7 @@
 
 .allSongsDiv a {
     font-family: Montserrat, sans-serif;
-    color: #fff;
+    color: #333A68;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9em;
@@ -53,12 +54,12 @@
     margin: 0;
     display: none;
     font-size: 2em;
+    font-weight: bold;
 }
 
-
-
 #resultsList li a {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: block
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #222A68;
+    display: block;
+    letter-spacing: 4px;
 }
