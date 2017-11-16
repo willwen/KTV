@@ -142,13 +142,13 @@ ul {
 }
 
 .gradient {
-    background: rgba(50, 50, 50, 0.3);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 }
 
 #lyricsBody {
     visibility: hidden;
-    color: rgba(255, 255, 255, 1);
+    color: #222A68;
     margin-top: 10px;
     padding: 40px;
     font-family: Consolas, monaco, monospace;
@@ -184,7 +184,7 @@ ul {
     font-style: italic;
 }
 .cnLine {
-    letter-spacing: 2px;
+    letter-spacing: 10px;
 }
 
 .engLine {
