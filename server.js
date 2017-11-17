@@ -1,3 +1,7 @@
+import React from 'react'
+import {renderToString} from 'react-dom/server'
+import MainContainer from './dist/song.bundle.js'
+
 var url = require('url'),
     fs = require('fs'),
     querystring = require('querystring'),
@@ -41,9 +45,16 @@ var server = app.listen(process.env.PORT || port, function() {
 app.get('/treefind', function(req,res){
 	res.sendFile(__dirname + '/webpage/treesearch/treesearch.html')
 })
-
+const index = fs.readFileSync(__dirname + '/webpage/song/index.html');
 app.get('/song', function (req, res){
-	res.sendFile(__dirname + '/webpage/song/index.html')
+	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
+	
+	const html = renderToString(<MainContainer/>);
+	const finalHtml = index.replace('<!-- ::APP:: -->', html)
+
+	res.sendFile(finalHtml)
+	
+
 });
 
 app.get('/submit', function(req,res){

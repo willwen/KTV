@@ -5,7 +5,7 @@ var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlug
 
 // https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579
 module.exports = {
-    entry: {index:'./webpage/index/index.jsx', song: './webpage/song/index.jsx', submit: './webpage/submit/index.jsx'},
+    entry: {index:'./webpage/index/index.jsx', song: './webpage/song/MainContainer.jsx', submit: './webpage/submit/index.jsx'},
     output: {path: __dirname + '/dist', filename: '[name].bundle.js', pathinfo: true},
     watch: true,
     // devtool: 'cheap-source-map', // https://webpack.github.io/docs/configuration.html#devtool
