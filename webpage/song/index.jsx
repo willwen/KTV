@@ -9,7 +9,6 @@ import LyricsBody from './LyricsBody.jsx'
 import AudioPlayer from './AudioPlayer.jsx'
 
 import axios from 'axios'
-import $ from 'jquery'
 
 export default class MainContainer extends React.Component {
 	constructor(){
@@ -167,9 +166,9 @@ export default class MainContainer extends React.Component {
 	}
 
 	scaleScrolling(){
-	   var winWidth =  $(window).width();
-	   var winHeight = $(window).height();
-	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .35))});
+	   // var winWidth =  window.innerWidth;
+	   var winHeight = window.innerHeight;
+	   this.setState({scrollingOffset: (Math.round(winHeight * .35))});
 	}
 
 	setCurrentLine(val){

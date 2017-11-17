@@ -9,8 +9,17 @@ var url = require('url'),
 	glob = require("glob"),
 	escapeStringRegexp = require('escape-string-regexp');
 
-//var mongoURL = "mongodb://mongodb:27017/songs"
-var mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
+var environment = process.env.NODE_ENV
+var mongoURL;
+if (environment === "production"){
+	mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6"
+}
+else{//development or undefined
+	mongoURL = "mongodb://localhost:27017/songs"
+	//Usign Docker? Use this:
+	// mongoURL= "mongodb://mongodb:27017/songs"
+}
+
 var app = express();
 
 app.use(express.static('webpage/index'))
@@ -32,6 +41,10 @@ var server = app.listen(process.env.PORT || port, function() {
 app.get('/treefind', function(req,res){
 	res.sendFile(__dirname + '/webpage/treesearch/treesearch.html')
 })
+
+app.get('/song', function (req, res){
+	res.sendFile(__dirname + '/webpage/song/index.html')
+});
 
 app.get('/submit', function(req,res){
 	res.sendFile(__dirname + '/webpage/submit/index.html')
@@ -66,96 +79,8 @@ app.get('/getSong', function (req, res){
 
 		res.end(JSON.stringify(lyrics, 'utf-8'));
 	})
-
-
-
 });
 
-app.get('/song', function (req, res){
-	var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
-	// res.writeHead(200, {'Content-type': 'application/json'});
-	var lyrics = {};
-	var files = ['pinyin.txt',  'cn.txt', 'eng.txt', 'times.txt'];
-	files.forEach(function(item){
-		try{
-			
-			var files = glob.sync('songs/'+ id + '*/' + id + ' ' + item)
-			console.log(files)
-			lyrics[item] = fs.readFileSync(files[0]).toString().split("\n");	
-		 	
-		}
-		catch (err){
-			console.log(err)
-			lyrics[item] = "Error finding file";
-		}
-
-	})
-	glob('songs/' + id + '*/*.mp3', function(err, files){
-		if(err){
-			lyrics['songFile'] = "mp3 file not found"
-			throw err
-		}
-		else{
-			lyrics['songFile'] = files[0].split("songs/")[1]
-		}
-
-
-
-	})
-		// lyrics
-	res.sendFile(__dirname + '/webpage/song/index.html')
-
-	
-	// var MongoClient = mongodb.MongoClient;
-	// var url = mongoURL
-	// MongoClient.connect(url, function(err, seed){
-	// 	if(err)
-	// 		console.log('unable to connect to server', err);
-	// 	else{
-	// 		console.log('connection established');
-	// 		var collection = seed.collection('songs');
-	// 		var query = {"file_name" : id.toString()}
-	// 		try{
-	// 			collection.findOne(query, function(err, songData){
-	// 				console.log(songData);
-	// 				if(songData){
-	// 					var temp = {
-	// 						cn: songData.cnCharLyrics.buffer.toString(),
-	// 						eng: songData.engLyrics.buffer.toString(),
-	// 						pinyin: songData.pinyinLyrics.buffer.toString(),
-	// 						times: songData.times.buffer.toString()						};
-
-	// 					// console.log(songData.cnCharLyrics.buffer.toString());
-	// 					res.end(JSON.stringify(temp), 'utf-8');
-	// 					seed.close();
-	// 			  	}
-	// 			  	else{
-	// 			  		throw new Error ('Song not found');
-	// 			  	}
-	// 			});
-
-	// 		}
-	// 		catch (err){
-	// 			console.log(err);
-	// 			var placeholder  = {
-	// 				_id: 9999,
-	// 			    title_pinyin: 'No Results Found',
-	// 			    cn_char: 'No Results Found',
-	// 			    file_name: '1',
-	// 			    artist: '',
-	// 			    artist_pinyin: '',
-	// 			    searchTerm: 'No Results Found',
-	// 			    cnCharLyrics: 'Song Not Found',
-	// 			    pinyinLyrics: 'Song Not Found',
-	// 			    engLyrics: 'Song Not Found'
-	// 			};
-	// 		    res.end(JSON.stringify(placeholder), 'utf-8');
-	// 		    seed.close();
-	// 		}
-	// 	}
-	// })
-
-});
 app.get('/artists', function(req,res){
 	var MongoClient = mongodb.MongoClient;
 	var url = mongoURL

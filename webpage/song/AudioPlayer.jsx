@@ -1,8 +1,6 @@
 import Constants from './Constants.jsx'
-import $ from 'jquery'
-import scrollTo from 'jquery.scrollTo'
 import AudioAnimations from './AudioAnimations.jsx'
-
+import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
 
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
@@ -34,14 +32,26 @@ export default class AudioPlayer extends React.Component {
 
 			if (time >= convertedToSeconds)
 			{
-				var t0 = performance.now();
+				// var t0 = performance.now();
 				this.updateLine(currentLine);
-				var t1 = performance.now();
-				//docs: https://github.com/flesler/jquery.scrollTo
+				// var t1 = performance.now();
+
 				// console.log("scrolling val: " + scrollingOffset);
 				this.props.updateCurrentLine(currentLine + 1);
-				if(this.props.allowScrolling)
-		  			$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});
+				if(this.props.allowScrolling){
+					// console.log("offset: " + this.props.scrollOffset*2)
+					scroller.scrollTo(Constants.ConstsClass.genericLinePrefix + (currentLine+1), 
+						{
+							duration: 500,
+							delay: 0,
+							smooth: true,
+							// ,
+							// containerId: document
+							// ,
+							offset: this.props.scrollOffset*2
+						})
+		  			// $(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});
+				}
 			}
 		}
 

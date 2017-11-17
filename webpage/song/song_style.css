@@ -141,14 +141,12 @@ ul {
     letter-spacing: 4px;
 }
 
-.gradient {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-}
 
 #lyricsBody {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
     visibility: hidden;
-    color: #222A68;
+    color: #FFFFFF;
     margin-top: 10px;
     padding: 40px;
     font-family: Consolas, monaco, monospace;

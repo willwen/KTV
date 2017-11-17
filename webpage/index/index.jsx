@@ -4,7 +4,6 @@ import PageHeader from '../SharedReactComponents/Header.jsx'
 import SearchPanel from './SearchPanel.jsx'
 
 import axios from 'axios'
-import $ from 'jquery'
 
 export default class MainContainer extends React.Component {
 	constructor(){

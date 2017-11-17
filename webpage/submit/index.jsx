@@ -1,10 +1,8 @@
-import ReactDOM from 'react-dom';
-
 import PageHeader from '../SharedReactComponents/Header.jsx'
 import Form from './Form.jsx'
 
 import axios from 'axios'
-import $ from 'jquery'
+
 
 export default class MainContainer extends React.Component {
 	constructor(){
