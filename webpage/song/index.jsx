@@ -168,7 +168,7 @@ export default class MainContainer extends React.Component {
 	scaleScrolling(){
 	   // var winWidth =  window.innerWidth;
 	   var winHeight = window.innerHeight;
-	   this.setState({scrollingOffset: (Math.round(winHeight * .35))});
+	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .35))});
 	}
 
 	setCurrentLine(val){

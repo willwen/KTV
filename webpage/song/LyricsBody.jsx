@@ -1,8 +1,8 @@
 import Constants from './Constants.jsx'
 import {Tooltip} from 'react-bootstrap'
 import {OverlayTrigger} from 'react-bootstrap'
-import Scroll from 'react-scroll'; // Imports all Mixins
-var Element = Scroll.Element;
+// import Scroll from 'react-scroll'; // Imports all Mixins
+// var Element = Scroll.Element;
 
 export default class LyricsBody extends React.Component {
 	constructor(props){
@@ -53,7 +53,7 @@ export default class LyricsBody extends React.Component {
 		this.setState({lineStyles: style})
 	}
 
-	render() {
+render() {
 		let bodyStyle = {};  
 		let lyricsBody = [];
 
@@ -76,7 +76,6 @@ export default class LyricsBody extends React.Component {
 			let cnChar = this.props.lyrics.cn;
 			let eng = this.props.lyrics.eng;
 			let times = this.props.lyrics.times;
-
 			for (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
 				var lineStyle = this.state.lineStyles[i];
 
@@ -99,25 +98,20 @@ export default class LyricsBody extends React.Component {
 				else{
 					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
 				}
-
 				var rowDiv = 
-					(<Element key= {"rowNumber"+ lineNumber} name = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
-						<div className="row" style={lineStyle}>
+					(<div key= {"rowNumber"+ lineNumber} className="row" style={lineStyle}>
 						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-xs-1 lineIndex vertical-center" style = {lineNumberStyling}>
 							{overlayTrigger}
 						</div>
-						<div className= "col-xs-10 lyricWords">
-							<div>
-								<div className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}> {pinyin[i]}</div>
-								<div className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}> {cnChar[i]}</div>
-								<div className = {Constants.ConstsClass.englishLyricsLineClass} style={engStyling}> {eng[i]}</div>
-							</div>
+						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
+							<div className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}> {pinyin[i]}</div>
+							<div className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}> {cnChar[i]}</div>
+							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={engStyling}> {eng[i]}</div>
 						</div>
 						</div>
 						<br className = "clearfix"></br>
-					</div>
-					</Element>);
+					</div>);
 				lyricsBody.push(rowDiv);
 				lineNumber++;
 			}
@@ -131,11 +125,12 @@ export default class LyricsBody extends React.Component {
 		
 		return (
 			<div className="row">
-				<Element className = "col-xs-12 element" id='lyricsBody' style = {bodyStyle}>
+				<div className = "gradient col-xs-12" id='lyricsBody' style = {bodyStyle}>
 					{this.state.lines}
-				</Element>
+				</div>
 			</div>
 		);
 	}
+
 }
 

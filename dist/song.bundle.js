@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 481);
+/******/ 	return __webpack_require__(__webpack_require__.s = 482);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,7 +68,7 @@
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -80,7 +80,7 @@ eval("\n\n// shim for using process in browser\nvar process = module.exports = {
 /*!*************************************!*\
   !*** ./node_modules/react/react.js ***!
   \*************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -92,7 +92,7 @@ eval("\n\nmodule.exports = __webpack_require__(/*! ./lib/React */ 35);\n\n//////
 /*!**************************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/classCallCheck.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -104,7 +104,7 @@ eval("\n\nexports.__esModule = true;\n\nexports.default = function (instance, Co
 /*!*************************************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/possibleConstructorReturn.js ***!
   \*************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -116,7 +116,7 @@ eval("\n\nexports.__esModule = true;\n\nvar _typeof2 = __webpack_require__(/*! .
 /*!********************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/inherits.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -128,7 +128,7 @@ eval("\n\nexports.__esModule = true;\n\nvar _setPrototypeOf = __webpack_require_
 /*!*******************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/extends.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -140,7 +140,7 @@ eval("\n\nexports.__esModule = true;\n\nvar _assign = __webpack_require__(/*! ..
 /*!***********************************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/objectWithoutProperties.js ***!
   \***********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -152,7 +152,7 @@ eval("\n\nexports.__esModule = true;\n\nexports.default = function (obj, keys) {
 /*!******************************************!*\
   !*** ./node_modules/classnames/index.js ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -164,7 +164,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\n\nvar _t
 /*!******************************************!*\
   !*** ./node_modules/prop-types/index.js ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -176,7 +176,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nvar _typeof = typeof Sy
 /*!*****************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/bootstrapUtils.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -188,7 +188,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/invariant.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -200,7 +200,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!******************************************!*\
   !*** ./node_modules/fbjs/lib/warning.js ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -212,7 +212,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-2015
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/reactProdInvariant.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -224,7 +224,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
   \*********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -236,7 +236,7 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMComponentTree.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -248,7 +248,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*******************************************************!*\
   !*** ./node_modules/fbjs/lib/ExecutionEnvironment.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -260,7 +260,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!**********************************************************!*\
   !*** ./node_modules/prop-types-extra/lib/elementType.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -272,7 +272,7 @@ eval("\n\nvar _typeof2 = typeof Symbol === \"function\" && typeof Symbol.iterato
 /*!**********************************************************!*\
   !*** ./node_modules/react/lib/ReactComponentTreeHook.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -284,7 +284,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2016-pres
 /*!************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactInstrumentation.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -296,7 +296,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2016-pres
 /*!*****************************************!*\
   !*** ./node_modules/axios/lib/utils.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -308,7 +308,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!************************************************!*\
   !*** ./node_modules/fbjs/lib/emptyFunction.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -320,7 +320,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!************************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/createChainedFunction.js ***!
   \************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -332,7 +332,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/StyleConfig.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -344,7 +344,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react/lib/ReactCurrentOwner.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -356,7 +356,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!****************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactUpdates.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -368,7 +368,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -380,7 +380,7 @@ eval("\n\nmodule.exports = __webpack_require__(/*! ./lib/ReactDOM */ 180);\n\n//
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticEvent.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -392,7 +392,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*************************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/ValidComponentChildren.js ***!
   \*************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -404,7 +404,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/DOMProperty.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -416,7 +416,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************!*\
   !*** ./node_modules/react/lib/ReactElement.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -428,7 +428,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/PooledClass.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -440,7 +440,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*****************************************!*\
   !*** ./node_modules/warning/browser.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -452,7 +452,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-2015
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_core.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -464,7 +464,7 @@ eval("\n\nvar core = module.exports = { version: '2.4.0' };\nif (typeof __e == '
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_wks.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -476,7 +476,7 @@ eval("\n\nvar store = __webpack_require__(/*! ./_shared */ 143)('wks'),\n    uid
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/SafeAnchor.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -488,7 +488,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************!*\
   !*** ./node_modules/react/lib/React.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -500,7 +500,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react/lib/reactProdInvariant.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -512,7 +512,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!*******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactReconciler.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -524,7 +524,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/DOMLazyTree.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -536,7 +536,7 @@ eval("/**\n * Copyright 2015-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/EventPropagators.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -548,7 +548,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/EventPluginHub.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -560,7 +560,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticUIEvent.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -572,7 +572,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactInstanceMap.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -584,7 +584,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_export.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -596,7 +596,7 @@ eval("\n\nvar global = __webpack_require__(/*! ./_global */ 44),\n    core = __w
 /*!*********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_global.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -608,7 +608,7 @@ eval("\n\n// https://github.com/zloirock/core-js/issues/86#issuecomment-11575902
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-iobject.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -620,7 +620,7 @@ eval("\n\n// to indexed object, toObject with fallback for non-array-like ES3 st
 /*!************************************************!*\
   !*** ./node_modules/dom-helpers/util/inDOM.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -632,7 +632,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-dp.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -644,7 +644,7 @@ eval("\n\nvar anObject = __webpack_require__(/*! ./_an-object */ 58),\n    IE8_D
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_has.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -656,7 +656,7 @@ eval("\n\nvar hasOwnProperty = {}.hasOwnProperty;\nmodule.exports = function (it
 /*!*****************************************************!*\
   !*** ./node_modules/react/lib/canDefineProperty.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -668,7 +668,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**********************************************!*\
   !*** ./node_modules/fbjs/lib/emptyObject.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -680,7 +680,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright (c) 2013-
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/EventPluginRegistry.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -692,7 +692,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/Transaction.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -704,7 +704,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticMouseEvent.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -716,7 +716,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!****************************************************!*\
   !*** ./node_modules/react-dom/lib/setInnerHTML.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -728,7 +728,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*******************************************************************!*\
   !*** ./node_modules/react-dom/lib/escapeTextContentForBrowser.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -740,7 +740,7 @@ eval("/**\n * Copyright 2016-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!****************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactBrowserEventEmitter.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -752,7 +752,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_hide.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -764,7 +764,7 @@ eval("\n\nvar dP = __webpack_require__(/*! ./_object-dp */ 47),\n    createDesc 
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_an-object.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -776,7 +776,7 @@ eval("\n\nvar isObject = __webpack_require__(/*! ./_is-object */ 82);\nmodule.ex
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_descriptors.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -788,7 +788,7 @@ eval("\n\n// Thank's IE8 for his funny defineProperty\nmodule.exports = !__webpa
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-keys.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -800,7 +800,7 @@ eval("\n\n// 19.1.2.14 / 15.2.3.14 Object.keys(O)\nvar $keys = __webpack_require
 /*!*************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/values.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -812,7 +812,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!***************************************************!*\
   !*** ./node_modules/dom-helpers/ownerDocument.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -824,7 +824,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/query/contains.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -836,7 +836,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react/lib/lowPriorityWarning.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -848,7 +848,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-2015
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/EventPluginUtils.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -860,7 +860,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactErrorUtils.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -872,7 +872,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/getEventTarget.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -884,7 +884,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/isEventSupported.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -896,7 +896,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/getEventModifierState.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -908,7 +908,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/DOMChildrenOperations.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -920,7 +920,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*****************************************************!*\
   !*** ./node_modules/react-dom/lib/DOMNamespaces.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -932,7 +932,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************************************!*\
   !*** ./node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js ***!
   \**************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -944,7 +944,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/LinkedValueUtils.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -956,7 +956,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*****************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactComponentEnvironment.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -968,7 +968,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!***********************************************!*\
   !*** ./node_modules/fbjs/lib/shallowEqual.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -980,7 +980,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!******************************************************************!*\
   !*** ./node_modules/react-dom/lib/shouldUpdateReactComponent.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -992,7 +992,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/KeyEscapeUtils.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1004,7 +1004,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactUpdateQueue.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1016,7 +1016,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2015-pres
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/validateDOMNesting.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1028,7 +1028,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2015-pres
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/getEventCharCode.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1040,7 +1040,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************!*\
   !*** ./node_modules/axios/lib/defaults.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1052,7 +1052,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nvar utils = __webpack_r
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_is-object.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1064,7 +1064,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_fails.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1076,7 +1076,7 @@ eval("\n\nmodule.exports = function (exec) {\n  try {\n    return !!exec();\n  }
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_property-desc.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1088,7 +1088,7 @@ eval("\n\nmodule.exports = function (bitmap, value) {\n  return {\n    enumerabl
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-pie.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1100,7 +1100,7 @@ eval("\n\nexports.f = {}.propertyIsEnumerable;\n\n//////////////////\n// WEBPACK
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iterators.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1112,7 +1112,7 @@ eval("\n\nmodule.exports = {};\n\n//////////////////\n// WEBPACK FOOTER\n// ./no
 /*!***************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Button.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1124,7 +1124,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/ownerDocument.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1136,7 +1136,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1148,7 +1148,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_uid.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1160,7 +1160,7 @@ eval("\n\nvar id = 0,\n    px = Math.random();\nmodule.exports = function (key) 
 /*!**************************************************!*\
   !*** ./node_modules/prop-types-extra/lib/all.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1172,7 +1172,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/dom-helpers/style/index.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1184,7 +1184,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************************!*\
   !*** ./node_modules/dom-helpers/events/on.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1196,7 +1196,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Dropdown.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1208,7 +1208,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!****************************************************************!*\
   !*** ./node_modules/prop-types-extra/lib/isRequiredForA11y.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1220,7 +1220,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************!*\
   !*** ./node_modules/uncontrollable/index.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1232,7 +1232,7 @@ eval("\n\nexports.__esModule = true;\n\nvar _createUncontrollable = __webpack_re
 /*!**********************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/splitComponentProps.js ***!
   \**********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1244,7 +1244,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Fade.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1256,7 +1256,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/query/isWindow.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1268,7 +1268,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react/lib/ReactBaseClasses.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1280,7 +1280,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!********************************************************!*\
   !*** ./node_modules/react/lib/ReactNoopUpdateQueue.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1292,7 +1292,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2015-pres
 /*!******************************************************!*\
   !*** ./node_modules/react/lib/ReactElementSymbol.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1304,7 +1304,7 @@ eval("/**\n * Copyright 2014-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************!*\
   !*** ./node_modules/react/lib/getIteratorFn.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1316,7 +1316,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*********************************************************!*\
   !*** ./node_modules/react/lib/ReactElementValidator.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1328,7 +1328,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!********************************************!*\
   !*** ./node_modules/prop-types/factory.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1340,7 +1340,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMComponentFlags.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1352,7 +1352,7 @@ eval("/**\n * Copyright 2015-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/accumulateInto.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1364,7 +1364,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/forEachAccumulated.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1376,7 +1376,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/getTextContentAccessor.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1388,7 +1388,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************!*\
   !*** ./node_modules/react-dom/lib/CallbackQueue.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1400,7 +1400,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactFeatureFlags.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1412,7 +1412,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/inputValueTracking.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1424,7 +1424,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/isTextInputElement.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1436,7 +1436,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*******************************************************!*\
   !*** ./node_modules/react-dom/lib/ViewportMetrics.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1448,7 +1448,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/setTextContent.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1460,7 +1460,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/focusNode.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1472,7 +1472,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/CSSProperty.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1484,7 +1484,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/DOMPropertyOperations.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1496,7 +1496,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactPropTypesSecret.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1508,7 +1508,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMSelect.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1520,7 +1520,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*****************************************************************!*\
   !*** ./node_modules/react-dom/lib/instantiateReactComponent.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1532,7 +1532,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactNodeTypes.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1544,7 +1544,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactEmptyComponent.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1556,7 +1556,7 @@ eval("/**\n * Copyright 2014-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactHostComponent.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1568,7 +1568,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/traverseAllChildren.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1580,7 +1580,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************!*\
   !*** ./node_modules/fbjs/lib/EventListener.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1592,7 +1592,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\n/**\n * Copyright (c) 2
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactInputSelection.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1604,7 +1604,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***************************************************!*\
   !*** ./node_modules/fbjs/lib/getActiveElement.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1616,7 +1616,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!**************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactMount.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1628,7 +1628,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*********************************************************************!*\
   !*** ./node_modules/react-dom/lib/getHostComponentFromComposite.js ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1640,7 +1640,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/helpers/bind.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1652,7 +1652,7 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/adapters/xhr.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1664,7 +1664,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nvar utils = __webpack_r
 /*!****************************************************!*\
   !*** ./node_modules/axios/lib/core/createError.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1676,7 +1676,7 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ 271);\n\n
 /*!***************************************************!*\
   !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1688,7 +1688,7 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
 /*!*************************************************!*\
   !*** ./node_modules/axios/lib/cancel/Cancel.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1700,7 +1700,7 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
 /*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1712,7 +1712,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_ctx.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1724,7 +1724,7 @@ eval("\n\n// optional / simple context binding\nvar aFunction = __webpack_requir
 /*!***************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-primitive.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1736,7 +1736,7 @@ eval("\n\n// 7.1.1 ToPrimitive(input [, PreferredType])\nvar isObject = __webpac
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_cof.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1748,7 +1748,7 @@ eval("\n\nvar toString = {}.toString;\n\nmodule.exports = function (it) {\n  ret
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_defined.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1760,7 +1760,7 @@ eval("\n\n// 7.2.1 RequireObjectCoercible(argument)\nmodule.exports = function (
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-integer.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1772,7 +1772,7 @@ eval("\n\n// 7.1.4 ToInteger\nvar ceil = Math.ceil,\n    floor = Math.floor;\nmo
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_shared-key.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1784,7 +1784,7 @@ eval("\n\nvar shared = __webpack_require__(/*! ./_shared */ 143)('keys'),\n    u
 /*!*********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_shared.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1796,7 +1796,7 @@ eval("\n\nvar global = __webpack_require__(/*! ./_global */ 44),\n    SHARED = '
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_enum-bug-keys.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1808,7 +1808,7 @@ eval("\n\n// IE 8- don't enum bug keys\nmodule.exports = 'constructor,hasOwnProp
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gops.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1820,7 +1820,7 @@ eval("\n\nexports.f = Object.getOwnPropertySymbols;\n\n//////////////////\n// WE
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-object.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1832,7 +1832,7 @@ eval("\n\n// 7.1.13 ToObject(argument)\nvar defined = __webpack_require__(/*! ./
 /*!******************************************************!*\
   !*** ./node_modules/babel-runtime/helpers/typeof.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1844,7 +1844,7 @@ eval("\n\nvar _typeof2 = typeof Symbol === \"function\" && typeof Symbol.iterato
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_library.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1856,7 +1856,7 @@ eval("\n\nmodule.exports = true;\n\n//////////////////\n// WEBPACK FOOTER\n// ./
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-create.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1868,7 +1868,7 @@ eval("\n\n// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])\nvar anObject =
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-to-string-tag.js ***!
   \********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1880,7 +1880,7 @@ eval("\n\nvar def = __webpack_require__(/*! ./_object-dp */ 47).f,\n    has = __
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_wks-ext.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1892,7 +1892,7 @@ eval("\n\nexports.f = __webpack_require__(/*! ./_wks */ 33);\n\n////////////////
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_wks-define.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1904,7 +1904,7 @@ eval("\n\nvar global = __webpack_require__(/*! ./_global */ 44),\n    core = __w
 /*!*******************************************!*\
   !*** ./node_modules/invariant/browser.js ***!
   \*******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1916,7 +1916,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-2015
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/CloseButton.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1928,7 +1928,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************************************!*\
   !*** ./node_modules/prop-types-extra/lib/utils/createChainableTypeChecker.js ***!
   \*******************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1940,7 +1940,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Glyphicon.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1952,7 +1952,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Collapse.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1964,7 +1964,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***************************************!*\
   !*** ./node_modules/keycode/index.js ***!
   \***************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1976,7 +1976,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!************************************************!*\
   !*** ./node_modules/dom-helpers/events/off.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1988,7 +1988,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Media.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2000,7 +2000,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************************!*\
   !*** ./node_modules/react-prop-types/lib/componentOrElement.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2012,7 +2012,7 @@ eval("\n\nvar _typeof2 = typeof Symbol === \"function\" && typeof Symbol.iterato
 /*!***************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/getContainer.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2024,7 +2024,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/TabContainer.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2036,7 +2036,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/TabContent.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2048,7 +2048,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
   \*************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2060,7 +2060,7 @@ eval("\n\nmodule.exports = __webpack_require__(/*! ./lib/axios */ 266);\n\n/////
 /*!*************************************************!*\
   !*** ./node_modules/react/lib/ReactChildren.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2072,7 +2072,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************!*\
   !*** ./node_modules/react/lib/PooledClass.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2084,7 +2084,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*******************************************************!*\
   !*** ./node_modules/react/lib/traverseAllChildren.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2096,7 +2096,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**************************************************!*\
   !*** ./node_modules/react/lib/KeyEscapeUtils.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2108,7 +2108,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************!*\
   !*** ./node_modules/react/lib/ReactDOMFactories.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2120,7 +2120,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react/lib/checkReactTypeSpec.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2132,7 +2132,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**************************************************************!*\
   !*** ./node_modules/react/lib/ReactPropTypeLocationNames.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2144,7 +2144,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!********************************************************!*\
   !*** ./node_modules/react/lib/ReactPropTypesSecret.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2156,7 +2156,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************!*\
   !*** ./node_modules/react/lib/ReactPropTypes.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2168,7 +2168,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2180,7 +2180,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************!*\
   !*** ./node_modules/react/lib/ReactVersion.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2192,7 +2192,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************!*\
   !*** ./node_modules/react/lib/createClass.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2204,7 +2204,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!****************************************************!*\
   !*** ./node_modules/create-react-class/factory.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2216,7 +2216,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*********************************************!*\
   !*** ./node_modules/react/lib/onlyChild.js ***!
   \*********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2228,7 +2228,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOM.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2240,7 +2240,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDefaultInjection.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2252,7 +2252,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/ARIADOMPropertyConfig.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2264,7 +2264,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/BeforeInputEventPlugin.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2276,7 +2276,7 @@ eval("/**\n * Copyright 2013-present Facebook, Inc.\n * All rights reserved.\n *
 /*!****************************************************************!*\
   !*** ./node_modules/react-dom/lib/FallbackCompositionState.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2288,7 +2288,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticCompositionEvent.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2300,7 +2300,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticInputEvent.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2312,7 +2312,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*********************************************************!*\
   !*** ./node_modules/react-dom/lib/ChangeEventPlugin.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2324,7 +2324,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactRef.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2336,7 +2336,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactOwner.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2348,7 +2348,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDebugTool.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2360,7 +2360,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2016-pres
 /*!***********************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactInvalidSetStateWarningHook.js ***!
   \***********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2372,7 +2372,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2016-pres
 /*!*********************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactHostOperationHistoryHook.js ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2384,7 +2384,7 @@ eval("/**\n * Copyright 2016-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************!*\
   !*** ./node_modules/fbjs/lib/performanceNow.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2396,7 +2396,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!**********************************************!*\
   !*** ./node_modules/fbjs/lib/performance.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2408,7 +2408,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!***************************************************************!*\
   !*** ./node_modules/react-dom/lib/DefaultEventPluginOrder.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2420,7 +2420,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/EnterLeaveEventPlugin.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2432,7 +2432,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/HTMLDOMPropertyConfig.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2444,7 +2444,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!************************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactComponentBrowserEnvironment.js ***!
   \************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2456,7 +2456,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************!*\
   !*** ./node_modules/react-dom/lib/Danger.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2468,7 +2468,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!********************************************************!*\
   !*** ./node_modules/fbjs/lib/createNodesFromMarkup.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2480,7 +2480,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\n/**\n * Copyright (c) 2
 /*!*******************************************************!*\
   !*** ./node_modules/fbjs/lib/createArrayFromMixed.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2492,7 +2492,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\n/**\n * Copyright (c) 2
 /*!************************************************!*\
   !*** ./node_modules/fbjs/lib/getMarkupWrap.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2504,7 +2504,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\n/**\n * Copyright (c) 2
 /*!************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMIDOperations.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2516,7 +2516,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMComponent.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2528,7 +2528,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/AutoFocusUtils.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2540,7 +2540,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/CSSPropertyOperations.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2552,7 +2552,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!****************************************************!*\
   !*** ./node_modules/fbjs/lib/camelizeStyleName.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2564,7 +2564,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!*******************************************!*\
   !*** ./node_modules/fbjs/lib/camelize.js ***!
   \*******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2576,7 +2576,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/dangerousStyleValue.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2588,7 +2588,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*****************************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenateStyleName.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2600,7 +2600,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenate.js ***!
   \********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2612,7 +2612,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!****************************************************!*\
   !*** ./node_modules/fbjs/lib/memoizeStringOnly.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2624,7 +2624,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!*********************************************************************!*\
   !*** ./node_modules/react-dom/lib/quoteAttributeValueForBrowser.js ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2636,7 +2636,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactEventEmitterMixin.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2648,7 +2648,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!******************************************************************!*\
   !*** ./node_modules/react-dom/lib/getVendorPrefixedEventName.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2660,7 +2660,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMInput.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2672,7 +2672,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMOption.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2684,7 +2684,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMTextarea.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2696,7 +2696,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactMultiChild.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2708,7 +2708,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactChildReconciler.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2720,7 +2720,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!***************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactCompositeComponent.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2732,7 +2732,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/checkReactTypeSpec.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2744,7 +2744,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactPropTypeLocationNames.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2756,7 +2756,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**************************************************!*\
   !*** ./node_modules/react/lib/getNextDebugID.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2768,7 +2768,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactElementSymbol.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2780,7 +2780,7 @@ eval("/**\n * Copyright 2014-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************!*\
   !*** ./node_modules/react-dom/lib/getIteratorFn.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2792,7 +2792,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*******************************************************!*\
   !*** ./node_modules/react-dom/lib/flattenChildren.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2804,7 +2804,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***********************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactServerRenderingTransaction.js ***!
   \***********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2816,7 +2816,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2014-pres
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactServerUpdateQueue.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2828,7 +2828,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2015-pres
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMEmptyComponent.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2840,7 +2840,7 @@ eval("/**\n * Copyright 2014-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMTreeTraversal.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2852,7 +2852,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2015-pres
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMTextComponent.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2864,7 +2864,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!********************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js ***!
   \********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2876,7 +2876,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactEventListener.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2888,7 +2888,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/fbjs/lib/getUnboundedScrollPosition.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2900,7 +2900,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights reserved
 /*!******************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactInjection.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2912,7 +2912,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactReconcileTransaction.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2924,7 +2924,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!*********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMSelection.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2936,7 +2936,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*****************************************************************!*\
   !*** ./node_modules/react-dom/lib/getNodeForCharacterOffset.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2948,7 +2948,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************!*\
   !*** ./node_modules/fbjs/lib/containsNode.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2960,7 +2960,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!*********************************************!*\
   !*** ./node_modules/fbjs/lib/isTextNode.js ***!
   \*********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2972,7 +2972,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!*****************************************!*\
   !*** ./node_modules/fbjs/lib/isNode.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2984,7 +2984,7 @@ eval("\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n * All rights rese
 /*!************************************************************!*\
   !*** ./node_modules/react-dom/lib/SVGDOMPropertyConfig.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2996,7 +2996,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*********************************************************!*\
   !*** ./node_modules/react-dom/lib/SelectEventPlugin.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3008,7 +3008,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*********************************************************!*\
   !*** ./node_modules/react-dom/lib/SimpleEventPlugin.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3020,7 +3020,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***************************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticAnimationEvent.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3032,7 +3032,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***************************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticClipboardEvent.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3044,7 +3044,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticFocusEvent.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3056,7 +3056,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**************************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticKeyboardEvent.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3068,7 +3068,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/getEventKey.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3080,7 +3080,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!**********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticDragEvent.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3092,7 +3092,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticTouchEvent.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3104,7 +3104,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!****************************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticTransitionEvent.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3116,7 +3116,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/SyntheticWheelEvent.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3128,7 +3128,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMContainerInfo.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3140,7 +3140,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMFeatureFlags.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3152,7 +3152,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactMarkupChecksum.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3164,7 +3164,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************!*\
   !*** ./node_modules/react-dom/lib/adler32.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3176,7 +3176,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!****************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactVersion.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3188,7 +3188,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***************************************************!*\
   !*** ./node_modules/react-dom/lib/findDOMNode.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3200,7 +3200,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!******************************************************************!*\
   !*** ./node_modules/react-dom/lib/renderSubtreeIntoContainer.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3212,7 +3212,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!*******************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMUnknownPropertyHook.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3224,7 +3224,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**********************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMNullInputValuePropHook.js ***!
   \**********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3236,7 +3236,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!***************************************************************!*\
   !*** ./node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3248,7 +3248,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {/**\n * Copyright 2013-pres
 /*!**************************************************!*\
   !*** ./webpage/SharedReactComponents/Header.jsx ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3260,7 +3260,7 @@ eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exp
 /*!*****************************************!*\
   !*** ./node_modules/axios/lib/axios.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3272,7 +3272,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ 19);\nvar bind = __webp
 /*!*****************************************!*\
   !*** ./node_modules/is-buffer/index.js ***!
   \*****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3284,7 +3284,7 @@ eval("\n\n/*!\n * Determine if an object is a Buffer\n *\n * @author   Feross Ab
 /*!**********************************************!*\
   !*** ./node_modules/axios/lib/core/Axios.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3296,7 +3296,7 @@ eval("\n\nvar defaults = __webpack_require__(/*! ./../defaults */ 81);\nvar util
 /*!***************************************************************!*\
   !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3308,7 +3308,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ 19);\n\nmodule.exports
 /*!***********************************************!*\
   !*** ./node_modules/axios/lib/core/settle.js ***!
   \***********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3320,7 +3320,7 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ 133);\n\n/*
 /*!*****************************************************!*\
   !*** ./node_modules/axios/lib/core/enhanceError.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3332,7 +3332,7 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
 /*!****************************************************!*\
   !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3344,7 +3344,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\n\nfunction enc
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3356,7 +3356,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\n\n/**\n * Pars
 /*!***********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3368,7 +3368,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\n\nmodule.expor
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/helpers/btoa.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3380,7 +3380,7 @@ eval("\n\n// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/B
 /*!***************************************************!*\
   !*** ./node_modules/axios/lib/helpers/cookies.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3392,7 +3392,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\n\nmodule.expor
 /*!***********************************************************!*\
   !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3404,7 +3404,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\n\nfunction Int
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3416,7 +3416,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\nvar transformD
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/core/transformData.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3428,7 +3428,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ 19);\n\n/**\n * Tran
 /*!*********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3440,7 +3440,7 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
 /*!*******************************************************!*\
   !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3452,7 +3452,7 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3464,7 +3464,7 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ 135);\n\n/**\n * A `C
 /*!**************************************************!*\
   !*** ./node_modules/axios/lib/helpers/spread.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3476,7 +3476,7 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
 /*!*************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/assign.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3488,7 +3488,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_ie8-dom-define.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3500,7 +3500,7 @@ eval("\n\nmodule.exports = !__webpack_require__(/*! ./_descriptors */ 59) && !__
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_dom-create.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3512,7 +3512,7 @@ eval("\n\nvar isObject = __webpack_require__(/*! ./_is-object */ 82),\n    docum
 /*!***********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-keys-internal.js ***!
   \***********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3524,7 +3524,7 @@ eval("\n\nvar has = __webpack_require__(/*! ./_has */ 48),\n    toIObject = __we
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iobject.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3536,7 +3536,7 @@ eval("\n\n// fallback for non-array-like ES3 and non-enumerable old V8 strings\n
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-length.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3548,7 +3548,7 @@ eval("\n\n// 7.1.15 ToLength\nvar toInteger = __webpack_require__(/*! ./_to-inte
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.string.iterator.js ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3560,7 +3560,7 @@ eval("\n\nvar $at = __webpack_require__(/*! ./_string-at */ 343)(true);\n\n// 21
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-define.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3572,7 +3572,7 @@ eval("\n\nvar LIBRARY = __webpack_require__(/*! ./_library */ 148),\n    $export
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_redefine.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3584,7 +3584,7 @@ eval("\n\nmodule.exports = __webpack_require__(/*! ./_hide */ 57);\n\n//////////
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gopn.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3596,7 +3596,7 @@ eval("\n\n// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)\nvar $keys = __we
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gopd.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3608,7 +3608,7 @@ eval("\n\nvar pIE = __webpack_require__(/*! ./_object-pie */ 85),\n    createDes
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/PanelGroup.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3620,18 +3620,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports) {
 
-eval("/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */\r\nmodule.exports = __webpack_amd_options__;\r\n\n/* WEBPACK VAR INJECTION */}.call(exports, {}))\n\n//////////////////\n// WEBPACK FOOTER\n// (webpack)/buildin/amd-options.js\n// module id = 296\n// module chunks = 0 1\n\n//# sourceURL=webpack:///(webpack)/buildin/amd-options.js?");
+eval("/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */\nmodule.exports = __webpack_amd_options__;\n\n/* WEBPACK VAR INJECTION */}.call(exports, {}))\n\n//////////////////\n// WEBPACK FOOTER\n// (webpack)/buildin/amd-options.js\n// module id = 296\n// module chunks = 0 1\n\n//# sourceURL=webpack:///(webpack)/buildin/amd-options.js?");
 
 /***/ }),
 /* 297 */
 /*!**************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/entries.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3643,7 +3643,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-to-array.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3655,7 +3655,7 @@ eval("\n\nvar getKeys = __webpack_require__(/*! ./_object-keys */ 60),\n    toIO
 /*!***********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/BreadcrumbItem.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3667,7 +3667,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ButtonGroup.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3679,7 +3679,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/CarouselItem.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3691,7 +3691,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/capitalize.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3703,7 +3703,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/dom-helpers/util/camelizeStyle.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3715,7 +3715,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************************************!*\
   !*** ./node_modules/dom-helpers/transition/properties.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3727,7 +3727,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-overlays/lib/Transition.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3739,7 +3739,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!***************************************************!*\
   !*** ./node_modules/dom-helpers/activeElement.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3751,7 +3751,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************************!*\
   !*** ./node_modules/react-overlays/lib/RootCloseWrapper.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3763,7 +3763,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!*******************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/addEventListener.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3775,7 +3775,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/DropdownToggle.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3787,7 +3787,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Grid.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3799,7 +3799,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ListGroupItem.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3811,7 +3811,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/dom-helpers/util/scrollbarSize.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3823,7 +3823,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************************************!*\
   !*** ./node_modules/react-prop-types/lib/utils/createChainableTypeChecker.js ***!
   \*******************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3835,7 +3835,7 @@ eval("\n\nexports.__esModule = true;\nexports.default = createChainableTypeCheck
 /*!**********************************************************!*\
   !*** ./node_modules/react-prop-types/lib/elementType.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3847,7 +3847,7 @@ eval("\n\nvar _typeof2 = typeof Symbol === \"function\" && typeof Symbol.iterato
 /*!***************************************************!*\
   !*** ./node_modules/react-overlays/lib/Portal.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3859,7 +3859,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/class/hasClass.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3871,7 +3871,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/isOverflowing.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3883,7 +3883,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ModalBody.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3895,7 +3895,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ModalFooter.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3907,7 +3907,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ModalHeader.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3919,7 +3919,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ModalTitle.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3931,7 +3931,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Nav.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3943,7 +3943,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/NavbarBrand.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3955,7 +3955,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/NavItem.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3967,7 +3967,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Overlay.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3979,7 +3979,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/dom-helpers/query/offset.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3991,7 +3991,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/dom-helpers/query/scrollTop.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4003,7 +4003,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/PagerItem.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4015,7 +4015,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/PaginationButton.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4027,7 +4027,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/TabPane.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4039,7 +4039,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/index.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4047,35 +4047,13 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.utils = exports.Well = exports.Tooltip = exports.Thumbnail = exports.Tabs = exports.TabPane = exports.Table = exports.TabContent = exports.TabContainer = exports.Tab = exports.SplitButton = exports.SafeAnchor = exports.Row = exports.ResponsiveEmbed = exports.Radio = exports.ProgressBar = exports.Popover = exports.PanelGroup = exports.Panel = exports.PaginationButton = exports.Pagination = exports.Pager = exports.PageItem = exports.PageHeader = exports.OverlayTrigger = exports.Overlay = exports.NavItem = exports.NavDropdown = exports.NavbarBrand = exports.Navbar = exports.Nav = exports.ModalTitle = exports.ModalHeader = exports.ModalFooter = exports.ModalBody = exports.Modal = exports.MenuItem = exports.Media = exports.ListGroupItem = exports.ListGroup = exports.Label = exports.Jumbotron = exports.InputGroup = exports.Image = exports.HelpBlock = exports.Grid = exports.Glyphicon = exports.FormGroup = exports.FormControl = exports.Form = exports.Fade = exports.DropdownButton = exports.Dropdown = exports.Collapse = exports.Col = exports.ControlLabel = exports.CloseButton = exports.Clearfix = exports.Checkbox = exports.CarouselItem = exports.Carousel = exports.ButtonToolbar = exports.ButtonGroup = exports.Button = exports.BreadcrumbItem = exports.Breadcrumb = exports.Badge = exports.Alert = exports.Accordion = undefined;\n\nvar _Accordion2 = __webpack_require__(/*! ./Accordion */ 334);\n\nvar _Accordion3 = _interopRequireDefault(_Accordion2);\n\nvar _Alert2 = __webpack_require__(/*! ./Alert */ 373);\n\nvar _Alert3 = _interopRequireDefault(_Alert2);\n\nvar _Badge2 = __webpack_require__(/*! ./Badge */ 376);\n\nvar _Badge3 = _interopRequireDefault(_Badge2);\n\nvar _Breadcrumb2 = __webpack_require__(/*! ./Breadcrumb */ 377);\n\nvar _Breadcrumb3 = _interopRequireDefault(_Breadcrumb2);\n\nvar _BreadcrumbItem2 = __webpack_require__(/*! ./BreadcrumbItem */ 299);\n\nvar _BreadcrumbItem3 = _interopRequireDefault(_BreadcrumbItem2);\n\nvar _Button2 = __webpack_require__(/*! ./Button */ 87);\n\nvar _Button3 = _interopRequireDefault(_Button2);\n\nvar _ButtonGroup2 = __webpack_require__(/*! ./ButtonGroup */ 300);\n\nvar _ButtonGroup3 = _interopRequireDefault(_ButtonGroup2);\n\nvar _ButtonToolbar2 = __webpack_require__(/*! ./ButtonToolbar */ 378);\n\nvar _ButtonToolbar3 = _interopRequireDefault(_ButtonToolbar2);\n\nvar _Carousel2 = __webpack_require__(/*! ./Carousel */ 379);\n\nvar _Carousel3 = _interopRequireDefault(_Carousel2);\n\nvar _CarouselItem2 = __webpack_require__(/*! ./CarouselItem */ 301);\n\nvar _CarouselItem3 = _interopRequireDefault(_CarouselItem2);\n\nvar _Checkbox2 = __webpack_require__(/*! ./Checkbox */ 382);\n\nvar _Checkbox3 = _interopRequireDefault(_Checkbox2);\n\nvar _Clearfix2 = __webpack_require__(/*! ./Clearfix */ 383);\n\nvar _Clearfix3 = _interopRequireDefault(_Clearfix2);\n\nvar _CloseButton2 = __webpack_require__(/*! ./CloseButton */ 154);\n\nvar _CloseButton3 = _interopRequireDefault(_CloseButton2);\n\nvar _ControlLabel2 = __webpack_require__(/*! ./ControlLabel */ 384);\n\nvar _ControlLabel3 = _interopRequireDefault(_ControlLabel2);\n\nvar _Col2 = __webpack_require__(/*! ./Col */ 385);\n\nvar _Col3 = _interopRequireDefault(_Col2);\n\nvar _Collapse2 = __webpack_require__(/*! ./Collapse */ 157);\n\nvar _Collapse3 = _interopRequireDefault(_Collapse2);\n\nvar _Dropdown2 = __webpack_require__(/*! ./Dropdown */ 94);\n\nvar _Dropdown3 = _interopRequireDefault(_Dropdown2);\n\nvar _DropdownButton2 = __webpack_require__(/*! ./DropdownButton */ 405);\n\nvar _DropdownButton3 = _interopRequireDefault(_DropdownButton2);\n\nvar _Fade2 = __webpack_require__(/*! ./Fade */ 98);\n\nvar _Fade3 = _interopRequireDefault(_Fade2);\n\nvar _Form2 = __webpack_require__(/*! ./Form */ 406);\n\nvar _Form3 = _interopRequireDefault(_Form2);\n\nvar _FormControl2 = __webpack_require__(/*! ./FormControl */ 407);\n\nvar _FormControl3 = _interopRequireDefault(_FormControl2);\n\nvar _FormGroup2 = __webpack_require__(/*! ./FormGroup */ 410);\n\nvar _FormGroup3 = _interopRequireDefault(_FormGroup2);\n\nvar _Glyphicon2 = __webpack_require__(/*! ./Glyphicon */ 156);\n\nvar _Glyphicon3 = _interopRequireDefault(_Glyphicon2);\n\nvar _Grid2 = __webpack_require__(/*! ./Grid */ 310);\n\nvar _Grid3 = _interopRequireDefault(_Grid2);\n\nvar _HelpBlock2 = __webpack_require__(/*! ./HelpBlock */ 411);\n\nvar _HelpBlock3 = _interopRequireDefault(_HelpBlock2);\n\nvar _Image2 = __webpack_require__(/*! ./Image */ 412);\n\nvar _Image3 = _interopRequireDefault(_Image2);\n\nvar _InputGroup2 = __webpack_require__(/*! ./InputGroup */ 413);\n\nvar _InputGroup3 = _interopRequireDefault(_InputGroup2);\n\nvar _Jumbotron2 = __webpack_require__(/*! ./Jumbotron */ 416);\n\nvar _Jumbotron3 = _interopRequireDefault(_Jumbotron2);\n\nvar _Label2 = __webpack_require__(/*! ./Label */ 417);\n\nvar _Label3 = _interopRequireDefault(_Label2);\n\nvar _ListGroup2 = __webpack_require__(/*! ./ListGroup */ 418);\n\nvar _ListGroup3 = _interopRequireDefault(_ListGroup2);\n\nvar _ListGroupItem2 = __webpack_require__(/*! ./ListGroupItem */ 311);\n\nvar _ListGroupItem3 = _interopRequireDefault(_ListGroupItem2);\n\nvar _Media2 = __webpack_require__(/*! ./Media */ 160);\n\nvar _Media3 = _interopRequireDefault(_Media2);\n\nvar _MenuItem2 = __webpack_require__(/*! ./MenuItem */ 425);\n\nvar _MenuItem3 = _interopRequireDefault(_MenuItem2);\n\nvar _Modal2 = __webpack_require__(/*! ./Modal */ 426);\n\nvar _Modal3 = _interopRequireDefault(_Modal2);\n\nvar _ModalBody2 = __webpack_require__(/*! ./ModalBody */ 318);\n\nvar _ModalBody3 = _interopRequireDefault(_ModalBody2);\n\nvar _ModalFooter2 = __webpack_require__(/*! ./ModalFooter */ 319);\n\nvar _ModalFooter3 = _interopRequireDefault(_ModalFooter2);\n\nvar _ModalHeader2 = __webpack_require__(/*! ./ModalHeader */ 320);\n\nvar _ModalHeader3 = _interopRequireDefault(_ModalHeader2);\n\nvar _ModalTitle2 = __webpack_require__(/*! ./ModalTitle */ 321);\n\nvar _ModalTitle3 = _interopRequireDefault(_ModalTitle2);\n\nvar _Nav2 = __webpack_require__(/*! ./Nav */ 322);\n\nvar _Nav3 = _interopRequireDefault(_Nav2);\n\nvar _Navbar2 = __webpack_require__(/*! ./Navbar */ 439);\n\nvar _Navbar3 = _interopRequireDefault(_Navbar2);\n\nvar _NavbarBrand2 = __webpack_require__(/*! ./NavbarBrand */ 323);\n\nvar _NavbarBrand3 = _interopRequireDefault(_NavbarBrand2);\n\nvar _NavDropdown2 = __webpack_require__(/*! ./NavDropdown */ 443);\n\nvar _NavDropdown3 = _interopRequireDefault(_NavDropdown2);\n\nvar _NavItem2 = __webpack_require__(/*! ./NavItem */ 324);\n\nvar _NavItem3 = _interopRequireDefault(_NavItem2);\n\nvar _Overlay2 = __webpack_require__(/*! ./Overlay */ 325);\n\nvar _Overlay3 = _interopRequireDefault(_Overlay2);\n\nvar _OverlayTrigger2 = __webpack_require__(/*! ./OverlayTrigger */ 450);\n\nvar _OverlayTrigger3 = _interopRequireDefault(_OverlayTrigger2);\n\nvar _PageHeader2 = __webpack_require__(/*! ./PageHeader */ 451);\n\nvar _PageHeader3 = _interopRequireDefault(_PageHeader2);\n\nvar _PageItem2 = __webpack_require__(/*! ./PageItem */ 452);\n\nvar _PageItem3 = _interopRequireDefault(_PageItem2);\n\nvar _Pager2 = __webpack_require__(/*! ./Pager */ 454);\n\nvar _Pager3 = _interopRequireDefault(_Pager2);\n\nvar _Pagination2 = __webpack_require__(/*! ./Pagination */ 455);\n\nvar _Pagination3 = _interopRequireDefault(_Pagination2);\n\nvar _PaginationButton2 = __webpack_require__(/*! ./PaginationButton */ 329);\n\nvar _PaginationButton3 = _interopRequireDefault(_PaginationButton2);\n\nvar _Panel2 = __webpack_require__(/*! ./Panel */ 456);\n\nvar _Panel3 = _interopRequireDefault(_Panel2);\n\nvar _PanelGroup2 = __webpack_require__(/*! ./PanelGroup */ 295);\n\nvar _PanelGroup3 = _interopRequireDefault(_PanelGroup2);\n\nvar _Popover2 = __webpack_require__(/*! ./Popover */ 457);\n\nvar _Popover3 = _interopRequireDefault(_Popover2);\n\nvar _ProgressBar2 = __webpack_require__(/*! ./ProgressBar */ 458);\n\nvar _ProgressBar3 = _interopRequireDefault(_ProgressBar2);\n\nvar _Radio2 = __webpack_require__(/*! ./Radio */ 459);\n\nvar _Radio3 = _interopRequireDefault(_Radio2);\n\nvar _ResponsiveEmbed2 = __webpack_require__(/*! ./ResponsiveEmbed */ 460);\n\nvar _ResponsiveEmbed3 = _interopRequireDefault(_ResponsiveEmbed2);\n\nvar _Row2 = __webpack_require__(/*! ./Row */ 461);\n\nvar _Row3 = _interopRequireDefault(_Row2);\n\nvar _SafeAnchor2 = __webpack_require__(/*! ./SafeAnchor */ 34);\n\nvar _SafeAnchor3 = _interopRequireDefault(_SafeAnchor2);\n\nvar _SplitButton2 = __webpack_require__(/*! ./SplitButton */ 462);\n\nvar _SplitButton3 = _interopRequireDefault(_SplitButton2);\n\nvar _Tab2 = __webpack_require__(/*! ./Tab */ 464);\n\nvar _Tab3 = _interopRequireDefault(_Tab2);\n\nvar _TabContainer2 = __webpack_require__(/*! ./TabContainer */ 163);\n\nvar _TabContainer3 = _interopRequireDefault(_TabContainer2);\n\nvar _TabContent2 = __webpack_require__(/*! ./TabContent */ 164);\n\nvar _TabContent3 = _interopRequireDefault(_TabContent2);\n\nvar _Table2 = __webpack_require__(/*! ./Table */ 465);\n\nvar _Table3 = _interopRequireDefault(_Table2);\n\nvar _TabPane2 = __webpack_require__(/*! ./TabPane */ 330);\n\nvar _TabPane3 = _interopRequireDefault(_TabPane2);\n\nvar _Tabs2 = __webpack_require__(/*! ./Tabs */ 466);\n\nvar _Tabs3 = _interopRequireDefault(_Tabs2);\n\nvar _Thumbnail2 = __webpack_require__(/*! ./Thumbnail */ 467);\n\nvar _Thumbnail3 = _interopRequireDefault(_Thumbnail2);\n\nvar _Tooltip2 = __webpack_require__(/*! ./Tooltip */ 468);\n\nvar _Tooltip3 = _interopRequireDefault(_Tooltip2);\n\nvar _Well2 = __webpack_require__(/*! ./Well */ 469);\n\nvar _Well3 = _interopRequireDefault(_Well2);\n\nvar _utils2 = __webpack_require__(/*! ./utils */ 470);\n\nvar _utils = _interopRequireWildcard(_utils2);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Accordion = _Accordion3.default;\nexports.Alert = _Alert3.default;\nexports.Badge = _Badge3.default;\nexports.Breadcrumb = _Breadcrumb3.default;\nexports.BreadcrumbItem = _BreadcrumbItem3.default;\nexports.Button = _Button3.default;\nexports.ButtonGroup = _ButtonGroup3.default;\nexports.ButtonToolbar = _ButtonToolbar3.default;\nexports.Carousel = _Carousel3.default;\nexports.CarouselItem = _CarouselItem3.default;\nexports.Checkbox = _Checkbox3.default;\nexports.Clearfix = _Clearfix3.default;\nexports.CloseButton = _CloseButton3.default;\nexports.ControlLabel = _ControlLabel3.default;\nexports.Col = _Col3.default;\nexports.Collapse = _Collapse3.default;\nexports.Dropdown = _Dropdown3.default;\nexports.DropdownButton = _DropdownButton3.default;\nexports.Fade = _Fade3.default;\nexports.Form = _Form3.default;\nexports.FormControl = _FormControl3.default;\nexports.FormGroup = _FormGroup3.default;\nexports.Glyphicon = _Glyphicon3.default;\nexports.Grid = _Grid3.default;\nexports.HelpBlock = _HelpBlock3.default;\nexports.Image = _Image3.default;\nexports.InputGroup = _InputGroup3.default;\nexports.Jumbotron = _Jumbotron3.default;\nexports.Label = _Label3.default;\nexports.ListGroup = _ListGroup3.default;\nexports.ListGroupItem = _ListGroupItem3.default;\nexports.Media = _Media3.default;\nexports.MenuItem = _MenuItem3.default;\nexports.Modal = _Modal3.default;\nexports.ModalBody = _ModalBody3.default;\nexports.ModalFooter = _ModalFooter3.default;\nexports.ModalHeader = _ModalHeader3.default;\nexports.ModalTitle = _ModalTitle3.default;\nexports.Nav = _Nav3.default;\nexports.Navbar = _Navbar3.default;\nexports.NavbarBrand = _NavbarBrand3.default;\nexports.NavDropdown = _NavDropdown3.default;\nexports.NavItem = _NavItem3.default;\nexports.Overlay = _Overlay3.default;\nexports.OverlayTrigger = _OverlayTrigger3.default;\nexports.PageHeader = _PageHeader3.default;\nexports.PageItem = _PageItem3.default;\nexports.Pager = _Pager3.default;\nexports.Pagination = _Pagination3.default;\nexports.PaginationButton = _PaginationButton3.default;\nexports.Panel = _Panel3.default;\nexports.PanelGroup = _PanelGroup3.default;\nexports.Popover = _Popover3.default;\nexports.ProgressBar = _ProgressBar3.default;\nexports.Radio = _Radio3.default;\nexports.ResponsiveEmbed = _ResponsiveEmbed3.default;\nexports.Row = _Row3.default;\nexports.SafeAnchor = _SafeAnchor3.default;\nexports.SplitButton = _SplitButton3.default;\nexports.Tab = _Tab3.default;\nexports.TabContainer = _TabContainer3.default;\nexports.TabContent = _TabContent3.default;\nexports.Table = _Table3.default;\nexports.TabPane = _TabPane3.default;\nexports.Tabs = _Tabs3.default;\nexports.Thumbnail = _Thumbnail3.default;\nexports.Tooltip = _Tooltip3.default;\nexports.Well = _Well3.default;\nexports.utils = _utils;\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-bootstrap/es/index.js\n// module id = 331\n// module chunks = 0 1\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/es/index.js?");
 
 /***/ }),
-/* 332 */
-/*!*************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/Helpers.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar _extends = Object.assign || function (target) {\n  for (var i = 1; i < arguments.length; i++) {\n    var source = arguments[i];for (var key in source) {\n      if (Object.prototype.hasOwnProperty.call(source, key)) {\n        target[key] = source[key];\n      }\n    }\n  }return target;\n};\n\nvar _createClass = function () {\n  function defineProperties(target, props) {\n    for (var i = 0; i < props.length; i++) {\n      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if (\"value\" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);\n    }\n  }return function (Constructor, protoProps, staticProps) {\n    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;\n  };\n}();\n\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\nfunction _possibleConstructorReturn(self, call) {\n  if (!self) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }return call && ((typeof call === \"undefined\" ? \"undefined\" : _typeof(call)) === \"object\" || typeof call === \"function\") ? call : self;\n}\n\nfunction _inherits(subClass, superClass) {\n  if (typeof superClass !== \"function\" && superClass !== null) {\n    throw new TypeError(\"Super expression must either be null or a function, not \" + (typeof superClass === \"undefined\" ? \"undefined\" : _typeof(superClass)));\n  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;\n}\n\nvar React = __webpack_require__(/*! react */ 1);\nvar ReactDOM = __webpack_require__(/*! react-dom */ 25);\n\nvar utils = __webpack_require__(/*! ./utils */ 333);\nvar scrollSpy = __webpack_require__(/*! ./scroll-spy */ 474);\nvar defaultScroller = __webpack_require__(/*! ./scroller */ 475);\nvar assign = __webpack_require__(/*! object-assign */ 13);\nvar PropTypes = __webpack_require__(/*! prop-types */ 8);\nvar scrollHash = __webpack_require__(/*! ./scroll-hash */ 494);\n\nvar protoTypes = {\n  to: PropTypes.string.isRequired,\n  containerId: PropTypes.string,\n  container: PropTypes.object,\n  activeClass: PropTypes.string,\n  spy: PropTypes.bool,\n  smooth: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),\n  offset: PropTypes.number,\n  delay: PropTypes.number,\n  isDynamic: PropTypes.bool,\n  onClick: PropTypes.func,\n  duration: PropTypes.oneOfType([PropTypes.number, PropTypes.func]),\n  absolute: PropTypes.bool,\n  onSetActive: PropTypes.func,\n  onSetInactive: PropTypes.func,\n  ignoreCancelEvents: PropTypes.bool,\n  hashSpy: PropTypes.bool\n};\n\nvar Helpers = {\n  Scroll: function Scroll(Component, customScroller) {\n\n    var scroller = customScroller || defaultScroller;\n\n    var Scroll = function (_React$Component) {\n      _inherits(Scroll, _React$Component);\n\n      function Scroll(props) {\n        _classCallCheck(this, Scroll);\n\n        var _this = _possibleConstructorReturn(this, (Scroll.__proto__ || Object.getPrototypeOf(Scroll)).call(this, props));\n\n        _initialiseProps.call(_this);\n\n        _this.state = {\n          active: false\n        };\n        return _this;\n      }\n\n      _createClass(Scroll, [{\n        key: 'getScrollSpyContainer',\n        value: function getScrollSpyContainer() {\n          var containerId = this.props.containerId;\n          var container = this.props.container;\n\n          if (containerId) {\n            return document.getElementById(containerId);\n          }\n\n          if (container && container.nodeType) {\n            return container;\n          }\n\n          return utils.getScrollParent(ReactDOM.findDOMNode(this));\n        }\n      }, {\n        key: 'componentDidMount',\n        value: function componentDidMount() {\n          if (this.props.spy || this.props.hashSpy) {\n            var scrollSpyContainer = this.getScrollSpyContainer();\n\n            if (!scrollSpy.isMounted(scrollSpyContainer)) {\n              scrollSpy.mount(scrollSpyContainer);\n            }\n\n            if (this.props.hashSpy) {\n              if (!scrollHash.isMounted()) {\n                scrollHash.mount(scroller);\n              }\n            }\n\n            if (this.props.spy) {\n              scrollSpy.addStateHandler(this.stateHandler);\n            }\n\n            scrollSpy.addSpyHandler(this.spyHandler, scrollSpyContainer);\n\n            this.setState({\n              container: scrollSpyContainer\n            });\n          }\n        }\n      }, {\n        key: 'componentWillUnmount',\n        value: function componentWillUnmount() {\n          scrollSpy.unmount(this.stateHandler, this.spyHandler);\n        }\n      }, {\n        key: 'render',\n        value: function render() {\n          var className = \"\";\n\n          if (this.state && this.state.active) {\n            className = ((this.props.className || \"\") + \" \" + (this.props.activeClass || \"active\")).trim();\n          } else {\n            className = this.props.className;\n          }\n\n          var props = assign({}, this.props);\n\n          for (var prop in protoTypes) {\n            if (props.hasOwnProperty(prop)) {\n              delete props[prop];\n            }\n          }\n\n          props.className = className;\n          props.onClick = this.handleClick;\n\n          return React.createElement(Component, props);\n        }\n      }]);\n\n      return Scroll;\n    }(React.Component);\n\n    var _initialiseProps = function _initialiseProps() {\n      var _this2 = this;\n\n      this.scrollTo = function (to, props) {\n        scroller.scrollTo(to, _extends({}, _this2.state, props));\n      };\n\n      this.handleClick = function (event) {\n\n        /*\r\n         * give the posibility to override onClick\r\n         */\n\n        if (_this2.props.onClick) {\n          _this2.props.onClick(event);\n        }\n\n        /*\r\n         * dont bubble the navigation\r\n         */\n\n        if (event.stopPropagation) event.stopPropagation();\n        if (event.preventDefault) event.preventDefault();\n\n        /*\r\n         * do the magic!\r\n         */\n        _this2.scrollTo(_this2.props.to, _this2.props);\n      };\n\n      this.stateHandler = function () {\n        if (scroller.getActiveLink() !== _this2.props.to) {\n          if (_this2.state !== null && _this2.state.active && _this2.props.onSetInactive) {\n            _this2.props.onSetInactive();\n          }\n          _this2.setState({ active: false });\n        }\n      };\n\n      this.spyHandler = function (y) {\n        var scrollSpyContainer = _this2.getScrollSpyContainer();\n\n        if (scrollHash.isMounted() && !scrollHash.isInitialized()) {\n          return;\n        }\n\n        var to = _this2.props.to;\n        var element = null;\n        var elemTopBound = 0;\n        var elemBottomBound = 0;\n        var containerTop = 0;\n\n        if (scrollSpyContainer.getBoundingClientRect) {\n          var containerCords = scrollSpyContainer.getBoundingClientRect();\n          containerTop = containerCords.top;\n        }\n\n        if (!element || _this2.props.isDynamic) {\n          element = scroller.get(to);\n          if (!element) {\n            return;\n          }\n\n          var cords = element.getBoundingClientRect();\n          elemTopBound = cords.top - containerTop + y;\n          elemBottomBound = elemTopBound + cords.height;\n        }\n\n        var offsetY = y - _this2.props.offset;\n        var isInside = offsetY >= Math.floor(elemTopBound) && offsetY < Math.floor(elemBottomBound);\n        var isOutside = offsetY < Math.floor(elemTopBound) || offsetY >= Math.floor(elemBottomBound);\n        var activeLink = scroller.getActiveLink();\n\n        if (isOutside) {\n          if (to === activeLink) {\n            scroller.setActiveLink(void 0);\n          }\n\n          if (_this2.props.hashSpy && scrollHash.getHash() === to) {\n            scrollHash.changeHash();\n          }\n\n          if (_this2.props.spy && _this2.state.active) {\n            _this2.setState({ active: false });\n            _this2.props.onSetInactive && _this2.props.onSetInactive();\n          }\n\n          return scrollSpy.updateStates();\n        }\n\n        if (isInside && activeLink !== to) {\n          scroller.setActiveLink(to);\n\n          _this2.props.hashSpy && scrollHash.changeHash(to);\n\n          if (_this2.props.spy) {\n            _this2.setState({ active: true });\n            _this2.props.onSetActive && _this2.props.onSetActive(to);\n          }\n          return scrollSpy.updateStates();\n        }\n      };\n    };\n\n    ;\n\n    Scroll.propTypes = protoTypes;\n\n    Scroll.defaultProps = { offset: 0 };\n\n    return Scroll;\n  },\n  Element: function Element(Component) {\n    var Element = function (_React$Component2) {\n      _inherits(Element, _React$Component2);\n\n      function Element(props) {\n        _classCallCheck(this, Element);\n\n        var _this3 = _possibleConstructorReturn(this, (Element.__proto__ || Object.getPrototypeOf(Element)).call(this, props));\n\n        _this3.childBindings = {\n          domNode: null\n        };\n        return _this3;\n      }\n\n      _createClass(Element, [{\n        key: 'componentDidMount',\n        value: function componentDidMount() {\n          this.registerElems(this.props.name);\n        }\n      }, {\n        key: 'componentWillReceiveProps',\n        value: function componentWillReceiveProps(nextProps) {\n          if (this.props.name !== nextProps.name) {\n            this.registerElems(nextProps.name);\n          }\n        }\n      }, {\n        key: 'componentWillUnmount',\n        value: function componentWillUnmount() {\n          defaultScroller.unregister(this.props.name);\n        }\n      }, {\n        key: 'registerElems',\n        value: function registerElems(name) {\n          defaultScroller.register(name, this.childBindings.domNode);\n        }\n      }, {\n        key: 'render',\n        value: function render() {\n          return React.createElement(Component, _extends({}, this.props, { parentBindings: this.childBindings }));\n        }\n      }]);\n\n      return Element;\n    }(React.Component);\n\n    ;\n\n    Element.propTypes = {\n      name: PropTypes.string,\n      id: PropTypes.string\n    };\n\n    return Element;\n  }\n};\n\nmodule.exports = Helpers;\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/Helpers.js\n// module id = 332\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/Helpers.js?");
-
-/***/ }),
-/* 333 */
-/*!***********************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/utils.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar getScrollParent = function getScrollParent(element, includeHidden) {\n  var style = getComputedStyle(element);\n  var excludeStaticParent = style.position === \"absolute\";\n  var overflowRegex = includeHidden ? /(auto|scroll|hidden)/ : /(auto|scroll)/;\n\n  if (style.position === \"fixed\") {\n    return document;\n  }\n  for (var parent = element; parent = parent.parentElement;) {\n    style = getComputedStyle(parent);\n    if (excludeStaticParent && style.position === \"static\") {\n      continue;\n    }\n    if (overflowRegex.test(style.overflow + style.overflowY + style.overflowX)) {\n      return parent;\n    }\n  }\n\n  return document;\n};\n\nvar pushHash = function pushHash(hash) {\n  hash = hash ? hash.indexOf('#') === 0 ? hash : '#' + hash : '';\n\n  if (history.pushState) {\n    var loc = window.location;\n    history.pushState(null, null, hash ? hash\n    // remove hash\n    : loc.pathname + loc.search);\n  } else {\n    location.hash = hash;\n  }\n};\n\nvar getHash = function getHash() {\n  return window.location.hash.replace(/^#/, '');\n};\n\nvar filterElementInContainer = function filterElementInContainer(container) {\n  return function (element) {\n    return container.contains ? container != element && container.contains(element) : !!(container.compareDocumentPosition(element) & 16);\n  };\n};\n\nmodule.exports = {\n  getScrollParent: getScrollParent,\n  pushHash: pushHash,\n  getHash: getHash,\n  filterElementInContainer: filterElementInContainer\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/utils.js\n// module id = 333\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/utils.js?");
-
-/***/ }),
+/* 332 */,
+/* 333 */,
 /* 334 */
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Accordion.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4087,7 +4065,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/assign.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4099,7 +4077,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es6.object.assign */ 336);\nmodu
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4111,7 +4089,7 @@ eval("\n\n// 19.1.3.1 Object.assign(target, source)\nvar $export = __webpack_req
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_a-function.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4123,7 +4101,7 @@ eval("\n\nmodule.exports = function (it) {\n  if (typeof it != 'function') throw
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-assign.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4135,7 +4113,7 @@ eval("\n// 19.1.2.1 Object.assign(target, source, ...)\n\nvar getKeys = __webpac
 /*!*****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_array-includes.js ***!
   \*****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4147,7 +4125,7 @@ eval("\n\n// false -> Array#indexOf\n// true  -> Array#includes\nvar toIObject =
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_to-index.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4159,7 +4137,7 @@ eval("\n\nvar toInteger = __webpack_require__(/*! ./_to-integer */ 141),\n    ma
 /*!***************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/symbol/iterator.js ***!
   \***************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4171,7 +4149,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/fn/symbol/iterator.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4183,7 +4161,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es6.string.iterator */ 290);\n__
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_string-at.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4195,7 +4173,7 @@ eval("\n\nvar toInteger = __webpack_require__(/*! ./_to-integer */ 141),\n    de
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-create.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4207,7 +4185,7 @@ eval("\n\nvar create = __webpack_require__(/*! ./_object-create */ 149),\n    de
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-dps.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4219,7 +4197,7 @@ eval("\n\nvar dP = __webpack_require__(/*! ./_object-dp */ 47),\n    anObject = 
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_html.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4231,7 +4209,7 @@ eval("\n\nmodule.exports = __webpack_require__(/*! ./_global */ 44).document && 
 /*!*************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gpo.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4243,7 +4221,7 @@ eval("\n\n// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)\nvar has = __webpack_r
 /*!******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/web.dom.iterable.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4255,7 +4233,7 @@ eval("\n\n__webpack_require__(/*! ./es6.array.iterator */ 349);\nvar global = __
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.array.iterator.js ***!
   \********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4267,7 +4245,7 @@ eval("\n\nvar addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables *
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_add-to-unscopables.js ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4279,7 +4257,7 @@ eval("\n\nmodule.exports = function () {/* empty */};\n\n//////////////////\n// 
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-step.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4291,7 +4269,7 @@ eval("\n\nmodule.exports = function (done, value) {\n  return { value: value, do
 /*!******************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/symbol.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4303,7 +4281,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!*********************************************************!*\
   !*** ./node_modules/core-js/library/fn/symbol/index.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4315,7 +4293,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es6.symbol */ 354);\n__webpack_r
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.symbol.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4327,7 +4305,7 @@ eval("\n// ECMAScript 6 symbols shim\n\nvar _typeof = typeof Symbol === \"functi
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_meta.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4339,7 +4317,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_keyof.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4351,7 +4329,7 @@ eval("\n\nvar getKeys = __webpack_require__(/*! ./_object-keys */ 60),\n    toIO
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_enum-keys.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4363,7 +4341,7 @@ eval("\n\n// all enumerable object keys, includes symbols\nvar getKeys = __webpa
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_is-array.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4375,7 +4353,7 @@ eval("\n\n// 7.2.2 IsArray(argument)\nvar cof = __webpack_require__(/*! ./_cof *
 /*!******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-gopn-ext.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4387,7 +4365,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!**********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.to-string.js ***!
   \**********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4399,7 +4377,7 @@ eval("\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/core-js/libra
 /*!***************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.symbol.async-iterator.js ***!
   \***************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4411,7 +4389,7 @@ eval("\n\n__webpack_require__(/*! ./_wks-define */ 152)('asyncIterator');\n\n///
 /*!***********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.symbol.observable.js ***!
   \***********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4423,7 +4401,7 @@ eval("\n\n__webpack_require__(/*! ./_wks-define */ 152)('observable');\n\n//////
 /*!***********************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/set-prototype-of.js ***!
   \***********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4435,7 +4413,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/set-prototype-of.js ***!
   \********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4447,7 +4425,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ 3
 /*!*****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.set-prototype-of.js ***!
   \*****************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4459,7 +4437,7 @@ eval("\n\n// 19.1.3.19 Object.setPrototypeOf(O, proto)\nvar $export = __webpack_
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-proto.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4471,7 +4449,7 @@ eval("\n\n// Works with __proto__ only. Old v8 can't work with null proto object
 /*!*************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/create.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4483,7 +4461,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/create.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4495,7 +4473,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es6.object.create */ 369);\nvar 
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.create.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4507,7 +4485,7 @@ eval("\n\nvar $export = __webpack_require__(/*! ./_export */ 43);\n// 19.1.2.2 /
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithThrowingShims.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4519,7 +4497,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/entries.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4531,7 +4509,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es7.object.entries */ 372);\nmod
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.object.entries.js ***!
   \********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4543,7 +4521,7 @@ eval("\n\n// https://github.com/tc39/proposal-object-values-entries\nvar $export
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Alert.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4555,7 +4533,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/values.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4567,7 +4545,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es7.object.values */ 375);\nmodu
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.object.values.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4579,7 +4557,7 @@ eval("\n\n// https://github.com/tc39/proposal-object-values-entries\nvar $export
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Badge.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4591,7 +4569,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Breadcrumb.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4603,7 +4581,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ButtonToolbar.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4615,7 +4593,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Carousel.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4627,7 +4605,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/CarouselCaption.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4639,7 +4617,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/TransitionEvents.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4651,7 +4629,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Checkbox.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4663,7 +4641,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Clearfix.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4675,7 +4653,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ControlLabel.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4687,7 +4665,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Col.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4699,7 +4677,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***************************************************!*\
   !*** ./node_modules/dom-helpers/util/camelize.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4711,7 +4689,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/dom-helpers/util/hyphenateStyle.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4723,7 +4701,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/util/hyphenate.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4735,7 +4713,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************************!*\
   !*** ./node_modules/dom-helpers/style/getComputedStyle.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4747,7 +4725,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/dom-helpers/style/removeStyle.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4759,7 +4737,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************************!*\
   !*** ./node_modules/dom-helpers/transition/isTransform.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4771,7 +4749,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************************!*\
   !*** ./node_modules/uncontrollable/createUncontrollable.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4783,7 +4761,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!**********************************************!*\
   !*** ./node_modules/uncontrollable/utils.js ***!
   \**********************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4795,7 +4773,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nexports.__esModule = tr
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/DropdownMenu.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4807,7 +4785,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/array/from.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4819,7 +4797,7 @@ eval("\n\nmodule.exports = { \"default\": __webpack_require__(/*! core-js/librar
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/from.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4831,7 +4809,7 @@ eval("\n\n__webpack_require__(/*! ../../modules/es6.string.iterator */ 290);\n__
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.array.from.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4843,7 +4821,7 @@ eval("\n\nvar ctx = __webpack_require__(/*! ./_ctx */ 137),\n    $export = __web
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-call.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4855,7 +4833,7 @@ eval("\n\n// call something on iterator step with safe closing on error\nvar anO
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_is-array-iter.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4867,7 +4845,7 @@ eval("\n\n// check on default Array iterator\nvar Iterators = __webpack_require_
 /*!******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_create-property.js ***!
   \******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4879,7 +4857,7 @@ eval("\n\nvar $defineProperty = __webpack_require__(/*! ./_object-dp */ 47),\n  
 /*!**************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/core.get-iterator-method.js ***!
   \**************************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4891,7 +4869,7 @@ eval("\n\nvar classof = __webpack_require__(/*! ./_classof */ 402),\n    ITERATO
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_classof.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4903,7 +4881,7 @@ eval("\n\n// getting tag from 19.1.3.6 Object.prototype.toString()\nvar cof = __
 /*!**************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-detect.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4915,7 +4893,7 @@ eval("\n\nvar ITERATOR = __webpack_require__(/*! ./_wks */ 33)('iterator'),\n   
 /*!************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/PropTypes.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4927,7 +4905,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/DropdownButton.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4939,7 +4917,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Form.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4951,7 +4929,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/FormControl.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4963,7 +4941,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!****************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/FormControlFeedback.js ***!
   \****************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4975,7 +4953,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/FormControlStatic.js ***!
   \**************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4987,7 +4965,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/FormGroup.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4999,7 +4977,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/HelpBlock.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5011,7 +4989,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Image.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5023,7 +5001,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/InputGroup.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5035,7 +5013,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/InputGroupAddon.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5047,7 +5025,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/InputGroupButton.js ***!
   \*************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5059,7 +5037,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Jumbotron.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5071,7 +5049,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Label.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5083,7 +5061,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ListGroup.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5095,7 +5073,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MediaBody.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5107,7 +5085,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MediaHeading.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5119,7 +5097,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MediaLeft.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5131,7 +5109,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MediaList.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5143,7 +5121,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MediaListItem.js ***!
   \**********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5155,7 +5133,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MediaRight.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5167,7 +5145,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/MenuItem.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5179,7 +5157,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Modal.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5191,7 +5169,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/dom-helpers/events/index.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5203,7 +5181,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***************************************************!*\
   !*** ./node_modules/dom-helpers/events/filter.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5215,7 +5193,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************************!*\
   !*** ./node_modules/dom-helpers/query/querySelectorAll.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5227,7 +5205,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***************************************************!*\
   !*** ./node_modules/dom-helpers/events/listen.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5239,7 +5217,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-overlays/lib/Modal.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5251,7 +5229,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!*********************************************************!*\
   !*** ./node_modules/react-overlays/lib/ModalManager.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5263,7 +5241,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/dom-helpers/class/index.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5275,7 +5253,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/class/addClass.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5287,7 +5265,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/dom-helpers/class/removeClass.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5299,7 +5277,7 @@ eval("\n\nmodule.exports = function removeClass(element, className) {\n  if (ele
 /*!*******************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/manageAriaHidden.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5311,7 +5289,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/addFocusListener.js ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5323,7 +5301,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ModalDialog.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5335,7 +5313,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Navbar.js ***!
   \***************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5347,7 +5325,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/NavbarCollapse.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5359,7 +5337,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/NavbarHeader.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5371,7 +5349,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/NavbarToggle.js ***!
   \*********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5383,7 +5361,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/NavDropdown.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5395,7 +5373,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react-overlays/lib/Overlay.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5407,7 +5385,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!*****************************************************!*\
   !*** ./node_modules/react-overlays/lib/Position.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5419,7 +5397,7 @@ eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator
 /*!********************************************************************!*\
   !*** ./node_modules/react-overlays/lib/utils/calculatePosition.js ***!
   \********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5431,7 +5409,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/dom-helpers/query/position.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5443,7 +5421,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/dom-helpers/query/offsetParent.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5455,7 +5433,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/dom-helpers/query/scrollLeft.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5467,7 +5445,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!***********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/OverlayTrigger.js ***!
   \***********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5479,7 +5457,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/PageHeader.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5491,7 +5469,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/PageItem.js ***!
   \*****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5503,7 +5481,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*********************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/deprecationWarning.js ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5515,7 +5493,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Pager.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5527,7 +5505,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Pagination.js ***!
   \*******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5539,7 +5517,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Panel.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5551,7 +5529,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Popover.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5563,7 +5541,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ProgressBar.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5575,7 +5553,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Radio.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5587,7 +5565,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!************************************************************!*\
   !*** ./node_modules/react-bootstrap/es/ResponsiveEmbed.js ***!
   \************************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5599,7 +5577,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nObject.defineProperty(e
 /*!************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Row.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5611,7 +5589,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/SplitButton.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5623,7 +5601,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/SplitToggle.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5635,7 +5613,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Tab.js ***!
   \************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5647,7 +5625,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!**************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Table.js ***!
   \**************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5659,7 +5637,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Tabs.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5671,7 +5649,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!******************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Thumbnail.js ***!
   \******************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5683,7 +5661,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!****************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Tooltip.js ***!
   \****************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5695,7 +5673,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!*************************************************!*\
   !*** ./node_modules/react-bootstrap/es/Well.js ***!
   \*************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5707,7 +5685,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/es/utils/index.js ***!
   \********************************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5715,35 +5693,13 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.ValidComponentChildren = exports.createChainedFunction = exports.bootstrapUtils = undefined;\n\nvar _bootstrapUtils2 = __webpack_require__(/*! ./bootstrapUtils */ 9);\n\nvar _bootstrapUtils = _interopRequireWildcard(_bootstrapUtils2);\n\nvar _createChainedFunction2 = __webpack_require__(/*! ./createChainedFunction */ 21);\n\nvar _createChainedFunction3 = _interopRequireDefault(_createChainedFunction2);\n\nvar _ValidComponentChildren2 = __webpack_require__(/*! ./ValidComponentChildren */ 27);\n\nvar _ValidComponentChildren3 = _interopRequireDefault(_ValidComponentChildren2);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nexports.bootstrapUtils = _bootstrapUtils;\nexports.createChainedFunction = _createChainedFunction3.default;\nexports.ValidComponentChildren = _ValidComponentChildren3.default;\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-bootstrap/es/utils/index.js\n// module id = 470\n// module chunks = 0 1\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/es/utils/index.js?");
 
 /***/ }),
-/* 471 */
-/*!*****************************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/passive-event-listeners.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/*\r\n * Tell the browser that the event listener won't prevent a scroll.\r\n * Allowing the browser to continue scrolling without having to\r\n * to wait for the listener to return.\r\n */\nvar addPassiveEventListener = exports.addPassiveEventListener = function addPassiveEventListener(target, eventName, listener) {\n  var supportsPassiveOption = function () {\n    var supportsPassiveOption = false;\n    try {\n      var opts = Object.defineProperty({}, 'passive', {\n        get: function get() {\n          supportsPassiveOption = true;\n        }\n      });\n      window.addEventListener('test', null, opts);\n    } catch (e) {}\n    return supportsPassiveOption;\n  }();\n  target.addEventListener(eventName, listener, supportsPassiveOption ? { passive: true } : false);\n};\n\nvar removePassiveEventListener = exports.removePassiveEventListener = function removePassiveEventListener(target, eventName, listener) {\n  target.removeEventListener(eventName, listener);\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/passive-event-listeners.js\n// module id = 471\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/passive-event-listeners.js?");
-
-/***/ }),
-/* 472 */
-/*!*******************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/scroll-events.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar Events = {\n\tregistered: {},\n\tscrollEvent: {\n\t\tregister: function register(evtName, callback) {\n\t\t\tEvents.registered[evtName] = callback;\n\t\t},\n\t\tremove: function remove(evtName) {\n\t\t\tEvents.registered[evtName] = null;\n\t\t}\n\t}\n};\n\nmodule.exports = Events;\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/scroll-events.js\n// module id = 472\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/scroll-events.js?");
-
-/***/ }),
+/* 471 */,
+/* 472 */,
 /* 473 */
 /*!************************************!*\
   !*** ./webpage/song/Constants.jsx ***!
   \************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5751,236 +5707,162 @@ eval("\n\nvar Events = {\n\tregistered: {},\n\tscrollEvent: {\n\t\tregister: fun
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nfunction timestampToSeconds(timestamp) {\n\treturn Math.floor(timestamp / 100) * 60 + timestamp % 100;\n}\n\nvar ConstsClass = {\n\tsearchBarID: \"songSearchInput\",\n\tresultsListID: \"resultsList\",\n\n\tallSongsAnchorID: \"allSongsAnchor\",\n\n\ttitleLineID: \"titleLine\",\n\n\t//Checkboxes:\n\t//langauges\n\tpinyinCheckBoxID: \"pinyinCB\",\n\tcnCharCheckBoxID: \"cnCB\",\n\tenglishCheckBoxID: \"engCB\",\n\t//options:\n\toptionsID: \"options\",\n\twantScrollCheckBoxID: \"wantScrolling\",\n\twantLineNumbersCheckBoxID: \"lineNumbers\",\n\n\tlyricsBodyID: \"lyricsBody\",\n\t//whole line of lyric with line number\n\tlyricLine: \"lyricLine\",\n\n\t//lyricLeft\n\tlineNumberID: \"lineIndex\",\n\n\t//lyricRight Lines: pinyin, cn, english\n\tpinyinLyricsLineClass: \"pinyinLine\",\n\tcnCharLyricsLineClass: \"cnLine\",\n\tenglishLyricsLineClass: \"engLine\",\n\n\tgenericLinePrefix: \"line\",\n\n\taudioPlayerID: \"audioPlayer\",\n\n\t//colors\n\tforegroundColor: \"rgba(255,255,255,0.5)\",\n\thighlightColor: \"rgb(255, 238, 6)\"\n\n};\nexports.default = { ConstsClass: ConstsClass, timestampToSeconds: timestampToSeconds };\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/Constants.jsx\n// module id = 473\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/Constants.jsx?");
 
 /***/ }),
-/* 474 */
-/*!****************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/scroll-spy.js ***!
-  \****************************************************************/
-/*! no static exports found */
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */
+/*!********************************************!*\
+  !*** ./node_modules/jquery/dist/jquery.js ***!
+  \********************************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _require = __webpack_require__(/*! ./passive-event-listeners */ 471),\n    addPassiveEventListener = _require.addPassiveEventListener;\n\nvar eventThrottler = function eventThrottler(eventHandler) {\n  var eventHandlerTimeout = void 0;\n  return function (event) {\n    // ignore events as long as an eventHandler execution is in the queue\n    if (!eventHandlerTimeout) {\n      eventHandlerTimeout = setTimeout(function () {\n        eventHandlerTimeout = null;\n        eventHandler(event);\n        // The eventHandler will execute at a rate of 15fps\n      }, 66);\n    }\n  };\n};\n\nvar scrollSpy = {\n\n  spyCallbacks: [],\n  spySetState: [],\n  scrollSpyContainers: [],\n\n  mount: function mount(scrollSpyContainer) {\n    if (scrollSpyContainer) {\n      var eventHandler = eventThrottler(function (event) {\n        scrollSpy.scrollHandler(scrollSpyContainer);\n      });\n      scrollSpy.scrollSpyContainers.push(scrollSpyContainer);\n      addPassiveEventListener(scrollSpyContainer, 'scroll', eventHandler);\n    }\n  },\n  isMounted: function isMounted(scrollSpyContainer) {\n    return scrollSpy.scrollSpyContainers.indexOf(scrollSpyContainer) !== -1;\n  },\n  currentPositionY: function currentPositionY(scrollSpyContainer) {\n    if (scrollSpyContainer === document) {\n      var supportPageOffset = window.pageXOffset !== undefined;\n      var isCSS1Compat = (document.compatMode || \"\") === \"CSS1Compat\";\n      return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;\n    } else {\n      return scrollSpyContainer.scrollTop;\n    }\n  },\n  scrollHandler: function scrollHandler(scrollSpyContainer) {\n    var callbacks = scrollSpy.scrollSpyContainers[scrollSpy.scrollSpyContainers.indexOf(scrollSpyContainer)].spyCallbacks || [];\n    callbacks.forEach(function (c) {\n      return c(scrollSpy.currentPositionY(scrollSpyContainer));\n    });\n  },\n  addStateHandler: function addStateHandler(handler) {\n    scrollSpy.spySetState.push(handler);\n  },\n  addSpyHandler: function addSpyHandler(handler, scrollSpyContainer) {\n    var container = scrollSpy.scrollSpyContainers[scrollSpy.scrollSpyContainers.indexOf(scrollSpyContainer)];\n\n    if (!container.spyCallbacks) {\n      container.spyCallbacks = [];\n    }\n\n    container.spyCallbacks.push(handler);\n  },\n  updateStates: function updateStates() {\n    scrollSpy.spySetState.forEach(function (s) {\n      return s();\n    });\n  },\n  unmount: function unmount(stateHandler, spyHandler) {\n    scrollSpy.scrollSpyContainers.forEach(function (c) {\n      return c.spyCallbacks && c.spyCallbacks.length && c.spyCallbacks.splice(c.spyCallbacks.indexOf(spyHandler), 1);\n    });\n\n    if (scrollSpy.spySetState && scrollSpy.spySetState.length) {\n      scrollSpy.spySetState.splice(scrollSpy.spySetState.indexOf(stateHandler), 1);\n    }\n\n    document.removeEventListener('scroll', scrollSpy.scrollHandler);\n  },\n\n  update: function update() {\n    return scrollSpy.scrollSpyContainers.forEach(function (c) {\n      return scrollSpy.scrollHandler(c);\n    });\n  }\n};\n\nmodule.exports = scrollSpy;\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/scroll-spy.js\n// module id = 474\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/scroll-spy.js?");
+eval("/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\n/*!\n * jQuery JavaScript Library v3.2.1\n * https://jquery.com/\n *\n * Includes Sizzle.js\n * https://sizzlejs.com/\n *\n * Copyright JS Foundation and other contributors\n * Released under the MIT license\n * https://jquery.org/license\n *\n * Date: 2017-03-20T18:59Z\n */\n(function (global, factory) {\n\n\t\"use strict\";\n\n\tif (( false ? \"undefined\" : _typeof(module)) === \"object\" && _typeof(module.exports) === \"object\") {\n\n\t\t// For CommonJS and CommonJS-like environments where a proper `window`\n\t\t// is present, execute the factory and get jQuery.\n\t\t// For environments that do not have a `window` with a `document`\n\t\t// (such as Node.js), expose a factory as module.exports.\n\t\t// This accentuates the need for the creation of a real `window`.\n\t\t// e.g. var jQuery = require(\"jquery\")(window);\n\t\t// See ticket #14549 for more info.\n\t\tmodule.exports = global.document ? factory(global, true) : function (w) {\n\t\t\tif (!w.document) {\n\t\t\t\tthrow new Error(\"jQuery requires a window with a document\");\n\t\t\t}\n\t\t\treturn factory(w);\n\t\t};\n\t} else {\n\t\tfactory(global);\n\t}\n\n\t// Pass this if window is not defined yet\n})(typeof window !== \"undefined\" ? window : undefined, function (window, noGlobal) {\n\n\t// Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1\n\t// throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode\n\t// arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common\n\t// enough that all such attempts are guarded in a try block.\n\t\"use strict\";\n\n\tvar arr = [];\n\n\tvar document = window.document;\n\n\tvar getProto = Object.getPrototypeOf;\n\n\tvar _slice = arr.slice;\n\n\tvar concat = arr.concat;\n\n\tvar push = arr.push;\n\n\tvar indexOf = arr.indexOf;\n\n\tvar class2type = {};\n\n\tvar toString = class2type.toString;\n\n\tvar hasOwn = class2type.hasOwnProperty;\n\n\tvar fnToString = hasOwn.toString;\n\n\tvar ObjectFunctionString = fnToString.call(Object);\n\n\tvar support = {};\n\n\tfunction DOMEval(code, doc) {\n\t\tdoc = doc || document;\n\n\t\tvar script = doc.createElement(\"script\");\n\n\t\tscript.text = code;\n\t\tdoc.head.appendChild(script).parentNode.removeChild(script);\n\t}\n\t/* global Symbol */\n\t// Defining this global in .eslintrc.json would create a danger of using the global\n\t// unguarded in another place, it seems safer to define global only for this module\n\n\n\tvar version = \"3.2.1\",\n\n\n\t// Define a local copy of jQuery\n\tjQuery = function jQuery(selector, context) {\n\n\t\t// The jQuery object is actually just the init constructor 'enhanced'\n\t\t// Need init if jQuery is called (just allow error to be thrown if not included)\n\t\treturn new jQuery.fn.init(selector, context);\n\t},\n\n\n\t// Support: Android <=4.0 only\n\t// Make sure we trim BOM and NBSP\n\trtrim = /^[\\s\\uFEFF\\xA0]+|[\\s\\uFEFF\\xA0]+$/g,\n\n\n\t// Matches dashed string for camelizing\n\trmsPrefix = /^-ms-/,\n\t    rdashAlpha = /-([a-z])/g,\n\n\n\t// Used by jQuery.camelCase as callback to replace()\n\tfcamelCase = function fcamelCase(all, letter) {\n\t\treturn letter.toUpperCase();\n\t};\n\n\tjQuery.fn = jQuery.prototype = {\n\n\t\t// The current version of jQuery being used\n\t\tjquery: version,\n\n\t\tconstructor: jQuery,\n\n\t\t// The default length of a jQuery object is 0\n\t\tlength: 0,\n\n\t\ttoArray: function toArray() {\n\t\t\treturn _slice.call(this);\n\t\t},\n\n\t\t// Get the Nth element in the matched element set OR\n\t\t// Get the whole matched element set as a clean array\n\t\tget: function get(num) {\n\n\t\t\t// Return all the elements in a clean array\n\t\t\tif (num == null) {\n\t\t\t\treturn _slice.call(this);\n\t\t\t}\n\n\t\t\t// Return just the one element from the set\n\t\t\treturn num < 0 ? this[num + this.length] : this[num];\n\t\t},\n\n\t\t// Take an array of elements and push it onto the stack\n\t\t// (returning the new matched element set)\n\t\tpushStack: function pushStack(elems) {\n\n\t\t\t// Build a new jQuery matched element set\n\t\t\tvar ret = jQuery.merge(this.constructor(), elems);\n\n\t\t\t// Add the old object onto the stack (as a reference)\n\t\t\tret.prevObject = this;\n\n\t\t\t// Return the newly-formed element set\n\t\t\treturn ret;\n\t\t},\n\n\t\t// Execute a callback for every element in the matched set.\n\t\teach: function each(callback) {\n\t\t\treturn jQuery.each(this, callback);\n\t\t},\n\n\t\tmap: function map(callback) {\n\t\t\treturn this.pushStack(jQuery.map(this, function (elem, i) {\n\t\t\t\treturn callback.call(elem, i, elem);\n\t\t\t}));\n\t\t},\n\n\t\tslice: function slice() {\n\t\t\treturn this.pushStack(_slice.apply(this, arguments));\n\t\t},\n\n\t\tfirst: function first() {\n\t\t\treturn this.eq(0);\n\t\t},\n\n\t\tlast: function last() {\n\t\t\treturn this.eq(-1);\n\t\t},\n\n\t\teq: function eq(i) {\n\t\t\tvar len = this.length,\n\t\t\t    j = +i + (i < 0 ? len : 0);\n\t\t\treturn this.pushStack(j >= 0 && j < len ? [this[j]] : []);\n\t\t},\n\n\t\tend: function end() {\n\t\t\treturn this.prevObject || this.constructor();\n\t\t},\n\n\t\t// For internal use only.\n\t\t// Behaves like an Array's method, not like a jQuery method.\n\t\tpush: push,\n\t\tsort: arr.sort,\n\t\tsplice: arr.splice\n\t};\n\n\tjQuery.extend = jQuery.fn.extend = function () {\n\t\tvar options,\n\t\t    name,\n\t\t    src,\n\t\t    copy,\n\t\t    copyIsArray,\n\t\t    clone,\n\t\t    target = arguments[0] || {},\n\t\t    i = 1,\n\t\t    length = arguments.length,\n\t\t    deep = false;\n\n\t\t// Handle a deep copy situation\n\t\tif (typeof target === \"boolean\") {\n\t\t\tdeep = target;\n\n\t\t\t// Skip the boolean and the target\n\t\t\ttarget = arguments[i] || {};\n\t\t\ti++;\n\t\t}\n\n\t\t// Handle case when target is a string or something (possible in deep copy)\n\t\tif ((typeof target === \"undefined\" ? \"undefined\" : _typeof(target)) !== \"object\" && !jQuery.isFunction(target)) {\n\t\t\ttarget = {};\n\t\t}\n\n\t\t// Extend jQuery itself if only one argument is passed\n\t\tif (i === length) {\n\t\t\ttarget = this;\n\t\t\ti--;\n\t\t}\n\n\t\tfor (; i < length; i++) {\n\n\t\t\t// Only deal with non-null/undefined values\n\t\t\tif ((options = arguments[i]) != null) {\n\n\t\t\t\t// Extend the base object\n\t\t\t\tfor (name in options) {\n\t\t\t\t\tsrc = target[name];\n\t\t\t\t\tcopy = options[name];\n\n\t\t\t\t\t// Prevent never-ending loop\n\t\t\t\t\tif (target === copy) {\n\t\t\t\t\t\tcontinue;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Recurse if we're merging plain objects or arrays\n\t\t\t\t\tif (deep && copy && (jQuery.isPlainObject(copy) || (copyIsArray = Array.isArray(copy)))) {\n\n\t\t\t\t\t\tif (copyIsArray) {\n\t\t\t\t\t\t\tcopyIsArray = false;\n\t\t\t\t\t\t\tclone = src && Array.isArray(src) ? src : [];\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tclone = src && jQuery.isPlainObject(src) ? src : {};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Never move original objects, clone them\n\t\t\t\t\t\ttarget[name] = jQuery.extend(deep, clone, copy);\n\n\t\t\t\t\t\t// Don't bring in undefined values\n\t\t\t\t\t} else if (copy !== undefined) {\n\t\t\t\t\t\ttarget[name] = copy;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Return the modified object\n\t\treturn target;\n\t};\n\n\tjQuery.extend({\n\n\t\t// Unique for each copy of jQuery on the page\n\t\texpando: \"jQuery\" + (version + Math.random()).replace(/\\D/g, \"\"),\n\n\t\t// Assume jQuery is ready without the ready module\n\t\tisReady: true,\n\n\t\terror: function error(msg) {\n\t\t\tthrow new Error(msg);\n\t\t},\n\n\t\tnoop: function noop() {},\n\n\t\tisFunction: function isFunction(obj) {\n\t\t\treturn jQuery.type(obj) === \"function\";\n\t\t},\n\n\t\tisWindow: function isWindow(obj) {\n\t\t\treturn obj != null && obj === obj.window;\n\t\t},\n\n\t\tisNumeric: function isNumeric(obj) {\n\n\t\t\t// As of jQuery 3.0, isNumeric is limited to\n\t\t\t// strings and numbers (primitives or objects)\n\t\t\t// that can be coerced to finite numbers (gh-2662)\n\t\t\tvar type = jQuery.type(obj);\n\t\t\treturn (type === \"number\" || type === \"string\") &&\n\n\t\t\t// parseFloat NaNs numeric-cast false positives (\"\")\n\t\t\t// ...but misinterprets leading-number strings, particularly hex literals (\"0x...\")\n\t\t\t// subtraction forces infinities to NaN\n\t\t\t!isNaN(obj - parseFloat(obj));\n\t\t},\n\n\t\tisPlainObject: function isPlainObject(obj) {\n\t\t\tvar proto, Ctor;\n\n\t\t\t// Detect obvious negatives\n\t\t\t// Use toString instead of jQuery.type to catch host objects\n\t\t\tif (!obj || toString.call(obj) !== \"[object Object]\") {\n\t\t\t\treturn false;\n\t\t\t}\n\n\t\t\tproto = getProto(obj);\n\n\t\t\t// Objects with no prototype (e.g., `Object.create( null )`) are plain\n\t\t\tif (!proto) {\n\t\t\t\treturn true;\n\t\t\t}\n\n\t\t\t// Objects with prototype are plain iff they were constructed by a global Object function\n\t\t\tCtor = hasOwn.call(proto, \"constructor\") && proto.constructor;\n\t\t\treturn typeof Ctor === \"function\" && fnToString.call(Ctor) === ObjectFunctionString;\n\t\t},\n\n\t\tisEmptyObject: function isEmptyObject(obj) {\n\n\t\t\t/* eslint-disable no-unused-vars */\n\t\t\t// See https://github.com/eslint/eslint/issues/6125\n\t\t\tvar name;\n\n\t\t\tfor (name in obj) {\n\t\t\t\treturn false;\n\t\t\t}\n\t\t\treturn true;\n\t\t},\n\n\t\ttype: function type(obj) {\n\t\t\tif (obj == null) {\n\t\t\t\treturn obj + \"\";\n\t\t\t}\n\n\t\t\t// Support: Android <=2.3 only (functionish RegExp)\n\t\t\treturn (typeof obj === \"undefined\" ? \"undefined\" : _typeof(obj)) === \"object\" || typeof obj === \"function\" ? class2type[toString.call(obj)] || \"object\" : typeof obj === \"undefined\" ? \"undefined\" : _typeof(obj);\n\t\t},\n\n\t\t// Evaluates a script in a global context\n\t\tglobalEval: function globalEval(code) {\n\t\t\tDOMEval(code);\n\t\t},\n\n\t\t// Convert dashed to camelCase; used by the css and data modules\n\t\t// Support: IE <=9 - 11, Edge 12 - 13\n\t\t// Microsoft forgot to hump their vendor prefix (#9572)\n\t\tcamelCase: function camelCase(string) {\n\t\t\treturn string.replace(rmsPrefix, \"ms-\").replace(rdashAlpha, fcamelCase);\n\t\t},\n\n\t\teach: function each(obj, callback) {\n\t\t\tvar length,\n\t\t\t    i = 0;\n\n\t\t\tif (isArrayLike(obj)) {\n\t\t\t\tlength = obj.length;\n\t\t\t\tfor (; i < length; i++) {\n\t\t\t\t\tif (callback.call(obj[i], i, obj[i]) === false) {\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tfor (i in obj) {\n\t\t\t\t\tif (callback.call(obj[i], i, obj[i]) === false) {\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn obj;\n\t\t},\n\n\t\t// Support: Android <=4.0 only\n\t\ttrim: function trim(text) {\n\t\t\treturn text == null ? \"\" : (text + \"\").replace(rtrim, \"\");\n\t\t},\n\n\t\t// results is for internal usage only\n\t\tmakeArray: function makeArray(arr, results) {\n\t\t\tvar ret = results || [];\n\n\t\t\tif (arr != null) {\n\t\t\t\tif (isArrayLike(Object(arr))) {\n\t\t\t\t\tjQuery.merge(ret, typeof arr === \"string\" ? [arr] : arr);\n\t\t\t\t} else {\n\t\t\t\t\tpush.call(ret, arr);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn ret;\n\t\t},\n\n\t\tinArray: function inArray(elem, arr, i) {\n\t\t\treturn arr == null ? -1 : indexOf.call(arr, elem, i);\n\t\t},\n\n\t\t// Support: Android <=4.0 only, PhantomJS 1 only\n\t\t// push.apply(_, arraylike) throws on ancient WebKit\n\t\tmerge: function merge(first, second) {\n\t\t\tvar len = +second.length,\n\t\t\t    j = 0,\n\t\t\t    i = first.length;\n\n\t\t\tfor (; j < len; j++) {\n\t\t\t\tfirst[i++] = second[j];\n\t\t\t}\n\n\t\t\tfirst.length = i;\n\n\t\t\treturn first;\n\t\t},\n\n\t\tgrep: function grep(elems, callback, invert) {\n\t\t\tvar callbackInverse,\n\t\t\t    matches = [],\n\t\t\t    i = 0,\n\t\t\t    length = elems.length,\n\t\t\t    callbackExpect = !invert;\n\n\t\t\t// Go through the array, only saving the items\n\t\t\t// that pass the validator function\n\t\t\tfor (; i < length; i++) {\n\t\t\t\tcallbackInverse = !callback(elems[i], i);\n\t\t\t\tif (callbackInverse !== callbackExpect) {\n\t\t\t\t\tmatches.push(elems[i]);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn matches;\n\t\t},\n\n\t\t// arg is for internal usage only\n\t\tmap: function map(elems, callback, arg) {\n\t\t\tvar length,\n\t\t\t    value,\n\t\t\t    i = 0,\n\t\t\t    ret = [];\n\n\t\t\t// Go through the array, translating each of the items to their new values\n\t\t\tif (isArrayLike(elems)) {\n\t\t\t\tlength = elems.length;\n\t\t\t\tfor (; i < length; i++) {\n\t\t\t\t\tvalue = callback(elems[i], i, arg);\n\n\t\t\t\t\tif (value != null) {\n\t\t\t\t\t\tret.push(value);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Go through every key on the object,\n\t\t\t} else {\n\t\t\t\tfor (i in elems) {\n\t\t\t\t\tvalue = callback(elems[i], i, arg);\n\n\t\t\t\t\tif (value != null) {\n\t\t\t\t\t\tret.push(value);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Flatten any nested arrays\n\t\t\treturn concat.apply([], ret);\n\t\t},\n\n\t\t// A global GUID counter for objects\n\t\tguid: 1,\n\n\t\t// Bind a function to a context, optionally partially applying any\n\t\t// arguments.\n\t\tproxy: function proxy(fn, context) {\n\t\t\tvar tmp, args, proxy;\n\n\t\t\tif (typeof context === \"string\") {\n\t\t\t\ttmp = fn[context];\n\t\t\t\tcontext = fn;\n\t\t\t\tfn = tmp;\n\t\t\t}\n\n\t\t\t// Quick check to determine if target is callable, in the spec\n\t\t\t// this throws a TypeError, but we will just return undefined.\n\t\t\tif (!jQuery.isFunction(fn)) {\n\t\t\t\treturn undefined;\n\t\t\t}\n\n\t\t\t// Simulated bind\n\t\t\targs = _slice.call(arguments, 2);\n\t\t\tproxy = function proxy() {\n\t\t\t\treturn fn.apply(context || this, args.concat(_slice.call(arguments)));\n\t\t\t};\n\n\t\t\t// Set the guid of unique handler to the same of original handler, so it can be removed\n\t\t\tproxy.guid = fn.guid = fn.guid || jQuery.guid++;\n\n\t\t\treturn proxy;\n\t\t},\n\n\t\tnow: Date.now,\n\n\t\t// jQuery.support is not used in Core but other projects attach their\n\t\t// properties to it so it needs to exist.\n\t\tsupport: support\n\t});\n\n\tif (typeof Symbol === \"function\") {\n\t\tjQuery.fn[Symbol.iterator] = arr[Symbol.iterator];\n\t}\n\n\t// Populate the class2type map\n\tjQuery.each(\"Boolean Number String Function Array Date RegExp Object Error Symbol\".split(\" \"), function (i, name) {\n\t\tclass2type[\"[object \" + name + \"]\"] = name.toLowerCase();\n\t});\n\n\tfunction isArrayLike(obj) {\n\n\t\t// Support: real iOS 8.2 only (not reproducible in simulator)\n\t\t// `in` check used to prevent JIT error (gh-2145)\n\t\t// hasOwn isn't used here due to false negatives\n\t\t// regarding Nodelist length in IE\n\t\tvar length = !!obj && \"length\" in obj && obj.length,\n\t\t    type = jQuery.type(obj);\n\n\t\tif (type === \"function\" || jQuery.isWindow(obj)) {\n\t\t\treturn false;\n\t\t}\n\n\t\treturn type === \"array\" || length === 0 || typeof length === \"number\" && length > 0 && length - 1 in obj;\n\t}\n\tvar Sizzle =\n\t/*!\n  * Sizzle CSS Selector Engine v2.3.3\n  * https://sizzlejs.com/\n  *\n  * Copyright jQuery Foundation and other contributors\n  * Released under the MIT license\n  * http://jquery.org/license\n  *\n  * Date: 2016-08-08\n  */\n\tfunction (window) {\n\n\t\tvar i,\n\t\t    support,\n\t\t    Expr,\n\t\t    getText,\n\t\t    isXML,\n\t\t    tokenize,\n\t\t    compile,\n\t\t    select,\n\t\t    outermostContext,\n\t\t    sortInput,\n\t\t    hasDuplicate,\n\n\n\t\t// Local document vars\n\t\tsetDocument,\n\t\t    document,\n\t\t    docElem,\n\t\t    documentIsHTML,\n\t\t    rbuggyQSA,\n\t\t    rbuggyMatches,\n\t\t    matches,\n\t\t    contains,\n\n\n\t\t// Instance-specific data\n\t\texpando = \"sizzle\" + 1 * new Date(),\n\t\t    preferredDoc = window.document,\n\t\t    dirruns = 0,\n\t\t    done = 0,\n\t\t    classCache = createCache(),\n\t\t    tokenCache = createCache(),\n\t\t    compilerCache = createCache(),\n\t\t    sortOrder = function sortOrder(a, b) {\n\t\t\tif (a === b) {\n\t\t\t\thasDuplicate = true;\n\t\t\t}\n\t\t\treturn 0;\n\t\t},\n\n\n\t\t// Instance methods\n\t\thasOwn = {}.hasOwnProperty,\n\t\t    arr = [],\n\t\t    pop = arr.pop,\n\t\t    push_native = arr.push,\n\t\t    push = arr.push,\n\t\t    slice = arr.slice,\n\n\t\t// Use a stripped-down indexOf as it's faster than native\n\t\t// https://jsperf.com/thor-indexof-vs-for/5\n\t\tindexOf = function indexOf(list, elem) {\n\t\t\tvar i = 0,\n\t\t\t    len = list.length;\n\t\t\tfor (; i < len; i++) {\n\t\t\t\tif (list[i] === elem) {\n\t\t\t\t\treturn i;\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn -1;\n\t\t},\n\t\t    booleans = \"checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped\",\n\n\n\t\t// Regular expressions\n\n\t\t// http://www.w3.org/TR/css3-selectors/#whitespace\n\t\twhitespace = \"[\\\\x20\\\\t\\\\r\\\\n\\\\f]\",\n\n\n\t\t// http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier\n\t\tidentifier = \"(?:\\\\\\\\.|[\\\\w-]|[^\\0-\\\\xa0])+\",\n\n\n\t\t// Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors\n\t\tattributes = \"\\\\[\" + whitespace + \"*(\" + identifier + \")(?:\" + whitespace +\n\t\t// Operator (capture 2)\n\t\t\"*([*^$|!~]?=)\" + whitespace +\n\t\t// \"Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]\"\n\t\t\"*(?:'((?:\\\\\\\\.|[^\\\\\\\\'])*)'|\\\"((?:\\\\\\\\.|[^\\\\\\\\\\\"])*)\\\"|(\" + identifier + \"))|)\" + whitespace + \"*\\\\]\",\n\t\t    pseudos = \":(\" + identifier + \")(?:\\\\((\" +\n\t\t// To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:\n\t\t// 1. quoted (capture 3; capture 4 or capture 5)\n\t\t\"('((?:\\\\\\\\.|[^\\\\\\\\'])*)'|\\\"((?:\\\\\\\\.|[^\\\\\\\\\\\"])*)\\\")|\" +\n\t\t// 2. simple (capture 6)\n\t\t\"((?:\\\\\\\\.|[^\\\\\\\\()[\\\\]]|\" + attributes + \")*)|\" +\n\t\t// 3. anything else (capture 2)\n\t\t\".*\" + \")\\\\)|)\",\n\n\n\t\t// Leading and non-escaped trailing whitespace, capturing some non-whitespace characters preceding the latter\n\t\trwhitespace = new RegExp(whitespace + \"+\", \"g\"),\n\t\t    rtrim = new RegExp(\"^\" + whitespace + \"+|((?:^|[^\\\\\\\\])(?:\\\\\\\\.)*)\" + whitespace + \"+$\", \"g\"),\n\t\t    rcomma = new RegExp(\"^\" + whitespace + \"*,\" + whitespace + \"*\"),\n\t\t    rcombinators = new RegExp(\"^\" + whitespace + \"*([>+~]|\" + whitespace + \")\" + whitespace + \"*\"),\n\t\t    rattributeQuotes = new RegExp(\"=\" + whitespace + \"*([^\\\\]'\\\"]*?)\" + whitespace + \"*\\\\]\", \"g\"),\n\t\t    rpseudo = new RegExp(pseudos),\n\t\t    ridentifier = new RegExp(\"^\" + identifier + \"$\"),\n\t\t    matchExpr = {\n\t\t\t\"ID\": new RegExp(\"^#(\" + identifier + \")\"),\n\t\t\t\"CLASS\": new RegExp(\"^\\\\.(\" + identifier + \")\"),\n\t\t\t\"TAG\": new RegExp(\"^(\" + identifier + \"|[*])\"),\n\t\t\t\"ATTR\": new RegExp(\"^\" + attributes),\n\t\t\t\"PSEUDO\": new RegExp(\"^\" + pseudos),\n\t\t\t\"CHILD\": new RegExp(\"^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\\\(\" + whitespace + \"*(even|odd|(([+-]|)(\\\\d*)n|)\" + whitespace + \"*(?:([+-]|)\" + whitespace + \"*(\\\\d+)|))\" + whitespace + \"*\\\\)|)\", \"i\"),\n\t\t\t\"bool\": new RegExp(\"^(?:\" + booleans + \")$\", \"i\"),\n\t\t\t// For use in libraries implementing .is()\n\t\t\t// We use this for POS matching in `select`\n\t\t\t\"needsContext\": new RegExp(\"^\" + whitespace + \"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\\\(\" + whitespace + \"*((?:-\\\\d)?\\\\d*)\" + whitespace + \"*\\\\)|)(?=[^-]|$)\", \"i\")\n\t\t},\n\t\t    rinputs = /^(?:input|select|textarea|button)$/i,\n\t\t    rheader = /^h\\d$/i,\n\t\t    rnative = /^[^{]+\\{\\s*\\[native \\w/,\n\n\n\t\t// Easily-parseable/retrievable ID or TAG or CLASS selectors\n\t\trquickExpr = /^(?:#([\\w-]+)|(\\w+)|\\.([\\w-]+))$/,\n\t\t    rsibling = /[+~]/,\n\n\n\t\t// CSS escapes\n\t\t// http://www.w3.org/TR/CSS21/syndata.html#escaped-characters\n\t\trunescape = new RegExp(\"\\\\\\\\([\\\\da-f]{1,6}\" + whitespace + \"?|(\" + whitespace + \")|.)\", \"ig\"),\n\t\t    funescape = function funescape(_, escaped, escapedWhitespace) {\n\t\t\tvar high = \"0x\" + escaped - 0x10000;\n\t\t\t// NaN means non-codepoint\n\t\t\t// Support: Firefox<24\n\t\t\t// Workaround erroneous numeric interpretation of +\"0x\"\n\t\t\treturn high !== high || escapedWhitespace ? escaped : high < 0 ?\n\t\t\t// BMP codepoint\n\t\t\tString.fromCharCode(high + 0x10000) :\n\t\t\t// Supplemental Plane codepoint (surrogate pair)\n\t\t\tString.fromCharCode(high >> 10 | 0xD800, high & 0x3FF | 0xDC00);\n\t\t},\n\n\n\t\t// CSS string/identifier serialization\n\t\t// https://drafts.csswg.org/cssom/#common-serializing-idioms\n\t\trcssescape = /([\\0-\\x1f\\x7f]|^-?\\d)|^-$|[^\\0-\\x1f\\x7f-\\uFFFF\\w-]/g,\n\t\t    fcssescape = function fcssescape(ch, asCodePoint) {\n\t\t\tif (asCodePoint) {\n\n\t\t\t\t// U+0000 NULL becomes U+FFFD REPLACEMENT CHARACTER\n\t\t\t\tif (ch === \"\\0\") {\n\t\t\t\t\treturn \"\\uFFFD\";\n\t\t\t\t}\n\n\t\t\t\t// Control characters and (dependent upon position) numbers get escaped as code points\n\t\t\t\treturn ch.slice(0, -1) + \"\\\\\" + ch.charCodeAt(ch.length - 1).toString(16) + \" \";\n\t\t\t}\n\n\t\t\t// Other potentially-special ASCII characters get backslash-escaped\n\t\t\treturn \"\\\\\" + ch;\n\t\t},\n\n\n\t\t// Used for iframes\n\t\t// See setDocument()\n\t\t// Removing the function wrapper causes a \"Permission Denied\"\n\t\t// error in IE\n\t\tunloadHandler = function unloadHandler() {\n\t\t\tsetDocument();\n\t\t},\n\t\t    disabledAncestor = addCombinator(function (elem) {\n\t\t\treturn elem.disabled === true && (\"form\" in elem || \"label\" in elem);\n\t\t}, { dir: \"parentNode\", next: \"legend\" });\n\n\t\t// Optimize for push.apply( _, NodeList )\n\t\ttry {\n\t\t\tpush.apply(arr = slice.call(preferredDoc.childNodes), preferredDoc.childNodes);\n\t\t\t// Support: Android<4.0\n\t\t\t// Detect silently failing push.apply\n\t\t\tarr[preferredDoc.childNodes.length].nodeType;\n\t\t} catch (e) {\n\t\t\tpush = { apply: arr.length ?\n\n\t\t\t\t// Leverage slice if possible\n\t\t\t\tfunction (target, els) {\n\t\t\t\t\tpush_native.apply(target, slice.call(els));\n\t\t\t\t} :\n\n\t\t\t\t// Support: IE<9\n\t\t\t\t// Otherwise append directly\n\t\t\t\tfunction (target, els) {\n\t\t\t\t\tvar j = target.length,\n\t\t\t\t\t    i = 0;\n\t\t\t\t\t// Can't trust NodeList.length\n\t\t\t\t\twhile (target[j++] = els[i++]) {}\n\t\t\t\t\ttarget.length = j - 1;\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\n\t\tfunction Sizzle(selector, context, results, seed) {\n\t\t\tvar m,\n\t\t\t    i,\n\t\t\t    elem,\n\t\t\t    nid,\n\t\t\t    match,\n\t\t\t    groups,\n\t\t\t    newSelector,\n\t\t\t    newContext = context && context.ownerDocument,\n\n\n\t\t\t// nodeType defaults to 9, since context defaults to document\n\t\t\tnodeType = context ? context.nodeType : 9;\n\n\t\t\tresults = results || [];\n\n\t\t\t// Return early from calls with invalid selector or context\n\t\t\tif (typeof selector !== \"string\" || !selector || nodeType !== 1 && nodeType !== 9 && nodeType !== 11) {\n\n\t\t\t\treturn results;\n\t\t\t}\n\n\t\t\t// Try to shortcut find operations (as opposed to filters) in HTML documents\n\t\t\tif (!seed) {\n\n\t\t\t\tif ((context ? context.ownerDocument || context : preferredDoc) !== document) {\n\t\t\t\t\tsetDocument(context);\n\t\t\t\t}\n\t\t\t\tcontext = context || document;\n\n\t\t\t\tif (documentIsHTML) {\n\n\t\t\t\t\t// If the selector is sufficiently simple, try using a \"get*By*\" DOM method\n\t\t\t\t\t// (excepting DocumentFragment context, where the methods don't exist)\n\t\t\t\t\tif (nodeType !== 11 && (match = rquickExpr.exec(selector))) {\n\n\t\t\t\t\t\t// ID selector\n\t\t\t\t\t\tif (m = match[1]) {\n\n\t\t\t\t\t\t\t// Document context\n\t\t\t\t\t\t\tif (nodeType === 9) {\n\t\t\t\t\t\t\t\tif (elem = context.getElementById(m)) {\n\n\t\t\t\t\t\t\t\t\t// Support: IE, Opera, Webkit\n\t\t\t\t\t\t\t\t\t// TODO: identify versions\n\t\t\t\t\t\t\t\t\t// getElementById can match elements by name instead of ID\n\t\t\t\t\t\t\t\t\tif (elem.id === m) {\n\t\t\t\t\t\t\t\t\t\tresults.push(elem);\n\t\t\t\t\t\t\t\t\t\treturn results;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\treturn results;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t// Element context\n\t\t\t\t\t\t\t} else {\n\n\t\t\t\t\t\t\t\t// Support: IE, Opera, Webkit\n\t\t\t\t\t\t\t\t// TODO: identify versions\n\t\t\t\t\t\t\t\t// getElementById can match elements by name instead of ID\n\t\t\t\t\t\t\t\tif (newContext && (elem = newContext.getElementById(m)) && contains(context, elem) && elem.id === m) {\n\n\t\t\t\t\t\t\t\t\tresults.push(elem);\n\t\t\t\t\t\t\t\t\treturn results;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t// Type selector\n\t\t\t\t\t\t} else if (match[2]) {\n\t\t\t\t\t\t\tpush.apply(results, context.getElementsByTagName(selector));\n\t\t\t\t\t\t\treturn results;\n\n\t\t\t\t\t\t\t// Class selector\n\t\t\t\t\t\t} else if ((m = match[3]) && support.getElementsByClassName && context.getElementsByClassName) {\n\n\t\t\t\t\t\t\tpush.apply(results, context.getElementsByClassName(m));\n\t\t\t\t\t\t\treturn results;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// Take advantage of querySelectorAll\n\t\t\t\t\tif (support.qsa && !compilerCache[selector + \" \"] && (!rbuggyQSA || !rbuggyQSA.test(selector))) {\n\n\t\t\t\t\t\tif (nodeType !== 1) {\n\t\t\t\t\t\t\tnewContext = context;\n\t\t\t\t\t\t\tnewSelector = selector;\n\n\t\t\t\t\t\t\t// qSA looks outside Element context, which is not what we want\n\t\t\t\t\t\t\t// Thanks to Andrew Dupont for this workaround technique\n\t\t\t\t\t\t\t// Support: IE <=8\n\t\t\t\t\t\t\t// Exclude object elements\n\t\t\t\t\t\t} else if (context.nodeName.toLowerCase() !== \"object\") {\n\n\t\t\t\t\t\t\t// Capture the context ID, setting it first if necessary\n\t\t\t\t\t\t\tif (nid = context.getAttribute(\"id\")) {\n\t\t\t\t\t\t\t\tnid = nid.replace(rcssescape, fcssescape);\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tcontext.setAttribute(\"id\", nid = expando);\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t// Prefix every selector in the list\n\t\t\t\t\t\t\tgroups = tokenize(selector);\n\t\t\t\t\t\t\ti = groups.length;\n\t\t\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\t\t\tgroups[i] = \"#\" + nid + \" \" + toSelector(groups[i]);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tnewSelector = groups.join(\",\");\n\n\t\t\t\t\t\t\t// Expand context for sibling selectors\n\t\t\t\t\t\t\tnewContext = rsibling.test(selector) && testContext(context.parentNode) || context;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tif (newSelector) {\n\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\tpush.apply(results, newContext.querySelectorAll(newSelector));\n\t\t\t\t\t\t\t\treturn results;\n\t\t\t\t\t\t\t} catch (qsaError) {} finally {\n\t\t\t\t\t\t\t\tif (nid === expando) {\n\t\t\t\t\t\t\t\t\tcontext.removeAttribute(\"id\");\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// All others\n\t\t\treturn select(selector.replace(rtrim, \"$1\"), context, results, seed);\n\t\t}\n\n\t\t/**\n   * Create key-value caches of limited size\n   * @returns {function(string, object)} Returns the Object data after storing it on itself with\n   *\tproperty name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)\n   *\tdeleting the oldest entry\n   */\n\t\tfunction createCache() {\n\t\t\tvar keys = [];\n\n\t\t\tfunction cache(key, value) {\n\t\t\t\t// Use (key + \" \") to avoid collision with native prototype properties (see Issue #157)\n\t\t\t\tif (keys.push(key + \" \") > Expr.cacheLength) {\n\t\t\t\t\t// Only keep the most recent entries\n\t\t\t\t\tdelete cache[keys.shift()];\n\t\t\t\t}\n\t\t\t\treturn cache[key + \" \"] = value;\n\t\t\t}\n\t\t\treturn cache;\n\t\t}\n\n\t\t/**\n   * Mark a function for special use by Sizzle\n   * @param {Function} fn The function to mark\n   */\n\t\tfunction markFunction(fn) {\n\t\t\tfn[expando] = true;\n\t\t\treturn fn;\n\t\t}\n\n\t\t/**\n   * Support testing using an element\n   * @param {Function} fn Passed the created element and returns a boolean result\n   */\n\t\tfunction assert(fn) {\n\t\t\tvar el = document.createElement(\"fieldset\");\n\n\t\t\ttry {\n\t\t\t\treturn !!fn(el);\n\t\t\t} catch (e) {\n\t\t\t\treturn false;\n\t\t\t} finally {\n\t\t\t\t// Remove from its parent by default\n\t\t\t\tif (el.parentNode) {\n\t\t\t\t\tel.parentNode.removeChild(el);\n\t\t\t\t}\n\t\t\t\t// release memory in IE\n\t\t\t\tel = null;\n\t\t\t}\n\t\t}\n\n\t\t/**\n   * Adds the same handler for all of the specified attrs\n   * @param {String} attrs Pipe-separated list of attributes\n   * @param {Function} handler The method that will be applied\n   */\n\t\tfunction addHandle(attrs, handler) {\n\t\t\tvar arr = attrs.split(\"|\"),\n\t\t\t    i = arr.length;\n\n\t\t\twhile (i--) {\n\t\t\t\tExpr.attrHandle[arr[i]] = handler;\n\t\t\t}\n\t\t}\n\n\t\t/**\n   * Checks document order of two siblings\n   * @param {Element} a\n   * @param {Element} b\n   * @returns {Number} Returns less than 0 if a precedes b, greater than 0 if a follows b\n   */\n\t\tfunction siblingCheck(a, b) {\n\t\t\tvar cur = b && a,\n\t\t\t    diff = cur && a.nodeType === 1 && b.nodeType === 1 && a.sourceIndex - b.sourceIndex;\n\n\t\t\t// Use IE sourceIndex if available on both nodes\n\t\t\tif (diff) {\n\t\t\t\treturn diff;\n\t\t\t}\n\n\t\t\t// Check if b follows a\n\t\t\tif (cur) {\n\t\t\t\twhile (cur = cur.nextSibling) {\n\t\t\t\t\tif (cur === b) {\n\t\t\t\t\t\treturn -1;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn a ? 1 : -1;\n\t\t}\n\n\t\t/**\n   * Returns a function to use in pseudos for input types\n   * @param {String} type\n   */\n\t\tfunction createInputPseudo(type) {\n\t\t\treturn function (elem) {\n\t\t\t\tvar name = elem.nodeName.toLowerCase();\n\t\t\t\treturn name === \"input\" && elem.type === type;\n\t\t\t};\n\t\t}\n\n\t\t/**\n   * Returns a function to use in pseudos for buttons\n   * @param {String} type\n   */\n\t\tfunction createButtonPseudo(type) {\n\t\t\treturn function (elem) {\n\t\t\t\tvar name = elem.nodeName.toLowerCase();\n\t\t\t\treturn (name === \"input\" || name === \"button\") && elem.type === type;\n\t\t\t};\n\t\t}\n\n\t\t/**\n   * Returns a function to use in pseudos for :enabled/:disabled\n   * @param {Boolean} disabled true for :disabled; false for :enabled\n   */\n\t\tfunction createDisabledPseudo(disabled) {\n\n\t\t\t// Known :disabled false positives: fieldset[disabled] > legend:nth-of-type(n+2) :can-disable\n\t\t\treturn function (elem) {\n\n\t\t\t\t// Only certain elements can match :enabled or :disabled\n\t\t\t\t// https://html.spec.whatwg.org/multipage/scripting.html#selector-enabled\n\t\t\t\t// https://html.spec.whatwg.org/multipage/scripting.html#selector-disabled\n\t\t\t\tif (\"form\" in elem) {\n\n\t\t\t\t\t// Check for inherited disabledness on relevant non-disabled elements:\n\t\t\t\t\t// * listed form-associated elements in a disabled fieldset\n\t\t\t\t\t//   https://html.spec.whatwg.org/multipage/forms.html#category-listed\n\t\t\t\t\t//   https://html.spec.whatwg.org/multipage/forms.html#concept-fe-disabled\n\t\t\t\t\t// * option elements in a disabled optgroup\n\t\t\t\t\t//   https://html.spec.whatwg.org/multipage/forms.html#concept-option-disabled\n\t\t\t\t\t// All such elements have a \"form\" property.\n\t\t\t\t\tif (elem.parentNode && elem.disabled === false) {\n\n\t\t\t\t\t\t// Option elements defer to a parent optgroup if present\n\t\t\t\t\t\tif (\"label\" in elem) {\n\t\t\t\t\t\t\tif (\"label\" in elem.parentNode) {\n\t\t\t\t\t\t\t\treturn elem.parentNode.disabled === disabled;\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\treturn elem.disabled === disabled;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Support: IE 6 - 11\n\t\t\t\t\t\t// Use the isDisabled shortcut property to check for disabled fieldset ancestors\n\t\t\t\t\t\treturn elem.isDisabled === disabled ||\n\n\t\t\t\t\t\t// Where there is no isDisabled, check manually\n\t\t\t\t\t\t/* jshint -W018 */\n\t\t\t\t\t\telem.isDisabled !== !disabled && disabledAncestor(elem) === disabled;\n\t\t\t\t\t}\n\n\t\t\t\t\treturn elem.disabled === disabled;\n\n\t\t\t\t\t// Try to winnow out elements that can't be disabled before trusting the disabled property.\n\t\t\t\t\t// Some victims get caught in our net (label, legend, menu, track), but it shouldn't\n\t\t\t\t\t// even exist on them, let alone have a boolean value.\n\t\t\t\t} else if (\"label\" in elem) {\n\t\t\t\t\treturn elem.disabled === disabled;\n\t\t\t\t}\n\n\t\t\t\t// Remaining elements are neither :enabled nor :disabled\n\t\t\t\treturn false;\n\t\t\t};\n\t\t}\n\n\t\t/**\n   * Returns a function to use in pseudos for positionals\n   * @param {Function} fn\n   */\n\t\tfunction createPositionalPseudo(fn) {\n\t\t\treturn markFunction(function (argument) {\n\t\t\t\targument = +argument;\n\t\t\t\treturn markFunction(function (seed, matches) {\n\t\t\t\t\tvar j,\n\t\t\t\t\t    matchIndexes = fn([], seed.length, argument),\n\t\t\t\t\t    i = matchIndexes.length;\n\n\t\t\t\t\t// Match elements found at the specified indexes\n\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\tif (seed[j = matchIndexes[i]]) {\n\t\t\t\t\t\t\tseed[j] = !(matches[j] = seed[j]);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t});\n\t\t}\n\n\t\t/**\n   * Checks a node for validity as a Sizzle context\n   * @param {Element|Object=} context\n   * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a falsy value\n   */\n\t\tfunction testContext(context) {\n\t\t\treturn context && typeof context.getElementsByTagName !== \"undefined\" && context;\n\t\t}\n\n\t\t// Expose support vars for convenience\n\t\tsupport = Sizzle.support = {};\n\n\t\t/**\n   * Detects XML nodes\n   * @param {Element|Object} elem An element or a document\n   * @returns {Boolean} True iff elem is a non-HTML XML node\n   */\n\t\tisXML = Sizzle.isXML = function (elem) {\n\t\t\t// documentElement is verified for cases where it doesn't yet exist\n\t\t\t// (such as loading iframes in IE - #4833)\n\t\t\tvar documentElement = elem && (elem.ownerDocument || elem).documentElement;\n\t\t\treturn documentElement ? documentElement.nodeName !== \"HTML\" : false;\n\t\t};\n\n\t\t/**\n   * Sets document-related variables once based on the current document\n   * @param {Element|Object} [doc] An element or document object to use to set the document\n   * @returns {Object} Returns the current document\n   */\n\t\tsetDocument = Sizzle.setDocument = function (node) {\n\t\t\tvar hasCompare,\n\t\t\t    subWindow,\n\t\t\t    doc = node ? node.ownerDocument || node : preferredDoc;\n\n\t\t\t// Return early if doc is invalid or already selected\n\t\t\tif (doc === document || doc.nodeType !== 9 || !doc.documentElement) {\n\t\t\t\treturn document;\n\t\t\t}\n\n\t\t\t// Update global variables\n\t\t\tdocument = doc;\n\t\t\tdocElem = document.documentElement;\n\t\t\tdocumentIsHTML = !isXML(document);\n\n\t\t\t// Support: IE 9-11, Edge\n\t\t\t// Accessing iframe documents after unload throws \"permission denied\" errors (jQuery #13936)\n\t\t\tif (preferredDoc !== document && (subWindow = document.defaultView) && subWindow.top !== subWindow) {\n\n\t\t\t\t// Support: IE 11, Edge\n\t\t\t\tif (subWindow.addEventListener) {\n\t\t\t\t\tsubWindow.addEventListener(\"unload\", unloadHandler, false);\n\n\t\t\t\t\t// Support: IE 9 - 10 only\n\t\t\t\t} else if (subWindow.attachEvent) {\n\t\t\t\t\tsubWindow.attachEvent(\"onunload\", unloadHandler);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t/* Attributes\n   ---------------------------------------------------------------------- */\n\n\t\t\t// Support: IE<8\n\t\t\t// Verify that getAttribute really returns attributes and not properties\n\t\t\t// (excepting IE8 booleans)\n\t\t\tsupport.attributes = assert(function (el) {\n\t\t\t\tel.className = \"i\";\n\t\t\t\treturn !el.getAttribute(\"className\");\n\t\t\t});\n\n\t\t\t/* getElement(s)By*\n   ---------------------------------------------------------------------- */\n\n\t\t\t// Check if getElementsByTagName(\"*\") returns only elements\n\t\t\tsupport.getElementsByTagName = assert(function (el) {\n\t\t\t\tel.appendChild(document.createComment(\"\"));\n\t\t\t\treturn !el.getElementsByTagName(\"*\").length;\n\t\t\t});\n\n\t\t\t// Support: IE<9\n\t\t\tsupport.getElementsByClassName = rnative.test(document.getElementsByClassName);\n\n\t\t\t// Support: IE<10\n\t\t\t// Check if getElementById returns elements by name\n\t\t\t// The broken getElementById methods don't pick up programmatically-set names,\n\t\t\t// so use a roundabout getElementsByName test\n\t\t\tsupport.getById = assert(function (el) {\n\t\t\t\tdocElem.appendChild(el).id = expando;\n\t\t\t\treturn !document.getElementsByName || !document.getElementsByName(expando).length;\n\t\t\t});\n\n\t\t\t// ID filter and find\n\t\t\tif (support.getById) {\n\t\t\t\tExpr.filter[\"ID\"] = function (id) {\n\t\t\t\t\tvar attrId = id.replace(runescape, funescape);\n\t\t\t\t\treturn function (elem) {\n\t\t\t\t\t\treturn elem.getAttribute(\"id\") === attrId;\n\t\t\t\t\t};\n\t\t\t\t};\n\t\t\t\tExpr.find[\"ID\"] = function (id, context) {\n\t\t\t\t\tif (typeof context.getElementById !== \"undefined\" && documentIsHTML) {\n\t\t\t\t\t\tvar elem = context.getElementById(id);\n\t\t\t\t\t\treturn elem ? [elem] : [];\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t} else {\n\t\t\t\tExpr.filter[\"ID\"] = function (id) {\n\t\t\t\t\tvar attrId = id.replace(runescape, funescape);\n\t\t\t\t\treturn function (elem) {\n\t\t\t\t\t\tvar node = typeof elem.getAttributeNode !== \"undefined\" && elem.getAttributeNode(\"id\");\n\t\t\t\t\t\treturn node && node.value === attrId;\n\t\t\t\t\t};\n\t\t\t\t};\n\n\t\t\t\t// Support: IE 6 - 7 only\n\t\t\t\t// getElementById is not reliable as a find shortcut\n\t\t\t\tExpr.find[\"ID\"] = function (id, context) {\n\t\t\t\t\tif (typeof context.getElementById !== \"undefined\" && documentIsHTML) {\n\t\t\t\t\t\tvar node,\n\t\t\t\t\t\t    i,\n\t\t\t\t\t\t    elems,\n\t\t\t\t\t\t    elem = context.getElementById(id);\n\n\t\t\t\t\t\tif (elem) {\n\n\t\t\t\t\t\t\t// Verify the id attribute\n\t\t\t\t\t\t\tnode = elem.getAttributeNode(\"id\");\n\t\t\t\t\t\t\tif (node && node.value === id) {\n\t\t\t\t\t\t\t\treturn [elem];\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t// Fall back on getElementsByName\n\t\t\t\t\t\t\telems = context.getElementsByName(id);\n\t\t\t\t\t\t\ti = 0;\n\t\t\t\t\t\t\twhile (elem = elems[i++]) {\n\t\t\t\t\t\t\t\tnode = elem.getAttributeNode(\"id\");\n\t\t\t\t\t\t\t\tif (node && node.value === id) {\n\t\t\t\t\t\t\t\t\treturn [elem];\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\treturn [];\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\n\t\t\t// Tag\n\t\t\tExpr.find[\"TAG\"] = support.getElementsByTagName ? function (tag, context) {\n\t\t\t\tif (typeof context.getElementsByTagName !== \"undefined\") {\n\t\t\t\t\treturn context.getElementsByTagName(tag);\n\n\t\t\t\t\t// DocumentFragment nodes don't have gEBTN\n\t\t\t\t} else if (support.qsa) {\n\t\t\t\t\treturn context.querySelectorAll(tag);\n\t\t\t\t}\n\t\t\t} : function (tag, context) {\n\t\t\t\tvar elem,\n\t\t\t\t    tmp = [],\n\t\t\t\t    i = 0,\n\n\t\t\t\t// By happy coincidence, a (broken) gEBTN appears on DocumentFragment nodes too\n\t\t\t\tresults = context.getElementsByTagName(tag);\n\n\t\t\t\t// Filter out possible comments\n\t\t\t\tif (tag === \"*\") {\n\t\t\t\t\twhile (elem = results[i++]) {\n\t\t\t\t\t\tif (elem.nodeType === 1) {\n\t\t\t\t\t\t\ttmp.push(elem);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\treturn tmp;\n\t\t\t\t}\n\t\t\t\treturn results;\n\t\t\t};\n\n\t\t\t// Class\n\t\t\tExpr.find[\"CLASS\"] = support.getElementsByClassName && function (className, context) {\n\t\t\t\tif (typeof context.getElementsByClassName !== \"undefined\" && documentIsHTML) {\n\t\t\t\t\treturn context.getElementsByClassName(className);\n\t\t\t\t}\n\t\t\t};\n\n\t\t\t/* QSA/matchesSelector\n   ---------------------------------------------------------------------- */\n\n\t\t\t// QSA and matchesSelector support\n\n\t\t\t// matchesSelector(:active) reports false when true (IE9/Opera 11.5)\n\t\t\trbuggyMatches = [];\n\n\t\t\t// qSa(:focus) reports false when true (Chrome 21)\n\t\t\t// We allow this because of a bug in IE8/9 that throws an error\n\t\t\t// whenever `document.activeElement` is accessed on an iframe\n\t\t\t// So, we allow :focus to pass through QSA all the time to avoid the IE error\n\t\t\t// See https://bugs.jquery.com/ticket/13378\n\t\t\trbuggyQSA = [];\n\n\t\t\tif (support.qsa = rnative.test(document.querySelectorAll)) {\n\t\t\t\t// Build QSA regex\n\t\t\t\t// Regex strategy adopted from Diego Perini\n\t\t\t\tassert(function (el) {\n\t\t\t\t\t// Select is set to empty string on purpose\n\t\t\t\t\t// This is to test IE's treatment of not explicitly\n\t\t\t\t\t// setting a boolean content attribute,\n\t\t\t\t\t// since its presence should be enough\n\t\t\t\t\t// https://bugs.jquery.com/ticket/12359\n\t\t\t\t\tdocElem.appendChild(el).innerHTML = \"<a id='\" + expando + \"'></a>\" + \"<select id='\" + expando + \"-\\r\\\\' msallowcapture=''>\" + \"<option selected=''></option></select>\";\n\n\t\t\t\t\t// Support: IE8, Opera 11-12.16\n\t\t\t\t\t// Nothing should be selected when empty strings follow ^= or $= or *=\n\t\t\t\t\t// The test attribute must be unknown in Opera but \"safe\" for WinRT\n\t\t\t\t\t// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section\n\t\t\t\t\tif (el.querySelectorAll(\"[msallowcapture^='']\").length) {\n\t\t\t\t\t\trbuggyQSA.push(\"[*^$]=\" + whitespace + \"*(?:''|\\\"\\\")\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Support: IE8\n\t\t\t\t\t// Boolean attributes and \"value\" are not treated correctly\n\t\t\t\t\tif (!el.querySelectorAll(\"[selected]\").length) {\n\t\t\t\t\t\trbuggyQSA.push(\"\\\\[\" + whitespace + \"*(?:value|\" + booleans + \")\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Support: Chrome<29, Android<4.4, Safari<7.0+, iOS<7.0+, PhantomJS<1.9.8+\n\t\t\t\t\tif (!el.querySelectorAll(\"[id~=\" + expando + \"-]\").length) {\n\t\t\t\t\t\trbuggyQSA.push(\"~=\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Webkit/Opera - :checked should return selected option elements\n\t\t\t\t\t// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked\n\t\t\t\t\t// IE8 throws error here and will not see later tests\n\t\t\t\t\tif (!el.querySelectorAll(\":checked\").length) {\n\t\t\t\t\t\trbuggyQSA.push(\":checked\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Support: Safari 8+, iOS 8+\n\t\t\t\t\t// https://bugs.webkit.org/show_bug.cgi?id=136851\n\t\t\t\t\t// In-page `selector#id sibling-combinator selector` fails\n\t\t\t\t\tif (!el.querySelectorAll(\"a#\" + expando + \"+*\").length) {\n\t\t\t\t\t\trbuggyQSA.push(\".#.+[+~]\");\n\t\t\t\t\t}\n\t\t\t\t});\n\n\t\t\t\tassert(function (el) {\n\t\t\t\t\tel.innerHTML = \"<a href='' disabled='disabled'></a>\" + \"<select disabled='disabled'><option/></select>\";\n\n\t\t\t\t\t// Support: Windows 8 Native Apps\n\t\t\t\t\t// The type and name attributes are restricted during .innerHTML assignment\n\t\t\t\t\tvar input = document.createElement(\"input\");\n\t\t\t\t\tinput.setAttribute(\"type\", \"hidden\");\n\t\t\t\t\tel.appendChild(input).setAttribute(\"name\", \"D\");\n\n\t\t\t\t\t// Support: IE8\n\t\t\t\t\t// Enforce case-sensitivity of name attribute\n\t\t\t\t\tif (el.querySelectorAll(\"[name=d]\").length) {\n\t\t\t\t\t\trbuggyQSA.push(\"name\" + whitespace + \"*[*^$|!~]?=\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// FF 3.5 - :enabled/:disabled and hidden elements (hidden elements are still enabled)\n\t\t\t\t\t// IE8 throws error here and will not see later tests\n\t\t\t\t\tif (el.querySelectorAll(\":enabled\").length !== 2) {\n\t\t\t\t\t\trbuggyQSA.push(\":enabled\", \":disabled\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Support: IE9-11+\n\t\t\t\t\t// IE's :disabled selector does not pick up the children of disabled fieldsets\n\t\t\t\t\tdocElem.appendChild(el).disabled = true;\n\t\t\t\t\tif (el.querySelectorAll(\":disabled\").length !== 2) {\n\t\t\t\t\t\trbuggyQSA.push(\":enabled\", \":disabled\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Opera 10-11 does not throw on post-comma invalid pseudos\n\t\t\t\t\tel.querySelectorAll(\"*,:x\");\n\t\t\t\t\trbuggyQSA.push(\",.*:\");\n\t\t\t\t});\n\t\t\t}\n\n\t\t\tif (support.matchesSelector = rnative.test(matches = docElem.matches || docElem.webkitMatchesSelector || docElem.mozMatchesSelector || docElem.oMatchesSelector || docElem.msMatchesSelector)) {\n\n\t\t\t\tassert(function (el) {\n\t\t\t\t\t// Check to see if it's possible to do matchesSelector\n\t\t\t\t\t// on a disconnected node (IE 9)\n\t\t\t\t\tsupport.disconnectedMatch = matches.call(el, \"*\");\n\n\t\t\t\t\t// This should fail with an exception\n\t\t\t\t\t// Gecko does not error, returns false instead\n\t\t\t\t\tmatches.call(el, \"[s!='']:x\");\n\t\t\t\t\trbuggyMatches.push(\"!=\", pseudos);\n\t\t\t\t});\n\t\t\t}\n\n\t\t\trbuggyQSA = rbuggyQSA.length && new RegExp(rbuggyQSA.join(\"|\"));\n\t\t\trbuggyMatches = rbuggyMatches.length && new RegExp(rbuggyMatches.join(\"|\"));\n\n\t\t\t/* Contains\n   ---------------------------------------------------------------------- */\n\t\t\thasCompare = rnative.test(docElem.compareDocumentPosition);\n\n\t\t\t// Element contains another\n\t\t\t// Purposefully self-exclusive\n\t\t\t// As in, an element does not contain itself\n\t\t\tcontains = hasCompare || rnative.test(docElem.contains) ? function (a, b) {\n\t\t\t\tvar adown = a.nodeType === 9 ? a.documentElement : a,\n\t\t\t\t    bup = b && b.parentNode;\n\t\t\t\treturn a === bup || !!(bup && bup.nodeType === 1 && (adown.contains ? adown.contains(bup) : a.compareDocumentPosition && a.compareDocumentPosition(bup) & 16));\n\t\t\t} : function (a, b) {\n\t\t\t\tif (b) {\n\t\t\t\t\twhile (b = b.parentNode) {\n\t\t\t\t\t\tif (b === a) {\n\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn false;\n\t\t\t};\n\n\t\t\t/* Sorting\n   ---------------------------------------------------------------------- */\n\n\t\t\t// Document order sorting\n\t\t\tsortOrder = hasCompare ? function (a, b) {\n\n\t\t\t\t// Flag for duplicate removal\n\t\t\t\tif (a === b) {\n\t\t\t\t\thasDuplicate = true;\n\t\t\t\t\treturn 0;\n\t\t\t\t}\n\n\t\t\t\t// Sort on method existence if only one input has compareDocumentPosition\n\t\t\t\tvar compare = !a.compareDocumentPosition - !b.compareDocumentPosition;\n\t\t\t\tif (compare) {\n\t\t\t\t\treturn compare;\n\t\t\t\t}\n\n\t\t\t\t// Calculate position if both inputs belong to the same document\n\t\t\t\tcompare = (a.ownerDocument || a) === (b.ownerDocument || b) ? a.compareDocumentPosition(b) :\n\n\t\t\t\t// Otherwise we know they are disconnected\n\t\t\t\t1;\n\n\t\t\t\t// Disconnected nodes\n\t\t\t\tif (compare & 1 || !support.sortDetached && b.compareDocumentPosition(a) === compare) {\n\n\t\t\t\t\t// Choose the first element that is related to our preferred document\n\t\t\t\t\tif (a === document || a.ownerDocument === preferredDoc && contains(preferredDoc, a)) {\n\t\t\t\t\t\treturn -1;\n\t\t\t\t\t}\n\t\t\t\t\tif (b === document || b.ownerDocument === preferredDoc && contains(preferredDoc, b)) {\n\t\t\t\t\t\treturn 1;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Maintain original order\n\t\t\t\t\treturn sortInput ? indexOf(sortInput, a) - indexOf(sortInput, b) : 0;\n\t\t\t\t}\n\n\t\t\t\treturn compare & 4 ? -1 : 1;\n\t\t\t} : function (a, b) {\n\t\t\t\t// Exit early if the nodes are identical\n\t\t\t\tif (a === b) {\n\t\t\t\t\thasDuplicate = true;\n\t\t\t\t\treturn 0;\n\t\t\t\t}\n\n\t\t\t\tvar cur,\n\t\t\t\t    i = 0,\n\t\t\t\t    aup = a.parentNode,\n\t\t\t\t    bup = b.parentNode,\n\t\t\t\t    ap = [a],\n\t\t\t\t    bp = [b];\n\n\t\t\t\t// Parentless nodes are either documents or disconnected\n\t\t\t\tif (!aup || !bup) {\n\t\t\t\t\treturn a === document ? -1 : b === document ? 1 : aup ? -1 : bup ? 1 : sortInput ? indexOf(sortInput, a) - indexOf(sortInput, b) : 0;\n\n\t\t\t\t\t// If the nodes are siblings, we can do a quick check\n\t\t\t\t} else if (aup === bup) {\n\t\t\t\t\treturn siblingCheck(a, b);\n\t\t\t\t}\n\n\t\t\t\t// Otherwise we need full lists of their ancestors for comparison\n\t\t\t\tcur = a;\n\t\t\t\twhile (cur = cur.parentNode) {\n\t\t\t\t\tap.unshift(cur);\n\t\t\t\t}\n\t\t\t\tcur = b;\n\t\t\t\twhile (cur = cur.parentNode) {\n\t\t\t\t\tbp.unshift(cur);\n\t\t\t\t}\n\n\t\t\t\t// Walk down the tree looking for a discrepancy\n\t\t\t\twhile (ap[i] === bp[i]) {\n\t\t\t\t\ti++;\n\t\t\t\t}\n\n\t\t\t\treturn i ?\n\t\t\t\t// Do a sibling check if the nodes have a common ancestor\n\t\t\t\tsiblingCheck(ap[i], bp[i]) :\n\n\t\t\t\t// Otherwise nodes in our document sort first\n\t\t\t\tap[i] === preferredDoc ? -1 : bp[i] === preferredDoc ? 1 : 0;\n\t\t\t};\n\n\t\t\treturn document;\n\t\t};\n\n\t\tSizzle.matches = function (expr, elements) {\n\t\t\treturn Sizzle(expr, null, null, elements);\n\t\t};\n\n\t\tSizzle.matchesSelector = function (elem, expr) {\n\t\t\t// Set document vars if needed\n\t\t\tif ((elem.ownerDocument || elem) !== document) {\n\t\t\t\tsetDocument(elem);\n\t\t\t}\n\n\t\t\t// Make sure that attribute selectors are quoted\n\t\t\texpr = expr.replace(rattributeQuotes, \"='$1']\");\n\n\t\t\tif (support.matchesSelector && documentIsHTML && !compilerCache[expr + \" \"] && (!rbuggyMatches || !rbuggyMatches.test(expr)) && (!rbuggyQSA || !rbuggyQSA.test(expr))) {\n\n\t\t\t\ttry {\n\t\t\t\t\tvar ret = matches.call(elem, expr);\n\n\t\t\t\t\t// IE 9's matchesSelector returns false on disconnected nodes\n\t\t\t\t\tif (ret || support.disconnectedMatch ||\n\t\t\t\t\t// As well, disconnected nodes are said to be in a document\n\t\t\t\t\t// fragment in IE 9\n\t\t\t\t\telem.document && elem.document.nodeType !== 11) {\n\t\t\t\t\t\treturn ret;\n\t\t\t\t\t}\n\t\t\t\t} catch (e) {}\n\t\t\t}\n\n\t\t\treturn Sizzle(expr, document, null, [elem]).length > 0;\n\t\t};\n\n\t\tSizzle.contains = function (context, elem) {\n\t\t\t// Set document vars if needed\n\t\t\tif ((context.ownerDocument || context) !== document) {\n\t\t\t\tsetDocument(context);\n\t\t\t}\n\t\t\treturn contains(context, elem);\n\t\t};\n\n\t\tSizzle.attr = function (elem, name) {\n\t\t\t// Set document vars if needed\n\t\t\tif ((elem.ownerDocument || elem) !== document) {\n\t\t\t\tsetDocument(elem);\n\t\t\t}\n\n\t\t\tvar fn = Expr.attrHandle[name.toLowerCase()],\n\n\t\t\t// Don't get fooled by Object.prototype properties (jQuery #13807)\n\t\t\tval = fn && hasOwn.call(Expr.attrHandle, name.toLowerCase()) ? fn(elem, name, !documentIsHTML) : undefined;\n\n\t\t\treturn val !== undefined ? val : support.attributes || !documentIsHTML ? elem.getAttribute(name) : (val = elem.getAttributeNode(name)) && val.specified ? val.value : null;\n\t\t};\n\n\t\tSizzle.escape = function (sel) {\n\t\t\treturn (sel + \"\").replace(rcssescape, fcssescape);\n\t\t};\n\n\t\tSizzle.error = function (msg) {\n\t\t\tthrow new Error(\"Syntax error, unrecognized expression: \" + msg);\n\t\t};\n\n\t\t/**\n   * Document sorting and removing duplicates\n   * @param {ArrayLike} results\n   */\n\t\tSizzle.uniqueSort = function (results) {\n\t\t\tvar elem,\n\t\t\t    duplicates = [],\n\t\t\t    j = 0,\n\t\t\t    i = 0;\n\n\t\t\t// Unless we *know* we can detect duplicates, assume their presence\n\t\t\thasDuplicate = !support.detectDuplicates;\n\t\t\tsortInput = !support.sortStable && results.slice(0);\n\t\t\tresults.sort(sortOrder);\n\n\t\t\tif (hasDuplicate) {\n\t\t\t\twhile (elem = results[i++]) {\n\t\t\t\t\tif (elem === results[i]) {\n\t\t\t\t\t\tj = duplicates.push(i);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\twhile (j--) {\n\t\t\t\t\tresults.splice(duplicates[j], 1);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Clear input after sorting to release objects\n\t\t\t// See https://github.com/jquery/sizzle/pull/225\n\t\t\tsortInput = null;\n\n\t\t\treturn results;\n\t\t};\n\n\t\t/**\n   * Utility function for retrieving the text value of an array of DOM nodes\n   * @param {Array|Element} elem\n   */\n\t\tgetText = Sizzle.getText = function (elem) {\n\t\t\tvar node,\n\t\t\t    ret = \"\",\n\t\t\t    i = 0,\n\t\t\t    nodeType = elem.nodeType;\n\n\t\t\tif (!nodeType) {\n\t\t\t\t// If no nodeType, this is expected to be an array\n\t\t\t\twhile (node = elem[i++]) {\n\t\t\t\t\t// Do not traverse comment nodes\n\t\t\t\t\tret += getText(node);\n\t\t\t\t}\n\t\t\t} else if (nodeType === 1 || nodeType === 9 || nodeType === 11) {\n\t\t\t\t// Use textContent for elements\n\t\t\t\t// innerText usage removed for consistency of new lines (jQuery #11153)\n\t\t\t\tif (typeof elem.textContent === \"string\") {\n\t\t\t\t\treturn elem.textContent;\n\t\t\t\t} else {\n\t\t\t\t\t// Traverse its children\n\t\t\t\t\tfor (elem = elem.firstChild; elem; elem = elem.nextSibling) {\n\t\t\t\t\t\tret += getText(elem);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else if (nodeType === 3 || nodeType === 4) {\n\t\t\t\treturn elem.nodeValue;\n\t\t\t}\n\t\t\t// Do not include comment or processing instruction nodes\n\n\t\t\treturn ret;\n\t\t};\n\n\t\tExpr = Sizzle.selectors = {\n\n\t\t\t// Can be adjusted by the user\n\t\t\tcacheLength: 50,\n\n\t\t\tcreatePseudo: markFunction,\n\n\t\t\tmatch: matchExpr,\n\n\t\t\tattrHandle: {},\n\n\t\t\tfind: {},\n\n\t\t\trelative: {\n\t\t\t\t\">\": { dir: \"parentNode\", first: true },\n\t\t\t\t\" \": { dir: \"parentNode\" },\n\t\t\t\t\"+\": { dir: \"previousSibling\", first: true },\n\t\t\t\t\"~\": { dir: \"previousSibling\" }\n\t\t\t},\n\n\t\t\tpreFilter: {\n\t\t\t\t\"ATTR\": function ATTR(match) {\n\t\t\t\t\tmatch[1] = match[1].replace(runescape, funescape);\n\n\t\t\t\t\t// Move the given value to match[3] whether quoted or unquoted\n\t\t\t\t\tmatch[3] = (match[3] || match[4] || match[5] || \"\").replace(runescape, funescape);\n\n\t\t\t\t\tif (match[2] === \"~=\") {\n\t\t\t\t\t\tmatch[3] = \" \" + match[3] + \" \";\n\t\t\t\t\t}\n\n\t\t\t\t\treturn match.slice(0, 4);\n\t\t\t\t},\n\n\t\t\t\t\"CHILD\": function CHILD(match) {\n\t\t\t\t\t/* matches from matchExpr[\"CHILD\"]\n     \t1 type (only|nth|...)\n     \t2 what (child|of-type)\n     \t3 argument (even|odd|\\d*|\\d*n([+-]\\d+)?|...)\n     \t4 xn-component of xn+y argument ([+-]?\\d*n|)\n     \t5 sign of xn-component\n     \t6 x of xn-component\n     \t7 sign of y-component\n     \t8 y of y-component\n     */\n\t\t\t\t\tmatch[1] = match[1].toLowerCase();\n\n\t\t\t\t\tif (match[1].slice(0, 3) === \"nth\") {\n\t\t\t\t\t\t// nth-* requires argument\n\t\t\t\t\t\tif (!match[3]) {\n\t\t\t\t\t\t\tSizzle.error(match[0]);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// numeric x and y parameters for Expr.filter.CHILD\n\t\t\t\t\t\t// remember that false/true cast respectively to 0/1\n\t\t\t\t\t\tmatch[4] = +(match[4] ? match[5] + (match[6] || 1) : 2 * (match[3] === \"even\" || match[3] === \"odd\"));\n\t\t\t\t\t\tmatch[5] = +(match[7] + match[8] || match[3] === \"odd\");\n\n\t\t\t\t\t\t// other types prohibit arguments\n\t\t\t\t\t} else if (match[3]) {\n\t\t\t\t\t\tSizzle.error(match[0]);\n\t\t\t\t\t}\n\n\t\t\t\t\treturn match;\n\t\t\t\t},\n\n\t\t\t\t\"PSEUDO\": function PSEUDO(match) {\n\t\t\t\t\tvar excess,\n\t\t\t\t\t    unquoted = !match[6] && match[2];\n\n\t\t\t\t\tif (matchExpr[\"CHILD\"].test(match[0])) {\n\t\t\t\t\t\treturn null;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Accept quoted arguments as-is\n\t\t\t\t\tif (match[3]) {\n\t\t\t\t\t\tmatch[2] = match[4] || match[5] || \"\";\n\n\t\t\t\t\t\t// Strip excess characters from unquoted arguments\n\t\t\t\t\t} else if (unquoted && rpseudo.test(unquoted) && (\n\t\t\t\t\t// Get excess from tokenize (recursively)\n\t\t\t\t\texcess = tokenize(unquoted, true)) && (\n\t\t\t\t\t// advance to the next closing parenthesis\n\t\t\t\t\texcess = unquoted.indexOf(\")\", unquoted.length - excess) - unquoted.length)) {\n\n\t\t\t\t\t\t// excess is a negative index\n\t\t\t\t\t\tmatch[0] = match[0].slice(0, excess);\n\t\t\t\t\t\tmatch[2] = unquoted.slice(0, excess);\n\t\t\t\t\t}\n\n\t\t\t\t\t// Return only captures needed by the pseudo filter method (type and argument)\n\t\t\t\t\treturn match.slice(0, 3);\n\t\t\t\t}\n\t\t\t},\n\n\t\t\tfilter: {\n\n\t\t\t\t\"TAG\": function TAG(nodeNameSelector) {\n\t\t\t\t\tvar nodeName = nodeNameSelector.replace(runescape, funescape).toLowerCase();\n\t\t\t\t\treturn nodeNameSelector === \"*\" ? function () {\n\t\t\t\t\t\treturn true;\n\t\t\t\t\t} : function (elem) {\n\t\t\t\t\t\treturn elem.nodeName && elem.nodeName.toLowerCase() === nodeName;\n\t\t\t\t\t};\n\t\t\t\t},\n\n\t\t\t\t\"CLASS\": function CLASS(className) {\n\t\t\t\t\tvar pattern = classCache[className + \" \"];\n\n\t\t\t\t\treturn pattern || (pattern = new RegExp(\"(^|\" + whitespace + \")\" + className + \"(\" + whitespace + \"|$)\")) && classCache(className, function (elem) {\n\t\t\t\t\t\treturn pattern.test(typeof elem.className === \"string\" && elem.className || typeof elem.getAttribute !== \"undefined\" && elem.getAttribute(\"class\") || \"\");\n\t\t\t\t\t});\n\t\t\t\t},\n\n\t\t\t\t\"ATTR\": function ATTR(name, operator, check) {\n\t\t\t\t\treturn function (elem) {\n\t\t\t\t\t\tvar result = Sizzle.attr(elem, name);\n\n\t\t\t\t\t\tif (result == null) {\n\t\t\t\t\t\t\treturn operator === \"!=\";\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (!operator) {\n\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tresult += \"\";\n\n\t\t\t\t\t\treturn operator === \"=\" ? result === check : operator === \"!=\" ? result !== check : operator === \"^=\" ? check && result.indexOf(check) === 0 : operator === \"*=\" ? check && result.indexOf(check) > -1 : operator === \"$=\" ? check && result.slice(-check.length) === check : operator === \"~=\" ? (\" \" + result.replace(rwhitespace, \" \") + \" \").indexOf(check) > -1 : operator === \"|=\" ? result === check || result.slice(0, check.length + 1) === check + \"-\" : false;\n\t\t\t\t\t};\n\t\t\t\t},\n\n\t\t\t\t\"CHILD\": function CHILD(type, what, argument, first, last) {\n\t\t\t\t\tvar simple = type.slice(0, 3) !== \"nth\",\n\t\t\t\t\t    forward = type.slice(-4) !== \"last\",\n\t\t\t\t\t    ofType = what === \"of-type\";\n\n\t\t\t\t\treturn first === 1 && last === 0 ?\n\n\t\t\t\t\t// Shortcut for :nth-*(n)\n\t\t\t\t\tfunction (elem) {\n\t\t\t\t\t\treturn !!elem.parentNode;\n\t\t\t\t\t} : function (elem, context, xml) {\n\t\t\t\t\t\tvar cache,\n\t\t\t\t\t\t    uniqueCache,\n\t\t\t\t\t\t    outerCache,\n\t\t\t\t\t\t    node,\n\t\t\t\t\t\t    nodeIndex,\n\t\t\t\t\t\t    start,\n\t\t\t\t\t\t    dir = simple !== forward ? \"nextSibling\" : \"previousSibling\",\n\t\t\t\t\t\t    parent = elem.parentNode,\n\t\t\t\t\t\t    name = ofType && elem.nodeName.toLowerCase(),\n\t\t\t\t\t\t    useCache = !xml && !ofType,\n\t\t\t\t\t\t    diff = false;\n\n\t\t\t\t\t\tif (parent) {\n\n\t\t\t\t\t\t\t// :(first|last|only)-(child|of-type)\n\t\t\t\t\t\t\tif (simple) {\n\t\t\t\t\t\t\t\twhile (dir) {\n\t\t\t\t\t\t\t\t\tnode = elem;\n\t\t\t\t\t\t\t\t\twhile (node = node[dir]) {\n\t\t\t\t\t\t\t\t\t\tif (ofType ? node.nodeName.toLowerCase() === name : node.nodeType === 1) {\n\n\t\t\t\t\t\t\t\t\t\t\treturn false;\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t// Reverse direction for :only-* (if we haven't yet done so)\n\t\t\t\t\t\t\t\t\tstart = dir = type === \"only\" && !start && \"nextSibling\";\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tstart = [forward ? parent.firstChild : parent.lastChild];\n\n\t\t\t\t\t\t\t// non-xml :nth-child(...) stores cache data on `parent`\n\t\t\t\t\t\t\tif (forward && useCache) {\n\n\t\t\t\t\t\t\t\t// Seek `elem` from a previously-cached index\n\n\t\t\t\t\t\t\t\t// ...in a gzip-friendly way\n\t\t\t\t\t\t\t\tnode = parent;\n\t\t\t\t\t\t\t\touterCache = node[expando] || (node[expando] = {});\n\n\t\t\t\t\t\t\t\t// Support: IE <9 only\n\t\t\t\t\t\t\t\t// Defend against cloned attroperties (jQuery gh-1709)\n\t\t\t\t\t\t\t\tuniqueCache = outerCache[node.uniqueID] || (outerCache[node.uniqueID] = {});\n\n\t\t\t\t\t\t\t\tcache = uniqueCache[type] || [];\n\t\t\t\t\t\t\t\tnodeIndex = cache[0] === dirruns && cache[1];\n\t\t\t\t\t\t\t\tdiff = nodeIndex && cache[2];\n\t\t\t\t\t\t\t\tnode = nodeIndex && parent.childNodes[nodeIndex];\n\n\t\t\t\t\t\t\t\twhile (node = ++nodeIndex && node && node[dir] || (\n\n\t\t\t\t\t\t\t\t// Fallback to seeking `elem` from the start\n\t\t\t\t\t\t\t\tdiff = nodeIndex = 0) || start.pop()) {\n\n\t\t\t\t\t\t\t\t\t// When found, cache indexes on `parent` and break\n\t\t\t\t\t\t\t\t\tif (node.nodeType === 1 && ++diff && node === elem) {\n\t\t\t\t\t\t\t\t\t\tuniqueCache[type] = [dirruns, nodeIndex, diff];\n\t\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t// Use previously-cached element index if available\n\t\t\t\t\t\t\t\tif (useCache) {\n\t\t\t\t\t\t\t\t\t// ...in a gzip-friendly way\n\t\t\t\t\t\t\t\t\tnode = elem;\n\t\t\t\t\t\t\t\t\touterCache = node[expando] || (node[expando] = {});\n\n\t\t\t\t\t\t\t\t\t// Support: IE <9 only\n\t\t\t\t\t\t\t\t\t// Defend against cloned attroperties (jQuery gh-1709)\n\t\t\t\t\t\t\t\t\tuniqueCache = outerCache[node.uniqueID] || (outerCache[node.uniqueID] = {});\n\n\t\t\t\t\t\t\t\t\tcache = uniqueCache[type] || [];\n\t\t\t\t\t\t\t\t\tnodeIndex = cache[0] === dirruns && cache[1];\n\t\t\t\t\t\t\t\t\tdiff = nodeIndex;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t// xml :nth-child(...)\n\t\t\t\t\t\t\t\t// or :nth-last-child(...) or :nth(-last)?-of-type(...)\n\t\t\t\t\t\t\t\tif (diff === false) {\n\t\t\t\t\t\t\t\t\t// Use the same loop as above to seek `elem` from the start\n\t\t\t\t\t\t\t\t\twhile (node = ++nodeIndex && node && node[dir] || (diff = nodeIndex = 0) || start.pop()) {\n\n\t\t\t\t\t\t\t\t\t\tif ((ofType ? node.nodeName.toLowerCase() === name : node.nodeType === 1) && ++diff) {\n\n\t\t\t\t\t\t\t\t\t\t\t// Cache the index of each encountered element\n\t\t\t\t\t\t\t\t\t\t\tif (useCache) {\n\t\t\t\t\t\t\t\t\t\t\t\touterCache = node[expando] || (node[expando] = {});\n\n\t\t\t\t\t\t\t\t\t\t\t\t// Support: IE <9 only\n\t\t\t\t\t\t\t\t\t\t\t\t// Defend against cloned attroperties (jQuery gh-1709)\n\t\t\t\t\t\t\t\t\t\t\t\tuniqueCache = outerCache[node.uniqueID] || (outerCache[node.uniqueID] = {});\n\n\t\t\t\t\t\t\t\t\t\t\t\tuniqueCache[type] = [dirruns, diff];\n\t\t\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\t\t\tif (node === elem) {\n\t\t\t\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t// Incorporate the offset, then check against cycle size\n\t\t\t\t\t\t\tdiff -= last;\n\t\t\t\t\t\t\treturn diff === first || diff % first === 0 && diff / first >= 0;\n\t\t\t\t\t\t}\n\t\t\t\t\t};\n\t\t\t\t},\n\n\t\t\t\t\"PSEUDO\": function PSEUDO(pseudo, argument) {\n\t\t\t\t\t// pseudo-class names are case-insensitive\n\t\t\t\t\t// http://www.w3.org/TR/selectors/#pseudo-classes\n\t\t\t\t\t// Prioritize by case sensitivity in case custom pseudos are added with uppercase letters\n\t\t\t\t\t// Remember that setFilters inherits from pseudos\n\t\t\t\t\tvar args,\n\t\t\t\t\t    fn = Expr.pseudos[pseudo] || Expr.setFilters[pseudo.toLowerCase()] || Sizzle.error(\"unsupported pseudo: \" + pseudo);\n\n\t\t\t\t\t// The user may use createPseudo to indicate that\n\t\t\t\t\t// arguments are needed to create the filter function\n\t\t\t\t\t// just as Sizzle does\n\t\t\t\t\tif (fn[expando]) {\n\t\t\t\t\t\treturn fn(argument);\n\t\t\t\t\t}\n\n\t\t\t\t\t// But maintain support for old signatures\n\t\t\t\t\tif (fn.length > 1) {\n\t\t\t\t\t\targs = [pseudo, pseudo, \"\", argument];\n\t\t\t\t\t\treturn Expr.setFilters.hasOwnProperty(pseudo.toLowerCase()) ? markFunction(function (seed, matches) {\n\t\t\t\t\t\t\tvar idx,\n\t\t\t\t\t\t\t    matched = fn(seed, argument),\n\t\t\t\t\t\t\t    i = matched.length;\n\t\t\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\t\t\tidx = indexOf(seed, matched[i]);\n\t\t\t\t\t\t\t\tseed[idx] = !(matches[idx] = matched[i]);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}) : function (elem) {\n\t\t\t\t\t\t\treturn fn(elem, 0, args);\n\t\t\t\t\t\t};\n\t\t\t\t\t}\n\n\t\t\t\t\treturn fn;\n\t\t\t\t}\n\t\t\t},\n\n\t\t\tpseudos: {\n\t\t\t\t// Potentially complex pseudos\n\t\t\t\t\"not\": markFunction(function (selector) {\n\t\t\t\t\t// Trim the selector passed to compile\n\t\t\t\t\t// to avoid treating leading and trailing\n\t\t\t\t\t// spaces as combinators\n\t\t\t\t\tvar input = [],\n\t\t\t\t\t    results = [],\n\t\t\t\t\t    matcher = compile(selector.replace(rtrim, \"$1\"));\n\n\t\t\t\t\treturn matcher[expando] ? markFunction(function (seed, matches, context, xml) {\n\t\t\t\t\t\tvar elem,\n\t\t\t\t\t\t    unmatched = matcher(seed, null, xml, []),\n\t\t\t\t\t\t    i = seed.length;\n\n\t\t\t\t\t\t// Match elements unmatched by `matcher`\n\t\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\t\tif (elem = unmatched[i]) {\n\t\t\t\t\t\t\t\tseed[i] = !(matches[i] = elem);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}) : function (elem, context, xml) {\n\t\t\t\t\t\tinput[0] = elem;\n\t\t\t\t\t\tmatcher(input, null, xml, results);\n\t\t\t\t\t\t// Don't keep the element (issue #299)\n\t\t\t\t\t\tinput[0] = null;\n\t\t\t\t\t\treturn !results.pop();\n\t\t\t\t\t};\n\t\t\t\t}),\n\n\t\t\t\t\"has\": markFunction(function (selector) {\n\t\t\t\t\treturn function (elem) {\n\t\t\t\t\t\treturn Sizzle(selector, elem).length > 0;\n\t\t\t\t\t};\n\t\t\t\t}),\n\n\t\t\t\t\"contains\": markFunction(function (text) {\n\t\t\t\t\ttext = text.replace(runescape, funescape);\n\t\t\t\t\treturn function (elem) {\n\t\t\t\t\t\treturn (elem.textContent || elem.innerText || getText(elem)).indexOf(text) > -1;\n\t\t\t\t\t};\n\t\t\t\t}),\n\n\t\t\t\t// \"Whether an element is represented by a :lang() selector\n\t\t\t\t// is based solely on the element's language value\n\t\t\t\t// being equal to the identifier C,\n\t\t\t\t// or beginning with the identifier C immediately followed by \"-\".\n\t\t\t\t// The matching of C against the element's language value is performed case-insensitively.\n\t\t\t\t// The identifier C does not have to be a valid language name.\"\n\t\t\t\t// http://www.w3.org/TR/selectors/#lang-pseudo\n\t\t\t\t\"lang\": markFunction(function (lang) {\n\t\t\t\t\t// lang value must be a valid identifier\n\t\t\t\t\tif (!ridentifier.test(lang || \"\")) {\n\t\t\t\t\t\tSizzle.error(\"unsupported lang: \" + lang);\n\t\t\t\t\t}\n\t\t\t\t\tlang = lang.replace(runescape, funescape).toLowerCase();\n\t\t\t\t\treturn function (elem) {\n\t\t\t\t\t\tvar elemLang;\n\t\t\t\t\t\tdo {\n\t\t\t\t\t\t\tif (elemLang = documentIsHTML ? elem.lang : elem.getAttribute(\"xml:lang\") || elem.getAttribute(\"lang\")) {\n\n\t\t\t\t\t\t\t\telemLang = elemLang.toLowerCase();\n\t\t\t\t\t\t\t\treturn elemLang === lang || elemLang.indexOf(lang + \"-\") === 0;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t} while ((elem = elem.parentNode) && elem.nodeType === 1);\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t};\n\t\t\t\t}),\n\n\t\t\t\t// Miscellaneous\n\t\t\t\t\"target\": function target(elem) {\n\t\t\t\t\tvar hash = window.location && window.location.hash;\n\t\t\t\t\treturn hash && hash.slice(1) === elem.id;\n\t\t\t\t},\n\n\t\t\t\t\"root\": function root(elem) {\n\t\t\t\t\treturn elem === docElem;\n\t\t\t\t},\n\n\t\t\t\t\"focus\": function focus(elem) {\n\t\t\t\t\treturn elem === document.activeElement && (!document.hasFocus || document.hasFocus()) && !!(elem.type || elem.href || ~elem.tabIndex);\n\t\t\t\t},\n\n\t\t\t\t// Boolean properties\n\t\t\t\t\"enabled\": createDisabledPseudo(false),\n\t\t\t\t\"disabled\": createDisabledPseudo(true),\n\n\t\t\t\t\"checked\": function checked(elem) {\n\t\t\t\t\t// In CSS3, :checked should return both checked and selected elements\n\t\t\t\t\t// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked\n\t\t\t\t\tvar nodeName = elem.nodeName.toLowerCase();\n\t\t\t\t\treturn nodeName === \"input\" && !!elem.checked || nodeName === \"option\" && !!elem.selected;\n\t\t\t\t},\n\n\t\t\t\t\"selected\": function selected(elem) {\n\t\t\t\t\t// Accessing this property makes selected-by-default\n\t\t\t\t\t// options in Safari work properly\n\t\t\t\t\tif (elem.parentNode) {\n\t\t\t\t\t\telem.parentNode.selectedIndex;\n\t\t\t\t\t}\n\n\t\t\t\t\treturn elem.selected === true;\n\t\t\t\t},\n\n\t\t\t\t// Contents\n\t\t\t\t\"empty\": function empty(elem) {\n\t\t\t\t\t// http://www.w3.org/TR/selectors/#empty-pseudo\n\t\t\t\t\t// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),\n\t\t\t\t\t//   but not by others (comment: 8; processing instruction: 7; etc.)\n\t\t\t\t\t// nodeType < 6 works because attributes (2) do not appear as children\n\t\t\t\t\tfor (elem = elem.firstChild; elem; elem = elem.nextSibling) {\n\t\t\t\t\t\tif (elem.nodeType < 6) {\n\t\t\t\t\t\t\treturn false;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\treturn true;\n\t\t\t\t},\n\n\t\t\t\t\"parent\": function parent(elem) {\n\t\t\t\t\treturn !Expr.pseudos[\"empty\"](elem);\n\t\t\t\t},\n\n\t\t\t\t// Element/input types\n\t\t\t\t\"header\": function header(elem) {\n\t\t\t\t\treturn rheader.test(elem.nodeName);\n\t\t\t\t},\n\n\t\t\t\t\"input\": function input(elem) {\n\t\t\t\t\treturn rinputs.test(elem.nodeName);\n\t\t\t\t},\n\n\t\t\t\t\"button\": function button(elem) {\n\t\t\t\t\tvar name = elem.nodeName.toLowerCase();\n\t\t\t\t\treturn name === \"input\" && elem.type === \"button\" || name === \"button\";\n\t\t\t\t},\n\n\t\t\t\t\"text\": function text(elem) {\n\t\t\t\t\tvar attr;\n\t\t\t\t\treturn elem.nodeName.toLowerCase() === \"input\" && elem.type === \"text\" && (\n\n\t\t\t\t\t// Support: IE<8\n\t\t\t\t\t// New HTML5 attribute values (e.g., \"search\") appear with elem.type === \"text\"\n\t\t\t\t\t(attr = elem.getAttribute(\"type\")) == null || attr.toLowerCase() === \"text\");\n\t\t\t\t},\n\n\t\t\t\t// Position-in-collection\n\t\t\t\t\"first\": createPositionalPseudo(function () {\n\t\t\t\t\treturn [0];\n\t\t\t\t}),\n\n\t\t\t\t\"last\": createPositionalPseudo(function (matchIndexes, length) {\n\t\t\t\t\treturn [length - 1];\n\t\t\t\t}),\n\n\t\t\t\t\"eq\": createPositionalPseudo(function (matchIndexes, length, argument) {\n\t\t\t\t\treturn [argument < 0 ? argument + length : argument];\n\t\t\t\t}),\n\n\t\t\t\t\"even\": createPositionalPseudo(function (matchIndexes, length) {\n\t\t\t\t\tvar i = 0;\n\t\t\t\t\tfor (; i < length; i += 2) {\n\t\t\t\t\t\tmatchIndexes.push(i);\n\t\t\t\t\t}\n\t\t\t\t\treturn matchIndexes;\n\t\t\t\t}),\n\n\t\t\t\t\"odd\": createPositionalPseudo(function (matchIndexes, length) {\n\t\t\t\t\tvar i = 1;\n\t\t\t\t\tfor (; i < length; i += 2) {\n\t\t\t\t\t\tmatchIndexes.push(i);\n\t\t\t\t\t}\n\t\t\t\t\treturn matchIndexes;\n\t\t\t\t}),\n\n\t\t\t\t\"lt\": createPositionalPseudo(function (matchIndexes, length, argument) {\n\t\t\t\t\tvar i = argument < 0 ? argument + length : argument;\n\t\t\t\t\tfor (; --i >= 0;) {\n\t\t\t\t\t\tmatchIndexes.push(i);\n\t\t\t\t\t}\n\t\t\t\t\treturn matchIndexes;\n\t\t\t\t}),\n\n\t\t\t\t\"gt\": createPositionalPseudo(function (matchIndexes, length, argument) {\n\t\t\t\t\tvar i = argument < 0 ? argument + length : argument;\n\t\t\t\t\tfor (; ++i < length;) {\n\t\t\t\t\t\tmatchIndexes.push(i);\n\t\t\t\t\t}\n\t\t\t\t\treturn matchIndexes;\n\t\t\t\t})\n\t\t\t}\n\t\t};\n\n\t\tExpr.pseudos[\"nth\"] = Expr.pseudos[\"eq\"];\n\n\t\t// Add button/input type pseudos\n\t\tfor (i in { radio: true, checkbox: true, file: true, password: true, image: true }) {\n\t\t\tExpr.pseudos[i] = createInputPseudo(i);\n\t\t}\n\t\tfor (i in { submit: true, reset: true }) {\n\t\t\tExpr.pseudos[i] = createButtonPseudo(i);\n\t\t}\n\n\t\t// Easy API for creating new setFilters\n\t\tfunction setFilters() {}\n\t\tsetFilters.prototype = Expr.filters = Expr.pseudos;\n\t\tExpr.setFilters = new setFilters();\n\n\t\ttokenize = Sizzle.tokenize = function (selector, parseOnly) {\n\t\t\tvar matched,\n\t\t\t    match,\n\t\t\t    tokens,\n\t\t\t    type,\n\t\t\t    soFar,\n\t\t\t    groups,\n\t\t\t    preFilters,\n\t\t\t    cached = tokenCache[selector + \" \"];\n\n\t\t\tif (cached) {\n\t\t\t\treturn parseOnly ? 0 : cached.slice(0);\n\t\t\t}\n\n\t\t\tsoFar = selector;\n\t\t\tgroups = [];\n\t\t\tpreFilters = Expr.preFilter;\n\n\t\t\twhile (soFar) {\n\n\t\t\t\t// Comma and first run\n\t\t\t\tif (!matched || (match = rcomma.exec(soFar))) {\n\t\t\t\t\tif (match) {\n\t\t\t\t\t\t// Don't consume trailing commas as valid\n\t\t\t\t\t\tsoFar = soFar.slice(match[0].length) || soFar;\n\t\t\t\t\t}\n\t\t\t\t\tgroups.push(tokens = []);\n\t\t\t\t}\n\n\t\t\t\tmatched = false;\n\n\t\t\t\t// Combinators\n\t\t\t\tif (match = rcombinators.exec(soFar)) {\n\t\t\t\t\tmatched = match.shift();\n\t\t\t\t\ttokens.push({\n\t\t\t\t\t\tvalue: matched,\n\t\t\t\t\t\t// Cast descendant combinators to space\n\t\t\t\t\t\ttype: match[0].replace(rtrim, \" \")\n\t\t\t\t\t});\n\t\t\t\t\tsoFar = soFar.slice(matched.length);\n\t\t\t\t}\n\n\t\t\t\t// Filters\n\t\t\t\tfor (type in Expr.filter) {\n\t\t\t\t\tif ((match = matchExpr[type].exec(soFar)) && (!preFilters[type] || (match = preFilters[type](match)))) {\n\t\t\t\t\t\tmatched = match.shift();\n\t\t\t\t\t\ttokens.push({\n\t\t\t\t\t\t\tvalue: matched,\n\t\t\t\t\t\t\ttype: type,\n\t\t\t\t\t\t\tmatches: match\n\t\t\t\t\t\t});\n\t\t\t\t\t\tsoFar = soFar.slice(matched.length);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tif (!matched) {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Return the length of the invalid excess\n\t\t\t// if we're just parsing\n\t\t\t// Otherwise, throw an error or return tokens\n\t\t\treturn parseOnly ? soFar.length : soFar ? Sizzle.error(selector) :\n\t\t\t// Cache the tokens\n\t\t\ttokenCache(selector, groups).slice(0);\n\t\t};\n\n\t\tfunction toSelector(tokens) {\n\t\t\tvar i = 0,\n\t\t\t    len = tokens.length,\n\t\t\t    selector = \"\";\n\t\t\tfor (; i < len; i++) {\n\t\t\t\tselector += tokens[i].value;\n\t\t\t}\n\t\t\treturn selector;\n\t\t}\n\n\t\tfunction addCombinator(matcher, combinator, base) {\n\t\t\tvar dir = combinator.dir,\n\t\t\t    skip = combinator.next,\n\t\t\t    key = skip || dir,\n\t\t\t    checkNonElements = base && key === \"parentNode\",\n\t\t\t    doneName = done++;\n\n\t\t\treturn combinator.first ?\n\t\t\t// Check against closest ancestor/preceding element\n\t\t\tfunction (elem, context, xml) {\n\t\t\t\twhile (elem = elem[dir]) {\n\t\t\t\t\tif (elem.nodeType === 1 || checkNonElements) {\n\t\t\t\t\t\treturn matcher(elem, context, xml);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn false;\n\t\t\t} :\n\n\t\t\t// Check against all ancestor/preceding elements\n\t\t\tfunction (elem, context, xml) {\n\t\t\t\tvar oldCache,\n\t\t\t\t    uniqueCache,\n\t\t\t\t    outerCache,\n\t\t\t\t    newCache = [dirruns, doneName];\n\n\t\t\t\t// We can't set arbitrary data on XML nodes, so they don't benefit from combinator caching\n\t\t\t\tif (xml) {\n\t\t\t\t\twhile (elem = elem[dir]) {\n\t\t\t\t\t\tif (elem.nodeType === 1 || checkNonElements) {\n\t\t\t\t\t\t\tif (matcher(elem, context, xml)) {\n\t\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\twhile (elem = elem[dir]) {\n\t\t\t\t\t\tif (elem.nodeType === 1 || checkNonElements) {\n\t\t\t\t\t\t\touterCache = elem[expando] || (elem[expando] = {});\n\n\t\t\t\t\t\t\t// Support: IE <9 only\n\t\t\t\t\t\t\t// Defend against cloned attroperties (jQuery gh-1709)\n\t\t\t\t\t\t\tuniqueCache = outerCache[elem.uniqueID] || (outerCache[elem.uniqueID] = {});\n\n\t\t\t\t\t\t\tif (skip && skip === elem.nodeName.toLowerCase()) {\n\t\t\t\t\t\t\t\telem = elem[dir] || elem;\n\t\t\t\t\t\t\t} else if ((oldCache = uniqueCache[key]) && oldCache[0] === dirruns && oldCache[1] === doneName) {\n\n\t\t\t\t\t\t\t\t// Assign to newCache so results back-propagate to previous elements\n\t\t\t\t\t\t\t\treturn newCache[2] = oldCache[2];\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t// Reuse newcache so results back-propagate to previous elements\n\t\t\t\t\t\t\t\tuniqueCache[key] = newCache;\n\n\t\t\t\t\t\t\t\t// A match means we're done; a fail means we have to keep checking\n\t\t\t\t\t\t\t\tif (newCache[2] = matcher(elem, context, xml)) {\n\t\t\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn false;\n\t\t\t};\n\t\t}\n\n\t\tfunction elementMatcher(matchers) {\n\t\t\treturn matchers.length > 1 ? function (elem, context, xml) {\n\t\t\t\tvar i = matchers.length;\n\t\t\t\twhile (i--) {\n\t\t\t\t\tif (!matchers[i](elem, context, xml)) {\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn true;\n\t\t\t} : matchers[0];\n\t\t}\n\n\t\tfunction multipleContexts(selector, contexts, results) {\n\t\t\tvar i = 0,\n\t\t\t    len = contexts.length;\n\t\t\tfor (; i < len; i++) {\n\t\t\t\tSizzle(selector, contexts[i], results);\n\t\t\t}\n\t\t\treturn results;\n\t\t}\n\n\t\tfunction condense(unmatched, map, filter, context, xml) {\n\t\t\tvar elem,\n\t\t\t    newUnmatched = [],\n\t\t\t    i = 0,\n\t\t\t    len = unmatched.length,\n\t\t\t    mapped = map != null;\n\n\t\t\tfor (; i < len; i++) {\n\t\t\t\tif (elem = unmatched[i]) {\n\t\t\t\t\tif (!filter || filter(elem, context, xml)) {\n\t\t\t\t\t\tnewUnmatched.push(elem);\n\t\t\t\t\t\tif (mapped) {\n\t\t\t\t\t\t\tmap.push(i);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn newUnmatched;\n\t\t}\n\n\t\tfunction setMatcher(preFilter, selector, matcher, postFilter, postFinder, postSelector) {\n\t\t\tif (postFilter && !postFilter[expando]) {\n\t\t\t\tpostFilter = setMatcher(postFilter);\n\t\t\t}\n\t\t\tif (postFinder && !postFinder[expando]) {\n\t\t\t\tpostFinder = setMatcher(postFinder, postSelector);\n\t\t\t}\n\t\t\treturn markFunction(function (seed, results, context, xml) {\n\t\t\t\tvar temp,\n\t\t\t\t    i,\n\t\t\t\t    elem,\n\t\t\t\t    preMap = [],\n\t\t\t\t    postMap = [],\n\t\t\t\t    preexisting = results.length,\n\n\n\t\t\t\t// Get initial elements from seed or context\n\t\t\t\telems = seed || multipleContexts(selector || \"*\", context.nodeType ? [context] : context, []),\n\n\n\t\t\t\t// Prefilter to get matcher input, preserving a map for seed-results synchronization\n\t\t\t\tmatcherIn = preFilter && (seed || !selector) ? condense(elems, preMap, preFilter, context, xml) : elems,\n\t\t\t\t    matcherOut = matcher ?\n\t\t\t\t// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,\n\t\t\t\tpostFinder || (seed ? preFilter : preexisting || postFilter) ?\n\n\t\t\t\t// ...intermediate processing is necessary\n\t\t\t\t[] :\n\n\t\t\t\t// ...otherwise use results directly\n\t\t\t\tresults : matcherIn;\n\n\t\t\t\t// Find primary matches\n\t\t\t\tif (matcher) {\n\t\t\t\t\tmatcher(matcherIn, matcherOut, context, xml);\n\t\t\t\t}\n\n\t\t\t\t// Apply postFilter\n\t\t\t\tif (postFilter) {\n\t\t\t\t\ttemp = condense(matcherOut, postMap);\n\t\t\t\t\tpostFilter(temp, [], context, xml);\n\n\t\t\t\t\t// Un-match failing elements by moving them back to matcherIn\n\t\t\t\t\ti = temp.length;\n\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\tif (elem = temp[i]) {\n\t\t\t\t\t\t\tmatcherOut[postMap[i]] = !(matcherIn[postMap[i]] = elem);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tif (seed) {\n\t\t\t\t\tif (postFinder || preFilter) {\n\t\t\t\t\t\tif (postFinder) {\n\t\t\t\t\t\t\t// Get the final matcherOut by condensing this intermediate into postFinder contexts\n\t\t\t\t\t\t\ttemp = [];\n\t\t\t\t\t\t\ti = matcherOut.length;\n\t\t\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\t\t\tif (elem = matcherOut[i]) {\n\t\t\t\t\t\t\t\t\t// Restore matcherIn since elem is not yet a final match\n\t\t\t\t\t\t\t\t\ttemp.push(matcherIn[i] = elem);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tpostFinder(null, matcherOut = [], temp, xml);\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Move matched elements from seed to results to keep them synchronized\n\t\t\t\t\t\ti = matcherOut.length;\n\t\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\t\tif ((elem = matcherOut[i]) && (temp = postFinder ? indexOf(seed, elem) : preMap[i]) > -1) {\n\n\t\t\t\t\t\t\t\tseed[temp] = !(results[temp] = elem);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// Add elements to results, through postFinder if defined\n\t\t\t\t} else {\n\t\t\t\t\tmatcherOut = condense(matcherOut === results ? matcherOut.splice(preexisting, matcherOut.length) : matcherOut);\n\t\t\t\t\tif (postFinder) {\n\t\t\t\t\t\tpostFinder(null, results, matcherOut, xml);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tpush.apply(results, matcherOut);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\n\t\tfunction matcherFromTokens(tokens) {\n\t\t\tvar checkContext,\n\t\t\t    matcher,\n\t\t\t    j,\n\t\t\t    len = tokens.length,\n\t\t\t    leadingRelative = Expr.relative[tokens[0].type],\n\t\t\t    implicitRelative = leadingRelative || Expr.relative[\" \"],\n\t\t\t    i = leadingRelative ? 1 : 0,\n\n\n\t\t\t// The foundational matcher ensures that elements are reachable from top-level context(s)\n\t\t\tmatchContext = addCombinator(function (elem) {\n\t\t\t\treturn elem === checkContext;\n\t\t\t}, implicitRelative, true),\n\t\t\t    matchAnyContext = addCombinator(function (elem) {\n\t\t\t\treturn indexOf(checkContext, elem) > -1;\n\t\t\t}, implicitRelative, true),\n\t\t\t    matchers = [function (elem, context, xml) {\n\t\t\t\tvar ret = !leadingRelative && (xml || context !== outermostContext) || ((checkContext = context).nodeType ? matchContext(elem, context, xml) : matchAnyContext(elem, context, xml));\n\t\t\t\t// Avoid hanging onto element (issue #299)\n\t\t\t\tcheckContext = null;\n\t\t\t\treturn ret;\n\t\t\t}];\n\n\t\t\tfor (; i < len; i++) {\n\t\t\t\tif (matcher = Expr.relative[tokens[i].type]) {\n\t\t\t\t\tmatchers = [addCombinator(elementMatcher(matchers), matcher)];\n\t\t\t\t} else {\n\t\t\t\t\tmatcher = Expr.filter[tokens[i].type].apply(null, tokens[i].matches);\n\n\t\t\t\t\t// Return special upon seeing a positional matcher\n\t\t\t\t\tif (matcher[expando]) {\n\t\t\t\t\t\t// Find the next relative operator (if any) for proper handling\n\t\t\t\t\t\tj = ++i;\n\t\t\t\t\t\tfor (; j < len; j++) {\n\t\t\t\t\t\t\tif (Expr.relative[tokens[j].type]) {\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn setMatcher(i > 1 && elementMatcher(matchers), i > 1 && toSelector(\n\t\t\t\t\t\t// If the preceding token was a descendant combinator, insert an implicit any-element `*`\n\t\t\t\t\t\ttokens.slice(0, i - 1).concat({ value: tokens[i - 2].type === \" \" ? \"*\" : \"\" })).replace(rtrim, \"$1\"), matcher, i < j && matcherFromTokens(tokens.slice(i, j)), j < len && matcherFromTokens(tokens = tokens.slice(j)), j < len && toSelector(tokens));\n\t\t\t\t\t}\n\t\t\t\t\tmatchers.push(matcher);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn elementMatcher(matchers);\n\t\t}\n\n\t\tfunction matcherFromGroupMatchers(elementMatchers, setMatchers) {\n\t\t\tvar bySet = setMatchers.length > 0,\n\t\t\t    byElement = elementMatchers.length > 0,\n\t\t\t    superMatcher = function superMatcher(seed, context, xml, results, outermost) {\n\t\t\t\tvar elem,\n\t\t\t\t    j,\n\t\t\t\t    matcher,\n\t\t\t\t    matchedCount = 0,\n\t\t\t\t    i = \"0\",\n\t\t\t\t    unmatched = seed && [],\n\t\t\t\t    setMatched = [],\n\t\t\t\t    contextBackup = outermostContext,\n\n\t\t\t\t// We must always have either seed elements or outermost context\n\t\t\t\telems = seed || byElement && Expr.find[\"TAG\"](\"*\", outermost),\n\n\t\t\t\t// Use integer dirruns iff this is the outermost matcher\n\t\t\t\tdirrunsUnique = dirruns += contextBackup == null ? 1 : Math.random() || 0.1,\n\t\t\t\t    len = elems.length;\n\n\t\t\t\tif (outermost) {\n\t\t\t\t\toutermostContext = context === document || context || outermost;\n\t\t\t\t}\n\n\t\t\t\t// Add elements passing elementMatchers directly to results\n\t\t\t\t// Support: IE<9, Safari\n\t\t\t\t// Tolerate NodeList properties (IE: \"length\"; Safari: <number>) matching elements by id\n\t\t\t\tfor (; i !== len && (elem = elems[i]) != null; i++) {\n\t\t\t\t\tif (byElement && elem) {\n\t\t\t\t\t\tj = 0;\n\t\t\t\t\t\tif (!context && elem.ownerDocument !== document) {\n\t\t\t\t\t\t\tsetDocument(elem);\n\t\t\t\t\t\t\txml = !documentIsHTML;\n\t\t\t\t\t\t}\n\t\t\t\t\t\twhile (matcher = elementMatchers[j++]) {\n\t\t\t\t\t\t\tif (matcher(elem, context || document, xml)) {\n\t\t\t\t\t\t\t\tresults.push(elem);\n\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (outermost) {\n\t\t\t\t\t\t\tdirruns = dirrunsUnique;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// Track unmatched elements for set filters\n\t\t\t\t\tif (bySet) {\n\t\t\t\t\t\t// They will have gone through all possible matchers\n\t\t\t\t\t\tif (elem = !matcher && elem) {\n\t\t\t\t\t\t\tmatchedCount--;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Lengthen the array for every element, matched or not\n\t\t\t\t\t\tif (seed) {\n\t\t\t\t\t\t\tunmatched.push(elem);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// `i` is now the count of elements visited above, and adding it to `matchedCount`\n\t\t\t\t// makes the latter nonnegative.\n\t\t\t\tmatchedCount += i;\n\n\t\t\t\t// Apply set filters to unmatched elements\n\t\t\t\t// NOTE: This can be skipped if there are no unmatched elements (i.e., `matchedCount`\n\t\t\t\t// equals `i`), unless we didn't visit _any_ elements in the above loop because we have\n\t\t\t\t// no element matchers and no seed.\n\t\t\t\t// Incrementing an initially-string \"0\" `i` allows `i` to remain a string only in that\n\t\t\t\t// case, which will result in a \"00\" `matchedCount` that differs from `i` but is also\n\t\t\t\t// numerically zero.\n\t\t\t\tif (bySet && i !== matchedCount) {\n\t\t\t\t\tj = 0;\n\t\t\t\t\twhile (matcher = setMatchers[j++]) {\n\t\t\t\t\t\tmatcher(unmatched, setMatched, context, xml);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (seed) {\n\t\t\t\t\t\t// Reintegrate element matches to eliminate the need for sorting\n\t\t\t\t\t\tif (matchedCount > 0) {\n\t\t\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\t\t\tif (!(unmatched[i] || setMatched[i])) {\n\t\t\t\t\t\t\t\t\tsetMatched[i] = pop.call(results);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Discard index placeholder values to get only actual matches\n\t\t\t\t\t\tsetMatched = condense(setMatched);\n\t\t\t\t\t}\n\n\t\t\t\t\t// Add matches to results\n\t\t\t\t\tpush.apply(results, setMatched);\n\n\t\t\t\t\t// Seedless set matches succeeding multiple successful matchers stipulate sorting\n\t\t\t\t\tif (outermost && !seed && setMatched.length > 0 && matchedCount + setMatchers.length > 1) {\n\n\t\t\t\t\t\tSizzle.uniqueSort(results);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Override manipulation of globals by nested matchers\n\t\t\t\tif (outermost) {\n\t\t\t\t\tdirruns = dirrunsUnique;\n\t\t\t\t\toutermostContext = contextBackup;\n\t\t\t\t}\n\n\t\t\t\treturn unmatched;\n\t\t\t};\n\n\t\t\treturn bySet ? markFunction(superMatcher) : superMatcher;\n\t\t}\n\n\t\tcompile = Sizzle.compile = function (selector, match /* Internal Use Only */) {\n\t\t\tvar i,\n\t\t\t    setMatchers = [],\n\t\t\t    elementMatchers = [],\n\t\t\t    cached = compilerCache[selector + \" \"];\n\n\t\t\tif (!cached) {\n\t\t\t\t// Generate a function of recursive functions that can be used to check each element\n\t\t\t\tif (!match) {\n\t\t\t\t\tmatch = tokenize(selector);\n\t\t\t\t}\n\t\t\t\ti = match.length;\n\t\t\t\twhile (i--) {\n\t\t\t\t\tcached = matcherFromTokens(match[i]);\n\t\t\t\t\tif (cached[expando]) {\n\t\t\t\t\t\tsetMatchers.push(cached);\n\t\t\t\t\t} else {\n\t\t\t\t\t\telementMatchers.push(cached);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Cache the compiled function\n\t\t\t\tcached = compilerCache(selector, matcherFromGroupMatchers(elementMatchers, setMatchers));\n\n\t\t\t\t// Save selector and tokenization\n\t\t\t\tcached.selector = selector;\n\t\t\t}\n\t\t\treturn cached;\n\t\t};\n\n\t\t/**\n   * A low-level selection function that works with Sizzle's compiled\n   *  selector functions\n   * @param {String|Function} selector A selector or a pre-compiled\n   *  selector function built with Sizzle.compile\n   * @param {Element} context\n   * @param {Array} [results]\n   * @param {Array} [seed] A set of elements to match against\n   */\n\t\tselect = Sizzle.select = function (selector, context, results, seed) {\n\t\t\tvar i,\n\t\t\t    tokens,\n\t\t\t    token,\n\t\t\t    type,\n\t\t\t    find,\n\t\t\t    compiled = typeof selector === \"function\" && selector,\n\t\t\t    match = !seed && tokenize(selector = compiled.selector || selector);\n\n\t\t\tresults = results || [];\n\n\t\t\t// Try to minimize operations if there is only one selector in the list and no seed\n\t\t\t// (the latter of which guarantees us context)\n\t\t\tif (match.length === 1) {\n\n\t\t\t\t// Reduce context if the leading compound selector is an ID\n\t\t\t\ttokens = match[0] = match[0].slice(0);\n\t\t\t\tif (tokens.length > 2 && (token = tokens[0]).type === \"ID\" && context.nodeType === 9 && documentIsHTML && Expr.relative[tokens[1].type]) {\n\n\t\t\t\t\tcontext = (Expr.find[\"ID\"](token.matches[0].replace(runescape, funescape), context) || [])[0];\n\t\t\t\t\tif (!context) {\n\t\t\t\t\t\treturn results;\n\n\t\t\t\t\t\t// Precompiled matchers will still verify ancestry, so step up a level\n\t\t\t\t\t} else if (compiled) {\n\t\t\t\t\t\tcontext = context.parentNode;\n\t\t\t\t\t}\n\n\t\t\t\t\tselector = selector.slice(tokens.shift().value.length);\n\t\t\t\t}\n\n\t\t\t\t// Fetch a seed set for right-to-left matching\n\t\t\t\ti = matchExpr[\"needsContext\"].test(selector) ? 0 : tokens.length;\n\t\t\t\twhile (i--) {\n\t\t\t\t\ttoken = tokens[i];\n\n\t\t\t\t\t// Abort if we hit a combinator\n\t\t\t\t\tif (Expr.relative[type = token.type]) {\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\t\t\t\t\tif (find = Expr.find[type]) {\n\t\t\t\t\t\t// Search, expanding context for leading sibling combinators\n\t\t\t\t\t\tif (seed = find(token.matches[0].replace(runescape, funescape), rsibling.test(tokens[0].type) && testContext(context.parentNode) || context)) {\n\n\t\t\t\t\t\t\t// If seed is empty or no tokens remain, we can return early\n\t\t\t\t\t\t\ttokens.splice(i, 1);\n\t\t\t\t\t\t\tselector = seed.length && toSelector(tokens);\n\t\t\t\t\t\t\tif (!selector) {\n\t\t\t\t\t\t\t\tpush.apply(results, seed);\n\t\t\t\t\t\t\t\treturn results;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Compile and execute a filtering function if one is not provided\n\t\t\t// Provide `match` to avoid retokenization if we modified the selector above\n\t\t\t(compiled || compile(selector, match))(seed, context, !documentIsHTML, results, !context || rsibling.test(selector) && testContext(context.parentNode) || context);\n\t\t\treturn results;\n\t\t};\n\n\t\t// One-time assignments\n\n\t\t// Sort stability\n\t\tsupport.sortStable = expando.split(\"\").sort(sortOrder).join(\"\") === expando;\n\n\t\t// Support: Chrome 14-35+\n\t\t// Always assume duplicates if they aren't passed to the comparison function\n\t\tsupport.detectDuplicates = !!hasDuplicate;\n\n\t\t// Initialize against the default document\n\t\tsetDocument();\n\n\t\t// Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)\n\t\t// Detached nodes confoundingly follow *each other*\n\t\tsupport.sortDetached = assert(function (el) {\n\t\t\t// Should return 1, but returns 4 (following)\n\t\t\treturn el.compareDocumentPosition(document.createElement(\"fieldset\")) & 1;\n\t\t});\n\n\t\t// Support: IE<8\n\t\t// Prevent attribute/property \"interpolation\"\n\t\t// https://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx\n\t\tif (!assert(function (el) {\n\t\t\tel.innerHTML = \"<a href='#'></a>\";\n\t\t\treturn el.firstChild.getAttribute(\"href\") === \"#\";\n\t\t})) {\n\t\t\taddHandle(\"type|href|height|width\", function (elem, name, isXML) {\n\t\t\t\tif (!isXML) {\n\t\t\t\t\treturn elem.getAttribute(name, name.toLowerCase() === \"type\" ? 1 : 2);\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\n\t\t// Support: IE<9\n\t\t// Use defaultValue in place of getAttribute(\"value\")\n\t\tif (!support.attributes || !assert(function (el) {\n\t\t\tel.innerHTML = \"<input/>\";\n\t\t\tel.firstChild.setAttribute(\"value\", \"\");\n\t\t\treturn el.firstChild.getAttribute(\"value\") === \"\";\n\t\t})) {\n\t\t\taddHandle(\"value\", function (elem, name, isXML) {\n\t\t\t\tif (!isXML && elem.nodeName.toLowerCase() === \"input\") {\n\t\t\t\t\treturn elem.defaultValue;\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\n\t\t// Support: IE<9\n\t\t// Use getAttributeNode to fetch booleans when getAttribute lies\n\t\tif (!assert(function (el) {\n\t\t\treturn el.getAttribute(\"disabled\") == null;\n\t\t})) {\n\t\t\taddHandle(booleans, function (elem, name, isXML) {\n\t\t\t\tvar val;\n\t\t\t\tif (!isXML) {\n\t\t\t\t\treturn elem[name] === true ? name.toLowerCase() : (val = elem.getAttributeNode(name)) && val.specified ? val.value : null;\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\n\t\treturn Sizzle;\n\t}(window);\n\n\tjQuery.find = Sizzle;\n\tjQuery.expr = Sizzle.selectors;\n\n\t// Deprecated\n\tjQuery.expr[\":\"] = jQuery.expr.pseudos;\n\tjQuery.uniqueSort = jQuery.unique = Sizzle.uniqueSort;\n\tjQuery.text = Sizzle.getText;\n\tjQuery.isXMLDoc = Sizzle.isXML;\n\tjQuery.contains = Sizzle.contains;\n\tjQuery.escapeSelector = Sizzle.escape;\n\n\tvar dir = function dir(elem, _dir, until) {\n\t\tvar matched = [],\n\t\t    truncate = until !== undefined;\n\n\t\twhile ((elem = elem[_dir]) && elem.nodeType !== 9) {\n\t\t\tif (elem.nodeType === 1) {\n\t\t\t\tif (truncate && jQuery(elem).is(until)) {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t\tmatched.push(elem);\n\t\t\t}\n\t\t}\n\t\treturn matched;\n\t};\n\n\tvar _siblings = function _siblings(n, elem) {\n\t\tvar matched = [];\n\n\t\tfor (; n; n = n.nextSibling) {\n\t\t\tif (n.nodeType === 1 && n !== elem) {\n\t\t\t\tmatched.push(n);\n\t\t\t}\n\t\t}\n\n\t\treturn matched;\n\t};\n\n\tvar rneedsContext = jQuery.expr.match.needsContext;\n\n\tfunction nodeName(elem, name) {\n\n\t\treturn elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();\n\t};\n\tvar rsingleTag = /^<([a-z][^\\/\\0>:\\x20\\t\\r\\n\\f]*)[\\x20\\t\\r\\n\\f]*\\/?>(?:<\\/\\1>|)$/i;\n\n\tvar risSimple = /^.[^:#\\[\\.,]*$/;\n\n\t// Implement the identical functionality for filter and not\n\tfunction winnow(elements, qualifier, not) {\n\t\tif (jQuery.isFunction(qualifier)) {\n\t\t\treturn jQuery.grep(elements, function (elem, i) {\n\t\t\t\treturn !!qualifier.call(elem, i, elem) !== not;\n\t\t\t});\n\t\t}\n\n\t\t// Single element\n\t\tif (qualifier.nodeType) {\n\t\t\treturn jQuery.grep(elements, function (elem) {\n\t\t\t\treturn elem === qualifier !== not;\n\t\t\t});\n\t\t}\n\n\t\t// Arraylike of elements (jQuery, arguments, Array)\n\t\tif (typeof qualifier !== \"string\") {\n\t\t\treturn jQuery.grep(elements, function (elem) {\n\t\t\t\treturn indexOf.call(qualifier, elem) > -1 !== not;\n\t\t\t});\n\t\t}\n\n\t\t// Simple selector that can be filtered directly, removing non-Elements\n\t\tif (risSimple.test(qualifier)) {\n\t\t\treturn jQuery.filter(qualifier, elements, not);\n\t\t}\n\n\t\t// Complex selector, compare the two sets, removing non-Elements\n\t\tqualifier = jQuery.filter(qualifier, elements);\n\t\treturn jQuery.grep(elements, function (elem) {\n\t\t\treturn indexOf.call(qualifier, elem) > -1 !== not && elem.nodeType === 1;\n\t\t});\n\t}\n\n\tjQuery.filter = function (expr, elems, not) {\n\t\tvar elem = elems[0];\n\n\t\tif (not) {\n\t\t\texpr = \":not(\" + expr + \")\";\n\t\t}\n\n\t\tif (elems.length === 1 && elem.nodeType === 1) {\n\t\t\treturn jQuery.find.matchesSelector(elem, expr) ? [elem] : [];\n\t\t}\n\n\t\treturn jQuery.find.matches(expr, jQuery.grep(elems, function (elem) {\n\t\t\treturn elem.nodeType === 1;\n\t\t}));\n\t};\n\n\tjQuery.fn.extend({\n\t\tfind: function find(selector) {\n\t\t\tvar i,\n\t\t\t    ret,\n\t\t\t    len = this.length,\n\t\t\t    self = this;\n\n\t\t\tif (typeof selector !== \"string\") {\n\t\t\t\treturn this.pushStack(jQuery(selector).filter(function () {\n\t\t\t\t\tfor (i = 0; i < len; i++) {\n\t\t\t\t\t\tif (jQuery.contains(self[i], this)) {\n\t\t\t\t\t\t\treturn true;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}));\n\t\t\t}\n\n\t\t\tret = this.pushStack([]);\n\n\t\t\tfor (i = 0; i < len; i++) {\n\t\t\t\tjQuery.find(selector, self[i], ret);\n\t\t\t}\n\n\t\t\treturn len > 1 ? jQuery.uniqueSort(ret) : ret;\n\t\t},\n\t\tfilter: function filter(selector) {\n\t\t\treturn this.pushStack(winnow(this, selector || [], false));\n\t\t},\n\t\tnot: function not(selector) {\n\t\t\treturn this.pushStack(winnow(this, selector || [], true));\n\t\t},\n\t\tis: function is(selector) {\n\t\t\treturn !!winnow(this,\n\n\t\t\t// If this is a positional/relative selector, check membership in the returned set\n\t\t\t// so $(\"p:first\").is(\"p:last\") won't return true for a doc with two \"p\".\n\t\t\ttypeof selector === \"string\" && rneedsContext.test(selector) ? jQuery(selector) : selector || [], false).length;\n\t\t}\n\t});\n\n\t// Initialize a jQuery object\n\n\n\t// A central reference to the root jQuery(document)\n\tvar rootjQuery,\n\n\n\t// A simple way to check for HTML strings\n\t// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)\n\t// Strict HTML recognition (#11290: must start with <)\n\t// Shortcut simple #id case for speed\n\trquickExpr = /^(?:\\s*(<[\\w\\W]+>)[^>]*|#([\\w-]+))$/,\n\t    init = jQuery.fn.init = function (selector, context, root) {\n\t\tvar match, elem;\n\n\t\t// HANDLE: $(\"\"), $(null), $(undefined), $(false)\n\t\tif (!selector) {\n\t\t\treturn this;\n\t\t}\n\n\t\t// Method init() accepts an alternate rootjQuery\n\t\t// so migrate can support jQuery.sub (gh-2101)\n\t\troot = root || rootjQuery;\n\n\t\t// Handle HTML strings\n\t\tif (typeof selector === \"string\") {\n\t\t\tif (selector[0] === \"<\" && selector[selector.length - 1] === \">\" && selector.length >= 3) {\n\n\t\t\t\t// Assume that strings that start and end with <> are HTML and skip the regex check\n\t\t\t\tmatch = [null, selector, null];\n\t\t\t} else {\n\t\t\t\tmatch = rquickExpr.exec(selector);\n\t\t\t}\n\n\t\t\t// Match html or make sure no context is specified for #id\n\t\t\tif (match && (match[1] || !context)) {\n\n\t\t\t\t// HANDLE: $(html) -> $(array)\n\t\t\t\tif (match[1]) {\n\t\t\t\t\tcontext = context instanceof jQuery ? context[0] : context;\n\n\t\t\t\t\t// Option to run scripts is true for back-compat\n\t\t\t\t\t// Intentionally let the error be thrown if parseHTML is not present\n\t\t\t\t\tjQuery.merge(this, jQuery.parseHTML(match[1], context && context.nodeType ? context.ownerDocument || context : document, true));\n\n\t\t\t\t\t// HANDLE: $(html, props)\n\t\t\t\t\tif (rsingleTag.test(match[1]) && jQuery.isPlainObject(context)) {\n\t\t\t\t\t\tfor (match in context) {\n\n\t\t\t\t\t\t\t// Properties of context are called as methods if possible\n\t\t\t\t\t\t\tif (jQuery.isFunction(this[match])) {\n\t\t\t\t\t\t\t\tthis[match](context[match]);\n\n\t\t\t\t\t\t\t\t// ...and otherwise set as attributes\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tthis.attr(match, context[match]);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\treturn this;\n\n\t\t\t\t\t// HANDLE: $(#id)\n\t\t\t\t} else {\n\t\t\t\t\telem = document.getElementById(match[2]);\n\n\t\t\t\t\tif (elem) {\n\n\t\t\t\t\t\t// Inject the element directly into the jQuery object\n\t\t\t\t\t\tthis[0] = elem;\n\t\t\t\t\t\tthis.length = 1;\n\t\t\t\t\t}\n\t\t\t\t\treturn this;\n\t\t\t\t}\n\n\t\t\t\t// HANDLE: $(expr, $(...))\n\t\t\t} else if (!context || context.jquery) {\n\t\t\t\treturn (context || root).find(selector);\n\n\t\t\t\t// HANDLE: $(expr, context)\n\t\t\t\t// (which is just equivalent to: $(context).find(expr)\n\t\t\t} else {\n\t\t\t\treturn this.constructor(context).find(selector);\n\t\t\t}\n\n\t\t\t// HANDLE: $(DOMElement)\n\t\t} else if (selector.nodeType) {\n\t\t\tthis[0] = selector;\n\t\t\tthis.length = 1;\n\t\t\treturn this;\n\n\t\t\t// HANDLE: $(function)\n\t\t\t// Shortcut for document ready\n\t\t} else if (jQuery.isFunction(selector)) {\n\t\t\treturn root.ready !== undefined ? root.ready(selector) :\n\n\t\t\t// Execute immediately if ready is not present\n\t\t\tselector(jQuery);\n\t\t}\n\n\t\treturn jQuery.makeArray(selector, this);\n\t};\n\n\t// Give the init function the jQuery prototype for later instantiation\n\tinit.prototype = jQuery.fn;\n\n\t// Initialize central reference\n\trootjQuery = jQuery(document);\n\n\tvar rparentsprev = /^(?:parents|prev(?:Until|All))/,\n\n\n\t// Methods guaranteed to produce a unique set when starting from a unique set\n\tguaranteedUnique = {\n\t\tchildren: true,\n\t\tcontents: true,\n\t\tnext: true,\n\t\tprev: true\n\t};\n\n\tjQuery.fn.extend({\n\t\thas: function has(target) {\n\t\t\tvar targets = jQuery(target, this),\n\t\t\t    l = targets.length;\n\n\t\t\treturn this.filter(function () {\n\t\t\t\tvar i = 0;\n\t\t\t\tfor (; i < l; i++) {\n\t\t\t\t\tif (jQuery.contains(this, targets[i])) {\n\t\t\t\t\t\treturn true;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\tclosest: function closest(selectors, context) {\n\t\t\tvar cur,\n\t\t\t    i = 0,\n\t\t\t    l = this.length,\n\t\t\t    matched = [],\n\t\t\t    targets = typeof selectors !== \"string\" && jQuery(selectors);\n\n\t\t\t// Positional selectors never match, since there's no _selection_ context\n\t\t\tif (!rneedsContext.test(selectors)) {\n\t\t\t\tfor (; i < l; i++) {\n\t\t\t\t\tfor (cur = this[i]; cur && cur !== context; cur = cur.parentNode) {\n\n\t\t\t\t\t\t// Always skip document fragments\n\t\t\t\t\t\tif (cur.nodeType < 11 && (targets ? targets.index(cur) > -1 :\n\n\t\t\t\t\t\t// Don't pass non-elements to Sizzle\n\t\t\t\t\t\tcur.nodeType === 1 && jQuery.find.matchesSelector(cur, selectors))) {\n\n\t\t\t\t\t\t\tmatched.push(cur);\n\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn this.pushStack(matched.length > 1 ? jQuery.uniqueSort(matched) : matched);\n\t\t},\n\n\t\t// Determine the position of an element within the set\n\t\tindex: function index(elem) {\n\n\t\t\t// No argument, return index in parent\n\t\t\tif (!elem) {\n\t\t\t\treturn this[0] && this[0].parentNode ? this.first().prevAll().length : -1;\n\t\t\t}\n\n\t\t\t// Index in selector\n\t\t\tif (typeof elem === \"string\") {\n\t\t\t\treturn indexOf.call(jQuery(elem), this[0]);\n\t\t\t}\n\n\t\t\t// Locate the position of the desired element\n\t\t\treturn indexOf.call(this,\n\n\t\t\t// If it receives a jQuery object, the first element is used\n\t\t\telem.jquery ? elem[0] : elem);\n\t\t},\n\n\t\tadd: function add(selector, context) {\n\t\t\treturn this.pushStack(jQuery.uniqueSort(jQuery.merge(this.get(), jQuery(selector, context))));\n\t\t},\n\n\t\taddBack: function addBack(selector) {\n\t\t\treturn this.add(selector == null ? this.prevObject : this.prevObject.filter(selector));\n\t\t}\n\t});\n\n\tfunction sibling(cur, dir) {\n\t\twhile ((cur = cur[dir]) && cur.nodeType !== 1) {}\n\t\treturn cur;\n\t}\n\n\tjQuery.each({\n\t\tparent: function parent(elem) {\n\t\t\tvar parent = elem.parentNode;\n\t\t\treturn parent && parent.nodeType !== 11 ? parent : null;\n\t\t},\n\t\tparents: function parents(elem) {\n\t\t\treturn dir(elem, \"parentNode\");\n\t\t},\n\t\tparentsUntil: function parentsUntil(elem, i, until) {\n\t\t\treturn dir(elem, \"parentNode\", until);\n\t\t},\n\t\tnext: function next(elem) {\n\t\t\treturn sibling(elem, \"nextSibling\");\n\t\t},\n\t\tprev: function prev(elem) {\n\t\t\treturn sibling(elem, \"previousSibling\");\n\t\t},\n\t\tnextAll: function nextAll(elem) {\n\t\t\treturn dir(elem, \"nextSibling\");\n\t\t},\n\t\tprevAll: function prevAll(elem) {\n\t\t\treturn dir(elem, \"previousSibling\");\n\t\t},\n\t\tnextUntil: function nextUntil(elem, i, until) {\n\t\t\treturn dir(elem, \"nextSibling\", until);\n\t\t},\n\t\tprevUntil: function prevUntil(elem, i, until) {\n\t\t\treturn dir(elem, \"previousSibling\", until);\n\t\t},\n\t\tsiblings: function siblings(elem) {\n\t\t\treturn _siblings((elem.parentNode || {}).firstChild, elem);\n\t\t},\n\t\tchildren: function children(elem) {\n\t\t\treturn _siblings(elem.firstChild);\n\t\t},\n\t\tcontents: function contents(elem) {\n\t\t\tif (nodeName(elem, \"iframe\")) {\n\t\t\t\treturn elem.contentDocument;\n\t\t\t}\n\n\t\t\t// Support: IE 9 - 11 only, iOS 7 only, Android Browser <=4.3 only\n\t\t\t// Treat the template element as a regular one in browsers that\n\t\t\t// don't support it.\n\t\t\tif (nodeName(elem, \"template\")) {\n\t\t\t\telem = elem.content || elem;\n\t\t\t}\n\n\t\t\treturn jQuery.merge([], elem.childNodes);\n\t\t}\n\t}, function (name, fn) {\n\t\tjQuery.fn[name] = function (until, selector) {\n\t\t\tvar matched = jQuery.map(this, fn, until);\n\n\t\t\tif (name.slice(-5) !== \"Until\") {\n\t\t\t\tselector = until;\n\t\t\t}\n\n\t\t\tif (selector && typeof selector === \"string\") {\n\t\t\t\tmatched = jQuery.filter(selector, matched);\n\t\t\t}\n\n\t\t\tif (this.length > 1) {\n\n\t\t\t\t// Remove duplicates\n\t\t\t\tif (!guaranteedUnique[name]) {\n\t\t\t\t\tjQuery.uniqueSort(matched);\n\t\t\t\t}\n\n\t\t\t\t// Reverse order for parents* and prev-derivatives\n\t\t\t\tif (rparentsprev.test(name)) {\n\t\t\t\t\tmatched.reverse();\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn this.pushStack(matched);\n\t\t};\n\t});\n\tvar rnothtmlwhite = /[^\\x20\\t\\r\\n\\f]+/g;\n\n\t// Convert String-formatted options into Object-formatted ones\n\tfunction createOptions(options) {\n\t\tvar object = {};\n\t\tjQuery.each(options.match(rnothtmlwhite) || [], function (_, flag) {\n\t\t\tobject[flag] = true;\n\t\t});\n\t\treturn object;\n\t}\n\n\t/*\n  * Create a callback list using the following parameters:\n  *\n  *\toptions: an optional list of space-separated options that will change how\n  *\t\t\tthe callback list behaves or a more traditional option object\n  *\n  * By default a callback list will act like an event callback list and can be\n  * \"fired\" multiple times.\n  *\n  * Possible options:\n  *\n  *\tonce:\t\t\twill ensure the callback list can only be fired once (like a Deferred)\n  *\n  *\tmemory:\t\t\twill keep track of previous values and will call any callback added\n  *\t\t\t\t\tafter the list has been fired right away with the latest \"memorized\"\n  *\t\t\t\t\tvalues (like a Deferred)\n  *\n  *\tunique:\t\t\twill ensure a callback can only be added once (no duplicate in the list)\n  *\n  *\tstopOnFalse:\tinterrupt callings when a callback returns false\n  *\n  */\n\tjQuery.Callbacks = function (options) {\n\n\t\t// Convert options from String-formatted to Object-formatted if needed\n\t\t// (we check in cache first)\n\t\toptions = typeof options === \"string\" ? createOptions(options) : jQuery.extend({}, options);\n\n\t\tvar // Flag to know if list is currently firing\n\t\tfiring,\n\n\n\t\t// Last fire value for non-forgettable lists\n\t\tmemory,\n\n\n\t\t// Flag to know if list was already fired\n\t\t_fired,\n\n\n\t\t// Flag to prevent firing\n\t\t_locked,\n\n\n\t\t// Actual callback list\n\t\tlist = [],\n\n\n\t\t// Queue of execution data for repeatable lists\n\t\tqueue = [],\n\n\n\t\t// Index of currently firing callback (modified by add/remove as needed)\n\t\tfiringIndex = -1,\n\n\n\t\t// Fire callbacks\n\t\tfire = function fire() {\n\n\t\t\t// Enforce single-firing\n\t\t\t_locked = _locked || options.once;\n\n\t\t\t// Execute callbacks for all pending executions,\n\t\t\t// respecting firingIndex overrides and runtime changes\n\t\t\t_fired = firing = true;\n\t\t\tfor (; queue.length; firingIndex = -1) {\n\t\t\t\tmemory = queue.shift();\n\t\t\t\twhile (++firingIndex < list.length) {\n\n\t\t\t\t\t// Run callback and check for early termination\n\t\t\t\t\tif (list[firingIndex].apply(memory[0], memory[1]) === false && options.stopOnFalse) {\n\n\t\t\t\t\t\t// Jump to end and forget the data so .add doesn't re-fire\n\t\t\t\t\t\tfiringIndex = list.length;\n\t\t\t\t\t\tmemory = false;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Forget the data if we're done with it\n\t\t\tif (!options.memory) {\n\t\t\t\tmemory = false;\n\t\t\t}\n\n\t\t\tfiring = false;\n\n\t\t\t// Clean up if we're done firing for good\n\t\t\tif (_locked) {\n\n\t\t\t\t// Keep an empty list if we have data for future add calls\n\t\t\t\tif (memory) {\n\t\t\t\t\tlist = [];\n\n\t\t\t\t\t// Otherwise, this object is spent\n\t\t\t\t} else {\n\t\t\t\t\tlist = \"\";\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\n\n\t\t// Actual Callbacks object\n\t\tself = {\n\n\t\t\t// Add a callback or a collection of callbacks to the list\n\t\t\tadd: function add() {\n\t\t\t\tif (list) {\n\n\t\t\t\t\t// If we have memory from a past run, we should fire after adding\n\t\t\t\t\tif (memory && !firing) {\n\t\t\t\t\t\tfiringIndex = list.length - 1;\n\t\t\t\t\t\tqueue.push(memory);\n\t\t\t\t\t}\n\n\t\t\t\t\t(function add(args) {\n\t\t\t\t\t\tjQuery.each(args, function (_, arg) {\n\t\t\t\t\t\t\tif (jQuery.isFunction(arg)) {\n\t\t\t\t\t\t\t\tif (!options.unique || !self.has(arg)) {\n\t\t\t\t\t\t\t\t\tlist.push(arg);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t} else if (arg && arg.length && jQuery.type(arg) !== \"string\") {\n\n\t\t\t\t\t\t\t\t// Inspect recursively\n\t\t\t\t\t\t\t\tadd(arg);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t});\n\t\t\t\t\t})(arguments);\n\n\t\t\t\t\tif (memory && !firing) {\n\t\t\t\t\t\tfire();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn this;\n\t\t\t},\n\n\t\t\t// Remove a callback from the list\n\t\t\tremove: function remove() {\n\t\t\t\tjQuery.each(arguments, function (_, arg) {\n\t\t\t\t\tvar index;\n\t\t\t\t\twhile ((index = jQuery.inArray(arg, list, index)) > -1) {\n\t\t\t\t\t\tlist.splice(index, 1);\n\n\t\t\t\t\t\t// Handle firing indexes\n\t\t\t\t\t\tif (index <= firingIndex) {\n\t\t\t\t\t\t\tfiringIndex--;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t\treturn this;\n\t\t\t},\n\n\t\t\t// Check if a given callback is in the list.\n\t\t\t// If no argument is given, return whether or not list has callbacks attached.\n\t\t\thas: function has(fn) {\n\t\t\t\treturn fn ? jQuery.inArray(fn, list) > -1 : list.length > 0;\n\t\t\t},\n\n\t\t\t// Remove all callbacks from the list\n\t\t\tempty: function empty() {\n\t\t\t\tif (list) {\n\t\t\t\t\tlist = [];\n\t\t\t\t}\n\t\t\t\treturn this;\n\t\t\t},\n\n\t\t\t// Disable .fire and .add\n\t\t\t// Abort any current/pending executions\n\t\t\t// Clear all callbacks and values\n\t\t\tdisable: function disable() {\n\t\t\t\t_locked = queue = [];\n\t\t\t\tlist = memory = \"\";\n\t\t\t\treturn this;\n\t\t\t},\n\t\t\tdisabled: function disabled() {\n\t\t\t\treturn !list;\n\t\t\t},\n\n\t\t\t// Disable .fire\n\t\t\t// Also disable .add unless we have memory (since it would have no effect)\n\t\t\t// Abort any pending executions\n\t\t\tlock: function lock() {\n\t\t\t\t_locked = queue = [];\n\t\t\t\tif (!memory && !firing) {\n\t\t\t\t\tlist = memory = \"\";\n\t\t\t\t}\n\t\t\t\treturn this;\n\t\t\t},\n\t\t\tlocked: function locked() {\n\t\t\t\treturn !!_locked;\n\t\t\t},\n\n\t\t\t// Call all callbacks with the given context and arguments\n\t\t\tfireWith: function fireWith(context, args) {\n\t\t\t\tif (!_locked) {\n\t\t\t\t\targs = args || [];\n\t\t\t\t\targs = [context, args.slice ? args.slice() : args];\n\t\t\t\t\tqueue.push(args);\n\t\t\t\t\tif (!firing) {\n\t\t\t\t\t\tfire();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn this;\n\t\t\t},\n\n\t\t\t// Call all the callbacks with the given arguments\n\t\t\tfire: function fire() {\n\t\t\t\tself.fireWith(this, arguments);\n\t\t\t\treturn this;\n\t\t\t},\n\n\t\t\t// To know if the callbacks have already been called at least once\n\t\t\tfired: function fired() {\n\t\t\t\treturn !!_fired;\n\t\t\t}\n\t\t};\n\n\t\treturn self;\n\t};\n\n\tfunction Identity(v) {\n\t\treturn v;\n\t}\n\tfunction Thrower(ex) {\n\t\tthrow ex;\n\t}\n\n\tfunction adoptValue(value, resolve, reject, noValue) {\n\t\tvar method;\n\n\t\ttry {\n\n\t\t\t// Check for promise aspect first to privilege synchronous behavior\n\t\t\tif (value && jQuery.isFunction(method = value.promise)) {\n\t\t\t\tmethod.call(value).done(resolve).fail(reject);\n\n\t\t\t\t// Other thenables\n\t\t\t} else if (value && jQuery.isFunction(method = value.then)) {\n\t\t\t\tmethod.call(value, resolve, reject);\n\n\t\t\t\t// Other non-thenables\n\t\t\t} else {\n\n\t\t\t\t// Control `resolve` arguments by letting Array#slice cast boolean `noValue` to integer:\n\t\t\t\t// * false: [ value ].slice( 0 ) => resolve( value )\n\t\t\t\t// * true: [ value ].slice( 1 ) => resolve()\n\t\t\t\tresolve.apply(undefined, [value].slice(noValue));\n\t\t\t}\n\n\t\t\t// For Promises/A+, convert exceptions into rejections\n\t\t\t// Since jQuery.when doesn't unwrap thenables, we can skip the extra checks appearing in\n\t\t\t// Deferred#then to conditionally suppress rejection.\n\t\t} catch (value) {\n\n\t\t\t// Support: Android 4.0 only\n\t\t\t// Strict mode functions invoked without .call/.apply get global-object context\n\t\t\treject.apply(undefined, [value]);\n\t\t}\n\t}\n\n\tjQuery.extend({\n\n\t\tDeferred: function Deferred(func) {\n\t\t\tvar tuples = [\n\n\t\t\t// action, add listener, callbacks,\n\t\t\t// ... .then handlers, argument index, [final state]\n\t\t\t[\"notify\", \"progress\", jQuery.Callbacks(\"memory\"), jQuery.Callbacks(\"memory\"), 2], [\"resolve\", \"done\", jQuery.Callbacks(\"once memory\"), jQuery.Callbacks(\"once memory\"), 0, \"resolved\"], [\"reject\", \"fail\", jQuery.Callbacks(\"once memory\"), jQuery.Callbacks(\"once memory\"), 1, \"rejected\"]],\n\t\t\t    _state = \"pending\",\n\t\t\t    _promise = {\n\t\t\t\tstate: function state() {\n\t\t\t\t\treturn _state;\n\t\t\t\t},\n\t\t\t\talways: function always() {\n\t\t\t\t\tdeferred.done(arguments).fail(arguments);\n\t\t\t\t\treturn this;\n\t\t\t\t},\n\t\t\t\t\"catch\": function _catch(fn) {\n\t\t\t\t\treturn _promise.then(null, fn);\n\t\t\t\t},\n\n\t\t\t\t// Keep pipe for back-compat\n\t\t\t\tpipe: function pipe() /* fnDone, fnFail, fnProgress */{\n\t\t\t\t\tvar fns = arguments;\n\n\t\t\t\t\treturn jQuery.Deferred(function (newDefer) {\n\t\t\t\t\t\tjQuery.each(tuples, function (i, tuple) {\n\n\t\t\t\t\t\t\t// Map tuples (progress, done, fail) to arguments (done, fail, progress)\n\t\t\t\t\t\t\tvar fn = jQuery.isFunction(fns[tuple[4]]) && fns[tuple[4]];\n\n\t\t\t\t\t\t\t// deferred.progress(function() { bind to newDefer or newDefer.notify })\n\t\t\t\t\t\t\t// deferred.done(function() { bind to newDefer or newDefer.resolve })\n\t\t\t\t\t\t\t// deferred.fail(function() { bind to newDefer or newDefer.reject })\n\t\t\t\t\t\t\tdeferred[tuple[1]](function () {\n\t\t\t\t\t\t\t\tvar returned = fn && fn.apply(this, arguments);\n\t\t\t\t\t\t\t\tif (returned && jQuery.isFunction(returned.promise)) {\n\t\t\t\t\t\t\t\t\treturned.promise().progress(newDefer.notify).done(newDefer.resolve).fail(newDefer.reject);\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tnewDefer[tuple[0] + \"With\"](this, fn ? [returned] : arguments);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t});\n\t\t\t\t\t\t});\n\t\t\t\t\t\tfns = null;\n\t\t\t\t\t}).promise();\n\t\t\t\t},\n\t\t\t\tthen: function then(onFulfilled, onRejected, onProgress) {\n\t\t\t\t\tvar maxDepth = 0;\n\t\t\t\t\tfunction resolve(depth, deferred, handler, special) {\n\t\t\t\t\t\treturn function () {\n\t\t\t\t\t\t\tvar that = this,\n\t\t\t\t\t\t\t    args = arguments,\n\t\t\t\t\t\t\t    mightThrow = function mightThrow() {\n\t\t\t\t\t\t\t\tvar returned, then;\n\n\t\t\t\t\t\t\t\t// Support: Promises/A+ section 2.3.3.3.3\n\t\t\t\t\t\t\t\t// https://promisesaplus.com/#point-59\n\t\t\t\t\t\t\t\t// Ignore double-resolution attempts\n\t\t\t\t\t\t\t\tif (depth < maxDepth) {\n\t\t\t\t\t\t\t\t\treturn;\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\treturned = handler.apply(that, args);\n\n\t\t\t\t\t\t\t\t// Support: Promises/A+ section 2.3.1\n\t\t\t\t\t\t\t\t// https://promisesaplus.com/#point-48\n\t\t\t\t\t\t\t\tif (returned === deferred.promise()) {\n\t\t\t\t\t\t\t\t\tthrow new TypeError(\"Thenable self-resolution\");\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t// Support: Promises/A+ sections 2.3.3.1, 3.5\n\t\t\t\t\t\t\t\t// https://promisesaplus.com/#point-54\n\t\t\t\t\t\t\t\t// https://promisesaplus.com/#point-75\n\t\t\t\t\t\t\t\t// Retrieve `then` only once\n\t\t\t\t\t\t\t\tthen = returned && (\n\n\t\t\t\t\t\t\t\t// Support: Promises/A+ section 2.3.4\n\t\t\t\t\t\t\t\t// https://promisesaplus.com/#point-64\n\t\t\t\t\t\t\t\t// Only check objects and functions for thenability\n\t\t\t\t\t\t\t\t(typeof returned === \"undefined\" ? \"undefined\" : _typeof(returned)) === \"object\" || typeof returned === \"function\") && returned.then;\n\n\t\t\t\t\t\t\t\t// Handle a returned thenable\n\t\t\t\t\t\t\t\tif (jQuery.isFunction(then)) {\n\n\t\t\t\t\t\t\t\t\t// Special processors (notify) just wait for resolution\n\t\t\t\t\t\t\t\t\tif (special) {\n\t\t\t\t\t\t\t\t\t\tthen.call(returned, resolve(maxDepth, deferred, Identity, special), resolve(maxDepth, deferred, Thrower, special));\n\n\t\t\t\t\t\t\t\t\t\t// Normal processors (resolve) also hook into progress\n\t\t\t\t\t\t\t\t\t} else {\n\n\t\t\t\t\t\t\t\t\t\t// ...and disregard older resolution values\n\t\t\t\t\t\t\t\t\t\tmaxDepth++;\n\n\t\t\t\t\t\t\t\t\t\tthen.call(returned, resolve(maxDepth, deferred, Identity, special), resolve(maxDepth, deferred, Thrower, special), resolve(maxDepth, deferred, Identity, deferred.notifyWith));\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\t// Handle all other returned values\n\t\t\t\t\t\t\t\t} else {\n\n\t\t\t\t\t\t\t\t\t// Only substitute handlers pass on context\n\t\t\t\t\t\t\t\t\t// and multiple values (non-spec behavior)\n\t\t\t\t\t\t\t\t\tif (handler !== Identity) {\n\t\t\t\t\t\t\t\t\t\tthat = undefined;\n\t\t\t\t\t\t\t\t\t\targs = [returned];\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\t// Process the value(s)\n\t\t\t\t\t\t\t\t\t// Default process is resolve\n\t\t\t\t\t\t\t\t\t(special || deferred.resolveWith)(that, args);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\n\n\t\t\t\t\t\t\t// Only normal processors (resolve) catch and reject exceptions\n\t\t\t\t\t\t\tprocess = special ? mightThrow : function () {\n\t\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\t\tmightThrow();\n\t\t\t\t\t\t\t\t} catch (e) {\n\n\t\t\t\t\t\t\t\t\tif (jQuery.Deferred.exceptionHook) {\n\t\t\t\t\t\t\t\t\t\tjQuery.Deferred.exceptionHook(e, process.stackTrace);\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\t// Support: Promises/A+ section 2.3.3.3.4.1\n\t\t\t\t\t\t\t\t\t// https://promisesaplus.com/#point-61\n\t\t\t\t\t\t\t\t\t// Ignore post-resolution exceptions\n\t\t\t\t\t\t\t\t\tif (depth + 1 >= maxDepth) {\n\n\t\t\t\t\t\t\t\t\t\t// Only substitute handlers pass on context\n\t\t\t\t\t\t\t\t\t\t// and multiple values (non-spec behavior)\n\t\t\t\t\t\t\t\t\t\tif (handler !== Thrower) {\n\t\t\t\t\t\t\t\t\t\t\tthat = undefined;\n\t\t\t\t\t\t\t\t\t\t\targs = [e];\n\t\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\t\tdeferred.rejectWith(that, args);\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t};\n\n\t\t\t\t\t\t\t// Support: Promises/A+ section 2.3.3.3.1\n\t\t\t\t\t\t\t// https://promisesaplus.com/#point-57\n\t\t\t\t\t\t\t// Re-resolve promises immediately to dodge false rejection from\n\t\t\t\t\t\t\t// subsequent errors\n\t\t\t\t\t\t\tif (depth) {\n\t\t\t\t\t\t\t\tprocess();\n\t\t\t\t\t\t\t} else {\n\n\t\t\t\t\t\t\t\t// Call an optional hook to record the stack, in case of exception\n\t\t\t\t\t\t\t\t// since it's otherwise lost when execution goes async\n\t\t\t\t\t\t\t\tif (jQuery.Deferred.getStackHook) {\n\t\t\t\t\t\t\t\t\tprocess.stackTrace = jQuery.Deferred.getStackHook();\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\twindow.setTimeout(process);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t}\n\n\t\t\t\t\treturn jQuery.Deferred(function (newDefer) {\n\n\t\t\t\t\t\t// progress_handlers.add( ... )\n\t\t\t\t\t\ttuples[0][3].add(resolve(0, newDefer, jQuery.isFunction(onProgress) ? onProgress : Identity, newDefer.notifyWith));\n\n\t\t\t\t\t\t// fulfilled_handlers.add( ... )\n\t\t\t\t\t\ttuples[1][3].add(resolve(0, newDefer, jQuery.isFunction(onFulfilled) ? onFulfilled : Identity));\n\n\t\t\t\t\t\t// rejected_handlers.add( ... )\n\t\t\t\t\t\ttuples[2][3].add(resolve(0, newDefer, jQuery.isFunction(onRejected) ? onRejected : Thrower));\n\t\t\t\t\t}).promise();\n\t\t\t\t},\n\n\t\t\t\t// Get a promise for this deferred\n\t\t\t\t// If obj is provided, the promise aspect is added to the object\n\t\t\t\tpromise: function promise(obj) {\n\t\t\t\t\treturn obj != null ? jQuery.extend(obj, _promise) : _promise;\n\t\t\t\t}\n\t\t\t},\n\t\t\t    deferred = {};\n\n\t\t\t// Add list-specific methods\n\t\t\tjQuery.each(tuples, function (i, tuple) {\n\t\t\t\tvar list = tuple[2],\n\t\t\t\t    stateString = tuple[5];\n\n\t\t\t\t// promise.progress = list.add\n\t\t\t\t// promise.done = list.add\n\t\t\t\t// promise.fail = list.add\n\t\t\t\t_promise[tuple[1]] = list.add;\n\n\t\t\t\t// Handle state\n\t\t\t\tif (stateString) {\n\t\t\t\t\tlist.add(function () {\n\n\t\t\t\t\t\t// state = \"resolved\" (i.e., fulfilled)\n\t\t\t\t\t\t// state = \"rejected\"\n\t\t\t\t\t\t_state = stateString;\n\t\t\t\t\t},\n\n\t\t\t\t\t// rejected_callbacks.disable\n\t\t\t\t\t// fulfilled_callbacks.disable\n\t\t\t\t\ttuples[3 - i][2].disable,\n\n\t\t\t\t\t// progress_callbacks.lock\n\t\t\t\t\ttuples[0][2].lock);\n\t\t\t\t}\n\n\t\t\t\t// progress_handlers.fire\n\t\t\t\t// fulfilled_handlers.fire\n\t\t\t\t// rejected_handlers.fire\n\t\t\t\tlist.add(tuple[3].fire);\n\n\t\t\t\t// deferred.notify = function() { deferred.notifyWith(...) }\n\t\t\t\t// deferred.resolve = function() { deferred.resolveWith(...) }\n\t\t\t\t// deferred.reject = function() { deferred.rejectWith(...) }\n\t\t\t\tdeferred[tuple[0]] = function () {\n\t\t\t\t\tdeferred[tuple[0] + \"With\"](this === deferred ? undefined : this, arguments);\n\t\t\t\t\treturn this;\n\t\t\t\t};\n\n\t\t\t\t// deferred.notifyWith = list.fireWith\n\t\t\t\t// deferred.resolveWith = list.fireWith\n\t\t\t\t// deferred.rejectWith = list.fireWith\n\t\t\t\tdeferred[tuple[0] + \"With\"] = list.fireWith;\n\t\t\t});\n\n\t\t\t// Make the deferred a promise\n\t\t\t_promise.promise(deferred);\n\n\t\t\t// Call given func if any\n\t\t\tif (func) {\n\t\t\t\tfunc.call(deferred, deferred);\n\t\t\t}\n\n\t\t\t// All done!\n\t\t\treturn deferred;\n\t\t},\n\n\t\t// Deferred helper\n\t\twhen: function when(singleValue) {\n\t\t\tvar\n\n\t\t\t// count of uncompleted subordinates\n\t\t\tremaining = arguments.length,\n\n\n\t\t\t// count of unprocessed arguments\n\t\t\ti = remaining,\n\n\n\t\t\t// subordinate fulfillment data\n\t\t\tresolveContexts = Array(i),\n\t\t\t    resolveValues = _slice.call(arguments),\n\n\n\t\t\t// the master Deferred\n\t\t\tmaster = jQuery.Deferred(),\n\n\n\t\t\t// subordinate callback factory\n\t\t\tupdateFunc = function updateFunc(i) {\n\t\t\t\treturn function (value) {\n\t\t\t\t\tresolveContexts[i] = this;\n\t\t\t\t\tresolveValues[i] = arguments.length > 1 ? _slice.call(arguments) : value;\n\t\t\t\t\tif (! --remaining) {\n\t\t\t\t\t\tmaster.resolveWith(resolveContexts, resolveValues);\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t};\n\n\t\t\t// Single- and empty arguments are adopted like Promise.resolve\n\t\t\tif (remaining <= 1) {\n\t\t\t\tadoptValue(singleValue, master.done(updateFunc(i)).resolve, master.reject, !remaining);\n\n\t\t\t\t// Use .then() to unwrap secondary thenables (cf. gh-3000)\n\t\t\t\tif (master.state() === \"pending\" || jQuery.isFunction(resolveValues[i] && resolveValues[i].then)) {\n\n\t\t\t\t\treturn master.then();\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Multiple arguments are aggregated like Promise.all array elements\n\t\t\twhile (i--) {\n\t\t\t\tadoptValue(resolveValues[i], updateFunc(i), master.reject);\n\t\t\t}\n\n\t\t\treturn master.promise();\n\t\t}\n\t});\n\n\t// These usually indicate a programmer mistake during development,\n\t// warn about them ASAP rather than swallowing them by default.\n\tvar rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;\n\n\tjQuery.Deferred.exceptionHook = function (error, stack) {\n\n\t\t// Support: IE 8 - 9 only\n\t\t// Console exists when dev tools are open, which can happen at any time\n\t\tif (window.console && window.console.warn && error && rerrorNames.test(error.name)) {\n\t\t\twindow.console.warn(\"jQuery.Deferred exception: \" + error.message, error.stack, stack);\n\t\t}\n\t};\n\n\tjQuery.readyException = function (error) {\n\t\twindow.setTimeout(function () {\n\t\t\tthrow error;\n\t\t});\n\t};\n\n\t// The deferred used on DOM ready\n\tvar readyList = jQuery.Deferred();\n\n\tjQuery.fn.ready = function (fn) {\n\n\t\treadyList.then(fn)\n\n\t\t// Wrap jQuery.readyException in a function so that the lookup\n\t\t// happens at the time of error handling instead of callback\n\t\t// registration.\n\t\t.catch(function (error) {\n\t\t\tjQuery.readyException(error);\n\t\t});\n\n\t\treturn this;\n\t};\n\n\tjQuery.extend({\n\n\t\t// Is the DOM ready to be used? Set to true once it occurs.\n\t\tisReady: false,\n\n\t\t// A counter to track how many items to wait for before\n\t\t// the ready event fires. See #6781\n\t\treadyWait: 1,\n\n\t\t// Handle when the DOM is ready\n\t\tready: function ready(wait) {\n\n\t\t\t// Abort if there are pending holds or we're already ready\n\t\t\tif (wait === true ? --jQuery.readyWait : jQuery.isReady) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Remember that the DOM is ready\n\t\t\tjQuery.isReady = true;\n\n\t\t\t// If a normal DOM Ready event fired, decrement, and wait if need be\n\t\t\tif (wait !== true && --jQuery.readyWait > 0) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// If there are functions bound, to execute\n\t\t\treadyList.resolveWith(document, [jQuery]);\n\t\t}\n\t});\n\n\tjQuery.ready.then = readyList.then;\n\n\t// The ready event handler and self cleanup method\n\tfunction completed() {\n\t\tdocument.removeEventListener(\"DOMContentLoaded\", completed);\n\t\twindow.removeEventListener(\"load\", completed);\n\t\tjQuery.ready();\n\t}\n\n\t// Catch cases where $(document).ready() is called\n\t// after the browser event has already occurred.\n\t// Support: IE <=9 - 10 only\n\t// Older IE sometimes signals \"interactive\" too soon\n\tif (document.readyState === \"complete\" || document.readyState !== \"loading\" && !document.documentElement.doScroll) {\n\n\t\t// Handle it asynchronously to allow scripts the opportunity to delay ready\n\t\twindow.setTimeout(jQuery.ready);\n\t} else {\n\n\t\t// Use the handy event callback\n\t\tdocument.addEventListener(\"DOMContentLoaded\", completed);\n\n\t\t// A fallback to window.onload, that will always work\n\t\twindow.addEventListener(\"load\", completed);\n\t}\n\n\t// Multifunctional method to get and set values of a collection\n\t// The value/s can optionally be executed if it's a function\n\tvar access = function access(elems, fn, key, value, chainable, emptyGet, raw) {\n\t\tvar i = 0,\n\t\t    len = elems.length,\n\t\t    bulk = key == null;\n\n\t\t// Sets many values\n\t\tif (jQuery.type(key) === \"object\") {\n\t\t\tchainable = true;\n\t\t\tfor (i in key) {\n\t\t\t\taccess(elems, fn, i, key[i], true, emptyGet, raw);\n\t\t\t}\n\n\t\t\t// Sets one value\n\t\t} else if (value !== undefined) {\n\t\t\tchainable = true;\n\n\t\t\tif (!jQuery.isFunction(value)) {\n\t\t\t\traw = true;\n\t\t\t}\n\n\t\t\tif (bulk) {\n\n\t\t\t\t// Bulk operations run against the entire set\n\t\t\t\tif (raw) {\n\t\t\t\t\tfn.call(elems, value);\n\t\t\t\t\tfn = null;\n\n\t\t\t\t\t// ...except when executing function values\n\t\t\t\t} else {\n\t\t\t\t\tbulk = fn;\n\t\t\t\t\tfn = function fn(elem, key, value) {\n\t\t\t\t\t\treturn bulk.call(jQuery(elem), value);\n\t\t\t\t\t};\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tif (fn) {\n\t\t\t\tfor (; i < len; i++) {\n\t\t\t\t\tfn(elems[i], key, raw ? value : value.call(elems[i], i, fn(elems[i], key)));\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tif (chainable) {\n\t\t\treturn elems;\n\t\t}\n\n\t\t// Gets\n\t\tif (bulk) {\n\t\t\treturn fn.call(elems);\n\t\t}\n\n\t\treturn len ? fn(elems[0], key) : emptyGet;\n\t};\n\tvar acceptData = function acceptData(owner) {\n\n\t\t// Accepts only:\n\t\t//  - Node\n\t\t//    - Node.ELEMENT_NODE\n\t\t//    - Node.DOCUMENT_NODE\n\t\t//  - Object\n\t\t//    - Any\n\t\treturn owner.nodeType === 1 || owner.nodeType === 9 || !+owner.nodeType;\n\t};\n\n\tfunction Data() {\n\t\tthis.expando = jQuery.expando + Data.uid++;\n\t}\n\n\tData.uid = 1;\n\n\tData.prototype = {\n\n\t\tcache: function cache(owner) {\n\n\t\t\t// Check if the owner object already has a cache\n\t\t\tvar value = owner[this.expando];\n\n\t\t\t// If not, create one\n\t\t\tif (!value) {\n\t\t\t\tvalue = {};\n\n\t\t\t\t// We can accept data for non-element nodes in modern browsers,\n\t\t\t\t// but we should not, see #8335.\n\t\t\t\t// Always return an empty object.\n\t\t\t\tif (acceptData(owner)) {\n\n\t\t\t\t\t// If it is a node unlikely to be stringify-ed or looped over\n\t\t\t\t\t// use plain assignment\n\t\t\t\t\tif (owner.nodeType) {\n\t\t\t\t\t\towner[this.expando] = value;\n\n\t\t\t\t\t\t// Otherwise secure it in a non-enumerable property\n\t\t\t\t\t\t// configurable must be true to allow the property to be\n\t\t\t\t\t\t// deleted when data is removed\n\t\t\t\t\t} else {\n\t\t\t\t\t\tObject.defineProperty(owner, this.expando, {\n\t\t\t\t\t\t\tvalue: value,\n\t\t\t\t\t\t\tconfigurable: true\n\t\t\t\t\t\t});\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn value;\n\t\t},\n\t\tset: function set(owner, data, value) {\n\t\t\tvar prop,\n\t\t\t    cache = this.cache(owner);\n\n\t\t\t// Handle: [ owner, key, value ] args\n\t\t\t// Always use camelCase key (gh-2257)\n\t\t\tif (typeof data === \"string\") {\n\t\t\t\tcache[jQuery.camelCase(data)] = value;\n\n\t\t\t\t// Handle: [ owner, { properties } ] args\n\t\t\t} else {\n\n\t\t\t\t// Copy the properties one-by-one to the cache object\n\t\t\t\tfor (prop in data) {\n\t\t\t\t\tcache[jQuery.camelCase(prop)] = data[prop];\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn cache;\n\t\t},\n\t\tget: function get(owner, key) {\n\t\t\treturn key === undefined ? this.cache(owner) :\n\n\t\t\t// Always use camelCase key (gh-2257)\n\t\t\towner[this.expando] && owner[this.expando][jQuery.camelCase(key)];\n\t\t},\n\t\taccess: function access(owner, key, value) {\n\n\t\t\t// In cases where either:\n\t\t\t//\n\t\t\t//   1. No key was specified\n\t\t\t//   2. A string key was specified, but no value provided\n\t\t\t//\n\t\t\t// Take the \"read\" path and allow the get method to determine\n\t\t\t// which value to return, respectively either:\n\t\t\t//\n\t\t\t//   1. The entire cache object\n\t\t\t//   2. The data stored at the key\n\t\t\t//\n\t\t\tif (key === undefined || key && typeof key === \"string\" && value === undefined) {\n\n\t\t\t\treturn this.get(owner, key);\n\t\t\t}\n\n\t\t\t// When the key is not a string, or both a key and value\n\t\t\t// are specified, set or extend (existing objects) with either:\n\t\t\t//\n\t\t\t//   1. An object of properties\n\t\t\t//   2. A key and value\n\t\t\t//\n\t\t\tthis.set(owner, key, value);\n\n\t\t\t// Since the \"set\" path can have two possible entry points\n\t\t\t// return the expected data based on which path was taken[*]\n\t\t\treturn value !== undefined ? value : key;\n\t\t},\n\t\tremove: function remove(owner, key) {\n\t\t\tvar i,\n\t\t\t    cache = owner[this.expando];\n\n\t\t\tif (cache === undefined) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (key !== undefined) {\n\n\t\t\t\t// Support array or space separated string of keys\n\t\t\t\tif (Array.isArray(key)) {\n\n\t\t\t\t\t// If key is an array of keys...\n\t\t\t\t\t// We always set camelCase keys, so remove that.\n\t\t\t\t\tkey = key.map(jQuery.camelCase);\n\t\t\t\t} else {\n\t\t\t\t\tkey = jQuery.camelCase(key);\n\n\t\t\t\t\t// If a key with the spaces exists, use it.\n\t\t\t\t\t// Otherwise, create an array by matching non-whitespace\n\t\t\t\t\tkey = key in cache ? [key] : key.match(rnothtmlwhite) || [];\n\t\t\t\t}\n\n\t\t\t\ti = key.length;\n\n\t\t\t\twhile (i--) {\n\t\t\t\t\tdelete cache[key[i]];\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Remove the expando if there's no more data\n\t\t\tif (key === undefined || jQuery.isEmptyObject(cache)) {\n\n\t\t\t\t// Support: Chrome <=35 - 45\n\t\t\t\t// Webkit & Blink performance suffers when deleting properties\n\t\t\t\t// from DOM nodes, so set to undefined instead\n\t\t\t\t// https://bugs.chromium.org/p/chromium/issues/detail?id=378607 (bug restricted)\n\t\t\t\tif (owner.nodeType) {\n\t\t\t\t\towner[this.expando] = undefined;\n\t\t\t\t} else {\n\t\t\t\t\tdelete owner[this.expando];\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\thasData: function hasData(owner) {\n\t\t\tvar cache = owner[this.expando];\n\t\t\treturn cache !== undefined && !jQuery.isEmptyObject(cache);\n\t\t}\n\t};\n\tvar dataPriv = new Data();\n\n\tvar dataUser = new Data();\n\n\t//\tImplementation Summary\n\t//\n\t//\t1. Enforce API surface and semantic compatibility with 1.9.x branch\n\t//\t2. Improve the module's maintainability by reducing the storage\n\t//\t\tpaths to a single mechanism.\n\t//\t3. Use the same single mechanism to support \"private\" and \"user\" data.\n\t//\t4. _Never_ expose \"private\" data to user code (TODO: Drop _data, _removeData)\n\t//\t5. Avoid exposing implementation details on user objects (eg. expando properties)\n\t//\t6. Provide a clear path for implementation upgrade to WeakMap in 2014\n\n\tvar rbrace = /^(?:\\{[\\w\\W]*\\}|\\[[\\w\\W]*\\])$/,\n\t    rmultiDash = /[A-Z]/g;\n\n\tfunction getData(data) {\n\t\tif (data === \"true\") {\n\t\t\treturn true;\n\t\t}\n\n\t\tif (data === \"false\") {\n\t\t\treturn false;\n\t\t}\n\n\t\tif (data === \"null\") {\n\t\t\treturn null;\n\t\t}\n\n\t\t// Only convert to a number if it doesn't change the string\n\t\tif (data === +data + \"\") {\n\t\t\treturn +data;\n\t\t}\n\n\t\tif (rbrace.test(data)) {\n\t\t\treturn JSON.parse(data);\n\t\t}\n\n\t\treturn data;\n\t}\n\n\tfunction dataAttr(elem, key, data) {\n\t\tvar name;\n\n\t\t// If nothing was found internally, try to fetch any\n\t\t// data from the HTML5 data-* attribute\n\t\tif (data === undefined && elem.nodeType === 1) {\n\t\t\tname = \"data-\" + key.replace(rmultiDash, \"-$&\").toLowerCase();\n\t\t\tdata = elem.getAttribute(name);\n\n\t\t\tif (typeof data === \"string\") {\n\t\t\t\ttry {\n\t\t\t\t\tdata = getData(data);\n\t\t\t\t} catch (e) {}\n\n\t\t\t\t// Make sure we set the data so it isn't changed later\n\t\t\t\tdataUser.set(elem, key, data);\n\t\t\t} else {\n\t\t\t\tdata = undefined;\n\t\t\t}\n\t\t}\n\t\treturn data;\n\t}\n\n\tjQuery.extend({\n\t\thasData: function hasData(elem) {\n\t\t\treturn dataUser.hasData(elem) || dataPriv.hasData(elem);\n\t\t},\n\n\t\tdata: function data(elem, name, _data) {\n\t\t\treturn dataUser.access(elem, name, _data);\n\t\t},\n\n\t\tremoveData: function removeData(elem, name) {\n\t\t\tdataUser.remove(elem, name);\n\t\t},\n\n\t\t// TODO: Now that all calls to _data and _removeData have been replaced\n\t\t// with direct calls to dataPriv methods, these can be deprecated.\n\t\t_data: function _data(elem, name, data) {\n\t\t\treturn dataPriv.access(elem, name, data);\n\t\t},\n\n\t\t_removeData: function _removeData(elem, name) {\n\t\t\tdataPriv.remove(elem, name);\n\t\t}\n\t});\n\n\tjQuery.fn.extend({\n\t\tdata: function data(key, value) {\n\t\t\tvar i,\n\t\t\t    name,\n\t\t\t    data,\n\t\t\t    elem = this[0],\n\t\t\t    attrs = elem && elem.attributes;\n\n\t\t\t// Gets all values\n\t\t\tif (key === undefined) {\n\t\t\t\tif (this.length) {\n\t\t\t\t\tdata = dataUser.get(elem);\n\n\t\t\t\t\tif (elem.nodeType === 1 && !dataPriv.get(elem, \"hasDataAttrs\")) {\n\t\t\t\t\t\ti = attrs.length;\n\t\t\t\t\t\twhile (i--) {\n\n\t\t\t\t\t\t\t// Support: IE 11 only\n\t\t\t\t\t\t\t// The attrs elements can be null (#14894)\n\t\t\t\t\t\t\tif (attrs[i]) {\n\t\t\t\t\t\t\t\tname = attrs[i].name;\n\t\t\t\t\t\t\t\tif (name.indexOf(\"data-\") === 0) {\n\t\t\t\t\t\t\t\t\tname = jQuery.camelCase(name.slice(5));\n\t\t\t\t\t\t\t\t\tdataAttr(elem, name, data[name]);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tdataPriv.set(elem, \"hasDataAttrs\", true);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\treturn data;\n\t\t\t}\n\n\t\t\t// Sets multiple values\n\t\t\tif ((typeof key === \"undefined\" ? \"undefined\" : _typeof(key)) === \"object\") {\n\t\t\t\treturn this.each(function () {\n\t\t\t\t\tdataUser.set(this, key);\n\t\t\t\t});\n\t\t\t}\n\n\t\t\treturn access(this, function (value) {\n\t\t\t\tvar data;\n\n\t\t\t\t// The calling jQuery object (element matches) is not empty\n\t\t\t\t// (and therefore has an element appears at this[ 0 ]) and the\n\t\t\t\t// `value` parameter was not undefined. An empty jQuery object\n\t\t\t\t// will result in `undefined` for elem = this[ 0 ] which will\n\t\t\t\t// throw an exception if an attempt to read a data cache is made.\n\t\t\t\tif (elem && value === undefined) {\n\n\t\t\t\t\t// Attempt to get data from the cache\n\t\t\t\t\t// The key will always be camelCased in Data\n\t\t\t\t\tdata = dataUser.get(elem, key);\n\t\t\t\t\tif (data !== undefined) {\n\t\t\t\t\t\treturn data;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Attempt to \"discover\" the data in\n\t\t\t\t\t// HTML5 custom data-* attrs\n\t\t\t\t\tdata = dataAttr(elem, key);\n\t\t\t\t\tif (data !== undefined) {\n\t\t\t\t\t\treturn data;\n\t\t\t\t\t}\n\n\t\t\t\t\t// We tried really hard, but the data doesn't exist.\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\t// Set the data...\n\t\t\t\tthis.each(function () {\n\n\t\t\t\t\t// We always store the camelCased key\n\t\t\t\t\tdataUser.set(this, key, value);\n\t\t\t\t});\n\t\t\t}, null, value, arguments.length > 1, null, true);\n\t\t},\n\n\t\tremoveData: function removeData(key) {\n\t\t\treturn this.each(function () {\n\t\t\t\tdataUser.remove(this, key);\n\t\t\t});\n\t\t}\n\t});\n\n\tjQuery.extend({\n\t\tqueue: function queue(elem, type, data) {\n\t\t\tvar queue;\n\n\t\t\tif (elem) {\n\t\t\t\ttype = (type || \"fx\") + \"queue\";\n\t\t\t\tqueue = dataPriv.get(elem, type);\n\n\t\t\t\t// Speed up dequeue by getting out quickly if this is just a lookup\n\t\t\t\tif (data) {\n\t\t\t\t\tif (!queue || Array.isArray(data)) {\n\t\t\t\t\t\tqueue = dataPriv.access(elem, type, jQuery.makeArray(data));\n\t\t\t\t\t} else {\n\t\t\t\t\t\tqueue.push(data);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\treturn queue || [];\n\t\t\t}\n\t\t},\n\n\t\tdequeue: function dequeue(elem, type) {\n\t\t\ttype = type || \"fx\";\n\n\t\t\tvar queue = jQuery.queue(elem, type),\n\t\t\t    startLength = queue.length,\n\t\t\t    fn = queue.shift(),\n\t\t\t    hooks = jQuery._queueHooks(elem, type),\n\t\t\t    next = function next() {\n\t\t\t\tjQuery.dequeue(elem, type);\n\t\t\t};\n\n\t\t\t// If the fx queue is dequeued, always remove the progress sentinel\n\t\t\tif (fn === \"inprogress\") {\n\t\t\t\tfn = queue.shift();\n\t\t\t\tstartLength--;\n\t\t\t}\n\n\t\t\tif (fn) {\n\n\t\t\t\t// Add a progress sentinel to prevent the fx queue from being\n\t\t\t\t// automatically dequeued\n\t\t\t\tif (type === \"fx\") {\n\t\t\t\t\tqueue.unshift(\"inprogress\");\n\t\t\t\t}\n\n\t\t\t\t// Clear up the last queue stop function\n\t\t\t\tdelete hooks.stop;\n\t\t\t\tfn.call(elem, next, hooks);\n\t\t\t}\n\n\t\t\tif (!startLength && hooks) {\n\t\t\t\thooks.empty.fire();\n\t\t\t}\n\t\t},\n\n\t\t// Not public - generate a queueHooks object, or return the current one\n\t\t_queueHooks: function _queueHooks(elem, type) {\n\t\t\tvar key = type + \"queueHooks\";\n\t\t\treturn dataPriv.get(elem, key) || dataPriv.access(elem, key, {\n\t\t\t\tempty: jQuery.Callbacks(\"once memory\").add(function () {\n\t\t\t\t\tdataPriv.remove(elem, [type + \"queue\", key]);\n\t\t\t\t})\n\t\t\t});\n\t\t}\n\t});\n\n\tjQuery.fn.extend({\n\t\tqueue: function queue(type, data) {\n\t\t\tvar setter = 2;\n\n\t\t\tif (typeof type !== \"string\") {\n\t\t\t\tdata = type;\n\t\t\t\ttype = \"fx\";\n\t\t\t\tsetter--;\n\t\t\t}\n\n\t\t\tif (arguments.length < setter) {\n\t\t\t\treturn jQuery.queue(this[0], type);\n\t\t\t}\n\n\t\t\treturn data === undefined ? this : this.each(function () {\n\t\t\t\tvar queue = jQuery.queue(this, type, data);\n\n\t\t\t\t// Ensure a hooks for this queue\n\t\t\t\tjQuery._queueHooks(this, type);\n\n\t\t\t\tif (type === \"fx\" && queue[0] !== \"inprogress\") {\n\t\t\t\t\tjQuery.dequeue(this, type);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\t\tdequeue: function dequeue(type) {\n\t\t\treturn this.each(function () {\n\t\t\t\tjQuery.dequeue(this, type);\n\t\t\t});\n\t\t},\n\t\tclearQueue: function clearQueue(type) {\n\t\t\treturn this.queue(type || \"fx\", []);\n\t\t},\n\n\t\t// Get a promise resolved when queues of a certain type\n\t\t// are emptied (fx is the type by default)\n\t\tpromise: function promise(type, obj) {\n\t\t\tvar tmp,\n\t\t\t    count = 1,\n\t\t\t    defer = jQuery.Deferred(),\n\t\t\t    elements = this,\n\t\t\t    i = this.length,\n\t\t\t    resolve = function resolve() {\n\t\t\t\tif (! --count) {\n\t\t\t\t\tdefer.resolveWith(elements, [elements]);\n\t\t\t\t}\n\t\t\t};\n\n\t\t\tif (typeof type !== \"string\") {\n\t\t\t\tobj = type;\n\t\t\t\ttype = undefined;\n\t\t\t}\n\t\t\ttype = type || \"fx\";\n\n\t\t\twhile (i--) {\n\t\t\t\ttmp = dataPriv.get(elements[i], type + \"queueHooks\");\n\t\t\t\tif (tmp && tmp.empty) {\n\t\t\t\t\tcount++;\n\t\t\t\t\ttmp.empty.add(resolve);\n\t\t\t\t}\n\t\t\t}\n\t\t\tresolve();\n\t\t\treturn defer.promise(obj);\n\t\t}\n\t});\n\tvar pnum = /[+-]?(?:\\d*\\.|)\\d+(?:[eE][+-]?\\d+|)/.source;\n\n\tvar rcssNum = new RegExp(\"^(?:([+-])=|)(\" + pnum + \")([a-z%]*)$\", \"i\");\n\n\tvar cssExpand = [\"Top\", \"Right\", \"Bottom\", \"Left\"];\n\n\tvar isHiddenWithinTree = function isHiddenWithinTree(elem, el) {\n\n\t\t// isHiddenWithinTree might be called from jQuery#filter function;\n\t\t// in that case, element will be second argument\n\t\telem = el || elem;\n\n\t\t// Inline style trumps all\n\t\treturn elem.style.display === \"none\" || elem.style.display === \"\" &&\n\n\t\t// Otherwise, check computed style\n\t\t// Support: Firefox <=43 - 45\n\t\t// Disconnected elements can have computed display: none, so first confirm that elem is\n\t\t// in the document.\n\t\tjQuery.contains(elem.ownerDocument, elem) && jQuery.css(elem, \"display\") === \"none\";\n\t};\n\n\tvar swap = function swap(elem, options, callback, args) {\n\t\tvar ret,\n\t\t    name,\n\t\t    old = {};\n\n\t\t// Remember the old values, and insert the new ones\n\t\tfor (name in options) {\n\t\t\told[name] = elem.style[name];\n\t\t\telem.style[name] = options[name];\n\t\t}\n\n\t\tret = callback.apply(elem, args || []);\n\n\t\t// Revert the old values\n\t\tfor (name in options) {\n\t\t\telem.style[name] = old[name];\n\t\t}\n\n\t\treturn ret;\n\t};\n\n\tfunction adjustCSS(elem, prop, valueParts, tween) {\n\t\tvar adjusted,\n\t\t    scale = 1,\n\t\t    maxIterations = 20,\n\t\t    currentValue = tween ? function () {\n\t\t\treturn tween.cur();\n\t\t} : function () {\n\t\t\treturn jQuery.css(elem, prop, \"\");\n\t\t},\n\t\t    initial = currentValue(),\n\t\t    unit = valueParts && valueParts[3] || (jQuery.cssNumber[prop] ? \"\" : \"px\"),\n\n\n\t\t// Starting value computation is required for potential unit mismatches\n\t\tinitialInUnit = (jQuery.cssNumber[prop] || unit !== \"px\" && +initial) && rcssNum.exec(jQuery.css(elem, prop));\n\n\t\tif (initialInUnit && initialInUnit[3] !== unit) {\n\n\t\t\t// Trust units reported by jQuery.css\n\t\t\tunit = unit || initialInUnit[3];\n\n\t\t\t// Make sure we update the tween properties later on\n\t\t\tvalueParts = valueParts || [];\n\n\t\t\t// Iteratively approximate from a nonzero starting point\n\t\t\tinitialInUnit = +initial || 1;\n\n\t\t\tdo {\n\n\t\t\t\t// If previous iteration zeroed out, double until we get *something*.\n\t\t\t\t// Use string for doubling so we don't accidentally see scale as unchanged below\n\t\t\t\tscale = scale || \".5\";\n\n\t\t\t\t// Adjust and apply\n\t\t\t\tinitialInUnit = initialInUnit / scale;\n\t\t\t\tjQuery.style(elem, prop, initialInUnit + unit);\n\n\t\t\t\t// Update scale, tolerating zero or NaN from tween.cur()\n\t\t\t\t// Break the loop if scale is unchanged or perfect, or if we've just had enough.\n\t\t\t} while (scale !== (scale = currentValue() / initial) && scale !== 1 && --maxIterations);\n\t\t}\n\n\t\tif (valueParts) {\n\t\t\tinitialInUnit = +initialInUnit || +initial || 0;\n\n\t\t\t// Apply relative offset (+=/-=) if specified\n\t\t\tadjusted = valueParts[1] ? initialInUnit + (valueParts[1] + 1) * valueParts[2] : +valueParts[2];\n\t\t\tif (tween) {\n\t\t\t\ttween.unit = unit;\n\t\t\t\ttween.start = initialInUnit;\n\t\t\t\ttween.end = adjusted;\n\t\t\t}\n\t\t}\n\t\treturn adjusted;\n\t}\n\n\tvar defaultDisplayMap = {};\n\n\tfunction getDefaultDisplay(elem) {\n\t\tvar temp,\n\t\t    doc = elem.ownerDocument,\n\t\t    nodeName = elem.nodeName,\n\t\t    display = defaultDisplayMap[nodeName];\n\n\t\tif (display) {\n\t\t\treturn display;\n\t\t}\n\n\t\ttemp = doc.body.appendChild(doc.createElement(nodeName));\n\t\tdisplay = jQuery.css(temp, \"display\");\n\n\t\ttemp.parentNode.removeChild(temp);\n\n\t\tif (display === \"none\") {\n\t\t\tdisplay = \"block\";\n\t\t}\n\t\tdefaultDisplayMap[nodeName] = display;\n\n\t\treturn display;\n\t}\n\n\tfunction showHide(elements, show) {\n\t\tvar display,\n\t\t    elem,\n\t\t    values = [],\n\t\t    index = 0,\n\t\t    length = elements.length;\n\n\t\t// Determine new display value for elements that need to change\n\t\tfor (; index < length; index++) {\n\t\t\telem = elements[index];\n\t\t\tif (!elem.style) {\n\t\t\t\tcontinue;\n\t\t\t}\n\n\t\t\tdisplay = elem.style.display;\n\t\t\tif (show) {\n\n\t\t\t\t// Since we force visibility upon cascade-hidden elements, an immediate (and slow)\n\t\t\t\t// check is required in this first loop unless we have a nonempty display value (either\n\t\t\t\t// inline or about-to-be-restored)\n\t\t\t\tif (display === \"none\") {\n\t\t\t\t\tvalues[index] = dataPriv.get(elem, \"display\") || null;\n\t\t\t\t\tif (!values[index]) {\n\t\t\t\t\t\telem.style.display = \"\";\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tif (elem.style.display === \"\" && isHiddenWithinTree(elem)) {\n\t\t\t\t\tvalues[index] = getDefaultDisplay(elem);\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tif (display !== \"none\") {\n\t\t\t\t\tvalues[index] = \"none\";\n\n\t\t\t\t\t// Remember what we're overwriting\n\t\t\t\t\tdataPriv.set(elem, \"display\", display);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Set the display of the elements in a second loop to avoid constant reflow\n\t\tfor (index = 0; index < length; index++) {\n\t\t\tif (values[index] != null) {\n\t\t\t\telements[index].style.display = values[index];\n\t\t\t}\n\t\t}\n\n\t\treturn elements;\n\t}\n\n\tjQuery.fn.extend({\n\t\tshow: function show() {\n\t\t\treturn showHide(this, true);\n\t\t},\n\t\thide: function hide() {\n\t\t\treturn showHide(this);\n\t\t},\n\t\ttoggle: function toggle(state) {\n\t\t\tif (typeof state === \"boolean\") {\n\t\t\t\treturn state ? this.show() : this.hide();\n\t\t\t}\n\n\t\t\treturn this.each(function () {\n\t\t\t\tif (isHiddenWithinTree(this)) {\n\t\t\t\t\tjQuery(this).show();\n\t\t\t\t} else {\n\t\t\t\t\tjQuery(this).hide();\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\t});\n\tvar rcheckableType = /^(?:checkbox|radio)$/i;\n\n\tvar rtagName = /<([a-z][^\\/\\0>\\x20\\t\\r\\n\\f]+)/i;\n\n\tvar rscriptType = /^$|\\/(?:java|ecma)script/i;\n\n\t// We have to close these tags to support XHTML (#13200)\n\tvar wrapMap = {\n\n\t\t// Support: IE <=9 only\n\t\toption: [1, \"<select multiple='multiple'>\", \"</select>\"],\n\n\t\t// XHTML parsers do not magically insert elements in the\n\t\t// same way that tag soup parsers do. So we cannot shorten\n\t\t// this by omitting <tbody> or other required elements.\n\t\tthead: [1, \"<table>\", \"</table>\"],\n\t\tcol: [2, \"<table><colgroup>\", \"</colgroup></table>\"],\n\t\ttr: [2, \"<table><tbody>\", \"</tbody></table>\"],\n\t\ttd: [3, \"<table><tbody><tr>\", \"</tr></tbody></table>\"],\n\n\t\t_default: [0, \"\", \"\"]\n\t};\n\n\t// Support: IE <=9 only\n\twrapMap.optgroup = wrapMap.option;\n\n\twrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.thead;\n\twrapMap.th = wrapMap.td;\n\n\tfunction getAll(context, tag) {\n\n\t\t// Support: IE <=9 - 11 only\n\t\t// Use typeof to avoid zero-argument method invocation on host objects (#15151)\n\t\tvar ret;\n\n\t\tif (typeof context.getElementsByTagName !== \"undefined\") {\n\t\t\tret = context.getElementsByTagName(tag || \"*\");\n\t\t} else if (typeof context.querySelectorAll !== \"undefined\") {\n\t\t\tret = context.querySelectorAll(tag || \"*\");\n\t\t} else {\n\t\t\tret = [];\n\t\t}\n\n\t\tif (tag === undefined || tag && nodeName(context, tag)) {\n\t\t\treturn jQuery.merge([context], ret);\n\t\t}\n\n\t\treturn ret;\n\t}\n\n\t// Mark scripts as having already been evaluated\n\tfunction setGlobalEval(elems, refElements) {\n\t\tvar i = 0,\n\t\t    l = elems.length;\n\n\t\tfor (; i < l; i++) {\n\t\t\tdataPriv.set(elems[i], \"globalEval\", !refElements || dataPriv.get(refElements[i], \"globalEval\"));\n\t\t}\n\t}\n\n\tvar rhtml = /<|&#?\\w+;/;\n\n\tfunction buildFragment(elems, context, scripts, selection, ignored) {\n\t\tvar elem,\n\t\t    tmp,\n\t\t    tag,\n\t\t    wrap,\n\t\t    contains,\n\t\t    j,\n\t\t    fragment = context.createDocumentFragment(),\n\t\t    nodes = [],\n\t\t    i = 0,\n\t\t    l = elems.length;\n\n\t\tfor (; i < l; i++) {\n\t\t\telem = elems[i];\n\n\t\t\tif (elem || elem === 0) {\n\n\t\t\t\t// Add nodes directly\n\t\t\t\tif (jQuery.type(elem) === \"object\") {\n\n\t\t\t\t\t// Support: Android <=4.0 only, PhantomJS 1 only\n\t\t\t\t\t// push.apply(_, arraylike) throws on ancient WebKit\n\t\t\t\t\tjQuery.merge(nodes, elem.nodeType ? [elem] : elem);\n\n\t\t\t\t\t// Convert non-html into a text node\n\t\t\t\t} else if (!rhtml.test(elem)) {\n\t\t\t\t\tnodes.push(context.createTextNode(elem));\n\n\t\t\t\t\t// Convert html into DOM nodes\n\t\t\t\t} else {\n\t\t\t\t\ttmp = tmp || fragment.appendChild(context.createElement(\"div\"));\n\n\t\t\t\t\t// Deserialize a standard representation\n\t\t\t\t\ttag = (rtagName.exec(elem) || [\"\", \"\"])[1].toLowerCase();\n\t\t\t\t\twrap = wrapMap[tag] || wrapMap._default;\n\t\t\t\t\ttmp.innerHTML = wrap[1] + jQuery.htmlPrefilter(elem) + wrap[2];\n\n\t\t\t\t\t// Descend through wrappers to the right content\n\t\t\t\t\tj = wrap[0];\n\t\t\t\t\twhile (j--) {\n\t\t\t\t\t\ttmp = tmp.lastChild;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Support: Android <=4.0 only, PhantomJS 1 only\n\t\t\t\t\t// push.apply(_, arraylike) throws on ancient WebKit\n\t\t\t\t\tjQuery.merge(nodes, tmp.childNodes);\n\n\t\t\t\t\t// Remember the top-level container\n\t\t\t\t\ttmp = fragment.firstChild;\n\n\t\t\t\t\t// Ensure the created nodes are orphaned (#12392)\n\t\t\t\t\ttmp.textContent = \"\";\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Remove wrapper from fragment\n\t\tfragment.textContent = \"\";\n\n\t\ti = 0;\n\t\twhile (elem = nodes[i++]) {\n\n\t\t\t// Skip elements already in the context collection (trac-4087)\n\t\t\tif (selection && jQuery.inArray(elem, selection) > -1) {\n\t\t\t\tif (ignored) {\n\t\t\t\t\tignored.push(elem);\n\t\t\t\t}\n\t\t\t\tcontinue;\n\t\t\t}\n\n\t\t\tcontains = jQuery.contains(elem.ownerDocument, elem);\n\n\t\t\t// Append to fragment\n\t\t\ttmp = getAll(fragment.appendChild(elem), \"script\");\n\n\t\t\t// Preserve script evaluation history\n\t\t\tif (contains) {\n\t\t\t\tsetGlobalEval(tmp);\n\t\t\t}\n\n\t\t\t// Capture executables\n\t\t\tif (scripts) {\n\t\t\t\tj = 0;\n\t\t\t\twhile (elem = tmp[j++]) {\n\t\t\t\t\tif (rscriptType.test(elem.type || \"\")) {\n\t\t\t\t\t\tscripts.push(elem);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn fragment;\n\t}\n\n\t(function () {\n\t\tvar fragment = document.createDocumentFragment(),\n\t\t    div = fragment.appendChild(document.createElement(\"div\")),\n\t\t    input = document.createElement(\"input\");\n\n\t\t// Support: Android 4.0 - 4.3 only\n\t\t// Check state lost if the name is set (#11217)\n\t\t// Support: Windows Web Apps (WWA)\n\t\t// `name` and `type` must use .setAttribute for WWA (#14901)\n\t\tinput.setAttribute(\"type\", \"radio\");\n\t\tinput.setAttribute(\"checked\", \"checked\");\n\t\tinput.setAttribute(\"name\", \"t\");\n\n\t\tdiv.appendChild(input);\n\n\t\t// Support: Android <=4.1 only\n\t\t// Older WebKit doesn't clone checked state correctly in fragments\n\t\tsupport.checkClone = div.cloneNode(true).cloneNode(true).lastChild.checked;\n\n\t\t// Support: IE <=11 only\n\t\t// Make sure textarea (and checkbox) defaultValue is properly cloned\n\t\tdiv.innerHTML = \"<textarea>x</textarea>\";\n\t\tsupport.noCloneChecked = !!div.cloneNode(true).lastChild.defaultValue;\n\t})();\n\tvar documentElement = document.documentElement;\n\n\tvar rkeyEvent = /^key/,\n\t    rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,\n\t    rtypenamespace = /^([^.]*)(?:\\.(.+)|)/;\n\n\tfunction returnTrue() {\n\t\treturn true;\n\t}\n\n\tfunction returnFalse() {\n\t\treturn false;\n\t}\n\n\t// Support: IE <=9 only\n\t// See #13393 for more info\n\tfunction safeActiveElement() {\n\t\ttry {\n\t\t\treturn document.activeElement;\n\t\t} catch (err) {}\n\t}\n\n\tfunction _on(elem, types, selector, data, fn, one) {\n\t\tvar origFn, type;\n\n\t\t// Types can be a map of types/handlers\n\t\tif ((typeof types === \"undefined\" ? \"undefined\" : _typeof(types)) === \"object\") {\n\n\t\t\t// ( types-Object, selector, data )\n\t\t\tif (typeof selector !== \"string\") {\n\n\t\t\t\t// ( types-Object, data )\n\t\t\t\tdata = data || selector;\n\t\t\t\tselector = undefined;\n\t\t\t}\n\t\t\tfor (type in types) {\n\t\t\t\t_on(elem, type, selector, data, types[type], one);\n\t\t\t}\n\t\t\treturn elem;\n\t\t}\n\n\t\tif (data == null && fn == null) {\n\n\t\t\t// ( types, fn )\n\t\t\tfn = selector;\n\t\t\tdata = selector = undefined;\n\t\t} else if (fn == null) {\n\t\t\tif (typeof selector === \"string\") {\n\n\t\t\t\t// ( types, selector, fn )\n\t\t\t\tfn = data;\n\t\t\t\tdata = undefined;\n\t\t\t} else {\n\n\t\t\t\t// ( types, data, fn )\n\t\t\t\tfn = data;\n\t\t\t\tdata = selector;\n\t\t\t\tselector = undefined;\n\t\t\t}\n\t\t}\n\t\tif (fn === false) {\n\t\t\tfn = returnFalse;\n\t\t} else if (!fn) {\n\t\t\treturn elem;\n\t\t}\n\n\t\tif (one === 1) {\n\t\t\torigFn = fn;\n\t\t\tfn = function fn(event) {\n\n\t\t\t\t// Can use an empty set, since event contains the info\n\t\t\t\tjQuery().off(event);\n\t\t\t\treturn origFn.apply(this, arguments);\n\t\t\t};\n\n\t\t\t// Use same guid so caller can remove using origFn\n\t\t\tfn.guid = origFn.guid || (origFn.guid = jQuery.guid++);\n\t\t}\n\t\treturn elem.each(function () {\n\t\t\tjQuery.event.add(this, types, fn, data, selector);\n\t\t});\n\t}\n\n\t/*\n  * Helper functions for managing events -- not part of the public interface.\n  * Props to Dean Edwards' addEvent library for many of the ideas.\n  */\n\tjQuery.event = {\n\n\t\tglobal: {},\n\n\t\tadd: function add(elem, types, handler, data, selector) {\n\n\t\t\tvar handleObjIn,\n\t\t\t    eventHandle,\n\t\t\t    tmp,\n\t\t\t    events,\n\t\t\t    t,\n\t\t\t    handleObj,\n\t\t\t    special,\n\t\t\t    handlers,\n\t\t\t    type,\n\t\t\t    namespaces,\n\t\t\t    origType,\n\t\t\t    elemData = dataPriv.get(elem);\n\n\t\t\t// Don't attach events to noData or text/comment nodes (but allow plain objects)\n\t\t\tif (!elemData) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Caller can pass in an object of custom data in lieu of the handler\n\t\t\tif (handler.handler) {\n\t\t\t\thandleObjIn = handler;\n\t\t\t\thandler = handleObjIn.handler;\n\t\t\t\tselector = handleObjIn.selector;\n\t\t\t}\n\n\t\t\t// Ensure that invalid selectors throw exceptions at attach time\n\t\t\t// Evaluate against documentElement in case elem is a non-element node (e.g., document)\n\t\t\tif (selector) {\n\t\t\t\tjQuery.find.matchesSelector(documentElement, selector);\n\t\t\t}\n\n\t\t\t// Make sure that the handler has a unique ID, used to find/remove it later\n\t\t\tif (!handler.guid) {\n\t\t\t\thandler.guid = jQuery.guid++;\n\t\t\t}\n\n\t\t\t// Init the element's event structure and main handler, if this is the first\n\t\t\tif (!(events = elemData.events)) {\n\t\t\t\tevents = elemData.events = {};\n\t\t\t}\n\t\t\tif (!(eventHandle = elemData.handle)) {\n\t\t\t\teventHandle = elemData.handle = function (e) {\n\n\t\t\t\t\t// Discard the second event of a jQuery.event.trigger() and\n\t\t\t\t\t// when an event is called after a page has unloaded\n\t\t\t\t\treturn typeof jQuery !== \"undefined\" && jQuery.event.triggered !== e.type ? jQuery.event.dispatch.apply(elem, arguments) : undefined;\n\t\t\t\t};\n\t\t\t}\n\n\t\t\t// Handle multiple events separated by a space\n\t\t\ttypes = (types || \"\").match(rnothtmlwhite) || [\"\"];\n\t\t\tt = types.length;\n\t\t\twhile (t--) {\n\t\t\t\ttmp = rtypenamespace.exec(types[t]) || [];\n\t\t\t\ttype = origType = tmp[1];\n\t\t\t\tnamespaces = (tmp[2] || \"\").split(\".\").sort();\n\n\t\t\t\t// There *must* be a type, no attaching namespace-only handlers\n\t\t\t\tif (!type) {\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\n\t\t\t\t// If event changes its type, use the special event handlers for the changed type\n\t\t\t\tspecial = jQuery.event.special[type] || {};\n\n\t\t\t\t// If selector defined, determine special event api type, otherwise given type\n\t\t\t\ttype = (selector ? special.delegateType : special.bindType) || type;\n\n\t\t\t\t// Update special based on newly reset type\n\t\t\t\tspecial = jQuery.event.special[type] || {};\n\n\t\t\t\t// handleObj is passed to all event handlers\n\t\t\t\thandleObj = jQuery.extend({\n\t\t\t\t\ttype: type,\n\t\t\t\t\torigType: origType,\n\t\t\t\t\tdata: data,\n\t\t\t\t\thandler: handler,\n\t\t\t\t\tguid: handler.guid,\n\t\t\t\t\tselector: selector,\n\t\t\t\t\tneedsContext: selector && jQuery.expr.match.needsContext.test(selector),\n\t\t\t\t\tnamespace: namespaces.join(\".\")\n\t\t\t\t}, handleObjIn);\n\n\t\t\t\t// Init the event handler queue if we're the first\n\t\t\t\tif (!(handlers = events[type])) {\n\t\t\t\t\thandlers = events[type] = [];\n\t\t\t\t\thandlers.delegateCount = 0;\n\n\t\t\t\t\t// Only use addEventListener if the special events handler returns false\n\t\t\t\t\tif (!special.setup || special.setup.call(elem, data, namespaces, eventHandle) === false) {\n\n\t\t\t\t\t\tif (elem.addEventListener) {\n\t\t\t\t\t\t\telem.addEventListener(type, eventHandle);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tif (special.add) {\n\t\t\t\t\tspecial.add.call(elem, handleObj);\n\n\t\t\t\t\tif (!handleObj.handler.guid) {\n\t\t\t\t\t\thandleObj.handler.guid = handler.guid;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Add to the element's handler list, delegates in front\n\t\t\t\tif (selector) {\n\t\t\t\t\thandlers.splice(handlers.delegateCount++, 0, handleObj);\n\t\t\t\t} else {\n\t\t\t\t\thandlers.push(handleObj);\n\t\t\t\t}\n\n\t\t\t\t// Keep track of which events have ever been used, for event optimization\n\t\t\t\tjQuery.event.global[type] = true;\n\t\t\t}\n\t\t},\n\n\t\t// Detach an event or set of events from an element\n\t\tremove: function remove(elem, types, handler, selector, mappedTypes) {\n\n\t\t\tvar j,\n\t\t\t    origCount,\n\t\t\t    tmp,\n\t\t\t    events,\n\t\t\t    t,\n\t\t\t    handleObj,\n\t\t\t    special,\n\t\t\t    handlers,\n\t\t\t    type,\n\t\t\t    namespaces,\n\t\t\t    origType,\n\t\t\t    elemData = dataPriv.hasData(elem) && dataPriv.get(elem);\n\n\t\t\tif (!elemData || !(events = elemData.events)) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Once for each type.namespace in types; type may be omitted\n\t\t\ttypes = (types || \"\").match(rnothtmlwhite) || [\"\"];\n\t\t\tt = types.length;\n\t\t\twhile (t--) {\n\t\t\t\ttmp = rtypenamespace.exec(types[t]) || [];\n\t\t\t\ttype = origType = tmp[1];\n\t\t\t\tnamespaces = (tmp[2] || \"\").split(\".\").sort();\n\n\t\t\t\t// Unbind all events (on this namespace, if provided) for the element\n\t\t\t\tif (!type) {\n\t\t\t\t\tfor (type in events) {\n\t\t\t\t\t\tjQuery.event.remove(elem, type + types[t], handler, selector, true);\n\t\t\t\t\t}\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\n\t\t\t\tspecial = jQuery.event.special[type] || {};\n\t\t\t\ttype = (selector ? special.delegateType : special.bindType) || type;\n\t\t\t\thandlers = events[type] || [];\n\t\t\t\ttmp = tmp[2] && new RegExp(\"(^|\\\\.)\" + namespaces.join(\"\\\\.(?:.*\\\\.|)\") + \"(\\\\.|$)\");\n\n\t\t\t\t// Remove matching events\n\t\t\t\torigCount = j = handlers.length;\n\t\t\t\twhile (j--) {\n\t\t\t\t\thandleObj = handlers[j];\n\n\t\t\t\t\tif ((mappedTypes || origType === handleObj.origType) && (!handler || handler.guid === handleObj.guid) && (!tmp || tmp.test(handleObj.namespace)) && (!selector || selector === handleObj.selector || selector === \"**\" && handleObj.selector)) {\n\t\t\t\t\t\thandlers.splice(j, 1);\n\n\t\t\t\t\t\tif (handleObj.selector) {\n\t\t\t\t\t\t\thandlers.delegateCount--;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (special.remove) {\n\t\t\t\t\t\t\tspecial.remove.call(elem, handleObj);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Remove generic event handler if we removed something and no more handlers exist\n\t\t\t\t// (avoids potential for endless recursion during removal of special event handlers)\n\t\t\t\tif (origCount && !handlers.length) {\n\t\t\t\t\tif (!special.teardown || special.teardown.call(elem, namespaces, elemData.handle) === false) {\n\n\t\t\t\t\t\tjQuery.removeEvent(elem, type, elemData.handle);\n\t\t\t\t\t}\n\n\t\t\t\t\tdelete events[type];\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Remove data and the expando if it's no longer used\n\t\t\tif (jQuery.isEmptyObject(events)) {\n\t\t\t\tdataPriv.remove(elem, \"handle events\");\n\t\t\t}\n\t\t},\n\n\t\tdispatch: function dispatch(nativeEvent) {\n\n\t\t\t// Make a writable jQuery.Event from the native event object\n\t\t\tvar event = jQuery.event.fix(nativeEvent);\n\n\t\t\tvar i,\n\t\t\t    j,\n\t\t\t    ret,\n\t\t\t    matched,\n\t\t\t    handleObj,\n\t\t\t    handlerQueue,\n\t\t\t    args = new Array(arguments.length),\n\t\t\t    handlers = (dataPriv.get(this, \"events\") || {})[event.type] || [],\n\t\t\t    special = jQuery.event.special[event.type] || {};\n\n\t\t\t// Use the fix-ed jQuery.Event rather than the (read-only) native event\n\t\t\targs[0] = event;\n\n\t\t\tfor (i = 1; i < arguments.length; i++) {\n\t\t\t\targs[i] = arguments[i];\n\t\t\t}\n\n\t\t\tevent.delegateTarget = this;\n\n\t\t\t// Call the preDispatch hook for the mapped type, and let it bail if desired\n\t\t\tif (special.preDispatch && special.preDispatch.call(this, event) === false) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Determine handlers\n\t\t\thandlerQueue = jQuery.event.handlers.call(this, event, handlers);\n\n\t\t\t// Run delegates first; they may want to stop propagation beneath us\n\t\t\ti = 0;\n\t\t\twhile ((matched = handlerQueue[i++]) && !event.isPropagationStopped()) {\n\t\t\t\tevent.currentTarget = matched.elem;\n\n\t\t\t\tj = 0;\n\t\t\t\twhile ((handleObj = matched.handlers[j++]) && !event.isImmediatePropagationStopped()) {\n\n\t\t\t\t\t// Triggered event must either 1) have no namespace, or 2) have namespace(s)\n\t\t\t\t\t// a subset or equal to those in the bound event (both can have no namespace).\n\t\t\t\t\tif (!event.rnamespace || event.rnamespace.test(handleObj.namespace)) {\n\n\t\t\t\t\t\tevent.handleObj = handleObj;\n\t\t\t\t\t\tevent.data = handleObj.data;\n\n\t\t\t\t\t\tret = ((jQuery.event.special[handleObj.origType] || {}).handle || handleObj.handler).apply(matched.elem, args);\n\n\t\t\t\t\t\tif (ret !== undefined) {\n\t\t\t\t\t\t\tif ((event.result = ret) === false) {\n\t\t\t\t\t\t\t\tevent.preventDefault();\n\t\t\t\t\t\t\t\tevent.stopPropagation();\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Call the postDispatch hook for the mapped type\n\t\t\tif (special.postDispatch) {\n\t\t\t\tspecial.postDispatch.call(this, event);\n\t\t\t}\n\n\t\t\treturn event.result;\n\t\t},\n\n\t\thandlers: function handlers(event, _handlers) {\n\t\t\tvar i,\n\t\t\t    handleObj,\n\t\t\t    sel,\n\t\t\t    matchedHandlers,\n\t\t\t    matchedSelectors,\n\t\t\t    handlerQueue = [],\n\t\t\t    delegateCount = _handlers.delegateCount,\n\t\t\t    cur = event.target;\n\n\t\t\t// Find delegate handlers\n\t\t\tif (delegateCount &&\n\n\t\t\t// Support: IE <=9\n\t\t\t// Black-hole SVG <use> instance trees (trac-13180)\n\t\t\tcur.nodeType &&\n\n\t\t\t// Support: Firefox <=42\n\t\t\t// Suppress spec-violating clicks indicating a non-primary pointer button (trac-3861)\n\t\t\t// https://www.w3.org/TR/DOM-Level-3-Events/#event-type-click\n\t\t\t// Support: IE 11 only\n\t\t\t// ...but not arrow key \"clicks\" of radio inputs, which can have `button` -1 (gh-2343)\n\t\t\t!(event.type === \"click\" && event.button >= 1)) {\n\n\t\t\t\tfor (; cur !== this; cur = cur.parentNode || this) {\n\n\t\t\t\t\t// Don't check non-elements (#13208)\n\t\t\t\t\t// Don't process clicks on disabled elements (#6911, #8165, #11382, #11764)\n\t\t\t\t\tif (cur.nodeType === 1 && !(event.type === \"click\" && cur.disabled === true)) {\n\t\t\t\t\t\tmatchedHandlers = [];\n\t\t\t\t\t\tmatchedSelectors = {};\n\t\t\t\t\t\tfor (i = 0; i < delegateCount; i++) {\n\t\t\t\t\t\t\thandleObj = _handlers[i];\n\n\t\t\t\t\t\t\t// Don't conflict with Object.prototype properties (#13203)\n\t\t\t\t\t\t\tsel = handleObj.selector + \" \";\n\n\t\t\t\t\t\t\tif (matchedSelectors[sel] === undefined) {\n\t\t\t\t\t\t\t\tmatchedSelectors[sel] = handleObj.needsContext ? jQuery(sel, this).index(cur) > -1 : jQuery.find(sel, this, null, [cur]).length;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif (matchedSelectors[sel]) {\n\t\t\t\t\t\t\t\tmatchedHandlers.push(handleObj);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tif (matchedHandlers.length) {\n\t\t\t\t\t\t\thandlerQueue.push({ elem: cur, handlers: matchedHandlers });\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Add the remaining (directly-bound) handlers\n\t\t\tcur = this;\n\t\t\tif (delegateCount < _handlers.length) {\n\t\t\t\thandlerQueue.push({ elem: cur, handlers: _handlers.slice(delegateCount) });\n\t\t\t}\n\n\t\t\treturn handlerQueue;\n\t\t},\n\n\t\taddProp: function addProp(name, hook) {\n\t\t\tObject.defineProperty(jQuery.Event.prototype, name, {\n\t\t\t\tenumerable: true,\n\t\t\t\tconfigurable: true,\n\n\t\t\t\tget: jQuery.isFunction(hook) ? function () {\n\t\t\t\t\tif (this.originalEvent) {\n\t\t\t\t\t\treturn hook(this.originalEvent);\n\t\t\t\t\t}\n\t\t\t\t} : function () {\n\t\t\t\t\tif (this.originalEvent) {\n\t\t\t\t\t\treturn this.originalEvent[name];\n\t\t\t\t\t}\n\t\t\t\t},\n\n\t\t\t\tset: function set(value) {\n\t\t\t\t\tObject.defineProperty(this, name, {\n\t\t\t\t\t\tenumerable: true,\n\t\t\t\t\t\tconfigurable: true,\n\t\t\t\t\t\twritable: true,\n\t\t\t\t\t\tvalue: value\n\t\t\t\t\t});\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\tfix: function fix(originalEvent) {\n\t\t\treturn originalEvent[jQuery.expando] ? originalEvent : new jQuery.Event(originalEvent);\n\t\t},\n\n\t\tspecial: {\n\t\t\tload: {\n\n\t\t\t\t// Prevent triggered image.load events from bubbling to window.load\n\t\t\t\tnoBubble: true\n\t\t\t},\n\t\t\tfocus: {\n\n\t\t\t\t// Fire native event if possible so blur/focus sequence is correct\n\t\t\t\ttrigger: function trigger() {\n\t\t\t\t\tif (this !== safeActiveElement() && this.focus) {\n\t\t\t\t\t\tthis.focus();\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\tdelegateType: \"focusin\"\n\t\t\t},\n\t\t\tblur: {\n\t\t\t\ttrigger: function trigger() {\n\t\t\t\t\tif (this === safeActiveElement() && this.blur) {\n\t\t\t\t\t\tthis.blur();\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\tdelegateType: \"focusout\"\n\t\t\t},\n\t\t\tclick: {\n\n\t\t\t\t// For checkbox, fire native event so checked state will be right\n\t\t\t\ttrigger: function trigger() {\n\t\t\t\t\tif (this.type === \"checkbox\" && this.click && nodeName(this, \"input\")) {\n\t\t\t\t\t\tthis.click();\n\t\t\t\t\t\treturn false;\n\t\t\t\t\t}\n\t\t\t\t},\n\n\t\t\t\t// For cross-browser consistency, don't fire native .click() on links\n\t\t\t\t_default: function _default(event) {\n\t\t\t\t\treturn nodeName(event.target, \"a\");\n\t\t\t\t}\n\t\t\t},\n\n\t\t\tbeforeunload: {\n\t\t\t\tpostDispatch: function postDispatch(event) {\n\n\t\t\t\t\t// Support: Firefox 20+\n\t\t\t\t\t// Firefox doesn't alert if the returnValue field is not set.\n\t\t\t\t\tif (event.result !== undefined && event.originalEvent) {\n\t\t\t\t\t\tevent.originalEvent.returnValue = event.result;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t};\n\n\tjQuery.removeEvent = function (elem, type, handle) {\n\n\t\t// This \"if\" is needed for plain objects\n\t\tif (elem.removeEventListener) {\n\t\t\telem.removeEventListener(type, handle);\n\t\t}\n\t};\n\n\tjQuery.Event = function (src, props) {\n\n\t\t// Allow instantiation without the 'new' keyword\n\t\tif (!(this instanceof jQuery.Event)) {\n\t\t\treturn new jQuery.Event(src, props);\n\t\t}\n\n\t\t// Event object\n\t\tif (src && src.type) {\n\t\t\tthis.originalEvent = src;\n\t\t\tthis.type = src.type;\n\n\t\t\t// Events bubbling up the document may have been marked as prevented\n\t\t\t// by a handler lower down the tree; reflect the correct value.\n\t\t\tthis.isDefaultPrevented = src.defaultPrevented || src.defaultPrevented === undefined &&\n\n\t\t\t// Support: Android <=2.3 only\n\t\t\tsrc.returnValue === false ? returnTrue : returnFalse;\n\n\t\t\t// Create target properties\n\t\t\t// Support: Safari <=6 - 7 only\n\t\t\t// Target should not be a text node (#504, #13143)\n\t\t\tthis.target = src.target && src.target.nodeType === 3 ? src.target.parentNode : src.target;\n\n\t\t\tthis.currentTarget = src.currentTarget;\n\t\t\tthis.relatedTarget = src.relatedTarget;\n\n\t\t\t// Event type\n\t\t} else {\n\t\t\tthis.type = src;\n\t\t}\n\n\t\t// Put explicitly provided properties onto the event object\n\t\tif (props) {\n\t\t\tjQuery.extend(this, props);\n\t\t}\n\n\t\t// Create a timestamp if incoming event doesn't have one\n\t\tthis.timeStamp = src && src.timeStamp || jQuery.now();\n\n\t\t// Mark it as fixed\n\t\tthis[jQuery.expando] = true;\n\t};\n\n\t// jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding\n\t// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html\n\tjQuery.Event.prototype = {\n\t\tconstructor: jQuery.Event,\n\t\tisDefaultPrevented: returnFalse,\n\t\tisPropagationStopped: returnFalse,\n\t\tisImmediatePropagationStopped: returnFalse,\n\t\tisSimulated: false,\n\n\t\tpreventDefault: function preventDefault() {\n\t\t\tvar e = this.originalEvent;\n\n\t\t\tthis.isDefaultPrevented = returnTrue;\n\n\t\t\tif (e && !this.isSimulated) {\n\t\t\t\te.preventDefault();\n\t\t\t}\n\t\t},\n\t\tstopPropagation: function stopPropagation() {\n\t\t\tvar e = this.originalEvent;\n\n\t\t\tthis.isPropagationStopped = returnTrue;\n\n\t\t\tif (e && !this.isSimulated) {\n\t\t\t\te.stopPropagation();\n\t\t\t}\n\t\t},\n\t\tstopImmediatePropagation: function stopImmediatePropagation() {\n\t\t\tvar e = this.originalEvent;\n\n\t\t\tthis.isImmediatePropagationStopped = returnTrue;\n\n\t\t\tif (e && !this.isSimulated) {\n\t\t\t\te.stopImmediatePropagation();\n\t\t\t}\n\n\t\t\tthis.stopPropagation();\n\t\t}\n\t};\n\n\t// Includes all common event props including KeyEvent and MouseEvent specific props\n\tjQuery.each({\n\t\taltKey: true,\n\t\tbubbles: true,\n\t\tcancelable: true,\n\t\tchangedTouches: true,\n\t\tctrlKey: true,\n\t\tdetail: true,\n\t\teventPhase: true,\n\t\tmetaKey: true,\n\t\tpageX: true,\n\t\tpageY: true,\n\t\tshiftKey: true,\n\t\tview: true,\n\t\t\"char\": true,\n\t\tcharCode: true,\n\t\tkey: true,\n\t\tkeyCode: true,\n\t\tbutton: true,\n\t\tbuttons: true,\n\t\tclientX: true,\n\t\tclientY: true,\n\t\toffsetX: true,\n\t\toffsetY: true,\n\t\tpointerId: true,\n\t\tpointerType: true,\n\t\tscreenX: true,\n\t\tscreenY: true,\n\t\ttargetTouches: true,\n\t\ttoElement: true,\n\t\ttouches: true,\n\n\t\twhich: function which(event) {\n\t\t\tvar button = event.button;\n\n\t\t\t// Add which for key events\n\t\t\tif (event.which == null && rkeyEvent.test(event.type)) {\n\t\t\t\treturn event.charCode != null ? event.charCode : event.keyCode;\n\t\t\t}\n\n\t\t\t// Add which for click: 1 === left; 2 === middle; 3 === right\n\t\t\tif (!event.which && button !== undefined && rmouseEvent.test(event.type)) {\n\t\t\t\tif (button & 1) {\n\t\t\t\t\treturn 1;\n\t\t\t\t}\n\n\t\t\t\tif (button & 2) {\n\t\t\t\t\treturn 3;\n\t\t\t\t}\n\n\t\t\t\tif (button & 4) {\n\t\t\t\t\treturn 2;\n\t\t\t\t}\n\n\t\t\t\treturn 0;\n\t\t\t}\n\n\t\t\treturn event.which;\n\t\t}\n\t}, jQuery.event.addProp);\n\n\t// Create mouseenter/leave events using mouseover/out and event-time checks\n\t// so that event delegation works in jQuery.\n\t// Do the same for pointerenter/pointerleave and pointerover/pointerout\n\t//\n\t// Support: Safari 7 only\n\t// Safari sends mouseenter too often; see:\n\t// https://bugs.chromium.org/p/chromium/issues/detail?id=470258\n\t// for the description of the bug (it existed in older Chrome versions as well).\n\tjQuery.each({\n\t\tmouseenter: \"mouseover\",\n\t\tmouseleave: \"mouseout\",\n\t\tpointerenter: \"pointerover\",\n\t\tpointerleave: \"pointerout\"\n\t}, function (orig, fix) {\n\t\tjQuery.event.special[orig] = {\n\t\t\tdelegateType: fix,\n\t\t\tbindType: fix,\n\n\t\t\thandle: function handle(event) {\n\t\t\t\tvar ret,\n\t\t\t\t    target = this,\n\t\t\t\t    related = event.relatedTarget,\n\t\t\t\t    handleObj = event.handleObj;\n\n\t\t\t\t// For mouseenter/leave call the handler if related is outside the target.\n\t\t\t\t// NB: No relatedTarget if the mouse left/entered the browser window\n\t\t\t\tif (!related || related !== target && !jQuery.contains(target, related)) {\n\t\t\t\t\tevent.type = handleObj.origType;\n\t\t\t\t\tret = handleObj.handler.apply(this, arguments);\n\t\t\t\t\tevent.type = fix;\n\t\t\t\t}\n\t\t\t\treturn ret;\n\t\t\t}\n\t\t};\n\t});\n\n\tjQuery.fn.extend({\n\n\t\ton: function on(types, selector, data, fn) {\n\t\t\treturn _on(this, types, selector, data, fn);\n\t\t},\n\t\tone: function one(types, selector, data, fn) {\n\t\t\treturn _on(this, types, selector, data, fn, 1);\n\t\t},\n\t\toff: function off(types, selector, fn) {\n\t\t\tvar handleObj, type;\n\t\t\tif (types && types.preventDefault && types.handleObj) {\n\n\t\t\t\t// ( event )  dispatched jQuery.Event\n\t\t\t\thandleObj = types.handleObj;\n\t\t\t\tjQuery(types.delegateTarget).off(handleObj.namespace ? handleObj.origType + \".\" + handleObj.namespace : handleObj.origType, handleObj.selector, handleObj.handler);\n\t\t\t\treturn this;\n\t\t\t}\n\t\t\tif ((typeof types === \"undefined\" ? \"undefined\" : _typeof(types)) === \"object\") {\n\n\t\t\t\t// ( types-object [, selector] )\n\t\t\t\tfor (type in types) {\n\t\t\t\t\tthis.off(type, selector, types[type]);\n\t\t\t\t}\n\t\t\t\treturn this;\n\t\t\t}\n\t\t\tif (selector === false || typeof selector === \"function\") {\n\n\t\t\t\t// ( types [, fn] )\n\t\t\t\tfn = selector;\n\t\t\t\tselector = undefined;\n\t\t\t}\n\t\t\tif (fn === false) {\n\t\t\t\tfn = returnFalse;\n\t\t\t}\n\t\t\treturn this.each(function () {\n\t\t\t\tjQuery.event.remove(this, types, fn, selector);\n\t\t\t});\n\t\t}\n\t});\n\n\tvar\n\n\t/* eslint-disable max-len */\n\n\t// See https://github.com/eslint/eslint/issues/3229\n\trxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\\/\\0>\\x20\\t\\r\\n\\f]*)[^>]*)\\/>/gi,\n\n\n\t/* eslint-enable */\n\n\t// Support: IE <=10 - 11, Edge 12 - 13\n\t// In IE/Edge using regex groups here causes severe slowdowns.\n\t// See https://connect.microsoft.com/IE/feedback/details/1736512/\n\trnoInnerhtml = /<script|<style|<link/i,\n\n\n\t// checked=\"checked\" or checked\n\trchecked = /checked\\s*(?:[^=]|=\\s*.checked.)/i,\n\t    rscriptTypeMasked = /^true\\/(.*)/,\n\t    rcleanScript = /^\\s*<!(?:\\[CDATA\\[|--)|(?:\\]\\]|--)>\\s*$/g;\n\n\t// Prefer a tbody over its parent table for containing new rows\n\tfunction manipulationTarget(elem, content) {\n\t\tif (nodeName(elem, \"table\") && nodeName(content.nodeType !== 11 ? content : content.firstChild, \"tr\")) {\n\n\t\t\treturn jQuery(\">tbody\", elem)[0] || elem;\n\t\t}\n\n\t\treturn elem;\n\t}\n\n\t// Replace/restore the type attribute of script elements for safe DOM manipulation\n\tfunction disableScript(elem) {\n\t\telem.type = (elem.getAttribute(\"type\") !== null) + \"/\" + elem.type;\n\t\treturn elem;\n\t}\n\tfunction restoreScript(elem) {\n\t\tvar match = rscriptTypeMasked.exec(elem.type);\n\n\t\tif (match) {\n\t\t\telem.type = match[1];\n\t\t} else {\n\t\t\telem.removeAttribute(\"type\");\n\t\t}\n\n\t\treturn elem;\n\t}\n\n\tfunction cloneCopyEvent(src, dest) {\n\t\tvar i, l, type, pdataOld, pdataCur, udataOld, udataCur, events;\n\n\t\tif (dest.nodeType !== 1) {\n\t\t\treturn;\n\t\t}\n\n\t\t// 1. Copy private data: events, handlers, etc.\n\t\tif (dataPriv.hasData(src)) {\n\t\t\tpdataOld = dataPriv.access(src);\n\t\t\tpdataCur = dataPriv.set(dest, pdataOld);\n\t\t\tevents = pdataOld.events;\n\n\t\t\tif (events) {\n\t\t\t\tdelete pdataCur.handle;\n\t\t\t\tpdataCur.events = {};\n\n\t\t\t\tfor (type in events) {\n\t\t\t\t\tfor (i = 0, l = events[type].length; i < l; i++) {\n\t\t\t\t\t\tjQuery.event.add(dest, type, events[type][i]);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// 2. Copy user data\n\t\tif (dataUser.hasData(src)) {\n\t\t\tudataOld = dataUser.access(src);\n\t\t\tudataCur = jQuery.extend({}, udataOld);\n\n\t\t\tdataUser.set(dest, udataCur);\n\t\t}\n\t}\n\n\t// Fix IE bugs, see support tests\n\tfunction fixInput(src, dest) {\n\t\tvar nodeName = dest.nodeName.toLowerCase();\n\n\t\t// Fails to persist the checked state of a cloned checkbox or radio button.\n\t\tif (nodeName === \"input\" && rcheckableType.test(src.type)) {\n\t\t\tdest.checked = src.checked;\n\n\t\t\t// Fails to return the selected option to the default selected state when cloning options\n\t\t} else if (nodeName === \"input\" || nodeName === \"textarea\") {\n\t\t\tdest.defaultValue = src.defaultValue;\n\t\t}\n\t}\n\n\tfunction domManip(collection, args, callback, ignored) {\n\n\t\t// Flatten any nested arrays\n\t\targs = concat.apply([], args);\n\n\t\tvar fragment,\n\t\t    first,\n\t\t    scripts,\n\t\t    hasScripts,\n\t\t    node,\n\t\t    doc,\n\t\t    i = 0,\n\t\t    l = collection.length,\n\t\t    iNoClone = l - 1,\n\t\t    value = args[0],\n\t\t    isFunction = jQuery.isFunction(value);\n\n\t\t// We can't cloneNode fragments that contain checked, in WebKit\n\t\tif (isFunction || l > 1 && typeof value === \"string\" && !support.checkClone && rchecked.test(value)) {\n\t\t\treturn collection.each(function (index) {\n\t\t\t\tvar self = collection.eq(index);\n\t\t\t\tif (isFunction) {\n\t\t\t\t\targs[0] = value.call(this, index, self.html());\n\t\t\t\t}\n\t\t\t\tdomManip(self, args, callback, ignored);\n\t\t\t});\n\t\t}\n\n\t\tif (l) {\n\t\t\tfragment = buildFragment(args, collection[0].ownerDocument, false, collection, ignored);\n\t\t\tfirst = fragment.firstChild;\n\n\t\t\tif (fragment.childNodes.length === 1) {\n\t\t\t\tfragment = first;\n\t\t\t}\n\n\t\t\t// Require either new content or an interest in ignored elements to invoke the callback\n\t\t\tif (first || ignored) {\n\t\t\t\tscripts = jQuery.map(getAll(fragment, \"script\"), disableScript);\n\t\t\t\thasScripts = scripts.length;\n\n\t\t\t\t// Use the original fragment for the last item\n\t\t\t\t// instead of the first because it can end up\n\t\t\t\t// being emptied incorrectly in certain situations (#8070).\n\t\t\t\tfor (; i < l; i++) {\n\t\t\t\t\tnode = fragment;\n\n\t\t\t\t\tif (i !== iNoClone) {\n\t\t\t\t\t\tnode = jQuery.clone(node, true, true);\n\n\t\t\t\t\t\t// Keep references to cloned scripts for later restoration\n\t\t\t\t\t\tif (hasScripts) {\n\n\t\t\t\t\t\t\t// Support: Android <=4.0 only, PhantomJS 1 only\n\t\t\t\t\t\t\t// push.apply(_, arraylike) throws on ancient WebKit\n\t\t\t\t\t\t\tjQuery.merge(scripts, getAll(node, \"script\"));\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\tcallback.call(collection[i], node, i);\n\t\t\t\t}\n\n\t\t\t\tif (hasScripts) {\n\t\t\t\t\tdoc = scripts[scripts.length - 1].ownerDocument;\n\n\t\t\t\t\t// Reenable scripts\n\t\t\t\t\tjQuery.map(scripts, restoreScript);\n\n\t\t\t\t\t// Evaluate executable scripts on first document insertion\n\t\t\t\t\tfor (i = 0; i < hasScripts; i++) {\n\t\t\t\t\t\tnode = scripts[i];\n\t\t\t\t\t\tif (rscriptType.test(node.type || \"\") && !dataPriv.access(node, \"globalEval\") && jQuery.contains(doc, node)) {\n\n\t\t\t\t\t\t\tif (node.src) {\n\n\t\t\t\t\t\t\t\t// Optional AJAX dependency, but won't run scripts if not present\n\t\t\t\t\t\t\t\tif (jQuery._evalUrl) {\n\t\t\t\t\t\t\t\t\tjQuery._evalUrl(node.src);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\tDOMEval(node.textContent.replace(rcleanScript, \"\"), doc);\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn collection;\n\t}\n\n\tfunction _remove(elem, selector, keepData) {\n\t\tvar node,\n\t\t    nodes = selector ? jQuery.filter(selector, elem) : elem,\n\t\t    i = 0;\n\n\t\tfor (; (node = nodes[i]) != null; i++) {\n\t\t\tif (!keepData && node.nodeType === 1) {\n\t\t\t\tjQuery.cleanData(getAll(node));\n\t\t\t}\n\n\t\t\tif (node.parentNode) {\n\t\t\t\tif (keepData && jQuery.contains(node.ownerDocument, node)) {\n\t\t\t\t\tsetGlobalEval(getAll(node, \"script\"));\n\t\t\t\t}\n\t\t\t\tnode.parentNode.removeChild(node);\n\t\t\t}\n\t\t}\n\n\t\treturn elem;\n\t}\n\n\tjQuery.extend({\n\t\thtmlPrefilter: function htmlPrefilter(html) {\n\t\t\treturn html.replace(rxhtmlTag, \"<$1></$2>\");\n\t\t},\n\n\t\tclone: function clone(elem, dataAndEvents, deepDataAndEvents) {\n\t\t\tvar i,\n\t\t\t    l,\n\t\t\t    srcElements,\n\t\t\t    destElements,\n\t\t\t    clone = elem.cloneNode(true),\n\t\t\t    inPage = jQuery.contains(elem.ownerDocument, elem);\n\n\t\t\t// Fix IE cloning issues\n\t\t\tif (!support.noCloneChecked && (elem.nodeType === 1 || elem.nodeType === 11) && !jQuery.isXMLDoc(elem)) {\n\n\t\t\t\t// We eschew Sizzle here for performance reasons: https://jsperf.com/getall-vs-sizzle/2\n\t\t\t\tdestElements = getAll(clone);\n\t\t\t\tsrcElements = getAll(elem);\n\n\t\t\t\tfor (i = 0, l = srcElements.length; i < l; i++) {\n\t\t\t\t\tfixInput(srcElements[i], destElements[i]);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Copy the events from the original to the clone\n\t\t\tif (dataAndEvents) {\n\t\t\t\tif (deepDataAndEvents) {\n\t\t\t\t\tsrcElements = srcElements || getAll(elem);\n\t\t\t\t\tdestElements = destElements || getAll(clone);\n\n\t\t\t\t\tfor (i = 0, l = srcElements.length; i < l; i++) {\n\t\t\t\t\t\tcloneCopyEvent(srcElements[i], destElements[i]);\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\tcloneCopyEvent(elem, clone);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Preserve script evaluation history\n\t\t\tdestElements = getAll(clone, \"script\");\n\t\t\tif (destElements.length > 0) {\n\t\t\t\tsetGlobalEval(destElements, !inPage && getAll(elem, \"script\"));\n\t\t\t}\n\n\t\t\t// Return the cloned set\n\t\t\treturn clone;\n\t\t},\n\n\t\tcleanData: function cleanData(elems) {\n\t\t\tvar data,\n\t\t\t    elem,\n\t\t\t    type,\n\t\t\t    special = jQuery.event.special,\n\t\t\t    i = 0;\n\n\t\t\tfor (; (elem = elems[i]) !== undefined; i++) {\n\t\t\t\tif (acceptData(elem)) {\n\t\t\t\t\tif (data = elem[dataPriv.expando]) {\n\t\t\t\t\t\tif (data.events) {\n\t\t\t\t\t\t\tfor (type in data.events) {\n\t\t\t\t\t\t\t\tif (special[type]) {\n\t\t\t\t\t\t\t\t\tjQuery.event.remove(elem, type);\n\n\t\t\t\t\t\t\t\t\t// This is a shortcut to avoid jQuery.event.remove's overhead\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tjQuery.removeEvent(elem, type, data.handle);\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Support: Chrome <=35 - 45+\n\t\t\t\t\t\t// Assign undefined instead of using delete, see Data#remove\n\t\t\t\t\t\telem[dataPriv.expando] = undefined;\n\t\t\t\t\t}\n\t\t\t\t\tif (elem[dataUser.expando]) {\n\n\t\t\t\t\t\t// Support: Chrome <=35 - 45+\n\t\t\t\t\t\t// Assign undefined instead of using delete, see Data#remove\n\t\t\t\t\t\telem[dataUser.expando] = undefined;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t});\n\n\tjQuery.fn.extend({\n\t\tdetach: function detach(selector) {\n\t\t\treturn _remove(this, selector, true);\n\t\t},\n\n\t\tremove: function remove(selector) {\n\t\t\treturn _remove(this, selector);\n\t\t},\n\n\t\ttext: function text(value) {\n\t\t\treturn access(this, function (value) {\n\t\t\t\treturn value === undefined ? jQuery.text(this) : this.empty().each(function () {\n\t\t\t\t\tif (this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9) {\n\t\t\t\t\t\tthis.textContent = value;\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}, null, value, arguments.length);\n\t\t},\n\n\t\tappend: function append() {\n\t\t\treturn domManip(this, arguments, function (elem) {\n\t\t\t\tif (this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9) {\n\t\t\t\t\tvar target = manipulationTarget(this, elem);\n\t\t\t\t\ttarget.appendChild(elem);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\tprepend: function prepend() {\n\t\t\treturn domManip(this, arguments, function (elem) {\n\t\t\t\tif (this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9) {\n\t\t\t\t\tvar target = manipulationTarget(this, elem);\n\t\t\t\t\ttarget.insertBefore(elem, target.firstChild);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\tbefore: function before() {\n\t\t\treturn domManip(this, arguments, function (elem) {\n\t\t\t\tif (this.parentNode) {\n\t\t\t\t\tthis.parentNode.insertBefore(elem, this);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\tafter: function after() {\n\t\t\treturn domManip(this, arguments, function (elem) {\n\t\t\t\tif (this.parentNode) {\n\t\t\t\t\tthis.parentNode.insertBefore(elem, this.nextSibling);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\tempty: function empty() {\n\t\t\tvar elem,\n\t\t\t    i = 0;\n\n\t\t\tfor (; (elem = this[i]) != null; i++) {\n\t\t\t\tif (elem.nodeType === 1) {\n\n\t\t\t\t\t// Prevent memory leaks\n\t\t\t\t\tjQuery.cleanData(getAll(elem, false));\n\n\t\t\t\t\t// Remove any remaining nodes\n\t\t\t\t\telem.textContent = \"\";\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn this;\n\t\t},\n\n\t\tclone: function clone(dataAndEvents, deepDataAndEvents) {\n\t\t\tdataAndEvents = dataAndEvents == null ? false : dataAndEvents;\n\t\t\tdeepDataAndEvents = deepDataAndEvents == null ? dataAndEvents : deepDataAndEvents;\n\n\t\t\treturn this.map(function () {\n\t\t\t\treturn jQuery.clone(this, dataAndEvents, deepDataAndEvents);\n\t\t\t});\n\t\t},\n\n\t\thtml: function html(value) {\n\t\t\treturn access(this, function (value) {\n\t\t\t\tvar elem = this[0] || {},\n\t\t\t\t    i = 0,\n\t\t\t\t    l = this.length;\n\n\t\t\t\tif (value === undefined && elem.nodeType === 1) {\n\t\t\t\t\treturn elem.innerHTML;\n\t\t\t\t}\n\n\t\t\t\t// See if we can take a shortcut and just use innerHTML\n\t\t\t\tif (typeof value === \"string\" && !rnoInnerhtml.test(value) && !wrapMap[(rtagName.exec(value) || [\"\", \"\"])[1].toLowerCase()]) {\n\n\t\t\t\t\tvalue = jQuery.htmlPrefilter(value);\n\n\t\t\t\t\ttry {\n\t\t\t\t\t\tfor (; i < l; i++) {\n\t\t\t\t\t\t\telem = this[i] || {};\n\n\t\t\t\t\t\t\t// Remove element nodes and prevent memory leaks\n\t\t\t\t\t\t\tif (elem.nodeType === 1) {\n\t\t\t\t\t\t\t\tjQuery.cleanData(getAll(elem, false));\n\t\t\t\t\t\t\t\telem.innerHTML = value;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\telem = 0;\n\n\t\t\t\t\t\t// If using innerHTML throws an exception, use the fallback method\n\t\t\t\t\t} catch (e) {}\n\t\t\t\t}\n\n\t\t\t\tif (elem) {\n\t\t\t\t\tthis.empty().append(value);\n\t\t\t\t}\n\t\t\t}, null, value, arguments.length);\n\t\t},\n\n\t\treplaceWith: function replaceWith() {\n\t\t\tvar ignored = [];\n\n\t\t\t// Make the changes, replacing each non-ignored context element with the new content\n\t\t\treturn domManip(this, arguments, function (elem) {\n\t\t\t\tvar parent = this.parentNode;\n\n\t\t\t\tif (jQuery.inArray(this, ignored) < 0) {\n\t\t\t\t\tjQuery.cleanData(getAll(this));\n\t\t\t\t\tif (parent) {\n\t\t\t\t\t\tparent.replaceChild(elem, this);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Force callback invocation\n\t\t\t}, ignored);\n\t\t}\n\t});\n\n\tjQuery.each({\n\t\tappendTo: \"append\",\n\t\tprependTo: \"prepend\",\n\t\tinsertBefore: \"before\",\n\t\tinsertAfter: \"after\",\n\t\treplaceAll: \"replaceWith\"\n\t}, function (name, original) {\n\t\tjQuery.fn[name] = function (selector) {\n\t\t\tvar elems,\n\t\t\t    ret = [],\n\t\t\t    insert = jQuery(selector),\n\t\t\t    last = insert.length - 1,\n\t\t\t    i = 0;\n\n\t\t\tfor (; i <= last; i++) {\n\t\t\t\telems = i === last ? this : this.clone(true);\n\t\t\t\tjQuery(insert[i])[original](elems);\n\n\t\t\t\t// Support: Android <=4.0 only, PhantomJS 1 only\n\t\t\t\t// .get() because push.apply(_, arraylike) throws on ancient WebKit\n\t\t\t\tpush.apply(ret, elems.get());\n\t\t\t}\n\n\t\t\treturn this.pushStack(ret);\n\t\t};\n\t});\n\tvar rmargin = /^margin/;\n\n\tvar rnumnonpx = new RegExp(\"^(\" + pnum + \")(?!px)[a-z%]+$\", \"i\");\n\n\tvar getStyles = function getStyles(elem) {\n\n\t\t// Support: IE <=11 only, Firefox <=30 (#15098, #14150)\n\t\t// IE throws on elements created in popups\n\t\t// FF meanwhile throws on frame elements through \"defaultView.getComputedStyle\"\n\t\tvar view = elem.ownerDocument.defaultView;\n\n\t\tif (!view || !view.opener) {\n\t\t\tview = window;\n\t\t}\n\n\t\treturn view.getComputedStyle(elem);\n\t};\n\n\t(function () {\n\n\t\t// Executing both pixelPosition & boxSizingReliable tests require only one layout\n\t\t// so they're executed at the same time to save the second computation.\n\t\tfunction computeStyleTests() {\n\n\t\t\t// This is a singleton, we need to execute it only once\n\t\t\tif (!div) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tdiv.style.cssText = \"box-sizing:border-box;\" + \"position:relative;display:block;\" + \"margin:auto;border:1px;padding:1px;\" + \"top:1%;width:50%\";\n\t\t\tdiv.innerHTML = \"\";\n\t\t\tdocumentElement.appendChild(container);\n\n\t\t\tvar divStyle = window.getComputedStyle(div);\n\t\t\tpixelPositionVal = divStyle.top !== \"1%\";\n\n\t\t\t// Support: Android 4.0 - 4.3 only, Firefox <=3 - 44\n\t\t\treliableMarginLeftVal = divStyle.marginLeft === \"2px\";\n\t\t\tboxSizingReliableVal = divStyle.width === \"4px\";\n\n\t\t\t// Support: Android 4.0 - 4.3 only\n\t\t\t// Some styles come back with percentage values, even though they shouldn't\n\t\t\tdiv.style.marginRight = \"50%\";\n\t\t\tpixelMarginRightVal = divStyle.marginRight === \"4px\";\n\n\t\t\tdocumentElement.removeChild(container);\n\n\t\t\t// Nullify the div so it wouldn't be stored in the memory and\n\t\t\t// it will also be a sign that checks already performed\n\t\t\tdiv = null;\n\t\t}\n\n\t\tvar pixelPositionVal,\n\t\t    boxSizingReliableVal,\n\t\t    pixelMarginRightVal,\n\t\t    reliableMarginLeftVal,\n\t\t    container = document.createElement(\"div\"),\n\t\t    div = document.createElement(\"div\");\n\n\t\t// Finish early in limited (non-browser) environments\n\t\tif (!div.style) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Support: IE <=9 - 11 only\n\t\t// Style of cloned element affects source element cloned (#8908)\n\t\tdiv.style.backgroundClip = \"content-box\";\n\t\tdiv.cloneNode(true).style.backgroundClip = \"\";\n\t\tsupport.clearCloneStyle = div.style.backgroundClip === \"content-box\";\n\n\t\tcontainer.style.cssText = \"border:0;width:8px;height:0;top:0;left:-9999px;\" + \"padding:0;margin-top:1px;position:absolute\";\n\t\tcontainer.appendChild(div);\n\n\t\tjQuery.extend(support, {\n\t\t\tpixelPosition: function pixelPosition() {\n\t\t\t\tcomputeStyleTests();\n\t\t\t\treturn pixelPositionVal;\n\t\t\t},\n\t\t\tboxSizingReliable: function boxSizingReliable() {\n\t\t\t\tcomputeStyleTests();\n\t\t\t\treturn boxSizingReliableVal;\n\t\t\t},\n\t\t\tpixelMarginRight: function pixelMarginRight() {\n\t\t\t\tcomputeStyleTests();\n\t\t\t\treturn pixelMarginRightVal;\n\t\t\t},\n\t\t\treliableMarginLeft: function reliableMarginLeft() {\n\t\t\t\tcomputeStyleTests();\n\t\t\t\treturn reliableMarginLeftVal;\n\t\t\t}\n\t\t});\n\t})();\n\n\tfunction curCSS(elem, name, computed) {\n\t\tvar width,\n\t\t    minWidth,\n\t\t    maxWidth,\n\t\t    ret,\n\n\n\t\t// Support: Firefox 51+\n\t\t// Retrieving style before computed somehow\n\t\t// fixes an issue with getting wrong values\n\t\t// on detached elements\n\t\tstyle = elem.style;\n\n\t\tcomputed = computed || getStyles(elem);\n\n\t\t// getPropertyValue is needed for:\n\t\t//   .css('filter') (IE 9 only, #12537)\n\t\t//   .css('--customProperty) (#3144)\n\t\tif (computed) {\n\t\t\tret = computed.getPropertyValue(name) || computed[name];\n\n\t\t\tif (ret === \"\" && !jQuery.contains(elem.ownerDocument, elem)) {\n\t\t\t\tret = jQuery.style(elem, name);\n\t\t\t}\n\n\t\t\t// A tribute to the \"awesome hack by Dean Edwards\"\n\t\t\t// Android Browser returns percentage for some values,\n\t\t\t// but width seems to be reliably pixels.\n\t\t\t// This is against the CSSOM draft spec:\n\t\t\t// https://drafts.csswg.org/cssom/#resolved-values\n\t\t\tif (!support.pixelMarginRight() && rnumnonpx.test(ret) && rmargin.test(name)) {\n\n\t\t\t\t// Remember the original values\n\t\t\t\twidth = style.width;\n\t\t\t\tminWidth = style.minWidth;\n\t\t\t\tmaxWidth = style.maxWidth;\n\n\t\t\t\t// Put in the new values to get a computed value out\n\t\t\t\tstyle.minWidth = style.maxWidth = style.width = ret;\n\t\t\t\tret = computed.width;\n\n\t\t\t\t// Revert the changed values\n\t\t\t\tstyle.width = width;\n\t\t\t\tstyle.minWidth = minWidth;\n\t\t\t\tstyle.maxWidth = maxWidth;\n\t\t\t}\n\t\t}\n\n\t\treturn ret !== undefined ?\n\n\t\t// Support: IE <=9 - 11 only\n\t\t// IE returns zIndex value as an integer.\n\t\tret + \"\" : ret;\n\t}\n\n\tfunction addGetHookIf(conditionFn, hookFn) {\n\n\t\t// Define the hook, we'll check on the first run if it's really needed.\n\t\treturn {\n\t\t\tget: function get() {\n\t\t\t\tif (conditionFn()) {\n\n\t\t\t\t\t// Hook not needed (or it's not possible to use it due\n\t\t\t\t\t// to missing dependency), remove it.\n\t\t\t\t\tdelete this.get;\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\t// Hook needed; redefine it so that the support test is not executed again.\n\t\t\t\treturn (this.get = hookFn).apply(this, arguments);\n\t\t\t}\n\t\t};\n\t}\n\n\tvar\n\n\t// Swappable if display is none or starts with table\n\t// except \"table\", \"table-cell\", or \"table-caption\"\n\t// See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display\n\trdisplayswap = /^(none|table(?!-c[ea]).+)/,\n\t    rcustomProp = /^--/,\n\t    cssShow = { position: \"absolute\", visibility: \"hidden\", display: \"block\" },\n\t    cssNormalTransform = {\n\t\tletterSpacing: \"0\",\n\t\tfontWeight: \"400\"\n\t},\n\t    cssPrefixes = [\"Webkit\", \"Moz\", \"ms\"],\n\t    emptyStyle = document.createElement(\"div\").style;\n\n\t// Return a css property mapped to a potentially vendor prefixed property\n\tfunction vendorPropName(name) {\n\n\t\t// Shortcut for names that are not vendor prefixed\n\t\tif (name in emptyStyle) {\n\t\t\treturn name;\n\t\t}\n\n\t\t// Check for vendor prefixed names\n\t\tvar capName = name[0].toUpperCase() + name.slice(1),\n\t\t    i = cssPrefixes.length;\n\n\t\twhile (i--) {\n\t\t\tname = cssPrefixes[i] + capName;\n\t\t\tif (name in emptyStyle) {\n\t\t\t\treturn name;\n\t\t\t}\n\t\t}\n\t}\n\n\t// Return a property mapped along what jQuery.cssProps suggests or to\n\t// a vendor prefixed property.\n\tfunction finalPropName(name) {\n\t\tvar ret = jQuery.cssProps[name];\n\t\tif (!ret) {\n\t\t\tret = jQuery.cssProps[name] = vendorPropName(name) || name;\n\t\t}\n\t\treturn ret;\n\t}\n\n\tfunction setPositiveNumber(elem, value, subtract) {\n\n\t\t// Any relative (+/-) values have already been\n\t\t// normalized at this point\n\t\tvar matches = rcssNum.exec(value);\n\t\treturn matches ?\n\n\t\t// Guard against undefined \"subtract\", e.g., when used as in cssHooks\n\t\tMath.max(0, matches[2] - (subtract || 0)) + (matches[3] || \"px\") : value;\n\t}\n\n\tfunction augmentWidthOrHeight(elem, name, extra, isBorderBox, styles) {\n\t\tvar i,\n\t\t    val = 0;\n\n\t\t// If we already have the right measurement, avoid augmentation\n\t\tif (extra === (isBorderBox ? \"border\" : \"content\")) {\n\t\t\ti = 4;\n\n\t\t\t// Otherwise initialize for horizontal or vertical properties\n\t\t} else {\n\t\t\ti = name === \"width\" ? 1 : 0;\n\t\t}\n\n\t\tfor (; i < 4; i += 2) {\n\n\t\t\t// Both box models exclude margin, so add it if we want it\n\t\t\tif (extra === \"margin\") {\n\t\t\t\tval += jQuery.css(elem, extra + cssExpand[i], true, styles);\n\t\t\t}\n\n\t\t\tif (isBorderBox) {\n\n\t\t\t\t// border-box includes padding, so remove it if we want content\n\t\t\t\tif (extra === \"content\") {\n\t\t\t\t\tval -= jQuery.css(elem, \"padding\" + cssExpand[i], true, styles);\n\t\t\t\t}\n\n\t\t\t\t// At this point, extra isn't border nor margin, so remove border\n\t\t\t\tif (extra !== \"margin\") {\n\t\t\t\t\tval -= jQuery.css(elem, \"border\" + cssExpand[i] + \"Width\", true, styles);\n\t\t\t\t}\n\t\t\t} else {\n\n\t\t\t\t// At this point, extra isn't content, so add padding\n\t\t\t\tval += jQuery.css(elem, \"padding\" + cssExpand[i], true, styles);\n\n\t\t\t\t// At this point, extra isn't content nor padding, so add border\n\t\t\t\tif (extra !== \"padding\") {\n\t\t\t\t\tval += jQuery.css(elem, \"border\" + cssExpand[i] + \"Width\", true, styles);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn val;\n\t}\n\n\tfunction getWidthOrHeight(elem, name, extra) {\n\n\t\t// Start with computed style\n\t\tvar valueIsBorderBox,\n\t\t    styles = getStyles(elem),\n\t\t    val = curCSS(elem, name, styles),\n\t\t    isBorderBox = jQuery.css(elem, \"boxSizing\", false, styles) === \"border-box\";\n\n\t\t// Computed unit is not pixels. Stop here and return.\n\t\tif (rnumnonpx.test(val)) {\n\t\t\treturn val;\n\t\t}\n\n\t\t// Check for style in case a browser which returns unreliable values\n\t\t// for getComputedStyle silently falls back to the reliable elem.style\n\t\tvalueIsBorderBox = isBorderBox && (support.boxSizingReliable() || val === elem.style[name]);\n\n\t\t// Fall back to offsetWidth/Height when value is \"auto\"\n\t\t// This happens for inline elements with no explicit setting (gh-3571)\n\t\tif (val === \"auto\") {\n\t\t\tval = elem[\"offset\" + name[0].toUpperCase() + name.slice(1)];\n\t\t}\n\n\t\t// Normalize \"\", auto, and prepare for extra\n\t\tval = parseFloat(val) || 0;\n\n\t\t// Use the active box-sizing model to add/subtract irrelevant styles\n\t\treturn val + augmentWidthOrHeight(elem, name, extra || (isBorderBox ? \"border\" : \"content\"), valueIsBorderBox, styles) + \"px\";\n\t}\n\n\tjQuery.extend({\n\n\t\t// Add in style property hooks for overriding the default\n\t\t// behavior of getting and setting a style property\n\t\tcssHooks: {\n\t\t\topacity: {\n\t\t\t\tget: function get(elem, computed) {\n\t\t\t\t\tif (computed) {\n\n\t\t\t\t\t\t// We should always get a number back from opacity\n\t\t\t\t\t\tvar ret = curCSS(elem, \"opacity\");\n\t\t\t\t\t\treturn ret === \"\" ? \"1\" : ret;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\n\t\t// Don't automatically add \"px\" to these possibly-unitless properties\n\t\tcssNumber: {\n\t\t\t\"animationIterationCount\": true,\n\t\t\t\"columnCount\": true,\n\t\t\t\"fillOpacity\": true,\n\t\t\t\"flexGrow\": true,\n\t\t\t\"flexShrink\": true,\n\t\t\t\"fontWeight\": true,\n\t\t\t\"lineHeight\": true,\n\t\t\t\"opacity\": true,\n\t\t\t\"order\": true,\n\t\t\t\"orphans\": true,\n\t\t\t\"widows\": true,\n\t\t\t\"zIndex\": true,\n\t\t\t\"zoom\": true\n\t\t},\n\n\t\t// Add in properties whose names you wish to fix before\n\t\t// setting or getting the value\n\t\tcssProps: {\n\t\t\t\"float\": \"cssFloat\"\n\t\t},\n\n\t\t// Get and set the style property on a DOM Node\n\t\tstyle: function style(elem, name, value, extra) {\n\n\t\t\t// Don't set styles on text and comment nodes\n\t\t\tif (!elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Make sure that we're working with the right name\n\t\t\tvar ret,\n\t\t\t    type,\n\t\t\t    hooks,\n\t\t\t    origName = jQuery.camelCase(name),\n\t\t\t    isCustomProp = rcustomProp.test(name),\n\t\t\t    style = elem.style;\n\n\t\t\t// Make sure that we're working with the right name. We don't\n\t\t\t// want to query the value if it is a CSS custom property\n\t\t\t// since they are user-defined.\n\t\t\tif (!isCustomProp) {\n\t\t\t\tname = finalPropName(origName);\n\t\t\t}\n\n\t\t\t// Gets hook for the prefixed version, then unprefixed version\n\t\t\thooks = jQuery.cssHooks[name] || jQuery.cssHooks[origName];\n\n\t\t\t// Check if we're setting a value\n\t\t\tif (value !== undefined) {\n\t\t\t\ttype = typeof value === \"undefined\" ? \"undefined\" : _typeof(value);\n\n\t\t\t\t// Convert \"+=\" or \"-=\" to relative numbers (#7345)\n\t\t\t\tif (type === \"string\" && (ret = rcssNum.exec(value)) && ret[1]) {\n\t\t\t\t\tvalue = adjustCSS(elem, name, ret);\n\n\t\t\t\t\t// Fixes bug #9237\n\t\t\t\t\ttype = \"number\";\n\t\t\t\t}\n\n\t\t\t\t// Make sure that null and NaN values aren't set (#7116)\n\t\t\t\tif (value == null || value !== value) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\t// If a number was passed in, add the unit (except for certain CSS properties)\n\t\t\t\tif (type === \"number\") {\n\t\t\t\t\tvalue += ret && ret[3] || (jQuery.cssNumber[origName] ? \"\" : \"px\");\n\t\t\t\t}\n\n\t\t\t\t// background-* props affect original clone's values\n\t\t\t\tif (!support.clearCloneStyle && value === \"\" && name.indexOf(\"background\") === 0) {\n\t\t\t\t\tstyle[name] = \"inherit\";\n\t\t\t\t}\n\n\t\t\t\t// If a hook was provided, use that value, otherwise just set the specified value\n\t\t\t\tif (!hooks || !(\"set\" in hooks) || (value = hooks.set(elem, value, extra)) !== undefined) {\n\n\t\t\t\t\tif (isCustomProp) {\n\t\t\t\t\t\tstyle.setProperty(name, value);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tstyle[name] = value;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else {\n\n\t\t\t\t// If a hook was provided get the non-computed value from there\n\t\t\t\tif (hooks && \"get\" in hooks && (ret = hooks.get(elem, false, extra)) !== undefined) {\n\n\t\t\t\t\treturn ret;\n\t\t\t\t}\n\n\t\t\t\t// Otherwise just get the value from the style object\n\t\t\t\treturn style[name];\n\t\t\t}\n\t\t},\n\n\t\tcss: function css(elem, name, extra, styles) {\n\t\t\tvar val,\n\t\t\t    num,\n\t\t\t    hooks,\n\t\t\t    origName = jQuery.camelCase(name),\n\t\t\t    isCustomProp = rcustomProp.test(name);\n\n\t\t\t// Make sure that we're working with the right name. We don't\n\t\t\t// want to modify the value if it is a CSS custom property\n\t\t\t// since they are user-defined.\n\t\t\tif (!isCustomProp) {\n\t\t\t\tname = finalPropName(origName);\n\t\t\t}\n\n\t\t\t// Try prefixed name followed by the unprefixed name\n\t\t\thooks = jQuery.cssHooks[name] || jQuery.cssHooks[origName];\n\n\t\t\t// If a hook was provided get the computed value from there\n\t\t\tif (hooks && \"get\" in hooks) {\n\t\t\t\tval = hooks.get(elem, true, extra);\n\t\t\t}\n\n\t\t\t// Otherwise, if a way to get the computed value exists, use that\n\t\t\tif (val === undefined) {\n\t\t\t\tval = curCSS(elem, name, styles);\n\t\t\t}\n\n\t\t\t// Convert \"normal\" to computed value\n\t\t\tif (val === \"normal\" && name in cssNormalTransform) {\n\t\t\t\tval = cssNormalTransform[name];\n\t\t\t}\n\n\t\t\t// Make numeric if forced or a qualifier was provided and val looks numeric\n\t\t\tif (extra === \"\" || extra) {\n\t\t\t\tnum = parseFloat(val);\n\t\t\t\treturn extra === true || isFinite(num) ? num || 0 : val;\n\t\t\t}\n\n\t\t\treturn val;\n\t\t}\n\t});\n\n\tjQuery.each([\"height\", \"width\"], function (i, name) {\n\t\tjQuery.cssHooks[name] = {\n\t\t\tget: function get(elem, computed, extra) {\n\t\t\t\tif (computed) {\n\n\t\t\t\t\t// Certain elements can have dimension info if we invisibly show them\n\t\t\t\t\t// but it must have a current display style that would benefit\n\t\t\t\t\treturn rdisplayswap.test(jQuery.css(elem, \"display\")) && (\n\n\t\t\t\t\t// Support: Safari 8+\n\t\t\t\t\t// Table columns in Safari have non-zero offsetWidth & zero\n\t\t\t\t\t// getBoundingClientRect().width unless display is changed.\n\t\t\t\t\t// Support: IE <=11 only\n\t\t\t\t\t// Running getBoundingClientRect on a disconnected node\n\t\t\t\t\t// in IE throws an error.\n\t\t\t\t\t!elem.getClientRects().length || !elem.getBoundingClientRect().width) ? swap(elem, cssShow, function () {\n\t\t\t\t\t\treturn getWidthOrHeight(elem, name, extra);\n\t\t\t\t\t}) : getWidthOrHeight(elem, name, extra);\n\t\t\t\t}\n\t\t\t},\n\n\t\t\tset: function set(elem, value, extra) {\n\t\t\t\tvar matches,\n\t\t\t\t    styles = extra && getStyles(elem),\n\t\t\t\t    subtract = extra && augmentWidthOrHeight(elem, name, extra, jQuery.css(elem, \"boxSizing\", false, styles) === \"border-box\", styles);\n\n\t\t\t\t// Convert to pixels if value adjustment is needed\n\t\t\t\tif (subtract && (matches = rcssNum.exec(value)) && (matches[3] || \"px\") !== \"px\") {\n\n\t\t\t\t\telem.style[name] = value;\n\t\t\t\t\tvalue = jQuery.css(elem, name);\n\t\t\t\t}\n\n\t\t\t\treturn setPositiveNumber(elem, value, subtract);\n\t\t\t}\n\t\t};\n\t});\n\n\tjQuery.cssHooks.marginLeft = addGetHookIf(support.reliableMarginLeft, function (elem, computed) {\n\t\tif (computed) {\n\t\t\treturn (parseFloat(curCSS(elem, \"marginLeft\")) || elem.getBoundingClientRect().left - swap(elem, { marginLeft: 0 }, function () {\n\t\t\t\treturn elem.getBoundingClientRect().left;\n\t\t\t})) + \"px\";\n\t\t}\n\t});\n\n\t// These hooks are used by animate to expand properties\n\tjQuery.each({\n\t\tmargin: \"\",\n\t\tpadding: \"\",\n\t\tborder: \"Width\"\n\t}, function (prefix, suffix) {\n\t\tjQuery.cssHooks[prefix + suffix] = {\n\t\t\texpand: function expand(value) {\n\t\t\t\tvar i = 0,\n\t\t\t\t    expanded = {},\n\n\n\t\t\t\t// Assumes a single number if not a string\n\t\t\t\tparts = typeof value === \"string\" ? value.split(\" \") : [value];\n\n\t\t\t\tfor (; i < 4; i++) {\n\t\t\t\t\texpanded[prefix + cssExpand[i] + suffix] = parts[i] || parts[i - 2] || parts[0];\n\t\t\t\t}\n\n\t\t\t\treturn expanded;\n\t\t\t}\n\t\t};\n\n\t\tif (!rmargin.test(prefix)) {\n\t\t\tjQuery.cssHooks[prefix + suffix].set = setPositiveNumber;\n\t\t}\n\t});\n\n\tjQuery.fn.extend({\n\t\tcss: function css(name, value) {\n\t\t\treturn access(this, function (elem, name, value) {\n\t\t\t\tvar styles,\n\t\t\t\t    len,\n\t\t\t\t    map = {},\n\t\t\t\t    i = 0;\n\n\t\t\t\tif (Array.isArray(name)) {\n\t\t\t\t\tstyles = getStyles(elem);\n\t\t\t\t\tlen = name.length;\n\n\t\t\t\t\tfor (; i < len; i++) {\n\t\t\t\t\t\tmap[name[i]] = jQuery.css(elem, name[i], false, styles);\n\t\t\t\t\t}\n\n\t\t\t\t\treturn map;\n\t\t\t\t}\n\n\t\t\t\treturn value !== undefined ? jQuery.style(elem, name, value) : jQuery.css(elem, name);\n\t\t\t}, name, value, arguments.length > 1);\n\t\t}\n\t});\n\n\tfunction Tween(elem, options, prop, end, easing) {\n\t\treturn new Tween.prototype.init(elem, options, prop, end, easing);\n\t}\n\tjQuery.Tween = Tween;\n\n\tTween.prototype = {\n\t\tconstructor: Tween,\n\t\tinit: function init(elem, options, prop, end, easing, unit) {\n\t\t\tthis.elem = elem;\n\t\t\tthis.prop = prop;\n\t\t\tthis.easing = easing || jQuery.easing._default;\n\t\t\tthis.options = options;\n\t\t\tthis.start = this.now = this.cur();\n\t\t\tthis.end = end;\n\t\t\tthis.unit = unit || (jQuery.cssNumber[prop] ? \"\" : \"px\");\n\t\t},\n\t\tcur: function cur() {\n\t\t\tvar hooks = Tween.propHooks[this.prop];\n\n\t\t\treturn hooks && hooks.get ? hooks.get(this) : Tween.propHooks._default.get(this);\n\t\t},\n\t\trun: function run(percent) {\n\t\t\tvar eased,\n\t\t\t    hooks = Tween.propHooks[this.prop];\n\n\t\t\tif (this.options.duration) {\n\t\t\t\tthis.pos = eased = jQuery.easing[this.easing](percent, this.options.duration * percent, 0, 1, this.options.duration);\n\t\t\t} else {\n\t\t\t\tthis.pos = eased = percent;\n\t\t\t}\n\t\t\tthis.now = (this.end - this.start) * eased + this.start;\n\n\t\t\tif (this.options.step) {\n\t\t\t\tthis.options.step.call(this.elem, this.now, this);\n\t\t\t}\n\n\t\t\tif (hooks && hooks.set) {\n\t\t\t\thooks.set(this);\n\t\t\t} else {\n\t\t\t\tTween.propHooks._default.set(this);\n\t\t\t}\n\t\t\treturn this;\n\t\t}\n\t};\n\n\tTween.prototype.init.prototype = Tween.prototype;\n\n\tTween.propHooks = {\n\t\t_default: {\n\t\t\tget: function get(tween) {\n\t\t\t\tvar result;\n\n\t\t\t\t// Use a property on the element directly when it is not a DOM element,\n\t\t\t\t// or when there is no matching style property that exists.\n\t\t\t\tif (tween.elem.nodeType !== 1 || tween.elem[tween.prop] != null && tween.elem.style[tween.prop] == null) {\n\t\t\t\t\treturn tween.elem[tween.prop];\n\t\t\t\t}\n\n\t\t\t\t// Passing an empty string as a 3rd parameter to .css will automatically\n\t\t\t\t// attempt a parseFloat and fallback to a string if the parse fails.\n\t\t\t\t// Simple values such as \"10px\" are parsed to Float;\n\t\t\t\t// complex values such as \"rotate(1rad)\" are returned as-is.\n\t\t\t\tresult = jQuery.css(tween.elem, tween.prop, \"\");\n\n\t\t\t\t// Empty strings, null, undefined and \"auto\" are converted to 0.\n\t\t\t\treturn !result || result === \"auto\" ? 0 : result;\n\t\t\t},\n\t\t\tset: function set(tween) {\n\n\t\t\t\t// Use step hook for back compat.\n\t\t\t\t// Use cssHook if its there.\n\t\t\t\t// Use .style if available and use plain properties where available.\n\t\t\t\tif (jQuery.fx.step[tween.prop]) {\n\t\t\t\t\tjQuery.fx.step[tween.prop](tween);\n\t\t\t\t} else if (tween.elem.nodeType === 1 && (tween.elem.style[jQuery.cssProps[tween.prop]] != null || jQuery.cssHooks[tween.prop])) {\n\t\t\t\t\tjQuery.style(tween.elem, tween.prop, tween.now + tween.unit);\n\t\t\t\t} else {\n\t\t\t\t\ttween.elem[tween.prop] = tween.now;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t};\n\n\t// Support: IE <=9 only\n\t// Panic based approach to setting things on disconnected nodes\n\tTween.propHooks.scrollTop = Tween.propHooks.scrollLeft = {\n\t\tset: function set(tween) {\n\t\t\tif (tween.elem.nodeType && tween.elem.parentNode) {\n\t\t\t\ttween.elem[tween.prop] = tween.now;\n\t\t\t}\n\t\t}\n\t};\n\n\tjQuery.easing = {\n\t\tlinear: function linear(p) {\n\t\t\treturn p;\n\t\t},\n\t\tswing: function swing(p) {\n\t\t\treturn 0.5 - Math.cos(p * Math.PI) / 2;\n\t\t},\n\t\t_default: \"swing\"\n\t};\n\n\tjQuery.fx = Tween.prototype.init;\n\n\t// Back compat <1.8 extension point\n\tjQuery.fx.step = {};\n\n\tvar fxNow,\n\t    inProgress,\n\t    rfxtypes = /^(?:toggle|show|hide)$/,\n\t    rrun = /queueHooks$/;\n\n\tfunction schedule() {\n\t\tif (inProgress) {\n\t\t\tif (document.hidden === false && window.requestAnimationFrame) {\n\t\t\t\twindow.requestAnimationFrame(schedule);\n\t\t\t} else {\n\t\t\t\twindow.setTimeout(schedule, jQuery.fx.interval);\n\t\t\t}\n\n\t\t\tjQuery.fx.tick();\n\t\t}\n\t}\n\n\t// Animations created synchronously will run synchronously\n\tfunction createFxNow() {\n\t\twindow.setTimeout(function () {\n\t\t\tfxNow = undefined;\n\t\t});\n\t\treturn fxNow = jQuery.now();\n\t}\n\n\t// Generate parameters to create a standard animation\n\tfunction genFx(type, includeWidth) {\n\t\tvar which,\n\t\t    i = 0,\n\t\t    attrs = { height: type };\n\n\t\t// If we include width, step value is 1 to do all cssExpand values,\n\t\t// otherwise step value is 2 to skip over Left and Right\n\t\tincludeWidth = includeWidth ? 1 : 0;\n\t\tfor (; i < 4; i += 2 - includeWidth) {\n\t\t\twhich = cssExpand[i];\n\t\t\tattrs[\"margin\" + which] = attrs[\"padding\" + which] = type;\n\t\t}\n\n\t\tif (includeWidth) {\n\t\t\tattrs.opacity = attrs.width = type;\n\t\t}\n\n\t\treturn attrs;\n\t}\n\n\tfunction createTween(value, prop, animation) {\n\t\tvar tween,\n\t\t    collection = (Animation.tweeners[prop] || []).concat(Animation.tweeners[\"*\"]),\n\t\t    index = 0,\n\t\t    length = collection.length;\n\t\tfor (; index < length; index++) {\n\t\t\tif (tween = collection[index].call(animation, prop, value)) {\n\n\t\t\t\t// We're done with this property\n\t\t\t\treturn tween;\n\t\t\t}\n\t\t}\n\t}\n\n\tfunction defaultPrefilter(elem, props, opts) {\n\t\tvar prop,\n\t\t    value,\n\t\t    toggle,\n\t\t    hooks,\n\t\t    oldfire,\n\t\t    propTween,\n\t\t    restoreDisplay,\n\t\t    display,\n\t\t    isBox = \"width\" in props || \"height\" in props,\n\t\t    anim = this,\n\t\t    orig = {},\n\t\t    style = elem.style,\n\t\t    hidden = elem.nodeType && isHiddenWithinTree(elem),\n\t\t    dataShow = dataPriv.get(elem, \"fxshow\");\n\n\t\t// Queue-skipping animations hijack the fx hooks\n\t\tif (!opts.queue) {\n\t\t\thooks = jQuery._queueHooks(elem, \"fx\");\n\t\t\tif (hooks.unqueued == null) {\n\t\t\t\thooks.unqueued = 0;\n\t\t\t\toldfire = hooks.empty.fire;\n\t\t\t\thooks.empty.fire = function () {\n\t\t\t\t\tif (!hooks.unqueued) {\n\t\t\t\t\t\toldfire();\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\t\t\thooks.unqueued++;\n\n\t\t\tanim.always(function () {\n\n\t\t\t\t// Ensure the complete handler is called before this completes\n\t\t\t\tanim.always(function () {\n\t\t\t\t\thooks.unqueued--;\n\t\t\t\t\tif (!jQuery.queue(elem, \"fx\").length) {\n\t\t\t\t\t\thooks.empty.fire();\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t});\n\t\t}\n\n\t\t// Detect show/hide animations\n\t\tfor (prop in props) {\n\t\t\tvalue = props[prop];\n\t\t\tif (rfxtypes.test(value)) {\n\t\t\t\tdelete props[prop];\n\t\t\t\ttoggle = toggle || value === \"toggle\";\n\t\t\t\tif (value === (hidden ? \"hide\" : \"show\")) {\n\n\t\t\t\t\t// Pretend to be hidden if this is a \"show\" and\n\t\t\t\t\t// there is still data from a stopped show/hide\n\t\t\t\t\tif (value === \"show\" && dataShow && dataShow[prop] !== undefined) {\n\t\t\t\t\t\thidden = true;\n\n\t\t\t\t\t\t// Ignore all other no-op show/hide data\n\t\t\t\t\t} else {\n\t\t\t\t\t\tcontinue;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\torig[prop] = dataShow && dataShow[prop] || jQuery.style(elem, prop);\n\t\t\t}\n\t\t}\n\n\t\t// Bail out if this is a no-op like .hide().hide()\n\t\tpropTween = !jQuery.isEmptyObject(props);\n\t\tif (!propTween && jQuery.isEmptyObject(orig)) {\n\t\t\treturn;\n\t\t}\n\n\t\t// Restrict \"overflow\" and \"display\" styles during box animations\n\t\tif (isBox && elem.nodeType === 1) {\n\n\t\t\t// Support: IE <=9 - 11, Edge 12 - 13\n\t\t\t// Record all 3 overflow attributes because IE does not infer the shorthand\n\t\t\t// from identically-valued overflowX and overflowY\n\t\t\topts.overflow = [style.overflow, style.overflowX, style.overflowY];\n\n\t\t\t// Identify a display type, preferring old show/hide data over the CSS cascade\n\t\t\trestoreDisplay = dataShow && dataShow.display;\n\t\t\tif (restoreDisplay == null) {\n\t\t\t\trestoreDisplay = dataPriv.get(elem, \"display\");\n\t\t\t}\n\t\t\tdisplay = jQuery.css(elem, \"display\");\n\t\t\tif (display === \"none\") {\n\t\t\t\tif (restoreDisplay) {\n\t\t\t\t\tdisplay = restoreDisplay;\n\t\t\t\t} else {\n\n\t\t\t\t\t// Get nonempty value(s) by temporarily forcing visibility\n\t\t\t\t\tshowHide([elem], true);\n\t\t\t\t\trestoreDisplay = elem.style.display || restoreDisplay;\n\t\t\t\t\tdisplay = jQuery.css(elem, \"display\");\n\t\t\t\t\tshowHide([elem]);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Animate inline elements as inline-block\n\t\t\tif (display === \"inline\" || display === \"inline-block\" && restoreDisplay != null) {\n\t\t\t\tif (jQuery.css(elem, \"float\") === \"none\") {\n\n\t\t\t\t\t// Restore the original display value at the end of pure show/hide animations\n\t\t\t\t\tif (!propTween) {\n\t\t\t\t\t\tanim.done(function () {\n\t\t\t\t\t\t\tstyle.display = restoreDisplay;\n\t\t\t\t\t\t});\n\t\t\t\t\t\tif (restoreDisplay == null) {\n\t\t\t\t\t\t\tdisplay = style.display;\n\t\t\t\t\t\t\trestoreDisplay = display === \"none\" ? \"\" : display;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tstyle.display = \"inline-block\";\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tif (opts.overflow) {\n\t\t\tstyle.overflow = \"hidden\";\n\t\t\tanim.always(function () {\n\t\t\t\tstyle.overflow = opts.overflow[0];\n\t\t\t\tstyle.overflowX = opts.overflow[1];\n\t\t\t\tstyle.overflowY = opts.overflow[2];\n\t\t\t});\n\t\t}\n\n\t\t// Implement show/hide animations\n\t\tpropTween = false;\n\t\tfor (prop in orig) {\n\n\t\t\t// General show/hide setup for this element animation\n\t\t\tif (!propTween) {\n\t\t\t\tif (dataShow) {\n\t\t\t\t\tif (\"hidden\" in dataShow) {\n\t\t\t\t\t\thidden = dataShow.hidden;\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\tdataShow = dataPriv.access(elem, \"fxshow\", { display: restoreDisplay });\n\t\t\t\t}\n\n\t\t\t\t// Store hidden/visible for toggle so `.stop().toggle()` \"reverses\"\n\t\t\t\tif (toggle) {\n\t\t\t\t\tdataShow.hidden = !hidden;\n\t\t\t\t}\n\n\t\t\t\t// Show elements before animating them\n\t\t\t\tif (hidden) {\n\t\t\t\t\tshowHide([elem], true);\n\t\t\t\t}\n\n\t\t\t\t/* eslint-disable no-loop-func */\n\n\t\t\t\tanim.done(function () {\n\n\t\t\t\t\t/* eslint-enable no-loop-func */\n\n\t\t\t\t\t// The final step of a \"hide\" animation is actually hiding the element\n\t\t\t\t\tif (!hidden) {\n\t\t\t\t\t\tshowHide([elem]);\n\t\t\t\t\t}\n\t\t\t\t\tdataPriv.remove(elem, \"fxshow\");\n\t\t\t\t\tfor (prop in orig) {\n\t\t\t\t\t\tjQuery.style(elem, prop, orig[prop]);\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\n\t\t\t// Per-property setup\n\t\t\tpropTween = createTween(hidden ? dataShow[prop] : 0, prop, anim);\n\t\t\tif (!(prop in dataShow)) {\n\t\t\t\tdataShow[prop] = propTween.start;\n\t\t\t\tif (hidden) {\n\t\t\t\t\tpropTween.end = propTween.start;\n\t\t\t\t\tpropTween.start = 0;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\tfunction propFilter(props, specialEasing) {\n\t\tvar index, name, easing, value, hooks;\n\n\t\t// camelCase, specialEasing and expand cssHook pass\n\t\tfor (index in props) {\n\t\t\tname = jQuery.camelCase(index);\n\t\t\teasing = specialEasing[name];\n\t\t\tvalue = props[index];\n\t\t\tif (Array.isArray(value)) {\n\t\t\t\teasing = value[1];\n\t\t\t\tvalue = props[index] = value[0];\n\t\t\t}\n\n\t\t\tif (index !== name) {\n\t\t\t\tprops[name] = value;\n\t\t\t\tdelete props[index];\n\t\t\t}\n\n\t\t\thooks = jQuery.cssHooks[name];\n\t\t\tif (hooks && \"expand\" in hooks) {\n\t\t\t\tvalue = hooks.expand(value);\n\t\t\t\tdelete props[name];\n\n\t\t\t\t// Not quite $.extend, this won't overwrite existing keys.\n\t\t\t\t// Reusing 'index' because we have the correct \"name\"\n\t\t\t\tfor (index in value) {\n\t\t\t\t\tif (!(index in props)) {\n\t\t\t\t\t\tprops[index] = value[index];\n\t\t\t\t\t\tspecialEasing[index] = easing;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tspecialEasing[name] = easing;\n\t\t\t}\n\t\t}\n\t}\n\n\tfunction Animation(elem, properties, options) {\n\t\tvar result,\n\t\t    stopped,\n\t\t    index = 0,\n\t\t    length = Animation.prefilters.length,\n\t\t    deferred = jQuery.Deferred().always(function () {\n\n\t\t\t// Don't match elem in the :animated selector\n\t\t\tdelete tick.elem;\n\t\t}),\n\t\t    tick = function tick() {\n\t\t\tif (stopped) {\n\t\t\t\treturn false;\n\t\t\t}\n\t\t\tvar currentTime = fxNow || createFxNow(),\n\t\t\t    remaining = Math.max(0, animation.startTime + animation.duration - currentTime),\n\n\n\t\t\t// Support: Android 2.3 only\n\t\t\t// Archaic crash bug won't allow us to use `1 - ( 0.5 || 0 )` (#12497)\n\t\t\ttemp = remaining / animation.duration || 0,\n\t\t\t    percent = 1 - temp,\n\t\t\t    index = 0,\n\t\t\t    length = animation.tweens.length;\n\n\t\t\tfor (; index < length; index++) {\n\t\t\t\tanimation.tweens[index].run(percent);\n\t\t\t}\n\n\t\t\tdeferred.notifyWith(elem, [animation, percent, remaining]);\n\n\t\t\t// If there's more to do, yield\n\t\t\tif (percent < 1 && length) {\n\t\t\t\treturn remaining;\n\t\t\t}\n\n\t\t\t// If this was an empty animation, synthesize a final progress notification\n\t\t\tif (!length) {\n\t\t\t\tdeferred.notifyWith(elem, [animation, 1, 0]);\n\t\t\t}\n\n\t\t\t// Resolve the animation and report its conclusion\n\t\t\tdeferred.resolveWith(elem, [animation]);\n\t\t\treturn false;\n\t\t},\n\t\t    animation = deferred.promise({\n\t\t\telem: elem,\n\t\t\tprops: jQuery.extend({}, properties),\n\t\t\topts: jQuery.extend(true, {\n\t\t\t\tspecialEasing: {},\n\t\t\t\teasing: jQuery.easing._default\n\t\t\t}, options),\n\t\t\toriginalProperties: properties,\n\t\t\toriginalOptions: options,\n\t\t\tstartTime: fxNow || createFxNow(),\n\t\t\tduration: options.duration,\n\t\t\ttweens: [],\n\t\t\tcreateTween: function createTween(prop, end) {\n\t\t\t\tvar tween = jQuery.Tween(elem, animation.opts, prop, end, animation.opts.specialEasing[prop] || animation.opts.easing);\n\t\t\t\tanimation.tweens.push(tween);\n\t\t\t\treturn tween;\n\t\t\t},\n\t\t\tstop: function stop(gotoEnd) {\n\t\t\t\tvar index = 0,\n\n\n\t\t\t\t// If we are going to the end, we want to run all the tweens\n\t\t\t\t// otherwise we skip this part\n\t\t\t\tlength = gotoEnd ? animation.tweens.length : 0;\n\t\t\t\tif (stopped) {\n\t\t\t\t\treturn this;\n\t\t\t\t}\n\t\t\t\tstopped = true;\n\t\t\t\tfor (; index < length; index++) {\n\t\t\t\t\tanimation.tweens[index].run(1);\n\t\t\t\t}\n\n\t\t\t\t// Resolve when we played the last frame; otherwise, reject\n\t\t\t\tif (gotoEnd) {\n\t\t\t\t\tdeferred.notifyWith(elem, [animation, 1, 0]);\n\t\t\t\t\tdeferred.resolveWith(elem, [animation, gotoEnd]);\n\t\t\t\t} else {\n\t\t\t\t\tdeferred.rejectWith(elem, [animation, gotoEnd]);\n\t\t\t\t}\n\t\t\t\treturn this;\n\t\t\t}\n\t\t}),\n\t\t    props = animation.props;\n\n\t\tpropFilter(props, animation.opts.specialEasing);\n\n\t\tfor (; index < length; index++) {\n\t\t\tresult = Animation.prefilters[index].call(animation, elem, props, animation.opts);\n\t\t\tif (result) {\n\t\t\t\tif (jQuery.isFunction(result.stop)) {\n\t\t\t\t\tjQuery._queueHooks(animation.elem, animation.opts.queue).stop = jQuery.proxy(result.stop, result);\n\t\t\t\t}\n\t\t\t\treturn result;\n\t\t\t}\n\t\t}\n\n\t\tjQuery.map(props, createTween, animation);\n\n\t\tif (jQuery.isFunction(animation.opts.start)) {\n\t\t\tanimation.opts.start.call(elem, animation);\n\t\t}\n\n\t\t// Attach callbacks from options\n\t\tanimation.progress(animation.opts.progress).done(animation.opts.done, animation.opts.complete).fail(animation.opts.fail).always(animation.opts.always);\n\n\t\tjQuery.fx.timer(jQuery.extend(tick, {\n\t\t\telem: elem,\n\t\t\tanim: animation,\n\t\t\tqueue: animation.opts.queue\n\t\t}));\n\n\t\treturn animation;\n\t}\n\n\tjQuery.Animation = jQuery.extend(Animation, {\n\n\t\ttweeners: {\n\t\t\t\"*\": [function (prop, value) {\n\t\t\t\tvar tween = this.createTween(prop, value);\n\t\t\t\tadjustCSS(tween.elem, prop, rcssNum.exec(value), tween);\n\t\t\t\treturn tween;\n\t\t\t}]\n\t\t},\n\n\t\ttweener: function tweener(props, callback) {\n\t\t\tif (jQuery.isFunction(props)) {\n\t\t\t\tcallback = props;\n\t\t\t\tprops = [\"*\"];\n\t\t\t} else {\n\t\t\t\tprops = props.match(rnothtmlwhite);\n\t\t\t}\n\n\t\t\tvar prop,\n\t\t\t    index = 0,\n\t\t\t    length = props.length;\n\n\t\t\tfor (; index < length; index++) {\n\t\t\t\tprop = props[index];\n\t\t\t\tAnimation.tweeners[prop] = Animation.tweeners[prop] || [];\n\t\t\t\tAnimation.tweeners[prop].unshift(callback);\n\t\t\t}\n\t\t},\n\n\t\tprefilters: [defaultPrefilter],\n\n\t\tprefilter: function prefilter(callback, prepend) {\n\t\t\tif (prepend) {\n\t\t\t\tAnimation.prefilters.unshift(callback);\n\t\t\t} else {\n\t\t\t\tAnimation.prefilters.push(callback);\n\t\t\t}\n\t\t}\n\t});\n\n\tjQuery.speed = function (speed, easing, fn) {\n\t\tvar opt = speed && (typeof speed === \"undefined\" ? \"undefined\" : _typeof(speed)) === \"object\" ? jQuery.extend({}, speed) : {\n\t\t\tcomplete: fn || !fn && easing || jQuery.isFunction(speed) && speed,\n\t\t\tduration: speed,\n\t\t\teasing: fn && easing || easing && !jQuery.isFunction(easing) && easing\n\t\t};\n\n\t\t// Go to the end state if fx are off\n\t\tif (jQuery.fx.off) {\n\t\t\topt.duration = 0;\n\t\t} else {\n\t\t\tif (typeof opt.duration !== \"number\") {\n\t\t\t\tif (opt.duration in jQuery.fx.speeds) {\n\t\t\t\t\topt.duration = jQuery.fx.speeds[opt.duration];\n\t\t\t\t} else {\n\t\t\t\t\topt.duration = jQuery.fx.speeds._default;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Normalize opt.queue - true/undefined/null -> \"fx\"\n\t\tif (opt.queue == null || opt.queue === true) {\n\t\t\topt.queue = \"fx\";\n\t\t}\n\n\t\t// Queueing\n\t\topt.old = opt.complete;\n\n\t\topt.complete = function () {\n\t\t\tif (jQuery.isFunction(opt.old)) {\n\t\t\t\topt.old.call(this);\n\t\t\t}\n\n\t\t\tif (opt.queue) {\n\t\t\t\tjQuery.dequeue(this, opt.queue);\n\t\t\t}\n\t\t};\n\n\t\treturn opt;\n\t};\n\n\tjQuery.fn.extend({\n\t\tfadeTo: function fadeTo(speed, to, easing, callback) {\n\n\t\t\t// Show any hidden elements after setting opacity to 0\n\t\t\treturn this.filter(isHiddenWithinTree).css(\"opacity\", 0).show()\n\n\t\t\t// Animate to the value specified\n\t\t\t.end().animate({ opacity: to }, speed, easing, callback);\n\t\t},\n\t\tanimate: function animate(prop, speed, easing, callback) {\n\t\t\tvar empty = jQuery.isEmptyObject(prop),\n\t\t\t    optall = jQuery.speed(speed, easing, callback),\n\t\t\t    doAnimation = function doAnimation() {\n\n\t\t\t\t// Operate on a copy of prop so per-property easing won't be lost\n\t\t\t\tvar anim = Animation(this, jQuery.extend({}, prop), optall);\n\n\t\t\t\t// Empty animations, or finishing resolves immediately\n\t\t\t\tif (empty || dataPriv.get(this, \"finish\")) {\n\t\t\t\t\tanim.stop(true);\n\t\t\t\t}\n\t\t\t};\n\t\t\tdoAnimation.finish = doAnimation;\n\n\t\t\treturn empty || optall.queue === false ? this.each(doAnimation) : this.queue(optall.queue, doAnimation);\n\t\t},\n\t\tstop: function stop(type, clearQueue, gotoEnd) {\n\t\t\tvar stopQueue = function stopQueue(hooks) {\n\t\t\t\tvar stop = hooks.stop;\n\t\t\t\tdelete hooks.stop;\n\t\t\t\tstop(gotoEnd);\n\t\t\t};\n\n\t\t\tif (typeof type !== \"string\") {\n\t\t\t\tgotoEnd = clearQueue;\n\t\t\t\tclearQueue = type;\n\t\t\t\ttype = undefined;\n\t\t\t}\n\t\t\tif (clearQueue && type !== false) {\n\t\t\t\tthis.queue(type || \"fx\", []);\n\t\t\t}\n\n\t\t\treturn this.each(function () {\n\t\t\t\tvar dequeue = true,\n\t\t\t\t    index = type != null && type + \"queueHooks\",\n\t\t\t\t    timers = jQuery.timers,\n\t\t\t\t    data = dataPriv.get(this);\n\n\t\t\t\tif (index) {\n\t\t\t\t\tif (data[index] && data[index].stop) {\n\t\t\t\t\t\tstopQueue(data[index]);\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\tfor (index in data) {\n\t\t\t\t\t\tif (data[index] && data[index].stop && rrun.test(index)) {\n\t\t\t\t\t\t\tstopQueue(data[index]);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tfor (index = timers.length; index--;) {\n\t\t\t\t\tif (timers[index].elem === this && (type == null || timers[index].queue === type)) {\n\n\t\t\t\t\t\ttimers[index].anim.stop(gotoEnd);\n\t\t\t\t\t\tdequeue = false;\n\t\t\t\t\t\ttimers.splice(index, 1);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Start the next in the queue if the last step wasn't forced.\n\t\t\t\t// Timers currently will call their complete callbacks, which\n\t\t\t\t// will dequeue but only if they were gotoEnd.\n\t\t\t\tif (dequeue || !gotoEnd) {\n\t\t\t\t\tjQuery.dequeue(this, type);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\t\tfinish: function finish(type) {\n\t\t\tif (type !== false) {\n\t\t\t\ttype = type || \"fx\";\n\t\t\t}\n\t\t\treturn this.each(function () {\n\t\t\t\tvar index,\n\t\t\t\t    data = dataPriv.get(this),\n\t\t\t\t    queue = data[type + \"queue\"],\n\t\t\t\t    hooks = data[type + \"queueHooks\"],\n\t\t\t\t    timers = jQuery.timers,\n\t\t\t\t    length = queue ? queue.length : 0;\n\n\t\t\t\t// Enable finishing flag on private data\n\t\t\t\tdata.finish = true;\n\n\t\t\t\t// Empty the queue first\n\t\t\t\tjQuery.queue(this, type, []);\n\n\t\t\t\tif (hooks && hooks.stop) {\n\t\t\t\t\thooks.stop.call(this, true);\n\t\t\t\t}\n\n\t\t\t\t// Look for any active animations, and finish them\n\t\t\t\tfor (index = timers.length; index--;) {\n\t\t\t\t\tif (timers[index].elem === this && timers[index].queue === type) {\n\t\t\t\t\t\ttimers[index].anim.stop(true);\n\t\t\t\t\t\ttimers.splice(index, 1);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Look for any animations in the old queue and finish them\n\t\t\t\tfor (index = 0; index < length; index++) {\n\t\t\t\t\tif (queue[index] && queue[index].finish) {\n\t\t\t\t\t\tqueue[index].finish.call(this);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Turn off finishing flag\n\t\t\t\tdelete data.finish;\n\t\t\t});\n\t\t}\n\t});\n\n\tjQuery.each([\"toggle\", \"show\", \"hide\"], function (i, name) {\n\t\tvar cssFn = jQuery.fn[name];\n\t\tjQuery.fn[name] = function (speed, easing, callback) {\n\t\t\treturn speed == null || typeof speed === \"boolean\" ? cssFn.apply(this, arguments) : this.animate(genFx(name, true), speed, easing, callback);\n\t\t};\n\t});\n\n\t// Generate shortcuts for custom animations\n\tjQuery.each({\n\t\tslideDown: genFx(\"show\"),\n\t\tslideUp: genFx(\"hide\"),\n\t\tslideToggle: genFx(\"toggle\"),\n\t\tfadeIn: { opacity: \"show\" },\n\t\tfadeOut: { opacity: \"hide\" },\n\t\tfadeToggle: { opacity: \"toggle\" }\n\t}, function (name, props) {\n\t\tjQuery.fn[name] = function (speed, easing, callback) {\n\t\t\treturn this.animate(props, speed, easing, callback);\n\t\t};\n\t});\n\n\tjQuery.timers = [];\n\tjQuery.fx.tick = function () {\n\t\tvar timer,\n\t\t    i = 0,\n\t\t    timers = jQuery.timers;\n\n\t\tfxNow = jQuery.now();\n\n\t\tfor (; i < timers.length; i++) {\n\t\t\ttimer = timers[i];\n\n\t\t\t// Run the timer and safely remove it when done (allowing for external removal)\n\t\t\tif (!timer() && timers[i] === timer) {\n\t\t\t\ttimers.splice(i--, 1);\n\t\t\t}\n\t\t}\n\n\t\tif (!timers.length) {\n\t\t\tjQuery.fx.stop();\n\t\t}\n\t\tfxNow = undefined;\n\t};\n\n\tjQuery.fx.timer = function (timer) {\n\t\tjQuery.timers.push(timer);\n\t\tjQuery.fx.start();\n\t};\n\n\tjQuery.fx.interval = 13;\n\tjQuery.fx.start = function () {\n\t\tif (inProgress) {\n\t\t\treturn;\n\t\t}\n\n\t\tinProgress = true;\n\t\tschedule();\n\t};\n\n\tjQuery.fx.stop = function () {\n\t\tinProgress = null;\n\t};\n\n\tjQuery.fx.speeds = {\n\t\tslow: 600,\n\t\tfast: 200,\n\n\t\t// Default speed\n\t\t_default: 400\n\t};\n\n\t// Based off of the plugin by Clint Helfers, with permission.\n\t// https://web.archive.org/web/20100324014747/http://blindsignals.com/index.php/2009/07/jquery-delay/\n\tjQuery.fn.delay = function (time, type) {\n\t\ttime = jQuery.fx ? jQuery.fx.speeds[time] || time : time;\n\t\ttype = type || \"fx\";\n\n\t\treturn this.queue(type, function (next, hooks) {\n\t\t\tvar timeout = window.setTimeout(next, time);\n\t\t\thooks.stop = function () {\n\t\t\t\twindow.clearTimeout(timeout);\n\t\t\t};\n\t\t});\n\t};\n\n\t(function () {\n\t\tvar input = document.createElement(\"input\"),\n\t\t    select = document.createElement(\"select\"),\n\t\t    opt = select.appendChild(document.createElement(\"option\"));\n\n\t\tinput.type = \"checkbox\";\n\n\t\t// Support: Android <=4.3 only\n\t\t// Default value for a checkbox should be \"on\"\n\t\tsupport.checkOn = input.value !== \"\";\n\n\t\t// Support: IE <=11 only\n\t\t// Must access selectedIndex to make default options select\n\t\tsupport.optSelected = opt.selected;\n\n\t\t// Support: IE <=11 only\n\t\t// An input loses its value after becoming a radio\n\t\tinput = document.createElement(\"input\");\n\t\tinput.value = \"t\";\n\t\tinput.type = \"radio\";\n\t\tsupport.radioValue = input.value === \"t\";\n\t})();\n\n\tvar boolHook,\n\t    attrHandle = jQuery.expr.attrHandle;\n\n\tjQuery.fn.extend({\n\t\tattr: function attr(name, value) {\n\t\t\treturn access(this, jQuery.attr, name, value, arguments.length > 1);\n\t\t},\n\n\t\tremoveAttr: function removeAttr(name) {\n\t\t\treturn this.each(function () {\n\t\t\t\tjQuery.removeAttr(this, name);\n\t\t\t});\n\t\t}\n\t});\n\n\tjQuery.extend({\n\t\tattr: function attr(elem, name, value) {\n\t\t\tvar ret,\n\t\t\t    hooks,\n\t\t\t    nType = elem.nodeType;\n\n\t\t\t// Don't get/set attributes on text, comment and attribute nodes\n\t\t\tif (nType === 3 || nType === 8 || nType === 2) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Fallback to prop when attributes are not supported\n\t\t\tif (typeof elem.getAttribute === \"undefined\") {\n\t\t\t\treturn jQuery.prop(elem, name, value);\n\t\t\t}\n\n\t\t\t// Attribute hooks are determined by the lowercase version\n\t\t\t// Grab necessary hook if one is defined\n\t\t\tif (nType !== 1 || !jQuery.isXMLDoc(elem)) {\n\t\t\t\thooks = jQuery.attrHooks[name.toLowerCase()] || (jQuery.expr.match.bool.test(name) ? boolHook : undefined);\n\t\t\t}\n\n\t\t\tif (value !== undefined) {\n\t\t\t\tif (value === null) {\n\t\t\t\t\tjQuery.removeAttr(elem, name);\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tif (hooks && \"set\" in hooks && (ret = hooks.set(elem, value, name)) !== undefined) {\n\t\t\t\t\treturn ret;\n\t\t\t\t}\n\n\t\t\t\telem.setAttribute(name, value + \"\");\n\t\t\t\treturn value;\n\t\t\t}\n\n\t\t\tif (hooks && \"get\" in hooks && (ret = hooks.get(elem, name)) !== null) {\n\t\t\t\treturn ret;\n\t\t\t}\n\n\t\t\tret = jQuery.find.attr(elem, name);\n\n\t\t\t// Non-existent attributes return null, we normalize to undefined\n\t\t\treturn ret == null ? undefined : ret;\n\t\t},\n\n\t\tattrHooks: {\n\t\t\ttype: {\n\t\t\t\tset: function set(elem, value) {\n\t\t\t\t\tif (!support.radioValue && value === \"radio\" && nodeName(elem, \"input\")) {\n\t\t\t\t\t\tvar val = elem.value;\n\t\t\t\t\t\telem.setAttribute(\"type\", value);\n\t\t\t\t\t\tif (val) {\n\t\t\t\t\t\t\telem.value = val;\n\t\t\t\t\t\t}\n\t\t\t\t\t\treturn value;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\n\t\tremoveAttr: function removeAttr(elem, value) {\n\t\t\tvar name,\n\t\t\t    i = 0,\n\n\n\t\t\t// Attribute names can contain non-HTML whitespace characters\n\t\t\t// https://html.spec.whatwg.org/multipage/syntax.html#attributes-2\n\t\t\tattrNames = value && value.match(rnothtmlwhite);\n\n\t\t\tif (attrNames && elem.nodeType === 1) {\n\t\t\t\twhile (name = attrNames[i++]) {\n\t\t\t\t\telem.removeAttribute(name);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t});\n\n\t// Hooks for boolean attributes\n\tboolHook = {\n\t\tset: function set(elem, value, name) {\n\t\t\tif (value === false) {\n\n\t\t\t\t// Remove boolean attributes when set to false\n\t\t\t\tjQuery.removeAttr(elem, name);\n\t\t\t} else {\n\t\t\t\telem.setAttribute(name, name);\n\t\t\t}\n\t\t\treturn name;\n\t\t}\n\t};\n\n\tjQuery.each(jQuery.expr.match.bool.source.match(/\\w+/g), function (i, name) {\n\t\tvar getter = attrHandle[name] || jQuery.find.attr;\n\n\t\tattrHandle[name] = function (elem, name, isXML) {\n\t\t\tvar ret,\n\t\t\t    handle,\n\t\t\t    lowercaseName = name.toLowerCase();\n\n\t\t\tif (!isXML) {\n\n\t\t\t\t// Avoid an infinite loop by temporarily removing this function from the getter\n\t\t\t\thandle = attrHandle[lowercaseName];\n\t\t\t\tattrHandle[lowercaseName] = ret;\n\t\t\t\tret = getter(elem, name, isXML) != null ? lowercaseName : null;\n\t\t\t\tattrHandle[lowercaseName] = handle;\n\t\t\t}\n\t\t\treturn ret;\n\t\t};\n\t});\n\n\tvar rfocusable = /^(?:input|select|textarea|button)$/i,\n\t    rclickable = /^(?:a|area)$/i;\n\n\tjQuery.fn.extend({\n\t\tprop: function prop(name, value) {\n\t\t\treturn access(this, jQuery.prop, name, value, arguments.length > 1);\n\t\t},\n\n\t\tremoveProp: function removeProp(name) {\n\t\t\treturn this.each(function () {\n\t\t\t\tdelete this[jQuery.propFix[name] || name];\n\t\t\t});\n\t\t}\n\t});\n\n\tjQuery.extend({\n\t\tprop: function prop(elem, name, value) {\n\t\t\tvar ret,\n\t\t\t    hooks,\n\t\t\t    nType = elem.nodeType;\n\n\t\t\t// Don't get/set properties on text, comment and attribute nodes\n\t\t\tif (nType === 3 || nType === 8 || nType === 2) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (nType !== 1 || !jQuery.isXMLDoc(elem)) {\n\n\t\t\t\t// Fix name and attach hooks\n\t\t\t\tname = jQuery.propFix[name] || name;\n\t\t\t\thooks = jQuery.propHooks[name];\n\t\t\t}\n\n\t\t\tif (value !== undefined) {\n\t\t\t\tif (hooks && \"set\" in hooks && (ret = hooks.set(elem, value, name)) !== undefined) {\n\t\t\t\t\treturn ret;\n\t\t\t\t}\n\n\t\t\t\treturn elem[name] = value;\n\t\t\t}\n\n\t\t\tif (hooks && \"get\" in hooks && (ret = hooks.get(elem, name)) !== null) {\n\t\t\t\treturn ret;\n\t\t\t}\n\n\t\t\treturn elem[name];\n\t\t},\n\n\t\tpropHooks: {\n\t\t\ttabIndex: {\n\t\t\t\tget: function get(elem) {\n\n\t\t\t\t\t// Support: IE <=9 - 11 only\n\t\t\t\t\t// elem.tabIndex doesn't always return the\n\t\t\t\t\t// correct value when it hasn't been explicitly set\n\t\t\t\t\t// https://web.archive.org/web/20141116233347/http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/\n\t\t\t\t\t// Use proper attribute retrieval(#12072)\n\t\t\t\t\tvar tabindex = jQuery.find.attr(elem, \"tabindex\");\n\n\t\t\t\t\tif (tabindex) {\n\t\t\t\t\t\treturn parseInt(tabindex, 10);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (rfocusable.test(elem.nodeName) || rclickable.test(elem.nodeName) && elem.href) {\n\t\t\t\t\t\treturn 0;\n\t\t\t\t\t}\n\n\t\t\t\t\treturn -1;\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\n\t\tpropFix: {\n\t\t\t\"for\": \"htmlFor\",\n\t\t\t\"class\": \"className\"\n\t\t}\n\t});\n\n\t// Support: IE <=11 only\n\t// Accessing the selectedIndex property\n\t// forces the browser to respect setting selected\n\t// on the option\n\t// The getter ensures a default option is selected\n\t// when in an optgroup\n\t// eslint rule \"no-unused-expressions\" is disabled for this code\n\t// since it considers such accessions noop\n\tif (!support.optSelected) {\n\t\tjQuery.propHooks.selected = {\n\t\t\tget: function get(elem) {\n\n\t\t\t\t/* eslint no-unused-expressions: \"off\" */\n\n\t\t\t\tvar parent = elem.parentNode;\n\t\t\t\tif (parent && parent.parentNode) {\n\t\t\t\t\tparent.parentNode.selectedIndex;\n\t\t\t\t}\n\t\t\t\treturn null;\n\t\t\t},\n\t\t\tset: function set(elem) {\n\n\t\t\t\t/* eslint no-unused-expressions: \"off\" */\n\n\t\t\t\tvar parent = elem.parentNode;\n\t\t\t\tif (parent) {\n\t\t\t\t\tparent.selectedIndex;\n\n\t\t\t\t\tif (parent.parentNode) {\n\t\t\t\t\t\tparent.parentNode.selectedIndex;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\t}\n\n\tjQuery.each([\"tabIndex\", \"readOnly\", \"maxLength\", \"cellSpacing\", \"cellPadding\", \"rowSpan\", \"colSpan\", \"useMap\", \"frameBorder\", \"contentEditable\"], function () {\n\t\tjQuery.propFix[this.toLowerCase()] = this;\n\t});\n\n\t// Strip and collapse whitespace according to HTML spec\n\t// https://html.spec.whatwg.org/multipage/infrastructure.html#strip-and-collapse-whitespace\n\tfunction stripAndCollapse(value) {\n\t\tvar tokens = value.match(rnothtmlwhite) || [];\n\t\treturn tokens.join(\" \");\n\t}\n\n\tfunction getClass(elem) {\n\t\treturn elem.getAttribute && elem.getAttribute(\"class\") || \"\";\n\t}\n\n\tjQuery.fn.extend({\n\t\taddClass: function addClass(value) {\n\t\t\tvar classes,\n\t\t\t    elem,\n\t\t\t    cur,\n\t\t\t    curValue,\n\t\t\t    clazz,\n\t\t\t    j,\n\t\t\t    finalValue,\n\t\t\t    i = 0;\n\n\t\t\tif (jQuery.isFunction(value)) {\n\t\t\t\treturn this.each(function (j) {\n\t\t\t\t\tjQuery(this).addClass(value.call(this, j, getClass(this)));\n\t\t\t\t});\n\t\t\t}\n\n\t\t\tif (typeof value === \"string\" && value) {\n\t\t\t\tclasses = value.match(rnothtmlwhite) || [];\n\n\t\t\t\twhile (elem = this[i++]) {\n\t\t\t\t\tcurValue = getClass(elem);\n\t\t\t\t\tcur = elem.nodeType === 1 && \" \" + stripAndCollapse(curValue) + \" \";\n\n\t\t\t\t\tif (cur) {\n\t\t\t\t\t\tj = 0;\n\t\t\t\t\t\twhile (clazz = classes[j++]) {\n\t\t\t\t\t\t\tif (cur.indexOf(\" \" + clazz + \" \") < 0) {\n\t\t\t\t\t\t\t\tcur += clazz + \" \";\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Only assign if different to avoid unneeded rendering.\n\t\t\t\t\t\tfinalValue = stripAndCollapse(cur);\n\t\t\t\t\t\tif (curValue !== finalValue) {\n\t\t\t\t\t\t\telem.setAttribute(\"class\", finalValue);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn this;\n\t\t},\n\n\t\tremoveClass: function removeClass(value) {\n\t\t\tvar classes,\n\t\t\t    elem,\n\t\t\t    cur,\n\t\t\t    curValue,\n\t\t\t    clazz,\n\t\t\t    j,\n\t\t\t    finalValue,\n\t\t\t    i = 0;\n\n\t\t\tif (jQuery.isFunction(value)) {\n\t\t\t\treturn this.each(function (j) {\n\t\t\t\t\tjQuery(this).removeClass(value.call(this, j, getClass(this)));\n\t\t\t\t});\n\t\t\t}\n\n\t\t\tif (!arguments.length) {\n\t\t\t\treturn this.attr(\"class\", \"\");\n\t\t\t}\n\n\t\t\tif (typeof value === \"string\" && value) {\n\t\t\t\tclasses = value.match(rnothtmlwhite) || [];\n\n\t\t\t\twhile (elem = this[i++]) {\n\t\t\t\t\tcurValue = getClass(elem);\n\n\t\t\t\t\t// This expression is here for better compressibility (see addClass)\n\t\t\t\t\tcur = elem.nodeType === 1 && \" \" + stripAndCollapse(curValue) + \" \";\n\n\t\t\t\t\tif (cur) {\n\t\t\t\t\t\tj = 0;\n\t\t\t\t\t\twhile (clazz = classes[j++]) {\n\n\t\t\t\t\t\t\t// Remove *all* instances\n\t\t\t\t\t\t\twhile (cur.indexOf(\" \" + clazz + \" \") > -1) {\n\t\t\t\t\t\t\t\tcur = cur.replace(\" \" + clazz + \" \", \" \");\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Only assign if different to avoid unneeded rendering.\n\t\t\t\t\t\tfinalValue = stripAndCollapse(cur);\n\t\t\t\t\t\tif (curValue !== finalValue) {\n\t\t\t\t\t\t\telem.setAttribute(\"class\", finalValue);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn this;\n\t\t},\n\n\t\ttoggleClass: function toggleClass(value, stateVal) {\n\t\t\tvar type = typeof value === \"undefined\" ? \"undefined\" : _typeof(value);\n\n\t\t\tif (typeof stateVal === \"boolean\" && type === \"string\") {\n\t\t\t\treturn stateVal ? this.addClass(value) : this.removeClass(value);\n\t\t\t}\n\n\t\t\tif (jQuery.isFunction(value)) {\n\t\t\t\treturn this.each(function (i) {\n\t\t\t\t\tjQuery(this).toggleClass(value.call(this, i, getClass(this), stateVal), stateVal);\n\t\t\t\t});\n\t\t\t}\n\n\t\t\treturn this.each(function () {\n\t\t\t\tvar className, i, self, classNames;\n\n\t\t\t\tif (type === \"string\") {\n\n\t\t\t\t\t// Toggle individual class names\n\t\t\t\t\ti = 0;\n\t\t\t\t\tself = jQuery(this);\n\t\t\t\t\tclassNames = value.match(rnothtmlwhite) || [];\n\n\t\t\t\t\twhile (className = classNames[i++]) {\n\n\t\t\t\t\t\t// Check each className given, space separated list\n\t\t\t\t\t\tif (self.hasClass(className)) {\n\t\t\t\t\t\t\tself.removeClass(className);\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tself.addClass(className);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// Toggle whole class name\n\t\t\t\t} else if (value === undefined || type === \"boolean\") {\n\t\t\t\t\tclassName = getClass(this);\n\t\t\t\t\tif (className) {\n\n\t\t\t\t\t\t// Store className if set\n\t\t\t\t\t\tdataPriv.set(this, \"__className__\", className);\n\t\t\t\t\t}\n\n\t\t\t\t\t// If the element has a class name or if we're passed `false`,\n\t\t\t\t\t// then remove the whole classname (if there was one, the above saved it).\n\t\t\t\t\t// Otherwise bring back whatever was previously saved (if anything),\n\t\t\t\t\t// falling back to the empty string if nothing was stored.\n\t\t\t\t\tif (this.setAttribute) {\n\t\t\t\t\t\tthis.setAttribute(\"class\", className || value === false ? \"\" : dataPriv.get(this, \"__className__\") || \"\");\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\thasClass: function hasClass(selector) {\n\t\t\tvar className,\n\t\t\t    elem,\n\t\t\t    i = 0;\n\n\t\t\tclassName = \" \" + selector + \" \";\n\t\t\twhile (elem = this[i++]) {\n\t\t\t\tif (elem.nodeType === 1 && (\" \" + stripAndCollapse(getClass(elem)) + \" \").indexOf(className) > -1) {\n\t\t\t\t\treturn true;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn false;\n\t\t}\n\t});\n\n\tvar rreturn = /\\r/g;\n\n\tjQuery.fn.extend({\n\t\tval: function val(value) {\n\t\t\tvar hooks,\n\t\t\t    ret,\n\t\t\t    isFunction,\n\t\t\t    elem = this[0];\n\n\t\t\tif (!arguments.length) {\n\t\t\t\tif (elem) {\n\t\t\t\t\thooks = jQuery.valHooks[elem.type] || jQuery.valHooks[elem.nodeName.toLowerCase()];\n\n\t\t\t\t\tif (hooks && \"get\" in hooks && (ret = hooks.get(elem, \"value\")) !== undefined) {\n\t\t\t\t\t\treturn ret;\n\t\t\t\t\t}\n\n\t\t\t\t\tret = elem.value;\n\n\t\t\t\t\t// Handle most common string cases\n\t\t\t\t\tif (typeof ret === \"string\") {\n\t\t\t\t\t\treturn ret.replace(rreturn, \"\");\n\t\t\t\t\t}\n\n\t\t\t\t\t// Handle cases where value is null/undef or number\n\t\t\t\t\treturn ret == null ? \"\" : ret;\n\t\t\t\t}\n\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tisFunction = jQuery.isFunction(value);\n\n\t\t\treturn this.each(function (i) {\n\t\t\t\tvar val;\n\n\t\t\t\tif (this.nodeType !== 1) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tif (isFunction) {\n\t\t\t\t\tval = value.call(this, i, jQuery(this).val());\n\t\t\t\t} else {\n\t\t\t\t\tval = value;\n\t\t\t\t}\n\n\t\t\t\t// Treat null/undefined as \"\"; convert numbers to string\n\t\t\t\tif (val == null) {\n\t\t\t\t\tval = \"\";\n\t\t\t\t} else if (typeof val === \"number\") {\n\t\t\t\t\tval += \"\";\n\t\t\t\t} else if (Array.isArray(val)) {\n\t\t\t\t\tval = jQuery.map(val, function (value) {\n\t\t\t\t\t\treturn value == null ? \"\" : value + \"\";\n\t\t\t\t\t});\n\t\t\t\t}\n\n\t\t\t\thooks = jQuery.valHooks[this.type] || jQuery.valHooks[this.nodeName.toLowerCase()];\n\n\t\t\t\t// If set returns undefined, fall back to normal setting\n\t\t\t\tif (!hooks || !(\"set\" in hooks) || hooks.set(this, val, \"value\") === undefined) {\n\t\t\t\t\tthis.value = val;\n\t\t\t\t}\n\t\t\t});\n\t\t}\n\t});\n\n\tjQuery.extend({\n\t\tvalHooks: {\n\t\t\toption: {\n\t\t\t\tget: function get(elem) {\n\n\t\t\t\t\tvar val = jQuery.find.attr(elem, \"value\");\n\t\t\t\t\treturn val != null ? val :\n\n\t\t\t\t\t// Support: IE <=10 - 11 only\n\t\t\t\t\t// option.text throws exceptions (#14686, #14858)\n\t\t\t\t\t// Strip and collapse whitespace\n\t\t\t\t\t// https://html.spec.whatwg.org/#strip-and-collapse-whitespace\n\t\t\t\t\tstripAndCollapse(jQuery.text(elem));\n\t\t\t\t}\n\t\t\t},\n\t\t\tselect: {\n\t\t\t\tget: function get(elem) {\n\t\t\t\t\tvar value,\n\t\t\t\t\t    option,\n\t\t\t\t\t    i,\n\t\t\t\t\t    options = elem.options,\n\t\t\t\t\t    index = elem.selectedIndex,\n\t\t\t\t\t    one = elem.type === \"select-one\",\n\t\t\t\t\t    values = one ? null : [],\n\t\t\t\t\t    max = one ? index + 1 : options.length;\n\n\t\t\t\t\tif (index < 0) {\n\t\t\t\t\t\ti = max;\n\t\t\t\t\t} else {\n\t\t\t\t\t\ti = one ? index : 0;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Loop through all the selected options\n\t\t\t\t\tfor (; i < max; i++) {\n\t\t\t\t\t\toption = options[i];\n\n\t\t\t\t\t\t// Support: IE <=9 only\n\t\t\t\t\t\t// IE8-9 doesn't update selected after form reset (#2551)\n\t\t\t\t\t\tif ((option.selected || i === index) &&\n\n\t\t\t\t\t\t// Don't return options that are disabled or in a disabled optgroup\n\t\t\t\t\t\t!option.disabled && (!option.parentNode.disabled || !nodeName(option.parentNode, \"optgroup\"))) {\n\n\t\t\t\t\t\t\t// Get the specific value for the option\n\t\t\t\t\t\t\tvalue = jQuery(option).val();\n\n\t\t\t\t\t\t\t// We don't need an array for one selects\n\t\t\t\t\t\t\tif (one) {\n\t\t\t\t\t\t\t\treturn value;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t// Multi-Selects return an array\n\t\t\t\t\t\t\tvalues.push(value);\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\treturn values;\n\t\t\t\t},\n\n\t\t\t\tset: function set(elem, value) {\n\t\t\t\t\tvar optionSet,\n\t\t\t\t\t    option,\n\t\t\t\t\t    options = elem.options,\n\t\t\t\t\t    values = jQuery.makeArray(value),\n\t\t\t\t\t    i = options.length;\n\n\t\t\t\t\twhile (i--) {\n\t\t\t\t\t\toption = options[i];\n\n\t\t\t\t\t\t/* eslint-disable no-cond-assign */\n\n\t\t\t\t\t\tif (option.selected = jQuery.inArray(jQuery.valHooks.option.get(option), values) > -1) {\n\t\t\t\t\t\t\toptionSet = true;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t/* eslint-enable no-cond-assign */\n\t\t\t\t\t}\n\n\t\t\t\t\t// Force browsers to behave consistently when non-matching value is set\n\t\t\t\t\tif (!optionSet) {\n\t\t\t\t\t\telem.selectedIndex = -1;\n\t\t\t\t\t}\n\t\t\t\t\treturn values;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t});\n\n\t// Radios and checkboxes getter/setter\n\tjQuery.each([\"radio\", \"checkbox\"], function () {\n\t\tjQuery.valHooks[this] = {\n\t\t\tset: function set(elem, value) {\n\t\t\t\tif (Array.isArray(value)) {\n\t\t\t\t\treturn elem.checked = jQuery.inArray(jQuery(elem).val(), value) > -1;\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\t\tif (!support.checkOn) {\n\t\t\tjQuery.valHooks[this].get = function (elem) {\n\t\t\t\treturn elem.getAttribute(\"value\") === null ? \"on\" : elem.value;\n\t\t\t};\n\t\t}\n\t});\n\n\t// Return jQuery for attributes-only inclusion\n\n\n\tvar rfocusMorph = /^(?:focusinfocus|focusoutblur)$/;\n\n\tjQuery.extend(jQuery.event, {\n\n\t\ttrigger: function trigger(event, data, elem, onlyHandlers) {\n\n\t\t\tvar i,\n\t\t\t    cur,\n\t\t\t    tmp,\n\t\t\t    bubbleType,\n\t\t\t    ontype,\n\t\t\t    handle,\n\t\t\t    special,\n\t\t\t    eventPath = [elem || document],\n\t\t\t    type = hasOwn.call(event, \"type\") ? event.type : event,\n\t\t\t    namespaces = hasOwn.call(event, \"namespace\") ? event.namespace.split(\".\") : [];\n\n\t\t\tcur = tmp = elem = elem || document;\n\n\t\t\t// Don't do events on text and comment nodes\n\t\t\tif (elem.nodeType === 3 || elem.nodeType === 8) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// focus/blur morphs to focusin/out; ensure we're not firing them right now\n\t\t\tif (rfocusMorph.test(type + jQuery.event.triggered)) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (type.indexOf(\".\") > -1) {\n\n\t\t\t\t// Namespaced trigger; create a regexp to match event type in handle()\n\t\t\t\tnamespaces = type.split(\".\");\n\t\t\t\ttype = namespaces.shift();\n\t\t\t\tnamespaces.sort();\n\t\t\t}\n\t\t\tontype = type.indexOf(\":\") < 0 && \"on\" + type;\n\n\t\t\t// Caller can pass in a jQuery.Event object, Object, or just an event type string\n\t\t\tevent = event[jQuery.expando] ? event : new jQuery.Event(type, (typeof event === \"undefined\" ? \"undefined\" : _typeof(event)) === \"object\" && event);\n\n\t\t\t// Trigger bitmask: & 1 for native handlers; & 2 for jQuery (always true)\n\t\t\tevent.isTrigger = onlyHandlers ? 2 : 3;\n\t\t\tevent.namespace = namespaces.join(\".\");\n\t\t\tevent.rnamespace = event.namespace ? new RegExp(\"(^|\\\\.)\" + namespaces.join(\"\\\\.(?:.*\\\\.|)\") + \"(\\\\.|$)\") : null;\n\n\t\t\t// Clean up the event in case it is being reused\n\t\t\tevent.result = undefined;\n\t\t\tif (!event.target) {\n\t\t\t\tevent.target = elem;\n\t\t\t}\n\n\t\t\t// Clone any incoming data and prepend the event, creating the handler arg list\n\t\t\tdata = data == null ? [event] : jQuery.makeArray(data, [event]);\n\n\t\t\t// Allow special events to draw outside the lines\n\t\t\tspecial = jQuery.event.special[type] || {};\n\t\t\tif (!onlyHandlers && special.trigger && special.trigger.apply(elem, data) === false) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Determine event propagation path in advance, per W3C events spec (#9951)\n\t\t\t// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)\n\t\t\tif (!onlyHandlers && !special.noBubble && !jQuery.isWindow(elem)) {\n\n\t\t\t\tbubbleType = special.delegateType || type;\n\t\t\t\tif (!rfocusMorph.test(bubbleType + type)) {\n\t\t\t\t\tcur = cur.parentNode;\n\t\t\t\t}\n\t\t\t\tfor (; cur; cur = cur.parentNode) {\n\t\t\t\t\teventPath.push(cur);\n\t\t\t\t\ttmp = cur;\n\t\t\t\t}\n\n\t\t\t\t// Only add window if we got to document (e.g., not plain obj or detached DOM)\n\t\t\t\tif (tmp === (elem.ownerDocument || document)) {\n\t\t\t\t\teventPath.push(tmp.defaultView || tmp.parentWindow || window);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Fire handlers on the event path\n\t\t\ti = 0;\n\t\t\twhile ((cur = eventPath[i++]) && !event.isPropagationStopped()) {\n\n\t\t\t\tevent.type = i > 1 ? bubbleType : special.bindType || type;\n\n\t\t\t\t// jQuery handler\n\t\t\t\thandle = (dataPriv.get(cur, \"events\") || {})[event.type] && dataPriv.get(cur, \"handle\");\n\t\t\t\tif (handle) {\n\t\t\t\t\thandle.apply(cur, data);\n\t\t\t\t}\n\n\t\t\t\t// Native handler\n\t\t\t\thandle = ontype && cur[ontype];\n\t\t\t\tif (handle && handle.apply && acceptData(cur)) {\n\t\t\t\t\tevent.result = handle.apply(cur, data);\n\t\t\t\t\tif (event.result === false) {\n\t\t\t\t\t\tevent.preventDefault();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tevent.type = type;\n\n\t\t\t// If nobody prevented the default action, do it now\n\t\t\tif (!onlyHandlers && !event.isDefaultPrevented()) {\n\n\t\t\t\tif ((!special._default || special._default.apply(eventPath.pop(), data) === false) && acceptData(elem)) {\n\n\t\t\t\t\t// Call a native DOM method on the target with the same name as the event.\n\t\t\t\t\t// Don't do default actions on window, that's where global variables be (#6170)\n\t\t\t\t\tif (ontype && jQuery.isFunction(elem[type]) && !jQuery.isWindow(elem)) {\n\n\t\t\t\t\t\t// Don't re-trigger an onFOO event when we call its FOO() method\n\t\t\t\t\t\ttmp = elem[ontype];\n\n\t\t\t\t\t\tif (tmp) {\n\t\t\t\t\t\t\telem[ontype] = null;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Prevent re-triggering of the same event, since we already bubbled it above\n\t\t\t\t\t\tjQuery.event.triggered = type;\n\t\t\t\t\t\telem[type]();\n\t\t\t\t\t\tjQuery.event.triggered = undefined;\n\n\t\t\t\t\t\tif (tmp) {\n\t\t\t\t\t\t\telem[ontype] = tmp;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn event.result;\n\t\t},\n\n\t\t// Piggyback on a donor event to simulate a different one\n\t\t// Used only for `focus(in | out)` events\n\t\tsimulate: function simulate(type, elem, event) {\n\t\t\tvar e = jQuery.extend(new jQuery.Event(), event, {\n\t\t\t\ttype: type,\n\t\t\t\tisSimulated: true\n\t\t\t});\n\n\t\t\tjQuery.event.trigger(e, null, elem);\n\t\t}\n\n\t});\n\n\tjQuery.fn.extend({\n\n\t\ttrigger: function trigger(type, data) {\n\t\t\treturn this.each(function () {\n\t\t\t\tjQuery.event.trigger(type, data, this);\n\t\t\t});\n\t\t},\n\t\ttriggerHandler: function triggerHandler(type, data) {\n\t\t\tvar elem = this[0];\n\t\t\tif (elem) {\n\t\t\t\treturn jQuery.event.trigger(type, data, elem, true);\n\t\t\t}\n\t\t}\n\t});\n\n\tjQuery.each((\"blur focus focusin focusout resize scroll click dblclick \" + \"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave \" + \"change select submit keydown keypress keyup contextmenu\").split(\" \"), function (i, name) {\n\n\t\t// Handle event binding\n\t\tjQuery.fn[name] = function (data, fn) {\n\t\t\treturn arguments.length > 0 ? this.on(name, null, data, fn) : this.trigger(name);\n\t\t};\n\t});\n\n\tjQuery.fn.extend({\n\t\thover: function hover(fnOver, fnOut) {\n\t\t\treturn this.mouseenter(fnOver).mouseleave(fnOut || fnOver);\n\t\t}\n\t});\n\n\tsupport.focusin = \"onfocusin\" in window;\n\n\t// Support: Firefox <=44\n\t// Firefox doesn't have focus(in | out) events\n\t// Related ticket - https://bugzilla.mozilla.org/show_bug.cgi?id=687787\n\t//\n\t// Support: Chrome <=48 - 49, Safari <=9.0 - 9.1\n\t// focus(in | out) events fire after focus & blur events,\n\t// which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order\n\t// Related ticket - https://bugs.chromium.org/p/chromium/issues/detail?id=449857\n\tif (!support.focusin) {\n\t\tjQuery.each({ focus: \"focusin\", blur: \"focusout\" }, function (orig, fix) {\n\n\t\t\t// Attach a single capturing handler on the document while someone wants focusin/focusout\n\t\t\tvar handler = function handler(event) {\n\t\t\t\tjQuery.event.simulate(fix, event.target, jQuery.event.fix(event));\n\t\t\t};\n\n\t\t\tjQuery.event.special[fix] = {\n\t\t\t\tsetup: function setup() {\n\t\t\t\t\tvar doc = this.ownerDocument || this,\n\t\t\t\t\t    attaches = dataPriv.access(doc, fix);\n\n\t\t\t\t\tif (!attaches) {\n\t\t\t\t\t\tdoc.addEventListener(orig, handler, true);\n\t\t\t\t\t}\n\t\t\t\t\tdataPriv.access(doc, fix, (attaches || 0) + 1);\n\t\t\t\t},\n\t\t\t\tteardown: function teardown() {\n\t\t\t\t\tvar doc = this.ownerDocument || this,\n\t\t\t\t\t    attaches = dataPriv.access(doc, fix) - 1;\n\n\t\t\t\t\tif (!attaches) {\n\t\t\t\t\t\tdoc.removeEventListener(orig, handler, true);\n\t\t\t\t\t\tdataPriv.remove(doc, fix);\n\t\t\t\t\t} else {\n\t\t\t\t\t\tdataPriv.access(doc, fix, attaches);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t};\n\t\t});\n\t}\n\tvar location = window.location;\n\n\tvar nonce = jQuery.now();\n\n\tvar rquery = /\\?/;\n\n\t// Cross-browser xml parsing\n\tjQuery.parseXML = function (data) {\n\t\tvar xml;\n\t\tif (!data || typeof data !== \"string\") {\n\t\t\treturn null;\n\t\t}\n\n\t\t// Support: IE 9 - 11 only\n\t\t// IE throws on parseFromString with invalid input.\n\t\ttry {\n\t\t\txml = new window.DOMParser().parseFromString(data, \"text/xml\");\n\t\t} catch (e) {\n\t\t\txml = undefined;\n\t\t}\n\n\t\tif (!xml || xml.getElementsByTagName(\"parsererror\").length) {\n\t\t\tjQuery.error(\"Invalid XML: \" + data);\n\t\t}\n\t\treturn xml;\n\t};\n\n\tvar rbracket = /\\[\\]$/,\n\t    rCRLF = /\\r?\\n/g,\n\t    rsubmitterTypes = /^(?:submit|button|image|reset|file)$/i,\n\t    rsubmittable = /^(?:input|select|textarea|keygen)/i;\n\n\tfunction buildParams(prefix, obj, traditional, add) {\n\t\tvar name;\n\n\t\tif (Array.isArray(obj)) {\n\n\t\t\t// Serialize array item.\n\t\t\tjQuery.each(obj, function (i, v) {\n\t\t\t\tif (traditional || rbracket.test(prefix)) {\n\n\t\t\t\t\t// Treat each array item as a scalar.\n\t\t\t\t\tadd(prefix, v);\n\t\t\t\t} else {\n\n\t\t\t\t\t// Item is non-scalar (array or object), encode its numeric index.\n\t\t\t\t\tbuildParams(prefix + \"[\" + ((typeof v === \"undefined\" ? \"undefined\" : _typeof(v)) === \"object\" && v != null ? i : \"\") + \"]\", v, traditional, add);\n\t\t\t\t}\n\t\t\t});\n\t\t} else if (!traditional && jQuery.type(obj) === \"object\") {\n\n\t\t\t// Serialize object item.\n\t\t\tfor (name in obj) {\n\t\t\t\tbuildParams(prefix + \"[\" + name + \"]\", obj[name], traditional, add);\n\t\t\t}\n\t\t} else {\n\n\t\t\t// Serialize scalar item.\n\t\t\tadd(prefix, obj);\n\t\t}\n\t}\n\n\t// Serialize an array of form elements or a set of\n\t// key/values into a query string\n\tjQuery.param = function (a, traditional) {\n\t\tvar prefix,\n\t\t    s = [],\n\t\t    add = function add(key, valueOrFunction) {\n\n\t\t\t// If value is a function, invoke it and use its return value\n\t\t\tvar value = jQuery.isFunction(valueOrFunction) ? valueOrFunction() : valueOrFunction;\n\n\t\t\ts[s.length] = encodeURIComponent(key) + \"=\" + encodeURIComponent(value == null ? \"\" : value);\n\t\t};\n\n\t\t// If an array was passed in, assume that it is an array of form elements.\n\t\tif (Array.isArray(a) || a.jquery && !jQuery.isPlainObject(a)) {\n\n\t\t\t// Serialize the form elements\n\t\t\tjQuery.each(a, function () {\n\t\t\t\tadd(this.name, this.value);\n\t\t\t});\n\t\t} else {\n\n\t\t\t// If traditional, encode the \"old\" way (the way 1.3.2 or older\n\t\t\t// did it), otherwise encode params recursively.\n\t\t\tfor (prefix in a) {\n\t\t\t\tbuildParams(prefix, a[prefix], traditional, add);\n\t\t\t}\n\t\t}\n\n\t\t// Return the resulting serialization\n\t\treturn s.join(\"&\");\n\t};\n\n\tjQuery.fn.extend({\n\t\tserialize: function serialize() {\n\t\t\treturn jQuery.param(this.serializeArray());\n\t\t},\n\t\tserializeArray: function serializeArray() {\n\t\t\treturn this.map(function () {\n\n\t\t\t\t// Can add propHook for \"elements\" to filter or add form elements\n\t\t\t\tvar elements = jQuery.prop(this, \"elements\");\n\t\t\t\treturn elements ? jQuery.makeArray(elements) : this;\n\t\t\t}).filter(function () {\n\t\t\t\tvar type = this.type;\n\n\t\t\t\t// Use .is( \":disabled\" ) so that fieldset[disabled] works\n\t\t\t\treturn this.name && !jQuery(this).is(\":disabled\") && rsubmittable.test(this.nodeName) && !rsubmitterTypes.test(type) && (this.checked || !rcheckableType.test(type));\n\t\t\t}).map(function (i, elem) {\n\t\t\t\tvar val = jQuery(this).val();\n\n\t\t\t\tif (val == null) {\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\n\t\t\t\tif (Array.isArray(val)) {\n\t\t\t\t\treturn jQuery.map(val, function (val) {\n\t\t\t\t\t\treturn { name: elem.name, value: val.replace(rCRLF, \"\\r\\n\") };\n\t\t\t\t\t});\n\t\t\t\t}\n\n\t\t\t\treturn { name: elem.name, value: val.replace(rCRLF, \"\\r\\n\") };\n\t\t\t}).get();\n\t\t}\n\t});\n\n\tvar r20 = /%20/g,\n\t    rhash = /#.*$/,\n\t    rantiCache = /([?&])_=[^&]*/,\n\t    rheaders = /^(.*?):[ \\t]*([^\\r\\n]*)$/mg,\n\n\n\t// #7653, #8125, #8152: local protocol detection\n\trlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,\n\t    rnoContent = /^(?:GET|HEAD)$/,\n\t    rprotocol = /^\\/\\//,\n\n\n\t/* Prefilters\n  * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)\n  * 2) These are called:\n  *    - BEFORE asking for a transport\n  *    - AFTER param serialization (s.data is a string if s.processData is true)\n  * 3) key is the dataType\n  * 4) the catchall symbol \"*\" can be used\n  * 5) execution will start with transport dataType and THEN continue down to \"*\" if needed\n  */\n\tprefilters = {},\n\n\n\t/* Transports bindings\n  * 1) key is the dataType\n  * 2) the catchall symbol \"*\" can be used\n  * 3) selection will start with transport dataType and THEN go to \"*\" if needed\n  */\n\ttransports = {},\n\n\n\t// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression\n\tallTypes = \"*/\".concat(\"*\"),\n\n\n\t// Anchor tag for parsing the document origin\n\toriginAnchor = document.createElement(\"a\");\n\toriginAnchor.href = location.href;\n\n\t// Base \"constructor\" for jQuery.ajaxPrefilter and jQuery.ajaxTransport\n\tfunction addToPrefiltersOrTransports(structure) {\n\n\t\t// dataTypeExpression is optional and defaults to \"*\"\n\t\treturn function (dataTypeExpression, func) {\n\n\t\t\tif (typeof dataTypeExpression !== \"string\") {\n\t\t\t\tfunc = dataTypeExpression;\n\t\t\t\tdataTypeExpression = \"*\";\n\t\t\t}\n\n\t\t\tvar dataType,\n\t\t\t    i = 0,\n\t\t\t    dataTypes = dataTypeExpression.toLowerCase().match(rnothtmlwhite) || [];\n\n\t\t\tif (jQuery.isFunction(func)) {\n\n\t\t\t\t// For each dataType in the dataTypeExpression\n\t\t\t\twhile (dataType = dataTypes[i++]) {\n\n\t\t\t\t\t// Prepend if requested\n\t\t\t\t\tif (dataType[0] === \"+\") {\n\t\t\t\t\t\tdataType = dataType.slice(1) || \"*\";\n\t\t\t\t\t\t(structure[dataType] = structure[dataType] || []).unshift(func);\n\n\t\t\t\t\t\t// Otherwise append\n\t\t\t\t\t} else {\n\t\t\t\t\t\t(structure[dataType] = structure[dataType] || []).push(func);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\t}\n\n\t// Base inspection function for prefilters and transports\n\tfunction inspectPrefiltersOrTransports(structure, options, originalOptions, jqXHR) {\n\n\t\tvar inspected = {},\n\t\t    seekingTransport = structure === transports;\n\n\t\tfunction inspect(dataType) {\n\t\t\tvar selected;\n\t\t\tinspected[dataType] = true;\n\t\t\tjQuery.each(structure[dataType] || [], function (_, prefilterOrFactory) {\n\t\t\t\tvar dataTypeOrTransport = prefilterOrFactory(options, originalOptions, jqXHR);\n\t\t\t\tif (typeof dataTypeOrTransport === \"string\" && !seekingTransport && !inspected[dataTypeOrTransport]) {\n\n\t\t\t\t\toptions.dataTypes.unshift(dataTypeOrTransport);\n\t\t\t\t\tinspect(dataTypeOrTransport);\n\t\t\t\t\treturn false;\n\t\t\t\t} else if (seekingTransport) {\n\t\t\t\t\treturn !(selected = dataTypeOrTransport);\n\t\t\t\t}\n\t\t\t});\n\t\t\treturn selected;\n\t\t}\n\n\t\treturn inspect(options.dataTypes[0]) || !inspected[\"*\"] && inspect(\"*\");\n\t}\n\n\t// A special extend for ajax options\n\t// that takes \"flat\" options (not to be deep extended)\n\t// Fixes #9887\n\tfunction ajaxExtend(target, src) {\n\t\tvar key,\n\t\t    deep,\n\t\t    flatOptions = jQuery.ajaxSettings.flatOptions || {};\n\n\t\tfor (key in src) {\n\t\t\tif (src[key] !== undefined) {\n\t\t\t\t(flatOptions[key] ? target : deep || (deep = {}))[key] = src[key];\n\t\t\t}\n\t\t}\n\t\tif (deep) {\n\t\t\tjQuery.extend(true, target, deep);\n\t\t}\n\n\t\treturn target;\n\t}\n\n\t/* Handles responses to an ajax request:\n  * - finds the right dataType (mediates between content-type and expected dataType)\n  * - returns the corresponding response\n  */\n\tfunction ajaxHandleResponses(s, jqXHR, responses) {\n\n\t\tvar ct,\n\t\t    type,\n\t\t    finalDataType,\n\t\t    firstDataType,\n\t\t    contents = s.contents,\n\t\t    dataTypes = s.dataTypes;\n\n\t\t// Remove auto dataType and get content-type in the process\n\t\twhile (dataTypes[0] === \"*\") {\n\t\t\tdataTypes.shift();\n\t\t\tif (ct === undefined) {\n\t\t\t\tct = s.mimeType || jqXHR.getResponseHeader(\"Content-Type\");\n\t\t\t}\n\t\t}\n\n\t\t// Check if we're dealing with a known content-type\n\t\tif (ct) {\n\t\t\tfor (type in contents) {\n\t\t\t\tif (contents[type] && contents[type].test(ct)) {\n\t\t\t\t\tdataTypes.unshift(type);\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\t// Check to see if we have a response for the expected dataType\n\t\tif (dataTypes[0] in responses) {\n\t\t\tfinalDataType = dataTypes[0];\n\t\t} else {\n\n\t\t\t// Try convertible dataTypes\n\t\t\tfor (type in responses) {\n\t\t\t\tif (!dataTypes[0] || s.converters[type + \" \" + dataTypes[0]]) {\n\t\t\t\t\tfinalDataType = type;\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t\tif (!firstDataType) {\n\t\t\t\t\tfirstDataType = type;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Or just use first one\n\t\t\tfinalDataType = finalDataType || firstDataType;\n\t\t}\n\n\t\t// If we found a dataType\n\t\t// We add the dataType to the list if needed\n\t\t// and return the corresponding response\n\t\tif (finalDataType) {\n\t\t\tif (finalDataType !== dataTypes[0]) {\n\t\t\t\tdataTypes.unshift(finalDataType);\n\t\t\t}\n\t\t\treturn responses[finalDataType];\n\t\t}\n\t}\n\n\t/* Chain conversions given the request and the original response\n  * Also sets the responseXXX fields on the jqXHR instance\n  */\n\tfunction ajaxConvert(s, response, jqXHR, isSuccess) {\n\t\tvar conv2,\n\t\t    current,\n\t\t    conv,\n\t\t    tmp,\n\t\t    prev,\n\t\t    converters = {},\n\n\n\t\t// Work with a copy of dataTypes in case we need to modify it for conversion\n\t\tdataTypes = s.dataTypes.slice();\n\n\t\t// Create converters map with lowercased keys\n\t\tif (dataTypes[1]) {\n\t\t\tfor (conv in s.converters) {\n\t\t\t\tconverters[conv.toLowerCase()] = s.converters[conv];\n\t\t\t}\n\t\t}\n\n\t\tcurrent = dataTypes.shift();\n\n\t\t// Convert to each sequential dataType\n\t\twhile (current) {\n\n\t\t\tif (s.responseFields[current]) {\n\t\t\t\tjqXHR[s.responseFields[current]] = response;\n\t\t\t}\n\n\t\t\t// Apply the dataFilter if provided\n\t\t\tif (!prev && isSuccess && s.dataFilter) {\n\t\t\t\tresponse = s.dataFilter(response, s.dataType);\n\t\t\t}\n\n\t\t\tprev = current;\n\t\t\tcurrent = dataTypes.shift();\n\n\t\t\tif (current) {\n\n\t\t\t\t// There's only work to do if current dataType is non-auto\n\t\t\t\tif (current === \"*\") {\n\n\t\t\t\t\tcurrent = prev;\n\n\t\t\t\t\t// Convert response if prev dataType is non-auto and differs from current\n\t\t\t\t} else if (prev !== \"*\" && prev !== current) {\n\n\t\t\t\t\t// Seek a direct converter\n\t\t\t\t\tconv = converters[prev + \" \" + current] || converters[\"* \" + current];\n\n\t\t\t\t\t// If none found, seek a pair\n\t\t\t\t\tif (!conv) {\n\t\t\t\t\t\tfor (conv2 in converters) {\n\n\t\t\t\t\t\t\t// If conv2 outputs current\n\t\t\t\t\t\t\ttmp = conv2.split(\" \");\n\t\t\t\t\t\t\tif (tmp[1] === current) {\n\n\t\t\t\t\t\t\t\t// If prev can be converted to accepted input\n\t\t\t\t\t\t\t\tconv = converters[prev + \" \" + tmp[0]] || converters[\"* \" + tmp[0]];\n\t\t\t\t\t\t\t\tif (conv) {\n\n\t\t\t\t\t\t\t\t\t// Condense equivalence converters\n\t\t\t\t\t\t\t\t\tif (conv === true) {\n\t\t\t\t\t\t\t\t\t\tconv = converters[conv2];\n\n\t\t\t\t\t\t\t\t\t\t// Otherwise, insert the intermediate dataType\n\t\t\t\t\t\t\t\t\t} else if (converters[conv2] !== true) {\n\t\t\t\t\t\t\t\t\t\tcurrent = tmp[0];\n\t\t\t\t\t\t\t\t\t\tdataTypes.unshift(tmp[1]);\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// Apply converter (if not an equivalence)\n\t\t\t\t\tif (conv !== true) {\n\n\t\t\t\t\t\t// Unless errors are allowed to bubble, catch and return them\n\t\t\t\t\t\tif (conv && s.throws) {\n\t\t\t\t\t\t\tresponse = conv(response);\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\ttry {\n\t\t\t\t\t\t\t\tresponse = conv(response);\n\t\t\t\t\t\t\t} catch (e) {\n\t\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\t\tstate: \"parsererror\",\n\t\t\t\t\t\t\t\t\terror: conv ? e : \"No conversion from \" + prev + \" to \" + current\n\t\t\t\t\t\t\t\t};\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn { state: \"success\", data: response };\n\t}\n\n\tjQuery.extend({\n\n\t\t// Counter for holding the number of active queries\n\t\tactive: 0,\n\n\t\t// Last-Modified header cache for next request\n\t\tlastModified: {},\n\t\tetag: {},\n\n\t\tajaxSettings: {\n\t\t\turl: location.href,\n\t\t\ttype: \"GET\",\n\t\t\tisLocal: rlocalProtocol.test(location.protocol),\n\t\t\tglobal: true,\n\t\t\tprocessData: true,\n\t\t\tasync: true,\n\t\t\tcontentType: \"application/x-www-form-urlencoded; charset=UTF-8\",\n\n\t\t\t/*\n   timeout: 0,\n   data: null,\n   dataType: null,\n   username: null,\n   password: null,\n   cache: null,\n   throws: false,\n   traditional: false,\n   headers: {},\n   */\n\n\t\t\taccepts: {\n\t\t\t\t\"*\": allTypes,\n\t\t\t\ttext: \"text/plain\",\n\t\t\t\thtml: \"text/html\",\n\t\t\t\txml: \"application/xml, text/xml\",\n\t\t\t\tjson: \"application/json, text/javascript\"\n\t\t\t},\n\n\t\t\tcontents: {\n\t\t\t\txml: /\\bxml\\b/,\n\t\t\t\thtml: /\\bhtml/,\n\t\t\t\tjson: /\\bjson\\b/\n\t\t\t},\n\n\t\t\tresponseFields: {\n\t\t\t\txml: \"responseXML\",\n\t\t\t\ttext: \"responseText\",\n\t\t\t\tjson: \"responseJSON\"\n\t\t\t},\n\n\t\t\t// Data converters\n\t\t\t// Keys separate source (or catchall \"*\") and destination types with a single space\n\t\t\tconverters: {\n\n\t\t\t\t// Convert anything to text\n\t\t\t\t\"* text\": String,\n\n\t\t\t\t// Text to html (true = no transformation)\n\t\t\t\t\"text html\": true,\n\n\t\t\t\t// Evaluate text as a json expression\n\t\t\t\t\"text json\": JSON.parse,\n\n\t\t\t\t// Parse text as xml\n\t\t\t\t\"text xml\": jQuery.parseXML\n\t\t\t},\n\n\t\t\t// For options that shouldn't be deep extended:\n\t\t\t// you can add your own custom options here if\n\t\t\t// and when you create one that shouldn't be\n\t\t\t// deep extended (see ajaxExtend)\n\t\t\tflatOptions: {\n\t\t\t\turl: true,\n\t\t\t\tcontext: true\n\t\t\t}\n\t\t},\n\n\t\t// Creates a full fledged settings object into target\n\t\t// with both ajaxSettings and settings fields.\n\t\t// If target is omitted, writes into ajaxSettings.\n\t\tajaxSetup: function ajaxSetup(target, settings) {\n\t\t\treturn settings ?\n\n\t\t\t// Building a settings object\n\t\t\tajaxExtend(ajaxExtend(target, jQuery.ajaxSettings), settings) :\n\n\t\t\t// Extending ajaxSettings\n\t\t\tajaxExtend(jQuery.ajaxSettings, target);\n\t\t},\n\n\t\tajaxPrefilter: addToPrefiltersOrTransports(prefilters),\n\t\tajaxTransport: addToPrefiltersOrTransports(transports),\n\n\t\t// Main method\n\t\tajax: function ajax(url, options) {\n\n\t\t\t// If url is an object, simulate pre-1.5 signature\n\t\t\tif ((typeof url === \"undefined\" ? \"undefined\" : _typeof(url)) === \"object\") {\n\t\t\t\toptions = url;\n\t\t\t\turl = undefined;\n\t\t\t}\n\n\t\t\t// Force options to be an object\n\t\t\toptions = options || {};\n\n\t\t\tvar transport,\n\n\n\t\t\t// URL without anti-cache param\n\t\t\tcacheURL,\n\n\n\t\t\t// Response headers\n\t\t\tresponseHeadersString,\n\t\t\t    responseHeaders,\n\n\n\t\t\t// timeout handle\n\t\t\ttimeoutTimer,\n\n\n\t\t\t// Url cleanup var\n\t\t\turlAnchor,\n\n\n\t\t\t// Request state (becomes false upon send and true upon completion)\n\t\t\tcompleted,\n\n\n\t\t\t// To know if global events are to be dispatched\n\t\t\tfireGlobals,\n\n\n\t\t\t// Loop variable\n\t\t\ti,\n\n\n\t\t\t// uncached part of the url\n\t\t\tuncached,\n\n\n\t\t\t// Create the final options object\n\t\t\ts = jQuery.ajaxSetup({}, options),\n\n\n\t\t\t// Callbacks context\n\t\t\tcallbackContext = s.context || s,\n\n\n\t\t\t// Context for global events is callbackContext if it is a DOM node or jQuery collection\n\t\t\tglobalEventContext = s.context && (callbackContext.nodeType || callbackContext.jquery) ? jQuery(callbackContext) : jQuery.event,\n\n\n\t\t\t// Deferreds\n\t\t\tdeferred = jQuery.Deferred(),\n\t\t\t    completeDeferred = jQuery.Callbacks(\"once memory\"),\n\n\n\t\t\t// Status-dependent callbacks\n\t\t\t_statusCode = s.statusCode || {},\n\n\n\t\t\t// Headers (they are sent all at once)\n\t\t\trequestHeaders = {},\n\t\t\t    requestHeadersNames = {},\n\n\n\t\t\t// Default abort message\n\t\t\tstrAbort = \"canceled\",\n\n\n\t\t\t// Fake xhr\n\t\t\tjqXHR = {\n\t\t\t\treadyState: 0,\n\n\t\t\t\t// Builds headers hashtable if needed\n\t\t\t\tgetResponseHeader: function getResponseHeader(key) {\n\t\t\t\t\tvar match;\n\t\t\t\t\tif (completed) {\n\t\t\t\t\t\tif (!responseHeaders) {\n\t\t\t\t\t\t\tresponseHeaders = {};\n\t\t\t\t\t\t\twhile (match = rheaders.exec(responseHeadersString)) {\n\t\t\t\t\t\t\t\tresponseHeaders[match[1].toLowerCase()] = match[2];\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t\tmatch = responseHeaders[key.toLowerCase()];\n\t\t\t\t\t}\n\t\t\t\t\treturn match == null ? null : match;\n\t\t\t\t},\n\n\t\t\t\t// Raw string\n\t\t\t\tgetAllResponseHeaders: function getAllResponseHeaders() {\n\t\t\t\t\treturn completed ? responseHeadersString : null;\n\t\t\t\t},\n\n\t\t\t\t// Caches the header\n\t\t\t\tsetRequestHeader: function setRequestHeader(name, value) {\n\t\t\t\t\tif (completed == null) {\n\t\t\t\t\t\tname = requestHeadersNames[name.toLowerCase()] = requestHeadersNames[name.toLowerCase()] || name;\n\t\t\t\t\t\trequestHeaders[name] = value;\n\t\t\t\t\t}\n\t\t\t\t\treturn this;\n\t\t\t\t},\n\n\t\t\t\t// Overrides response content-type header\n\t\t\t\toverrideMimeType: function overrideMimeType(type) {\n\t\t\t\t\tif (completed == null) {\n\t\t\t\t\t\ts.mimeType = type;\n\t\t\t\t\t}\n\t\t\t\t\treturn this;\n\t\t\t\t},\n\n\t\t\t\t// Status-dependent callbacks\n\t\t\t\tstatusCode: function statusCode(map) {\n\t\t\t\t\tvar code;\n\t\t\t\t\tif (map) {\n\t\t\t\t\t\tif (completed) {\n\n\t\t\t\t\t\t\t// Execute the appropriate callbacks\n\t\t\t\t\t\t\tjqXHR.always(map[jqXHR.status]);\n\t\t\t\t\t\t} else {\n\n\t\t\t\t\t\t\t// Lazy-add the new callbacks in a way that preserves old ones\n\t\t\t\t\t\t\tfor (code in map) {\n\t\t\t\t\t\t\t\t_statusCode[code] = [_statusCode[code], map[code]];\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\treturn this;\n\t\t\t\t},\n\n\t\t\t\t// Cancel the request\n\t\t\t\tabort: function abort(statusText) {\n\t\t\t\t\tvar finalText = statusText || strAbort;\n\t\t\t\t\tif (transport) {\n\t\t\t\t\t\ttransport.abort(finalText);\n\t\t\t\t\t}\n\t\t\t\t\tdone(0, finalText);\n\t\t\t\t\treturn this;\n\t\t\t\t}\n\t\t\t};\n\n\t\t\t// Attach deferreds\n\t\t\tdeferred.promise(jqXHR);\n\n\t\t\t// Add protocol if not provided (prefilters might expect it)\n\t\t\t// Handle falsy url in the settings object (#10093: consistency with old signature)\n\t\t\t// We also use the url parameter if available\n\t\t\ts.url = ((url || s.url || location.href) + \"\").replace(rprotocol, location.protocol + \"//\");\n\n\t\t\t// Alias method option to type as per ticket #12004\n\t\t\ts.type = options.method || options.type || s.method || s.type;\n\n\t\t\t// Extract dataTypes list\n\t\t\ts.dataTypes = (s.dataType || \"*\").toLowerCase().match(rnothtmlwhite) || [\"\"];\n\n\t\t\t// A cross-domain request is in order when the origin doesn't match the current origin.\n\t\t\tif (s.crossDomain == null) {\n\t\t\t\turlAnchor = document.createElement(\"a\");\n\n\t\t\t\t// Support: IE <=8 - 11, Edge 12 - 13\n\t\t\t\t// IE throws exception on accessing the href property if url is malformed,\n\t\t\t\t// e.g. http://example.com:80x/\n\t\t\t\ttry {\n\t\t\t\t\turlAnchor.href = s.url;\n\n\t\t\t\t\t// Support: IE <=8 - 11 only\n\t\t\t\t\t// Anchor's host property isn't correctly set when s.url is relative\n\t\t\t\t\turlAnchor.href = urlAnchor.href;\n\t\t\t\t\ts.crossDomain = originAnchor.protocol + \"//\" + originAnchor.host !== urlAnchor.protocol + \"//\" + urlAnchor.host;\n\t\t\t\t} catch (e) {\n\n\t\t\t\t\t// If there is an error parsing the URL, assume it is crossDomain,\n\t\t\t\t\t// it can be rejected by the transport if it is invalid\n\t\t\t\t\ts.crossDomain = true;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Convert data if not already a string\n\t\t\tif (s.data && s.processData && typeof s.data !== \"string\") {\n\t\t\t\ts.data = jQuery.param(s.data, s.traditional);\n\t\t\t}\n\n\t\t\t// Apply prefilters\n\t\t\tinspectPrefiltersOrTransports(prefilters, s, options, jqXHR);\n\n\t\t\t// If request was aborted inside a prefilter, stop there\n\t\t\tif (completed) {\n\t\t\t\treturn jqXHR;\n\t\t\t}\n\n\t\t\t// We can fire global events as of now if asked to\n\t\t\t// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)\n\t\t\tfireGlobals = jQuery.event && s.global;\n\n\t\t\t// Watch for a new set of requests\n\t\t\tif (fireGlobals && jQuery.active++ === 0) {\n\t\t\t\tjQuery.event.trigger(\"ajaxStart\");\n\t\t\t}\n\n\t\t\t// Uppercase the type\n\t\t\ts.type = s.type.toUpperCase();\n\n\t\t\t// Determine if request has content\n\t\t\ts.hasContent = !rnoContent.test(s.type);\n\n\t\t\t// Save the URL in case we're toying with the If-Modified-Since\n\t\t\t// and/or If-None-Match header later on\n\t\t\t// Remove hash to simplify url manipulation\n\t\t\tcacheURL = s.url.replace(rhash, \"\");\n\n\t\t\t// More options handling for requests with no content\n\t\t\tif (!s.hasContent) {\n\n\t\t\t\t// Remember the hash so we can put it back\n\t\t\t\tuncached = s.url.slice(cacheURL.length);\n\n\t\t\t\t// If data is available, append data to url\n\t\t\t\tif (s.data) {\n\t\t\t\t\tcacheURL += (rquery.test(cacheURL) ? \"&\" : \"?\") + s.data;\n\n\t\t\t\t\t// #9682: remove data so that it's not used in an eventual retry\n\t\t\t\t\tdelete s.data;\n\t\t\t\t}\n\n\t\t\t\t// Add or update anti-cache param if needed\n\t\t\t\tif (s.cache === false) {\n\t\t\t\t\tcacheURL = cacheURL.replace(rantiCache, \"$1\");\n\t\t\t\t\tuncached = (rquery.test(cacheURL) ? \"&\" : \"?\") + \"_=\" + nonce++ + uncached;\n\t\t\t\t}\n\n\t\t\t\t// Put hash and anti-cache on the URL that will be requested (gh-1732)\n\t\t\t\ts.url = cacheURL + uncached;\n\n\t\t\t\t// Change '%20' to '+' if this is encoded form body content (gh-2658)\n\t\t\t} else if (s.data && s.processData && (s.contentType || \"\").indexOf(\"application/x-www-form-urlencoded\") === 0) {\n\t\t\t\ts.data = s.data.replace(r20, \"+\");\n\t\t\t}\n\n\t\t\t// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.\n\t\t\tif (s.ifModified) {\n\t\t\t\tif (jQuery.lastModified[cacheURL]) {\n\t\t\t\t\tjqXHR.setRequestHeader(\"If-Modified-Since\", jQuery.lastModified[cacheURL]);\n\t\t\t\t}\n\t\t\t\tif (jQuery.etag[cacheURL]) {\n\t\t\t\t\tjqXHR.setRequestHeader(\"If-None-Match\", jQuery.etag[cacheURL]);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Set the correct header, if data is being sent\n\t\t\tif (s.data && s.hasContent && s.contentType !== false || options.contentType) {\n\t\t\t\tjqXHR.setRequestHeader(\"Content-Type\", s.contentType);\n\t\t\t}\n\n\t\t\t// Set the Accepts header for the server, depending on the dataType\n\t\t\tjqXHR.setRequestHeader(\"Accept\", s.dataTypes[0] && s.accepts[s.dataTypes[0]] ? s.accepts[s.dataTypes[0]] + (s.dataTypes[0] !== \"*\" ? \", \" + allTypes + \"; q=0.01\" : \"\") : s.accepts[\"*\"]);\n\n\t\t\t// Check for headers option\n\t\t\tfor (i in s.headers) {\n\t\t\t\tjqXHR.setRequestHeader(i, s.headers[i]);\n\t\t\t}\n\n\t\t\t// Allow custom headers/mimetypes and early abort\n\t\t\tif (s.beforeSend && (s.beforeSend.call(callbackContext, jqXHR, s) === false || completed)) {\n\n\t\t\t\t// Abort if not done already and return\n\t\t\t\treturn jqXHR.abort();\n\t\t\t}\n\n\t\t\t// Aborting is no longer a cancellation\n\t\t\tstrAbort = \"abort\";\n\n\t\t\t// Install callbacks on deferreds\n\t\t\tcompleteDeferred.add(s.complete);\n\t\t\tjqXHR.done(s.success);\n\t\t\tjqXHR.fail(s.error);\n\n\t\t\t// Get transport\n\t\t\ttransport = inspectPrefiltersOrTransports(transports, s, options, jqXHR);\n\n\t\t\t// If no transport, we auto-abort\n\t\t\tif (!transport) {\n\t\t\t\tdone(-1, \"No Transport\");\n\t\t\t} else {\n\t\t\t\tjqXHR.readyState = 1;\n\n\t\t\t\t// Send global event\n\t\t\t\tif (fireGlobals) {\n\t\t\t\t\tglobalEventContext.trigger(\"ajaxSend\", [jqXHR, s]);\n\t\t\t\t}\n\n\t\t\t\t// If request was aborted inside ajaxSend, stop there\n\t\t\t\tif (completed) {\n\t\t\t\t\treturn jqXHR;\n\t\t\t\t}\n\n\t\t\t\t// Timeout\n\t\t\t\tif (s.async && s.timeout > 0) {\n\t\t\t\t\ttimeoutTimer = window.setTimeout(function () {\n\t\t\t\t\t\tjqXHR.abort(\"timeout\");\n\t\t\t\t\t}, s.timeout);\n\t\t\t\t}\n\n\t\t\t\ttry {\n\t\t\t\t\tcompleted = false;\n\t\t\t\t\ttransport.send(requestHeaders, done);\n\t\t\t\t} catch (e) {\n\n\t\t\t\t\t// Rethrow post-completion exceptions\n\t\t\t\t\tif (completed) {\n\t\t\t\t\t\tthrow e;\n\t\t\t\t\t}\n\n\t\t\t\t\t// Propagate others as results\n\t\t\t\t\tdone(-1, e);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// Callback for when everything is done\n\t\t\tfunction done(status, nativeStatusText, responses, headers) {\n\t\t\t\tvar isSuccess,\n\t\t\t\t    success,\n\t\t\t\t    error,\n\t\t\t\t    response,\n\t\t\t\t    modified,\n\t\t\t\t    statusText = nativeStatusText;\n\n\t\t\t\t// Ignore repeat invocations\n\t\t\t\tif (completed) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tcompleted = true;\n\n\t\t\t\t// Clear timeout if it exists\n\t\t\t\tif (timeoutTimer) {\n\t\t\t\t\twindow.clearTimeout(timeoutTimer);\n\t\t\t\t}\n\n\t\t\t\t// Dereference transport for early garbage collection\n\t\t\t\t// (no matter how long the jqXHR object will be used)\n\t\t\t\ttransport = undefined;\n\n\t\t\t\t// Cache response headers\n\t\t\t\tresponseHeadersString = headers || \"\";\n\n\t\t\t\t// Set readyState\n\t\t\t\tjqXHR.readyState = status > 0 ? 4 : 0;\n\n\t\t\t\t// Determine if successful\n\t\t\t\tisSuccess = status >= 200 && status < 300 || status === 304;\n\n\t\t\t\t// Get response data\n\t\t\t\tif (responses) {\n\t\t\t\t\tresponse = ajaxHandleResponses(s, jqXHR, responses);\n\t\t\t\t}\n\n\t\t\t\t// Convert no matter what (that way responseXXX fields are always set)\n\t\t\t\tresponse = ajaxConvert(s, response, jqXHR, isSuccess);\n\n\t\t\t\t// If successful, handle type chaining\n\t\t\t\tif (isSuccess) {\n\n\t\t\t\t\t// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.\n\t\t\t\t\tif (s.ifModified) {\n\t\t\t\t\t\tmodified = jqXHR.getResponseHeader(\"Last-Modified\");\n\t\t\t\t\t\tif (modified) {\n\t\t\t\t\t\t\tjQuery.lastModified[cacheURL] = modified;\n\t\t\t\t\t\t}\n\t\t\t\t\t\tmodified = jqXHR.getResponseHeader(\"etag\");\n\t\t\t\t\t\tif (modified) {\n\t\t\t\t\t\t\tjQuery.etag[cacheURL] = modified;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// if no content\n\t\t\t\t\tif (status === 204 || s.type === \"HEAD\") {\n\t\t\t\t\t\tstatusText = \"nocontent\";\n\n\t\t\t\t\t\t// if not modified\n\t\t\t\t\t} else if (status === 304) {\n\t\t\t\t\t\tstatusText = \"notmodified\";\n\n\t\t\t\t\t\t// If we have data, let's convert it\n\t\t\t\t\t} else {\n\t\t\t\t\t\tstatusText = response.state;\n\t\t\t\t\t\tsuccess = response.data;\n\t\t\t\t\t\terror = response.error;\n\t\t\t\t\t\tisSuccess = !error;\n\t\t\t\t\t}\n\t\t\t\t} else {\n\n\t\t\t\t\t// Extract error from statusText and normalize for non-aborts\n\t\t\t\t\terror = statusText;\n\t\t\t\t\tif (status || !statusText) {\n\t\t\t\t\t\tstatusText = \"error\";\n\t\t\t\t\t\tif (status < 0) {\n\t\t\t\t\t\t\tstatus = 0;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// Set data for the fake xhr object\n\t\t\t\tjqXHR.status = status;\n\t\t\t\tjqXHR.statusText = (nativeStatusText || statusText) + \"\";\n\n\t\t\t\t// Success/Error\n\t\t\t\tif (isSuccess) {\n\t\t\t\t\tdeferred.resolveWith(callbackContext, [success, statusText, jqXHR]);\n\t\t\t\t} else {\n\t\t\t\t\tdeferred.rejectWith(callbackContext, [jqXHR, statusText, error]);\n\t\t\t\t}\n\n\t\t\t\t// Status-dependent callbacks\n\t\t\t\tjqXHR.statusCode(_statusCode);\n\t\t\t\t_statusCode = undefined;\n\n\t\t\t\tif (fireGlobals) {\n\t\t\t\t\tglobalEventContext.trigger(isSuccess ? \"ajaxSuccess\" : \"ajaxError\", [jqXHR, s, isSuccess ? success : error]);\n\t\t\t\t}\n\n\t\t\t\t// Complete\n\t\t\t\tcompleteDeferred.fireWith(callbackContext, [jqXHR, statusText]);\n\n\t\t\t\tif (fireGlobals) {\n\t\t\t\t\tglobalEventContext.trigger(\"ajaxComplete\", [jqXHR, s]);\n\n\t\t\t\t\t// Handle the global AJAX counter\n\t\t\t\t\tif (! --jQuery.active) {\n\t\t\t\t\t\tjQuery.event.trigger(\"ajaxStop\");\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\treturn jqXHR;\n\t\t},\n\n\t\tgetJSON: function getJSON(url, data, callback) {\n\t\t\treturn jQuery.get(url, data, callback, \"json\");\n\t\t},\n\n\t\tgetScript: function getScript(url, callback) {\n\t\t\treturn jQuery.get(url, undefined, callback, \"script\");\n\t\t}\n\t});\n\n\tjQuery.each([\"get\", \"post\"], function (i, method) {\n\t\tjQuery[method] = function (url, data, callback, type) {\n\n\t\t\t// Shift arguments if data argument was omitted\n\t\t\tif (jQuery.isFunction(data)) {\n\t\t\t\ttype = type || callback;\n\t\t\t\tcallback = data;\n\t\t\t\tdata = undefined;\n\t\t\t}\n\n\t\t\t// The url can be an options object (which then must have .url)\n\t\t\treturn jQuery.ajax(jQuery.extend({\n\t\t\t\turl: url,\n\t\t\t\ttype: method,\n\t\t\t\tdataType: type,\n\t\t\t\tdata: data,\n\t\t\t\tsuccess: callback\n\t\t\t}, jQuery.isPlainObject(url) && url));\n\t\t};\n\t});\n\n\tjQuery._evalUrl = function (url) {\n\t\treturn jQuery.ajax({\n\t\t\turl: url,\n\n\t\t\t// Make this explicit, since user can override this through ajaxSetup (#11264)\n\t\t\ttype: \"GET\",\n\t\t\tdataType: \"script\",\n\t\t\tcache: true,\n\t\t\tasync: false,\n\t\t\tglobal: false,\n\t\t\t\"throws\": true\n\t\t});\n\t};\n\n\tjQuery.fn.extend({\n\t\twrapAll: function wrapAll(html) {\n\t\t\tvar wrap;\n\n\t\t\tif (this[0]) {\n\t\t\t\tif (jQuery.isFunction(html)) {\n\t\t\t\t\thtml = html.call(this[0]);\n\t\t\t\t}\n\n\t\t\t\t// The elements to wrap the target around\n\t\t\t\twrap = jQuery(html, this[0].ownerDocument).eq(0).clone(true);\n\n\t\t\t\tif (this[0].parentNode) {\n\t\t\t\t\twrap.insertBefore(this[0]);\n\t\t\t\t}\n\n\t\t\t\twrap.map(function () {\n\t\t\t\t\tvar elem = this;\n\n\t\t\t\t\twhile (elem.firstElementChild) {\n\t\t\t\t\t\telem = elem.firstElementChild;\n\t\t\t\t\t}\n\n\t\t\t\t\treturn elem;\n\t\t\t\t}).append(this);\n\t\t\t}\n\n\t\t\treturn this;\n\t\t},\n\n\t\twrapInner: function wrapInner(html) {\n\t\t\tif (jQuery.isFunction(html)) {\n\t\t\t\treturn this.each(function (i) {\n\t\t\t\t\tjQuery(this).wrapInner(html.call(this, i));\n\t\t\t\t});\n\t\t\t}\n\n\t\t\treturn this.each(function () {\n\t\t\t\tvar self = jQuery(this),\n\t\t\t\t    contents = self.contents();\n\n\t\t\t\tif (contents.length) {\n\t\t\t\t\tcontents.wrapAll(html);\n\t\t\t\t} else {\n\t\t\t\t\tself.append(html);\n\t\t\t\t}\n\t\t\t});\n\t\t},\n\n\t\twrap: function wrap(html) {\n\t\t\tvar isFunction = jQuery.isFunction(html);\n\n\t\t\treturn this.each(function (i) {\n\t\t\t\tjQuery(this).wrapAll(isFunction ? html.call(this, i) : html);\n\t\t\t});\n\t\t},\n\n\t\tunwrap: function unwrap(selector) {\n\t\t\tthis.parent(selector).not(\"body\").each(function () {\n\t\t\t\tjQuery(this).replaceWith(this.childNodes);\n\t\t\t});\n\t\t\treturn this;\n\t\t}\n\t});\n\n\tjQuery.expr.pseudos.hidden = function (elem) {\n\t\treturn !jQuery.expr.pseudos.visible(elem);\n\t};\n\tjQuery.expr.pseudos.visible = function (elem) {\n\t\treturn !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);\n\t};\n\n\tjQuery.ajaxSettings.xhr = function () {\n\t\ttry {\n\t\t\treturn new window.XMLHttpRequest();\n\t\t} catch (e) {}\n\t};\n\n\tvar xhrSuccessStatus = {\n\n\t\t// File protocol always yields status code 0, assume 200\n\t\t0: 200,\n\n\t\t// Support: IE <=9 only\n\t\t// #1450: sometimes IE returns 1223 when it should be 204\n\t\t1223: 204\n\t},\n\t    xhrSupported = jQuery.ajaxSettings.xhr();\n\n\tsupport.cors = !!xhrSupported && \"withCredentials\" in xhrSupported;\n\tsupport.ajax = xhrSupported = !!xhrSupported;\n\n\tjQuery.ajaxTransport(function (options) {\n\t\tvar _callback, errorCallback;\n\n\t\t// Cross domain only allowed if supported through XMLHttpRequest\n\t\tif (support.cors || xhrSupported && !options.crossDomain) {\n\t\t\treturn {\n\t\t\t\tsend: function send(headers, complete) {\n\t\t\t\t\tvar i,\n\t\t\t\t\t    xhr = options.xhr();\n\n\t\t\t\t\txhr.open(options.type, options.url, options.async, options.username, options.password);\n\n\t\t\t\t\t// Apply custom fields if provided\n\t\t\t\t\tif (options.xhrFields) {\n\t\t\t\t\t\tfor (i in options.xhrFields) {\n\t\t\t\t\t\t\txhr[i] = options.xhrFields[i];\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t\t// Override mime type if needed\n\t\t\t\t\tif (options.mimeType && xhr.overrideMimeType) {\n\t\t\t\t\t\txhr.overrideMimeType(options.mimeType);\n\t\t\t\t\t}\n\n\t\t\t\t\t// X-Requested-With header\n\t\t\t\t\t// For cross-domain requests, seeing as conditions for a preflight are\n\t\t\t\t\t// akin to a jigsaw puzzle, we simply never set it to be sure.\n\t\t\t\t\t// (it can always be set on a per-request basis or even using ajaxSetup)\n\t\t\t\t\t// For same-domain requests, won't change header if already provided.\n\t\t\t\t\tif (!options.crossDomain && !headers[\"X-Requested-With\"]) {\n\t\t\t\t\t\theaders[\"X-Requested-With\"] = \"XMLHttpRequest\";\n\t\t\t\t\t}\n\n\t\t\t\t\t// Set headers\n\t\t\t\t\tfor (i in headers) {\n\t\t\t\t\t\txhr.setRequestHeader(i, headers[i]);\n\t\t\t\t\t}\n\n\t\t\t\t\t// Callback\n\t\t\t\t\t_callback = function callback(type) {\n\t\t\t\t\t\treturn function () {\n\t\t\t\t\t\t\tif (_callback) {\n\t\t\t\t\t\t\t\t_callback = errorCallback = xhr.onload = xhr.onerror = xhr.onabort = xhr.onreadystatechange = null;\n\n\t\t\t\t\t\t\t\tif (type === \"abort\") {\n\t\t\t\t\t\t\t\t\txhr.abort();\n\t\t\t\t\t\t\t\t} else if (type === \"error\") {\n\n\t\t\t\t\t\t\t\t\t// Support: IE <=9 only\n\t\t\t\t\t\t\t\t\t// On a manual native abort, IE9 throws\n\t\t\t\t\t\t\t\t\t// errors on any property access that is not readyState\n\t\t\t\t\t\t\t\t\tif (typeof xhr.status !== \"number\") {\n\t\t\t\t\t\t\t\t\t\tcomplete(0, \"error\");\n\t\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\t\tcomplete(\n\n\t\t\t\t\t\t\t\t\t\t// File: protocol always yields status 0; see #8605, #14207\n\t\t\t\t\t\t\t\t\t\txhr.status, xhr.statusText);\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\t\t\tcomplete(xhrSuccessStatus[xhr.status] || xhr.status, xhr.statusText,\n\n\t\t\t\t\t\t\t\t\t// Support: IE <=9 only\n\t\t\t\t\t\t\t\t\t// IE9 has no XHR2 but throws on binary (trac-11426)\n\t\t\t\t\t\t\t\t\t// For XHR2 non-text, let the caller handle it (gh-2498)\n\t\t\t\t\t\t\t\t\t(xhr.responseType || \"text\") !== \"text\" || typeof xhr.responseText !== \"string\" ? { binary: xhr.response } : { text: xhr.responseText }, xhr.getAllResponseHeaders());\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t};\n\n\t\t\t\t\t// Listen to events\n\t\t\t\t\txhr.onload = _callback();\n\t\t\t\t\terrorCallback = xhr.onerror = _callback(\"error\");\n\n\t\t\t\t\t// Support: IE 9 only\n\t\t\t\t\t// Use onreadystatechange to replace onabort\n\t\t\t\t\t// to handle uncaught aborts\n\t\t\t\t\tif (xhr.onabort !== undefined) {\n\t\t\t\t\t\txhr.onabort = errorCallback;\n\t\t\t\t\t} else {\n\t\t\t\t\t\txhr.onreadystatechange = function () {\n\n\t\t\t\t\t\t\t// Check readyState before timeout as it changes\n\t\t\t\t\t\t\tif (xhr.readyState === 4) {\n\n\t\t\t\t\t\t\t\t// Allow onerror to be called first,\n\t\t\t\t\t\t\t\t// but that will not handle a native abort\n\t\t\t\t\t\t\t\t// Also, save errorCallback to a variable\n\t\t\t\t\t\t\t\t// as xhr.onerror cannot be accessed\n\t\t\t\t\t\t\t\twindow.setTimeout(function () {\n\t\t\t\t\t\t\t\t\tif (_callback) {\n\t\t\t\t\t\t\t\t\t\terrorCallback();\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t});\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t};\n\t\t\t\t\t}\n\n\t\t\t\t\t// Create the abort callback\n\t\t\t\t\t_callback = _callback(\"abort\");\n\n\t\t\t\t\ttry {\n\n\t\t\t\t\t\t// Do send the request (this may raise an exception)\n\t\t\t\t\t\txhr.send(options.hasContent && options.data || null);\n\t\t\t\t\t} catch (e) {\n\n\t\t\t\t\t\t// #14683: Only rethrow if this hasn't been notified as an error yet\n\t\t\t\t\t\tif (_callback) {\n\t\t\t\t\t\t\tthrow e;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t},\n\n\t\t\t\tabort: function abort() {\n\t\t\t\t\tif (_callback) {\n\t\t\t\t\t\t_callback();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t});\n\n\t// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)\n\tjQuery.ajaxPrefilter(function (s) {\n\t\tif (s.crossDomain) {\n\t\t\ts.contents.script = false;\n\t\t}\n\t});\n\n\t// Install script dataType\n\tjQuery.ajaxSetup({\n\t\taccepts: {\n\t\t\tscript: \"text/javascript, application/javascript, \" + \"application/ecmascript, application/x-ecmascript\"\n\t\t},\n\t\tcontents: {\n\t\t\tscript: /\\b(?:java|ecma)script\\b/\n\t\t},\n\t\tconverters: {\n\t\t\t\"text script\": function textScript(text) {\n\t\t\t\tjQuery.globalEval(text);\n\t\t\t\treturn text;\n\t\t\t}\n\t\t}\n\t});\n\n\t// Handle cache's special case and crossDomain\n\tjQuery.ajaxPrefilter(\"script\", function (s) {\n\t\tif (s.cache === undefined) {\n\t\t\ts.cache = false;\n\t\t}\n\t\tif (s.crossDomain) {\n\t\t\ts.type = \"GET\";\n\t\t}\n\t});\n\n\t// Bind script tag hack transport\n\tjQuery.ajaxTransport(\"script\", function (s) {\n\n\t\t// This transport only deals with cross domain requests\n\t\tif (s.crossDomain) {\n\t\t\tvar script, _callback2;\n\t\t\treturn {\n\t\t\t\tsend: function send(_, complete) {\n\t\t\t\t\tscript = jQuery(\"<script>\").prop({\n\t\t\t\t\t\tcharset: s.scriptCharset,\n\t\t\t\t\t\tsrc: s.url\n\t\t\t\t\t}).on(\"load error\", _callback2 = function callback(evt) {\n\t\t\t\t\t\tscript.remove();\n\t\t\t\t\t\t_callback2 = null;\n\t\t\t\t\t\tif (evt) {\n\t\t\t\t\t\t\tcomplete(evt.type === \"error\" ? 404 : 200, evt.type);\n\t\t\t\t\t\t}\n\t\t\t\t\t});\n\n\t\t\t\t\t// Use native DOM manipulation to avoid our domManip AJAX trickery\n\t\t\t\t\tdocument.head.appendChild(script[0]);\n\t\t\t\t},\n\t\t\t\tabort: function abort() {\n\t\t\t\t\tif (_callback2) {\n\t\t\t\t\t\t_callback2();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\t});\n\n\tvar oldCallbacks = [],\n\t    rjsonp = /(=)\\?(?=&|$)|\\?\\?/;\n\n\t// Default jsonp settings\n\tjQuery.ajaxSetup({\n\t\tjsonp: \"callback\",\n\t\tjsonpCallback: function jsonpCallback() {\n\t\t\tvar callback = oldCallbacks.pop() || jQuery.expando + \"_\" + nonce++;\n\t\t\tthis[callback] = true;\n\t\t\treturn callback;\n\t\t}\n\t});\n\n\t// Detect, normalize options and install callbacks for jsonp requests\n\tjQuery.ajaxPrefilter(\"json jsonp\", function (s, originalSettings, jqXHR) {\n\n\t\tvar callbackName,\n\t\t    overwritten,\n\t\t    responseContainer,\n\t\t    jsonProp = s.jsonp !== false && (rjsonp.test(s.url) ? \"url\" : typeof s.data === \"string\" && (s.contentType || \"\").indexOf(\"application/x-www-form-urlencoded\") === 0 && rjsonp.test(s.data) && \"data\");\n\n\t\t// Handle iff the expected data type is \"jsonp\" or we have a parameter to set\n\t\tif (jsonProp || s.dataTypes[0] === \"jsonp\") {\n\n\t\t\t// Get callback name, remembering preexisting value associated with it\n\t\t\tcallbackName = s.jsonpCallback = jQuery.isFunction(s.jsonpCallback) ? s.jsonpCallback() : s.jsonpCallback;\n\n\t\t\t// Insert callback into url or form data\n\t\t\tif (jsonProp) {\n\t\t\t\ts[jsonProp] = s[jsonProp].replace(rjsonp, \"$1\" + callbackName);\n\t\t\t} else if (s.jsonp !== false) {\n\t\t\t\ts.url += (rquery.test(s.url) ? \"&\" : \"?\") + s.jsonp + \"=\" + callbackName;\n\t\t\t}\n\n\t\t\t// Use data converter to retrieve json after script execution\n\t\t\ts.converters[\"script json\"] = function () {\n\t\t\t\tif (!responseContainer) {\n\t\t\t\t\tjQuery.error(callbackName + \" was not called\");\n\t\t\t\t}\n\t\t\t\treturn responseContainer[0];\n\t\t\t};\n\n\t\t\t// Force json dataType\n\t\t\ts.dataTypes[0] = \"json\";\n\n\t\t\t// Install callback\n\t\t\toverwritten = window[callbackName];\n\t\t\twindow[callbackName] = function () {\n\t\t\t\tresponseContainer = arguments;\n\t\t\t};\n\n\t\t\t// Clean-up function (fires after converters)\n\t\t\tjqXHR.always(function () {\n\n\t\t\t\t// If previous value didn't exist - remove it\n\t\t\t\tif (overwritten === undefined) {\n\t\t\t\t\tjQuery(window).removeProp(callbackName);\n\n\t\t\t\t\t// Otherwise restore preexisting value\n\t\t\t\t} else {\n\t\t\t\t\twindow[callbackName] = overwritten;\n\t\t\t\t}\n\n\t\t\t\t// Save back as free\n\t\t\t\tif (s[callbackName]) {\n\n\t\t\t\t\t// Make sure that re-using the options doesn't screw things around\n\t\t\t\t\ts.jsonpCallback = originalSettings.jsonpCallback;\n\n\t\t\t\t\t// Save the callback name for future use\n\t\t\t\t\toldCallbacks.push(callbackName);\n\t\t\t\t}\n\n\t\t\t\t// Call if it was a function and we have a response\n\t\t\t\tif (responseContainer && jQuery.isFunction(overwritten)) {\n\t\t\t\t\toverwritten(responseContainer[0]);\n\t\t\t\t}\n\n\t\t\t\tresponseContainer = overwritten = undefined;\n\t\t\t});\n\n\t\t\t// Delegate to script\n\t\t\treturn \"script\";\n\t\t}\n\t});\n\n\t// Support: Safari 8 only\n\t// In Safari 8 documents created via document.implementation.createHTMLDocument\n\t// collapse sibling forms: the second one becomes a child of the first one.\n\t// Because of that, this security measure has to be disabled in Safari 8.\n\t// https://bugs.webkit.org/show_bug.cgi?id=137337\n\tsupport.createHTMLDocument = function () {\n\t\tvar body = document.implementation.createHTMLDocument(\"\").body;\n\t\tbody.innerHTML = \"<form></form><form></form>\";\n\t\treturn body.childNodes.length === 2;\n\t}();\n\n\t// Argument \"data\" should be string of html\n\t// context (optional): If specified, the fragment will be created in this context,\n\t// defaults to document\n\t// keepScripts (optional): If true, will include scripts passed in the html string\n\tjQuery.parseHTML = function (data, context, keepScripts) {\n\t\tif (typeof data !== \"string\") {\n\t\t\treturn [];\n\t\t}\n\t\tif (typeof context === \"boolean\") {\n\t\t\tkeepScripts = context;\n\t\t\tcontext = false;\n\t\t}\n\n\t\tvar base, parsed, scripts;\n\n\t\tif (!context) {\n\n\t\t\t// Stop scripts or inline event handlers from being executed immediately\n\t\t\t// by using document.implementation\n\t\t\tif (support.createHTMLDocument) {\n\t\t\t\tcontext = document.implementation.createHTMLDocument(\"\");\n\n\t\t\t\t// Set the base href for the created document\n\t\t\t\t// so any parsed elements with URLs\n\t\t\t\t// are based on the document's URL (gh-2965)\n\t\t\t\tbase = context.createElement(\"base\");\n\t\t\t\tbase.href = document.location.href;\n\t\t\t\tcontext.head.appendChild(base);\n\t\t\t} else {\n\t\t\t\tcontext = document;\n\t\t\t}\n\t\t}\n\n\t\tparsed = rsingleTag.exec(data);\n\t\tscripts = !keepScripts && [];\n\n\t\t// Single tag\n\t\tif (parsed) {\n\t\t\treturn [context.createElement(parsed[1])];\n\t\t}\n\n\t\tparsed = buildFragment([data], context, scripts);\n\n\t\tif (scripts && scripts.length) {\n\t\t\tjQuery(scripts).remove();\n\t\t}\n\n\t\treturn jQuery.merge([], parsed.childNodes);\n\t};\n\n\t/**\n  * Load a url into a page\n  */\n\tjQuery.fn.load = function (url, params, callback) {\n\t\tvar selector,\n\t\t    type,\n\t\t    response,\n\t\t    self = this,\n\t\t    off = url.indexOf(\" \");\n\n\t\tif (off > -1) {\n\t\t\tselector = stripAndCollapse(url.slice(off));\n\t\t\turl = url.slice(0, off);\n\t\t}\n\n\t\t// If it's a function\n\t\tif (jQuery.isFunction(params)) {\n\n\t\t\t// We assume that it's the callback\n\t\t\tcallback = params;\n\t\t\tparams = undefined;\n\n\t\t\t// Otherwise, build a param string\n\t\t} else if (params && (typeof params === \"undefined\" ? \"undefined\" : _typeof(params)) === \"object\") {\n\t\t\ttype = \"POST\";\n\t\t}\n\n\t\t// If we have elements to modify, make the request\n\t\tif (self.length > 0) {\n\t\t\tjQuery.ajax({\n\t\t\t\turl: url,\n\n\t\t\t\t// If \"type\" variable is undefined, then \"GET\" method will be used.\n\t\t\t\t// Make value of this field explicit since\n\t\t\t\t// user can override it through ajaxSetup method\n\t\t\t\ttype: type || \"GET\",\n\t\t\t\tdataType: \"html\",\n\t\t\t\tdata: params\n\t\t\t}).done(function (responseText) {\n\n\t\t\t\t// Save response for use in complete callback\n\t\t\t\tresponse = arguments;\n\n\t\t\t\tself.html(selector ?\n\n\t\t\t\t// If a selector was specified, locate the right elements in a dummy div\n\t\t\t\t// Exclude scripts to avoid IE 'Permission Denied' errors\n\t\t\t\tjQuery(\"<div>\").append(jQuery.parseHTML(responseText)).find(selector) :\n\n\t\t\t\t// Otherwise use the full result\n\t\t\t\tresponseText);\n\n\t\t\t\t// If the request succeeds, this function gets \"data\", \"status\", \"jqXHR\"\n\t\t\t\t// but they are ignored because response was set above.\n\t\t\t\t// If it fails, this function gets \"jqXHR\", \"status\", \"error\"\n\t\t\t}).always(callback && function (jqXHR, status) {\n\t\t\t\tself.each(function () {\n\t\t\t\t\tcallback.apply(this, response || [jqXHR.responseText, status, jqXHR]);\n\t\t\t\t});\n\t\t\t});\n\t\t}\n\n\t\treturn this;\n\t};\n\n\t// Attach a bunch of functions for handling common AJAX events\n\tjQuery.each([\"ajaxStart\", \"ajaxStop\", \"ajaxComplete\", \"ajaxError\", \"ajaxSuccess\", \"ajaxSend\"], function (i, type) {\n\t\tjQuery.fn[type] = function (fn) {\n\t\t\treturn this.on(type, fn);\n\t\t};\n\t});\n\n\tjQuery.expr.pseudos.animated = function (elem) {\n\t\treturn jQuery.grep(jQuery.timers, function (fn) {\n\t\t\treturn elem === fn.elem;\n\t\t}).length;\n\t};\n\n\tjQuery.offset = {\n\t\tsetOffset: function setOffset(elem, options, i) {\n\t\t\tvar curPosition,\n\t\t\t    curLeft,\n\t\t\t    curCSSTop,\n\t\t\t    curTop,\n\t\t\t    curOffset,\n\t\t\t    curCSSLeft,\n\t\t\t    calculatePosition,\n\t\t\t    position = jQuery.css(elem, \"position\"),\n\t\t\t    curElem = jQuery(elem),\n\t\t\t    props = {};\n\n\t\t\t// Set position first, in-case top/left are set even on static elem\n\t\t\tif (position === \"static\") {\n\t\t\t\telem.style.position = \"relative\";\n\t\t\t}\n\n\t\t\tcurOffset = curElem.offset();\n\t\t\tcurCSSTop = jQuery.css(elem, \"top\");\n\t\t\tcurCSSLeft = jQuery.css(elem, \"left\");\n\t\t\tcalculatePosition = (position === \"absolute\" || position === \"fixed\") && (curCSSTop + curCSSLeft).indexOf(\"auto\") > -1;\n\n\t\t\t// Need to be able to calculate position if either\n\t\t\t// top or left is auto and position is either absolute or fixed\n\t\t\tif (calculatePosition) {\n\t\t\t\tcurPosition = curElem.position();\n\t\t\t\tcurTop = curPosition.top;\n\t\t\t\tcurLeft = curPosition.left;\n\t\t\t} else {\n\t\t\t\tcurTop = parseFloat(curCSSTop) || 0;\n\t\t\t\tcurLeft = parseFloat(curCSSLeft) || 0;\n\t\t\t}\n\n\t\t\tif (jQuery.isFunction(options)) {\n\n\t\t\t\t// Use jQuery.extend here to allow modification of coordinates argument (gh-1848)\n\t\t\t\toptions = options.call(elem, i, jQuery.extend({}, curOffset));\n\t\t\t}\n\n\t\t\tif (options.top != null) {\n\t\t\t\tprops.top = options.top - curOffset.top + curTop;\n\t\t\t}\n\t\t\tif (options.left != null) {\n\t\t\t\tprops.left = options.left - curOffset.left + curLeft;\n\t\t\t}\n\n\t\t\tif (\"using\" in options) {\n\t\t\t\toptions.using.call(elem, props);\n\t\t\t} else {\n\t\t\t\tcurElem.css(props);\n\t\t\t}\n\t\t}\n\t};\n\n\tjQuery.fn.extend({\n\t\toffset: function offset(options) {\n\n\t\t\t// Preserve chaining for setter\n\t\t\tif (arguments.length) {\n\t\t\t\treturn options === undefined ? this : this.each(function (i) {\n\t\t\t\t\tjQuery.offset.setOffset(this, options, i);\n\t\t\t\t});\n\t\t\t}\n\n\t\t\tvar doc,\n\t\t\t    docElem,\n\t\t\t    rect,\n\t\t\t    win,\n\t\t\t    elem = this[0];\n\n\t\t\tif (!elem) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t// Return zeros for disconnected and hidden (display: none) elements (gh-2310)\n\t\t\t// Support: IE <=11 only\n\t\t\t// Running getBoundingClientRect on a\n\t\t\t// disconnected node in IE throws an error\n\t\t\tif (!elem.getClientRects().length) {\n\t\t\t\treturn { top: 0, left: 0 };\n\t\t\t}\n\n\t\t\trect = elem.getBoundingClientRect();\n\n\t\t\tdoc = elem.ownerDocument;\n\t\t\tdocElem = doc.documentElement;\n\t\t\twin = doc.defaultView;\n\n\t\t\treturn {\n\t\t\t\ttop: rect.top + win.pageYOffset - docElem.clientTop,\n\t\t\t\tleft: rect.left + win.pageXOffset - docElem.clientLeft\n\t\t\t};\n\t\t},\n\n\t\tposition: function position() {\n\t\t\tif (!this[0]) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tvar offsetParent,\n\t\t\t    offset,\n\t\t\t    elem = this[0],\n\t\t\t    parentOffset = { top: 0, left: 0 };\n\n\t\t\t// Fixed elements are offset from window (parentOffset = {top:0, left: 0},\n\t\t\t// because it is its only offset parent\n\t\t\tif (jQuery.css(elem, \"position\") === \"fixed\") {\n\n\t\t\t\t// Assume getBoundingClientRect is there when computed position is fixed\n\t\t\t\toffset = elem.getBoundingClientRect();\n\t\t\t} else {\n\n\t\t\t\t// Get *real* offsetParent\n\t\t\t\toffsetParent = this.offsetParent();\n\n\t\t\t\t// Get correct offsets\n\t\t\t\toffset = this.offset();\n\t\t\t\tif (!nodeName(offsetParent[0], \"html\")) {\n\t\t\t\t\tparentOffset = offsetParent.offset();\n\t\t\t\t}\n\n\t\t\t\t// Add offsetParent borders\n\t\t\t\tparentOffset = {\n\t\t\t\t\ttop: parentOffset.top + jQuery.css(offsetParent[0], \"borderTopWidth\", true),\n\t\t\t\t\tleft: parentOffset.left + jQuery.css(offsetParent[0], \"borderLeftWidth\", true)\n\t\t\t\t};\n\t\t\t}\n\n\t\t\t// Subtract parent offsets and element margins\n\t\t\treturn {\n\t\t\t\ttop: offset.top - parentOffset.top - jQuery.css(elem, \"marginTop\", true),\n\t\t\t\tleft: offset.left - parentOffset.left - jQuery.css(elem, \"marginLeft\", true)\n\t\t\t};\n\t\t},\n\n\t\t// This method will return documentElement in the following cases:\n\t\t// 1) For the element inside the iframe without offsetParent, this method will return\n\t\t//    documentElement of the parent window\n\t\t// 2) For the hidden or detached element\n\t\t// 3) For body or html element, i.e. in case of the html node - it will return itself\n\t\t//\n\t\t// but those exceptions were never presented as a real life use-cases\n\t\t// and might be considered as more preferable results.\n\t\t//\n\t\t// This logic, however, is not guaranteed and can change at any point in the future\n\t\toffsetParent: function offsetParent() {\n\t\t\treturn this.map(function () {\n\t\t\t\tvar offsetParent = this.offsetParent;\n\n\t\t\t\twhile (offsetParent && jQuery.css(offsetParent, \"position\") === \"static\") {\n\t\t\t\t\toffsetParent = offsetParent.offsetParent;\n\t\t\t\t}\n\n\t\t\t\treturn offsetParent || documentElement;\n\t\t\t});\n\t\t}\n\t});\n\n\t// Create scrollLeft and scrollTop methods\n\tjQuery.each({ scrollLeft: \"pageXOffset\", scrollTop: \"pageYOffset\" }, function (method, prop) {\n\t\tvar top = \"pageYOffset\" === prop;\n\n\t\tjQuery.fn[method] = function (val) {\n\t\t\treturn access(this, function (elem, method, val) {\n\n\t\t\t\t// Coalesce documents and windows\n\t\t\t\tvar win;\n\t\t\t\tif (jQuery.isWindow(elem)) {\n\t\t\t\t\twin = elem;\n\t\t\t\t} else if (elem.nodeType === 9) {\n\t\t\t\t\twin = elem.defaultView;\n\t\t\t\t}\n\n\t\t\t\tif (val === undefined) {\n\t\t\t\t\treturn win ? win[prop] : elem[method];\n\t\t\t\t}\n\n\t\t\t\tif (win) {\n\t\t\t\t\twin.scrollTo(!top ? val : win.pageXOffset, top ? val : win.pageYOffset);\n\t\t\t\t} else {\n\t\t\t\t\telem[method] = val;\n\t\t\t\t}\n\t\t\t}, method, val, arguments.length);\n\t\t};\n\t});\n\n\t// Support: Safari <=7 - 9.1, Chrome <=37 - 49\n\t// Add the top/left cssHooks using jQuery.fn.position\n\t// Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084\n\t// Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347\n\t// getComputedStyle returns percent when specified for top/left/bottom/right;\n\t// rather than make the css module depend on the offset module, just check for it here\n\tjQuery.each([\"top\", \"left\"], function (i, prop) {\n\t\tjQuery.cssHooks[prop] = addGetHookIf(support.pixelPosition, function (elem, computed) {\n\t\t\tif (computed) {\n\t\t\t\tcomputed = curCSS(elem, prop);\n\n\t\t\t\t// If curCSS returns percentage, fallback to offset\n\t\t\t\treturn rnumnonpx.test(computed) ? jQuery(elem).position()[prop] + \"px\" : computed;\n\t\t\t}\n\t\t});\n\t});\n\n\t// Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods\n\tjQuery.each({ Height: \"height\", Width: \"width\" }, function (name, type) {\n\t\tjQuery.each({ padding: \"inner\" + name, content: type, \"\": \"outer\" + name }, function (defaultExtra, funcName) {\n\n\t\t\t// Margin is only for outerHeight, outerWidth\n\t\t\tjQuery.fn[funcName] = function (margin, value) {\n\t\t\t\tvar chainable = arguments.length && (defaultExtra || typeof margin !== \"boolean\"),\n\t\t\t\t    extra = defaultExtra || (margin === true || value === true ? \"margin\" : \"border\");\n\n\t\t\t\treturn access(this, function (elem, type, value) {\n\t\t\t\t\tvar doc;\n\n\t\t\t\t\tif (jQuery.isWindow(elem)) {\n\n\t\t\t\t\t\t// $( window ).outerWidth/Height return w/h including scrollbars (gh-1729)\n\t\t\t\t\t\treturn funcName.indexOf(\"outer\") === 0 ? elem[\"inner\" + name] : elem.document.documentElement[\"client\" + name];\n\t\t\t\t\t}\n\n\t\t\t\t\t// Get document width or height\n\t\t\t\t\tif (elem.nodeType === 9) {\n\t\t\t\t\t\tdoc = elem.documentElement;\n\n\t\t\t\t\t\t// Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height],\n\t\t\t\t\t\t// whichever is greatest\n\t\t\t\t\t\treturn Math.max(elem.body[\"scroll\" + name], doc[\"scroll\" + name], elem.body[\"offset\" + name], doc[\"offset\" + name], doc[\"client\" + name]);\n\t\t\t\t\t}\n\n\t\t\t\t\treturn value === undefined ?\n\n\t\t\t\t\t// Get width or height on the element, requesting but not forcing parseFloat\n\t\t\t\t\tjQuery.css(elem, type, extra) :\n\n\t\t\t\t\t// Set width or height on the element\n\t\t\t\t\tjQuery.style(elem, type, value, extra);\n\t\t\t\t}, type, chainable ? margin : undefined, chainable);\n\t\t\t};\n\t\t});\n\t});\n\n\tjQuery.fn.extend({\n\n\t\tbind: function bind(types, data, fn) {\n\t\t\treturn this.on(types, null, data, fn);\n\t\t},\n\t\tunbind: function unbind(types, fn) {\n\t\t\treturn this.off(types, null, fn);\n\t\t},\n\n\t\tdelegate: function delegate(selector, types, data, fn) {\n\t\t\treturn this.on(types, selector, data, fn);\n\t\t},\n\t\tundelegate: function undelegate(selector, types, fn) {\n\n\t\t\t// ( namespace ) or ( selector, types [, fn] )\n\t\t\treturn arguments.length === 1 ? this.off(selector, \"**\") : this.off(types, selector || \"**\", fn);\n\t\t}\n\t});\n\n\tjQuery.holdReady = function (hold) {\n\t\tif (hold) {\n\t\t\tjQuery.readyWait++;\n\t\t} else {\n\t\t\tjQuery.ready(true);\n\t\t}\n\t};\n\tjQuery.isArray = Array.isArray;\n\tjQuery.parseJSON = JSON.parse;\n\tjQuery.nodeName = nodeName;\n\n\t// Register as a named AMD module, since jQuery can be concatenated with other\n\t// files that may use define, but not via a proper concatenation script that\n\t// understands anonymous AMD modules. A named AMD is safest and most robust\n\t// way to register. Lowercase jquery is used because AMD module names are\n\t// derived from file names, and jQuery is normally delivered in a lowercase\n\t// file name. Do this after creating the global so that if an AMD module wants\n\t// to call noConflict to hide this version of jQuery, it will work.\n\n\t// Note that for maximum portability, libraries that are not jQuery should\n\t// declare themselves as anonymous modules, and avoid setting a global if an\n\t// AMD loader is present. jQuery is a special case. For more information, see\n\t// https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon\n\n\tif (true) {\n\t\t!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {\n\t\t\treturn jQuery;\n\t\t}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\t}\n\n\tvar\n\n\t// Map over jQuery in case of overwrite\n\t_jQuery = window.jQuery,\n\n\n\t// Map over the $ in case of overwrite\n\t_$ = window.$;\n\n\tjQuery.noConflict = function (deep) {\n\t\tif (window.$ === jQuery) {\n\t\t\twindow.$ = _$;\n\t\t}\n\n\t\tif (deep && window.jQuery === jQuery) {\n\t\t\twindow.jQuery = _jQuery;\n\t\t}\n\n\t\treturn jQuery;\n\t};\n\n\t// Expose jQuery and $ identifiers, even in AMD\n\t// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)\n\t// and CommonJS for browser emulators (#13566)\n\tif (!noGlobal) {\n\t\twindow.jQuery = window.$ = jQuery;\n\t}\n\n\treturn jQuery;\n});\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 498)(module)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/jquery/dist/jquery.js\n// module id = 477\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/jquery/dist/jquery.js?");
 
 /***/ }),
-/* 475 */
-/*!**************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/scroller.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar assign = __webpack_require__(/*! object-assign */ 13);\n\nvar utils = __webpack_require__(/*! ./utils */ 333);\nvar animateScroll = __webpack_require__(/*! ./animate-scroll */ 476);\nvar events = __webpack_require__(/*! ./scroll-events */ 472);\n\nvar __mapped = {};\nvar __activeLink = void 0;\n\nmodule.exports = {\n\n  unmount: function unmount() {\n    __mapped = {};\n  },\n\n  register: function register(name, element) {\n    __mapped[name] = element;\n  },\n\n  unregister: function unregister(name) {\n    delete __mapped[name];\n  },\n\n  get: function get(name) {\n    return __mapped[name] || document.getElementById(name) || document.getElementsByName(name)[0];\n  },\n\n  setActiveLink: function setActiveLink(link) {\n    return __activeLink = link;\n  },\n\n  getActiveLink: function getActiveLink() {\n    return __activeLink;\n  },\n\n  scrollTo: function scrollTo(to, props) {\n\n    var target = this.get(to);\n\n    if (!target) {\n      console.warn(\"target Element not found\");\n      return;\n    }\n\n    props = assign({}, props, { absolute: false });\n\n    var containerId = props.containerId;\n    var container = props.container;\n\n    var containerElement = void 0;\n    if (containerId) {\n      containerElement = document.getElementById(containerId);\n    } else if (container && container.nodeType) {\n      containerElement = container;\n    } else {\n      containerElement = utils.getScrollParent(target);\n    }\n\n    if (events.registered['begin']) {\n      events.registered['begin'](to, target);\n    }\n\n    props.absolute = true;\n\n    var scrollOffset = void 0;\n    if (containerElement === document) {\n      scrollOffset = target.offsetTop;\n    } else {\n      var style = getComputedStyle(containerElement);\n      var isRelative = style.position === \"relative\";\n      scrollOffset = isRelative ? target.offsetTop : target.offsetTop - containerElement.offsetTop;\n    }\n\n    scrollOffset += props.offset || 0;\n\n    /*\r\n     * if animate is not provided just scroll into the view\r\n     */\n    if (!props.smooth) {\n      if (containerElement === document) {\n        // window.scrollTo accepts only absolute values so body rectangle needs to be subtracted\n        window.scrollTo(0, scrollOffset);\n      } else {\n        containerElement.scrollTop = scrollOffset;\n      }\n\n      if (events.registered['end']) {\n        events.registered['end'](to, target);\n      }\n\n      return;\n    }\n\n    /*\r\n     * Animate scrolling\r\n     */\n\n    animateScroll.animateTopScroll(scrollOffset, props, to, target);\n  }\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/scroller.js\n// module id = 475\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/scroller.js?");
-
-/***/ }),
-/* 476 */
-/*!********************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/animate-scroll.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar assign = __webpack_require__(/*! object-assign */ 13);\nvar utils = __webpack_require__(/*! ./utils */ 333);\nvar smooth = __webpack_require__(/*! ./smooth */ 492);\nvar cancelEvents = __webpack_require__(/*! ./cancel-events */ 493);\nvar events = __webpack_require__(/*! ./scroll-events */ 472);\n\n/*\r\n * Gets the easing type from the smooth prop within options.\r\n */\nvar getAnimationType = function getAnimationType(options) {\n  return smooth[options.smooth] || smooth.defaultEasing;\n};\n\n/*\r\n * Function helper\r\n */\nvar functionWrapper = function functionWrapper(value) {\n  return typeof value === 'function' ? value : function () {\n    return value;\n  };\n};\n\n/*\r\n * Wraps window properties to allow server side rendering\r\n */\nvar currentWindowProperties = function currentWindowProperties() {\n  if (typeof window !== 'undefined') {\n    return window.requestAnimationFrame || window.webkitRequestAnimationFrame;\n  }\n};\n\n/*\r\n * Helper function to never extend 60fps on the webpage.\r\n */\nvar requestAnimationFrameHelper = function () {\n  return currentWindowProperties() || function (callback, element, delay) {\n    window.setTimeout(callback, delay || 1000 / 60, new Date().getTime());\n  };\n}();\n\nvar __currentPositionY = 0;\nvar __startPositionY = 0;\nvar __targetPositionY = 0;\nvar __progress = 0;\nvar __duration = 0;\nvar __cancel = false;\n\nvar __target = void 0;\nvar __containerElement = void 0;\nvar __to = void 0;\nvar __start = void 0;\nvar __deltaTop = void 0;\nvar __percent = void 0;\nvar __delayTimeout = void 0;\n\ncancelEvents.subscribe(function () {\n  __cancel = true;\n});\n\nvar currentPositionY = function currentPositionY() {\n  if (__containerElement && __containerElement !== document && __containerElement !== document.body) {\n    return __containerElement.scrollTop;\n  } else {\n    var supportPageOffset = window.pageXOffset !== undefined;\n    var isCSS1Compat = (document.compatMode || \"\") === \"CSS1Compat\";\n    return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;\n  }\n};\n\nvar scrollContainerHeight = function scrollContainerHeight() {\n  if (__containerElement && __containerElement !== document && __containerElement !== document.body) {\n    return Math.max(__containerElement.scrollHeight, __containerElement.offsetHeight, __containerElement.clientHeight);\n  } else {\n    var body = document.body;\n    var html = document.documentElement;\n\n    return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);\n  }\n};\n\nvar animateScroll = function animateScroll(easing, options, timestamp) {\n\n  // Cancel on specific events\n  if (!options.ignoreCancelEvents && __cancel) {\n    if (events.registered['end']) {\n      events.registered['end'](__to, __target, __currentPositionY);\n    }\n    return;\n  };\n\n  __deltaTop = Math.round(__targetPositionY - __startPositionY);\n\n  if (__start === null) {\n    __start = timestamp;\n  }\n\n  __progress = timestamp - __start;\n\n  __percent = __progress >= __duration ? 1 : easing(__progress / __duration);\n\n  __currentPositionY = __startPositionY + Math.ceil(__deltaTop * __percent);\n\n  if (__containerElement && __containerElement !== document && __containerElement !== document.body) {\n    __containerElement.scrollTop = __currentPositionY;\n  } else {\n    window.scrollTo(0, __currentPositionY);\n  }\n\n  if (__percent < 1) {\n    var easedAnimate = animateScroll.bind(null, easing, options);\n    requestAnimationFrameHelper.call(window, easedAnimate);\n    return;\n  }\n\n  if (events.registered['end']) {\n    events.registered['end'](__to, __target, __currentPositionY);\n  }\n};\n\nvar setContainer = function setContainer(options) {\n  __containerElement = !options ? null : options.containerId ? document.getElementById(options.containerId) : options.container && options.container.nodeType ? options.container : options.element && options.element.nodeType ? utils.getScrollParent(options.element) : document;\n};\n\nvar animateTopScroll = function animateTopScroll(y, options, to, target) {\n\n  window.clearTimeout(__delayTimeout);\n\n  setContainer(options);\n\n  __start = null;\n  __cancel = false;\n  __startPositionY = currentPositionY();\n  __targetPositionY = options.absolute ? y : y + __startPositionY;\n  __deltaTop = Math.round(__targetPositionY - __startPositionY);\n\n  __duration = functionWrapper(options.duration)(__deltaTop);\n  __duration = isNaN(parseFloat(__duration)) ? 1000 : parseFloat(__duration);\n  __to = to;\n  __target = target;\n\n  var easing = getAnimationType(options);\n  var easedAnimate = animateScroll.bind(null, easing, options);\n\n  if (options && options.delay > 0) {\n    __delayTimeout = window.setTimeout(function () {\n      requestAnimationFrameHelper.call(window, easedAnimate);\n    }, options.delay);\n    return;\n  }\n\n  requestAnimationFrameHelper.call(window, easedAnimate);\n};\n\nvar proceedOptions = function proceedOptions(options) {\n  if (options && options.nodeType) {\n    options = { element: options };\n  } else {\n    options = assign({}, options);\n  }\n  options.absolute = true;\n\n  return options;\n};\n\nvar scrollToTop = function scrollToTop(options) {\n  animateTopScroll(0, proceedOptions(options));\n};\n\nvar scrollTo = function scrollTo(toY, options) {\n  animateTopScroll(toY, proceedOptions(options));\n};\n\nvar scrollToBottom = function scrollToBottom(options) {\n  options = proceedOptions(options);\n  setContainer(options);\n  animateTopScroll(scrollContainerHeight(), options);\n};\n\nvar scrollMore = function scrollMore(toY, options) {\n  options = proceedOptions(options);\n  setContainer(options);\n  animateTopScroll(currentPositionY() + toY, options);\n};\n\nmodule.exports = {\n  animateTopScroll: animateTopScroll,\n  getAnimationType: getAnimationType,\n  scrollToTop: scrollToTop,\n  scrollToBottom: scrollToBottom,\n  scrollTo: scrollTo,\n  scrollMore: scrollMore\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/animate-scroll.js\n// module id = 476\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/animate-scroll.js?");
-
-/***/ }),
-/* 477 */,
 /* 478 */,
 /* 479 */,
 /* 480 */,
-/* 481 */
+/* 481 */,
+/* 482 */
 /*!********************************!*\
   !*** ./webpage/song/index.jsx ***!
   \********************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _reactDom = __webpack_require__(/*! react-dom */ 25);\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _Visualizer = __webpack_require__(/*! ./Visualizer.jsx */ 482);\n\nvar _Visualizer2 = _interopRequireDefault(_Visualizer);\n\nvar _Header = __webpack_require__(/*! ../SharedReactComponents/Header.jsx */ 265);\n\nvar _Header2 = _interopRequireDefault(_Header);\n\nvar _OptionsMenu = __webpack_require__(/*! ./OptionsMenu.jsx */ 483);\n\nvar _OptionsMenu2 = _interopRequireDefault(_OptionsMenu);\n\nvar _SongTitle = __webpack_require__(/*! ./SongTitle.jsx */ 486);\n\nvar _SongTitle2 = _interopRequireDefault(_SongTitle);\n\nvar _LyricsBody = __webpack_require__(/*! ./LyricsBody.jsx */ 487);\n\nvar _LyricsBody2 = _interopRequireDefault(_LyricsBody);\n\nvar _AudioPlayer = __webpack_require__(/*! ./AudioPlayer.jsx */ 488);\n\nvar _AudioPlayer2 = _interopRequireDefault(_AudioPlayer);\n\nvar _axios = __webpack_require__(/*! axios */ 165);\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar MainContainer = function (_React$Component) {\n\t_inherits(MainContainer, _React$Component);\n\n\tfunction MainContainer() {\n\t\t_classCallCheck(this, MainContainer);\n\n\t\tvar _this = _possibleConstructorReturn(this, (MainContainer.__proto__ || Object.getPrototypeOf(MainContainer)).call(this));\n\n\t\t_this.state = {\n\t\t\tcurrentTitle: '',\n\t\t\tcurrentArtist: '',\n\t\t\tcurrentLine: 0,\n\t\t\tareOptionsInflated: true, //opposite is collapsed\n\t\t\tlyrics: {\n\t\t\t\tpinyin: [],\n\t\t\t\tcn: [],\n\t\t\t\teng: [],\n\t\t\t\ttimes: []\n\t\t\t},\n\t\t\tsongPath: '',\n\t\t\tscrollingOffset: -400,\n\t\t\toptions: {\n\t\t\t\tshowPinyin: true,\n\t\t\t\tshowCn: true,\n\t\t\t\tshowEng: true,\n\t\t\t\tallowScrolling: true,\n\t\t\t\tshowLineNums: true,\n\t\t\t\tshowVisualizer: true\n\t\t\t}\n\t\t};\n\t\t_this.setCurrentLine = _this.setCurrentLine.bind(_this);\n\t\t_this.getSongLyrics = _this.getSongLyrics.bind(_this);\n\t\t_this.handleNewLyrics = _this.handleNewLyrics.bind(_this);\n\t\t_this.togglePinyin = _this.togglePinyin.bind(_this);\n\t\t_this.toggleEng = _this.toggleEng.bind(_this);\n\t\t_this.toggleCn = _this.toggleCn.bind(_this);\n\t\t_this.toggleScrolling = _this.toggleScrolling.bind(_this);\n\t\t_this.toggleLineNums = _this.toggleLineNums.bind(_this);\n\t\t_this.toggleVisualizer = _this.toggleVisualizer.bind(_this);\n\t\t_this.scaleScrolling = _this.scaleScrolling.bind(_this);\n\t\t_this.skipToLine = _this.skipToLine.bind(_this);\n\t\t_this.changeLineColor = _this.changeLineColor.bind(_this);\n\t\t// this.renderFrame = this.renderFrame.bind(this);\n\t\t_this.setCanvas = _this.setCanvas.bind(_this);\n\t\t_this.getParameterByName = _this.getParameterByName.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(MainContainer, [{\n\t\tkey: 'componentWillMount',\n\t\tvalue: function componentWillMount() {\n\t\t\tthis.scaleScrolling();\n\t\t}\n\t}, {\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tvar id = this.getParameterByName('id');\n\t\t\tvar title = this.getParameterByName('title');\n\t\t\tvar artist = this.getParameterByName('artist');\n\t\t\tthis.getSongLyrics(id, title, artist);\n\n\t\t\t//enable all tooltips\n\t\t\tvar audioPlayer = this.refs.audioPlayer;\n\t\t\twindow.addEventListener(\"keydown\", function (e) {\n\t\t\t\tif (e.keyCode == 32 && e.target == document.body) {\n\t\t\t\t\taudioPlayer.togglePlayer(); // space bar to toggle audio player\n\t\t\t\t\te.preventDefault(); // and prevent scrolling\n\t\t\t\t}\n\t\t\t\t//set + and - listeners for volume\n\n\t\t\t\telse if (e.keyCode == 187 && e.target == document.body) {\n\t\t\t\t\t\taudioPlayer.increaseVolume(); // increase audio player\n\t\t\t\t\t\te.preventDefault();\n\t\t\t\t\t} else if (e.keyCode == 189 && e.target == document.body) {\n\t\t\t\t\t\taudioPlayer.decreaseVolume(); // decrease audio player\n\t\t\t\t\t\te.preventDefault();\n\t\t\t\t\t}\n\t\t\t});\n\n\t\t\twindow.addEventListener(\"resize\", this.scaleScrolling);\n\t\t\tthis.setCanvas();\n\t\t}\n\t}, {\n\t\tkey: 'componentWillUnmount',\n\t\tvalue: function componentWillUnmount() {\n\t\t\twindow.removeEventListener(\"resize\", this.scaleScrolling);\n\t\t}\n\t}, {\n\t\tkey: 'setCanvas',\n\t\tvalue: function setCanvas() {\n\t\t\tvar audio = this.refs.audioPlayer.refs.audioHTML;\n\t\t\tvar AudioContext = window.AudioContext || window.webkitAudioContext; // Safari and old versions of Chrome\n\t\t\tvar context = new AudioContext();\n\t\t\tvar src = context.createMediaElementSource(audio);\n\t\t\tvar analyser = context.createAnalyser();\n\n\t\t\tvar canvas = this.refs.canvas;\n\t\t\tcanvas.width = window.innerWidth;\n\t\t\tcanvas.height = window.innerHeight;\n\t\t\tvar ctx = canvas.getContext(\"2d\");\n\n\t\t\tsrc.connect(analyser);\n\t\t\tanalyser.connect(context.destination);\n\n\t\t\tanalyser.fftSize = 256;\n\n\t\t\tvar bufferLength = analyser.frequencyBinCount;\n\n\t\t\tvar dataArray = new Uint8Array(bufferLength);\n\n\t\t\tvar WIDTH = canvas.width;\n\t\t\tvar HEIGHT = canvas.height;\n\n\t\t\tvar barWidth = WIDTH / bufferLength * 2.5;\n\t\t\tvar barHeight;\n\t\t\tvar x = 0;\n\t\t\tvar heightScale = HEIGHT / 255;\n\n\t\t\tfunction renderFrame() {\n\t\t\t\trequestAnimationFrame(renderFrame);\n\n\t\t\t\tvar x = 0;\n\n\t\t\t\t//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.\n\t\t\t\tanalyser.getByteFrequencyData(dataArray);\n\t\t\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\t\t\t\t// ctx.fillStyle = \"rgba(0,0,0,0)\";\n\n\t\t\t\tfor (var i = 0; i < bufferLength; i++) {\n\n\t\t\t\t\tbarHeight = dataArray[i];\n\t\t\t\t\t// if(barHeight!=0){\n\t\t\t\t\t// \tconsole.log(\"not zero:\")\n\t\t\t\t\t// \tconsole.log(barHeight)\n\t\t\t\t\t// }\n\t\t\t\t\tvar r = barHeight + 25 * (i / bufferLength);\n\t\t\t\t\tvar g = 250 * (i / bufferLength);\n\t\t\t\t\tvar b = 240;\n\n\t\t\t\t\tctx.fillStyle = \"rgba(\" + r + \",\" + g + \",\" + b + \", .25)\";\n\t\t\t\t\tctx.fillRect(x, HEIGHT - barHeight * heightScale, barWidth, barHeight * heightScale);\n\t\t\t\t\t//add a top border line\n\t\t\t\t\tctx.beginPath();\n\t\t\t\t\tctx.moveTo(x, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.lineTo(x + barWidth, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.closePath();\n\t\t\t\t\tctx.stroke();\n\t\t\t\t\tx += barWidth + 1;\n\t\t\t\t}\n\t\t\t}\n\t\t\t// this.refs.audioPlayer.togglePlayer(); // start by playing\n\t\t\trenderFrame();\n\t\t}\n\t\t//Thank you https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144\n\n\t}, {\n\t\tkey: 'getParameterByName',\n\t\tvalue: function getParameterByName(name, url) {\n\t\t\tif (!url) url = window.location.href;\n\t\t\tname = name.replace(/[\\[\\]]/g, \"\\\\$&\");\n\t\t\tvar regex = new RegExp(\"[?&]\" + name + \"(=([^&#]*)|&|#|$)\"),\n\t\t\t    results = regex.exec(url);\n\t\t\tif (!results) return null;\n\t\t\tif (!results[2]) return '';\n\t\t\treturn decodeURIComponent(results[2].replace(/\\+/g, \" \"));\n\t\t}\n\t}, {\n\t\tkey: 'scaleScrolling',\n\t\tvalue: function scaleScrolling() {\n\t\t\t// var winWidth =  window.innerWidth;\n\t\t\tvar winHeight = window.innerHeight;\n\t\t\tthis.setState({ scrollingOffset: Math.round(winHeight * .35) });\n\t\t}\n\t}, {\n\t\tkey: 'setCurrentLine',\n\t\tvalue: function setCurrentLine(val) {\n\t\t\tthis.setState({ currentLine: val });\n\t\t}\n\t}, {\n\t\tkey: 'getSongLyrics',\n\t\tvalue: function getSongLyrics(id, title, artist) {\n\t\t\t_axios2.default.get(\"getSong\", { params: { 'id': id } }).then(this.handleNewLyrics).catch(function (error) {\n\t\t\t\treturn console.log(error);\n\t\t\t});\n\t\t\tthis.setState({ currentTitle: title, currentArtist: artist, currentLine: 0 });\n\t\t}\n\t\t//called when a user clicks on a new song\n\n\t}, {\n\t\tkey: 'handleNewLyrics',\n\t\tvalue: function handleNewLyrics(response) {\n\t\t\tthis.setState({\n\t\t\t\tcurrentLine: 0,\n\t\t\t\tlyrics: {\n\t\t\t\t\tcn: response.data['cn.txt'],\n\t\t\t\t\teng: response.data['eng.txt'],\n\t\t\t\t\tpinyin: response.data['pinyin.txt'],\n\t\t\t\t\ttimes: response.data['times.txt']\n\t\t\t\t},\n\t\t\t\tsongPath: response.data['songFile'],\n\t\t\t\tareOptionsInflated: true //!this.state.areOptionsInflated\n\t\t\t});\n\t\t\tthis.refs.audioPlayer.setSong(this.state.songPath);\n\t\t\tthis.refs.lyricsBody.clearLyrics();\n\t\t}\n\t}, {\n\t\tkey: 'skipToLine',\n\t\tvalue: function skipToLine(lineToSet, timeToSet) {\n\t\t\tthis.refs.audioPlayer.setCurrentTime(timeToSet);\n\t\t\tthis.setState({ currentLine: lineToSet });\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t'div',\n\t\t\t\tnull,\n\t\t\t\tReact.createElement('canvas', { className: 'canvas', ref: 'canvas' }),\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'container' },\n\t\t\t\t\tReact.createElement(_Header2.default, null),\n\t\t\t\t\tReact.createElement(_OptionsMenu2.default, {\n\t\t\t\t\t\toptions: this.state.options,\n\t\t\t\t\t\topen: this.state.areOptionsInflated,\n\t\t\t\t\t\ttogglePinyin: this.togglePinyin,\n\t\t\t\t\t\ttoggleCn: this.toggleCn,\n\t\t\t\t\t\ttoggleEng: this.toggleEng,\n\t\t\t\t\t\ttoggleLineNums: this.toggleLineNums,\n\t\t\t\t\t\ttoggleScrolling: this.toggleScrolling,\n\t\t\t\t\t\ttoggleVisualizer: this.toggleVisualizer\n\t\t\t\t\t}),\n\t\t\t\t\tReact.createElement('div', { className: 'clearfix' }),\n\t\t\t\t\tReact.createElement(_SongTitle2.default, {\n\t\t\t\t\t\ttitle: this.state.currentTitle,\n\t\t\t\t\t\tartist: this.state.currentArtist }),\n\t\t\t\t\tReact.createElement(_LyricsBody2.default, { ref: 'lyricsBody', currentLine: this.state.currentLine,\n\t\t\t\t\t\tlyrics: this.state.lyrics,\n\t\t\t\t\t\tskipToTime: this.skipToLine,\n\t\t\t\t\t\toptions: this.state.options })\n\t\t\t\t),\n\t\t\t\tReact.createElement(_AudioPlayer2.default, { ref: 'audioPlayer',\n\t\t\t\t\ttimes: this.state.lyrics.times,\n\t\t\t\t\tupdateCurrentLine: this.setCurrentLine,\n\t\t\t\t\tcurrentLine: this.state.currentLine,\n\t\t\t\t\tscrollOffset: this.state.scrollingOffset,\n\t\t\t\t\tallowScrolling: this.state.options.allowScrolling,\n\t\t\t\t\tchangeLineColor: this.changeLineColor })\n\t\t\t);\n\t\t}\n\t}, {\n\t\tkey: 'changeLineColor',\n\t\tvalue: function changeLineColor(currentLine) {\n\t\t\tthis.refs.lyricsBody.incrementLineColor(currentLine);\n\t\t}\n\n\t\t//toggles:\n\n\t}, {\n\t\tkey: 'toggleScrolling',\n\t\tvalue: function toggleScrolling() {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['allowScrolling'] = !this.state.options.allowScrolling;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleLineNums',\n\t\tvalue: function toggleLineNums() {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showLineNums'] = !this.state.options.showLineNums;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleVisualizer',\n\t\tvalue: function toggleVisualizer() {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showVisualizer'] = !this.state.options.showVisualizer;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'togglePinyin',\n\t\tvalue: function togglePinyin(isChecked) {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showPinyin'] = !this.state.options.showPinyin;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleCn',\n\t\tvalue: function toggleCn(isChecked) {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showCn'] = !this.state.options.showCn;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleEng',\n\t\tvalue: function toggleEng(isChecked) {\n\t\t\t//shallow merging\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showEng'] = !this.state.options.showEng;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}]);\n\n\treturn MainContainer;\n}(React.Component);\n\nexports.default = MainContainer;\n\n\n_reactDom2.default.render(React.createElement(MainContainer, null), document.getElementById('content'));\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/index.jsx\n// module id = 481\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/index.jsx?");
-
-/***/ }),
-/* 482 */
-/*!*************************************!*\
-  !*** ./webpage/song/Visualizer.jsx ***!
-  \*************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Visualizer = function (_React$Component) {\n\t_inherits(Visualizer, _React$Component);\n\n\tfunction Visualizer() {\n\t\t_classCallCheck(this, Visualizer);\n\n\t\treturn _possibleConstructorReturn(this, (Visualizer.__proto__ || Object.getPrototypeOf(Visualizer)).apply(this, arguments));\n\t}\n\n\t_createClass(Visualizer, [{\n\t\tkey: \"setCanvas\",\n\n\t\t// constructor(){\n\t\t// \tsuper()\n\t\t// \tthis.setCanvas = this.setCanvas.bind(this);\n\t\t// }\n\n\t\tvalue: function setCanvas() {\n\t\t\tvar audio = this.props.audioSrc;\n\t\t\tvar context = new AudioContext();\n\t\t\tvar src = context.createMediaElementSource(audio);\n\t\t\tvar analyser = context.createAnalyser();\n\n\t\t\tvar canvas = this.refs.canvas;\n\t\t\tcanvas.width = window.innerWidth;\n\t\t\tcanvas.height = window.innerHeight;\n\t\t\tvar ctx = canvas.getContext(\"2d\");\n\n\t\t\tsrc.connect(analyser);\n\t\t\tanalyser.connect(context.destination);\n\n\t\t\tanalyser.fftSize = 256;\n\n\t\t\tvar bufferLength = analyser.frequencyBinCount;\n\n\t\t\tvar dataArray = new Uint8Array(bufferLength);\n\n\t\t\tvar WIDTH = canvas.width;\n\t\t\tvar HEIGHT = canvas.height;\n\n\t\t\tvar barWidth = WIDTH / bufferLength * 2.5;\n\t\t\tvar barHeight;\n\t\t\tvar x = 0;\n\t\t\tvar heightScale = HEIGHT / 255;\n\n\t\t\tfunction renderFrame() {\n\t\t\t\trequestAnimationFrame(renderFrame);\n\n\t\t\t\tvar x = 0;\n\n\t\t\t\t//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.\n\t\t\t\tanalyser.getByteFrequencyData(dataArray);\n\t\t\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\t\t\t\t// ctx.fillStyle = \"rgba(0,0,0,0)\";\n\n\t\t\t\tfor (var i = 0; i < bufferLength; i++) {\n\n\t\t\t\t\tbarHeight = dataArray[i];\n\n\t\t\t\t\tvar r = barHeight + 25 * (i / bufferLength);\n\t\t\t\t\tvar g = 250 * (i / bufferLength);\n\t\t\t\t\tvar b = 240;\n\n\t\t\t\t\tctx.fillStyle = \"rgba(\" + r + \",\" + g + \",\" + b + \", .25)\";\n\t\t\t\t\tctx.fillRect(x, HEIGHT - barHeight * heightScale, barWidth, barHeight * heightScale);\n\t\t\t\t\t//add a top border line\n\t\t\t\t\tctx.beginPath();\n\t\t\t\t\tctx.moveTo(x, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.lineTo(x + barWidth, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.closePath();\n\t\t\t\t\tctx.stroke();\n\t\t\t\t\tx += barWidth + 1;\n\t\t\t\t}\n\t\t\t}\n\t\t\tthis.refs.audioPlayer.togglePlayer(); // start by playing\n\t\t\trenderFrame();\n\t\t}\n\t}, {\n\t\tkey: \"render\",\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\"canvas\", { ref: \"canvas\", className: \"canvas\" });\n\t\t}\n\t}]);\n\n\treturn Visualizer;\n}(React.Component);\n\nexports.default = Visualizer;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/Visualizer.jsx\n// module id = 482\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/Visualizer.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _reactDom = __webpack_require__(/*! react-dom */ 25);\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _Visualizer = __webpack_require__(/*! ./Visualizer.jsx */ 483);\n\nvar _Visualizer2 = _interopRequireDefault(_Visualizer);\n\nvar _Header = __webpack_require__(/*! ../SharedReactComponents/Header.jsx */ 265);\n\nvar _Header2 = _interopRequireDefault(_Header);\n\nvar _OptionsMenu = __webpack_require__(/*! ./OptionsMenu.jsx */ 484);\n\nvar _OptionsMenu2 = _interopRequireDefault(_OptionsMenu);\n\nvar _SongTitle = __webpack_require__(/*! ./SongTitle.jsx */ 487);\n\nvar _SongTitle2 = _interopRequireDefault(_SongTitle);\n\nvar _LyricsBody = __webpack_require__(/*! ./LyricsBody.jsx */ 488);\n\nvar _LyricsBody2 = _interopRequireDefault(_LyricsBody);\n\nvar _AudioPlayer = __webpack_require__(/*! ./AudioPlayer.jsx */ 496);\n\nvar _AudioPlayer2 = _interopRequireDefault(_AudioPlayer);\n\nvar _axios = __webpack_require__(/*! axios */ 165);\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar MainContainer = function (_React$Component) {\n\t_inherits(MainContainer, _React$Component);\n\n\tfunction MainContainer() {\n\t\t_classCallCheck(this, MainContainer);\n\n\t\tvar _this = _possibleConstructorReturn(this, (MainContainer.__proto__ || Object.getPrototypeOf(MainContainer)).call(this));\n\n\t\t_this.state = {\n\t\t\tcurrentTitle: '',\n\t\t\tcurrentArtist: '',\n\t\t\tcurrentLine: 0,\n\t\t\tareOptionsInflated: true, //opposite is collapsed\n\t\t\tlyrics: {\n\t\t\t\tpinyin: [],\n\t\t\t\tcn: [],\n\t\t\t\teng: [],\n\t\t\t\ttimes: []\n\t\t\t},\n\t\t\tsongPath: '',\n\t\t\tscrollingOffset: -400,\n\t\t\toptions: {\n\t\t\t\tshowPinyin: true,\n\t\t\t\tshowCn: true,\n\t\t\t\tshowEng: true,\n\t\t\t\tallowScrolling: true,\n\t\t\t\tshowLineNums: true,\n\t\t\t\tshowVisualizer: true\n\t\t\t}\n\t\t};\n\t\t_this.setCurrentLine = _this.setCurrentLine.bind(_this);\n\t\t_this.getSongLyrics = _this.getSongLyrics.bind(_this);\n\t\t_this.handleNewLyrics = _this.handleNewLyrics.bind(_this);\n\t\t_this.togglePinyin = _this.togglePinyin.bind(_this);\n\t\t_this.toggleEng = _this.toggleEng.bind(_this);\n\t\t_this.toggleCn = _this.toggleCn.bind(_this);\n\t\t_this.toggleScrolling = _this.toggleScrolling.bind(_this);\n\t\t_this.toggleLineNums = _this.toggleLineNums.bind(_this);\n\t\t_this.toggleVisualizer = _this.toggleVisualizer.bind(_this);\n\t\t_this.scaleScrolling = _this.scaleScrolling.bind(_this);\n\t\t_this.skipToLine = _this.skipToLine.bind(_this);\n\t\t_this.changeLineColor = _this.changeLineColor.bind(_this);\n\t\t// this.renderFrame = this.renderFrame.bind(this);\n\t\t_this.setCanvas = _this.setCanvas.bind(_this);\n\t\t_this.getParameterByName = _this.getParameterByName.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(MainContainer, [{\n\t\tkey: 'componentWillMount',\n\t\tvalue: function componentWillMount() {\n\t\t\tthis.scaleScrolling();\n\t\t}\n\t}, {\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tvar id = this.getParameterByName('id');\n\t\t\tvar title = this.getParameterByName('title');\n\t\t\tvar artist = this.getParameterByName('artist');\n\t\t\tthis.getSongLyrics(id, title, artist);\n\n\t\t\t//enable all tooltips\n\t\t\tvar audioPlayer = this.refs.audioPlayer;\n\t\t\twindow.addEventListener(\"keydown\", function (e) {\n\t\t\t\tif (e.keyCode == 32 && e.target == document.body) {\n\t\t\t\t\taudioPlayer.togglePlayer(); // space bar to toggle audio player\n\t\t\t\t\te.preventDefault(); // and prevent scrolling\n\t\t\t\t}\n\t\t\t\t//set + and - listeners for volume\n\n\t\t\t\telse if (e.keyCode == 187 && e.target == document.body) {\n\t\t\t\t\t\taudioPlayer.increaseVolume(); // increase audio player\n\t\t\t\t\t\te.preventDefault();\n\t\t\t\t\t} else if (e.keyCode == 189 && e.target == document.body) {\n\t\t\t\t\t\taudioPlayer.decreaseVolume(); // decrease audio player\n\t\t\t\t\t\te.preventDefault();\n\t\t\t\t\t}\n\t\t\t});\n\n\t\t\twindow.addEventListener(\"resize\", this.scaleScrolling);\n\t\t\tthis.setCanvas();\n\t\t}\n\t}, {\n\t\tkey: 'componentWillUnmount',\n\t\tvalue: function componentWillUnmount() {\n\t\t\twindow.removeEventListener(\"resize\", this.scaleScrolling);\n\t\t}\n\t}, {\n\t\tkey: 'setCanvas',\n\t\tvalue: function setCanvas() {\n\t\t\tvar audio = this.refs.audioPlayer.refs.audioHTML;\n\t\t\tvar AudioContext = window.AudioContext || window.webkitAudioContext; // Safari and old versions of Chrome\n\t\t\tvar context = new AudioContext();\n\t\t\tvar src = context.createMediaElementSource(audio);\n\t\t\tvar analyser = context.createAnalyser();\n\n\t\t\tvar canvas = this.refs.canvas;\n\t\t\tcanvas.width = window.innerWidth;\n\t\t\tcanvas.height = window.innerHeight;\n\t\t\tvar ctx = canvas.getContext(\"2d\");\n\n\t\t\tsrc.connect(analyser);\n\t\t\tanalyser.connect(context.destination);\n\n\t\t\tanalyser.fftSize = 256;\n\n\t\t\tvar bufferLength = analyser.frequencyBinCount;\n\n\t\t\tvar dataArray = new Uint8Array(bufferLength);\n\n\t\t\tvar WIDTH = canvas.width;\n\t\t\tvar HEIGHT = canvas.height;\n\n\t\t\tvar barWidth = WIDTH / bufferLength * 2.5;\n\t\t\tvar barHeight;\n\t\t\tvar x = 0;\n\t\t\tvar heightScale = HEIGHT / 255;\n\n\t\t\tfunction renderFrame() {\n\t\t\t\trequestAnimationFrame(renderFrame);\n\n\t\t\t\tvar x = 0;\n\n\t\t\t\t//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.\n\t\t\t\tanalyser.getByteFrequencyData(dataArray);\n\t\t\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\t\t\t\t// ctx.fillStyle = \"rgba(0,0,0,0)\";\n\n\t\t\t\tfor (var i = 0; i < bufferLength; i++) {\n\n\t\t\t\t\tbarHeight = dataArray[i];\n\t\t\t\t\t// if(barHeight!=0){\n\t\t\t\t\t// \tconsole.log(\"not zero:\")\n\t\t\t\t\t// \tconsole.log(barHeight)\n\t\t\t\t\t// }\n\t\t\t\t\tvar r = barHeight + 25 * (i / bufferLength);\n\t\t\t\t\tvar g = 250 * (i / bufferLength);\n\t\t\t\t\tvar b = 240;\n\n\t\t\t\t\tctx.fillStyle = \"rgba(\" + r + \",\" + g + \",\" + b + \", .25)\";\n\t\t\t\t\tctx.fillRect(x, HEIGHT - barHeight * heightScale, barWidth, barHeight * heightScale);\n\t\t\t\t\t//add a top border line\n\t\t\t\t\tctx.beginPath();\n\t\t\t\t\tctx.moveTo(x, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.lineTo(x + barWidth, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.closePath();\n\t\t\t\t\tctx.stroke();\n\t\t\t\t\tx += barWidth + 1;\n\t\t\t\t}\n\t\t\t}\n\t\t\t// this.refs.audioPlayer.togglePlayer(); // start by playing\n\t\t\trenderFrame();\n\t\t}\n\t\t//Thank you https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144\n\n\t}, {\n\t\tkey: 'getParameterByName',\n\t\tvalue: function getParameterByName(name, url) {\n\t\t\tif (!url) url = window.location.href;\n\t\t\tname = name.replace(/[\\[\\]]/g, \"\\\\$&\");\n\t\t\tvar regex = new RegExp(\"[?&]\" + name + \"(=([^&#]*)|&|#|$)\"),\n\t\t\t    results = regex.exec(url);\n\t\t\tif (!results) return null;\n\t\t\tif (!results[2]) return '';\n\t\t\treturn decodeURIComponent(results[2].replace(/\\+/g, \" \"));\n\t\t}\n\t}, {\n\t\tkey: 'scaleScrolling',\n\t\tvalue: function scaleScrolling() {\n\t\t\t// var winWidth =  window.innerWidth;\n\t\t\tvar winHeight = window.innerHeight;\n\t\t\tthis.setState({ scrollingOffset: -1 * Math.round(winHeight * .35) });\n\t\t}\n\t}, {\n\t\tkey: 'setCurrentLine',\n\t\tvalue: function setCurrentLine(val) {\n\t\t\tthis.setState({ currentLine: val });\n\t\t}\n\t}, {\n\t\tkey: 'getSongLyrics',\n\t\tvalue: function getSongLyrics(id, title, artist) {\n\t\t\t_axios2.default.get(\"getSong\", { params: { 'id': id } }).then(this.handleNewLyrics).catch(function (error) {\n\t\t\t\treturn console.log(error);\n\t\t\t});\n\t\t\tthis.setState({ currentTitle: title, currentArtist: artist, currentLine: 0 });\n\t\t}\n\t\t//called when a user clicks on a new song\n\n\t}, {\n\t\tkey: 'handleNewLyrics',\n\t\tvalue: function handleNewLyrics(response) {\n\t\t\tthis.setState({\n\t\t\t\tcurrentLine: 0,\n\t\t\t\tlyrics: {\n\t\t\t\t\tcn: response.data['cn.txt'],\n\t\t\t\t\teng: response.data['eng.txt'],\n\t\t\t\t\tpinyin: response.data['pinyin.txt'],\n\t\t\t\t\ttimes: response.data['times.txt']\n\t\t\t\t},\n\t\t\t\tsongPath: response.data['songFile'],\n\t\t\t\tareOptionsInflated: true //!this.state.areOptionsInflated\n\t\t\t});\n\t\t\tthis.refs.audioPlayer.setSong(this.state.songPath);\n\t\t\tthis.refs.lyricsBody.clearLyrics();\n\t\t}\n\t}, {\n\t\tkey: 'skipToLine',\n\t\tvalue: function skipToLine(lineToSet, timeToSet) {\n\t\t\tthis.refs.audioPlayer.setCurrentTime(timeToSet);\n\t\t\tthis.setState({ currentLine: lineToSet });\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t'div',\n\t\t\t\tnull,\n\t\t\t\tReact.createElement('canvas', { className: 'canvas', ref: 'canvas' }),\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'container' },\n\t\t\t\t\tReact.createElement(_Header2.default, null),\n\t\t\t\t\tReact.createElement(_OptionsMenu2.default, {\n\t\t\t\t\t\toptions: this.state.options,\n\t\t\t\t\t\topen: this.state.areOptionsInflated,\n\t\t\t\t\t\ttogglePinyin: this.togglePinyin,\n\t\t\t\t\t\ttoggleCn: this.toggleCn,\n\t\t\t\t\t\ttoggleEng: this.toggleEng,\n\t\t\t\t\t\ttoggleLineNums: this.toggleLineNums,\n\t\t\t\t\t\ttoggleScrolling: this.toggleScrolling,\n\t\t\t\t\t\ttoggleVisualizer: this.toggleVisualizer\n\t\t\t\t\t}),\n\t\t\t\t\tReact.createElement('div', { className: 'clearfix' }),\n\t\t\t\t\tReact.createElement(_SongTitle2.default, {\n\t\t\t\t\t\ttitle: this.state.currentTitle,\n\t\t\t\t\t\tartist: this.state.currentArtist }),\n\t\t\t\t\tReact.createElement(_LyricsBody2.default, { ref: 'lyricsBody', currentLine: this.state.currentLine,\n\t\t\t\t\t\tlyrics: this.state.lyrics,\n\t\t\t\t\t\tskipToTime: this.skipToLine,\n\t\t\t\t\t\toptions: this.state.options })\n\t\t\t\t),\n\t\t\t\tReact.createElement(_AudioPlayer2.default, { ref: 'audioPlayer',\n\t\t\t\t\ttimes: this.state.lyrics.times,\n\t\t\t\t\tupdateCurrentLine: this.setCurrentLine,\n\t\t\t\t\tcurrentLine: this.state.currentLine,\n\t\t\t\t\tscrollOffset: this.state.scrollingOffset,\n\t\t\t\t\tallowScrolling: this.state.options.allowScrolling,\n\t\t\t\t\tchangeLineColor: this.changeLineColor })\n\t\t\t);\n\t\t}\n\t}, {\n\t\tkey: 'changeLineColor',\n\t\tvalue: function changeLineColor(currentLine) {\n\t\t\tthis.refs.lyricsBody.incrementLineColor(currentLine);\n\t\t}\n\n\t\t//toggles:\n\n\t}, {\n\t\tkey: 'toggleScrolling',\n\t\tvalue: function toggleScrolling() {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['allowScrolling'] = !this.state.options.allowScrolling;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleLineNums',\n\t\tvalue: function toggleLineNums() {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showLineNums'] = !this.state.options.showLineNums;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleVisualizer',\n\t\tvalue: function toggleVisualizer() {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showVisualizer'] = !this.state.options.showVisualizer;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'togglePinyin',\n\t\tvalue: function togglePinyin(isChecked) {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showPinyin'] = !this.state.options.showPinyin;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleCn',\n\t\tvalue: function toggleCn(isChecked) {\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showCn'] = !this.state.options.showCn;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'toggleEng',\n\t\tvalue: function toggleEng(isChecked) {\n\t\t\t//shallow merging\n\t\t\tvar temp = this.state.options;\n\t\t\ttemp['showEng'] = !this.state.options.showEng;\n\t\t\tthis.setState({\n\t\t\t\toptions: temp\n\t\t\t});\n\t\t}\n\t}]);\n\n\treturn MainContainer;\n}(React.Component);\n\nexports.default = MainContainer;\n\n\n_reactDom2.default.render(React.createElement(MainContainer, null), document.getElementById('content'));\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/index.jsx\n// module id = 482\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/index.jsx?");
 
 /***/ }),
 /* 483 */
-/*!**************************************!*\
-  !*** ./webpage/song/OptionsMenu.jsx ***!
-  \**************************************/
-/*! no static exports found */
+/*!*************************************!*\
+  !*** ./webpage/song/Visualizer.jsx ***!
+  \*************************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _LanguageOptions = __webpack_require__(/*! ./LanguageOptions.jsx */ 484);\n\nvar _LanguageOptions2 = _interopRequireDefault(_LanguageOptions);\n\nvar _PlaybackOptions = __webpack_require__(/*! ./PlaybackOptions.jsx */ 485);\n\nvar _PlaybackOptions2 = _interopRequireDefault(_PlaybackOptions);\n\nvar _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 331);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar OptionsMenu = function (_React$Component) {\n\t_inherits(OptionsMenu, _React$Component);\n\n\tfunction OptionsMenu(props) {\n\t\t_classCallCheck(this, OptionsMenu);\n\n\t\tvar _this = _possibleConstructorReturn(this, (OptionsMenu.__proto__ || Object.getPrototypeOf(OptionsMenu)).call(this, props));\n\n\t\t_this.state = {};\n\t\treturn _this;\n\t}\n\n\t_createClass(OptionsMenu, [{\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t_reactBootstrap.Collapse,\n\t\t\t\t{ 'in': this.props.open },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'row optionsMenu', id: 'options' },\n\t\t\t\t\tReact.createElement(_LanguageOptions2.default, {\n\t\t\t\t\t\ttogglePinyin: this.props.togglePinyin,\n\t\t\t\t\t\ttoggleCn: this.props.toggleCn,\n\t\t\t\t\t\ttoggleEng: this.props.toggleEng }),\n\t\t\t\t\tReact.createElement(_PlaybackOptions2.default, {\n\t\t\t\t\t\ttoggleLineNums: this.props.toggleLineNums,\n\t\t\t\t\t\ttoggleScrolling: this.props.toggleScrolling,\n\t\t\t\t\t\ttoggleVisualizer: this.props.toggleVisualizer\n\t\t\t\t\t})\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn OptionsMenu;\n}(React.Component);\n\nexports.default = OptionsMenu;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/OptionsMenu.jsx\n// module id = 483\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/OptionsMenu.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Visualizer = function (_React$Component) {\n\t_inherits(Visualizer, _React$Component);\n\n\tfunction Visualizer() {\n\t\t_classCallCheck(this, Visualizer);\n\n\t\treturn _possibleConstructorReturn(this, (Visualizer.__proto__ || Object.getPrototypeOf(Visualizer)).apply(this, arguments));\n\t}\n\n\t_createClass(Visualizer, [{\n\t\tkey: \"setCanvas\",\n\n\t\t// constructor(){\n\t\t// \tsuper()\n\t\t// \tthis.setCanvas = this.setCanvas.bind(this);\n\t\t// }\n\n\t\tvalue: function setCanvas() {\n\t\t\tvar audio = this.props.audioSrc;\n\t\t\tvar context = new AudioContext();\n\t\t\tvar src = context.createMediaElementSource(audio);\n\t\t\tvar analyser = context.createAnalyser();\n\n\t\t\tvar canvas = this.refs.canvas;\n\t\t\tcanvas.width = window.innerWidth;\n\t\t\tcanvas.height = window.innerHeight;\n\t\t\tvar ctx = canvas.getContext(\"2d\");\n\n\t\t\tsrc.connect(analyser);\n\t\t\tanalyser.connect(context.destination);\n\n\t\t\tanalyser.fftSize = 256;\n\n\t\t\tvar bufferLength = analyser.frequencyBinCount;\n\n\t\t\tvar dataArray = new Uint8Array(bufferLength);\n\n\t\t\tvar WIDTH = canvas.width;\n\t\t\tvar HEIGHT = canvas.height;\n\n\t\t\tvar barWidth = WIDTH / bufferLength * 2.5;\n\t\t\tvar barHeight;\n\t\t\tvar x = 0;\n\t\t\tvar heightScale = HEIGHT / 255;\n\n\t\t\tfunction renderFrame() {\n\t\t\t\trequestAnimationFrame(renderFrame);\n\n\t\t\t\tvar x = 0;\n\n\t\t\t\t//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.\n\t\t\t\tanalyser.getByteFrequencyData(dataArray);\n\t\t\t\tctx.clearRect(0, 0, canvas.width, canvas.height);\n\t\t\t\t// ctx.fillStyle = \"rgba(0,0,0,0)\";\n\n\t\t\t\tfor (var i = 0; i < bufferLength; i++) {\n\n\t\t\t\t\tbarHeight = dataArray[i];\n\n\t\t\t\t\tvar r = barHeight + 25 * (i / bufferLength);\n\t\t\t\t\tvar g = 250 * (i / bufferLength);\n\t\t\t\t\tvar b = 240;\n\n\t\t\t\t\tctx.fillStyle = \"rgba(\" + r + \",\" + g + \",\" + b + \", .25)\";\n\t\t\t\t\tctx.fillRect(x, HEIGHT - barHeight * heightScale, barWidth, barHeight * heightScale);\n\t\t\t\t\t//add a top border line\n\t\t\t\t\tctx.beginPath();\n\t\t\t\t\tctx.moveTo(x, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.lineTo(x + barWidth, HEIGHT - barHeight * heightScale);\n\t\t\t\t\tctx.closePath();\n\t\t\t\t\tctx.stroke();\n\t\t\t\t\tx += barWidth + 1;\n\t\t\t\t}\n\t\t\t}\n\t\t\tthis.refs.audioPlayer.togglePlayer(); // start by playing\n\t\t\trenderFrame();\n\t\t}\n\t}, {\n\t\tkey: \"render\",\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\"canvas\", { ref: \"canvas\", className: \"canvas\" });\n\t\t}\n\t}]);\n\n\treturn Visualizer;\n}(React.Component);\n\nexports.default = Visualizer;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/Visualizer.jsx\n// module id = 483\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/Visualizer.jsx?");
 
 /***/ }),
 /* 484 */
-/*!******************************************!*\
-  !*** ./webpage/song/LanguageOptions.jsx ***!
-  \******************************************/
-/*! no static exports found */
+/*!**************************************!*\
+  !*** ./webpage/song/OptionsMenu.jsx ***!
+  \**************************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar LanguageOptions = function (_React$Component) {\n  _inherits(LanguageOptions, _React$Component);\n\n  function LanguageOptions(props) {\n    _classCallCheck(this, LanguageOptions);\n\n    var _this = _possibleConstructorReturn(this, (LanguageOptions.__proto__ || Object.getPrototypeOf(LanguageOptions)).call(this, props));\n\n    _this.state = {\n      pinyinChecked: true,\n      cnChecked: true,\n      enChecked: true\n    };\n    return _this;\n  }\n\n  _createClass(LanguageOptions, [{\n    key: \"modifyOptions\",\n    value: function modifyOptions(e) {\n      e.preventDefault();\n    }\n  }, {\n    key: \"changePinyin\",\n    value: function changePinyin() {\n      var _this2 = this;\n\n      this.setState({\n        pinyinChecked: !this.state.pinyinChecked\n      }, function () {\n        _this2.props.togglePinyin(_this2.state.pinyinChecked);\n      });\n    }\n  }, {\n    key: \"changeCn\",\n    value: function changeCn() {\n      var _this3 = this;\n\n      this.setState({\n        cnChecked: !this.state.cnChecked\n      }, function () {\n        _this3.props.toggleCn(_this3.state.cnChecked);\n      });\n    }\n  }, {\n    key: \"changeEng\",\n    value: function changeEng() {\n      var _this4 = this;\n\n      this.setState({\n        enChecked: !this.state.enChecked\n      }, function () {\n        _this4.props.toggleEng(_this4.state.enChecked);\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\n        \"div\",\n        { className: \"displayLanguages col-xs-6\" },\n        React.createElement(\n          \"form\",\n          { onSubmit: this.modifyOptions },\n          React.createElement(\n            \"span\",\n            null,\n            \"Display Languages:\"\n          ),\n          React.createElement(\n            \"div\",\n            { className: \"checkbox\" },\n            React.createElement(\n              \"span\",\n              null,\n              React.createElement(\n                \"label\",\n                null,\n                React.createElement(\"input\", { id: \"pinyinCB\", type: \"checkbox\",\n                  checked: this.state.pinyinChecked,\n                  onChange: this.changePinyin.bind(this) }),\n                \"PinYin\"\n              )\n            )\n          ),\n          React.createElement(\"span\", null),\n          React.createElement(\n            \"div\",\n            { className: \"checkbox\" },\n            React.createElement(\n              \"span\",\n              null,\n              React.createElement(\n                \"label\",\n                null,\n                React.createElement(\"input\", { id: \"cnCB\", type: \"checkbox\",\n                  checked: this.state.cnChecked,\n                  onChange: this.changeCn.bind(this) }),\n                \"Chinese Char\"\n              )\n            )\n          ),\n          React.createElement(\"span\", null),\n          React.createElement(\n            \"div\",\n            { className: \"checkbox\" },\n            React.createElement(\n              \"span\",\n              null,\n              React.createElement(\n                \"label\",\n                null,\n                React.createElement(\"input\", { id: \"engCB\", type: \"checkbox\",\n                  checked: this.state.enChecked,\n                  onChange: this.changeEng.bind(this) }),\n                \"English\"\n              )\n            )\n          )\n        )\n      );\n    }\n  }]);\n\n  return LanguageOptions;\n}(React.Component);\n\nexports.default = LanguageOptions;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/LanguageOptions.jsx\n// module id = 484\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/LanguageOptions.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _LanguageOptions = __webpack_require__(/*! ./LanguageOptions.jsx */ 485);\n\nvar _LanguageOptions2 = _interopRequireDefault(_LanguageOptions);\n\nvar _PlaybackOptions = __webpack_require__(/*! ./PlaybackOptions.jsx */ 486);\n\nvar _PlaybackOptions2 = _interopRequireDefault(_PlaybackOptions);\n\nvar _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 331);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar OptionsMenu = function (_React$Component) {\n\t_inherits(OptionsMenu, _React$Component);\n\n\tfunction OptionsMenu(props) {\n\t\t_classCallCheck(this, OptionsMenu);\n\n\t\tvar _this = _possibleConstructorReturn(this, (OptionsMenu.__proto__ || Object.getPrototypeOf(OptionsMenu)).call(this, props));\n\n\t\t_this.state = {};\n\t\treturn _this;\n\t}\n\n\t_createClass(OptionsMenu, [{\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t_reactBootstrap.Collapse,\n\t\t\t\t{ 'in': this.props.open },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'row optionsMenu', id: 'options' },\n\t\t\t\t\tReact.createElement(_LanguageOptions2.default, {\n\t\t\t\t\t\ttogglePinyin: this.props.togglePinyin,\n\t\t\t\t\t\ttoggleCn: this.props.toggleCn,\n\t\t\t\t\t\ttoggleEng: this.props.toggleEng }),\n\t\t\t\t\tReact.createElement(_PlaybackOptions2.default, {\n\t\t\t\t\t\ttoggleLineNums: this.props.toggleLineNums,\n\t\t\t\t\t\ttoggleScrolling: this.props.toggleScrolling,\n\t\t\t\t\t\ttoggleVisualizer: this.props.toggleVisualizer\n\t\t\t\t\t})\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn OptionsMenu;\n}(React.Component);\n\nexports.default = OptionsMenu;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/OptionsMenu.jsx\n// module id = 484\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/OptionsMenu.jsx?");
 
 /***/ }),
 /* 485 */
 /*!******************************************!*\
-  !*** ./webpage/song/PlaybackOptions.jsx ***!
+  !*** ./webpage/song/LanguageOptions.jsx ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar PlaybackOptions = function (_React$Component) {\n\t_inherits(PlaybackOptions, _React$Component);\n\n\tfunction PlaybackOptions(props) {\n\t\t_classCallCheck(this, PlaybackOptions);\n\n\t\tvar _this = _possibleConstructorReturn(this, (PlaybackOptions.__proto__ || Object.getPrototypeOf(PlaybackOptions)).call(this, props));\n\n\t\t_this.state = {\n\t\t\twantScrolling: true,\n\t\t\tshowLineNums: true,\n\t\t\tshowVisualizer: true\n\t\t};\n\t\t_this.toggleScrolling = _this.toggleScrolling.bind(_this);\n\t\t_this.toggleLineNums = _this.toggleLineNums.bind(_this);\n\t\t_this.toggleVisualizer = _this.toggleVisualizer.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(PlaybackOptions, [{\n\t\tkey: \"toggleScrolling\",\n\t\tvalue: function toggleScrolling() {\n\t\t\tvar _this2 = this;\n\n\t\t\tthis.setState({\n\t\t\t\twantScrolling: !this.state.wantScrolling\n\t\t\t}, function () {\n\t\t\t\treturn _this2.props.toggleScrolling();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: \"toggleLineNums\",\n\t\tvalue: function toggleLineNums() {\n\t\t\tvar _this3 = this;\n\n\t\t\tthis.setState({\n\t\t\t\tshowLineNums: !this.state.showLineNums\n\t\t\t}, function () {\n\t\t\t\treturn _this3.props.toggleLineNums();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: \"toggleVisualizer\",\n\t\tvalue: function toggleVisualizer() {\n\t\t\tvar _this4 = this;\n\n\t\t\tthis.setState({\n\t\t\t\tshowVisualizer: !this.state.showVisualizer\n\t\t\t}, function () {\n\t\t\t\treturn _this4.props.showVisualizer();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: \"modifyOptions\",\n\t\tvalue: function modifyOptions(e) {\n\t\t\te.preventDefault();\n\t\t}\n\t}, {\n\t\tkey: \"render\",\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t\"div\",\n\t\t\t\t{ className: \"playbackOptions col-xs-6\" },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t\"form\",\n\t\t\t\t\t{ onSubmit: this.modifyOptions },\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\"Playback Options:\"\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"div\",\n\t\t\t\t\t\t{ className: \"checkbox\" },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\"label\",\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\"input\", { checked: this.state.wantScrolling, onChange: this.toggleScrolling, id: \"wantScrolling\", type: \"checkbox\" }),\n\t\t\t\t\t\t\t\t\"Scrolling\"\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t)\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"div\",\n\t\t\t\t\t\t{ className: \"checkbox\" },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\"label\",\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\"input\", { checked: this.state.showLineNums, onChange: this.toggleLineNums, id: \"lineNumbers\", type: \"checkbox\" }),\n\t\t\t\t\t\t\t\t\"Line Numbers\"\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t)\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"div\",\n\t\t\t\t\t\t{ className: \"checkbox\" },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\"label\",\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\"input\", { checked: this.state.showVisualizer, onChange: this.toggleVisualizer, id: \"visualizer\", type: \"checkbox\", disabled: \"true\" }),\n\t\t\t\t\t\t\t\t\"Visualizer\"\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn PlaybackOptions;\n}(React.Component);\n\nexports.default = PlaybackOptions;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/PlaybackOptions.jsx\n// module id = 485\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/PlaybackOptions.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar LanguageOptions = function (_React$Component) {\n  _inherits(LanguageOptions, _React$Component);\n\n  function LanguageOptions(props) {\n    _classCallCheck(this, LanguageOptions);\n\n    var _this = _possibleConstructorReturn(this, (LanguageOptions.__proto__ || Object.getPrototypeOf(LanguageOptions)).call(this, props));\n\n    _this.state = {\n      pinyinChecked: true,\n      cnChecked: true,\n      enChecked: true\n    };\n    return _this;\n  }\n\n  _createClass(LanguageOptions, [{\n    key: \"modifyOptions\",\n    value: function modifyOptions(e) {\n      e.preventDefault();\n    }\n  }, {\n    key: \"changePinyin\",\n    value: function changePinyin() {\n      var _this2 = this;\n\n      this.setState({\n        pinyinChecked: !this.state.pinyinChecked\n      }, function () {\n        _this2.props.togglePinyin(_this2.state.pinyinChecked);\n      });\n    }\n  }, {\n    key: \"changeCn\",\n    value: function changeCn() {\n      var _this3 = this;\n\n      this.setState({\n        cnChecked: !this.state.cnChecked\n      }, function () {\n        _this3.props.toggleCn(_this3.state.cnChecked);\n      });\n    }\n  }, {\n    key: \"changeEng\",\n    value: function changeEng() {\n      var _this4 = this;\n\n      this.setState({\n        enChecked: !this.state.enChecked\n      }, function () {\n        _this4.props.toggleEng(_this4.state.enChecked);\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\n        \"div\",\n        { className: \"displayLanguages col-xs-6\" },\n        React.createElement(\n          \"form\",\n          { onSubmit: this.modifyOptions },\n          React.createElement(\n            \"span\",\n            null,\n            \"Display Languages:\"\n          ),\n          React.createElement(\n            \"div\",\n            { className: \"checkbox\" },\n            React.createElement(\n              \"span\",\n              null,\n              React.createElement(\n                \"label\",\n                null,\n                React.createElement(\"input\", { id: \"pinyinCB\", type: \"checkbox\",\n                  checked: this.state.pinyinChecked,\n                  onChange: this.changePinyin.bind(this) }),\n                \"PinYin\"\n              )\n            )\n          ),\n          React.createElement(\"span\", null),\n          React.createElement(\n            \"div\",\n            { className: \"checkbox\" },\n            React.createElement(\n              \"span\",\n              null,\n              React.createElement(\n                \"label\",\n                null,\n                React.createElement(\"input\", { id: \"cnCB\", type: \"checkbox\",\n                  checked: this.state.cnChecked,\n                  onChange: this.changeCn.bind(this) }),\n                \"Chinese Char\"\n              )\n            )\n          ),\n          React.createElement(\"span\", null),\n          React.createElement(\n            \"div\",\n            { className: \"checkbox\" },\n            React.createElement(\n              \"span\",\n              null,\n              React.createElement(\n                \"label\",\n                null,\n                React.createElement(\"input\", { id: \"engCB\", type: \"checkbox\",\n                  checked: this.state.enChecked,\n                  onChange: this.changeEng.bind(this) }),\n                \"English\"\n              )\n            )\n          )\n        )\n      );\n    }\n  }]);\n\n  return LanguageOptions;\n}(React.Component);\n\nexports.default = LanguageOptions;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/LanguageOptions.jsx\n// module id = 485\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/LanguageOptions.jsx?");
 
 /***/ }),
 /* 486 */
-/*!************************************!*\
-  !*** ./webpage/song/SongTitle.jsx ***!
-  \************************************/
-/*! no static exports found */
+/*!******************************************!*\
+  !*** ./webpage/song/PlaybackOptions.jsx ***!
+  \******************************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar SongTitle = function (_React$Component) {\n  _inherits(SongTitle, _React$Component);\n\n  function SongTitle() {\n    _classCallCheck(this, SongTitle);\n\n    return _possibleConstructorReturn(this, (SongTitle.__proto__ || Object.getPrototypeOf(SongTitle)).apply(this, arguments));\n  }\n\n  _createClass(SongTitle, [{\n    key: \"render\",\n    value: function render() {\n      var title = '';\n      if (this.props.title && this.props.artist) title = this.props.title + \" - \" + this.props.artist;\n      return React.createElement(\n        \"div\",\n        { className: \"row\" },\n        React.createElement(\n          \"h1\",\n          { className: \" col-xs-12 page-header\", id: \"titleLine\" },\n          title\n        ),\n        React.createElement(\"br\", null)\n      );\n    }\n  }]);\n\n  return SongTitle;\n}(React.Component);\n\nexports.default = SongTitle;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/SongTitle.jsx\n// module id = 486\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/SongTitle.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar PlaybackOptions = function (_React$Component) {\n\t_inherits(PlaybackOptions, _React$Component);\n\n\tfunction PlaybackOptions(props) {\n\t\t_classCallCheck(this, PlaybackOptions);\n\n\t\tvar _this = _possibleConstructorReturn(this, (PlaybackOptions.__proto__ || Object.getPrototypeOf(PlaybackOptions)).call(this, props));\n\n\t\t_this.state = {\n\t\t\twantScrolling: true,\n\t\t\tshowLineNums: true,\n\t\t\tshowVisualizer: true\n\t\t};\n\t\t_this.toggleScrolling = _this.toggleScrolling.bind(_this);\n\t\t_this.toggleLineNums = _this.toggleLineNums.bind(_this);\n\t\t_this.toggleVisualizer = _this.toggleVisualizer.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(PlaybackOptions, [{\n\t\tkey: \"toggleScrolling\",\n\t\tvalue: function toggleScrolling() {\n\t\t\tvar _this2 = this;\n\n\t\t\tthis.setState({\n\t\t\t\twantScrolling: !this.state.wantScrolling\n\t\t\t}, function () {\n\t\t\t\treturn _this2.props.toggleScrolling();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: \"toggleLineNums\",\n\t\tvalue: function toggleLineNums() {\n\t\t\tvar _this3 = this;\n\n\t\t\tthis.setState({\n\t\t\t\tshowLineNums: !this.state.showLineNums\n\t\t\t}, function () {\n\t\t\t\treturn _this3.props.toggleLineNums();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: \"toggleVisualizer\",\n\t\tvalue: function toggleVisualizer() {\n\t\t\tvar _this4 = this;\n\n\t\t\tthis.setState({\n\t\t\t\tshowVisualizer: !this.state.showVisualizer\n\t\t\t}, function () {\n\t\t\t\treturn _this4.props.showVisualizer();\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: \"modifyOptions\",\n\t\tvalue: function modifyOptions(e) {\n\t\t\te.preventDefault();\n\t\t}\n\t}, {\n\t\tkey: \"render\",\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t\"div\",\n\t\t\t\t{ className: \"playbackOptions col-xs-6\" },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t\"form\",\n\t\t\t\t\t{ onSubmit: this.modifyOptions },\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\"Playback Options:\"\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"div\",\n\t\t\t\t\t\t{ className: \"checkbox\" },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\"label\",\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\"input\", { checked: this.state.wantScrolling, onChange: this.toggleScrolling, id: \"wantScrolling\", type: \"checkbox\" }),\n\t\t\t\t\t\t\t\t\"Scrolling\"\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t)\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"div\",\n\t\t\t\t\t\t{ className: \"checkbox\" },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\"label\",\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\"input\", { checked: this.state.showLineNums, onChange: this.toggleLineNums, id: \"lineNumbers\", type: \"checkbox\" }),\n\t\t\t\t\t\t\t\t\"Line Numbers\"\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t)\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\"div\",\n\t\t\t\t\t\t{ className: \"checkbox\" },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\"span\",\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\"label\",\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\"input\", { checked: this.state.showVisualizer, onChange: this.toggleVisualizer, id: \"visualizer\", type: \"checkbox\", disabled: \"true\" }),\n\t\t\t\t\t\t\t\t\"Visualizer\"\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn PlaybackOptions;\n}(React.Component);\n\nexports.default = PlaybackOptions;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/PlaybackOptions.jsx\n// module id = 486\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/PlaybackOptions.jsx?");
 
 /***/ }),
 /* 487 */
-/*!*************************************!*\
-  !*** ./webpage/song/LyricsBody.jsx ***!
-  \*************************************/
-/*! no static exports found */
+/*!************************************!*\
+  !*** ./webpage/song/SongTitle.jsx ***!
+  \************************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _Constants = __webpack_require__(/*! ./Constants.jsx */ 473);\n\nvar _Constants2 = _interopRequireDefault(_Constants);\n\nvar _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 331);\n\nvar _reactScroll = __webpack_require__(/*! react-scroll */ 490);\n\nvar _reactScroll2 = _interopRequireDefault(_reactScroll);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n// Imports all Mixins\nvar Element = _reactScroll2.default.Element;\n\nvar LyricsBody = function (_React$Component) {\n\t_inherits(LyricsBody, _React$Component);\n\n\tfunction LyricsBody(props) {\n\t\t_classCallCheck(this, LyricsBody);\n\n\t\tvar _this = _possibleConstructorReturn(this, (LyricsBody.__proto__ || Object.getPrototypeOf(LyricsBody)).call(this, props));\n\n\t\t_this.state = {\n\t\t\tlines: [],\n\t\t\tlineStyles: []\n\t\t};\n\n\t\t_this.clearLyrics = _this.clearLyrics.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(LyricsBody, [{\n\t\tkey: 'anchorClick',\n\t\tvalue: function anchorClick(lineNum) {\n\t\t\tvar newTime = _Constants2.default.timestampToSeconds(this.props.lyrics.times[lineNum - 1]); //minus one because lyrics start at 0 while currentLine starts at 1\n\n\t\t\tvar style = this.state.lineStyles;\n\t\t\t//wipe color off current ones:\n\t\t\t//-2 because if you are on line 4, and line 5 is a new line, currentline immediately jumps to line 4.\n\t\t\tstyle[this.props.currentLine - 2] = { \"color\": _Constants2.default.ConstsClass.foregroundColor };\n\t\t\tstyle[this.props.currentLine - 1] = { \"color\": _Constants2.default.ConstsClass.foregroundColor };\n\t\t\tstyle[this.props.currentLine] = { \"color\": _Constants2.default.ConstsClass.foregroundColor, \"fontWeight\": \"normal\" };\n\t\t\tstyle[this.props.currentLine + 1] = { \"color\": _Constants2.default.ConstsClass.foregroundColor };\n\n\t\t\tstyle[lineNum - 1] = { \"color\": _Constants2.default.ConstsClass.highlightColor, \"fontWeight\": \"bolder\" };\n\n\t\t\tthis.props.skipToTime(lineNum, newTime);\n\n\t\t\tthis.setState({ lineStyles: style });\n\t\t}\n\t}, {\n\t\tkey: 'clearLyrics',\n\t\tvalue: function clearLyrics() {\n\t\t\tthis.setState({\n\t\t\t\tlines: [],\n\t\t\t\tlineStyles: []\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'incrementLineColor',\n\t\tvalue: function incrementLineColor(lineNum) {\n\t\t\tvar style = this.state.lineStyles;\n\t\t\t//wipe color off current ones:\n\t\t\tstyle[this.props.currentLine - 2] = { \"color\": _Constants2.default.ConstsClass.foregroundColor, \"fontWeight\": \"normal\" };\n\t\t\tstyle[this.props.currentLine - 1] = { \"color\": _Constants2.default.ConstsClass.foregroundColor, \"fontWeight\": \"normal\" };\n\t\t\tstyle[this.props.currentLine] = { \"color\": _Constants2.default.ConstsClass.highlightColor, \"fontWeight\": \"bolder\"\n\n\t\t\t\t// style[this.props.currentLine + 1] = {\"color\" : Constants.ConstsClass.highlightColor, \"fontWeight\": \"bolder\"}\n\n\n\t\t\t};this.setState({ lineStyles: style });\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\tvar bodyStyle = {};\n\t\t\tvar lyricsBody = [];\n\n\t\t\tvar lineNumberStyling = {};\n\t\t\tthis.props.options.showLineNums ? lineNumberStyling = { visibility: \"visible\" } : lineNumberStyling = { visibility: \"hidden\" };\n\n\t\t\tvar pinyinStyling = {};\n\t\t\tthis.props.options.showPinyin ? pinyinStyling = { display: \"block\" } : pinyinStyling = { display: \"none\" };\n\n\t\t\tvar cnStyling = {};\n\t\t\tthis.props.options.showCn ? cnStyling = { display: \"block\" } : cnStyling = { display: \"none\" };\n\n\t\t\tvar engStyling = {};\n\t\t\tthis.props.options.showEng ? engStyling = { display: \"block\" } : engStyling = { display: \"none\" };\n\n\t\t\tif (this.props.lyrics.pinyin.length > 0) {\n\t\t\t\tbodyStyle = { \"visibility\": \"visible\" };\n\t\t\t\tvar lineNumber = 1;\n\t\t\t\tvar pinyin = this.props.lyrics.pinyin;\n\t\t\t\tvar cnChar = this.props.lyrics.cn;\n\t\t\t\tvar eng = this.props.lyrics.eng;\n\t\t\t\tvar times = this.props.lyrics.times;\n\n\t\t\t\tfor (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++) {\n\t\t\t\t\tvar lineStyle = this.state.lineStyles[i];\n\n\t\t\t\t\tvar minutes = Math.floor(times[i] / 100);\n\t\t\t\t\tvar seconds = times[i] % 100;\n\t\t\t\t\tif (seconds < 10) seconds = \"0\" + seconds;\n\t\t\t\t\t//used for tooltip\n\t\t\t\t\tvar time = minutes + \":\" + seconds;\n\n\t\t\t\t\t//each lyric line takes up a row\n\t\t\t\t\tvar tooltip = void 0;\n\t\t\t\t\tvar overlayTrigger = void 0;\n\t\t\t\t\tif ((lineNumber == 1 || time != \"0:00\") && time != \"NaN:NaN\") {\n\t\t\t\t\t\ttooltip = React.createElement(\n\t\t\t\t\t\t\t_reactBootstrap.Tooltip,\n\t\t\t\t\t\t\t{ id: time, className: 'tooltip' },\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'strong',\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\ttime\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t);\n\t\t\t\t\t\toverlayTrigger = React.createElement(\n\t\t\t\t\t\t\t_reactBootstrap.OverlayTrigger,\n\t\t\t\t\t\t\t{ placement: 'top', overlay: tooltip },\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'a',\n\t\t\t\t\t\t\t\t{ id: \"lineNumber\" + lineNumber, className: 'lineAnchor', onClick: this.anchorClick.bind(this, lineNumber) },\n\t\t\t\t\t\t\t\tlineNumber\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t);\n\t\t\t\t\t} else {\n\t\t\t\t\t\toverlayTrigger = React.createElement(\n\t\t\t\t\t\t\t'a',\n\t\t\t\t\t\t\t{ id: \"lineNumber\" + lineNumber, className: 'lineAnchor' },\n\t\t\t\t\t\t\tlineNumber\n\t\t\t\t\t\t);\n\t\t\t\t\t}\n\n\t\t\t\t\tvar rowDiv = React.createElement(\n\t\t\t\t\t\tElement,\n\t\t\t\t\t\t{ key: \"rowNumber\" + lineNumber, name: _Constants2.default.ConstsClass.genericLinePrefix + lineNumber },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t{ className: 'row', style: lineStyle },\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.lyricLine + \"  equal\", id: _Constants2.default.ConstsClass.lyricLine + lineNumber },\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t{ className: 'col-xs-1 lineIndex vertical-center', style: lineNumberStyling },\n\t\t\t\t\t\t\t\t\toverlayTrigger\n\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t{ className: 'col-xs-10 lyricWords' },\n\t\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.pinyinLyricsLineClass, style: pinyinStyling },\n\t\t\t\t\t\t\t\t\t\t\t' ',\n\t\t\t\t\t\t\t\t\t\t\tpinyin[i]\n\t\t\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.cnCharLyricsLineClass, style: cnStyling },\n\t\t\t\t\t\t\t\t\t\t\t' ',\n\t\t\t\t\t\t\t\t\t\t\tcnChar[i]\n\t\t\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.englishLyricsLineClass, style: engStyling },\n\t\t\t\t\t\t\t\t\t\t\t' ',\n\t\t\t\t\t\t\t\t\t\t\teng[i]\n\t\t\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\tReact.createElement('br', { className: 'clearfix' })\n\t\t\t\t\t\t)\n\t\t\t\t\t);\n\t\t\t\t\tlyricsBody.push(rowDiv);\n\t\t\t\t\tlineNumber++;\n\t\t\t\t}\n\t\t\t} else bodyStyle = { \"visibility\": \"hidden\" };\n\n\t\t\tthis.state.lines = lyricsBody.map(function (line) {\n\t\t\t\treturn line;\n\t\t\t});\n\n\t\t\treturn React.createElement(\n\t\t\t\t'div',\n\t\t\t\t{ className: 'row' },\n\t\t\t\tReact.createElement(\n\t\t\t\t\tElement,\n\t\t\t\t\t{ className: 'col-xs-12 element', id: 'lyricsBody', style: bodyStyle },\n\t\t\t\t\tthis.state.lines\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn LyricsBody;\n}(React.Component);\n\nexports.default = LyricsBody;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/LyricsBody.jsx\n// module id = 487\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/LyricsBody.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar SongTitle = function (_React$Component) {\n  _inherits(SongTitle, _React$Component);\n\n  function SongTitle() {\n    _classCallCheck(this, SongTitle);\n\n    return _possibleConstructorReturn(this, (SongTitle.__proto__ || Object.getPrototypeOf(SongTitle)).apply(this, arguments));\n  }\n\n  _createClass(SongTitle, [{\n    key: \"render\",\n    value: function render() {\n      var title = '';\n      if (this.props.title && this.props.artist) title = this.props.title + \" - \" + this.props.artist;\n      return React.createElement(\n        \"div\",\n        { className: \"row\" },\n        React.createElement(\n          \"h1\",\n          { className: \" col-xs-12 page-header\", id: \"titleLine\" },\n          title\n        ),\n        React.createElement(\"br\", null)\n      );\n    }\n  }]);\n\n  return SongTitle;\n}(React.Component);\n\nexports.default = SongTitle;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/SongTitle.jsx\n// module id = 487\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/SongTitle.jsx?");
 
 /***/ }),
 /* 488 */
+/*!*************************************!*\
+  !*** ./webpage/song/LyricsBody.jsx ***!
+  \*************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _Constants = __webpack_require__(/*! ./Constants.jsx */ 473);\n\nvar _Constants2 = _interopRequireDefault(_Constants);\n\nvar _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 331);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n// import Scroll from 'react-scroll'; // Imports all Mixins\n// var Element = Scroll.Element;\n\nvar LyricsBody = function (_React$Component) {\n\t_inherits(LyricsBody, _React$Component);\n\n\tfunction LyricsBody(props) {\n\t\t_classCallCheck(this, LyricsBody);\n\n\t\tvar _this = _possibleConstructorReturn(this, (LyricsBody.__proto__ || Object.getPrototypeOf(LyricsBody)).call(this, props));\n\n\t\t_this.state = {\n\t\t\tlines: [],\n\t\t\tlineStyles: []\n\t\t};\n\n\t\t_this.clearLyrics = _this.clearLyrics.bind(_this);\n\t\treturn _this;\n\t}\n\n\t_createClass(LyricsBody, [{\n\t\tkey: 'anchorClick',\n\t\tvalue: function anchorClick(lineNum) {\n\t\t\tvar newTime = _Constants2.default.timestampToSeconds(this.props.lyrics.times[lineNum - 1]); //minus one because lyrics start at 0 while currentLine starts at 1\n\n\t\t\tvar style = this.state.lineStyles;\n\t\t\t//wipe color off current ones:\n\t\t\t//-2 because if you are on line 4, and line 5 is a new line, currentline immediately jumps to line 4.\n\t\t\tstyle[this.props.currentLine - 2] = { \"color\": _Constants2.default.ConstsClass.foregroundColor };\n\t\t\tstyle[this.props.currentLine - 1] = { \"color\": _Constants2.default.ConstsClass.foregroundColor };\n\t\t\tstyle[this.props.currentLine] = { \"color\": _Constants2.default.ConstsClass.foregroundColor, \"fontWeight\": \"normal\" };\n\t\t\tstyle[this.props.currentLine + 1] = { \"color\": _Constants2.default.ConstsClass.foregroundColor };\n\n\t\t\tstyle[lineNum - 1] = { \"color\": _Constants2.default.ConstsClass.highlightColor, \"fontWeight\": \"bolder\" };\n\n\t\t\tthis.props.skipToTime(lineNum, newTime);\n\n\t\t\tthis.setState({ lineStyles: style });\n\t\t}\n\t}, {\n\t\tkey: 'clearLyrics',\n\t\tvalue: function clearLyrics() {\n\t\t\tthis.setState({\n\t\t\t\tlines: [],\n\t\t\t\tlineStyles: []\n\t\t\t});\n\t\t}\n\t}, {\n\t\tkey: 'incrementLineColor',\n\t\tvalue: function incrementLineColor(lineNum) {\n\t\t\tvar style = this.state.lineStyles;\n\t\t\t//wipe color off current ones:\n\t\t\tstyle[this.props.currentLine - 2] = { \"color\": _Constants2.default.ConstsClass.foregroundColor, \"fontWeight\": \"normal\" };\n\t\t\tstyle[this.props.currentLine - 1] = { \"color\": _Constants2.default.ConstsClass.foregroundColor, \"fontWeight\": \"normal\" };\n\t\t\tstyle[this.props.currentLine] = { \"color\": _Constants2.default.ConstsClass.highlightColor, \"fontWeight\": \"bolder\"\n\n\t\t\t\t// style[this.props.currentLine + 1] = {\"color\" : Constants.ConstsClass.highlightColor, \"fontWeight\": \"bolder\"}\n\n\n\t\t\t};this.setState({ lineStyles: style });\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\tvar bodyStyle = {};\n\t\t\tvar lyricsBody = [];\n\n\t\t\tvar lineNumberStyling = {};\n\t\t\tthis.props.options.showLineNums ? lineNumberStyling = { visibility: \"visible\" } : lineNumberStyling = { visibility: \"hidden\" };\n\n\t\t\tvar pinyinStyling = {};\n\t\t\tthis.props.options.showPinyin ? pinyinStyling = { display: \"block\" } : pinyinStyling = { display: \"none\" };\n\n\t\t\tvar cnStyling = {};\n\t\t\tthis.props.options.showCn ? cnStyling = { display: \"block\" } : cnStyling = { display: \"none\" };\n\n\t\t\tvar engStyling = {};\n\t\t\tthis.props.options.showEng ? engStyling = { display: \"block\" } : engStyling = { display: \"none\" };\n\n\t\t\tif (this.props.lyrics.pinyin.length > 0) {\n\t\t\t\tbodyStyle = { \"visibility\": \"visible\" };\n\t\t\t\tvar lineNumber = 1;\n\t\t\t\tvar pinyin = this.props.lyrics.pinyin;\n\t\t\t\tvar cnChar = this.props.lyrics.cn;\n\t\t\t\tvar eng = this.props.lyrics.eng;\n\t\t\t\tvar times = this.props.lyrics.times;\n\t\t\t\tfor (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++) {\n\t\t\t\t\tvar lineStyle = this.state.lineStyles[i];\n\n\t\t\t\t\tvar minutes = Math.floor(times[i] / 100);\n\t\t\t\t\tvar seconds = times[i] % 100;\n\t\t\t\t\tif (seconds < 10) seconds = \"0\" + seconds;\n\t\t\t\t\t//used for tooltip\n\t\t\t\t\tvar time = minutes + \":\" + seconds;\n\n\t\t\t\t\t//each lyric line takes up a row\n\t\t\t\t\tvar tooltip = void 0;\n\t\t\t\t\tvar overlayTrigger = void 0;\n\t\t\t\t\tif ((lineNumber == 1 || time != \"0:00\") && time != \"NaN:NaN\") {\n\t\t\t\t\t\ttooltip = React.createElement(\n\t\t\t\t\t\t\t_reactBootstrap.Tooltip,\n\t\t\t\t\t\t\t{ id: time, className: 'tooltip' },\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'strong',\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\ttime\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t);\n\t\t\t\t\t\toverlayTrigger = React.createElement(\n\t\t\t\t\t\t\t_reactBootstrap.OverlayTrigger,\n\t\t\t\t\t\t\t{ placement: 'top', overlay: tooltip },\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'a',\n\t\t\t\t\t\t\t\t{ id: \"lineNumber\" + lineNumber, className: 'lineAnchor', onClick: this.anchorClick.bind(this, lineNumber) },\n\t\t\t\t\t\t\t\tlineNumber\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t);\n\t\t\t\t\t} else {\n\t\t\t\t\t\toverlayTrigger = React.createElement(\n\t\t\t\t\t\t\t'a',\n\t\t\t\t\t\t\t{ id: \"lineNumber\" + lineNumber, className: 'lineAnchor' },\n\t\t\t\t\t\t\tlineNumber\n\t\t\t\t\t\t);\n\t\t\t\t\t}\n\t\t\t\t\tvar rowDiv = React.createElement(\n\t\t\t\t\t\t'div',\n\t\t\t\t\t\t{ key: \"rowNumber\" + lineNumber, className: 'row', style: lineStyle },\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.lyricLine + \"  equal\", id: _Constants2.default.ConstsClass.lyricLine + lineNumber },\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t{ className: 'col-xs-1 lineIndex vertical-center', style: lineNumberStyling },\n\t\t\t\t\t\t\t\toverlayTrigger\n\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t{ className: 'col-xs-10 lyricWords', id: _Constants2.default.ConstsClass.genericLinePrefix + lineNumber },\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.pinyinLyricsLineClass, style: pinyinStyling },\n\t\t\t\t\t\t\t\t\t' ',\n\t\t\t\t\t\t\t\t\tpinyin[i]\n\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.cnCharLyricsLineClass, style: cnStyling },\n\t\t\t\t\t\t\t\t\t' ',\n\t\t\t\t\t\t\t\t\tcnChar[i]\n\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t'div',\n\t\t\t\t\t\t\t\t\t{ className: _Constants2.default.ConstsClass.englishLyricsLineClass, style: engStyling },\n\t\t\t\t\t\t\t\t\t' ',\n\t\t\t\t\t\t\t\t\teng[i]\n\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t),\n\t\t\t\t\t\tReact.createElement('br', { className: 'clearfix' })\n\t\t\t\t\t);\n\t\t\t\t\tlyricsBody.push(rowDiv);\n\t\t\t\t\tlineNumber++;\n\t\t\t\t}\n\t\t\t} else bodyStyle = { \"visibility\": \"hidden\" };\n\n\t\t\tthis.state.lines = lyricsBody.map(function (line) {\n\t\t\t\treturn line;\n\t\t\t});\n\n\t\t\treturn React.createElement(\n\t\t\t\t'div',\n\t\t\t\t{ className: 'row' },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'gradient col-xs-12', id: 'lyricsBody', style: bodyStyle },\n\t\t\t\t\tthis.state.lines\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn LyricsBody;\n}(React.Component);\n\nexports.default = LyricsBody;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/LyricsBody.jsx\n// module id = 488\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/LyricsBody.jsx?");
+
+/***/ }),
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */
 /*!**************************************!*\
   !*** ./webpage/song/AudioPlayer.jsx ***!
   \**************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _Constants = __webpack_require__(/*! ./Constants.jsx */ 473);\n\nvar _Constants2 = _interopRequireDefault(_Constants);\n\nvar _AudioAnimations = __webpack_require__(/*! ./AudioAnimations.jsx */ 489);\n\nvar _AudioAnimations2 = _interopRequireDefault(_AudioAnimations);\n\nvar _reactScroll = __webpack_require__(/*! react-scroll */ 490);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n//Imports scroller mixin, can use as scroller.scrollTo()\n\nvar AudioPlayer = function (_React$Component) {\n\t_inherits(AudioPlayer, _React$Component);\n\n\tfunction AudioPlayer(props, context) {\n\t\t_classCallCheck(this, AudioPlayer);\n\n\t\tvar _this = _possibleConstructorReturn(this, (AudioPlayer.__proto__ || Object.getPrototypeOf(AudioPlayer)).call(this, props, context));\n\n\t\t_this.togglePlayer = _this.togglePlayer.bind(_this);\n\t\t_this.updateLine = _this.updateLine.bind(_this);\n\t\t_this.checkTimes = _this.checkTimes.bind(_this);\n\t\t_this.getAudioPlayer = _this.getAudioPlayer.bind(_this);\n\t\t_this.state = {\n\t\t\taction: \"none\"\n\t\t};\n\t\treturn _this;\n\t}\n\n\t_createClass(AudioPlayer, [{\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tthis.refs.audioHTML.ontimeupdate = this.checkTimes;\n\t\t}\n\t}, {\n\t\tkey: 'checkTimes',\n\t\tvalue: function checkTimes() {\n\t\t\tif (this.props.times.length != 0) {\n\t\t\t\tvar times = this.props.times;\n\t\t\t\tvar currentLine = this.props.currentLine;\n\t\t\t\tvar convertedToSeconds = _Constants2.default.timestampToSeconds(times[currentLine]);\n\t\t\t\tvar time = Math.round(this.refs.audioHTML.currentTime);\n\n\t\t\t\tif (convertedToSeconds == 0 && currentLine != 0) {\n\t\t\t\t\tthis.props.updateCurrentLine(currentLine + 1);\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tif (time >= convertedToSeconds) {\n\t\t\t\t\t// var t0 = performance.now();\n\t\t\t\t\tthis.updateLine(currentLine);\n\t\t\t\t\t// var t1 = performance.now();\n\n\t\t\t\t\t// console.log(\"scrolling val: \" + scrollingOffset);\n\t\t\t\t\tthis.props.updateCurrentLine(currentLine + 1);\n\t\t\t\t\tif (this.props.allowScrolling) {\n\t\t\t\t\t\t// console.log(\"offset: \" + this.props.scrollOffset*2)\n\t\t\t\t\t\t_reactScroll.scroller.scrollTo(_Constants2.default.ConstsClass.genericLinePrefix + (currentLine + 1), {\n\t\t\t\t\t\t\tduration: 500,\n\t\t\t\t\t\t\tdelay: 0,\n\t\t\t\t\t\t\tsmooth: true,\n\t\t\t\t\t\t\t// ,\n\t\t\t\t\t\t\t// containerId: document\n\t\t\t\t\t\t\t// ,\n\t\t\t\t\t\t\toffset: this.props.scrollOffset * 2\n\t\t\t\t\t\t});\n\t\t\t\t\t\t// $(window).scrollTo($(\"#\" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'increaseVolume',\n\t\tvalue: function increaseVolume() {\n\t\t\tvar that = this;\n\t\t\tthis.setState({ action: \"vol_up\" });\n\t\t\tsetTimeout(function () {\n\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t}.bind(this), 2000);\n\t\t\tif (this.refs.audioHTML.volume != 1.0) this.refs.audioHTML.volume = this.refs.audioHTML.volume + .1;\n\t\t}\n\t}, {\n\t\tkey: 'decreaseVolume',\n\t\tvalue: function decreaseVolume() {\n\t\t\tthis.setState({ action: \"vol_down\" });\n\t\t\tsetTimeout(function () {\n\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t}.bind(this), 2000);\n\t\t\tif (this.refs.audioHTML.volume > .1) this.refs.audioHTML.volume = this.refs.audioHTML.volume - .1;\n\t\t}\n\t}, {\n\t\tkey: 'resetAction',\n\t\tvalue: function resetAction() {}\n\t}, {\n\t\tkey: 'setCurrentTime',\n\t\tvalue: function setCurrentTime(newTime) {\n\t\t\tthis.refs.audioHTML.currentTime = newTime;\n\t\t\tthis.refs.audioHTML.play();\n\t\t}\n\t}, {\n\t\tkey: 'setSong',\n\t\tvalue: function setSong(songSource) {\n\t\t\tthis.refs.audioHTML.src = songSource;\n\t\t}\n\t}, {\n\t\tkey: 'getAudioPlayer',\n\t\tvalue: function getAudioPlayer() {\n\t\t\treturn this.refs.audioHTML;\n\t\t}\n\t}, {\n\t\tkey: 'togglePlayer',\n\t\tvalue: function togglePlayer() {\n\t\t\tif (this.refs.audioHTML.paused) {\n\t\t\t\tthis.setState({ action: \"play\" });\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t\t}.bind(this), 2000);\n\t\t\t\tthis.refs.audioHTML.play();\n\t\t\t} else {\n\t\t\t\tthis.setState({ action: \"pause\" });\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t\t}.bind(this), 2000);\n\t\t\t\tthis.refs.audioHTML.pause();\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'updateLine',\n\t\tvalue: function updateLine(currentLine) {\n\t\t\tthis.props.changeLineColor(currentLine);\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t'div',\n\t\t\t\tnull,\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'audioContainer' },\n\t\t\t\t\tReact.createElement('audio', { controls: 'true', ref: 'audioHTML', id: 'audioPlayer' })\n\t\t\t\t),\n\t\t\t\tReact.createElement(_AudioAnimations2.default, { action: this.state.action })\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn AudioPlayer;\n}(React.Component);\n\nexports.default = AudioPlayer;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/AudioPlayer.jsx\n// module id = 488\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/AudioPlayer.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _Constants = __webpack_require__(/*! ./Constants.jsx */ 473);\n\nvar _Constants2 = _interopRequireDefault(_Constants);\n\nvar _AudioAnimations = __webpack_require__(/*! ./AudioAnimations.jsx */ 497);\n\nvar _AudioAnimations2 = _interopRequireDefault(_AudioAnimations);\n\nvar _jquery = __webpack_require__(/*! jquery */ 477);\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _jquery3 = __webpack_require__(/*! jquery.scrollTo */ 499);\n\nvar _jquery4 = _interopRequireDefault(_jquery3);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n// import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()\n\n\nvar AudioPlayer = function (_React$Component) {\n\t_inherits(AudioPlayer, _React$Component);\n\n\tfunction AudioPlayer(props, context) {\n\t\t_classCallCheck(this, AudioPlayer);\n\n\t\tvar _this = _possibleConstructorReturn(this, (AudioPlayer.__proto__ || Object.getPrototypeOf(AudioPlayer)).call(this, props, context));\n\n\t\t_this.togglePlayer = _this.togglePlayer.bind(_this);\n\t\t_this.updateLine = _this.updateLine.bind(_this);\n\t\t_this.checkTimes = _this.checkTimes.bind(_this);\n\t\t_this.getAudioPlayer = _this.getAudioPlayer.bind(_this);\n\t\t_this.state = {\n\t\t\taction: \"none\"\n\t\t};\n\t\treturn _this;\n\t}\n\n\t_createClass(AudioPlayer, [{\n\t\tkey: 'componentDidMount',\n\t\tvalue: function componentDidMount() {\n\t\t\tthis.refs.audioHTML.ontimeupdate = this.checkTimes;\n\t\t}\n\t}, {\n\t\tkey: 'checkTimes',\n\t\tvalue: function checkTimes() {\n\t\t\tif (this.props.times.length != 0) {\n\t\t\t\tvar times = this.props.times;\n\t\t\t\tvar currentLine = this.props.currentLine;\n\t\t\t\tvar convertedToSeconds = _Constants2.default.timestampToSeconds(times[currentLine]);\n\t\t\t\tvar time = Math.round(this.refs.audioHTML.currentTime);\n\n\t\t\t\tif (convertedToSeconds == 0 && currentLine != 0) {\n\t\t\t\t\tthis.props.updateCurrentLine(currentLine + 1);\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tif (time >= convertedToSeconds) {\n\t\t\t\t\t// var t0 = performance.now();\n\t\t\t\t\tthis.updateLine(currentLine);\n\t\t\t\t\t// var t1 = performance.now();\n\n\t\t\t\t\t// console.log(\"scrolling val: \" + scrollingOffset);\n\t\t\t\t\tthis.props.updateCurrentLine(currentLine + 1);\n\t\t\t\t\tif (this.props.allowScrolling) {\n\t\t\t\t\t\t(0, _jquery2.default)(window).scrollTo((0, _jquery2.default)(\"#\" + _Constants2.default.ConstsClass.genericLinePrefix + currentLine), { axis: 'y', interrupt: true, duration: 500, offset: { top: this.props.scrollOffset } });\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'increaseVolume',\n\t\tvalue: function increaseVolume() {\n\t\t\tvar that = this;\n\t\t\tthis.setState({ action: \"vol_up\" });\n\t\t\tsetTimeout(function () {\n\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t}.bind(this), 2000);\n\t\t\tif (this.refs.audioHTML.volume != 1.0) this.refs.audioHTML.volume = this.refs.audioHTML.volume + .1;\n\t\t}\n\t}, {\n\t\tkey: 'decreaseVolume',\n\t\tvalue: function decreaseVolume() {\n\t\t\tthis.setState({ action: \"vol_down\" });\n\t\t\tsetTimeout(function () {\n\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t}.bind(this), 2000);\n\t\t\tif (this.refs.audioHTML.volume > .1) this.refs.audioHTML.volume = this.refs.audioHTML.volume - .1;\n\t\t}\n\t}, {\n\t\tkey: 'resetAction',\n\t\tvalue: function resetAction() {}\n\t}, {\n\t\tkey: 'setCurrentTime',\n\t\tvalue: function setCurrentTime(newTime) {\n\t\t\tthis.refs.audioHTML.currentTime = newTime;\n\t\t\tthis.refs.audioHTML.play();\n\t\t}\n\t}, {\n\t\tkey: 'setSong',\n\t\tvalue: function setSong(songSource) {\n\t\t\tthis.refs.audioHTML.src = songSource;\n\t\t}\n\t}, {\n\t\tkey: 'getAudioPlayer',\n\t\tvalue: function getAudioPlayer() {\n\t\t\treturn this.refs.audioHTML;\n\t\t}\n\t}, {\n\t\tkey: 'togglePlayer',\n\t\tvalue: function togglePlayer() {\n\t\t\tif (this.refs.audioHTML.paused) {\n\t\t\t\tthis.setState({ action: \"play\" });\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t\t}.bind(this), 2000);\n\t\t\t\tthis.refs.audioHTML.play();\n\t\t\t} else {\n\t\t\t\tthis.setState({ action: \"pause\" });\n\t\t\t\tsetTimeout(function () {\n\t\t\t\t\tthis.setState({ \"action\": \"none\" });\n\t\t\t\t}.bind(this), 2000);\n\t\t\t\tthis.refs.audioHTML.pause();\n\t\t\t}\n\t\t}\n\t}, {\n\t\tkey: 'updateLine',\n\t\tvalue: function updateLine(currentLine) {\n\t\t\tthis.props.changeLineColor(currentLine);\n\t\t}\n\t}, {\n\t\tkey: 'render',\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t'div',\n\t\t\t\tnull,\n\t\t\t\tReact.createElement(\n\t\t\t\t\t'div',\n\t\t\t\t\t{ className: 'audioContainer' },\n\t\t\t\t\tReact.createElement('audio', { controls: 'true', ref: 'audioHTML', id: 'audioPlayer' })\n\t\t\t\t),\n\t\t\t\tReact.createElement(_AudioAnimations2.default, { action: this.state.action })\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn AudioPlayer;\n}(React.Component);\n\nexports.default = AudioPlayer;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/AudioPlayer.jsx\n// module id = 496\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/AudioPlayer.jsx?");
 
 /***/ }),
-/* 489 */
+/* 497 */
 /*!******************************************!*\
   !*** ./webpage/song/AudioAnimations.jsx ***!
   \******************************************/
-/*! no static exports found */
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar AudioAnimations = function (_React$Component) {\n  _inherits(AudioAnimations, _React$Component);\n\n  function AudioAnimations(props, context) {\n    _classCallCheck(this, AudioAnimations);\n\n    return _possibleConstructorReturn(this, (AudioAnimations.__proto__ || Object.getPrototypeOf(AudioAnimations)).call(this, props, context));\n  }\n\n  _createClass(AudioAnimations, [{\n    key: \"render\",\n    value: function render() {\n      var popup = void 0;\n      if (this.props.action == \"none\") {\n        popup = null;\n      } else {\n        popup = React.createElement(\n          \"div\",\n          { id: this.props.action, className: \"centered\" },\n          React.createElement(\"img\", { className: \"transition\", height: \"300px\", width: \"300px\", src: this.props.action + \".png\" })\n        );\n      }\n      return popup;\n    }\n  }]);\n\n  return AudioAnimations;\n}(React.Component);\n\nexports.default = AudioAnimations;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/AudioAnimations.jsx\n// module id = 489\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/AudioAnimations.jsx?");
+eval("/* WEBPACK VAR INJECTION */(function(React) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar AudioAnimations = function (_React$Component) {\n  _inherits(AudioAnimations, _React$Component);\n\n  function AudioAnimations(props, context) {\n    _classCallCheck(this, AudioAnimations);\n\n    return _possibleConstructorReturn(this, (AudioAnimations.__proto__ || Object.getPrototypeOf(AudioAnimations)).call(this, props, context));\n  }\n\n  _createClass(AudioAnimations, [{\n    key: \"render\",\n    value: function render() {\n      var popup = void 0;\n      if (this.props.action == \"none\") {\n        popup = null;\n      } else {\n        popup = React.createElement(\n          \"div\",\n          { id: this.props.action, className: \"centered\" },\n          React.createElement(\"img\", { className: \"transition\", height: \"300px\", width: \"300px\", src: this.props.action + \".png\" })\n        );\n      }\n      return popup;\n    }\n  }]);\n\n  return AudioAnimations;\n}(React.Component);\n\nexports.default = AudioAnimations;\n/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! react */ 1)))\n\n//////////////////\n// WEBPACK FOOTER\n// ./webpage/song/AudioAnimations.jsx\n// module id = 497\n// module chunks = 0\n\n//# sourceURL=webpack:///./webpage/song/AudioAnimations.jsx?");
 
 /***/ }),
-/* 490 */
-/*!****************************************************!*\
-  !*** ./node_modules/react-scroll/modules/index.js ***!
-  \****************************************************/
-/*! no static exports found */
+/* 498 */
+/*!***********************************!*\
+  !*** (webpack)/buildin/module.js ***!
+  \***********************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nexports.Link = __webpack_require__(/*! ./components/Link.js */ 491);\nexports.Button = __webpack_require__(/*! ./components/Button.js */ 495);\nexports.Element = __webpack_require__(/*! ./components/Element.js */ 496);\nexports.Helpers = __webpack_require__(/*! ./mixins/Helpers.js */ 332);\nexports.scroller = __webpack_require__(/*! ./mixins/scroller.js */ 475);\nexports.Events = __webpack_require__(/*! ./mixins/scroll-events.js */ 472);\nexports.scrollSpy = __webpack_require__(/*! ./mixins/scroll-spy.js */ 474);\nexports.animateScroll = __webpack_require__(/*! ./mixins/animate-scroll.js */ 476);\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/index.js\n// module id = 490\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/index.js?");
+eval("\n\nmodule.exports = function (module) {\n\tif (!module.webpackPolyfill) {\n\t\tmodule.deprecate = function () {};\n\t\tmodule.paths = [];\n\t\t// module.parent = undefined by default\n\t\tif (!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function get() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function get() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n\n//////////////////\n// WEBPACK FOOTER\n// (webpack)/buildin/module.js\n// module id = 498\n// module chunks = 0\n\n//# sourceURL=webpack:///(webpack)/buildin/module.js?");
 
 /***/ }),
-/* 491 */
-/*!**************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/components/Link.js ***!
-  \**************************************************************/
-/*! no static exports found */
+/* 499 */
+/*!*********************************************************!*\
+  !*** ./node_modules/jquery.scrollTo/jquery.scrollTo.js ***!
+  \*********************************************************/
+/*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar _createClass = function () {\n  function defineProperties(target, props) {\n    for (var i = 0; i < props.length; i++) {\n      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if (\"value\" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);\n    }\n  }return function (Constructor, protoProps, staticProps) {\n    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;\n  };\n}();\n\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\nfunction _possibleConstructorReturn(self, call) {\n  if (!self) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }return call && ((typeof call === \"undefined\" ? \"undefined\" : _typeof(call)) === \"object\" || typeof call === \"function\") ? call : self;\n}\n\nfunction _inherits(subClass, superClass) {\n  if (typeof superClass !== \"function\" && superClass !== null) {\n    throw new TypeError(\"Super expression must either be null or a function, not \" + (typeof superClass === \"undefined\" ? \"undefined\" : _typeof(superClass)));\n  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;\n}\n\nvar React = __webpack_require__(/*! react */ 1);\nvar Helpers = __webpack_require__(/*! ../mixins/Helpers */ 332);\n\nvar Link = function (_React$Component) {\n  _inherits(Link, _React$Component);\n\n  function Link() {\n    _classCallCheck(this, Link);\n\n    return _possibleConstructorReturn(this, (Link.__proto__ || Object.getPrototypeOf(Link)).apply(this, arguments));\n  }\n\n  _createClass(Link, [{\n    key: 'render',\n    value: function render() {\n      return React.createElement('a', this.props, this.props.children);\n    }\n  }]);\n\n  return Link;\n}(React.Component);\n\n;\n\nmodule.exports = Helpers.Scroll(Link);\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/components/Link.js\n// module id = 491\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/components/Link.js?");
-
-/***/ }),
-/* 492 */
-/*!************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/smooth.js ***!
-  \************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nmodule.exports = {\n  /*\r\n   * https://github.com/oblador/angular-scroll (duScrollDefaultEasing)\r\n   */\n  defaultEasing: function defaultEasing(x) {\n    if (x < 0.5) {\n      return Math.pow(x * 2, 2) / 2;\n    }\n    return 1 - Math.pow((1 - x) * 2, 2) / 2;\n  },\n  /*\r\n   * https://gist.github.com/gre/1650294\r\n   */\n  // no easing, no acceleration\n  linear: function linear(x) {\n    return x;\n  },\n  // accelerating from zero velocity\n  easeInQuad: function easeInQuad(x) {\n    return x * x;\n  },\n  // decelerating to zero velocity\n  easeOutQuad: function easeOutQuad(x) {\n    return x * (2 - x);\n  },\n  // acceleration until halfway, then deceleration\n  easeInOutQuad: function easeInOutQuad(x) {\n    return x < .5 ? 2 * x * x : -1 + (4 - 2 * x) * x;\n  },\n  // accelerating from zero velocity \n  easeInCubic: function easeInCubic(x) {\n    return x * x * x;\n  },\n  // decelerating to zero velocity π\n  easeOutCubic: function easeOutCubic(x) {\n    return --x * x * x + 1;\n  },\n  // acceleration until halfway, then deceleration \n  easeInOutCubic: function easeInOutCubic(x) {\n    return x < .5 ? 4 * x * x * x : (x - 1) * (2 * x - 2) * (2 * x - 2) + 1;\n  },\n  // accelerating from zero velocity \n  easeInQuart: function easeInQuart(x) {\n    return x * x * x * x;\n  },\n  // decelerating to zero velocity \n  easeOutQuart: function easeOutQuart(x) {\n    return 1 - --x * x * x * x;\n  },\n  // acceleration until halfway, then deceleration\n  easeInOutQuart: function easeInOutQuart(x) {\n    return x < .5 ? 8 * x * x * x * x : 1 - 8 * --x * x * x * x;\n  },\n  // accelerating from zero velocity\n  easeInQuint: function easeInQuint(x) {\n    return x * x * x * x * x;\n  },\n  // decelerating to zero velocity\n  easeOutQuint: function easeOutQuint(x) {\n    return 1 + --x * x * x * x * x;\n  },\n  // acceleration until halfway, then deceleration \n  easeInOutQuint: function easeInOutQuint(x) {\n    return x < .5 ? 16 * x * x * x * x * x : 1 + 16 * --x * x * x * x * x;\n  }\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/smooth.js\n// module id = 492\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/smooth.js?");
-
-/***/ }),
-/* 493 */
-/*!*******************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/cancel-events.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _require = __webpack_require__(/*! ./passive-event-listeners */ 471),\n    addPassiveEventListener = _require.addPassiveEventListener,\n    removePassiveEventListener = _require.removePassiveEventListener;\n\nvar events = ['mousedown', 'mousewheel', 'touchmove', 'keydown'];\n\nmodule.exports = {\n  subscribe: function subscribe(cancelEvent) {\n    return typeof document !== 'undefined' && events.forEach(function (event) {\n      return addPassiveEventListener(document, event, cancelEvent);\n    });\n  }\n};\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/cancel-events.js\n// module id = 493\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/cancel-events.js?");
-
-/***/ }),
-/* 494 */
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/mixins/scroll-hash.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar addPassiveEventListener = __webpack_require__(/*! ./passive-event-listeners */ 471);\nvar utils = __webpack_require__(/*! ./utils */ 333);\n\nvar scrollHash = {\n  mountFlag: false,\n  initialized: false,\n  scroller: null,\n\n  mount: function mount(scroller) {\n    this.scroller = scroller;\n\n    this.handleHashChange = this.handleHashChange.bind(this);\n    window.addEventListener('hashchange', this.handleHashChange);\n\n    this.initStateFromHash();\n    this.mountFlag = true;\n  },\n  isMounted: function isMounted() {\n    return this.mountFlag;\n  },\n  isInitialized: function isInitialized() {\n    return this.initialized;\n  },\n  initStateFromHash: function initStateFromHash() {\n    var _this = this;\n\n    var hash = this.getHash();\n    if (hash) {\n      // time to all component Elements can registered in componentDidMount phase\n      window.setTimeout(function () {\n        _this.scrollTo(hash, true);\n        _this.initialized = true;\n      }, 10);\n    } else {\n      this.initialized = true;\n    }\n  },\n  scrollTo: function scrollTo(to, isInit) {\n    var scroller = this.scroller;\n    var element = scroller.get(to);\n    if (element && (isInit || to !== scroller.getActiveLink())) {\n      var container = utils.getScrollParent(element);\n      // scroller.setActiveLink(to);\n      scroller.scrollTo(to, { container: container });\n    }\n  },\n  getHash: function getHash() {\n    return utils.getHash();\n  },\n  changeHash: function changeHash(to) {\n    if (this.isInitialized()) {\n      utils.pushHash(to);\n    }\n  },\n  handleHashChange: function handleHashChange() {\n    this.scrollTo(this.getHash());\n  },\n\n  // todo - think about when unmount? (it can work without Links, while any element with id exists)\n  unmount: function unmount() {\n    this.scroller = null;\n    window.removeEventListener('hashchange', this.handleHashChange);\n  }\n};\n\nmodule.exports = scrollHash;\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/mixins/scroll-hash.js\n// module id = 494\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/mixins/scroll-hash.js?");
-
-/***/ }),
-/* 495 */
-/*!****************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/components/Button.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar _createClass = function () {\n  function defineProperties(target, props) {\n    for (var i = 0; i < props.length; i++) {\n      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if (\"value\" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);\n    }\n  }return function (Constructor, protoProps, staticProps) {\n    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;\n  };\n}();\n\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\nfunction _possibleConstructorReturn(self, call) {\n  if (!self) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }return call && ((typeof call === \"undefined\" ? \"undefined\" : _typeof(call)) === \"object\" || typeof call === \"function\") ? call : self;\n}\n\nfunction _inherits(subClass, superClass) {\n  if (typeof superClass !== \"function\" && superClass !== null) {\n    throw new TypeError(\"Super expression must either be null or a function, not \" + (typeof superClass === \"undefined\" ? \"undefined\" : _typeof(superClass)));\n  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;\n}\n\nvar React = __webpack_require__(/*! react */ 1);\nvar Helpers = __webpack_require__(/*! ../mixins/Helpers */ 332);\n\nvar Button = function (_React$Component) {\n  _inherits(Button, _React$Component);\n\n  function Button() {\n    _classCallCheck(this, Button);\n\n    return _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).apply(this, arguments));\n  }\n\n  _createClass(Button, [{\n    key: 'render',\n    value: function render() {\n      return React.createElement('input', this.props, this.props.children);\n    }\n  }]);\n\n  return Button;\n}(React.Component);\n\n;\n\nmodule.exports = Helpers.Scroll(Button);\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/components/Button.js\n// module id = 495\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/components/Button.js?");
-
-/***/ }),
-/* 496 */
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-scroll/modules/components/Element.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar _extends = Object.assign || function (target) {\n  for (var i = 1; i < arguments.length; i++) {\n    var source = arguments[i];for (var key in source) {\n      if (Object.prototype.hasOwnProperty.call(source, key)) {\n        target[key] = source[key];\n      }\n    }\n  }return target;\n};\n\nvar _createClass = function () {\n  function defineProperties(target, props) {\n    for (var i = 0; i < props.length; i++) {\n      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if (\"value\" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);\n    }\n  }return function (Constructor, protoProps, staticProps) {\n    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;\n  };\n}();\n\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\nfunction _possibleConstructorReturn(self, call) {\n  if (!self) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }return call && ((typeof call === \"undefined\" ? \"undefined\" : _typeof(call)) === \"object\" || typeof call === \"function\") ? call : self;\n}\n\nfunction _inherits(subClass, superClass) {\n  if (typeof superClass !== \"function\" && superClass !== null) {\n    throw new TypeError(\"Super expression must either be null or a function, not \" + (typeof superClass === \"undefined\" ? \"undefined\" : _typeof(superClass)));\n  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;\n}\n\nvar React = __webpack_require__(/*! react */ 1);\nvar Helpers = __webpack_require__(/*! ../mixins/Helpers */ 332);\n\nvar Element = function (_React$Component) {\n  _inherits(Element, _React$Component);\n\n  function Element() {\n    _classCallCheck(this, Element);\n\n    return _possibleConstructorReturn(this, (Element.__proto__ || Object.getPrototypeOf(Element)).apply(this, arguments));\n  }\n\n  _createClass(Element, [{\n    key: 'render',\n    value: function render() {\n      var _this2 = this;\n\n      // Remove `parentBindings` from props\n      var newProps = _extends({}, this.props);\n      if (newProps.parentBindings) {\n        delete newProps.parentBindings;\n      }\n\n      return React.createElement('div', _extends({}, newProps, { ref: function ref(el) {\n          _this2.props.parentBindings.domNode = el;\n        } }), this.props.children);\n    }\n  }]);\n\n  return Element;\n}(React.Component);\n\n;\n\nmodule.exports = Helpers.Element(Element);\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/react-scroll/modules/components/Element.js\n// module id = 496\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/react-scroll/modules/components/Element.js?");
+eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\n/*!\n * jQuery.scrollTo\n * Copyright (c) 2007-2015 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com\n * Licensed under MIT\n * http://flesler.blogspot.com/2007/10/jqueryscrollto.html\n * @projectDescription Lightweight, cross-browser and highly customizable animated scrolling with jQuery\n * @author Ariel Flesler\n * @version 2.1.2\n */\n;(function (factory) {\n\t'use strict';\n\n\tif (true) {\n\t\t// AMD\n\t\t!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ 477)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?\n\t\t\t\t(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\t} else if (typeof module !== 'undefined' && module.exports) {\n\t\t// CommonJS\n\t\tmodule.exports = factory(require('jquery'));\n\t} else {\n\t\t// Global\n\t\tfactory(jQuery);\n\t}\n})(function ($) {\n\t'use strict';\n\n\tvar $scrollTo = $.scrollTo = function (target, duration, settings) {\n\t\treturn $(window).scrollTo(target, duration, settings);\n\t};\n\n\t$scrollTo.defaults = {\n\t\taxis: 'xy',\n\t\tduration: 0,\n\t\tlimit: true\n\t};\n\n\tfunction isWin(elem) {\n\t\treturn !elem.nodeName || $.inArray(elem.nodeName.toLowerCase(), ['iframe', '#document', 'html', 'body']) !== -1;\n\t}\n\n\t$.fn.scrollTo = function (target, duration, settings) {\n\t\tif ((typeof duration === 'undefined' ? 'undefined' : _typeof(duration)) === 'object') {\n\t\t\tsettings = duration;\n\t\t\tduration = 0;\n\t\t}\n\t\tif (typeof settings === 'function') {\n\t\t\tsettings = { onAfter: settings };\n\t\t}\n\t\tif (target === 'max') {\n\t\t\ttarget = 9e9;\n\t\t}\n\n\t\tsettings = $.extend({}, $scrollTo.defaults, settings);\n\t\t// Speed is still recognized for backwards compatibility\n\t\tduration = duration || settings.duration;\n\t\t// Make sure the settings are given right\n\t\tvar queue = settings.queue && settings.axis.length > 1;\n\t\tif (queue) {\n\t\t\t// Let's keep the overall duration\n\t\t\tduration /= 2;\n\t\t}\n\t\tsettings.offset = both(settings.offset);\n\t\tsettings.over = both(settings.over);\n\n\t\treturn this.each(function () {\n\t\t\t// Null target yields nothing, just like jQuery does\n\t\t\tif (target === null) return;\n\n\t\t\tvar win = isWin(this),\n\t\t\t    elem = win ? this.contentWindow || window : this,\n\t\t\t    $elem = $(elem),\n\t\t\t    targ = target,\n\t\t\t    attr = {},\n\t\t\t    toff;\n\n\t\t\tswitch (typeof targ === 'undefined' ? 'undefined' : _typeof(targ)) {\n\t\t\t\t// A number will pass the regex\n\t\t\t\tcase 'number':\n\t\t\t\tcase 'string':\n\t\t\t\t\tif (/^([+-]=?)?\\d+(\\.\\d+)?(px|%)?$/.test(targ)) {\n\t\t\t\t\t\ttarg = both(targ);\n\t\t\t\t\t\t// We are done\n\t\t\t\t\t\tbreak;\n\t\t\t\t\t}\n\t\t\t\t\t// Relative/Absolute selector\n\t\t\t\t\ttarg = win ? $(targ) : $(targ, elem);\n\t\t\t\t/* falls through */\n\t\t\t\tcase 'object':\n\t\t\t\t\tif (targ.length === 0) return;\n\t\t\t\t\t// DOMElement / jQuery\n\t\t\t\t\tif (targ.is || targ.style) {\n\t\t\t\t\t\t// Get the real position of the target\n\t\t\t\t\t\ttoff = (targ = $(targ)).offset();\n\t\t\t\t\t}\n\t\t\t}\n\n\t\t\tvar offset = $.isFunction(settings.offset) && settings.offset(elem, targ) || settings.offset;\n\n\t\t\t$.each(settings.axis.split(''), function (i, axis) {\n\t\t\t\tvar Pos = axis === 'x' ? 'Left' : 'Top',\n\t\t\t\t    pos = Pos.toLowerCase(),\n\t\t\t\t    key = 'scroll' + Pos,\n\t\t\t\t    prev = $elem[key](),\n\t\t\t\t    max = $scrollTo.max(elem, axis);\n\n\t\t\t\tif (toff) {\n\t\t\t\t\t// jQuery / DOMElement\n\t\t\t\t\tattr[key] = toff[pos] + (win ? 0 : prev - $elem.offset()[pos]);\n\n\t\t\t\t\t// If it's a dom element, reduce the margin\n\t\t\t\t\tif (settings.margin) {\n\t\t\t\t\t\tattr[key] -= parseInt(targ.css('margin' + Pos), 10) || 0;\n\t\t\t\t\t\tattr[key] -= parseInt(targ.css('border' + Pos + 'Width'), 10) || 0;\n\t\t\t\t\t}\n\n\t\t\t\t\tattr[key] += offset[pos] || 0;\n\n\t\t\t\t\tif (settings.over[pos]) {\n\t\t\t\t\t\t// Scroll to a fraction of its width/height\n\t\t\t\t\t\tattr[key] += targ[axis === 'x' ? 'width' : 'height']() * settings.over[pos];\n\t\t\t\t\t}\n\t\t\t\t} else {\n\t\t\t\t\tvar val = targ[pos];\n\t\t\t\t\t// Handle percentage values\n\t\t\t\t\tattr[key] = val.slice && val.slice(-1) === '%' ? parseFloat(val) / 100 * max : val;\n\t\t\t\t}\n\n\t\t\t\t// Number or 'number'\n\t\t\t\tif (settings.limit && /^\\d+$/.test(attr[key])) {\n\t\t\t\t\t// Check the limits\n\t\t\t\t\tattr[key] = attr[key] <= 0 ? 0 : Math.min(attr[key], max);\n\t\t\t\t}\n\n\t\t\t\t// Don't waste time animating, if there's no need.\n\t\t\t\tif (!i && settings.axis.length > 1) {\n\t\t\t\t\tif (prev === attr[key]) {\n\t\t\t\t\t\t// No animation needed\n\t\t\t\t\t\tattr = {};\n\t\t\t\t\t} else if (queue) {\n\t\t\t\t\t\t// Intermediate animation\n\t\t\t\t\t\tanimate(settings.onAfterFirst);\n\t\t\t\t\t\t// Don't animate this axis again in the next iteration.\n\t\t\t\t\t\tattr = {};\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t});\n\n\t\t\tanimate(settings.onAfter);\n\n\t\t\tfunction animate(callback) {\n\t\t\t\tvar opts = $.extend({}, settings, {\n\t\t\t\t\t// The queue setting conflicts with animate()\n\t\t\t\t\t// Force it to always be true\n\t\t\t\t\tqueue: true,\n\t\t\t\t\tduration: duration,\n\t\t\t\t\tcomplete: callback && function () {\n\t\t\t\t\t\tcallback.call(elem, targ, settings);\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t\t$elem.animate(attr, opts);\n\t\t\t}\n\t\t});\n\t};\n\n\t// Max scrolling position, works on quirks mode\n\t// It only fails (not too badly) on IE, quirks mode.\n\t$scrollTo.max = function (elem, axis) {\n\t\tvar Dim = axis === 'x' ? 'Width' : 'Height',\n\t\t    scroll = 'scroll' + Dim;\n\n\t\tif (!isWin(elem)) return elem[scroll] - $(elem)[Dim.toLowerCase()]();\n\n\t\tvar size = 'client' + Dim,\n\t\t    doc = elem.ownerDocument || elem.document,\n\t\t    html = doc.documentElement,\n\t\t    body = doc.body;\n\n\t\treturn Math.max(html[scroll], body[scroll]) - Math.min(html[size], body[size]);\n\t};\n\n\tfunction both(val) {\n\t\treturn $.isFunction(val) || $.isPlainObject(val) ? val : { top: val, left: val };\n\t}\n\n\t// Add special hooks so that window scroll properties can be animated\n\t$.Tween.propHooks.scrollLeft = $.Tween.propHooks.scrollTop = {\n\t\tget: function get(t) {\n\t\t\treturn $(t.elem)[t.prop]();\n\t\t},\n\t\tset: function set(t) {\n\t\t\tvar curr = this.get(t);\n\t\t\t// If interrupt is true and user scrolled, stop animating\n\t\t\tif (t.options.interrupt && t._last && t._last !== curr) {\n\t\t\t\treturn $(t.elem).stop();\n\t\t\t}\n\t\t\tvar next = Math.round(t.now);\n\t\t\t// Don't waste CPU\n\t\t\t// Browsers don't render floating point scroll\n\t\t\tif (curr !== next) {\n\t\t\t\t$(t.elem)[t.prop](next);\n\t\t\t\tt._last = this.get(t);\n\t\t\t}\n\t\t}\n\t};\n\n\t// AMD requirement\n\treturn $scrollTo;\n});\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/jquery.scrollTo/jquery.scrollTo.js\n// module id = 499\n// module chunks = 0\n\n//# sourceURL=webpack:///./node_modules/jquery.scrollTo/jquery.scrollTo.js?");
 
 /***/ })
 /******/ ]);
