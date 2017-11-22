@@ -1,27 +1,11 @@
+
 # KTV (Karaoke God)
 ## [Chinese Song Karaoke Web App](http://ktvgod.me)
-<img src="screenshots/1.PNG"></img>
 
-## Developers
+## Description
+This is a website to learn and sing along foreign songs, such as Chinese, Japanese, and Spanish. You can search a song by typing a song title in the search bar. As you type a letter on your keyboard, search results update. You can also just scroll through the list of songs that appears on the screen. After you clicked on a song you want to listen or sing along, you can choose to display pinyin, chinese characters, and/or english. You can choose to automate scrolling as the song plays, see the line numbers, and/or see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. For now, you must click back on your browser to choose another song and refresh on your browser to refresh the scrolling. 
 
-### Directory Structure:
-- TimePickerTool - serparate web app that helps to manually time pick lyrics for songs
-- data - mongodb data store 
-- dist - webpack output directory (transpiled react code that is used in production)
-- favicons - favicon used for main webpage
-- images - artist, song, album image resources
-- seed - dockerfile
-- seed/scripts - mongodb shell scripts to start, import, and export the JSON database KTV uses.
-- songs - lyrics, timestamps for each song
-- webpage - html, react, css, javascript code
-- Jenkinfile - \[In Progress\] support Jenkins CICD
-- futurefeatures.txt - a list of enhancements I plan to develop/fix
-- insertSong.js - a script that song object into mongodb
-- package.json - node dependencies :)
-- sever.js - main server app, handles routes, queries to DB
-- webpack.config.js - webpack configuration that transpiles react to javascript.
-
-### How to install on local dev environment:
+## How to Install Locally
 1) Install Git, Node.js, Mongodb
 2) ``` git clone "https://github.com/willwen/KTV.git" ```
 3) ``` cd $KTV/KTV/ ```
@@ -50,3 +34,10 @@
 8)If you want to do react development (aka mess with the code in webpage/)
 ``` npm run webpack ```
 It will detect any file changes in webpage/* and generate a dist/bundle.js file, which is what index.html uses
+
+## Authors
+Will Wen - initial work
+See also the list of contributors (https://github.com/willwen/KTV/contributors)
+
+## License
+Please look at LICENSE file for license details
