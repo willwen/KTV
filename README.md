@@ -3,7 +3,7 @@
 ## [Chinese Song Karaoke Web App](http://ktvgod.me)
 
 ## Description
-This is a website to learn and sing along foreign songs, such as Chinese, Japanese, and Spanish. You can search a song by typing a song title in the search bar. As you type a letter on your keyboard, search results update. You can also just scroll through the list of songs that appears on the screen. After you clicked on a song you want to listen or sing along, you can choose to display pinyin, chinese characters, and/or english. You can choose to automate scrolling as the song plays, see the line numbers, and/or see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. For now, you must click back on your browser to choose another song and refresh on your browser to refresh the scrolling. 
+This is a website to learn and sing along foreign songs, such as Chinese, Japanese, and Spanish. You can search a song by typing a song title in the search bar. As you type a letter on your keyboard, search results update. You can also just scroll through the list of songs that appears on the screen. After you clicked on a song you want to listen or sing along, you can choose to display pinyin, chinese characters, and/or english. You can choose to automate scrolling as the song plays, see the line numbers, and/or see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. For now, you must click back on your browser to choose another song and refresh on your browser to refresh the scrolling. Enjoy singing foreign songs! :)
 
 ## How to Install Locally
 1) Install Git, Node.js, Mongodb
@@ -37,7 +37,8 @@ It will detect any file changes in webpage/* and generate a dist/bundle.js file,
 
 ## Authors
 Will Wen - initial work
-See also the list of contributors (https://github.com/willwen/KTV/contributors)
+
+See also the list of [contributors](https://github.com/willwen/KTV/contributors)
 
 ## License
 Please look at LICENSE file for license details
