@@ -3,7 +3,8 @@
 ## [Chinese Song Karaoke Web App](http://ktvgod.me)
 
 ## Description
-This is a website to learn and sing along foreign songs, such as Chinese, Japanese, and Spanish. You can search a song by typing a song title in the search bar. As you type a letter on your keyboard, search results update. You can also just scroll through the list of songs that appears on the screen. After you clicked on a song you want to listen or sing along, you can choose to display pinyin, chinese characters, and/or english. You can choose to automate scrolling as the song plays, see the line numbers, and/or see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. For now, you must click back on your browser to choose another song and refresh on your browser to refresh the scrolling. Enjoy singing foreign songs! :)
+This is a website to learn and sing along to foreign songs, in lanaguages such as Chinese, Japanese, and Spanish.
+Search results populate based on any metadata you type into the search bar, like artist name or song title. You can also  scroll through the list of songs that appears on the home page. Clicking on a song takes you to a visualization page, displaying PinYin, Chinese characters, and English. Users can choose to automate scrolling as the song plays, see the line numbers, and see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. Enjoy singing foreign songs! :)
 
 ## How to Install Locally
 1) Install Git, Node.js, Mongodb
@@ -36,8 +37,13 @@ This is a website to learn and sing along foreign songs, such as Chinese, Japane
 It will detect any file changes in webpage/* and generate a dist/bundle.js file, which is what index.html uses
 
 ## Authors
-Will Wen - initial work
+Will Wen
 
+
+##Contributers
+Sherry Mei
+Eula Zhong
+Siqin Li
 See also the list of [contributors](https://github.com/willwen/KTV/contributors)
 
 ## License
