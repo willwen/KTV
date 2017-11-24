@@ -40,7 +40,7 @@ It will detect any file changes in webpage/* and generate a dist/bundle.js file,
 Will Wen
 
 
-##Contributers
+## Contributers
 Sherry Mei
 Eula Zhong
 Siqin Li
