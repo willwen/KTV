@@ -115,6 +115,9 @@ ul {
 
 #options {
     margin-top: 10px;
+    border-style: inset;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
 }
 
 .displayLanguages {
