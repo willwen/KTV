@@ -66,7 +66,6 @@ app.get('/getSong', function (req, res){
 			console.log(err)
 			lyrics[item] = "Error finding file";
 		}
-
 	})
 	glob('songs/' + id + '*/*.mp3', function(err, files){
 		if(err){
@@ -74,7 +73,13 @@ app.get('/getSong', function (req, res){
 			throw err
 		}
 		else{
-			lyrics['songFile'] = files[0].split("songs/")[1]
+			try{
+				lyrics['songFile'] = files[0].split("songs/")[1]	
+			}
+			catch (err) {
+				lyrics['songFile'] = "mp3 file not found"
+			}
+			
 		}
 
 		res.end(JSON.stringify(lyrics, 'utf-8'));

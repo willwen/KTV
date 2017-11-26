@@ -25,8 +25,8 @@ export default class LyricsBody extends React.Component {
 		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor}
 		style[this.props.currentLine] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
 		style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.foregroundColor}
-
-		style[lineNum-1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight":"bolder"}
+		//Temporarily try NO BOLD
+		style[lineNum-1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight":"normal"}
 		
 		this.props.skipToTime(lineNum, newTime);
 		
@@ -45,10 +45,8 @@ export default class LyricsBody extends React.Component {
 		//wipe color off current ones:
 		style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
 		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "bolder"}
-
-		// style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "bolder"}
-		
+		//Temporarily try NO BOLD
+		style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "normal"}
 		
 		this.setState({lineStyles: style})
 	}

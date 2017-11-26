@@ -13,21 +13,20 @@ function reformat(data) {
         var child = {
             id: songID,
             parentId: artistID,
-            elements: [
-            ]
+            elements: []
 
         }
         for (var j = 0; j < artist.songs.length; j++) {
             child.elements.push({
                 name: artist.songs[j].cn_char,
-                icon: artist["_id"]+".png",
+                icon: artist.songs[j]["artist_pinyin"] + ".png",
                 linkTo: "/song?id=" + artist.songs[j]["file_name"] + "&title=" + artist.songs[j].cn_char + "&artist=" + artist["_id"]
             })
         }
         songs.push(child)
         artists.elements.push({
             name: artist["_id"],
-            icon: artist["_id"]+".png",
+            icon: artist.songs[0]["artist_pinyin"] + ".png",
             child: songs[i],
         })
     }

@@ -1,9 +1,10 @@
 .level{
 	display: flex;	
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
+	border-bottom: 1px solid lightgray
 }
 
 .item{
@@ -17,6 +18,7 @@
 .childLevelIcon{
 	width: 70%;
 	height: 70%;
+	margin: auto;
 	margin-top: 8px;
 }
 
