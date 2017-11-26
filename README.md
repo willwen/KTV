@@ -30,7 +30,7 @@ Search results populate based on any metadata you type into the search bar, like
 	Import the songs.json file:
   		``` mongoimport --db songs --collection songs --file songs.json```
 		
-6) Run ```PORT=8080 node server.js ```
+6) Run ```npm run dev ```
 7) In web browser, go to localhost:8080
 8)If you want to do react development (aka mess with the code in webpage/)
 ``` npm run webpack ```
