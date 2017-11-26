@@ -28,6 +28,7 @@ app.use(express.static('webpage/song'))
 app.use(express.static('webpage/treesearch'))
 app.use(express.static('webpage/common'))
 app.use(express.static('webpage/timepicker'))
+app.use(express.static('webpage/about'))
 app.use(express.static('songs'))
 app.use(express.static('favicons'))
 app.use(express.static('dist'))
@@ -46,6 +47,9 @@ app.get('/treefind', function(req,res){
 })
 app.get('/timepicker', function(req,res){
 	res.sendFile(__dirname + '/webpage/timepicker/index.html')
+})
+app.get('/about', function(req,res){
+	res.sendFile(__dirname + '/webpage/about/index.html')
 })
 app.get('/song', function (req, res){
 	res.sendFile(__dirname + '/webpage/song/index.html')

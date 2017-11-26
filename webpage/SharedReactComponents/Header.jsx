@@ -8,6 +8,7 @@ export default class PageHeader extends React.Component {
 	    		</a>
 	    		<div className="nav">
 	    			<a href="/"><p>Home</p></a>
+	    			<a href="/about"><p>About</p></a>
 	    			<a href="/treefind"><p>Find Artist</p></a>
 	    			<a href="/submit">
                         <p>Submit a Song</p>
