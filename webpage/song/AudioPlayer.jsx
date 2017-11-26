@@ -18,6 +18,7 @@ export default class AudioPlayer extends React.Component {
 	}
 	componentDidMount(){
 		this.refs.audioHTML.ontimeupdate = this.checkTimes;
+		this.refs.audioHTML.volume = .5;
 	}
 
 	checkTimes(){
@@ -26,7 +27,6 @@ export default class AudioPlayer extends React.Component {
 			let currentLine = this.props.currentLine;
 			let convertedToSeconds = Constants.timestampToSeconds(times[currentLine]);
 			let time = Math.round(this.refs.audioHTML.currentTime);
-
 			if(convertedToSeconds == 0 && currentLine != 0){
 				this.props.updateCurrentLine(currentLine + 1);
 				return;

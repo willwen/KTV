@@ -69,7 +69,6 @@ export default class Form extends React.Component {
         <FormGroup controlId="audioFile">
           <ControlLabel>MP3 Upload</ControlLabel>
           <FormControl type="file" onChange={this.handleChange}/>
-          <HelpBlock>Example block-level help text here.</HelpBlock>
         </FormGroup>
 
         <FormGroup  bsSize="large" controlId="times">
@@ -78,7 +77,7 @@ export default class Form extends React.Component {
           <HelpBlock>Insert the Timings of Line Transitions of the Lyrics here.</HelpBlock>
         </FormGroup>
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" id="submit" />
       </form>
     );
   }

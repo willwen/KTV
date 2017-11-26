@@ -27,10 +27,12 @@ app.use(express.static('webpage/submit'))
 app.use(express.static('webpage/song'))
 app.use(express.static('webpage/treesearch'))
 app.use(express.static('webpage/common'))
+app.use(express.static('webpage/timepicker'))
 app.use(express.static('songs'))
 app.use(express.static('favicons'))
 app.use(express.static('dist'))
 app.use(express.static('images'))
+
 
 //for post requests
 app.use(bodyParser.json());
@@ -38,14 +40,16 @@ app.use(bodyParser.json());
 var server = app.listen(process.env.PORT || port, function() {
     console.log('Listening on port %s!', server.address().port)
 })
+
 app.get('/treefind', function(req,res){
 	res.sendFile(__dirname + '/webpage/treesearch/treesearch.html')
 })
-
+app.get('/timepicker', function(req,res){
+	res.sendFile(__dirname + '/webpage/timepicker/index.html')
+})
 app.get('/song', function (req, res){
 	res.sendFile(__dirname + '/webpage/song/index.html')
 });
-
 app.get('/submit', function(req,res){
 	res.sendFile(__dirname + '/webpage/submit/index.html')
 })
@@ -63,10 +67,10 @@ app.get('/getSong', function (req, res){
 		 	
 		}
 		catch (err){
+			console.log("File most likely DOES NOT exist.")
 			console.log(err)
-			lyrics[item] = "Error finding file";
+			lyrics[item] = "";
 		}
-
 	})
 	glob('songs/' + id + '*/*.mp3', function(err, files){
 		if(err){
@@ -74,7 +78,13 @@ app.get('/getSong', function (req, res){
 			throw err
 		}
 		else{
-			lyrics['songFile'] = files[0].split("songs/")[1]
+			try{
+				lyrics['songFile'] = files[0].split("songs/")[1]	
+			}
+			catch (err) {
+				lyrics['songFile'] = "mp3 file not found"
+			}
+			
 		}
 
 		res.end(JSON.stringify(lyrics, 'utf-8'));

@@ -1,12 +1,34 @@
 
-.help-block{
+.help-block {
     color:#ff7a7a;
 }
-label{
-    color: #ffffff;
+
+label {
+    font-size: 1.25em;
 }
 
-.form-group-lg .form-control { font-size:.8em; }
+form {
+    border-style: solid;
+    padding: 4%;
+    color: #222A68;
+    background-color: rgba(225,225, 225, 0.4);
+}
+
+#submit {
+    background-color: #222A68; 
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.form-group-lg .form-control { 
+    font-size:.8em; 
+}
 
 .form-control {
     height: 50px;

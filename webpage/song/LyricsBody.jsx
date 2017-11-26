@@ -25,8 +25,8 @@ export default class LyricsBody extends React.Component {
 		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor}
 		style[this.props.currentLine] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
 		style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.foregroundColor}
-
-		style[lineNum-1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight":"bolder"}
+		//Temporarily try NO BOLD
+		style[lineNum-1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight":"normal"}
 		
 		this.props.skipToTime(lineNum, newTime);
 		
@@ -45,15 +45,13 @@ export default class LyricsBody extends React.Component {
 		//wipe color off current ones:
 		style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
 		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "bolder"}
-
-		// style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "bolder"}
-		
+		//Temporarily try NO BOLD
+		style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "normal"}
 		
 		this.setState({lineStyles: style})
 	}
 
-render() {
+	render() {
 		let bodyStyle = {};  
 		let lyricsBody = [];
 
@@ -69,7 +67,7 @@ render() {
 		let engStyling = {};
 		this.props.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
 
-		if(this.props.lyrics.pinyin.length > 0){
+		if(this.props.lyrics.pinyin.length > 0 || this.props.lyrics.eng.length > 0 || this.props.lyrics.cn.length > 0){
 			bodyStyle = {"visibility" : "visible"};
 			let lineNumber = 1;
 			let pinyin = this.props.lyrics.pinyin;
@@ -80,7 +78,7 @@ render() {
 				var lineStyle = this.state.lineStyles[i];
 
 				var minutes = Math.floor(times[i]/100);
-				var seconds = times[i]%100;
+				var seconds = Math.floor(times[i]%100);
 				if (seconds < 10)
 					seconds = "0" + seconds;
 				//used for tooltip

@@ -1,66 +1,56 @@
-/*.lvl_1_container{
-	display: flex;
-	align-items: flex-end;
-	#flex-wrap: wrap;
-	#new icons are spaced evenly within the div
-	justify-content: space-evenly;
-	border-bottom: 1px solid lightgray;	
-}*/
-
 .level{
 	display: flex;	
-	/* items all aligned on bottom margin*/
 	align-items: flex-start;
 	flex-wrap: wrap;
-	/* makes new icons on new rows start on the far left*/
 	justify-content: center;
 	align-content: center;
 	border-bottom: 1px solid lightgray
 }
 
-/*.topLevelIcon{
-	width: 50%;
-	height: 50%;
-	margin-top: 8px;
-}
-*/
-a:focus, a:hover {
-    color: #FFF !important;
-    text-decoration: underline;
+.item{
+	margin:10px .5% 10px .5%;
+	font-size: 1.5em;
+	flex-basis: 14%;
+	text-align: center;
+	border-bottom: medium solid rgba(255,255,255,0);
 }
 
 .childLevelIcon{
 	width: 70%;
 	height: 70%;
+	margin: auto;
 	margin-top: 8px;
 }
 
-.item{
-	/*flex-grow: 1;*/
-	/*15px top and bottom are to space icons vertically away */
-	/*left and right are 3%, adding up to 6%*/
-	margin:10px .5% 10px .5%;
-	/*padding: 0px 2.5% 0px 2.5%;*/
-	font-size: 1.5em;
-	width: 14%;
-	/*flex-basis: 14%; allows 100% ( - 6% * 5 from left and right margins ) /5 =  to fit on each row*/
-	text-align: center;
-	border-bottom: medium solid rgba(255,255,255,0);
-}
-
 .textLabel{
-	/*space between the label and the icon*/
 	margin-top: 15px;
 	margin-bottom: 15px;
-	/*prevents the text label div from expanding indefinitely hitting the parent's margin*/
 	display: inline-block;
-
-	/* allows overflowed text from whitespace: nowrap to still be centered */
-/*	margin-left: -100%;
-	margin-right: -100%;*/
-	
+	font-size: 1em;
 }
-/*
-.nowrap{
-	white-space: nowrap;
-}*/
+
+
+@media screen and (max-width:990px) {
+  .level { flex-wrap: wrap;  }
+  .item  { flex-basis: 20%; }
+}
+
+@media screen and (max-width:800px) {
+  .level { flex-wrap: wrap;  }
+  .item  { flex-basis: 30%; }
+}
+
+@media screen and (max-width:700px) {
+  .level { flex-wrap: wrap;  }
+  .item  { flex-basis: 40%; }
+}
+
+@media screen and (max-width:600px) {
+  .level { flex-wrap: wrap;  }
+  .item  { flex-basis: 50%; }
+}
+
+a:focus, a:hover {
+    color: #FFF !important;
+    text-decoration: underline;
+}
