@@ -158,7 +158,7 @@ function createIcon(element, level) {
     //     var iconLevel = "topLevelIcon";
     // else
     var iconLevel = "childLevelIcon";
-    var icon = $("<img></img>", { "class": "icon " + iconLevel, "src": element.icon });
+    var icon = $("<img></img>", { "class": "img-responsive icon " + iconLevel, "src": element.icon });
     iconDiv.append(icon);
 
     return iconDiv;
