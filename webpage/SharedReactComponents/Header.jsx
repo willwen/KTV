@@ -12,6 +12,9 @@ export default class PageHeader extends React.Component {
 	    			<a href="/submit">
                         <p>Submit a Song</p>
                     </a>
+                    <a href="/timepicker">
+                        <p>Time Picker</p>
+                    </a>
 	    		</div>
 	    	</div>
 			<div className="row">

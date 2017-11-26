@@ -51,7 +51,7 @@ export default class LyricsBody extends React.Component {
 		this.setState({lineStyles: style})
 	}
 
-render() {
+	render() {
 		let bodyStyle = {};  
 		let lyricsBody = [];
 
@@ -67,7 +67,7 @@ render() {
 		let engStyling = {};
 		this.props.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
 
-		if(this.props.lyrics.pinyin.length > 0){
+		if(this.props.lyrics.pinyin.length > 0 || this.props.lyrics.eng.length > 0 || this.props.lyrics.cn.length > 0){
 			bodyStyle = {"visibility" : "visible"};
 			let lineNumber = 1;
 			let pinyin = this.props.lyrics.pinyin;
@@ -78,7 +78,7 @@ render() {
 				var lineStyle = this.state.lineStyles[i];
 
 				var minutes = Math.floor(times[i]/100);
-				var seconds = times[i]%100;
+				var seconds = Math.floor(times[i]%100);
 				if (seconds < 10)
 					seconds = "0" + seconds;
 				//used for tooltip
