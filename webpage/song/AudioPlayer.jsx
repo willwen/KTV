@@ -19,7 +19,26 @@ export default class AudioPlayer extends React.Component {
 	componentDidMount(){
 		this.refs.audioHTML.ontimeupdate = this.checkTimes;
 		this.refs.audioHTML.volume = .5;
+
+		window.addEventListener("keydown", function(e) {
+			if(e.keyCode == 32 && e.target == document.body) {
+				this.togglePlayer(); // space bar to toggle audio player
+				e.preventDefault(); // and prevent scrolling
+			}
+			//set + and - listeners for volume
+
+			else if(e.keyCode == 187 && e.target == document.body){
+				this.increaseVolume(); // increase audio player
+				e.preventDefault();
+			}
+			else if(e.keyCode == 189 && e.target == document.body){
+				this.decreaseVolume(); // decrease audio player
+				e.preventDefault();
+			}
+		});
+
 	}
+
 
 	checkTimes(){
 		if(this.props.times.length !=0){
