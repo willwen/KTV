@@ -40,10 +40,10 @@ It will detect any file changes in webpage/* and generate a dist/bundle.js file,
 Will Wen
 
 
-## Contributers
-Sherry Mei
-Eula Zhong
-Siqin Li
+## Contributors
+Sherry Mei <br/>
+Eula Zhong <br/>
+Siqin Li <br/>
 See also the list of [contributors](https://github.com/willwen/KTV/contributors)
 
 ## License
