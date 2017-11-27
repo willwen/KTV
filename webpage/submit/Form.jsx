@@ -1,5 +1,5 @@
 import {HelpBlock,FormGroup, FormControl, ControlLabel} from 'react-bootstrap'
-
+import axios from 'axios'
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -22,6 +22,22 @@ export default class Form extends React.Component {
   handleSubmit(event) {
     alert('A name was submitted: ' + JSON.stringify(this.state));
     event.preventDefault();
+    var formData = new FormData();
+    console.log("here")
+    var audioFile = document.querySelector('#audioFile')
+    formData.append("audioFile", audioFile.files[0])
+    formData.append("payload", JSON.stringify(this.state))
+    axios.post("upload", formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    }).then((response)=>{
+      if (response.data.redirect) {
+            // data.redirect contains the string URL to redirect to
+            window.location.href = response.data.redirect;
+      }
+    }).catch(error => console.log(error));;
+
   }
 
 
@@ -68,7 +84,7 @@ export default class Form extends React.Component {
         </div>
         <FormGroup controlId="audioFile">
           <ControlLabel>MP3 Upload</ControlLabel>
-          <FormControl type="file" onChange={this.handleChange}/>
+          <FormControl type="file" accept=".mp3"/>
         </FormGroup>
 
         <FormGroup  bsSize="large" controlId="times">
