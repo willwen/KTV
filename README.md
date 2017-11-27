@@ -1,6 +1,6 @@
 
 # KTV (Karaoke God)
-## [Chinese Song Karaoke Web App](http://ktvgod.me)
+## [Chinese Song Karaoke Web App](https://ktvgod.me)
 
 ## Description
 This is a website to learn and sing along to foreign songs, in lanaguages such as Chinese, Japanese, and Spanish.
