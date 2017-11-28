@@ -19,8 +19,8 @@ export default class AudioPlayer extends React.Component {
 	componentDidMount(){
 		this.refs.audioHTML.ontimeupdate = this.checkTimes;
 		this.refs.audioHTML.volume = .5;
-
-		window.addEventListener("keydown", function(e) {
+		//lambda function because they dont have their own this binding
+		window.addEventListener("keydown", (e) => {
 			if(e.keyCode == 32 && e.target == document.body) {
 				this.togglePlayer(); // space bar to toggle audio player
 				e.preventDefault(); // and prevent scrolling
