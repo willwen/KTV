@@ -33,8 +33,8 @@ Search results populate based on any metadata you type into the search bar, like
 6) If you want to use local mongodb run ```npm run dev ``` <br/>
 If you want to use mlab (production) mongodb run ```npm run perf```
 7) In web browser, go to localhost:8080
-8)If you want to do react development (aka mess with the code in webpage/)
-``` npm run webpack ```
+8) If you want to do react development (aka mess with the code in webpage/)
+``` npm run webpack ```<br/>
 It will detect any file changes in webpage/* and generate a dist/bundle.js file, which is what index.html uses
 
 ## Authors
