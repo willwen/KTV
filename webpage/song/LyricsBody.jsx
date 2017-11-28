@@ -3,16 +3,20 @@ import {Tooltip} from 'react-bootstrap'
 import {OverlayTrigger} from 'react-bootstrap'
 // import Scroll from 'react-scroll'; // Imports all Mixins
 // var Element = Scroll.Element;
+const uuidv1 = require('uuid/v1');
 
 export default class LyricsBody extends React.Component {
 	constructor(props){
 		super(props);
 		this.state={
-			lines : [],
 			lineStyles: []
 		}
 
 		this.clearLyrics = this.clearLyrics.bind(this)
+		this.splitCnChar = this.splitCnChar.bind(this)
+		this.splitPinyin = this.splitPinyin.bind(this)
+		
+		
 	}
 
 	anchorClick(lineNum){
@@ -35,7 +39,6 @@ export default class LyricsBody extends React.Component {
 
 	clearLyrics(){
 		this.setState({
-			lines:[],
 			lineStyles:[]
 		})
 	}
@@ -59,10 +62,10 @@ export default class LyricsBody extends React.Component {
 		this.props.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
 
 		let pinyinStyling = {};
-		this.props.options.showPinyin ?	(pinyinStyling = {display: "block"}):(pinyinStyling = {display: "none"});
+		this.props.options.showPinyin ?	(pinyinStyling = {display: "table-row"}):(pinyinStyling = {display: "none"});
 
 		let cnStyling = {};
-		this.props.options.showCn ? (cnStyling = {display: "block"}) : (cnStyling = {display: "none"});
+		this.props.options.showCn ? (cnStyling = {display: "table-row"}) : (cnStyling = {display: "none"});
 
 		let engStyling = {};
 		this.props.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
@@ -103,8 +106,19 @@ export default class LyricsBody extends React.Component {
 							{overlayTrigger}
 						</div>
 						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
-							<div className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}> {pinyin[i]}</div>
-							<div className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}> {cnChar[i]}</div>
+							<div className = "row">
+							<table>
+								<tbody>
+									{ pinyin[i] && cnChar[i] ? (<tr className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}>
+													{this.splitPinyin(pinyin[i], cnChar[i])}
+													</tr>) : null
+									}
+									{ cnChar[i] ? (<tr className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}>
+														{this.splitCnChar(cnChar[i])}</tr>) : null
+									}
+								</tbody>
+							</table>
+							</div>
 							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={engStyling}> {eng[i]}</div>
 						</div>
 						</div>
@@ -117,18 +131,46 @@ export default class LyricsBody extends React.Component {
 		else
 			bodyStyle = {"visibility" : "hidden"}
 
-		this.state.lines = lyricsBody.map(line => {
-			return line;
-		})
-		
+	
 		return (
 			<div className="row">
 				<div className = "gradient col-xs-12" id='lyricsBody' style = {bodyStyle}>
-					{this.state.lines}
+					{
+						lyricsBody.map(line => {
+							return line;
+						})
+					}
 				</div>
 			</div>
 		);
 	}
 
+	// split a pinyin line by spaces
+	// we use index j and take in cnChars because if cnChars has a space for that index, 
+	// we also want pinyinChar to be a space.
+	splitPinyin(pinyinLine, charLine){
+		var cnChars = [...charLine]
+		var pinyinChars = pinyinLine.split(' ')
+		var tdArray = []
+		let j = 0;
+		for(let i = 0 ; i < pinyinChars.length; i++){
+			if (cnChars[j] === " "){
+				tdArray.push(<td key={uuidv1()}> </td>)
+				i--;
+			}
+			else{
+				tdArray.push(<td key={uuidv1()}>{pinyinChars[i]}</td>)
+			}
+			j++;
+		}
+		return tdArray
+	}
+
+	splitCnChar(charLine){
+		var cnChars = [...charLine]
+		return cnChars.map((cnChar, index)=>{
+			return <td key={uuidv1()}>{cnChar}</td>
+		})	
+	}
 }
 

@@ -142,6 +142,7 @@ ul {
 #titleLine {
     font-weight: bolder;
     letter-spacing: 4px;
+    font-size: 3.5em;
 }
 
 
@@ -181,16 +182,31 @@ ul {
     }
 }
 
+tr{
+    text-align: center;
+}
+td{
+    /*white-space: nowrap;*/
+}
+
+table {
+    /*width: 100%;*/
+    border-spacing: 10px;
+    table-layout: auto;
+    border-collapse: separate;
+}
+
 .pinyinLine {
-    font-style: italic;
+    /*font-style: italic;*/
 }
 .cnLine {
-    letter-spacing: 10px;
-    font-size: 1.5em;
+    /*letter-spacing: 10px;*/
+    font-size: 1.3em;
 }
 
 .engLine {
     font-style: italic;
+    margin-left: 8px;
 }
 
 

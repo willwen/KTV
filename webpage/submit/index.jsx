@@ -7,8 +7,7 @@ import axios from 'axios'
 export default class MainContainer extends React.Component {
 	constructor(){
 		super();
-	
-		// this.getParameterByName = this.getParameterByName.bind(this)
+
 	}
 	componentWillMount(){
 	  	
@@ -21,18 +20,15 @@ export default class MainContainer extends React.Component {
 	
 	}
 
-
-
-	
 	render() {
 		return (
 			<div className="container">
 			<div className = "row">
 		      <PageHeader/>
-		      </div>
-		      <div className = "row form">
-		      	<Form/>
-		      </div>
+	      	</div>
+			<div className = "row form">
+				<Form/>
+			</div>
 		      
 		  </div>
 		);
