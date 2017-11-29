@@ -271,7 +271,7 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
         cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times,
         function(err) {
             if (err) {
-                res.send({ redirect: "/error" })
+                res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
                 return console.log(err);
             }
             // zipFiles();
