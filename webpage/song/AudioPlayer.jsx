@@ -36,7 +36,6 @@ export default class AudioPlayer extends React.Component {
 				e.preventDefault();
 			}
 		});
-
 	}
 
 
@@ -44,14 +43,20 @@ export default class AudioPlayer extends React.Component {
 		if(this.props.times.length !=0){
 			let times = this.props.times;
 			let currentLine = this.props.currentLine;
-			let convertedToSeconds = Constants.timestampToSeconds(times[currentLine]);
-			let time = Math.round(this.refs.audioHTML.currentTime);
-			if(convertedToSeconds == 0 && currentLine != 0){
+			let nextLineTime = Constants.timestampToSeconds(times[currentLine]);
+			let currentTime = Math.round(this.refs.audioHTML.currentTime);
+			let counter = 1
+			while(nextLineTime == 0){
+				nextLineTime = Constants.timestampToSeconds(times[currentLine + counter]);
+				counter++;
+			}
+
+			if(nextLineTime == 0 && currentLine != 0){
 				this.props.updateCurrentLine(currentLine + 1);
 				return;
 			}
 
-			if (time >= convertedToSeconds)
+			if (currentTime >= nextLineTime)
 			{
 				// var t0 = performance.now();
 				this.updateLine(currentLine);
@@ -63,11 +68,9 @@ export default class AudioPlayer extends React.Component {
 					$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});
 				}
 			}
-		}
-
-
-		
+		}		
 	}
+
 
 	increaseVolume(){
 		var that = this
@@ -116,7 +119,7 @@ export default class AudioPlayer extends React.Component {
 			setTimeout(function(){
 				this.setState({"action": "none"})
 			}.bind(this), 2000)
-		    this.refs.audioHTML.pause();
+			this.refs.audioHTML.pause();
 		}
 	}
 

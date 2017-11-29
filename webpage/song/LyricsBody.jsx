@@ -9,49 +9,33 @@ export default class LyricsBody extends React.Component {
 	constructor(props){
 		super(props);
 		this.state={
-			lineStyles: []
 		}
-
 		this.clearLyrics = this.clearLyrics.bind(this)
 		this.splitCnChar = this.splitCnChar.bind(this)
-		this.splitPinyin = this.splitPinyin.bind(this)
-		
-		
+		this.splitPinyin = this.splitPinyin.bind(this)	
 	}
 
 	anchorClick(lineNum){
 		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
-
-		let style = this.state.lineStyles;
-		//wipe color off current ones:
-		//-2 because if you are on line 4, and line 5 is a new line, currentline immediately jumps to line 4.
-		style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor}
-		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor}
-		style[this.props.currentLine] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.foregroundColor}
-		//Temporarily try NO BOLD
-		style[lineNum-1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight":"normal"}
-		
 		this.props.skipToTime(lineNum, newTime);
-		
-		this.setState({lineStyles: style})
 	}
 
-	clearLyrics(){
-		this.setState({
-			lineStyles:[]
-		})
+	clearLyrics(){ //whipes all to foregroundColor
+		// this.setState({
+		// 	lineStyles:[]
+		// })
+		console.log("will whipe all foreground Color")
 	}
 	
 	incrementLineColor(lineNum){
-		let style = this.state.lineStyles;
-		//wipe color off current ones:
-		style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		//Temporarily try NO BOLD
-		style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "normal"}
+		// let style = this.state.lineStyles;
+		// //wipe color off current ones:
+		// style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor}
+		// style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor}
+		// //Temporarily try NO BOLD
+		// style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor}
 		
-		this.setState({lineStyles: style})
+		// this.setState({lineStyles: style})
 	}
 
 	render() {
@@ -78,7 +62,7 @@ export default class LyricsBody extends React.Component {
 			let eng = this.props.lyrics.eng;
 			let times = this.props.lyrics.times;
 			for (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
-				var lineStyle = this.state.lineStyles[i];
+				// var lineStyle = this.state.lineStyles[i];
 
 				var minutes = Math.floor(times[i]/100);
 				var seconds = Math.floor(times[i]%100);
@@ -100,7 +84,8 @@ export default class LyricsBody extends React.Component {
 					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
 				}
 				var rowDiv = 
-					(<div key= {"rowNumber"+ lineNumber} className="row" style={lineStyle}>
+					(<div key= {"rowNumber"+ lineNumber} className="row" style={
+							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
 						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-xs-1 lineIndex vertical-center" style = {lineNumberStyling}>
 							{overlayTrigger}
@@ -155,11 +140,11 @@ export default class LyricsBody extends React.Component {
 		let j = 0;
 		for(let i = 0 ; i < pinyinChars.length; i++){
 			if (cnChars[j] === " "){
-				tdArray.push(<td key={uuidv1()}> </td>)
+				tdArray.push(<td > </td>)
 				i--;
 			}
 			else{
-				tdArray.push(<td key={uuidv1()}>{pinyinChars[i]}</td>)
+				tdArray.push(<td >{pinyinChars[i]}</td>)
 			}
 			j++;
 		}
@@ -169,7 +154,7 @@ export default class LyricsBody extends React.Component {
 	splitCnChar(charLine){
 		var cnChars = [...charLine]
 		return cnChars.map((cnChar, index)=>{
-			return <td key={uuidv1()}>{cnChar}</td>
+			return <td >{cnChar}</td>
 		})	
 	}
 }

@@ -1,5 +1,5 @@
 var url = require('url'),
-    fs = require('fs'),
+    fs = require('fs-extra'),
     querystring = require('querystring'),
     express = require('express'),
     port = 8080,
@@ -8,6 +8,8 @@ var url = require('url'),
     // bodyParser = require('body-parser'),
     multer = require('multer'),
     glob = require("glob"),
+    aws = require('aws-sdk'),
+    archiver = require('archiver'),
     escapeStringRegexp = require('escape-string-regexp');
 
 var environment = process.env.NODE_ENV
@@ -35,12 +37,17 @@ app.use(express.static('images'))
 
 // https://github.com/expressjs/multer
 // Multer is a node.js middleware for handling multipart/form-data
+var uploadDirectory = __dirname + "/uploads";
+
+if (!fs.existsSync(uploadDirectory)) {
+    fs.mkdirSync(uploadDirectory);
+}
 var storage = multer.diskStorage({
     destination: function(req, file, cb) {
-        cb(null, __dirname + '/uploads/')
+        cb(null, uploadDirectory)
     },
     filename: function(req, file, cb) {
-        cb(null, Date.now() + file.originalname)
+        cb(null, Date.now() + ".mp3")
     }
 })
 
@@ -52,6 +59,58 @@ var upload = multer({ storage: storage })
 // }));
 // app.use(bodyParser.json());
 
+//Amazon SES (Simple Email Service)
+var fromEmail = process.env.EMAIL
+aws.config.update({ region: 'us-east-1' });
+
+var ses = new aws.SES();
+
+// Sending RAW email including an attachment.
+function sendRawEmail(email) {
+    var ses_mail = "From: ktvgod.me' <" + email + ">\n";
+    ses_mail = ses_mail + "To: " + email + "\n";
+    ses_mail = ses_mail + "Subject: New Song Submission\n";
+    ses_mail = ses_mail + "MIME-Version: 1.0\n";
+    ses_mail = ses_mail + "Content-Type: multipart/mixed; boundary=\"NextPart\"\n\n";
+    ses_mail = ses_mail + "--NextPart\n";
+    ses_mail = ses_mail + "Content-Type: text/html; charset=us-ascii\n\n";
+    ses_mail = ses_mail + "This is the body of the email.\n\n";
+    ses_mail = ses_mail + "--NextPart\n";
+    // ses_mail = ses_mail + "Content-Type: audio/mp3;\n";
+    ses_mail = ses_mail + "Content-Disposition: attachment; filename=\"song.zip\"\n\n";
+    ses_mail = ses_mail + fs.readFileSync("1.zip").toString() + "\n\n";
+    ses_mail = ses_mail + "--NextPart--";
+    // var params = {
+    //     Destinations: [email],
+    //     FromArn: "",
+    //     RawMessage: {
+    //         Data: < Binary String >
+    //     },
+    //     ReturnPathArn: "",
+    //     Source: "",
+    //     SourceArn: ""
+    // };
+
+    var params = {
+        RawMessage: { Data: new Buffer(ses_mail) },
+        Destinations: [email],
+        Source: "'ktvgod.me' <" + email + ">'"
+    };
+
+    ses.sendRawEmail(params, function(err, data) {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log("sent email! " + data)
+        }
+    });
+};
+
+// sendRawEmail(fromEmail);
+
+// console.log()
+// var AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID
+// var AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY
 var server = app.listen(process.env.PORT || port, function() {
     console.log('Listening on port %s!', server.address().port)
 })
@@ -172,7 +231,7 @@ app.get('/query', function(req, res) {
             try {
                 collection.find(query, { file_name: 1, cn_char: 1, artist: 1 }).sort({ cn_char: -1 }).toArray(function(err, result) {
                     if (err) throw err;
-                    console.log(result);
+                    // console.log(result);
                     res.send(result);
                     db.close();
                 });
@@ -205,25 +264,63 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
     var pinyinLyrics = payload.pinyinLyrics
     var engLyrics = payload.engLyrics
     var times = payload.times
-    // var tempPath = req.files.audioFile.path
-    // var targetPath = path.resolve('./uploads/' + songName + '-' + artist + '.mp3');
+
     var lineSeparator = "\n=========================================================================\n"
-    // if (path.extname(tempPath).toLowerCase() === '.mp3') { // if it is a mp3 file.
-    //     fs.rename(tempPath, targetPath, function(err) {
-    //         if (err) throw err;
-    //         console.log("Upload completed!");
-    fs.writeFile(__dirname + "/uploads/" + Date.now() + ' ' + songName + '-' + artist + '.txt',
+    var fileName = Date.now() + ' ' + songName + '-' + artist + '.txt'
+    fs.writeFile(uploadDirectory + "/" + fileName,
         cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times,
         function(err) {
-            if (err) return console.log(err);
+            if (err) {
+                res.send({ redirect: "/error" })
+                return console.log(err);
+            }
+            // zipFiles();
             res.send({ redirect: "/uploadComplete" })
         });
-
-    //     });
-    // } else {
-    //     fs.unlink(tempPath, function() { //otherwise delete that temporary file
-    //         if (err) throw err;
-    //         console.error("Only .mp3 files are allowed!");
-    //     });
-    // }
 })
+
+
+
+function zipFiles() {
+	var archive = archiver('zip', {
+	    zlib: { level: 9 } // Sets the compression level.
+	});
+
+	// good practice to catch warnings (ie stat failures and other non-blocking errors)
+	archive.on('warning', function(err) {
+	    if (err.code === 'ENOENT') {
+	        // log warning
+	    } else {
+	        // throw error
+	        throw err;
+	    }
+	});
+
+	var output = fs.createWriteStream(__dirname + '/' + 'song.zip');
+
+	// listen for all archive data to be written
+	// 'close' event is fired only when a file descriptor is involved
+	output.on('close', function() {
+	    console.log(archive.pointer() + ' total bytes');
+	    console.log('archiver has been finalized and the output file descriptor has closed.');
+	    console.log('clearing ' + uploadDirectory)
+	    fs.removeSync(uploadDirectory)
+	});
+
+	// This event is fired when the data source is drained no matter what was the data source.
+	// It is not part of this library but rather from the NodeJS Stream API.
+	// @see: https://nodejs.org/api/stream.html#stream_event_end
+	output.on('end', function() {
+	    console.log('Data has been drained');
+	});
+
+	// pipe archive data to the file
+	archive.pipe(output);
+
+	archive.directory(uploadDirectory, false);
+
+	archive.finalize();
+
+}
+
+

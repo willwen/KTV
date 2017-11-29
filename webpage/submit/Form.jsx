@@ -20,7 +20,7 @@ export default class Form extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + JSON.stringify(this.state));
+    // alert('A name was submitted: ' + JSON.stringify(this.state));
     event.preventDefault();
     var formData = new FormData();
     console.log("here")
