@@ -4,7 +4,9 @@ import axios from 'axios'
 export default class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      "request":"pending"
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,7 +25,7 @@ export default class Form extends React.Component {
     // alert('A name was submitted: ' + JSON.stringify(this.state));
     event.preventDefault();
     var formData = new FormData();
-    console.log("here")
+    this.setState({request:"transit"})
     var audioFile = document.querySelector('#audioFile')
     formData.append("audioFile", audioFile.files[0])
     formData.append("payload", JSON.stringify(this.state))
@@ -32,6 +34,7 @@ export default class Form extends React.Component {
         'Content-Type': 'multipart/form-data'
       }
     }).then((response)=>{
+      this.setState({request:"done"})
       if (response.data.redirect) {
             // data.redirect contains the string URL to redirect to
             window.location.href = response.data.redirect;
@@ -94,6 +97,11 @@ export default class Form extends React.Component {
         </FormGroup>
 
         <input type="submit" value="Submit" id="submit" />
+        {this.state.request === "transit" ?
+        (<div className = "centered">
+            <img src= "loading.png"></img>
+        </div>): null
+        }
       </form>
     );
   }
