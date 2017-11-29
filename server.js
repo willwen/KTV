@@ -114,7 +114,8 @@ app.get('/getSong', function(req, res) {
     var getFilesPromises = []
     fileNames.forEach(function(fileName) {
         getFilesPromises.push(new Promise((resolve, reject) => {
-            glob('songs/' + id + '*/' + id + ' ' + fileName)
+            let searchGlob = 'songs/' + id + '*/' + id + ' ' + fileName
+            glob(searchGlob)
                 .then((contents) => {
                     return fs.readFile(contents[0])
                 })
@@ -124,24 +125,26 @@ app.get('/getSong', function(req, res) {
                     resolve()
                 })
                 .catch((err) => {
-                    console.log("File most likely DOES NOT exist.")
-                    console.log(err)
+                    console.log(searchGlob + " most likely DOES NOT exist.")
+                    // console.log(err)
                     lyrics[fileName] = "";
-                    reject();
+                    resolve();
                 })
         }))
     })
 
     //grab the mp3
     var fetchSongPromise = new Promise((resolve, reject) => {
-        glob('songs/' + id + '*/*.mp3')
+        let searchGlob = 'songs/' + id + '*/*.mp3'
+        glob(searchGlob)
             .then((contents) => {
                 lyrics['songFile'] = contents[0].split("songs/")[1];
                 resolve();
             })
             .catch((err) => {
+                console.log(searchGlob + " most likely DOES NOT exist.")
                 lyrics['songFile'] = "mp3 file not found";
-                reject(err)
+                resolve()
             })
     })
     getFilesPromises.push(fetchSongPromise)

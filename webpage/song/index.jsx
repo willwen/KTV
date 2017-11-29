@@ -35,7 +35,7 @@ export default class MainContainer extends React.Component {
 				showVisualizer: true
 			}
 		};
-		this.setCurrentLine = this.setCurrentLine.bind(this);
+		this.incrementLine = this.incrementLine.bind(this);
 		this.getSongLyrics = this.getSongLyrics.bind(this);
 		this.handleNewLyrics = this.handleNewLyrics.bind(this);
 		this.togglePinyin = this.togglePinyin.bind(this);
@@ -46,7 +46,6 @@ export default class MainContainer extends React.Component {
 	  	this.toggleVisualizer = this.toggleVisualizer.bind(this);
 		
 		this.skipToLine = this.skipToLine.bind(this);
-		this.changeLineColor = this.changeLineColor.bind(this)
 
 		//window resizing, update the canvas and scrolling offset.
 		this.onWindowResized = this.onWindowResized.bind(this);
@@ -168,6 +167,7 @@ export default class MainContainer extends React.Component {
 
 	    renderFrame();
 	}
+
 	//Thank you https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144
 	getParameterByName(name, url) {
 	    if (!url) url = window.location.href;
@@ -182,16 +182,23 @@ export default class MainContainer extends React.Component {
 	scaleScrolling(){
 	   // var winWidth =  window.innerWidth;
 	   var winHeight = window.innerHeight;
-	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .35))});
+	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .20))});
 	}
 
-	setCurrentLine(val){
-		this.setState({currentLine : val});
+	incrementLine(){
+		let nextLine = this.state.currentLine + 1;
+		this.setState({currentLine : nextLine});
 	}
 
 	getSongLyrics(id, title, artist){
-		axios.get("getSong", {params: {'id': id}} ).then(this.handleNewLyrics).catch(error => console.log(error));
-		this.setState({currentTitle: title , currentArtist: artist , currentLine : 0 });
+		axios.get("getSong", {params: {'id': id}} )
+			.then((response)=>{
+				this.handleNewLyrics(response)
+			})
+			.catch((error) => {
+				console.log(error)
+			});
+		this.setState({currentTitle: title , currentArtist: artist});
 
 	}
 	//called when a user clicks on a new song
@@ -207,15 +214,14 @@ export default class MainContainer extends React.Component {
 			songPath : response.data['songFile'],
 			areOptionsInflated: true//!this.state.areOptionsInflated
 		});
-		this.refs.audioPlayer.setSong(this.state.songPath);
-		this.refs.lyricsBody.clearLyrics();
 	}
 
 	
 
 	skipToLine(lineToSet, timeToSet){
-		this.refs.audioPlayer.setCurrentTime(timeToSet);
 		this.setState({currentLine : lineToSet});
+		this.refs.audioPlayer.setCurrentTime(timeToSet);
+		
 	}
 
 
@@ -247,18 +253,15 @@ export default class MainContainer extends React.Component {
 					options={this.state.options}/>
 		      </div>
 		      <AudioPlayer ref="audioPlayer"
+		      	currentSong = {this.state.songPath}
 		      	times={this.state.lyrics.times}
-		      	updateCurrentLine = {this.setCurrentLine}
+		      	incrementLine = {this.incrementLine}
 		      	currentLine = {this.state.currentLine}
 		      	scrollOffset = {this.state.scrollingOffset}
 		      	allowScrolling = {this.state.options.allowScrolling}
-		      	changeLineColor = {this.changeLineColor}/>
+				/>
 		  </div>
 		);
-	}
-
-	changeLineColor(currentLine){
-		this.refs.lyricsBody.incrementLineColor(currentLine);
 	}
 
 	//toggles:

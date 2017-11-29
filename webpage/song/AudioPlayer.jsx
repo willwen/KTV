@@ -9,11 +9,11 @@ export default class AudioPlayer extends React.Component {
   		super(props, context);
 
   		this.togglePlayer = this.togglePlayer.bind(this);
-		this.updateLine = this.updateLine.bind(this);
 		this.checkTimes = this.checkTimes.bind(this);
-		this.getAudioPlayer = this.getAudioPlayer.bind(this);
+
 		this.state = {
-			action : "none"
+			action : "none",
+			nextTimestamp: "0"
 		}
 	}
 	componentDidMount(){
@@ -36,34 +36,36 @@ export default class AudioPlayer extends React.Component {
 				e.preventDefault();
 			}
 		});
+		let times = this.props.times;
+		this.setState({nextTimestamp: Constants.timestampToSeconds(times[this.props.currentLine])})
+	}
+	// when props like currentLine update
+	componentWillReceiveProps(nextProps){
+		if(nextProps.times)
+			this.setState({nextTimestamp: Constants.timestampToSeconds(nextProps.times[nextProps.currentLine])})
 	}
 
 
 	checkTimes(){
 		if(this.props.times.length !=0){
-			let times = this.props.times;
-			let currentLine = this.props.currentLine;
-			let nextLineTime = Constants.timestampToSeconds(times[currentLine]);
+			let currentLine = this.props.currentLine
+			let nextLineTime = this.state.nextTimestamp;
+			//round is vital to get realistic that "preemptive" scrolling feel
 			let currentTime = Math.round(this.refs.audioHTML.currentTime);
 			let counter = 1
-			while(nextLineTime == 0){
-				nextLineTime = Constants.timestampToSeconds(times[currentLine + counter]);
+			while(nextLineTime == 0){//if the next line is empty
+				nextLineTime = Constants.timestampToSeconds(this.props.times[currentLine + counter]);
 				counter++;
-			}
-
-			if(nextLineTime == 0 && currentLine != 0){
-				this.props.updateCurrentLine(currentLine + 1);
-				return;
 			}
 
 			if (currentTime >= nextLineTime)
 			{
 				// var t0 = performance.now();
-				this.updateLine(currentLine);
+				// this.updateLine(currentLine);
 				// var t1 = performance.now();
 
-				// console.log("scrolling val: " + scrollingOffset);
-				this.props.updateCurrentLine(currentLine + 1);
+				// console.log("scrolling val: " + this.props.scrollOffset);
+				this.props.incrementLine();
 				if(this.props.allowScrolling){
 					$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});
 				}
@@ -90,20 +92,11 @@ export default class AudioPlayer extends React.Component {
 		if(this.refs.audioHTML.volume > .1)
 			this.refs.audioHTML.volume = this.refs.audioHTML.volume - .1;	
 	}
-	resetAction(){
 
-	}
+
 	setCurrentTime(newTime){
 		this.refs.audioHTML.currentTime = newTime;
 		this.refs.audioHTML.play();
-	}
-
-	setSong(songSource){
-		this.refs.audioHTML.src = songSource;
-	}
-
-	getAudioPlayer(){
-		return this.refs.audioHTML;
 	}
 
 	togglePlayer(){
@@ -123,15 +116,12 @@ export default class AudioPlayer extends React.Component {
 		}
 	}
 
-	updateLine(currentLine){
-		this.props.changeLineColor(currentLine);
-	}
 
 	render() {
 		return (
 			<div>
 				<div className="audioContainer">
-					<audio controls="true" ref="audioHTML" id="audioPlayer" ></audio>
+					<audio controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} ></audio>
 				</div> 
 				<AudioAnimations action = {this.state.action}/>
 			</div>

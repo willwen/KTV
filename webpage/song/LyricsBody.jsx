@@ -10,9 +10,28 @@ export default class LyricsBody extends React.Component {
 		super(props);
 		this.state={
 		}
-		this.clearLyrics = this.clearLyrics.bind(this)
+
 		this.splitCnChar = this.splitCnChar.bind(this)
 		this.splitPinyin = this.splitPinyin.bind(this)	
+	}
+
+	// when props like currentLine update
+	componentWillReceiveProps(nextProps){
+		let lineNumberStyling = {}
+		nextProps.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
+		this.setState({ lineNumberStyling: lineNumberStyling})
+
+		let pinyinStyling = {};
+		nextProps.options.showPinyin ?	(pinyinStyling = {display: "table-row"}):(pinyinStyling = {display: "none"});
+		this.setState({ pinyinStyling: pinyinStyling})
+
+		let cnStyling = {};
+		nextProps.options.showCn ? (cnStyling = {display: "table-row"}) : (cnStyling = {display: "none"});
+		this.setState({ cnStyling: cnStyling})
+		
+		let engStyling = {};
+		nextProps.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
+		this.setState({ engStyling: engStyling})
 	}
 
 	anchorClick(lineNum){
@@ -20,39 +39,11 @@ export default class LyricsBody extends React.Component {
 		this.props.skipToTime(lineNum, newTime);
 	}
 
-	clearLyrics(){ //whipes all to foregroundColor
-		// this.setState({
-		// 	lineStyles:[]
-		// })
-		console.log("will whipe all foreground Color")
-	}
-	
-	incrementLineColor(lineNum){
-		// let style = this.state.lineStyles;
-		// //wipe color off current ones:
-		// style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor}
-		// style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor}
-		// //Temporarily try NO BOLD
-		// style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor}
-		
-		// this.setState({lineStyles: style})
-	}
+
 
 	render() {
 		let bodyStyle = {};  
 		let lyricsBody = [];
-
-		let lineNumberStyling = {}
-		this.props.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
-
-		let pinyinStyling = {};
-		this.props.options.showPinyin ?	(pinyinStyling = {display: "table-row"}):(pinyinStyling = {display: "none"});
-
-		let cnStyling = {};
-		this.props.options.showCn ? (cnStyling = {display: "table-row"}) : (cnStyling = {display: "none"});
-
-		let engStyling = {};
-		this.props.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
 
 		if(this.props.lyrics.pinyin.length > 0 || this.props.lyrics.eng.length > 0 || this.props.lyrics.cn.length > 0){
 			bodyStyle = {"visibility" : "visible"};
@@ -87,24 +78,24 @@ export default class LyricsBody extends React.Component {
 					(<div key= {"rowNumber"+ lineNumber} className="row" style={
 							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
 						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
-						<div className="col-xs-1 lineIndex vertical-center" style = {lineNumberStyling}>
+						<div className="col-xs-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
 							{overlayTrigger}
 						</div>
 						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
 							<div className = "row">
 							<table>
 								<tbody>
-									{ pinyin[i] && cnChar[i] ? (<tr className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}>
-													{this.splitPinyin(pinyin[i], cnChar[i])}
+									{ pinyin[i] && cnChar[i] ? (<tr className = {Constants.ConstsClass.pinyinLyricsLineClass} style={this.state.pinyinStyling}>
+													{this.splitPinyin(pinyin[i], cnChar[i], lineNumber)}
 													</tr>) : null
 									}
-									{ cnChar[i] ? (<tr className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}>
-														{this.splitCnChar(cnChar[i])}</tr>) : null
+									{ cnChar[i] ? (<tr className = {Constants.ConstsClass.cnCharLyricsLineClass} style={this.state.cnStyling}>
+														{this.splitCnChar(cnChar[i], lineNumber)}</tr>) : null
 									}
 								</tbody>
 							</table>
 							</div>
-							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={engStyling}> {eng[i]}</div>
+							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={this.state.engStyling}> {eng[i]}</div>
 						</div>
 						</div>
 						<br className = "clearfix"></br>
@@ -133,28 +124,28 @@ export default class LyricsBody extends React.Component {
 	// split a pinyin line by spaces
 	// we use index j and take in cnChars because if cnChars has a space for that index, 
 	// we also want pinyinChar to be a space.
-	splitPinyin(pinyinLine, charLine){
+	splitPinyin(pinyinLine, charLine, lineNumber){
 		var cnChars = [...charLine]
 		var pinyinChars = pinyinLine.split(' ')
 		var tdArray = []
 		let j = 0;
 		for(let i = 0 ; i < pinyinChars.length; i++){
 			if (cnChars[j] === " "){
-				tdArray.push(<td > </td>)
+				tdArray.push(<td key = {lineNumber + "  space " + index}> </td>)
 				i--;
 			}
 			else{
-				tdArray.push(<td >{pinyinChars[i]}</td>)
+				tdArray.push(<td key = {lineNumber + "  pinyinChar " + index}>{pinyinChars[i]}</td>)
 			}
 			j++;
 		}
 		return tdArray
 	}
 
-	splitCnChar(charLine){
+	splitCnChar(charLine, lineNumber){
 		var cnChars = [...charLine]
 		return cnChars.map((cnChar, index)=>{
-			return <td >{cnChar}</td>
+			return <td key={lineNumber + " cnChar " + index}>{cnChar}</td>
 		})	
 	}
 }
