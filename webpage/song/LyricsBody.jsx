@@ -3,69 +3,47 @@ import {Tooltip} from 'react-bootstrap'
 import {OverlayTrigger} from 'react-bootstrap'
 // import Scroll from 'react-scroll'; // Imports all Mixins
 // var Element = Scroll.Element;
+const uuidv1 = require('uuid/v1');
 
 export default class LyricsBody extends React.Component {
 	constructor(props){
 		super(props);
 		this.state={
-			lines : [],
-			lineStyles: []
 		}
 
-		this.clearLyrics = this.clearLyrics.bind(this)
+		this.splitCnChar = this.splitCnChar.bind(this)
+		this.splitPinyin = this.splitPinyin.bind(this)	
+	}
+
+	// when props like currentLine update
+	componentWillReceiveProps(nextProps){
+		let lineNumberStyling = {}
+		nextProps.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
+		this.setState({ lineNumberStyling: lineNumberStyling})
+
+		let pinyinStyling = {};
+		nextProps.options.showPinyin ?	(pinyinStyling = {display: "table-row"}):(pinyinStyling = {display: "none"});
+		this.setState({ pinyinStyling: pinyinStyling})
+
+		let cnStyling = {};
+		nextProps.options.showCn ? (cnStyling = {display: "table-row"}) : (cnStyling = {display: "none"});
+		this.setState({ cnStyling: cnStyling})
+		
+		let engStyling = {};
+		nextProps.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
+		this.setState({ engStyling: engStyling})
 	}
 
 	anchorClick(lineNum){
 		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
-
-		let style = this.state.lineStyles;
-		//wipe color off current ones:
-		//-2 because if you are on line 4, and line 5 is a new line, currentline immediately jumps to line 4.
-		style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor}
-		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor}
-		style[this.props.currentLine] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		style[this.props.currentLine + 1] = {"color" : Constants.ConstsClass.foregroundColor}
-		//Temporarily try NO BOLD
-		style[lineNum-1] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight":"normal"}
-		
 		this.props.skipToTime(lineNum, newTime);
-		
-		this.setState({lineStyles: style})
 	}
 
-	clearLyrics(){
-		this.setState({
-			lines:[],
-			lineStyles:[]
-		})
-	}
-	
-	incrementLineColor(lineNum){
-		let style = this.state.lineStyles;
-		//wipe color off current ones:
-		style[this.props.currentLine - 2] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		style[this.props.currentLine - 1] = {"color" : Constants.ConstsClass.foregroundColor, "fontWeight": "normal"}
-		//Temporarily try NO BOLD
-		style[this.props.currentLine] = {"color" : Constants.ConstsClass.highlightColor, "fontWeight": "normal"}
-		
-		this.setState({lineStyles: style})
-	}
+
 
 	render() {
 		let bodyStyle = {};  
 		let lyricsBody = [];
-
-		let lineNumberStyling = {}
-		this.props.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
-
-		let pinyinStyling = {};
-		this.props.options.showPinyin ?	(pinyinStyling = {display: "block"}):(pinyinStyling = {display: "none"});
-
-		let cnStyling = {};
-		this.props.options.showCn ? (cnStyling = {display: "block"}) : (cnStyling = {display: "none"});
-
-		let engStyling = {};
-		this.props.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
 
 		if(this.props.lyrics.pinyin.length > 0 || this.props.lyrics.eng.length > 0 || this.props.lyrics.cn.length > 0){
 			bodyStyle = {"visibility" : "visible"};
@@ -75,7 +53,7 @@ export default class LyricsBody extends React.Component {
 			let eng = this.props.lyrics.eng;
 			let times = this.props.lyrics.times;
 			for (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
-				var lineStyle = this.state.lineStyles[i];
+				// var lineStyle = this.state.lineStyles[i];
 
 				var minutes = Math.floor(times[i]/100);
 				var seconds = Math.floor(times[i]%100);
@@ -97,15 +75,27 @@ export default class LyricsBody extends React.Component {
 					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
 				}
 				var rowDiv = 
-					(<div key= {"rowNumber"+ lineNumber} className="row" style={lineStyle}>
+					(<div key= {"rowNumber"+ lineNumber} className="row" style={
+							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
 						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
-						<div className="col-xs-1 lineIndex vertical-center" style = {lineNumberStyling}>
+						<div className="col-xs-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
 							{overlayTrigger}
 						</div>
 						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
-							<div className = {Constants.ConstsClass.pinyinLyricsLineClass} style={pinyinStyling}> {pinyin[i]}</div>
-							<div className = {Constants.ConstsClass.cnCharLyricsLineClass} style={cnStyling}> {cnChar[i]}</div>
-							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={engStyling}> {eng[i]}</div>
+							<div className = "row">
+							<table>
+								<tbody>
+									{ pinyin[i] && cnChar[i] ? (<tr className = {Constants.ConstsClass.pinyinLyricsLineClass} style={this.state.pinyinStyling}>
+													{this.splitPinyin(pinyin[i], cnChar[i], lineNumber)}
+													</tr>) : null
+									}
+									{ cnChar[i] ? (<tr className = {Constants.ConstsClass.cnCharLyricsLineClass} style={this.state.cnStyling}>
+														{this.splitCnChar(cnChar[i], lineNumber)}</tr>) : null
+									}
+								</tbody>
+							</table>
+							</div>
+							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={this.state.engStyling}> {eng[i]}</div>
 						</div>
 						</div>
 						<br className = "clearfix"></br>
@@ -117,18 +107,46 @@ export default class LyricsBody extends React.Component {
 		else
 			bodyStyle = {"visibility" : "hidden"}
 
-		this.state.lines = lyricsBody.map(line => {
-			return line;
-		})
-		
+	
 		return (
 			<div className="row">
 				<div className = "gradient col-xs-12" id='lyricsBody' style = {bodyStyle}>
-					{this.state.lines}
+					{
+						lyricsBody.map(line => {
+							return line;
+						})
+					}
 				</div>
 			</div>
 		);
 	}
 
+	// split a pinyin line by spaces
+	// we use index j and take in cnChars because if cnChars has a space for that index, 
+	// we also want pinyinChar to be a space.
+	splitPinyin(pinyinLine, charLine, lineNumber){
+		var cnChars = [...charLine]
+		var pinyinChars = pinyinLine.split(' ')
+		var tdArray = []
+		let j = 0;
+		for(let i = 0 ; i < pinyinChars.length; i++){
+			if (cnChars[j] === " "){
+				tdArray.push(<td key = {lineNumber + "  space " + i}> </td>)
+				i--;
+			}
+			else{
+				tdArray.push(<td key = {lineNumber + "  pinyinChar " + i}>{pinyinChars[i]}</td>)
+			}
+			j++;
+		}
+		return tdArray
+	}
+
+	splitCnChar(charLine, lineNumber){
+		var cnChars = [...charLine]
+		return cnChars.map((cnChar, index)=>{
+			return <td key={lineNumber + " cnChar " + index}>{cnChar}</td>
+		})	
+	}
 }
 

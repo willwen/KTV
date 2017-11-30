@@ -1,16 +1,12 @@
 ### Quick Fixes
 - Add Snyk security test
 	https://snyk.io/test/github/
-- drastically reduce webpack bundle size & image sizes	
-
+- Elastic Beanstalk Configurations:
+	https://stackoverflow.com/questions/18908426/increasing-client-max-body-size-in-nginx-conf-on-aws-elastic-beanstalk
+	https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk
 ### Medium Effort
-
-- Redirect all HTTP to HTTPS
-- Optimizing caching
-	- Service worker https://www.youtube.com/watch?v=4uQMl7mFB6g
 - Audacity to detect lyric timings
 - write treesearch in react
-
 - Fix treefind bootstrap sizing
 - Results list should highlight what text matched (regex)
 - Make a popup help box on load
@@ -21,16 +17,13 @@
 - remove scrollTo Dependency on jQuery
 	- https://github.com/flyingant/react-scroll-to-component
 ### Larger Features
-- Readjust canvas size if resized
 - See microphone freq side by side with song
 - Add audacity instrumentals.
 - Change jp, cn, spanish , for particular songs
 	- need to refactor DB schema
 - Should be able to disable canvas all together
 	- and disable audio analyzer.
-- Visualzier bucket size should be variable
-	- smaller esp for mobile
-	- Work on a ios
+- Visualizer to work on a ios
 https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/PlayingandSynthesizingSounds.html
 
 - Fix scrolling time back shouldnt break the text highlighting

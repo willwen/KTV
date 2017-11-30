@@ -1,8 +1,7 @@
 node_modules/*
-*.mp3
-*.mp4
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 .elasticbeanstalk/app_versions/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+uploads/*
