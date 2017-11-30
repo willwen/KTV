@@ -229,9 +229,10 @@ export default class MainContainer extends React.Component {
 		return (
 			<div>
 			  <canvas className = "canvas" ref="canvas"></canvas>
-		      <div className="container">
+		      <div>
 		      	
 		      	<PageHeader/>
+		      	<div className="container">
 				<OptionsMenu
 					options = {this.state.options}
 					open = {this.state.areOptionsInflated}
@@ -251,6 +252,7 @@ export default class MainContainer extends React.Component {
 					lyrics = {this.state.lyrics}
 					skipToTime={this.skipToLine}
 					options={this.state.options}/>
+				</div>
 		      </div>
 		      <AudioPlayer ref="audioPlayer"
 		      	currentSong = {this.state.songPath}
