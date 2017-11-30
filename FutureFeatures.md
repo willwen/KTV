@@ -44,14 +44,6 @@ https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/
 
 Notes:
 
-Gradients:
+rename life saver:
+find . -type f -name "*times.txt" -exec sh -c 'mv "$0" "${0/times/Timestamps}"' '{}' \;
 
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left right, #283048, #859398);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left right, #283048, #859398);
-   For Opera 11.1 to 12.0 
-  background: -moz-linear-gradient(left right, #283048, #859398);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #283048, #859398);
-  /* Standard syntax */
