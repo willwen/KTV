@@ -2,9 +2,9 @@ export default class LanguageOptions extends React.Component {
   constructor(props){
   	super(props);
     this.state = {
-      pinyinChecked: true,
-      cnChecked: true,
-      enChecked:true
+      pronounciationChecked: true,
+      primaryChecked: true,
+      translatedChecked:true
     }
   }
 
@@ -12,61 +12,74 @@ export default class LanguageOptions extends React.Component {
   	e.preventDefault();
   }
 
-  changePinyin(){
+  changePronounciation(){
     this.setState({
-      pinyinChecked: !this.state.pinyinChecked
+      pronounciationChecked: !this.state.pronounciationChecked
     }, () => {
-      this.props.togglePinyin(this.state.pinyinChecked)
+      this.props.togglePronounciation(this.state.pronounciationChecked)
       
     })
   }
 
-  changeCn(){
+  changePrimary(){
     this.setState({
-      cnChecked: !this.state.cnChecked
+      primaryChecked: !this.state.primaryChecked
     }, () => {
-      this.props.toggleCn(this.state.cnChecked)
+      this.props.togglePrimary(this.state.primaryChecked)
       
     })
   }
 
-  changeEng(){
+  changeTranslated(){
     this.setState({
-      enChecked: !this.state.enChecked
+      translatedChecked: !this.state.translatedChecked
     }, () => {
-      this.props.toggleEng(this.state.enChecked)
+      this.props.toggleTranslated(this.state.translatedChecked)
       
     })
   }
 
   render() {
     return (
-		<div className = "displayLanguages col-xs-6">
-			<form onSubmit={this.modifyOptions}>
-				<span>Display Languages:</span>
-				<div className="checkbox">
-					<span>
-            <label>
-            <input id="pinyinCB" type="checkbox" 
-              checked={this.state.pinyinChecked}
-              onChange={this.changePinyin.bind(this)}/>
-            PinYin
-            </label>
-          </span>
-				</div><span></span>
-				<div className="checkbox">
-					<span><label><input id="cnCB" type="checkbox"
-              checked={this.state.cnChecked}
-              onChange={this.changeCn.bind(this)}/>
-              Chinese Char</label></span>
-				</div><span></span>
-				<div className="checkbox">
-					<span><label><input id="engCB" type="checkbox"
-            checked={this.state.enChecked}
-            onChange={this.changeEng.bind(this)}/>
-          English</label></span></div>
-			</form>
-		</div>
+  		<div className="displayLanguages col-xs-6">
+        <form onSubmit={this.modifyOptions}>
+            <span>Display Languages:</span>
+            <div className="checkbox">
+              <span>
+                <label>
+                  <input id="pronounciationCB" type="checkbox" 
+                    checked={this.state.pronounciationChecked}
+                    onChange={this.changePronounciation.bind(this)} disabled={this.props.pronounciationLanguage ? false : true}/>
+                  {this.props.pronounciationLanguage}
+                </label>
+              </span>
+            </div>
+            <div className="checkbox">
+              <span>
+                <label>
+                  <input id="primaryCB" type="checkbox"
+                    checked={this.state.primaryChecked}
+                    onChange={this.changePrimary.bind(this)}
+                    disabled={this.props.primaryLanguage ? false : true}
+                    />
+                    {this.props.primaryLanguage}
+                </label>
+              </span>
+            </div>
+            <div className="checkbox">
+                <span>
+                  <label>
+                    <input id="TranslatedCB" type="checkbox"
+                    checked={this.state.translatedChecked}
+                    onChange={this.changeTranslated.bind(this)}
+                    disabled={this.props.translatedLanguage ? false : true}
+                    />
+                    {this.props.translatedLanguage}
+                </label>
+              </span>
+            </div>
+        </form>
+      </div>
     );
   }
 }

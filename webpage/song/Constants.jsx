@@ -13,9 +13,9 @@ const ConstsClass = {
 
 	//Checkboxes:
 	//langauges
-	pinyinCheckBoxID : "pinyinCB",
-	cnCharCheckBoxID : "cnCB",
-	englishCheckBoxID : "engCB",
+	pronounciationCheckBoxID : "pronounciationCB",
+	primaryCheckBoxID : "primaryCB",
+	translatedCheckBoxID : "translatedCB",
 	//options:
 	optionsID : "options",
 	wantScrollCheckBoxID : "wantScrolling",
@@ -29,10 +29,10 @@ const ConstsClass = {
 	//lyricLeft
 	lineNumberID: "lineIndex",
 
-	//lyricRight Lines: pinyin, cn, english
-	pinyinLyricsLineClass : "pinyinLine",
-	cnCharLyricsLineClass : "cnLine",
-	englishLyricsLineClass : "engLine",
+	//lyricRight Lines: pronounciation, primary, translated
+	pronounciationLyricsLineClass : "pronounciationLine",
+	primaryLyricsLineClass : "primaryLine",
+	translatedLyricsLineClass : "translatedLine",
 
 
 

@@ -107,54 +107,101 @@ app.get('/uploadComplete', function(req, res) {
 // send back a song.
 app.get('/getSong', function(req, res) {
     var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
-    res.writeHead(200, { 'Content-type': 'application/json' });
-    var lyrics = {};
-    var fileNames = ['pinyin.txt', 'cn.txt', 'eng.txt', 'times.txt'];
-    //dont use traditional for loop or else you'll have closure problems :)
-    var getFilesPromises = []
-    fileNames.forEach(function(fileName) {
-        getFilesPromises.push(new Promise((resolve, reject) => {
-            let searchGlob = 'songs/' + id + '*/' + id + ' ' + fileName
-            glob(searchGlob)
-                .then((contents) => {
-                    return fs.readFile(contents[0])
-                })
-                .then((buffer) => {
-                    fileContent = buffer.toString().split("\n");
-                    lyrics[fileName] = fileContent;
-                    resolve()
-                })
-                .catch((err) => {
-                    console.log(searchGlob + " most likely DOES NOT exist.")
-                    // console.log(err)
-                    lyrics[fileName] = "";
-                    resolve();
-                })
-        }))
-    })
 
-    //grab the mp3
-    var fetchSongPromise = new Promise((resolve, reject) => {
-        let searchGlob = 'songs/' + id + '*/*.mp3'
-        glob(searchGlob)
-            .then((contents) => {
-                lyrics['songFile'] = contents[0].split("songs/")[1];
-                resolve();
-            })
-            .catch((err) => {
-                console.log(searchGlob + " most likely DOES NOT exist.")
-                lyrics['songFile'] = "mp3 file not found";
-                resolve()
-            })
-    })
-    getFilesPromises.push(fetchSongPromise)
+    //Grab data about that song
+    var MongoClient = mongodb.MongoClient;
+    MongoClient.connect(mongoURL)
+        .then((db) => {
+            var collection = db.collection('songs');
+            var query = { "file_name": id }
+            var findOnePromise = collection.findOne(query, { file_name: 1, cn_char: 1, artist: 1, PrimaryLanguage: 1, PronounciationLanguage: 1, TranslatedLanguage: 1 })
+            findOnePromise.then((result) => {
+                console.log(result)
+                db.close();
+                res.writeHead(200, { 'Content-type': 'application/json' });
+                var songPayload = {
+                    Title: result.cn_char,
+                    Artist: result.artist,
+                    PrimaryLanguage: result.PrimaryLanguage,
+                    PrimaryLanguageLyrics: [],
+                    PronounciationLanguage: result.PronounciationLanguage,
+                    PronounciationLanguageLyrics: [],
+                    TranslatedLanguage: result.TranslatedLanguage,
+                    TranslatedLanguageLyrics: [],
+                    Timestamps: [],
+                    songFile: ""
+                };
+                var fileNames = ['PronounciationLanguage.txt', 'PrimaryLanguage.txt', 'TranslatedLanguage.txt', 'Timestamps.txt'];
+                //dont use traditional for loop or else you'll have closure problems :)
 
-    Promise.all(getFilesPromises).then(() => {
-            res.end(JSON.stringify(lyrics, 'utf-8'));
+                var getFilesPromises = []
+                fileNames.forEach(function(fileName) {
+                    getFilesPromises.push(new Promise((resolve, reject) => {
+                        let searchGlob = 'songs/' + id + '*/' + id + ' ' + fileName
+                        glob(searchGlob)
+                            .then((contents) => {
+                                return fs.readFile(contents[0])
+                            })
+                            .then((buffer) => {
+                                fileContent = buffer.toString().split("\n");
+                                songPayload[path.parse(fileName).name + "Lyrics"] = fileContent;
+                                resolve()
+                            })
+                            .catch((err) => {
+                                console.log(searchGlob + " most likely DOES NOT exist.")
+                                // console.log(err)
+                                songPayload[path.parse(fileName).name+ "Lyrics"] = "";
+                                resolve();
+                            })
+                    }))
+                })
+
+                //grab the mp3
+                var fetchSongPromise = new Promise((resolve, reject) => {
+                    let searchGlob = 'songs/' + id + '*/*.mp3'
+                    glob(searchGlob)
+                        .then((contents) => {
+                            songPayload['songPath'] = contents[0].split("songs/")[1];
+                            resolve();
+                        })
+                        .catch((err) => {
+                            console.log(searchGlob + " most likely DOES NOT exist.")
+                            songPayload['songPath'] = "mp3 file not found";
+                            resolve()
+                        })
+                })
+                getFilesPromises.push(fetchSongPromise)
+
+                Promise.all(getFilesPromises).then(() => {
+                    console.log(songPayload)
+                    res.end(JSON.stringify(songPayload, 'utf-8'));
+                })
+                .catch(() => {
+                    res.end(JSON.stringify(songPayload, 'utf-8'));
+                })
+
+            })
         })
-        .catch(() => {
-            res.end(JSON.stringify(lyrics, 'utf-8'));
+        .catch((err) => {
+           var placeholder = {
+                Title: "Error",
+                Artist: "Error",
+                PrimaryLanguage: "Error",
+                PrimaryLanguageLyrics: ["Error"],
+                PronounciationLanguage: "Error",
+                PronounciationLanguageLyrics: ["Error"],
+                TranslatedLanguage: "Error",
+                TranslatedLanguageLyrics: ["Error"],
+                times: [],
+                songFile: ""
+            };
+            res.send(placeholder);
+            if (typeof db !== 'undefined')
+                db.close();
+            console.log('/getSong: unable to connect to server', err);
         })
+
+
 });
 
 
@@ -167,13 +214,13 @@ app.get('/artists', function(req, res) {
             var cursor = collection.aggregate(query);
             cursor.toArray()
                 .then((result) => {
+                    console.log(result)
                     res.send(result);
                     db.close();
                 })
 
         })
         .catch((err) => {
-            console.log(err);
             var placeholder = [{
                 _id: 9999,
                 title_pinyin: 'No Results Found',
@@ -184,7 +231,9 @@ app.get('/artists', function(req, res) {
                 searchTerm: 'No Results Found'
             }];
             res.send(placeholder);
-            db.close();
+            if (typeof db !== 'undefined')
+                db.close();
+            console.log('/artists: unable to connect to server', err);
         })
 })
 
@@ -203,6 +252,7 @@ app.get('/query', function(req, res) {
             var query = { "searchTerm": { $regex: new RegExp(regexValue, 'i') } }
             var cursor = collection.find(query, { file_name: 1, cn_char: 1, artist: 1 }).sort({ cn_char: -1 })
             cursor.toArray().then((result) => {
+                console.log(result)
                 res.send(result);
                 db.close();
             })
@@ -218,8 +268,9 @@ app.get('/query', function(req, res) {
                 searchTerm: 'No Results Found'
             }];
             res.send(placeholder);
-            db.close();
-            console.log('unable to connect to server', err);
+            if (typeof db !== 'undefined')
+                db.close();
+            console.log('/query: unable to connect to server', err);
         })
 
 });
@@ -361,14 +412,13 @@ function sendRawEmail(email, songName, artist, s3URL) {
 
 function createUploadDirectory() {
     return new Promise((resolve, reject) => {
-        try{
+        try {
             if (!fs.existsSync(uploadDirectory)) {
                 fs.mkdirSync(uploadDirectory);
                 console.log("created " + uploadDirectory)
             }
             resolve()
-        }
-        catch (err){
+        } catch (err) {
             reject(err);
         }
     })

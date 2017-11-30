@@ -14,22 +14,24 @@ export default class MainContainer extends React.Component {
 	constructor(){
 		super();
 		this.state={
-			currentTitle: '',
-			currentArtist: '',
 			currentLine: 0,
 			areOptionsInflated: true, //opposite is collapsed
-			lyrics: {
-				pinyin : [],
-				cn: [],
-				eng: [],
-				times : []
-			},
-			songPath: '',
 			scrollingOffset: -400,
+			currentTitle: "",
+			currentArtist: "",
+			primaryLanguage: "",
+			pronounciationLanguage: "",
+			translatedLanguage: "",
+			lyrics: {
+				primaryLanguageLyrics : [],
+				translatedLanguageLyrics : [],
+				pronounciationLanguageLyrics : [],
+				timestamps : []
+			},
 			options: {
-				showPinyin: true,
-				showCn: true,
-				showEng: true,
+				showPronounciation: true,
+				showPrimary: true,
+				showTranslated: true,
 				allowScrolling : true,
 				showLineNums: true,
 				showVisualizer: true
@@ -38,9 +40,10 @@ export default class MainContainer extends React.Component {
 		this.incrementLine = this.incrementLine.bind(this);
 		this.getSongLyrics = this.getSongLyrics.bind(this);
 		this.handleNewLyrics = this.handleNewLyrics.bind(this);
-		this.togglePinyin = this.togglePinyin.bind(this);
-		this.toggleEng = this.toggleEng.bind(this);
-		this.toggleCn = this.toggleCn.bind(this); 
+
+		this.togglePronounciation = this.togglePronounciation.bind(this);
+		this.toggleTranslated = this.toggleTranslated.bind(this);
+		this.togglePrimary = this.togglePrimary.bind(this); 
 		this.toggleScrolling = this.toggleScrolling.bind(this);
 	  	this.toggleLineNums = this.toggleLineNums.bind(this);
 	  	this.toggleVisualizer = this.toggleVisualizer.bind(this);
@@ -60,9 +63,7 @@ export default class MainContainer extends React.Component {
 	}
 	componentDidMount(){
 		var id = this.getParameterByName('id');
-		var title = this.getParameterByName('title');
-		var artist = this.getParameterByName('artist')
-		this.getSongLyrics(id, title, artist);
+		this.getSongLyrics(id);
 
 		window.addEventListener("resize", this.onWindowResized);
   		this.setCanvas();
@@ -190,7 +191,7 @@ export default class MainContainer extends React.Component {
 		this.setState({currentLine : nextLine});
 	}
 
-	getSongLyrics(id, title, artist){
+	getSongLyrics(id){
 		axios.get("getSong", {params: {'id': id}} )
 			.then((response)=>{
 				this.handleNewLyrics(response)
@@ -198,22 +199,26 @@ export default class MainContainer extends React.Component {
 			.catch((error) => {
 				console.log(error)
 			});
-		this.setState({currentTitle: title , currentArtist: artist});
-
 	}
 	//called when a user clicks on a new song
 	handleNewLyrics(response){
 		this.setState({
 			currentLine: 0,
+			currentTitle: response.data.Title,
+			currentArtist: response.data.Artist,
+			primaryLanguage: response.data.PrimaryLanguage,
+			pronounciationLanguage: response.data.PronounciationLanguage,
+			translatedLanguage: response.data.TranslatedLanguage,
 			lyrics: {
-				cn : response.data['cn.txt'],
-				eng : response.data['eng.txt'],
-				pinyin : response.data['pinyin.txt'],
-				times : response.data['times.txt']
+				primaryLanguageLyrics : response.data.PrimaryLanguageLyrics,
+				translatedLanguageLyrics : response.data.TranslatedLanguageLyrics,
+				pronounciationLanguageLyrics : response.data.PronounciationLanguageLyrics,
+				timestamps : response.data.Timestamps
 			},
-			songPath : response.data['songFile'],
+			songPath : response.data.songFile,
 			areOptionsInflated: true//!this.state.areOptionsInflated
 		});
+		console.log(this.state.primaryLanguage)
 	}
 
 	
@@ -233,11 +238,14 @@ export default class MainContainer extends React.Component {
 		      	
 		      	<PageHeader/>
 				<OptionsMenu
+					primaryLanguage={this.state.primaryLanguage}
+					pronounciationLanguage={this.state.pronounciationLanguage}
+					translatedLanguage={this.state.translatedLanguage}
 					options = {this.state.options}
 					open = {this.state.areOptionsInflated}
-					togglePinyin = {this.togglePinyin}
-					toggleCn = {this.toggleCn}
-					toggleEng = {this.toggleEng}
+					togglePronounciation = {this.togglePronounciation}
+					togglePrimary = {this.togglePrimary}
+					toggleTranslated = {this.toggleTranslated}
 					toggleLineNums = {this.toggleLineNums}
 					toggleScrolling = {this.toggleScrolling}
 					toggleVisualizer = {this.toggleVisualizer}
@@ -247,14 +255,15 @@ export default class MainContainer extends React.Component {
 					title = {this.state.currentTitle}
 					artist = {this.state.currentArtist}/>
 
-				<LyricsBody ref = "lyricsBody" currentLine={this.state.currentLine}
+				<LyricsBody ref = "lyricsBody" 
+					currentLine={this.state.currentLine}
 					lyrics = {this.state.lyrics}
 					skipToTime={this.skipToLine}
 					options={this.state.options}/>
 		      </div>
 		      <AudioPlayer ref="audioPlayer"
 		      	currentSong = {this.state.songPath}
-		      	times={this.state.lyrics.times}
+		      	timestamps={this.state.lyrics.timestamps}
 		      	incrementLine = {this.incrementLine}
 		      	currentLine = {this.state.currentLine}
 		      	scrollOffset = {this.state.scrollingOffset}
@@ -287,24 +296,24 @@ export default class MainContainer extends React.Component {
 	  	});
 	}
 
-	togglePinyin(isChecked){
+	togglePronounciation(isChecked){
 		let temp = this.state.options;
-		temp['showPinyin'] = !this.state.options.showPinyin
+		temp['showPronounciation'] = !this.state.options.showPronounciation
 	  	this.setState({
   			options : temp
 	  	});
 	}
-	toggleCn(isChecked){
+	togglePrimary(isChecked){
 		let temp = this.state.options;
-		temp['showCn'] = !this.state.options.showCn
+		temp['showPrimary'] = !this.state.options.showPrimary
 	  	this.setState({
 	  		options : temp
 	  	});
 	}
-	toggleEng(isChecked){
+	toggleTranslated(isChecked){
 		//shallow merging
 		let temp = this.state.options;
-		temp['showEng'] = !this.state.options.showEng
+		temp['showTranslated'] = !this.state.options.showTranslated
 	  	this.setState({
 	  		options : temp
 	  	});

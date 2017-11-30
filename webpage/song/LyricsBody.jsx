@@ -11,8 +11,8 @@ export default class LyricsBody extends React.Component {
 		this.state={
 		}
 
-		this.splitCnChar = this.splitCnChar.bind(this)
-		this.splitPinyin = this.splitPinyin.bind(this)	
+		this.splitPrimaryLang = this.splitPrimaryLang.bind(this)
+		this.splitPronounciationLang = this.splitPronounciationLang.bind(this)	
 	}
 
 	// when props like currentLine update
@@ -21,21 +21,33 @@ export default class LyricsBody extends React.Component {
 		nextProps.options.showLineNums ? (lineNumberStyling = {visibility: "visible"}):(lineNumberStyling = {visibility: "hidden"});
 		this.setState({ lineNumberStyling: lineNumberStyling})
 
-		let pinyinStyling = {};
-		nextProps.options.showPinyin ?	(pinyinStyling = {display: "table-row"}):(pinyinStyling = {display: "none"});
-		this.setState({ pinyinStyling: pinyinStyling})
+		let pronounciationStyling = {};
+		nextProps.options.showPronounciation ?	(pronounciationStyling = {display: "table-row"}):(pronounciationStyling = {display: "none"});
+		this.setState({ pronounciationStyling: pronounciationStyling})
 
-		let cnStyling = {};
-		nextProps.options.showCn ? (cnStyling = {display: "table-row"}) : (cnStyling = {display: "none"});
-		this.setState({ cnStyling: cnStyling})
+		let primaryLangStyling = {};
+		nextProps.options.showPrimary ? (primaryLangStyling = {display: "table-row"}) : (primaryLangStyling = {display: "none"});
+		this.setState({ primaryLangStyling: primaryLangStyling})
 		
-		let engStyling = {};
-		nextProps.options.showEng ? (engStyling = {display: "block"}) : (engStyling = {display: "none"});
-		this.setState({ engStyling: engStyling})
+		let translatedStyling = {};
+		nextProps.options.showTranslated ? (translatedStyling = {display: "block"}) : (translatedStyling = {display: "none"});
+		this.setState({ translatedStyling: translatedStyling})
+
+		let roundedTimeStamps = nextProps.lyrics.timestamps.map((lineTimestamp)=>{
+			let minutes = Math.floor(lineTimestamp/100);
+			let seconds = Math.floor(lineTimestamp%100);
+			if (seconds < 10)
+				seconds = "0" + seconds;
+			//used for tooltipe = 
+			return time
+		})
+		
+		this.setState({roundedTimeStamps: roundedTimeStamps})
+			
 	}
 
 	anchorClick(lineNum){
-		let newTime = Constants.timestampToSeconds(this.props.lyrics.times[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
+		let newTime = Constants.timestampToSeconds(this.props.lyrics.timestamps[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
 		this.props.skipToTime(lineNum, newTime);
 	}
 
@@ -45,28 +57,27 @@ export default class LyricsBody extends React.Component {
 		let bodyStyle = {};  
 		let lyricsBody = [];
 
-		if(this.props.lyrics.pinyin.length > 0 || this.props.lyrics.eng.length > 0 || this.props.lyrics.cn.length > 0){
+		if(this.props.lyrics.pronounciationLanguageLyrics.length > 0 || 
+			this.props.lyrics.translatedLanguageLyrics.length > 0 || 
+			this.props.lyrics.primaryLanguageLyrics.length > 0){
 			bodyStyle = {"visibility" : "visible"};
 			let lineNumber = 1;
-			let pinyin = this.props.lyrics.pinyin;
-			let cnChar = this.props.lyrics.cn;
-			let eng = this.props.lyrics.eng;
-			let times = this.props.lyrics.times;
-			for (var i = 0; i < Math.max(pinyin.length, cnChar.length, eng.length); i++){
+			let pronounciation = this.props.lyrics.pronounciationLanguageLyrics;
+			let primary = this.props.lyrics.primaryLanguageLyrics;
+			let translated = this.props.lyrics.translatedLanguageLyrics;
+			let times = this.props.lyrics.timestamps;
+
+			for (var i = 0; i < Math.max(pronounciation.length, primary.length, translated.length); i++){
 				// var lineStyle = this.state.lineStyles[i];
 
-				var minutes = Math.floor(times[i]/100);
-				var seconds = Math.floor(times[i]%100);
-				if (seconds < 10)
-					seconds = "0" + seconds;
-				//used for tooltip
-				var time = minutes + ":" + seconds;
+
 
 				//each lyric line takes up a row
 				let tooltip;
-				let overlayTrigger;				
+				let overlayTrigger;
+				let time = this.state.roundedTimeStamps[i]
 				if((lineNumber == 1 || time != "0:00") && time!="NaN:NaN"){
-					tooltip = (<Tooltip id= {time} className = "tooltip"><strong>{time}</strong></Tooltip>);
+					tooltip = (<Tooltip id= {time ? time : "tooltip" + i} className = "tooltip"><strong>{time}</strong></Tooltip>);
 					overlayTrigger = (<OverlayTrigger placement="top" overlay={tooltip}>
 								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
 							</OverlayTrigger>)
@@ -85,17 +96,17 @@ export default class LyricsBody extends React.Component {
 							<div className = "row">
 							<table>
 								<tbody>
-									{ pinyin[i] && cnChar[i] ? (<tr className = {Constants.ConstsClass.pinyinLyricsLineClass} style={this.state.pinyinStyling}>
-													{this.splitPinyin(pinyin[i], cnChar[i], lineNumber)}
+									{ pronounciation[i] && primary[i] ? (<tr className = {Constants.ConstsClass.pronounciationLyricsLineClass} style={this.state.pronounciationStyling}>
+													{this.splitPronounciationLang(pronounciation[i], primary[i], lineNumber)}
 													</tr>) : null
 									}
-									{ cnChar[i] ? (<tr className = {Constants.ConstsClass.cnCharLyricsLineClass} style={this.state.cnStyling}>
-														{this.splitCnChar(cnChar[i], lineNumber)}</tr>) : null
+									{ primary[i] ? (<tr className = {Constants.ConstsClass.primaryLyricsLineClass} style={this.state.primaryLangStyling}>
+														{this.splitPrimaryLang(primary[i], lineNumber)}</tr>) : null
 									}
 								</tbody>
 							</table>
 							</div>
-							<div className = {Constants.ConstsClass.englishLyricsLineClass} style={this.state.engStyling}> {eng[i]}</div>
+							<div className = {Constants.ConstsClass.translatedLyricsLineClass} style={this.state.translatedStyling}> {translated[i]}</div>
 						</div>
 						</div>
 						<br className = "clearfix"></br>
@@ -121,31 +132,31 @@ export default class LyricsBody extends React.Component {
 		);
 	}
 
-	// split a pinyin line by spaces
-	// we use index j and take in cnChars because if cnChars has a space for that index, 
-	// we also want pinyinChar to be a space.
-	splitPinyin(pinyinLine, charLine, lineNumber){
-		var cnChars = [...charLine]
-		var pinyinChars = pinyinLine.split(' ')
+	// split a pronounciation line by spaces
+	// we use index j and take in primaryLangChars because if primaryLangChars has a space for that index, 
+	// we also want pronounciationChar to be a space.
+	splitPronounciationLang(pronounciationLine, primaryLine, lineNumber){
+		var primaryLangChars = [...primaryLine]
+		var pronounciationChars = pronounciationLine.split(' ')
 		var tdArray = []
 		let j = 0;
-		for(let i = 0 ; i < pinyinChars.length; i++){
-			if (cnChars[j] === " "){
+		for(let i = 0 ; i < pronounciationChars.length; i++){
+			if (primaryLangChars[j] === " "){
 				tdArray.push(<td key = {lineNumber + "  space " + i}> </td>)
 				i--;
 			}
 			else{
-				tdArray.push(<td key = {lineNumber + "  pinyinChar " + i}>{pinyinChars[i]}</td>)
+				tdArray.push(<td key = {lineNumber + "  pronounciationChar " + i}>{pronounciationChars[i]}</td>)
 			}
 			j++;
 		}
 		return tdArray
 	}
 
-	splitCnChar(charLine, lineNumber){
-		var cnChars = [...charLine]
-		return cnChars.map((cnChar, index)=>{
-			return <td key={lineNumber + " cnChar " + index}>{cnChar}</td>
+	splitPrimaryLang(primaryLine, lineNumber){
+		var primaryLangChars = [...primaryLine]
+		return primaryLangChars.map((primaryLangChar, index)=>{
+			return <td key={lineNumber + " primaryLangChar " + index}>{primaryLangChar}</td>
 		})	
 	}
 }

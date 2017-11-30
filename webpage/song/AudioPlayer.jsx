@@ -36,25 +36,25 @@ export default class AudioPlayer extends React.Component {
 				e.preventDefault();
 			}
 		});
-		let times = this.props.times;
+		let times = this.props.timestamps;
 		this.setState({nextTimestamp: Constants.timestampToSeconds(times[this.props.currentLine])})
 	}
 	// when props like currentLine update
 	componentWillReceiveProps(nextProps){
-		if(nextProps.times)
-			this.setState({nextTimestamp: Constants.timestampToSeconds(nextProps.times[nextProps.currentLine])})
+		if(nextProps.timestamps)
+			this.setState({nextTimestamp: Constants.timestampToSeconds(nextProps.timestamps[nextProps.currentLine])})
 	}
 
 
 	checkTimes(){
-		if(this.props.times.length !=0){
+		if(this.props.timestamps.length !=0){
 			let currentLine = this.props.currentLine
 			let nextLineTime = this.state.nextTimestamp;
 			//round is vital to get realistic that "preemptive" scrolling feel
 			let currentTime = Math.round(this.refs.audioHTML.currentTime);
 			let counter = 1
 			while(nextLineTime == 0){//if the next line is empty
-				nextLineTime = Constants.timestampToSeconds(this.props.times[currentLine + counter]);
+				nextLineTime = Constants.timestampToSeconds(this.props.timestamps[currentLine + counter]);
 				counter++;
 			}
 

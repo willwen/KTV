@@ -196,15 +196,15 @@ table {
     border-collapse: separate;
 }
 
-.pinyinLine {
+.pronounciationLine {
     /*font-style: italic;*/
 }
-.cnLine {
+.primaryLine {
     /*letter-spacing: 10px;*/
     font-size: 1.3em;
 }
 
-.engLine {
+.translatedLine {
     font-style: italic;
     /*margin-left: 4px;*/
 }
