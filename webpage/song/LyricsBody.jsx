@@ -131,11 +131,11 @@ export default class LyricsBody extends React.Component {
 		let j = 0;
 		for(let i = 0 ; i < pinyinChars.length; i++){
 			if (cnChars[j] === " "){
-				tdArray.push(<td key = {lineNumber + "  space " + index}> </td>)
+				tdArray.push(<td key = {lineNumber + "  space " + i}> </td>)
 				i--;
 			}
 			else{
-				tdArray.push(<td key = {lineNumber + "  pinyinChar " + index}>{pinyinChars[i]}</td>)
+				tdArray.push(<td key = {lineNumber + "  pinyinChar " + i}>{pinyinChars[i]}</td>)
 			}
 			j++;
 		}
