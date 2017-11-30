@@ -12,13 +12,35 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
     <link href="common.css" rel="stylesheet" type="text/css">
     <link href="tree_style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="tree.js"></script>
 </head>
 
 <body>
-    <div id="content"></div>
-    </script> <!--why is this closing tag here? --> 
-    <script src="treesearch.bundle.js"></script> 
+    <nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+            <img src="logo.png" alt="logo" width="50"/>
+            </a>
+            <div>
+                <ul class="nav navbar-nav" id="navigation">
+                    <li class="nav-item" ><a href="/">Home</a></li>
+                    <li class="nav-item" ><a href="/about">About</a></li>
+                    <li class="nav-item" ><a href="/treefind">Find Artist</a></li>
+                    <li class="nav-item" ><a href="/submit">Submit a Song</a></li>
+                    <li class="nav-item" ><a href="/timepicker">Time Picker</a></li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="artists">
+            <div id="root"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
-
