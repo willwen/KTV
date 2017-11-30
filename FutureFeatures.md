@@ -2,13 +2,20 @@
 - Add Snyk security test
 	https://snyk.io/test/github/
 - Elastic Beanstalk Configurations:
-	https://stackoverflow.com/questions/18908426/increasing-client-max-body-size-in-nginx-conf-on-aws-elastic-beanstalk
-	https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk
+	- https://stackoverflow.com/questions/18908426/increasing-client-max-body-size-in-nginx-conf-on-aws-elastic-beanstalk
+	- https://stackoverflow.com/questions/14693852/how-to-force-https-on-elastic-beanstalk
+
+- move to DynamboDB
+	- Store All Songs Locally , and parse locally.
+	- Results list should highlight what text matched (regex)
+	- refactor DB so treesearch can work better
+- tripple dot 3 seconds on new line
+
 ### Medium Effort
 - Audacity to detect lyric timings
 - write treesearch in react
 - Fix treefind bootstrap sizing
-- Results list should highlight what text matched (regex)
+
 - Make a popup help box on load
 - Add album image to bottom right
 	- Add album images to treesearch
