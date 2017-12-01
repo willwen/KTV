@@ -28,13 +28,8 @@ a {
 
 /*Header Styles*/
 
-.header img {
-    width: 50px;
-    height: auto;
-    float: left;
-    margin-top: 35px;
-    margin-left: 25px;
-}
+
+
 
 .fa {
     margin: 5px;
@@ -48,19 +43,31 @@ a {
     color: white;
 }
 
-.nav {
-    margin-top: 35px;
-    margin-right: 25px;
-    float: right;
+
+
+
+nav {
+    background-color: #8332AC;
+    padding-left: 20px;
+    padding-right: 10px;
+
 }
 
-.nav p {
+
+.nav {
+    margin: 25px;
+    float: right;
+    font-size: 20px;
+
+}
+
+/*.nav p {
     display: inline;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 20px;
+   
     color: white;
-}
+}*/
 
 
 /*Give a Margin so the musicplayer has space*/
@@ -77,8 +84,6 @@ body {
   Bootstrap Overrides
  */
 
-
-
 a {
     color: #fff;
     opacity: 0.8;
@@ -86,10 +91,9 @@ a {
 }
 
 a:hover {
-    color: #fff;
-    opacity: 1;
     text-decoration: none !important;
 }
+
 
 .jumbotron {
     background: transparent;
@@ -109,6 +113,9 @@ a:hover {
     opacity: 0.8;
 }
 
+.container-fluid {
+     padding:0;
+}
 
 
 /**
@@ -117,6 +124,12 @@ a:hover {
 
 .welcome {
     font-size: 2em;
+}
+
+.welcome a:hover {
+    color: #fff;
+    opacity: 1;
+    
 }
 
 
@@ -136,19 +149,10 @@ a:hover {
 }
 
 
-/*.lineAnchor {
-    color: rgba(255, 255, 255, 0.25);
-}*/
-
 .lineAnchor:hover {
     color: #FFF;
 }
 
-.tooltip-inner { /* what is this */
-    background-color: #FD971F;
-    color: #272822;
-    font-size: 1.75em;
-}
 
 ::selection { 
     background: #574AE2; 
@@ -159,3 +163,5 @@ a:hover {
     color: white;
     background: #574AE2;
 }
+
+

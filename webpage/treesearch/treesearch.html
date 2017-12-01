@@ -18,29 +18,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="header">
-                <a href="/">
-                <img src="logo.png" alt="logo" />
-                </a>
-                <div class="nav">
-                    <a href="/">
-                        <p>Home</p>
-                    </a>
-                    <a href="/treefind">
-                        <p>Find Artist</p>
-                    </a>
-                    <a href="/submit">
-                        <p>Submit a Song</p>
-                    </a>
-                </div>
+    <nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+            <img src="logo.png" alt="logo" width="50"/>
+            </a>
+            <div>
+                <ul class="nav navbar-nav" id="navigation">
+                    <li class="nav-item" ><a href="/">Home</a></li>
+                    <li class="nav-item" ><a href="/about">About</a></li>
+                    <li class="nav-item" ><a href="/treefind">Find Artist</a></li>
+                    <li class="nav-item" ><a href="/submit">Submit a Song</a></li>
+                    <li class="nav-item" ><a href="/timepicker">Time Picker</a></li>
+                 </ul>
             </div>
         </div>
-        <div class="row">
+    </nav>
+
+    <div class="container">
+        <div class="row" id="artists">
             <div id="root"></div>
         </div>
     </div>
+
 </body>
 
 </html>

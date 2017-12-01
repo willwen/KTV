@@ -13,10 +13,7 @@
   Search Bar Stylings
 **/
 .searchDiv {
-    display: block;
     height: 40px;
-    width: 75%;
-    margin: 0 auto;
 }
 
 #songSearchInput {
@@ -51,7 +48,6 @@
 #resultsList {
     list-style-type: none;
     padding: 0;
-    margin: 0;
     display: none;
     font-size: 2em;
     font-weight: bold;

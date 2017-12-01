@@ -22,15 +22,16 @@ export default class MainContainer extends React.Component {
 
 	render() {
 		return (
-			<div className="container">
-			<div className = "row">
-		      <PageHeader/>
-	      	</div>
-			<div className = "row form">
-				<Form/>
-			</div>
-		      
-		  </div>
+			<div>
+				<div>
+					<PageHeader/>
+		      	</div>
+				<div className = "container">
+					<div className = "row form">
+			      	<Form/>
+			    	</div>
+		      	</div>
+		  	</div>
 		);
 	}
 

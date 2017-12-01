@@ -22,10 +22,12 @@ export default class SearchResults extends React.Component {
             })
         }
         return (
-            <div className = "row" >
-                <ul className = "list-group" style = {this.props.styling} id = "resultsList" > 
-                    {resultItems} 
-                </ul> 
+            <div className="container">
+                <div className = "row" >
+                    <ol className = "list-group" style = {this.props.styling} id = "resultsList" > 
+                        {resultItems} 
+                    </ol> 
+                </div>
             </div>
         );
     }
