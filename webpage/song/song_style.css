@@ -293,6 +293,15 @@ need to define with of 90% so the margin knows how much to cut*/
     background-color: #f5f5f5;
 }
 
+#instrumentalAudioPlayer {
+    position: fixed;
+    bottom: 35px;
+    width: 90%;
+    /* Set the fixed height of the footer here */
+    height: 35px;
+    background-color: #f5f5f5;
+}
+
 
 /*When User hits Play Pause*/
 
