@@ -93,19 +93,32 @@ export default class LyricsBody extends React.Component {
 							{overlayTrigger}
 						</div>
 						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
-							<div className = "row">
-							<table>
-								<tbody>
-									{ pronounciation[i] && primary[i] ? (<tr className = {Constants.ConstsClass.pronounciationLyricsLineClass} style={this.state.pronounciationStyling}>
-													{this.splitPronounciationLang(pronounciation[i], primary[i], lineNumber)}
-													</tr>) : null
-									}
-									{ primary[i] ? (<tr className = {Constants.ConstsClass.primaryLyricsLineClass} style={this.state.primaryLangStyling}>
-														{this.splitPrimaryLang(primary[i], lineNumber)}</tr>) : null
-									}
-								</tbody>
-							</table>
-							</div>
+							{
+								this.props.primaryLanguage == "Chinese" ?
+								(
+									<div className = "row">
+										<table>
+											<tbody>
+												{ pronounciation[i] && primary[i] ? 
+													(<tr className = {Constants.ConstsClass.pronounciationLyricsLineClass} style={this.state.pronounciationStyling}>
+														{this.splitPronounciationLang(pronounciation[i], primary[i], lineNumber)}
+														</tr>) 
+													: null
+												}
+												{ primary[i] ? 
+													(<tr className = {Constants.ConstsClass.primaryLyricsLineClass} style={this.state.primaryLangStyling}>
+																	{this.splitPrimaryLang(primary[i], lineNumber)}</tr>) 
+													: null
+												}
+											</tbody>
+										</table>
+									</div>
+
+									)
+									:
+									(<div><div style={this.state.pronounciationStyling}> {pronounciation[i]}</div>
+									<div style={this.state.primaryLangStyling}> {primary[i]}</div></div>)
+							}
 							<div className = {Constants.ConstsClass.translatedLyricsLineClass} style={this.state.translatedStyling}> {translated[i]}</div>
 						</div>
 						</div>

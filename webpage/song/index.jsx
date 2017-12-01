@@ -270,7 +270,8 @@ export default class MainContainer extends React.Component {
 					currentLine={this.state.currentLine}
 					lyrics = {this.state.lyrics}
 					skipToTime={this.skipToLine}
-					options={this.state.options}/>
+					options={this.state.options}
+					primaryLanguage={this.state.primaryLanguage}/>
 				</div>
 		      </div>
 		      <AudioPlayer ref="audioPlayer"
