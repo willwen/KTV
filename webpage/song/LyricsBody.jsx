@@ -39,7 +39,7 @@ export default class LyricsBody extends React.Component {
 			if (seconds < 10)
 				seconds = "0" + seconds;
 			//used for tooltipe = 
-			return time
+			return minutes + ":" + seconds;
 		})
 		
 		this.setState({roundedTimeStamps: roundedTimeStamps})

@@ -213,9 +213,9 @@ export default class MainContainer extends React.Component {
 				primaryLanguageLyrics : response.data.PrimaryLanguageLyrics,
 				translatedLanguageLyrics : response.data.TranslatedLanguageLyrics,
 				pronounciationLanguageLyrics : response.data.PronounciationLanguageLyrics,
-				timestamps : response.data.Timestamps
+				timestamps : response.data.TimestampsLyrics
 			},
-			songPath : response.data.songFile,
+			songPath : response.data.songPath,
 			areOptionsInflated: true//!this.state.areOptionsInflated
 		});
 		console.log(this.state.primaryLanguage)

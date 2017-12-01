@@ -13,7 +13,7 @@ export default class SearchResults extends React.Component {
         if (this.props.results) {
 
             resultItems = this.props.results.map(result => {
-                let path = "/song?id="+result.file_name+"&title="+result.cn_char+"&artist="+result.artist
+                let path = "/song?id="+result.file_name
                 return ( <li key = {result.file_name}>
                             <a className = "list-group-item list-group-item-action" href={path}>
                                 {result.cn_char} - {result.artist} 
