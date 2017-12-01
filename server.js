@@ -17,6 +17,7 @@ var port = 8080,
     environment = process.env.NODE_ENV,
     fromEmail = process.env.EMAIL,
     uploadDirectory = __dirname + "/uploads"
+    zipDirectory = __dirname + "/zip"
 
 const bucketName = "ktvuploads"
 var mongoURL
@@ -96,6 +97,7 @@ app.get('/song', function(req, res) {
 });
 app.get('/submit', function(req, res) {
     createUploadDirectory()
+    createZipDirectory();
     res.sendFile(__dirname + '/webpage/submit/index.html')
 })
 app.get('/uploadComplete', function(req, res) {
@@ -305,24 +307,28 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
             res.send({ redirect: "/uploadComplete" })
             return zipFiles(songName, artist, submitDate)
         })
-        .catch(() => {
-            res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
-            return console.log(err);
-        })
         .then((absoluteFilePath) => {
+            console.log("uploading to S3")
             return uploadToS3(absoluteFilePath)
         })
         .then((s3URL) => {
+            console.log("sending Email")
             return sendRawEmail(fromEmail, songName, artist, s3URL)
         })
         .then(() => {
-            return fs.remove(uploadDirectory)
+            console.log("Removing Dir")
+            fs.removeSync(uploadDirectory)
+            console.log("Removing zipDirectory")
+            fs.removeSync(zipDirectory)
+            return createUploadDirectory()
         })
         .then(() => {
-            return createUploadDirectory()
+            return createZipDirectory()
         })
         .catch((err) => {
             console.log(err)
+            res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
+            return;
         })
 })
 
@@ -343,8 +349,8 @@ function zipFiles(songName, artist, submitDate) {
                 reject(err);
             }
         });
-        var fileName = songName + " " + artist + " " + submitDate + ".zip"
-        var absoluteFilePath = uploadDirectory + '/' + fileName
+        var fileName = submitDate + ".zip"
+        var absoluteFilePath = zipDirectory + "/" + fileName
         var output = fs.createWriteStream(absoluteFilePath);
 
         // listen for all archive data to be written
@@ -428,6 +434,22 @@ function createUploadDirectory() {
             }
             resolve()
         } catch (err) {
+            console.log(err)
+            reject(err);
+        }
+    })
+}
+
+function createZipDirectory() {
+    return new Promise((resolve, reject) => {
+        try {
+            if (!fs.existsSync(zipDirectory)) {
+                fs.mkdirSync(zipDirectory);
+                console.log("created " + zipDirectory)
+            }
+            resolve()
+        } catch (err) {
+            console.log(err)
             reject(err);
         }
     })
