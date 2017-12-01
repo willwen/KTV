@@ -316,18 +316,18 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
             return sendRawEmail(fromEmail, songName, artist, s3URL)
         })
         .then(() => {
-            console.log("Removing Dir")
-            fs.removeSync(uploadDirectory)
-            console.log("Removing zipDirectory")
-            fs.removeSync(zipDirectory)
-            return createUploadDirectory()
+            console.log("Emptying Upload Dir")
+            return fs.emptyDir(uploadDirectory)
         })
-        .then(() => {
-            return createZipDirectory()
+        .then(()=>{
+            console.log("Emptying zipDirectory")
+            fs.emptyDir(zipDirectory)
+            return createUploadDirectory()
         })
         .catch((err) => {
             console.log(err)
-            res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
+            if(!res.headersSent)
+                res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
             return;
         })
 })
