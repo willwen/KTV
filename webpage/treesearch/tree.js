@@ -20,7 +20,7 @@ function reformat(data) {
             child.elements.push({
                 name: artist.songs[j].cn_char,
                 icon: artist.songs[j]["artist_pinyin"] + ".png",
-                linkTo: "/song?id=" + artist.songs[j]["file_name"] + "&title=" + artist.songs[j].cn_char + "&artist=" + artist["_id"]
+                linkTo: "/song?id=" + artist.songs[j]["file_name"]
             })
         }
         songs.push(child)

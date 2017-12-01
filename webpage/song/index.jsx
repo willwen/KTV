@@ -63,7 +63,8 @@ export default class MainContainer extends React.Component {
 	}
 	componentDidMount(){
 		var id = this.getParameterByName('id');
-		this.getSongLyrics(id);
+		var instru = this.getParameterByName('instru')
+		this.getSongLyrics(id, instru);
 
 		window.addEventListener("resize", this.onWindowResized);
   		this.setCanvas();
@@ -72,6 +73,56 @@ export default class MainContainer extends React.Component {
 	componentWillUnmount(){
 		window.removeEventListener("resize", this.onWindowResized);
 	}
+
+		//Thank you https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144
+	getParameterByName(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+
+	getSongLyrics(id, instru){
+		let params;
+		if(instru){
+			params = {params: {'id': id, 'instru' : 1}}
+		}
+		else{
+			params = {params: {'id': id}}
+		}
+
+		axios.get("getSong", params)
+			.then((response)=>{
+				this.handleNewLyrics(response)
+			})
+			.catch((error) => {
+				console.log(error)
+			});
+	}
+
+	//called when a user clicks on a new song
+	handleNewLyrics(response){
+		this.setState({
+			currentLine: 0,
+			currentTitle: response.data.Title,
+			currentArtist: response.data.Artist,
+			primaryLanguage: response.data.PrimaryLanguage,
+			pronounciationLanguage: response.data.PronounciationLanguage,
+			translatedLanguage: response.data.TranslatedLanguage,
+			lyrics: {
+				primaryLanguageLyrics : response.data.PrimaryLanguageLyrics,
+				translatedLanguageLyrics : response.data.TranslatedLanguageLyrics,
+				pronounciationLanguageLyrics : response.data.PronounciationLanguageLyrics,
+				timestamps : response.data.TimestampsLyrics
+			},
+			songPath : response.data.songPath,
+			areOptionsInflated: true//!this.state.areOptionsInflated
+		});
+	}
+
 
 	onWindowResized(event){
 		this.scaleScrolling();
@@ -169,16 +220,7 @@ export default class MainContainer extends React.Component {
 	    renderFrame();
 	}
 
-	//Thank you https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144
-	getParameterByName(name, url) {
-	    if (!url) url = window.location.href;
-	    name = name.replace(/[\[\]]/g, "\\$&");
-	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-	        results = regex.exec(url);
-	    if (!results) return null;
-	    if (!results[2]) return '';
-	    return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
+
 
 	scaleScrolling(){
 	   // var winWidth =  window.innerWidth;
@@ -189,39 +231,7 @@ export default class MainContainer extends React.Component {
 	incrementLine(){
 		let nextLine = this.state.currentLine + 1;
 		this.setState({currentLine : nextLine});
-	}
-
-	getSongLyrics(id){
-		axios.get("getSong", {params: {'id': id}} )
-			.then((response)=>{
-				this.handleNewLyrics(response)
-			})
-			.catch((error) => {
-				console.log(error)
-			});
-	}
-	//called when a user clicks on a new song
-	handleNewLyrics(response){
-		this.setState({
-			currentLine: 0,
-			currentTitle: response.data.Title,
-			currentArtist: response.data.Artist,
-			primaryLanguage: response.data.PrimaryLanguage,
-			pronounciationLanguage: response.data.PronounciationLanguage,
-			translatedLanguage: response.data.TranslatedLanguage,
-			lyrics: {
-				primaryLanguageLyrics : response.data.PrimaryLanguageLyrics,
-				translatedLanguageLyrics : response.data.TranslatedLanguageLyrics,
-				pronounciationLanguageLyrics : response.data.PronounciationLanguageLyrics,
-				timestamps : response.data.TimestampsLyrics
-			},
-			songPath : response.data.songPath,
-			areOptionsInflated: true//!this.state.areOptionsInflated
-		});
-		console.log(this.state.primaryLanguage)
-	}
-
-	
+	}	
 
 	skipToLine(lineToSet, timeToSet){
 		this.setState({currentLine : lineToSet});
