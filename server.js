@@ -170,7 +170,8 @@ app.get('/getSong', function(req, res) {
                         
                         glob(searchGlob)
                             .then((contents) => {
-                                songPayload['songPath'] = contents[0].split("songs/")[1];
+                                // songPayload['songPath'] = contents[0].split("songs/")[1];
+                                songPayload['songPath'] = "https://s3.us-east-2.amazonaws.com/ktv.songs/Backstreet+Freestyle+-+Kendrick+Lamar.mp3"
                                 resolve();
                             })
                             .catch((err) => {
