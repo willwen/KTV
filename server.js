@@ -163,15 +163,10 @@ app.get('/getSong', function(req, res) {
                 })
 
                 //grab the mp3
-                var fetchSongPromise = (instru)=>{
+                let fetchSongPromise = (instru)=>{
                     new Promise((resolve, reject) => {
                         let searchGlob;
-                        if(instru){
-                            searchGlob = 'songs/' + id + '*/Instrumental/*.mp3'
-                        }
-                        else{
-                            searchGlob = 'songs/' + id + '*/*.mp3'    
-                        }
+                        searchGlob = 'songs/' + id + '*/*.mp3'    
                         
                         glob(searchGlob)
                             .then((contents) => {
@@ -186,6 +181,28 @@ app.get('/getSong', function(req, res) {
                     })
                 }
                 getFilesPromises.push(fetchSongPromise(instru))
+                if(instru){
+                    //grab the mp3
+                    var fetchInstrumentalPromise = (instru)=>{
+                        new Promise((resolve, reject) => {
+                            let searchGlob;
+                            searchGlob = 'songs/' + id + '*/Instrumental/*.mp3'
+                            
+                            glob(searchGlob)
+                                .then((contents) => {
+                                    songPayload['instrumentalPath'] = contents[0].split("songs/")[1];
+                                    resolve();
+                                })
+                                .catch((err) => {
+                                    console.log(searchGlob + " most likely DOES NOT exist.")
+                                    songPayload['instrumentalPath'] = "mp3 file not found";
+                                    resolve()
+                                })
+                        })
+                    }
+                    getFilesPromises.push(fetchInstrumentalPromise(instru))
+                }
+                
 
                 Promise.all(getFilesPromises).then(() => {
                     res.end(JSON.stringify(songPayload, 'utf-8'));
@@ -316,18 +333,17 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
             return sendRawEmail(fromEmail, songName, artist, s3URL)
         })
         .then(() => {
-            console.log("Removing Dir")
-            fs.removeSync(uploadDirectory)
-            console.log("Removing zipDirectory")
-            fs.removeSync(zipDirectory)
-            return createUploadDirectory()
+            console.log("Emptying Upload Dir")
+            return fs.emptyDir(uploadDirectory)
         })
-        .then(() => {
-            return createZipDirectory()
+        .then(()=>{
+            console.log("Emptying zipDirectory")
+            return fs.emptyDir(zipDirectory)
         })
         .catch((err) => {
             console.log(err)
-            res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
+            if(!res.headersSent)
+                res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
             return;
         })
 })

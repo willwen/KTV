@@ -3,6 +3,7 @@ import AudioAnimations from './AudioAnimations.jsx'
 // import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
 import $ from 'jquery'		
 import scrollTo from 'jquery.scrollTo'
+import Visualizer from './Visualizer.jsx'
 
 export default class AudioPlayer extends React.Component {
   	constructor(props, context){
@@ -10,6 +11,9 @@ export default class AudioPlayer extends React.Component {
 
   		this.togglePlayer = this.togglePlayer.bind(this);
 		this.checkTimes = this.checkTimes.bind(this);
+		this.play = this.play.bind(this)
+		this.pause = this.pause.bind(this)
+		this.changeTime = this.changeTime.bind(this)
 
 		this.state = {
 			action : "none",
@@ -38,6 +42,10 @@ export default class AudioPlayer extends React.Component {
 		});
 		let times = this.props.timestamps;
 		this.setState({nextTimestamp: Constants.timestampToSeconds(times[this.props.currentLine])})
+		var AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
+		var context = new AudioContext();
+		var src = context.createMediaElementSource(this.refs.audioHTML);
+		this.setState({"src": src})
 	}
 	// when props like currentLine update
 	componentWillReceiveProps(nextProps){
@@ -95,8 +103,8 @@ export default class AudioPlayer extends React.Component {
 
 
 	setCurrentTime(newTime){
-		this.refs.audioHTML.currentTime = newTime;
-		this.refs.audioHTML.play();
+		this.changeTime(newTime);
+		this.play();
 	}
 
 	togglePlayer(){
@@ -105,25 +113,52 @@ export default class AudioPlayer extends React.Component {
 			setTimeout(function(){
 				this.setState({"action": "none"})
 			}.bind(this), 2000)
-			this.refs.audioHTML.play()
+			this.play();
 		}
 		else{
 			this.setState({action : "pause"});
 			setTimeout(function(){
 				this.setState({"action": "none"})
 			}.bind(this), 2000)
-			this.refs.audioHTML.pause();
+			this.pause();
 		}
 	}
 
+	changeTime(newTime){
+		this.refs.audioHTML.currentTime = newTime;
+		if(this.props.instrumentalPath)
+			this.refs.audioHTMLinstru.currentTime = newTime;
+	}
+
+	play(){
+		this.refs.audioHTML.play()
+		if(this.props.instrumentalPath)
+			this.refs.audioHTMLinstru.play()
+	}
+
+	pause(){
+		this.refs.audioHTML.pause();
+		if(this.props.instrumentalPath)
+			this.refs.audioHTMLinstru.pause()
+	}
 
 	render() {
 		return (
 			<div>
+				
+
+				{this.props.instru ? 
+					(<div className="audioContainer">
+						<audio controls="true" ref="audioHTMLinstru" id="instrumentalAudioPlayer" src={this.props.instrumentalPath} controls controlsList="nodownload noremoteplayback"></audio>
+					</div>)
+					:
+					null
+				}
 				<div className="audioContainer">
-					<audio controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} ></audio>
+					<audio controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} controls controlsList="nodownload"></audio>
 				</div> 
 				<AudioAnimations action = {this.state.action}/>
+				<Visualizer audioPlayer = {this.refs.audioHTML}/>
 			</div>
 
 		);
