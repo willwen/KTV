@@ -33,25 +33,22 @@ export default class LyricsBody extends React.Component {
 		nextProps.options.showTranslated ? (translatedStyling = {display: "block"}) : (translatedStyling = {display: "none"});
 		this.setState({ translatedStyling: translatedStyling})
 
-		let roundedTimeStamps = nextProps.lyrics.timestamps.map((lineTimestamp)=>{
-			let minutes = Math.floor(lineTimestamp/100);
-			let seconds = Math.floor(lineTimestamp%100);
-			if (seconds < 10)
-				seconds = "0" + seconds;
-			//used for tooltipe = 
-			return minutes + ":" + seconds;
-		})
-		
-		this.setState({roundedTimeStamps: roundedTimeStamps})
+		if(nextProps.lyrics){
+			let roundedTimeStamps = nextProps.lyrics.timestamps.map((lineTimestamp)=>{
+				let minutes = Math.floor(lineTimestamp/100);
+				let seconds = Math.floor(lineTimestamp%100);
+				if (seconds < 10)
+					seconds = "0" + seconds;
+				//used for tooltipe = 
+				return minutes + ":" + seconds;
+			})
+			
+			this.setState({roundedTimeStamps: roundedTimeStamps})
+		}
 			
 	}
 
-	anchorClick(lineNum){
-		let newTime = Constants.timestampToSeconds(this.props.lyrics.timestamps[lineNum-1]); //minus one because lyrics start at 0 while currentLine starts at 1
-		this.props.skipToTime(lineNum, newTime);
-	}
-
-
+	
 
 	render() {
 		let bodyStyle = {};  
@@ -79,7 +76,7 @@ export default class LyricsBody extends React.Component {
 				if((lineNumber == 1 || time != "0:00") && time!="NaN:NaN"){
 					tooltip = (<Tooltip id= {time ? time : "tooltip" + i} className = "tooltip"><strong>{time}</strong></Tooltip>);
 					overlayTrigger = (<OverlayTrigger placement="top" overlay={tooltip}>
-								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.anchorClick.bind(this, lineNumber)}>{lineNumber}</a>
+								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)}>{lineNumber}</a>
 							</OverlayTrigger>)
 				}
 				else{

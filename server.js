@@ -17,7 +17,7 @@ var port = 8080,
     environment = process.env.NODE_ENV,
     fromEmail = process.env.EMAIL,
     uploadDirectory = __dirname + "/uploads"
-    zipDirectory = __dirname + "/zip"
+zipDirectory = __dirname + "/zip"
 
 const bucketName = "ktvuploads"
 const s3SongsBucketURL = " https://s3.us-east-2.amazonaws.com/ktv.songs/"
@@ -84,7 +84,7 @@ var server = app.listen(process.env.PORT || port, function() {
 
 //express CORS header middleware
 // Add headers
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
 
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', ' s3.us-east-2.amazonaws.com/ktv.songs/');
@@ -131,8 +131,8 @@ app.get('/uploadComplete', function(req, res) {
 app.get('/getSong', function(req, res) {
     var id = xssfilters.inHTMLData(req.query.id); //just in case they send me some  garbage ID
     var instru = false;
-    if(req.query.instru){
-        instru= true
+    if (req.query.instru) {
+        instru = true
         console.log("sending Instrumental")
     }
     //Grab data about that song
@@ -177,7 +177,7 @@ app.get('/getSong', function(req, res) {
                             .catch((err) => {
                                 console.log(searchGlob + " most likely DOES NOT exist.")
                                 // console.log(err)
-                                songPayload[path.parse(fileName).name+ "Lyrics"] = "";
+                                songPayload[path.parse(fileName).name + "Lyrics"] = "";
                                 resolve();
                             })
                     }))
@@ -188,7 +188,7 @@ app.get('/getSong', function(req, res) {
                 //     new Promise((resolve, reject) => {
                 //         let searchGlob;
                 //         searchGlob = 'songs/' + id + '*/*.mp3'    
-                        
+
                 //         glob(searchGlob)
                 //             .then((contents) => {
                 //                 // songPayload['songPath'] = contents[0].split("songs/")[1];
@@ -203,13 +203,13 @@ app.get('/getSong', function(req, res) {
                 //     })
                 // }
                 // getFilesPromises.push(fetchSongPromise(instru))
-                if(instru){
+                if (instru) {
                     //grab the mp3
-                    var fetchInstrumentalPromise = (instru)=>{
+                    var fetchInstrumentalPromise = (instru) => {
                         new Promise((resolve, reject) => {
                             let searchGlob;
                             searchGlob = 'songs/' + id + '*/Instrumental/*.mp3'
-                            
+
                             glob(searchGlob)
                                 .then((contents) => {
                                     songPayload['instrumentalPath'] = contents[0].split("songs/")[1];
@@ -224,19 +224,19 @@ app.get('/getSong', function(req, res) {
                     }
                     getFilesPromises.push(fetchInstrumentalPromise(instru))
                 }
-                
+
 
                 Promise.all(getFilesPromises).then(() => {
-                    res.end(JSON.stringify(songPayload, 'utf-8'));
-                })
-                .catch(() => {
-                    res.end(JSON.stringify(songPayload, 'utf-8'));
-                })
+                        res.end(JSON.stringify(songPayload, 'utf-8'));
+                    })
+                    .catch(() => {
+                        res.end(JSON.stringify(songPayload, 'utf-8'));
+                    })
 
             })
         })
         .catch((err) => {
-           var placeholder = {
+            var placeholder = {
                 Title: "Error",
                 Artist: "Error",
                 PrimaryLanguage: "Error",
@@ -358,13 +358,13 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
             console.log("Emptying Upload Dir")
             return fs.emptyDir(uploadDirectory)
         })
-        .then(()=>{
+        .then(() => {
             console.log("Emptying zipDirectory")
             return fs.emptyDir(zipDirectory)
         })
         .catch((err) => {
             console.log(err)
-            if(!res.headersSent)
+            if (!res.headersSent)
                 res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
             return;
         })

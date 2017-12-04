@@ -14,6 +14,8 @@ export default class AudioPlayer extends React.Component {
 		this.play = this.play.bind(this)
 		this.pause = this.pause.bind(this)
 		this.changeTime = this.changeTime.bind(this)
+		this.calcSeekedLineNumber = this.calcSeekedLineNumber.bind(this)
+		this.setCurrentTime = this.setCurrentTime.bind(this)
 
 		this.state = {
 			action : "none",
@@ -46,15 +48,16 @@ export default class AudioPlayer extends React.Component {
 	
 	// when props like currentLine update
 	componentWillReceiveProps(nextProps){
-		if(nextProps.timestamps){
-			let nextTimestamp = Constants.timestampToSeconds(nextProps.timestamps[nextProps.currentLine])
-			if(nextTimestamp == 0 && nextProps.currentLine == 0){ // fixes a bug if the first time is 0, it isnt highlighted
-				this.props.incrementLine()
-			}
-			else{
-				this.setState({nextTimestamp: nextTimestamp})
-			}
+		let nextLine = nextProps.currentLine
+		let timestamps = nextProps.timestamps
+		let nextTimestamp = Constants.timestampToSeconds(timestamps[nextLine])
+		if(nextTimestamp == 0 && nextProps.nextLine == 0){ // fixes a bug if the first time is 0, it isnt highlighted
+			this.props.incrementLine()
 		}
+		else{
+			this.setState({nextTimestamp: nextTimestamp})
+			// console.log(nextTimestamp)
+		}		
 	}
 
 
@@ -79,6 +82,7 @@ export default class AudioPlayer extends React.Component {
 				// console.log("scrolling val: " + this.props.scrollOffset);
 				this.props.incrementLine();
 				if(this.props.allowScrolling){
+					$(window).finish();
 					$(window).scrollTo($("#" +Constants.ConstsClass.genericLinePrefix + currentLine), {axis: 'y', interrupt: true, duration: 500, offset :{top : this.props.scrollOffset}});
 				}
 			}
@@ -106,7 +110,9 @@ export default class AudioPlayer extends React.Component {
 	}
 
 
-	setCurrentTime(newTime){
+	setCurrentTime(newLine){
+		let newTime = Constants.timestampToSeconds(this.props.timestamps[newLine-1]); //minus one because lyrics start at 0 while currentLine starts at 1
+		console.log(newTime)
 		this.changeTime(newTime);
 		this.play();
 	}
@@ -146,10 +152,22 @@ export default class AudioPlayer extends React.Component {
 			this.refs.audioHTMLinstru.pause()
 	}
 
+
+	calcSeekedLineNumber(){
+		let newSeekedTime = this.refs.audioHTML.currentTime
+		for (var i = 0 ; i < this.props.timestamps.length ; i++){
+			if(newSeekedTime < this.props.timestamps[i])
+				break;
+		}
+		//user seeked to line number... (i-1)
+		console.log("seeking to ", i)
+		this.props.userSeeked(i)
+	}
+
 	render() {
 		return (
 			<div>
-				{this.props.instru ? 
+				{this.props.addInstrumental ? 
 					(<div className="audioContainer">
 						<audio controls="true" ref="audioHTMLinstru" id="instrumentalAudioPlayer" src={this.props.instrumentalPath} controls controlsList="nodownload noremoteplayback"></audio>
 					</div>)
@@ -157,7 +175,15 @@ export default class AudioPlayer extends React.Component {
 					null
 				}
 				<div className="audioContainer">
-					<audio crossOrigin = "anonymous" controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} controls controlsList="nodownload"></audio>
+					<audio crossOrigin = "anonymous"
+						controls="true"
+						ref="audioHTML"
+						id="audioPlayer"
+						src={this.props.currentSong}
+						controls
+						controlsList="nodownload"
+						
+					/>
 				</div> 
 				<AudioAnimations action = {this.state.action}/>
 				<Visualizer audioPlayer = {this.refs.audioHTML} showVisualizer = {this.props.showVisualizer}/>
@@ -166,3 +192,4 @@ export default class AudioPlayer extends React.Component {
 		);
 	}
 }
+// onSeeked={this.calcSeekedLineNumber}

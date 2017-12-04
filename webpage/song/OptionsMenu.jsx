@@ -9,7 +9,6 @@ export default class OptionsMenu extends React.Component {
 
 	render() {
 		return (
-			<Collapse in ={this.props.open}>
 			<div className="row optionsMenu" id="options">
 				<LanguageOptions
 					primaryLanguage={this.props.primaryLanguage}
@@ -24,7 +23,6 @@ export default class OptionsMenu extends React.Component {
 					toggleVisualizer = {this.props.toggleVisualizer}
 					/>
 			</div>
-			</Collapse>
 		);
 	}
 }

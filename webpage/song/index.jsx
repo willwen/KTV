@@ -14,14 +14,13 @@ export default class MainContainer extends React.Component {
 		super();
 		this.state={
 			currentLine: 0,
-			areOptionsInflated: true, //opposite is collapsed
 			scrollingOffset: -400,
 			currentTitle: "",
 			currentArtist: "",
 			primaryLanguage: "",
 			pronounciationLanguage: "",
 			translatedLanguage: "",
-			instru: 0,
+			addInstrumental: 0,
 			instrumentalPath: "",
 			lyrics: {
 				primaryLanguageLyrics : [],
@@ -41,6 +40,8 @@ export default class MainContainer extends React.Component {
 		this.incrementLine = this.incrementLine.bind(this);
 		this.getSongLyrics = this.getSongLyrics.bind(this);
 		this.handleNewLyrics = this.handleNewLyrics.bind(this);
+		this.anchorClickUpdateLine = this.anchorClickUpdateLine.bind(this)
+		this.userSeeked = this.userSeeked.bind(this)
 
 		this.togglePronounciation = this.togglePronounciation.bind(this);
 		this.toggleTranslated = this.toggleTranslated.bind(this);
@@ -49,8 +50,6 @@ export default class MainContainer extends React.Component {
 	  	this.toggleLineNums = this.toggleLineNums.bind(this);
 	  	this.toggleVisualizer = this.toggleVisualizer.bind(this);
 		
-		this.skipToLine = this.skipToLine.bind(this);
-
 		//window resizing, update the scrolling offset.
 		this.onWindowResized = this.onWindowResized.bind(this);
 		this.scaleScrolling = this.scaleScrolling.bind(this);
@@ -61,9 +60,9 @@ export default class MainContainer extends React.Component {
 	}
 	componentDidMount(){
 		var id = this.getParameterByName('id');
-		var instru = this.getParameterByName('instru')
-		this.setState({"instru":instru})
-		this.getSongLyrics(id, instru);
+		var addInstrumental = this.getParameterByName('instru')
+		this.setState({"instru":addInstrumental})
+		this.getSongLyrics(id);
 
 		window.addEventListener("resize", this.onWindowResized);
   		
@@ -88,9 +87,9 @@ export default class MainContainer extends React.Component {
 	    return decodeURIComponent(results[2].replace(/\+/g, " "));
 	}
 
-	getSongLyrics(id, instru){
+	getSongLyrics(id){
 		let params;
-		if(instru){
+		if(this.state.addInstrumental){
 			params = {params: {'id': id, 'instru' : 1}}
 		}
 		else{
@@ -122,18 +121,9 @@ export default class MainContainer extends React.Component {
 				timestamps : response.data.TimestampsLyrics
 			},
 			songPath : response.data.songPath,
-			areOptionsInflated: true//!this.state.areOptionsInflated
+			instrumentalPath: response.data.instrumentalPath
 		});
-		if(this.state.instru){
-			this.setState({
-				instrumentalPath: response.data.instrumentalPath
-			})
-		}
 	}
-
-
-
-	
 
 	scaleScrolling(){
 	   // var winWidth =  window.innerWidth;
@@ -141,17 +131,20 @@ export default class MainContainer extends React.Component {
 	   this.setState({scrollingOffset: (-1 * Math.round(winHeight * .20))});
 	}
 
-	incrementLine(){
-		let nextLine = this.state.currentLine + 1;
-		this.setState({currentLine : nextLine});
-	}	
-
-	skipToLine(lineToSet, timeToSet){
+	anchorClickUpdateLine(lineToSet){
+		console.log("anchor clicked")
 		this.setState({currentLine : lineToSet});
-		this.refs.audioPlayer.setCurrentTime(timeToSet);
-		
+		this.refs.audioPlayer.setCurrentTime(lineToSet);
 	}
 
+	userSeeked(lineNumber){
+		this.setState({currentLine : lineNumber});
+	}
+
+	incrementLine(){
+		let lineNumber = this.state.currentLine
+		this.setState({currentLine: lineNumber + 1})
+	}
 
 	render() {
 		return (
@@ -164,7 +157,6 @@ export default class MainContainer extends React.Component {
 							pronounciationLanguage={this.state.pronounciationLanguage}
 							translatedLanguage={this.state.translatedLanguage}
 							options = {this.state.options}
-							open = {this.state.areOptionsInflated}
 							togglePronounciation = {this.togglePronounciation}
 							togglePrimary = {this.togglePrimary}
 							toggleTranslated = {this.toggleTranslated}
@@ -180,7 +172,7 @@ export default class MainContainer extends React.Component {
 						<LyricsBody ref = "lyricsBody" 
 							currentLine={this.state.currentLine}
 							lyrics = {this.state.lyrics}
-							skipToTime={this.skipToLine}
+							anchorClickUpdateLine={this.anchorClickUpdateLine}
 							options={this.state.options}
 							primaryLanguage={this.state.primaryLanguage}/>
 						</div>
@@ -188,13 +180,14 @@ export default class MainContainer extends React.Component {
 					<AudioPlayer ref="audioPlayer"
 						currentSong = {this.state.songPath}
 						timestamps={this.state.lyrics.timestamps}
-						incrementLine = {this.incrementLine}
-						instru = {this.state.instru}
+						addInstrumental = {this.state.addInstrumental}
 						instrumentalPath = {this.state.instrumentalPath}
+						incrementLine = {this.incrementLine}
 						currentLine = {this.state.currentLine}
 						scrollOffset = {this.state.scrollingOffset}
 						allowScrolling = {this.state.options.allowScrolling}
 						showVisualizer = {this.state.options.showVisualizer}
+						userSeeked = {this.userSeeked}
 					/>
 		  </div>
 		);
