@@ -42,10 +42,10 @@ export default class AudioPlayer extends React.Component {
 		});
 		let times = this.props.timestamps;
 		this.setState({nextTimestamp: Constants.timestampToSeconds(times[this.props.currentLine])})
-		var AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
-		var context = new AudioContext();
-		var src = context.createMediaElementSource(this.refs.audioHTML);
-		this.setState({"src": src})
+		// var AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
+		// var context = new AudioContext();
+		// var src = context.createMediaElementSource(this.refs.audioHTML);
+		// this.setState({"src": src})
 	}
 	// when props like currentLine update
 	componentWillReceiveProps(nextProps){
@@ -145,8 +145,6 @@ export default class AudioPlayer extends React.Component {
 	render() {
 		return (
 			<div>
-				
-
 				{this.props.instru ? 
 					(<div className="audioContainer">
 						<audio controls="true" ref="audioHTMLinstru" id="instrumentalAudioPlayer" src={this.props.instrumentalPath} controls controlsList="nodownload noremoteplayback"></audio>
@@ -155,7 +153,7 @@ export default class AudioPlayer extends React.Component {
 					null
 				}
 				<div className="audioContainer">
-					<audio controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} controls controlsList="nodownload"></audio>
+					<audio crossOrigin = "anonymous" controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} controls controlsList="nodownload"></audio>
 				</div> 
 				<AudioAnimations action = {this.state.action}/>
 				<Visualizer audioPlayer = {this.refs.audioHTML}/>

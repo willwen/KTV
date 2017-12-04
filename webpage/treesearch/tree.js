@@ -73,7 +73,7 @@ function createTree(rootNode, root, level) {
         var elements = node.elements;
 
         //create a div with unique ID to be toggled with collapse()
-        var collapseDiv = $("<div></div>", { "id": id });
+        var collapseDiv = $("<div></div>", { "id": id , "name" : id});
         //create a div to hold all nodes in a level
         var levelContainer = $("<div></div>", { "class": level + "_level level" });
 
@@ -97,6 +97,7 @@ function createTree(rootNode, root, level) {
                     //when a mouse leaves
                     $(this).css("border-bottom", "medium solid rgba(255,255,255,0)")
                 })
+                // anchor.attr("href", "#" + element.child.id )
             }
             anchor.append(iconDiv);
             anchor.append(textLabel);

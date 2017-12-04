@@ -20,6 +20,7 @@ var port = 8080,
     zipDirectory = __dirname + "/zip"
 
 const bucketName = "ktvuploads"
+const s3SongsBucketURL = " https://s3.us-east-2.amazonaws.com/ktv.songs/"
 var mongoURL
 environment === "production" ?
     mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6" : mongoURL = "mongodb://localhost:27017/songs"
@@ -81,6 +82,26 @@ var server = app.listen(process.env.PORT || port, function() {
     console.log('Listening on port %s!', server.address().port)
 })
 
+//express CORS header middleware
+// Add headers
+app.use(function (req, res, next) {
+
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', ' s3.us-east-2.amazonaws.com/ktv.songs/');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+
+    // Request headers you wish to allow
+    // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // // Set to true if you need the website to include cookies in the requests sent
+    // // to the API (e.g. in case you use sessions)
+    // res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+});
 
 // Express Routes ////////////////////////////////////////////////////////////////////////////////////////////////
 app.get('/treefind', function(req, res) {
@@ -120,7 +141,7 @@ app.get('/getSong', function(req, res) {
         .then((db) => {
             var collection = db.collection('songs');
             var query = { "file_name": id }
-            var findOnePromise = collection.findOne(query, { file_name: 1, cn_char: 1, artist: 1, PrimaryLanguage: 1, PronounciationLanguage: 1, TranslatedLanguage: 1 })
+            var findOnePromise = collection.findOne(query, { file_name: 1, cn_char: 1, artist: 1, PrimaryLanguage: 1, PronounciationLanguage: 1, TranslatedLanguage: 1, songPath: 1 })
             findOnePromise.then((result) => {
                 console.log(result)
                 db.close();
@@ -135,7 +156,7 @@ app.get('/getSong', function(req, res) {
                     TranslatedLanguage: result.TranslatedLanguage,
                     TranslatedLanguageLyrics: [],
                     TimestampsLyrics: [],
-                    songPath: ""
+                    songPath: s3SongsBucketURL + result.songPath
                 };
                 var fileNames = ['PronounciationLanguage.txt', 'PrimaryLanguage.txt', 'TranslatedLanguage.txt', 'Timestamps.txt'];
                 //dont use traditional for loop or else you'll have closure problems :)
@@ -162,26 +183,26 @@ app.get('/getSong', function(req, res) {
                     }))
                 })
 
-                //grab the mp3
-                let fetchSongPromise = (instru)=>{
-                    new Promise((resolve, reject) => {
-                        let searchGlob;
-                        searchGlob = 'songs/' + id + '*/*.mp3'    
+                // //grab the mp3
+                // let fetchSongPromise = (instru)=>{
+                //     new Promise((resolve, reject) => {
+                //         let searchGlob;
+                //         searchGlob = 'songs/' + id + '*/*.mp3'    
                         
-                        glob(searchGlob)
-                            .then((contents) => {
-                                // songPayload['songPath'] = contents[0].split("songs/")[1];
-                                songPayload['songPath'] = "https://s3.us-east-2.amazonaws.com/ktv.songs/Backstreet+Freestyle+-+Kendrick+Lamar.mp3"
-                                resolve();
-                            })
-                            .catch((err) => {
-                                console.log(searchGlob + " most likely DOES NOT exist.")
-                                songPayload['songPath'] = "mp3 file not found";
-                                resolve()
-                            })
-                    })
-                }
-                getFilesPromises.push(fetchSongPromise(instru))
+                //         glob(searchGlob)
+                //             .then((contents) => {
+                //                 // songPayload['songPath'] = contents[0].split("songs/")[1];
+                //                 songPayload['songPath'] = "https://s3.us-east-2.amazonaws.com/ktv.songs/Backstreet+Freestyle+-+Kendrick+Lamar.mp3"
+                //                 resolve();
+                //             })
+                //             .catch((err) => {
+                //                 console.log(searchGlob + " most likely DOES NOT exist.")
+                //                 songPayload['songPath'] = "mp3 file not found";
+                //                 resolve()
+                //             })
+                //     })
+                // }
+                // getFilesPromises.push(fetchSongPromise(instru))
                 if(instru){
                     //grab the mp3
                     var fetchInstrumentalPromise = (instru)=>{
