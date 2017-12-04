@@ -11,6 +11,7 @@ export default class Visualizer extends React.Component {
 		this.scaleCanvas = this.scaleCanvas.bind(this);
 		this.initAudioAnalyzer = this.initAudioAnalyzer.bind(this);
 		this.renderFrame = this.renderFrame.bind(this);
+		this.clearCanvas = this.clearCanvas.bind(this);
 
 		let AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
 		this.state.audioContext = new AudioContext();
@@ -23,6 +24,7 @@ export default class Visualizer extends React.Component {
 
 	componentWillUnmount(){
 		window.removeEventListener("resize", this.scaleCanvas);
+		console.log("component will Unmount.")
 	}
 
 	componentDidUpdate(){
@@ -31,10 +33,14 @@ export default class Visualizer extends React.Component {
 			//this code block only needs to execute once, once it is executed state.src will no longer be null
 			if(!this.state.src){
 				this.initAudioAnalyzer();
-				this.renderFrame();
 			}
-
+			if(this.props.showVisualizer)
+				this.renderFrame();
+			else{
+				this.clearCanvas();
+			}
 		}
+		
 	}
 
 
@@ -92,6 +98,8 @@ export default class Visualizer extends React.Component {
 
 
 	renderFrame() {
+		if(!this.props.showVisualizer)
+			return;
 		let WIDTH = this.state.canvasWidth; 
 		let HEIGHT = this.state.canvasHeight;
 		let bufferLength = this.state.bufferLength;
@@ -133,6 +141,10 @@ export default class Visualizer extends React.Component {
 		}
 	}
 
+	clearCanvas(){
+		let ctx = this.state.ctx
+		ctx.clearRect(0, 0, this.state.canvasWidth, this.state.canvasHeight);
+	}
 	    
 
 

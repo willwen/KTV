@@ -48,7 +48,7 @@ export default class AudioPlayer extends React.Component {
 	componentWillReceiveProps(nextProps){
 		if(nextProps.timestamps){
 			let nextTimestamp = Constants.timestampToSeconds(nextProps.timestamps[nextProps.currentLine])
-			if(nextTimestamp == 0){ // fixes a bug if the first time is 0, it isnt highlighted
+			if(nextTimestamp == 0 && nextProps.currentLine == 0){ // fixes a bug if the first time is 0, it isnt highlighted
 				this.props.incrementLine()
 			}
 			else{
@@ -160,7 +160,7 @@ export default class AudioPlayer extends React.Component {
 					<audio crossOrigin = "anonymous" controls="true" ref="audioHTML" id="audioPlayer" src={this.props.currentSong} controls controlsList="nodownload"></audio>
 				</div> 
 				<AudioAnimations action = {this.state.action}/>
-				<Visualizer audioPlayer = {this.refs.audioHTML}/>
+				<Visualizer audioPlayer = {this.refs.audioHTML} showVisualizer = {this.props.showVisualizer}/>
 			</div>
 
 		);

@@ -194,6 +194,7 @@ export default class MainContainer extends React.Component {
 						currentLine = {this.state.currentLine}
 						scrollOffset = {this.state.scrollingOffset}
 						allowScrolling = {this.state.options.allowScrolling}
+						showVisualizer = {this.state.options.showVisualizer}
 					/>
 		  </div>
 		);
