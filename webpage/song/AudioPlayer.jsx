@@ -42,15 +42,19 @@ export default class AudioPlayer extends React.Component {
 		});
 		let times = this.props.timestamps;
 		this.setState({nextTimestamp: Constants.timestampToSeconds(times[this.props.currentLine])})
-		// var AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
-		// var context = new AudioContext();
-		// var src = context.createMediaElementSource(this.refs.audioHTML);
-		// this.setState({"src": src})
 	}
+	
 	// when props like currentLine update
 	componentWillReceiveProps(nextProps){
-		if(nextProps.timestamps)
-			this.setState({nextTimestamp: Constants.timestampToSeconds(nextProps.timestamps[nextProps.currentLine])})
+		if(nextProps.timestamps){
+			let nextTimestamp = Constants.timestampToSeconds(nextProps.timestamps[nextProps.currentLine])
+			if(nextTimestamp == 0){ // fixes a bug if the first time is 0, it isnt highlighted
+				this.props.incrementLine()
+			}
+			else{
+				this.setState({nextTimestamp: nextTimestamp})
+			}
+		}
 	}
 
 
