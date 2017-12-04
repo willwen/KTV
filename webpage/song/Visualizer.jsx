@@ -10,7 +10,6 @@ export default class Visualizer extends React.Component {
 		}
 		this.scaleCanvas = this.scaleCanvas.bind(this);
 		this.initAudioAnalyzer = this.initAudioAnalyzer.bind(this);
-		this.getAudioFFT = this.getAudioFFT.bind(this);
 		this.renderFrame = this.renderFrame.bind(this);
 
 		let AudioContext = window.AudioContext || window.webkitAudioContext;  // Safari and old versions of Chrome
@@ -27,12 +26,14 @@ export default class Visualizer extends React.Component {
 	}
 
 	componentDidUpdate(){
+		//check that the audio player has been defined
 		if(this.props.audioPlayer){
+			//this code block only needs to execute once, once it is executed state.src will no longer be null
 			if(!this.state.src){
 				this.initAudioAnalyzer();
+				this.renderFrame();
 			}
-			this.getAudioFFT()
-			this.renderFrame();
+
 		}
 	}
 
@@ -69,10 +70,10 @@ export default class Visualizer extends React.Component {
 				this.state.fftSize = 256;
 			}
 		}
+		//if the analyser is defined, update the bucket size
 		if(this.state.analyser){
 			this.state.analyser.fftSize = this.state.fftSize
 			this.state.bufferLength = this.state.analyser.frequencyBinCount;
-
 		}
 	}
 
@@ -86,13 +87,9 @@ export default class Visualizer extends React.Component {
 		this.state.analyser.connect(this.state.audioContext.destination);
 		this.state.analyser.fftSize = this.state.fftSize
 		this.state.bufferLength = this.state.analyser.frequencyBinCount;
-
-	}
-
-
-	getAudioFFT(){
 		this.state.dataArray = new Uint8Array(this.state.bufferLength);
 	}
+
 
 	renderFrame() {
 		let WIDTH = this.state.canvasWidth; 
@@ -103,6 +100,7 @@ export default class Visualizer extends React.Component {
 		let barWidth = (WIDTH / bufferLength) * 2.5;
 		let x = 0;
 		let heightScale = HEIGHT/255;
+		//Your callback routine must itself call requestAnimationFrame() if you want to animate another frame at the next repaint.
 		requestAnimationFrame(this.renderFrame);
 
 		//analyser.getByteFrequencyData returns a normalized array of values between 0 and 255.
