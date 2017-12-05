@@ -27,21 +27,24 @@ export default class Visualizer extends React.Component {
 		console.log("component will Unmount.")
 	}
 
-	componentDidUpdate(){
+	componentDidUpdate(prevProps, prevState){
 		//check that the audio player has been defined
 		if(this.props.audioPlayer){
 			//this code block only needs to execute once, once it is executed state.src will no longer be null
 			if(!this.state.src){
 				this.initAudioAnalyzer();
-			}
-			if(this.props.showVisualizer)
+				console.log("did update , render frame")
 				this.renderFrame();
-			else{
-				this.clearCanvas();
+			
 			}
+			else if(this.props.showVisualizer && !prevProps.showVisualizer)
+				this.renderFrame();
+
 		}
+
 		
 	}
+
 
 
 	scaleCanvas(){
@@ -98,8 +101,10 @@ export default class Visualizer extends React.Component {
 
 
 	renderFrame() {
-		if(!this.props.showVisualizer)
+		if(!this.props.showVisualizer){
+			this.clearCanvas();
 			return;
+		}
 		let WIDTH = this.state.canvasWidth; 
 		let HEIGHT = this.state.canvasHeight;
 		let bufferLength = this.state.bufferLength;
