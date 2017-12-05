@@ -86,7 +86,7 @@ export default class LyricsBody extends React.Component {
 					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
 				}
 				var rowDiv = 
-					(<div key= {"rowNumber"+ lineNumber} className="row" style={
+					(<div key= {"rowNumber"+ lineNumber} style={
 							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
 						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-xs-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
@@ -96,7 +96,7 @@ export default class LyricsBody extends React.Component {
 							{
 								this.props.primaryLanguage == "Chinese" ?
 								(
-									<div className = "row">
+									<div >
 										<table>
 											<tbody>
 												{ pronounciation[i] && primary[i] ? 
@@ -133,7 +133,7 @@ export default class LyricsBody extends React.Component {
 
 	
 		return (
-			<div className="row">
+			<div>
 				<div className = "gradient col-xs-12" id='lyricsBody' style = {bodyStyle}>
 					{
 						lyricsBody.map(line => {

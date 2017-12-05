@@ -27,7 +27,7 @@ export default class MainContainer extends React.Component {
 					<PageHeader/>
 		      	</div>
 				<div className = "container">
-					<div className = "row form">
+					<div className = "form">
 			      	<Form/>
 			    	</div>
 		      	</div>

@@ -259,8 +259,7 @@ export default class MainContainer extends React.Component {
 					toggleTranslated = {this.toggleTranslated}
 					toggleLineNums = {this.toggleLineNums}
 					toggleScrolling = {this.toggleScrolling}
-					toggleVisualizer = {this.toggleVisualizer}
-				/>
+					toggleVisualizer = {this.toggleVisualizer}/>
 				<div className = "clearfix"></div>
 				<SongTitle 
 					title = {this.state.currentTitle}

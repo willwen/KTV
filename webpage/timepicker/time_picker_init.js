@@ -12,65 +12,66 @@ var audioPlayerID = "audioPlayer"
 
 
 $(document).ready(function() {
+
     $("#audioSource").change(function(e) {
-        var sound = document.getElementById('audioPlayer');
-        sound.src = URL.createObjectURL(this.files[0]);
-        // not really needed in this exact case, but since it is really important in other cases,
-        // don't forget to revoke the blobURI when you don't need it
-        sound.onend = function(e) {
-            URL.revokeObjectURL(this.src);
+        var fileType = document.getElementById('audioSource');
+        var file_ext = (fileType.value || '').split('.').pop().toLowerCase();
+        if (!['mp3'].includes(file_ext)) {
+            alert('Please attach with following extension: .mp3');
+        } else {
+            var sound = document.getElementById('audioPlayer');
+            sound.src = URL.createObjectURL(this.files[0]);
+            // not really needed in this exact case, but since it is really important in other cases,
+            // don't forget to revoke the blobURI when you don't need it
+            sound.onend = function(e) {
+                URL.revokeObjectURL(this.src);
+            }
         }
     });
 
+    
     $("#lyricsSource").change(function(e) {
-        var file = this.files[0];
+        var fileType = document.getElementById('lyricsSource');
+        var file_ext = (fileType.value || '').split('.').pop().toLowerCase();
+        if (!['txt'].includes(file_ext)) {
+            alert('Please attach with following extension: .txt');
+        } else {
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function(progressEvent) {
+                // Entire file
+                console.log(this.result);
 
-        var reader = new FileReader();
-        reader.onload = function(progressEvent) {
-            // Entire file
-            console.log(this.result);
+                // By lines
+                lyrics = this.result.split('\n');
 
-            // By lines
-            lyrics = this.result.split('\n');
-            for (var index = 0; index < lyrics.length; index++) {
-                var realLineNum = parseInt(index) + 1
-                var line = $("<div/>", { class: "line row" })
-                var lineNumber = $('<div/>', { class: "lineNumber col-3" }).text(realLineNum)
-                line.append(lineNumber)
+                //refresh lyrics div
+                document.getElementById("lyrics").innerHTML = "";
 
-                if (lyrics[index].length > 1) {
-                    var lineText = $('<div/>', { id: realLineNum, class: "lineText col-7" }).text(lyrics[index]);
-                    line.append(lineText)
+                for (var index = 0; index < lyrics.length; index++) {
+                    var realLineNum = parseInt(index) + 1
+                    var line = $("<div/>", { class: "line row" })
+                    var lineNumber = $('<div/>', { class: "lineNumber col-3" }).text(realLineNum)
+                    line.append(lineNumber)
+
+                    if (lyrics[index].length > 1) {
+                        var lineText = $('<div/>', { id: realLineNum, class: "lineText col-6" }).text(lyrics[index]);
+                        line.append(lineText)
+                    }
+                    var timestamp = $('<div/>', { id: realLineNum + 'timestamp', class: "timestamp col-2" })
+                    line.append(timestamp)
+                    document.cookie = line ;
+                    console.log(document.cookie);
+                    $("#lyrics").append(line);
+
                 }
-                var timestamp = $('<div/>', { id: realLineNum + 'timestamp', class: "timestamp col-2" })
-                line.append(timestamp)
-                $("#lyrics").append(line);
-            }
-        };
-        reader.readAsText(file);
-        $("#1").addClass("lead font-weight-bold")
+            };
+            keydown(); //only after file is loaded
+        }
     });
 
-    window.addEventListener("keydown", function(e) {
-        if (e.keyCode == 32 && e.target == document.body) {
-            toggleAudioPlayer(); // space bar to toggle audio player
-            e.preventDefault(); // and prevent scrolling
-        }
-        else if (e.keyCode == 8 && e.target == document.body) { //backspace
-            $("#" + lineNum).removeClass("lead font-weight-bold")
-            var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
-            console.log(time);
-            lineTimes[lineNum - 1] = time;
-            $('#' + lineNum + 'timestamp').text(time);
-            lineNum++;
-            if (lyrics[lineNum - 1].length == 1) {
-                lineTimes[lineNum - 1] = 0;
-                lineNum++;
-            }
-            $("#" + lineNum).addClass("lead font-weight-bold")
-            e.preventDefault(); // and prevent backspace default
-        }
-    });
+    
 
     // $("#audioPlayer").on('timeupdate', function(){
     //  if(english.test(charLyrics[index])){
@@ -89,11 +90,37 @@ $(document).ready(function() {
     //  }
     // });
 
+
     $("#print").click(function() {
         $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
     })
 
 });
+
+
+function keydown(){ //when press a key ( space / enter)
+    window.addEventListener("keydown", function(e) {
+        if (e.keyCode == 32 && e.target == document.body) {
+            toggleAudioPlayer(); // space bar to toggle audio player
+            e.preventDefault(); // and prevent scrolling
+        }
+        else if (e.keyCode == 13 && e.target == document.body) { //enter
+            e.preventDefault(); // and prevent enter default
+            if (lyrics[lineNum - 1].length == 1) {
+                lineTimes[lineNum - 1] = 0;
+                $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
+                lineNum++;   
+            }
+            $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
+            $("#" + lineNum).addClass("lead font-weight-bold");
+            var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
+            console.log(time);
+            lineTimes[lineNum - 1] = time;
+            $('#' + lineNum + 'timestamp').text(time);
+            lineNum++;
+        }
+    });
+}
 
 
 //toggle play/pause on the audio player

@@ -20,10 +20,20 @@ html {
 
 
 /*When Links are hovered over, give that funny pointer*/
-
 a {
+    color: #fff;
+    opacity: 0.8;
+    text-transform: none;
     cursor: pointer;
 }
+
+a:hover {
+    text-decoration: none !important;
+    opacity: 1;
+    color: #FFF;
+    
+}
+
 
 
 /*Header Styles*/
@@ -43,22 +53,16 @@ a {
     color: white;
 }
 
-
-
-
 nav {
     background-color: #8332AC;
     padding-left: 20px;
     padding-right: 10px;
-
 }
-
 
 .nav {
     margin: 25px;
     float: right;
     font-size: 20px;
-
 }
 
 /*.nav p {
@@ -83,16 +87,6 @@ body {
 /**
   Bootstrap Overrides
  */
-
-a {
-    color: #fff;
-    opacity: 0.8;
-    text-transform: none;
-}
-
-a:hover {
-    text-decoration: none !important;
-}
 
 
 .jumbotron {
@@ -126,11 +120,6 @@ a:hover {
     font-size: 2em;
 }
 
-.welcome a:hover {
-    color: #fff;
-    opacity: 1;
-    
-}
 
 
 .equal {

@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="common.css" rel="stylesheet" type="text/css">
     <link href="tree_style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -18,29 +18,33 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
             <img src="logo.png" alt="logo" width="50"/>
             </a>
             <div>
-                <ul class="nav navbar-nav" id="navigation">
-                    <li class="nav-item" ><a href="/">Home</a></li>
-                    <li class="nav-item" ><a href="/about">About</a></li>
-                    <li class="nav-item" ><a href="/treefind">Find Artist</a></li>
-                    <li class="nav-item" ><a href="/submit">Submit a Song</a></li>
-                    <li class="nav-item" ><a href="/timepicker">Time Picker</a></li>
-                 </ul>
+                <ul class="navbar-nav" id="navigation">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/treefind">Find Artist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/submit">Submit a Song</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/timepicker">Time Picker</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-
+    <div class="text-center jumbotron welcome">
+        <h1>Become a Karaoke God</h1>
+        <h2>A Website to Learn Foreign Songs<br/>by Will Wen</h2>
+        <a href="https://github.com/willwen/KTV" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/will-wen-52480559/" target="_blank" class="fa fa-linkedin"></a>
+    </div>
     <div class="container">
         <div class="row" id="artists">
             <div id="root"></div>
         </div>
     </div>
-
 </body>
 
 </html>
