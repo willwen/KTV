@@ -42,23 +42,23 @@
     </div>
     <div class="container">
         <div class="upload">
-            <div class="row">
+            <div class="row" id="description">
                 <p>
                     This time picker tool helps you record the time for each line of the song. Click play on the audio player to play the song. Press [Enter] at the start of each line to record the time. To upload the lyrics, copy and paste the lyrics into a text editor and save it as .txt. The lyrics could in characters or its romanized characters. Once you upload the corresponding files, the page will be filled with the lyrics and the player with the song. 
                 </p>
             </div>
-            <div class="row">
-            <div class="col-6">
-                Upload a .txt file that has all of the lyrics for the song.   <br/>
-                <label for="lyricsSource" class="btn"> Upload Lyrics</label>
-                <input type="file" id="lyricsSource" accept=".txt" />
+            <div class="row text-center">
+                <div class="col-6">
+                    Upload a .txt file that has all of the lyrics for the song.   <br/>
+                    <label for="lyricsSource" class="btn btn-outline-secondary"> Upload Lyrics</label>
+                    <input type="file" id="lyricsSource" accept=".txt" />
+                </div>
+                <div class="col-6">
+                    Upload a .mp3 file that has the song for the lyrics.<br/>
+                    <label for="audioSource" class="btn btn-outline-secondary"> Upload MP3</label>
+                    <input type="file" id="audioSource" accept=".mp3" />
+                </div>
             </div>
-            <div class="col-6">
-                Upload a .mp3 file that has the song for the lyrics.<br/>
-                <label for="audioSource" class="btn"> Upload MP3</label>
-                <input type="file" id="audioSource" accept=".mp3" />
-            </div>
-        </div>
         </div>
         <div class="text-center">
             <div className="audioContainer">
@@ -66,8 +66,8 @@
             </div>
             <div class="container" id="lyrics">
             </div>
-            <div class="row">
-                <button data-toggle="collapse" data-target="#timesOutput" id="print" type="button" class="mx-auto btn btn-primary">PrettyPrint times</button>
+            <div id="prettyPrint">
+                <button data-toggle="collapse" data-target="#timesOutput" id="print" type="button" class="btn" >PrettyPrint times</button>
             </div>
             <div class="row">
                 <div id="timesOutput" class="col-12 collapse"></div>

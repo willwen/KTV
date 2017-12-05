@@ -1,6 +1,39 @@
-.upload {
+.upload, #lyrics {
 	border-style: dotted;
 	border-color: #8332AC;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.7);
+}
+
+#description {
+	padding-right:40px;
+	padding-left: 40px;
+}
+
+#prettyPrint .btn{
+	background-color: #8332AC;
+	color: white;
+}
+
+#prettyPrint .btn:hover{
+	background-color: white;
+	color: #8332AC;
+}
+
+.btn {
+	cursor: pointer;
+	opacity: 0.8;
+
+}
+.btn:hover {
+	background-color: #8332AC;
+	opacity: 1;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+audio {
+	width: 100%;
 }
