@@ -36,7 +36,12 @@ function uploadAudio(){
             sound.onend = function(e) {
                 URL.revokeObjectURL(this.src);
             }
-            keydown(); //only after file is loaded
+            window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
+                if (e.keyCode == 32 && e.target == document.body) {
+                    toggleAudioPlayer(); // space bar to toggle audio player
+                    e.preventDefault(); // and prevent scrolling
+                }
+            });
         }
     });
 }
@@ -74,42 +79,33 @@ function uploadLyrics(){
                     }
                     var timestamp = $('<div/>', { id: realLineNum + 'timestamp', class: "timestamp col-2" })
                     line.append(timestamp)
-                    // document.cookie = line ;
-                    // console.log(document.cookie);
                     $("#lyrics").append(line);
 
                 }
             };
-            keydown(); //only after file is loaded
+            window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
+                if (e.keyCode == 13 && e.target == document.body) { //enter
+                    e.preventDefault(); // and prevent enter default
+                    if (lyrics[lineNum - 1].length == 1) {
+                        lineTimes[lineNum - 1] = 0;
+                        $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
+                        lineNum++;   
+                    }
+                    $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
+                    $("#" + lineNum).addClass("lead font-weight-bold");
+                    var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
+                    console.log(time);
+                    lineTimes[lineNum - 1] = time;
+                    $('#' + lineNum + 'timestamp').text(time);
+                    lineNum++;
+                }
+            });
         }
     });
+    $("#print").click(function() {
+        $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
+    })
 }
-
-
-function keydown(){ //when press a key ( space / enter)
-    window.addEventListener("keydown", function(e) {
-        if (e.keyCode == 32 && e.target == document.body) {
-            toggleAudioPlayer(); // space bar to toggle audio player
-            e.preventDefault(); // and prevent scrolling
-        }
-        else if (e.keyCode == 13 && e.target == document.body) { //enter
-            e.preventDefault(); // and prevent enter default
-            if (lyrics[lineNum - 1].length == 1) {
-                lineTimes[lineNum - 1] = 0;
-                $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
-                lineNum++;   
-            }
-            $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
-            $("#" + lineNum).addClass("lead font-weight-bold");
-            var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
-            console.log(time);
-            lineTimes[lineNum - 1] = time;
-            $('#' + lineNum + 'timestamp').text(time);
-            lineNum++;
-        }
-    });
-}
-
 
 //toggle play/pause on the audio player
 function toggleAudioPlayer() {
