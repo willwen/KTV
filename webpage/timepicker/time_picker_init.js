@@ -62,13 +62,12 @@ function uploadLyrics(){
                 console.log(this.result);
 
                 lyrics = this.result.split('\n');
-                console.log(lyrics.length);
             
                 //refresh lyrics div
                 document.getElementById("lyrics").innerHTML = "";
 
                 for (var index = 0; index < lyrics.length; index++) {
-                    var realLineNum = parseInt(index) + 1
+                    var realLineNum = parseInt(index) + 1  
                     var line = $("<div/>", { class: "line row" })
                     var lineNumber = $('<div/>', { class: "lineNumber col-3" }).text(realLineNum)
                     line.append(lineNumber)
@@ -77,19 +76,24 @@ function uploadLyrics(){
                         var lineText = $('<div/>', { id: realLineNum, class: "lineText col-6" }).text(lyrics[index]);
                         line.append(lineText)
                     }
-                    var timestamp = $('<div/>', { id: realLineNum + 'timestamp', class: "timestamp col-2" })
+                    var timestamp = $('<div/>', {id: realLineNum + 'timeDiv', class: "timestamp col-2" })
+                    var time_anchor = $('<a/>', {id: realLineNum + 'timestamp', onclick: "lineNum = edit(" + realLineNum + ");return false;"})
+                    timestamp.append(time_anchor);
                     line.append(timestamp)
                     $("#lyrics").append(line);
+                    // edit(realLineNum);
 
-                }
+                }   
             };
             window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
                 if (e.keyCode == 13 && e.target == document.body) { //enter
                     e.preventDefault(); // and prevent enter default
+                    addTimestampAnchor(lineNum);
                     if (lyrics[lineNum - 1].length == 1) {
                         lineTimes[lineNum - 1] = 0;
                         $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
-                        lineNum++;   
+                        lineNum++; 
+                        addTimestampAnchor(lineNum);  
                     }
                     $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
                     $("#" + lineNum).addClass("lead font-weight-bold");
@@ -99,12 +103,17 @@ function uploadLyrics(){
                     $('#' + lineNum + 'timestamp').text(time);
                     lineNum++;
                 }
+
             });
         }
     });
-    $("#print").click(function() {
-        $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
-    })
+}
+function addTimestampAnchor(realLine) {
+    var timeDiv = document.getElementById(realLine + 'timeDiv');
+    var timeAnchor = document.createElement("A");
+    timeAnchor.setAttribute('id', lineNum + 'timestamp' );
+    timeAnchor.setAttribute('onclick', "lineNum = edit(" + realLine + ");return false;")
+    timeDiv.appendChild(timeAnchor);
 }
 
 //toggle play/pause on the audio player
@@ -127,6 +136,8 @@ function prettyPrint() {
     }
     return string;
 }
+
+
 
 function timestampToSeconds(timestamp) {
     return Math.floor(timestamp / 100) * 60 + timestamp % 100;
