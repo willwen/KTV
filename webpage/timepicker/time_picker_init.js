@@ -12,13 +12,23 @@ var audioPlayerID = "audioPlayer"
 
 
 $(document).ready(function() {
+    uploadAudio();
+    uploadLyrics();
 
-    $("#audioSource").change(function(e) {
+    $("#print").click(function() {
+        $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
+    })
+
+});
+
+function uploadAudio(){
+        $("#audioSource").change(function(e) {
         var fileType = document.getElementById('audioSource');
         var file_ext = (fileType.value || '').split('.').pop().toLowerCase();
         if (!['mp3'].includes(file_ext)) {
             alert('Please attach with following extension: .mp3');
         } else {
+            fileType.disabled = true;
             var sound = document.getElementById('audioPlayer');
             sound.src = URL.createObjectURL(this.files[0]);
             // not really needed in this exact case, but since it is really important in other cases,
@@ -26,16 +36,19 @@ $(document).ready(function() {
             sound.onend = function(e) {
                 URL.revokeObjectURL(this.src);
             }
+            keydown(); //only after file is loaded
         }
     });
+}
 
-    
-    $("#lyricsSource").change(function(e) {
+function uploadLyrics(){
+        $("#lyricsSource").change(function(e) {
         var fileType = document.getElementById('lyricsSource');
         var file_ext = (fileType.value || '').split('.').pop().toLowerCase();
         if (!['txt'].includes(file_ext)) {
             alert('Please attach with following extension: .txt');
         } else {
+            fileType.disabled = true;
             var file = this.files[0];
             var reader = new FileReader();
             reader.readAsText(file);
@@ -43,9 +56,9 @@ $(document).ready(function() {
                 // Entire file
                 console.log(this.result);
 
-                // By lines
                 lyrics = this.result.split('\n');
-
+                console.log(lyrics.length);
+            
                 //refresh lyrics div
                 document.getElementById("lyrics").innerHTML = "";
 
@@ -61,8 +74,8 @@ $(document).ready(function() {
                     }
                     var timestamp = $('<div/>', { id: realLineNum + 'timestamp', class: "timestamp col-2" })
                     line.append(timestamp)
-                    document.cookie = line ;
-                    console.log(document.cookie);
+                    // document.cookie = line ;
+                    // console.log(document.cookie);
                     $("#lyrics").append(line);
 
                 }
@@ -70,32 +83,7 @@ $(document).ready(function() {
             keydown(); //only after file is loaded
         }
     });
-
-    
-
-    // $("#audioPlayer").on('timeupdate', function(){
-    //  if(english.test(charLyrics[index])){
-    //      charTimes[index] = 0;
-    //      index++;
-    //      console.log("deteched english , updated");
-    //  
-    //  if(staticTimes){
-    //      if((this.currentTime >= (staticTimes[playbackIndex]-0.6)) || staticTimes[playbackIndex]==0){
-    //          $("#" + (playbackIndex-1)).removeAttr( 'style' );
-    //          $("#" + playbackIndex).css("color", "blue")
-    //          // console.log(this.currentTime + ">=" + (staticTimes[playbackIndex]-0.4)+ " aka char#" + playbackIndex)
-    //          playbackIndex++;
-    //      }
-
-    //  }
-    // });
-
-
-    $("#print").click(function() {
-        $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
-    })
-
-});
+}
 
 
 function keydown(){ //when press a key ( space / enter)

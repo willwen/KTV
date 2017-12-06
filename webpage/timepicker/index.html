@@ -44,12 +44,12 @@
         <div class="upload">
             <div class="row" id="description">
                 <p>
-                    This time picker tool helps you record the time for each line of the song. Click play on the audio player to play the song. Press [Enter] at the start of each line to record the time. To upload the lyrics, copy and paste the lyrics into a text editor and save it as .txt. The lyrics could in characters or its romanized characters. Once you upload the corresponding files, the page will be filled with the lyrics and the player with the song. 
+                    This time picker tool helps you record the time for each line of the song. Click play on the audio player to play the song. Press [Enter] at the start of each line to record the time. To upload the lyrics, copy and paste the lyrics into a text editor and save it as .txt. The lyrics could in characters or its romanized characters. Once you upload the corresponding files, the page will be filled with the lyrics and the player with the song. Please click clear to refresh the page. 
                 </p>
             </div>
             <div class="row text-center">
                 <div class="col-6">
-                    Upload a .txt file that has all of the lyrics for the song.   <br/>
+                    Upload a .txt file that has all of the lyrics for the song.<br/>
                     <label for="lyricsSource" class="btn btn-outline-secondary"> Upload Lyrics</label>
                     <input type="file" id="lyricsSource" accept=".txt" />
                 </div>
@@ -58,6 +58,9 @@
                     <label for="audioSource" class="btn btn-outline-secondary"> Upload MP3</label>
                     <input type="file" id="audioSource" accept=".mp3" />
                 </div>
+            </div>
+            <div>
+            <input type="button" class="btn" value="Clear" onClick="window.location.href=window.location.href">
             </div>
         </div>
         <div class="text-center">
