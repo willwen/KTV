@@ -19,6 +19,7 @@ $(document).ready(function() {
         if (!['mp3'].includes(file_ext)) {
             alert('Please attach with following extension: .mp3');
         } else {
+            fileType.disabled = true;
             var sound = document.getElementById('audioPlayer');
             sound.src = URL.createObjectURL(this.files[0]);
             // not really needed in this exact case, but since it is really important in other cases,
@@ -26,6 +27,12 @@ $(document).ready(function() {
             sound.onend = function(e) {
                 URL.revokeObjectURL(this.src);
             }
+            window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
+                if (e.keyCode == 32 && e.target == document.body) {
+                    toggleAudioPlayer(); // space bar to toggle audio player
+                    e.preventDefault(); // and prevent scrolling
+                }
+            });
         }
     });
 
@@ -36,6 +43,7 @@ $(document).ready(function() {
         if (!['txt'].includes(file_ext)) {
             alert('Please attach with following extension: .txt');
         } else {
+            fileType.disabled = true;
             var file = this.files[0];
             var reader = new FileReader();
             reader.readAsText(file);
@@ -61,34 +69,30 @@ $(document).ready(function() {
                     }
                     var timestamp = $('<div/>', { id: realLineNum + 'timestamp', class: "timestamp col-2" })
                     line.append(timestamp)
-                    document.cookie = line ;
-                    console.log(document.cookie);
                     $("#lyrics").append(line);
 
                 }
             };
-            keydown(); //only after file is loaded
+            window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
+                if (e.keyCode == 13 && e.target == document.body) { //enter
+                    e.preventDefault(); // and prevent enter default
+                    if (lyrics[lineNum - 1].length == 1) {
+                        lineTimes[lineNum - 1] = 0;
+                        $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
+                        lineNum++;   
+                    }
+                    $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
+                    $("#" + lineNum).addClass("lead font-weight-bold");
+                    var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
+                    console.log(time);
+                    lineTimes[lineNum - 1] = time;
+                    $('#' + lineNum + 'timestamp').text(time);
+                    lineNum++;
+                }
+            });
         }
     });
 
-    
-
-    // $("#audioPlayer").on('timeupdate', function(){
-    //  if(english.test(charLyrics[index])){
-    //      charTimes[index] = 0;
-    //      index++;
-    //      console.log("deteched english , updated");
-    //  
-    //  if(staticTimes){
-    //      if((this.currentTime >= (staticTimes[playbackIndex]-0.6)) || staticTimes[playbackIndex]==0){
-    //          $("#" + (playbackIndex-1)).removeAttr( 'style' );
-    //          $("#" + playbackIndex).css("color", "blue")
-    //          // console.log(this.currentTime + ">=" + (staticTimes[playbackIndex]-0.4)+ " aka char#" + playbackIndex)
-    //          playbackIndex++;
-    //      }
-
-    //  }
-    // });
 
 
     $("#print").click(function() {
@@ -96,32 +100,6 @@ $(document).ready(function() {
     })
 
 });
-
-
-function keydown(){ //when press a key ( space / enter)
-    window.addEventListener("keydown", function(e) {
-        if (e.keyCode == 32 && e.target == document.body) {
-            toggleAudioPlayer(); // space bar to toggle audio player
-            e.preventDefault(); // and prevent scrolling
-        }
-        else if (e.keyCode == 13 && e.target == document.body) { //enter
-            e.preventDefault(); // and prevent enter default
-            if (lyrics[lineNum - 1].length == 1) {
-                lineTimes[lineNum - 1] = 0;
-                $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
-                lineNum++;   
-            }
-            $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
-            $("#" + lineNum).addClass("lead font-weight-bold");
-            var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
-            console.log(time);
-            lineTimes[lineNum - 1] = time;
-            $('#' + lineNum + 'timestamp').text(time);
-            lineNum++;
-        }
-    });
-}
-
 
 //toggle play/pause on the audio player
 function toggleAudioPlayer() {
