@@ -165,30 +165,30 @@ export default class MainContainer extends React.Component {
 							toggleVisualizer = {this.toggleVisualizer}
 						/>
 						<div className = "clearfix"></div>
-						<SongTitle 
-							title = {this.state.currentTitle}
-							artist = {this.state.currentArtist}/>
+							<SongTitle 
+								title = {this.state.currentTitle}
+								artist = {this.state.currentArtist}/>
 
-						<LyricsBody ref = "lyricsBody" 
-							currentLine={this.state.currentLine}
-							lyrics = {this.state.lyrics}
-							anchorClickUpdateLine={this.anchorClickUpdateLine}
-							options={this.state.options}
-							primaryLanguage={this.state.primaryLanguage}/>
-						</div>
+							<LyricsBody ref = "lyricsBody" 
+								currentLine={this.state.currentLine}
+								lyrics = {this.state.lyrics}
+								anchorClickUpdateLine={this.anchorClickUpdateLine}
+								options={this.state.options}
+								primaryLanguage={this.state.primaryLanguage}/>
 					</div>
-					<AudioPlayer ref="audioPlayer"
-						currentSong = {this.state.songPath}
-						timestamps={this.state.lyrics.timestamps}
-						addInstrumental = {this.state.addInstrumental}
-						instrumentalPath = {this.state.instrumentalPath}
-						incrementLine = {this.incrementLine}
-						currentLine = {this.state.currentLine}
-						scrollOffset = {this.state.scrollingOffset}
-						allowScrolling = {this.state.options.allowScrolling}
-						showVisualizer = {this.state.options.showVisualizer}
-						userSeeked = {this.userSeeked}
-					/>
+				</div>
+				<AudioPlayer ref="audioPlayer"
+					currentSong = {this.state.songPath}
+					timestamps={this.state.lyrics.timestamps}
+					addInstrumental = {this.state.addInstrumental}
+					instrumentalPath = {this.state.instrumentalPath}
+					incrementLine = {this.incrementLine}
+					currentLine = {this.state.currentLine}
+					scrollOffset = {this.state.scrollingOffset}
+					allowScrolling = {this.state.options.allowScrolling}
+					showVisualizer = {this.state.options.showVisualizer}
+					userSeeked = {this.userSeeked}
+				/>
 		  </div>
 		);
 	}

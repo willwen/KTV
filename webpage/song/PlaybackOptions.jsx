@@ -30,7 +30,7 @@ export default class PlaybackOptions extends React.Component {
 	}
   render() {
     return (
-		<div className = "playbackOptions col-xs-6">
+		<div className = "playbackOptions col">
 			<form onSubmit={this.modifyOptions}>
 				<span>Playback Options:</span>
 				<div className="checkbox">

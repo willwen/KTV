@@ -13,11 +13,11 @@ export default class SearchBar extends React.Component {
 	
 	render() {
 		return (
-			<div className="row">
-				<div className = "col-xs-offset-3 col-xs-6 searchDiv">
+			<div>
+				<div className = " col-xs-offset-3 col-xs-6 searchDiv">
 					<form>
-						<input className="form-control" id="songSearchInput" ref="textBox" 
-							name="search" placeholder="Song Search..." size="50" type="text"
+						<input className="text-center form-control" id="songSearchInput" ref="textBox" 
+							name="search" placeholder="Song Search..."  type="text"
 							onKeyUp={this.searchSongs}/>
 					</form>
 				</div>

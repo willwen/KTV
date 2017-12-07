@@ -26,12 +26,14 @@ export default class MainContainer extends React.Component {
 	render() {
 		return (
 			<div>
-			  <div>
+			  <div className="container-fluid">
 		      	<PageHeader/>
+		      </div>
+		      <div className="container">
 		      	<SearchPanel/>
 				<div className = "clearfix"></div>
 			  </div>
-		  </div>
+			</div>
 		);
 	}
 

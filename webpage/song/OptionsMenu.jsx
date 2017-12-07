@@ -9,7 +9,7 @@ export default class OptionsMenu extends React.Component {
 
 	render() {
 		return (
-			<div className="row optionsMenu" id="options">
+			<div className="optionsMenu row" id="options">
 				<LanguageOptions
 					primaryLanguage={this.props.primaryLanguage}
 					pronounciationLanguage={this.props.pronounciationLanguage}
@@ -20,8 +20,7 @@ export default class OptionsMenu extends React.Component {
 				<PlaybackOptions
 					toggleLineNums = {this.props.toggleLineNums}
 					toggleScrolling = {this.props.toggleScrolling}
-					toggleVisualizer = {this.props.toggleVisualizer}
-					/>
+					toggleVisualizer = {this.props.toggleVisualizer}/>
 			</div>
 		);
 	}

@@ -173,7 +173,7 @@ function createAnchor(element, level) {
             //hide all panels BELOW this level
             for (var i = level + 1; i <= maxLevel; i++) {
                 $("." + i + "_level").each(function() {
-                    $(this).parent().collapse({ toggle: false })
+                    // $(this).parent().collapse({ toggle: false })
                     $(this).parent().collapse("hide");
                 })
             }
@@ -205,12 +205,12 @@ function createIcon(element, level) {
     //     var iconLevel = "topLevelIcon";
     // else
     var iconLevel = "childLevelIcon";
-    var icon = $("<img></img>", { "class": "img-responsive icon " + iconLevel, "src": element.icon });
+    var icon = $("<img></img>", { "class": "img-fluid icon " + iconLevel, "src": element.icon });
     iconDiv.append(icon);
 
     return iconDiv;
 }
 
 function createTextLabel(element) {
-    return $("<div></div>", { "class": "textLabel nowrap" }).text(element.name);
+    return $("<div></div>", { "class": "textLabel" }).text(element.name);
 }

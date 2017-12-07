@@ -4,10 +4,12 @@ export default class SongTitle extends React.Component {
   	if(this.props.title && this.props.artist)
   		title = this.props.title + " - " +  this.props.artist
     return (
-		<div className="row">
-			<h1 className=" col-xs-12 page-header" id="titleLine">
-				{title}
-			</h1><br/>
+		<div className = "row">
+      <div className = "col">
+  			<h1 className= "page-header" id="titleLine">
+  				{title}
+  			</h1><br/>
+      </div>
 		</div>
     );
   }

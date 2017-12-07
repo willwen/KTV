@@ -66,63 +66,63 @@ export default class Form extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
           <div className="row">
-            <div className ="col-xs-3">
-               <FormGroup bsSize="small" controlId="song">
-                  <ControlLabel>Song Title:</ControlLabel>
-                  <FormControl type="text" placeholder="歌曲名" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true} />
-                </FormGroup>
+              <div className="col">
+                  <FormGroup bsSize="small" controlId="song">
+                      <ControlLabel>Song Title:</ControlLabel>
+                      <FormControl type="text" placeholder="歌曲名" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                  </FormGroup>
+              </div>
+              <div className="col">
+                  <FormGroup bsSize="small" controlId="artist">
+                      <ControlLabel>Artist Name:</ControlLabel>
+                      <FormControl type="text" placeholder="艺术家" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                  </FormGroup>
+              </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <FormGroup  bsSize="large" controlId="cnLyrics">
+                <ControlLabel>Primary Language Lyrics:</ControlLabel>
+                <FormControl componentClass="textarea" placeholder="中文歌词" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+              </FormGroup>
             </div>
-            <div className ="col-xs-3">
-         <FormGroup bsSize="small" controlId="artist">
-            <ControlLabel>Artist Name:</ControlLabel>
-            <FormControl type="text" placeholder="艺术家" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true} />
+            <div className="col">
+              <FormGroup  bsSize="large" controlId="pinyinLyrics">
+                <ControlLabel>Pronounciation Lyrics:</ControlLabel>
+                <FormControl componentClass="textarea" placeholder="拼音" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+              </FormGroup>
+            </div>
+            <div className="col">
+              <FormGroup  bsSize="large" controlId="engLyrics">
+                <ControlLabel>Translated Lyrics (If applicable):</ControlLabel>
+                <FormControl componentClass="textarea" placeholder="英文翻译" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+              </FormGroup>
+            </div>
+          </div>
+          <FormGroup controlId="audioFile">
+            <ControlLabel>MP3 Upload</ControlLabel>
+            <br/>
+            <FormControl type="file" accept=".mp3" disabled={this.state.request==="pending"? false:true}/>
           </FormGroup>
-          </div>
-          </div>
 
-        <div className="row">
-          <div className="col-xs-4">
-            <FormGroup  bsSize="large" controlId="cnLyrics">
-              <ControlLabel>Primary Language Lyrics:</ControlLabel>
-              <FormControl componentClass="textarea" placeholder="中文歌词" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-            </FormGroup>
+          <FormGroup  bsSize="large" controlId="times">
+            <ControlLabel>Line Timings:</ControlLabel>
+            <FormControl componentClass="textarea" placeholder="时间轴" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+          </FormGroup>
+          <Recaptcha
+            sitekey="6LfZ-TsUAAAAABCx4CayOkJbV_Qm9CW9qGmBUzeS"
+            render="explicit"
+            onloadCallback={this.onCaptchaLoaded}
+            verifyCallback={this.setCaptchaToken}
+            theme="dark"
+          />
+          <input type="submit" value="Submit" id="submit" disabled={this.state.request==="pending"? false:true} />
+          <br/>
+          <div className = "centered">
+              {this.state.request === "transit" ?
+                (<img height="150px" width = "150px" src= "loading.gif"></img>):null
+              }
           </div>
-          <div className="col-xs-4">
-            <FormGroup  bsSize="large" controlId="pinyinLyrics">
-              <ControlLabel>Pronounciation Lyrics:</ControlLabel>
-              <FormControl componentClass="textarea" placeholder="拼音" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-            </FormGroup>
-          </div>
-          <div className="col-xs-4">
-            <FormGroup  bsSize="large" controlId="engLyrics">
-              <ControlLabel>Translated Lyrics (If applicable):</ControlLabel>
-              <FormControl componentClass="textarea" placeholder="英文翻译" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-            </FormGroup>
-          </div>
-        </div>
-        <FormGroup controlId="audioFile">
-          <ControlLabel>MP3 Upload</ControlLabel>
-          <FormControl type="file" accept=".mp3" disabled={this.state.request==="pending"? false:true}/>
-        </FormGroup>
-
-        <FormGroup  bsSize="large" controlId="times">
-          <ControlLabel>Line Timings:</ControlLabel>
-          <FormControl componentClass="textarea" placeholder="时间轴" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-        </FormGroup>
-        <Recaptcha
-          sitekey="6LfZ-TsUAAAAABCx4CayOkJbV_Qm9CW9qGmBUzeS"
-          render="explicit"
-          onloadCallback={this.onCaptchaLoaded}
-          verifyCallback={this.setCaptchaToken}
-          theme="dark"
-        />
-        <input type="submit" value="Submit" id="submit" disabled={this.state.request==="pending"? false:true} />
-        <br/>
-        <div className = "centered">
-            {this.state.request === "transit" ?
-              (<img height="150px" width = "150px" src= "loading.gif"></img>):null
-            }
-        </div>
       </form>
     );
   }

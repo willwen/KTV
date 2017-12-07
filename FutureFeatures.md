@@ -14,8 +14,6 @@
 ### Medium Effort
 - Audacity to detect lyric timings
 - write treesearch in react
-- Fix treefind bootstrap sizing
-
 - Make a popup help box on load
 - Add album image to bottom right
 	- Add album images to treesearch

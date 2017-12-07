@@ -41,7 +41,7 @@ export default class LanguageOptions extends React.Component {
 
   render() {
     return (
-  		<div className="displayLanguages col-xs-6">
+  		<div className="displayLanguages col">
         <form onSubmit={this.modifyOptions}>
             <span>Display Languages:</span>
             <div className="checkbox">
