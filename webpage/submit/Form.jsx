@@ -1,5 +1,7 @@
 import {HelpBlock,FormGroup, FormControl, ControlLabel} from 'react-bootstrap'
 import axios from 'axios'
+var Recaptcha = require('react-recaptcha');
+
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -10,16 +12,29 @@ export default class Form extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.setCaptchaToken = this.setCaptchaToken.bind(this);
+    this.onCaptchaLoaded = this.onCaptchaLoaded.bind(this);
   }
 
   handleChange(event) {
     const target = event.target;
     const value = target.value;
     const name = target.id;
-    this.setState({
+    this.setState({//braces mean eval of 'name'
       [name]:value
     })
   }
+
+  setCaptchaToken(token){
+    this.setState({
+      captcha : token
+    })
+  }
+  
+  onCaptchaLoaded(){
+    console.log("captcha loaded")
+  }
+  
 
   handleSubmit(event) {
     // alert('A name was submitted: ' + JSON.stringify(this.state));
@@ -68,23 +83,20 @@ export default class Form extends React.Component {
         <div className="row">
           <div className="col-xs-4">
             <FormGroup  bsSize="large" controlId="cnLyrics">
-              <ControlLabel>Chinese Character Lyrics:</ControlLabel>
+              <ControlLabel>Primary Language Lyrics:</ControlLabel>
               <FormControl componentClass="textarea" placeholder="中文歌词" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-              <HelpBlock>Insert the Chinese Lyrics here.</HelpBlock>
             </FormGroup>
           </div>
           <div className="col-xs-4">
             <FormGroup  bsSize="large" controlId="pinyinLyrics">
-              <ControlLabel>Pinyin Lyrics:</ControlLabel>
+              <ControlLabel>Pronounciation Lyrics:</ControlLabel>
               <FormControl componentClass="textarea" placeholder="拼音" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-              <HelpBlock>Insert the Pinyin of the Chinese Characters here.</HelpBlock>
             </FormGroup>
           </div>
           <div className="col-xs-4">
             <FormGroup  bsSize="large" controlId="engLyrics">
-              <ControlLabel>English Translation:</ControlLabel>
+              <ControlLabel>Translated Lyrics (If applicable):</ControlLabel>
               <FormControl componentClass="textarea" placeholder="英文翻译" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-              <HelpBlock>Insert the English Translation of the Lyrics here.</HelpBlock>
             </FormGroup>
           </div>
         </div>
@@ -96,11 +108,16 @@ export default class Form extends React.Component {
         <FormGroup  bsSize="large" controlId="times">
           <ControlLabel>Line Timings:</ControlLabel>
           <FormControl componentClass="textarea" placeholder="时间轴" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
-          <HelpBlock>Insert the Timings of Line Transitions of the Lyrics here.</HelpBlock>
         </FormGroup>
-
+        <Recaptcha
+          sitekey="6LfZ-TsUAAAAABCx4CayOkJbV_Qm9CW9qGmBUzeS"
+          render="explicit"
+          onloadCallback={this.onCaptchaLoaded}
+          verifyCallback={this.setCaptchaToken}
+          theme="dark"
+        />
         <input type="submit" value="Submit" id="submit" disabled={this.state.request==="pending"? false:true} />
-
+        <br/>
         <div className = "centered">
             {this.state.request === "transit" ?
               (<img height="150px" width = "150px" src= "loading.gif"></img>):null

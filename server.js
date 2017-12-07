@@ -16,14 +16,17 @@ var fs = require('fs-extra'),
 var port = 8080,
     environment = process.env.NODE_ENV,
     fromEmail = process.env.EMAIL,
-    uploadDirectory = __dirname + "/uploads"
-zipDirectory = __dirname + "/zip"
+    mlabUser = process.env.MLAB_USER,
+    mlabPass = process.env.MLAB_PASS,
+    captchaSecret = process.env.CAPTCHA_SECRET,
+    uploadDirectory = __dirname + "/uploads",
+    zipDirectory = __dirname + "/zip"
 
 const bucketName = "ktvuploads"
 const s3SongsBucketURL = " https://s3.us-east-2.amazonaws.com/ktv.songs/"
 var mongoURL
 environment === "production" ?
-    mongoURL = "mongodb://readonly:readonly@ds127872.mlab.com:27872/heroku_0kfm3lp6" : mongoURL = "mongodb://localhost:27017/songs"
+    mongoURL = "mongodb://" + mlabUser + ":" + mlabPass + "@ds127872.mlab.com:27872/heroku_0kfm3lp6" : mongoURL = "mongodb://localhost:27017/songs"
 //Usign Docker? Use this:
 // mongoURL= "mongodb://mongodb:27017/songs"
 
@@ -359,20 +362,29 @@ app.get('/query', function(req, res) {
 
 
 app.post('/upload', upload.single('audioFile'), function(req, res) {
+    
     var payload = JSON.parse(req.body.payload)
-    //logthe mp3 file
-    var songName = payload.song
-    var artist = payload.artist
-    var cnLyrics = payload.cnLyrics
-    var pinyinLyrics = payload.pinyinLyrics
-    var engLyrics = payload.engLyrics
-    var times = payload.times
+
+    var captcha = xssfilters.inHTMLData(payload.captcha)
+    var songName = xssfilters.inHTMLData(payload.song)
+    var artist = xssfilters.inHTMLData(payload.artist)
+    var cnLyrics = xssfilters.inHTMLData(payload.cnLyrics)
+    var pinyinLyrics = xssfilters.inHTMLData(payload.pinyinLyrics)
+    var engLyrics = xssfilters.inHTMLData(payload.engLyrics)
+    var times = xssfilters.inHTMLData(payload.times)
+
+    // verifyCaptcha(captcha);
 
     var lineSeparator = "\n=========================================================================\n"
     var submitDate = Date.now()
     var fileName = submitDate + ' ' + songName + '-' + artist + '.txt'
-    var fileContent = cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times
-    fs.writeFile(uploadDirectory + "/" + fileName, fileContent)
+    // var fileContent = cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times
+    var primaryLanguageFile = fs.writeFile(uploadDirectory + "/" + "PrimaryLanguage " + fileName, cnLyrics)
+    var pronounciationLanguageFile = fs.writeFile(uploadDirectory + "/" + "PronounciationLanguage " +  fileName, pinyinLyrics)
+    var translationLanguageFile = fs.writeFile(uploadDirectory + "/" + "TranslatedLanguage " + fileName, engLyrics)
+    var timesFile = fs.writeFile(uploadDirectory + "/" + "Timestamps " + fileName, times)
+
+    Promise.all([primaryLanguageFile, pronounciationLanguageFile,  translationLanguageFile, timesFile])
         .then(() => {
             res.send({ redirect: "/uploadComplete" })
             return zipFiles(songName, artist, submitDate)
@@ -400,6 +412,13 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
             return;
         })
 })
+
+//WIP
+
+// function verifyCaptcha(captcha){
+//     const endpoint = "https://www.google.com/recaptcha/api/siteverify"
+//     var payload = {secret: captchaSecret, response: captcha, remoteip: ""}
+// }
 
 // Zip up file ////////////////////////////////////////////////////////////////////////////////////////
 
