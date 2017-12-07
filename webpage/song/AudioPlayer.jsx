@@ -51,7 +51,7 @@ export default class AudioPlayer extends React.Component {
 		let nextLine = nextProps.currentLine
 		let timestamps = nextProps.timestamps
 		let nextTimestamp = Constants.timestampToSeconds(timestamps[nextLine])
-		if(nextTimestamp == 0 && nextProps.nextLine == 0){ // fixes a bug if the first time is 0, it isnt highlighted
+		if(nextTimestamp == 0 && nextProps.currentLine == 0){ // fixes a bug if the first time is 0, it isnt highlighted
 			this.props.incrementLine()
 		}
 		else{
