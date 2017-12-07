@@ -11,7 +11,7 @@ export default class PageHeader extends React.Component {
 		    		<ul className="nav navbar-nav" id="navigation">
 		    			<li className="nav-item" ><a href="/">Home</a></li>
 		    			<li className="nav-item" ><a href="/about">About</a></li>
-		    			<li className="nav-item" ><a href="/treefind">Find Artist</a></li>
+		    			<li className="nav-item" ><a href="/treefind">Search</a></li>
 		    			<li className="nav-item" ><a href="/submit">Submit a Song</a></li>
 	                    <li className="nav-item" ><a href="/timepicker">Time Picker</a></li>
 	                 </ul>

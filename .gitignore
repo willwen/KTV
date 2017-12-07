@@ -1,8 +1,13 @@
+# Node JS Modules
 node_modules/*
-# Elastic Beanstalk Files
+
+
+# Elastic Beanstalk Files
 .elasticbeanstalk/*
-.elasticbeanstalk/app_versions/*
-!.elasticbeanstalk/*.cfg.yml
+.elasticbeanstalk/app_versions/*
+!.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+#Server Output 
 uploads/*
-zip/*
+zip/

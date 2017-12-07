@@ -289,6 +289,37 @@ app.get('/artists', function(req, res) {
         })
 })
 
+app.get('/language', function(req, res) {
+    var MongoClient = mongodb.MongoClient;
+    MongoClient.connect(mongoURL)
+        .then((db) => {
+            var collection = db.collection('songs');
+            var query = [{ $sort: { PrimaryLanguage: -1 } }, { $group: { _id: "$PrimaryLanguage", artist: { $push: "$$ROOT" } } }]
+            var cursor = collection.aggregate(query);
+            cursor.toArray()
+                .then((result) => {
+                    res.send(result);
+                    db.close();
+                })
+
+        })
+        .catch((err) => {
+            var placeholder = [{
+                _id: 9999,
+                title_pinyin: 'No Results Found',
+                cn_char: 'No Results Found',
+                file_name: '1',
+                artist: '',
+                artist_pinyin: '',
+                searchTerm: 'No Results Found'
+            }];
+            res.send(placeholder);
+            if (typeof db !== 'undefined')
+                db.close();
+            console.log('/artists: unable to connect to server', err);
+        })
+})
+
 
 app.get('/query', function(req, res) {
     var MongoClient = mongodb.MongoClient;

@@ -1,7 +1,8 @@
 var maxLevel = 0;
 
-function reformat(data) {
+function reformatArtists(data) {
     var artists = {
+        id: "allArtists",
         elements: []
     }
     var songs = []
@@ -34,13 +35,59 @@ function reformat(data) {
 
 }
 
+function reformatLanguages(data) {
+    var languages = {
+        id: "allLanguages",
+        elements: []
+    }
+    var artists = []
+    for (var i = 0; i < data.length; i++) {
+        var language = data[i]
+        var languageID = uuidv4()
+        var artistID = uuidv4();
+
+        var child = {
+            id: artistID,
+            parentId: languageID,
+            elements: []
+
+        }
+        for (var j = 0; j < language.artist.length; j++) {
+            child.elements.push({
+                name: language.artist[j]["cn_char"],
+                icon: language.artist[j]["artist_pinyin"] + ".png",
+                linkTo: "/song?id=" + language.artist[j]["file_name"],
+            })
+        }
+        artists.push(child)
+        languages.elements.push({
+            name: language["_id"],
+            icon: language["_id"] + ".png",
+            child: artists[i],
+        })
+    }
+    return languages
+
+}
+
+
+
+
 $(document).ready(function() {
     // db.songs.aggregate({$sort:{artist:-1}},{$group: {_id:"$artist", songs: {$push: "$$ROOT"}}})
-    $.get("/artists", function(data) {
-        artists = reformat(data)
-        createTree($("#root"), artists, 1);
-    })
-
+    $.when(
+        $.get("/language"),
+        $.get("/artists")
+        ).done((langaugesResp, artistsResp)=>{
+            // console.log(langaugesResp[0])
+            var languages = reformatLanguages(langaugesResp[0])
+            var artists = reformatArtists(artistsResp[0])
+            var searchCategories = { elements: 
+                [ {name: "Language", icon: "Language.png", child: languages},
+                 {name: "All Artists", icon: "artist.png", child: artists }
+                ]}
+            createTree($("#root"), searchCategories, 1);
+        })
 });
 
 function uuidv4() {
@@ -75,7 +122,7 @@ function createTree(rootNode, root, level) {
         //create a div with unique ID to be toggled with collapse()
         var collapseDiv = $("<div></div>", { "id": id , "name" : id});
         //create a div to hold all nodes in a level
-        var levelContainer = $("<div></div>", { "class": level + "_level level" });
+        var levelContainer = $("<div></div>", { "class": level + "_level level " });
 
         if (node.id) {
             collapseDiv.addClass("collapse");
