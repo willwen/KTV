@@ -1,4 +1,3 @@
-
 .form-control {
     height: 50px;
 }
@@ -9,12 +8,28 @@
 }
 
 
+
 /**
   Search Bar Stylings
 **/
+
 .searchDiv {
-    height: 40px;
-    margin : 0 auto;
+    margin: 0 auto;
+    width: 65%;
+}
+
+
+/* webkit solution */
+
+::-webkit-input-placeholder {
+    text-align: left;
+}
+
+
+/* mozilla solution */
+
+input:-moz-placeholder {
+    text-align: left;
 }
 
 #songSearchInput {
@@ -25,7 +40,6 @@
     box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.25);
     border: none;
     color: #574AE2;
-    width: 750px;
 }
 
 .allSongsDiv {
@@ -44,9 +58,11 @@
     font-size: 0.9em;
 }
 
+
 /**
   Results List Stylings
 **/
+
 #resultsList {
     list-style-type: none;
     padding: 0;

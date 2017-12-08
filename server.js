@@ -336,7 +336,7 @@ app.get('/query', function(req, res) {
             var collection = db.collection('songs');
             var regexValue = '\.*' + cleansedQuery + '\.';
             var query = { "searchTerm": { $regex: new RegExp(regexValue, 'i') } }
-            var cursor = collection.find(query, { file_name: 1, cn_char: 1, artist: 1 }).sort({ cn_char: -1 })
+            var cursor = collection.find(query, { file_name: 1, cn_char: 1, artist: 1 }).sort({ cn_char: 1 })
             cursor.toArray().then((result) => {
                 res.send(result);
                 db.close();

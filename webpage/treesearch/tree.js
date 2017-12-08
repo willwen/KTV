@@ -81,7 +81,7 @@ $(document).ready(function() {
             var artists = reformatArtists(artistsResp[0])
             var searchCategories = { elements: 
                 [ {name: "Language", icon: "Language.png", child: languages},
-                 {name: "All Artists", icon: "artist.png", child: artists }
+                 {name: "All Artists", icon: "Artist.png", child: artists }
                 ]}
             createTree($("#root"), searchCategories, 1);
         })

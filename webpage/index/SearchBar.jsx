@@ -14,12 +14,10 @@ export default class SearchBar extends React.Component {
 	render() {
 		return (
 			<div className = "row">
-				<div className = "searchDiv">
-					<form>
+				<div className = "searchDiv input-group">
 						<input className="text-center form-control" id="songSearchInput" ref="textBox" 
 							name="search" placeholder="Song Search..."  type="text"
 							onKeyUp={this.searchSongs}/>
-					</form>
 				</div>
 			</div>
 		);
