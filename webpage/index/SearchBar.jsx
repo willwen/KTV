@@ -13,8 +13,8 @@ export default class SearchBar extends React.Component {
 	
 	render() {
 		return (
-			<div>
-				<div className = " col-xs-offset-3 col-xs-6 searchDiv">
+			<div className = "row">
+				<div className = "searchDiv">
 					<form>
 						<input className="text-center form-control" id="songSearchInput" ref="textBox" 
 							name="search" placeholder="Song Search..."  type="text"

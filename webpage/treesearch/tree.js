@@ -70,9 +70,6 @@ function reformatLanguages(data) {
 
 }
 
-
-
-
 $(document).ready(function() {
     // db.songs.aggregate({$sort:{artist:-1}},{$group: {_id:"$artist", songs: {$push: "$$ROOT"}}})
     $.when(
@@ -168,7 +165,7 @@ function createAnchor(element, level) {
     if (element.linkTo) {
         anchor.attr("href", element.linkTo);
     } else if (element.child) {
-        anchor.attr("href", "#");
+        anchor.attr("href", "#bottom");
         anchor.click(function() {
             //hide all panels BELOW this level
             for (var i = level + 1; i <= maxLevel; i++) {

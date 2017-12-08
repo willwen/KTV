@@ -64,6 +64,14 @@ form {
     background: rgba(255, 255, 255, 0.45);
 }
 
+#submit:disabled,
+#submit[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
 /**
   Lyric Display Stylings
 **/

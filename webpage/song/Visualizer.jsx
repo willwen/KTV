@@ -33,9 +33,7 @@ export default class Visualizer extends React.Component {
 			//this code block only needs to execute once, once it is executed state.src will no longer be null
 			if(!this.state.src){
 				this.initAudioAnalyzer();
-				console.log("did update , render frame")
-				this.renderFrame();
-			
+				this.renderFrame();			
 			}
 			else if(this.props.showVisualizer && !prevProps.showVisualizer)
 				this.renderFrame();

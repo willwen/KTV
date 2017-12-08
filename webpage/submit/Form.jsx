@@ -7,7 +7,8 @@ export default class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      "request":"pending"
+      "request":"pending",
+      captchaAnswered: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -27,7 +28,8 @@ export default class Form extends React.Component {
 
   setCaptchaToken(token){
     this.setState({
-      captcha : token
+      captcha : token,
+      captchaAnswered : true
     })
   }
   
@@ -116,7 +118,9 @@ export default class Form extends React.Component {
             verifyCallback={this.setCaptchaToken}
             theme="dark"
           />
-          <input type="submit" value="Submit" id="submit" disabled={this.state.request==="pending"? false:true} />
+          <input type="submit" value="Submit" id="submit" 
+            disabled={this.state.request==="pending" ? !this.state.captchaAnswered: true } 
+          />
           <br/>
           <div className = "centered">
               {this.state.request === "transit" ?

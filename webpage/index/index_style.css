@@ -14,6 +14,7 @@
 **/
 .searchDiv {
     height: 40px;
+    margin : 0 auto;
 }
 
 #songSearchInput {
@@ -24,8 +25,7 @@
     box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.25);
     border: none;
     color: #574AE2;
-    width: 50%;
-    margin-left: 25%;
+    width: 750px;
 }
 
 .allSongsDiv {

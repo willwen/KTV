@@ -76,7 +76,8 @@ export default class LyricsBody extends React.Component {
 				if((lineNumber == 1 || time != "0:00") && time!="NaN:NaN"){
 					tooltip = (<Tooltip id= {time ? time : "tooltip" + i} className = "tooltip"><strong>{time}</strong></Tooltip>);
 					overlayTrigger = (<OverlayTrigger placement="top" overlay={tooltip}>
-								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)}>{lineNumber}</a>
+								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" 
+								onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)}>{lineNumber}</a>
 							</OverlayTrigger>)
 				}
 				else{
@@ -85,15 +86,15 @@ export default class LyricsBody extends React.Component {
 				var rowDiv = 
 					(<div key= {"rowNumber"+ lineNumber} style={
 							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
-						<div className= {Constants.ConstsClass.lyricLine +"  equal"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
-						<div className="col-xs-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
+						<div className= {Constants.ConstsClass.lyricLine + "  row"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
+						<div className="col-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
 							{overlayTrigger}
 						</div>
-						<div className= "col-xs-10 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
+						<div className= "col-11 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
 							{
 								this.props.primaryLanguage == "Chinese" ?
 								(
-									<div >
+									<div className = "tableOverflow">
 										<table>
 											<tbody>
 												{ pronounciation[i] && primary[i] ? 
@@ -131,7 +132,7 @@ export default class LyricsBody extends React.Component {
 	
 		return (
 			<div>
-				<div className = "gradient col-xs-12" id='lyricsBody' style = {bodyStyle}>
+				<div className = "gradient col-12" id='lyricsBody' style = {bodyStyle}>
 					{
 						lyricsBody.map(line => {
 							return line;
