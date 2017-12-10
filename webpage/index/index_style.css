@@ -33,6 +33,7 @@ input:-moz-placeholder {
 }
 
 #songSearchInput {
+
 	box-sizing: border-box;
 	font-size: 1.3em;
 	background: white url('searchicon.png') no-repeat 15px center;
@@ -40,6 +41,8 @@ input:-moz-placeholder {
 	box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.25);
 	border: none;
 	color: #574AE2;
+    // width: 80%;
+    // margin-left: 10%;
 }
 
 .allSongsDiv {
