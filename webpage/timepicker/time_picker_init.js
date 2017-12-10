@@ -5,6 +5,7 @@ var lineNum = 1;
 var english = /^[A-Za-z0-9 \n]*$/;
 var newline = /\n/;
 var audioPlayerID = "audioPlayer"
+var timestampFormat = /[0-9]:[0-5][0-9]/
 
 
 $(document).ready(function() {
@@ -14,7 +15,6 @@ $(document).ready(function() {
     $("#print").click(function() {
         $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
     })
-
 });
 
 function uploadAudio() {
@@ -59,7 +59,7 @@ function uploadLyrics() {
                 for (var index = 0; index < lyrics.length; index++) {
                     var realLineNum = parseInt(index) + 1;
                     var line = $("<div/>", { class: "line row" });
-                    var lineNumber = $('<div/>', { class: "lineNumber col-2" }).text(realLineNum);
+                    var lineNumber = $('<div/>', { class: "lineNumber col-3" }).text(realLineNum);
                     line.append(lineNumber);
                     if (lyrics[index].length > 1) {
                         var lineText = $('<div/>', { id: realLineNum, class: "lineText col-6" }).text(lyrics[index]);
@@ -67,23 +67,14 @@ function uploadLyrics() {
                     }
                     var timestamp = $('<div/>', { 
                         id: realLineNum + 'timestamp', 
-                        class: "timestamp col-2"
-                        // onclick: "editTime(" +realLineNum + ")" 
+                        class: "timestamp col-3"
                     });
-
-                    var editTimeBox = $('<input>', {
-                        id: realLineNum + '_textbox',
-                        type: 'text',
-                        class: 'col-2'
-                    }).hide();
-
-                    editTimestamp(realLineNum);
-
-                    timestamp.append(editTimeBox);
+                    $('.timestamp').click({param1: realLineNum-1},divClicked );
                     line.append(timestamp);
                     $("#lyrics").append(line);
                 }
                 $("#" + lineNum).addClass("lead font-weight-bold");
+                
             };
             window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
                 if (e.keyCode == 13 && e.target == document.body) { //enter
@@ -91,7 +82,7 @@ function uploadLyrics() {
                     $("#" + lineNum).removeClass("lead font-weight-bold");
                     var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
                     console.log(time);
-                    lineTimes[lineNum - 1] = time;
+                    recordTime(lineNum,time);
                     $('#' + lineNum + 'timestamp').text(time);
                     lineNum++;
                     if (lyrics[lineNum - 1].length == 1) {
@@ -105,15 +96,37 @@ function uploadLyrics() {
     });
 }
 
-function editTimestamp(LineNum){
-    /*  hide all the textboxes when loaded
-     *  when you click on timestamp, show the textbox
-     *  go back to text when you press enter or click away
-     *  change  lineTimes[lineNum -1 ] = the new value
-     */ 
-     $('#' + LineNum + 'timestamp').click(function(){
-        $('#' + LineNum + '_textbox').hide();
-     })
+//used the following forum for assistance
+//https://stackoverflow.com/questions/2441565/how-do-i-make-a-div-element-editable-like-a-textarea-when-i-click-it 
+
+function divClicked(event) {
+    lineNumber = event.data.param1;
+    var divHtml = $(this).html();
+    var editableText = $("<input />", {type: "text", id:"txt_"+ lineNumber, maxlength:"4", size: "4"});
+    editableText.val(divHtml);
+    $(this).replaceWith(editableText);
+    editableText.focus();
+    editableText.blur({param1: lineNumber},editableTextBlurred);
+}
+
+function editableTextBlurred(event) {
+    lineNumber = event.data.param1;
+    var new_time = $(this).val();
+    var valid = timestampFormat.exec(new_time);
+    if (valid){ 
+        // console.log("the new recorded time is: " + new_time); //debugging purposes
+        recordTime(lineNumber,new_time);
+    }
+    var viewableText = $("<div/>", {id: lineNumber + 'timestamp', class: "timestamp col-3"});
+    viewableText.html(new_time);
+    $(this).replaceWith(viewableText);
+    viewableText.click({param1: lineNumber},divClicked);
+}
+
+
+function recordTime(lineNum, time){
+    lineTimes[lineNum - 1] = time;
+    // console.log("recorded " + time); //debugging purposes
 }
 
 //toggle play/pause on the audio player
