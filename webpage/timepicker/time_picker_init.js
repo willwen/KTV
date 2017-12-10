@@ -2,13 +2,10 @@ var lyrics;
 var lineTimes = [];
 var index = 0;
 var lineNum = 1;
-
 var english = /^[A-Za-z0-9 \n]*$/;
 var newline = /\n/;
-
-// var playbackIndex = 0;
-// var staticTimes = []
 var audioPlayerID = "audioPlayer"
+var timestampFormat = /[0-9]:[0-5][0-9]/
 
 
 $(document).ready(function() {
@@ -18,18 +15,17 @@ $(document).ready(function() {
     $("#print").click(function() {
         $("#timesOutput").html(nl2br(prettyPrint()).replace(/:/g, ""))
     })
-
 });
 
-function uploadAudio(){
-        $("#audioSource").change(function(e) {
+function uploadAudio() {
+    $("#audioSource").change(function(e) {
         var fileType = document.getElementById('audioSource');
         var file_ext = (fileType.value || '').split('.').pop().toLowerCase();
         if (!['mp3'].includes(file_ext)) {
             alert('Please attach with following extension: .mp3');
         } else {
             fileType.disabled = true;
-            var sound = document.getElementById('audioPlayer');
+            var sound = document.getElementById(audioPlayerID);
             sound.src = URL.createObjectURL(this.files[0]);
             // not really needed in this exact case, but since it is really important in other cases,
             // don't forget to revoke the blobURI when you don't need it
@@ -46,8 +42,8 @@ function uploadAudio(){
     });
 }
 
-function uploadLyrics(){
-        $("#lyricsSource").change(function(e) {
+function uploadLyrics() {
+    $("#lyricsSource").change(function(e) {
         var fileType = document.getElementById('lyricsSource');
         var file_ext = (fileType.value || '').split('.').pop().toLowerCase();
         if (!['txt'].includes(file_ext)) {
@@ -58,62 +54,79 @@ function uploadLyrics(){
             var reader = new FileReader();
             reader.readAsText(file);
             reader.onload = function(progressEvent) {
-                // Entire file
                 console.log(this.result);
-
                 lyrics = this.result.split('\n');
-            
-                //refresh lyrics div
-                document.getElementById("lyrics").innerHTML = "";
-
                 for (var index = 0; index < lyrics.length; index++) {
-                    var realLineNum = parseInt(index) + 1  
-                    var line = $("<div/>", { class: "line row" })
-                    var lineNumber = $('<div/>', { class: "lineNumber col-3" }).text(realLineNum)
-                    line.append(lineNumber)
-
+                    var realLineNum = parseInt(index) + 1;
+                    var line = $("<div/>", { class: "line row" });
+                    var lineNumber = $('<div/>', { class: "lineNumber col-3" }).text(realLineNum);
+                    line.append(lineNumber);
                     if (lyrics[index].length > 1) {
                         var lineText = $('<div/>', { id: realLineNum, class: "lineText col-6" }).text(lyrics[index]);
-                        line.append(lineText)
+                        line.append(lineText);
                     }
-                    var timestamp = $('<div/>', {id: realLineNum + 'timeDiv', class: "timestamp col-2" })
-                    var time_anchor = $('<a/>', {id: realLineNum + 'timestamp', onclick: "lineNum = edit(" + realLineNum + ");return false;"})
-                    timestamp.append(time_anchor);
-                    line.append(timestamp)
+                    var timestamp = $('<div/>', { 
+                        id: realLineNum + 'timestamp', 
+                        class: "timestamp col-3"
+                    });
+                    $('.timestamp').click({param1: realLineNum-1},divClicked );
+                    line.append(timestamp);
                     $("#lyrics").append(line);
-                    // edit(realLineNum);
-
-                }   
+                }
+                $("#" + lineNum).addClass("lead font-weight-bold");
+                
             };
             window.addEventListener("keydown", function(e) { //this event only fires when file uploaded
                 if (e.keyCode == 13 && e.target == document.body) { //enter
                     e.preventDefault(); // and prevent enter default
-                    addTimestampAnchor(lineNum);
-                    if (lyrics[lineNum - 1].length == 1) {
-                        lineTimes[lineNum - 1] = 0;
-                        $("#" + (lineNum-1)).removeClass("lead font-weight-bold");
-                        lineNum++; 
-                        addTimestampAnchor(lineNum);  
-                    }
-                    $("#" + (lineNum-1)).removeClass("lead font-weight-bold")
-                    $("#" + lineNum).addClass("lead font-weight-bold");
+                    $("#" + lineNum).removeClass("lead font-weight-bold");
                     var time = secondsToTimestamp(Math.round10($("#audioPlayer").prop("currentTime"), -2));
                     console.log(time);
-                    lineTimes[lineNum - 1] = time;
+                    recordTime(lineNum,time);
                     $('#' + lineNum + 'timestamp').text(time);
                     lineNum++;
+                    if (lyrics[lineNum - 1].length == 1) {
+                        lineTimes[lineNum - 1] = 0;
+                        lineNum++;
+                    }
+                    $("#" + lineNum).addClass("lead font-weight-bold");
                 }
-
             });
         }
     });
 }
-function addTimestampAnchor(realLine) {
-    var timeDiv = document.getElementById(realLine + 'timeDiv');
-    var timeAnchor = document.createElement("A");
-    timeAnchor.setAttribute('id', lineNum + 'timestamp' );
-    timeAnchor.setAttribute('onclick', "lineNum = edit(" + realLine + ");return false;")
-    timeDiv.appendChild(timeAnchor);
+
+//used the following forum for assistance
+//https://stackoverflow.com/questions/2441565/how-do-i-make-a-div-element-editable-like-a-textarea-when-i-click-it 
+
+function divClicked(event) {
+    lineNumber = event.data.param1;
+    var divHtml = $(this).html();
+    var editableText = $("<input />", {type: "text", id:"txt_"+ lineNumber, maxlength:"4", size: "4"});
+    editableText.val(divHtml);
+    $(this).replaceWith(editableText);
+    editableText.focus();
+    editableText.blur({param1: lineNumber},editableTextBlurred);
+}
+
+function editableTextBlurred(event) {
+    lineNumber = event.data.param1;
+    var new_time = $(this).val();
+    var valid = timestampFormat.exec(new_time);
+    if (valid){ 
+        // console.log("the new recorded time is: " + new_time); //debugging purposes
+        recordTime(lineNumber,new_time);
+    }
+    var viewableText = $("<div/>", {id: lineNumber + 'timestamp', class: "timestamp col-3"});
+    viewableText.html(new_time);
+    $(this).replaceWith(viewableText);
+    viewableText.click({param1: lineNumber},divClicked);
+}
+
+
+function recordTime(lineNum, time){
+    lineTimes[lineNum - 1] = time;
+    // console.log("recorded " + time); //debugging purposes
 }
 
 //toggle play/pause on the audio player
@@ -136,7 +149,6 @@ function prettyPrint() {
     }
     return string;
 }
-
 
 
 function timestampToSeconds(timestamp) {

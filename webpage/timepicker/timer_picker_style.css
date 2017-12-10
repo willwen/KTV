@@ -17,6 +17,7 @@
 #prettyPrint .btn{
 	background-color: #8332AC;
 	color: white;
+	margin-top: 3%;
 }
 
 #prettyPrint .btn:hover{
@@ -26,7 +27,7 @@
 
 .btn {
 	cursor: pointer;
-	opacity: 0.8;
+	opacity: 0.9;
 
 }
 .btn:hover {
