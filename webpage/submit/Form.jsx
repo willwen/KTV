@@ -71,33 +71,33 @@ export default class Form extends React.Component {
               <div className="col">
                   <FormGroup bsSize="small" controlId="song">
                       <ControlLabel>Song Title:</ControlLabel>
-                      <FormControl type="text" placeholder="歌曲名" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                      <FormControl type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
                   </FormGroup>
               </div>
               <div className="col">
                   <FormGroup bsSize="small" controlId="artist">
                       <ControlLabel>Artist Name:</ControlLabel>
-                      <FormControl type="text" placeholder="艺术家" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                      <FormControl type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
                   </FormGroup>
               </div>
           </div>
           <div className="row">
             <div className="col">
-              <FormGroup  bsSize="large" controlId="cnLyrics">
+              <FormGroup  bsSize="large" controlId="primaryLanguageLyrics">
                 <ControlLabel>Primary Language Lyrics:</ControlLabel>
-                <FormControl componentClass="textarea" placeholder="中文歌词" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+                <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
             <div className="col">
-              <FormGroup  bsSize="large" controlId="pinyinLyrics">
+              <FormGroup  bsSize="large" controlId="pronounciationLyrics">
                 <ControlLabel>Pronounciation Lyrics:</ControlLabel>
-                <FormControl componentClass="textarea" placeholder="拼音" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+                <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
             <div className="col">
-              <FormGroup  bsSize="large" controlId="engLyrics">
+              <FormGroup  bsSize="large" controlId="translatedLyrics">
                 <ControlLabel>Translated Lyrics (If applicable):</ControlLabel>
-                <FormControl componentClass="textarea" placeholder="英文翻译" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+                <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default class Form extends React.Component {
 
           <FormGroup  bsSize="large" controlId="times">
             <ControlLabel>Line Timings:</ControlLabel>
-            <FormControl componentClass="textarea" placeholder="时间轴" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+            <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
           </FormGroup>
           <Recaptcha
             sitekey="6LfZ-TsUAAAAABCx4CayOkJbV_Qm9CW9qGmBUzeS"

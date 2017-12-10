@@ -1,0 +1,7 @@
+{
+	"allowedExtensions" : [".less"],
+	"minified": true,
+	"sourceMap": false,
+	"watchFolder": "webpage/less_styles",
+	"outputFolder": "webpage/styles"
+}

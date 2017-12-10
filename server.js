@@ -3,6 +3,8 @@ var fs = require('fs-extra'),
     express = require('express'),
     path = require('path'), //used to resolve __dirname
     mongodb = require('mongodb'),
+    axios = require ('axios'), // http request library
+    qs = require('qs'), //encode data to application/x-www-form-urlencoded format
     xssfilters = require('xss-filters'),
     // bodyParser = require('body-parser'),
     multer = require('multer'), // https://github.com/expressjs/multer ; Multer is a node.js middleware for handling multipart/form-data
@@ -362,9 +364,9 @@ app.get('/query', function(req, res) {
 
 
 app.post('/upload', upload.single('audioFile'), function(req, res) {
-    
-    var payload = JSON.parse(req.body.payload)
 
+    var payload = JSON.parse(req.body.payload)
+    var userIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     var captcha = xssfilters.inHTMLData(payload.captcha)
     var songName = xssfilters.inHTMLData(payload.song)
     var artist = xssfilters.inHTMLData(payload.artist)
@@ -373,52 +375,61 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
     var engLyrics = xssfilters.inHTMLData(payload.engLyrics)
     var times = xssfilters.inHTMLData(payload.times)
 
-    // verifyCaptcha(captcha);
-
-    var lineSeparator = "\n=========================================================================\n"
-    var submitDate = Date.now()
-    var fileName = submitDate + ' ' + songName + '-' + artist + '.txt'
-    // var fileContent = cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times
-    var primaryLanguageFile = fs.writeFile(uploadDirectory + "/" + "PrimaryLanguage " + fileName, cnLyrics)
-    var pronounciationLanguageFile = fs.writeFile(uploadDirectory + "/" + "PronounciationLanguage " +  fileName, pinyinLyrics)
-    var translationLanguageFile = fs.writeFile(uploadDirectory + "/" + "TranslatedLanguage " + fileName, engLyrics)
-    var timesFile = fs.writeFile(uploadDirectory + "/" + "Timestamps " + fileName, times)
-
-    Promise.all([primaryLanguageFile, pronounciationLanguageFile,  translationLanguageFile, timesFile])
-        .then(() => {
-            res.send({ redirect: "/uploadComplete" })
-            return zipFiles(songName, artist, submitDate)
-        })
-        .then((absoluteFilePath) => {
-            console.log("uploading to S3")
-            return uploadToS3(absoluteFilePath)
-        })
-        .then((s3URL) => {
-            console.log("sending Email")
-            return sendRawEmail(fromEmail, songName, artist, s3URL)
-        })
-        .then(() => {
-            console.log("Emptying Upload Dir")
-            return fs.emptyDir(uploadDirectory)
-        })
-        .then(() => {
-            console.log("Emptying zipDirectory")
-            return fs.emptyDir(zipDirectory)
-        })
-        .catch((err) => {
-            console.log(err)
+    verifyCaptcha(captcha, userIP)
+        .catch((err)=>{
             if (!res.headersSent)
-                res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
-            return;
+                res.send({ message: "Your Captcha was incorrect. Please retry submitting" })
+            })
+        .then((response)=>{
+            console.log("Captcha Response: " + JSON.stringify(response))
+            
+            var lineSeparator = "\n=========================================================================\n"
+            var submitDate = Date.now()
+            var fileName = submitDate + ' ' + songName + '-' + artist + '.txt'
+            // var fileContent = cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times
+            var primaryLanguageFile = fs.writeFile(uploadDirectory + "/" + "PrimaryLanguage " + fileName, cnLyrics)
+            var pronounciationLanguageFile = fs.writeFile(uploadDirectory + "/" + "PronounciationLanguage " + fileName, pinyinLyrics)
+            var translationLanguageFile = fs.writeFile(uploadDirectory + "/" + "TranslatedLanguage " + fileName, engLyrics)
+            var timesFile = fs.writeFile(uploadDirectory + "/" + "Timestamps " + fileName, times)
+
+            Promise.all([primaryLanguageFile, pronounciationLanguageFile, translationLanguageFile, timesFile])
+                .then(() => {
+                    res.send({ redirect: "/uploadComplete" })
+                    return zipFiles(songName, artist, submitDate)
+                })
+                .then((absoluteFilePath) => {
+                    console.log("uploading to S3")
+                    return uploadToS3(absoluteFilePath)
+                })
+                .then((s3URL) => {
+                    console.log("sending Email")
+                    return sendRawEmail(fromEmail, songName, artist, s3URL)
+                })
+                .then(() => {
+                    console.log("Emptying Upload Dir")
+                    return fs.emptyDir(uploadDirectory)
+                })
+                .then(() => {
+                    console.log("Emptying zipDirectory")
+                    return fs.emptyDir(zipDirectory)
+                })
+                .catch((err) => {
+                    console.log(err)
+                    if (!res.headersSent)
+                        res.send({ message: "We encountered a problem. Please contact and send Will Wen these files directly." })
+                    return;
+                })
         })
 })
 
-//WIP
-
-// function verifyCaptcha(captcha){
-//     const endpoint = "https://www.google.com/recaptcha/api/siteverify"
-//     var payload = {secret: captchaSecret, response: captcha, remoteip: ""}
-// }
+////////////////////////////////////////////////////////////////////////////////////////
+//Verify Captcha User inputted against Google Server.
+//return a promise
+function verifyCaptcha(captcha, userIP){
+    const endpoint = "https://www.google.com/recaptcha/api/siteverify"
+    var payload = {secret: captchaSecret, response: captcha, remoteip: userIP}
+    return axios.post(endpoint, qs.stringify(payload))
+}
 
 // Zip up file ////////////////////////////////////////////////////////////////////////////////////////
 
@@ -542,3 +553,24 @@ function createZipDirectory() {
         }
     })
 }
+
+///////////////////////////////////////////////////////////
+// Process Cleanup on signal interrupt
+//https://stackoverflow.com/questions/10021373/what-is-the-windows-equivalent-of-process-onsigint-in-node-js
+if (process.platform === "win32") {
+    var rl = require("readline").createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    rl.on("SIGINT", function() {
+        process.emit("SIGINT");
+    });
+}
+
+process.on("SIGINT", function() {
+    server.close();
+    console.log("Closed Server, Process Exiting.")
+    //graceful shutdown
+    process.exit();
+});
