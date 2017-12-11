@@ -1,10 +1,10 @@
 .form-control {
-    height: 50px;
+	height: 50px;
 }
 
 .list-group li {
-    overflow: hidden;
-    margin-bottom: -1px;
+	overflow: hidden;
+	margin-bottom: -1px;
 }
 
 
@@ -14,25 +14,26 @@
 **/
 
 .searchDiv {
-    margin: 0 auto;
-    width: 65%;
+	margin: 0 auto;
+	width: 65%;
 }
 
 
 /* webkit solution */
 
 ::-webkit-input-placeholder {
-    text-align: left;
+	text-align: left;
 }
 
 
 /* mozilla solution */
 
 input:-moz-placeholder {
-    text-align: left;
+	text-align: left;
 }
 
 #songSearchInput {
+<<<<<<< HEAD
     box-sizing: border-box;
     font-size: 1.3em;
     background: white url('searchicon.png') no-repeat 15px center;
@@ -40,27 +41,24 @@ input:-moz-placeholder {
     box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.25);
     border: none;
     color: #574AE2;
-<<<<<<< Updated upstream
-=======
     width: 80%;
     margin-left: 10%;
->>>>>>> Stashed changes
 }
 
 .allSongsDiv {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.4em;
-    padding: 25px 0;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+	padding: 25px 0;
 }
 
 .allSongsDiv a {
-    font-family: Montserrat, sans-serif;
-    color: #333A68;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.9em;
+	font-family: Montserrat, sans-serif;
+	color: #333A68;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.9em;
 }
 
 
@@ -69,16 +67,16 @@ input:-moz-placeholder {
 **/
 
 #resultsList {
-    list-style-type: none;
-    padding: 0;
-    display: none;
-    font-size: 1.8em;
-    font-weight: bold;
+	list-style-type: none;
+	padding: 0;
+	display: none;
+	font-size: 1.8em;
+	font-weight: bold;
 }
 
 #resultsList li a {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #222A68;
-    display: block;
-    letter-spacing: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #222A68;
+	display: block;
+	letter-spacing: 4px;
 }

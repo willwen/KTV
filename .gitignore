@@ -11,3 +11,7 @@ node_modules/*
 #Server Output 
 uploads/*
 zip/
+
+#songs
+*.wav
+*.mp3

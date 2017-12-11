@@ -1,0 +1,1 @@
+ for file in *.txt; do mv "$file" "${file/23/25}"; done
