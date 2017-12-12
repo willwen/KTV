@@ -37,6 +37,22 @@ function uploadAudio() {
                     toggleAudioPlayer(); // space bar to toggle audio player
                     e.preventDefault(); // and prevent scrolling
                 }
+                if (e.keyCode == 37 && e.target == document.body) {//left arrow to seek backward
+                    e.preventDefault(); 
+                    sound.currentTime -= 2;
+                }
+                if (e.keyCode == 39 && e.target == document.body){ //right arrow to seek forward
+                    e.preventDefault(); 
+                    sound.currentTime += 2;
+                }
+                if (e.keyCode == 38 && e.target == document.body){ //up arrow to volume up
+                    e.preventDefault();
+                    sound.volume += 0.1;
+                }
+                if (e.keyCode == 40 && e.target == document.body){ //down arrow to volume down
+                    e.preventDefault();
+                    sound.volume -= 0.1;
+                }
             });
         }
     });

@@ -12,7 +12,7 @@
   - Unsure if keep traditional or not...
   - https://www.youtube.com/watch?v=4uBkWv8L0eg
 6) Brave Heart - Wang Feng (勇敢的心-汪峰)
-  - https://www.youtube.com/watch?v=V0wp-N4DgCY
+  - https://www.youtube.com/watch?v=mTCdw7KgagY
 7) 楊丞琳 Rainie Yang - 曖昧
   - https://www.youtube.com/watch?v=mebzXfWi87E
 8) Ann 白安【是什麼讓我遇見這樣的你What brings me to you】 
