@@ -1,6 +1,7 @@
 import LanguageOptions from './LanguageOptions.jsx'
 import PlaybackOptions from './PlaybackOptions.jsx'
-import {Collapse} from 'react-bootstrap'
+
+
 export default class OptionsMenu extends React.Component {
 	constructor(props){
 		super(props);

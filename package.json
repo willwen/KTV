@@ -21,6 +21,7 @@
     "aws-sdk": "^2.167.0",
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
+    "bootstrap": "^4.0.0-beta.2",
     "cross-env": "^5.1.1",
     "escape-string-regexp": "^1.0.5",
     "express": "^4.15.3",
@@ -35,6 +36,7 @@
     "react-recaptcha": "^2.3.5",
     "react-router": "^4.2.0",
     "react-scroll": "^1.7.3",
+    "reactstrap": "^5.0.0-alpha.4",
     "uuid": "^3.1.0",
     "xss-filters": "^1.2.7"
   },
@@ -55,9 +57,9 @@
     "compression-webpack-plugin": "^1.0.1",
     "less": "^2.7.3",
     "less-watch-compiler": "^1.10.0",
-    "react": "^15.6.1",
+    "react": "^15.6.2",
     "react-bootstrap": "^0.31.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "^15.6.2",
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.1",
     "webpack-dev-server": "^2.9.7"

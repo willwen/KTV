@@ -1,6 +1,6 @@
 import Constants from './Constants.jsx'
-import {Tooltip} from 'react-bootstrap'
-import {OverlayTrigger} from 'react-bootstrap'
+import {Tooltip} from 'reactstrap'
+// import {OverlayTrigger} from 'reactstrap'
 // import Scroll from 'react-scroll'; // Imports all Mixins
 // var Element = Scroll.Element;
 const uuidv1 = require('uuid/v1');
@@ -74,11 +74,11 @@ export default class LyricsBody extends React.Component {
 				let overlayTrigger;
 				let time = this.state.roundedTimeStamps[i]
 				if((lineNumber == 1 || time != "0:00") && time!="NaN:NaN"){
-					tooltip = (<Tooltip id= {time ? time : "tooltip" + i} className = "tooltip"><strong>{time}</strong></Tooltip>);
-					overlayTrigger = (<OverlayTrigger placement="top" overlay={tooltip}>
+					tooltip = (<Tooltip id= {time ? time : "tooltip" + i} className = "tooltip" target={"lineNumber"+ lineNumber}><strong>{time}</strong></Tooltip>);
+					overlayTrigger = (
 								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" 
-								onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)}>{lineNumber}</a>
-							</OverlayTrigger>)
+								onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)}>{lineNumber}</a>)
+					// 		</OverlayTrigger>)
 				}
 				else{
 					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
