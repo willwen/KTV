@@ -79,7 +79,7 @@ export default class LyricsBody extends React.Component {
 						<div className= {Constants.ConstsClass.lyricLine + "  row"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
 							<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)} >{lineNumber}</a>
-							<UncontrolledTooltip  className = "tooltip" target={"lineNumber"+ lineNumber} placement="top">{time}</UncontrolledTooltip >
+							<UncontrolledTooltip delay="0" className = "tooltip purple" target={"lineNumber"+ lineNumber} placement="top">{time}</UncontrolledTooltip >
 						</div>
 						<div className= "col-11 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
 							{
