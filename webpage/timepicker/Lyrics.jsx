@@ -4,7 +4,7 @@ export default class Lyrics extends React.Component {
 		super();
 		this.state = {
 		}
-		
+		this.handleChange = this.handleChange.bind(this)	
 	}
 	componentWillMount(){
 	  	
@@ -16,6 +16,9 @@ export default class Lyrics extends React.Component {
 	
 	}
 
+	handleChange(event, index){
+		this.props.updateTimestamp(index, event.target.value)
+	}
 	
 	render() {
 		return (
@@ -32,7 +35,12 @@ export default class Lyrics extends React.Component {
 		            			{line}
 	            			</div>
 		            		<div id = {realLineNum + 'timestamp'} className = "timestamp col-1">
-		            		<input type="number" value= {this.props.timestamps[index]}></input>
+		            		<input className = "timestampInput"
+		            			type="number"
+		            			value= {this.props.timestamps[index] ? this.props.timestamps[index] : 0}
+		            			onChange={(e)=>this.handleChange(e, index)}
+		            			maxLength="4"
+		            			size="4"></input>
 		            		</div>
 		            	</div>)
 

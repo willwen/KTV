@@ -114,7 +114,8 @@ app.get('/treefind', function(req, res) {
 })
 app.get('/timepicker', function(req, res) {
     res.sendFile(__dirname + '/webpage/timepicker/index.html')
-})
+
+})  
 app.get('/about', function(req, res) {
     res.sendFile(__dirname + '/webpage/about/index.html')
 })
@@ -128,6 +129,7 @@ app.get('/submit', function(req, res) {
 })
 app.get('/uploadComplete', function(req, res) {
     res.sendFile(__dirname + '/webpage/uploadComplete/index.html')
+    getIP();
 })
 
 
@@ -552,6 +554,20 @@ function createZipDirectory() {
             reject(err);
         }
     })
+}
+
+///////////////////////////////////////////////////////////
+//getting client's IP address
+///https://stackoverflow.com/questions/8107856/how-to-determine-a-users-ip-address-in-node
+function getIP(){
+    var ip;
+    if (req.headers['x-forwarded-for']) {
+        ip = req.headers['x-forwarded-for'].split(",")[0];
+    } else if (req.connection && req.connection.remoteAddress) {
+        ip = req.connection.remoteAddress;
+    } else {
+        ip = req.ip;
+    }console.log("client IP is" + ip);
 }
 
 ///////////////////////////////////////////////////////////

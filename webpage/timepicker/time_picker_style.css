@@ -14,6 +14,11 @@
 	padding-left: 40px;
 }
 
+.keys {
+	font-weight: bold;
+}
+
+
 .btn {
 	cursor: pointer;
 	opacity: 0.9;
@@ -24,17 +29,36 @@
 	opacity: 1;
 }
 
-input[type="file"] {
-    display: none;
+
+// #prettyPrint{
+// 	margin-top: 20px;
+// }
+
+// #prettyPrint .btn{
+// 	background-color: #8332AC;
+// 	color: white;
+// 	margin-top: 3%;
+// }
+
+// #prettyPrint .btn:hover{
+// 	background-color: white;
+// 	color: #8332AC;
+// }
+
+.timestampInput{
+	width:100%;
 }
 
 .audioContainer{
 	margin: 10px auto;
 }
+
 audio {
 	width: 100%;
 }
 
+
+/*When User hits Play Pause*/
 
 .centered {
     position: fixed;

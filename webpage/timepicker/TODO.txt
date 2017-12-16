@@ -1,0 +1,5 @@
+TODO:
+prevent pressing play/pause/vol up down if the audio hasnt loaded yet
+show the bootstrap buttons for upload
+in Lyrics, display timestamps as "3:34" but in prettyprint, keep it as 334.
+Copy over the reg expression checking on input box.

@@ -22,6 +22,24 @@ export default class AudioPlayer extends React.Component {
 	            this.toggleAudioPlayer(); // space bar to toggle audio player
 	            e.preventDefault(); // and prevent scrolling
 	        }
+	        else if (e.keyCode == 37 && e.target == document.body) {//left arrow to seek backward
+                    e.preventDefault(); 
+                    this.refs.audioPlayer.currentTime -= 2;
+            }
+            else if (e.keyCode == 39 && e.target == document.body){ //right arrow to seek forward
+                e.preventDefault(); 
+                this.refs.audioPlayer.currentTime += 2;
+            }
+            //set + and - listeners for volume
+
+			else if(e.keyCode == 187 && e.target == document.body){
+				this.increaseVolume(); // increase audio player
+				e.preventDefault();
+			}
+			else if(e.keyCode == 189 && e.target == document.body){
+				this.decreaseVolume(); // decrease audio player
+				e.preventDefault();
+			}
         });
 	}
 	componentWillUnmount(){
@@ -77,11 +95,12 @@ export default class AudioPlayer extends React.Component {
 	}
 	render() {
 		return (
-			<div className="text-center">
-			    <div className="audioContainer">
-			        <audio controls="true" ref="audioPlayer" id="audioPlayer" src={this.props.src}></audio>
-			    </div>
-			   
+			<div>
+				<div className="text-center">
+				    <div className="audioContainer">
+				        <audio controls="true" ref="audioPlayer" id="audioPlayer" src={this.props.src}></audio>
+				    </div>
+				</div>
 				<AudioAnimations action = {this.state.action}/>
 			</div>
 		);

@@ -26,6 +26,7 @@ export default class MainContainer extends React.Component {
 		this.secondsToTimestamp = this.secondsToTimestamp.bind(this)
 		this.setLyrics = this.setLyrics.bind(this);
 		this.setAudioSource = this.setAudioSource.bind(this);
+		this.updateTimestamp = this.updateTimestamp.bind(this);
 	}
 	componentWillMount(){
 	  	
@@ -41,7 +42,6 @@ export default class MainContainer extends React.Component {
 		let time = this.secondsToTimestamp();
 		let timestamps = this.state.timestamps;
 		timestamps[this.state.arrayIndex] = time;
-		
 		//keep incrementing arrayIndex if the next line is empty
 		//we are done.
 		let arrayIndex = this.state.arrayIndex + 1;
@@ -68,8 +68,9 @@ export default class MainContainer extends React.Component {
 	    var secondsTimestamp = Math.floor(seconds % 60);
 	    if (secondsTimestamp < 10)
 	        secondsTimestamp = "0" + secondsTimestamp;
-	    //used for tooltip
-	    var time = minuteTimestamp + secondsTimestamp;
+
+	    //cant do +, otherwise it just adds the two numbers
+	    var time = "" + minuteTimestamp + secondsTimestamp;
 	    return time;
 	}
 
@@ -77,10 +78,15 @@ export default class MainContainer extends React.Component {
 		this.setState({lyrics : lyrics});
 	}
 
-	
-
 	setAudioSource(objectUrl){
 		this.setState({audioSource: objectUrl});
+	}
+
+	updateTimestamp(lineNumber, newTimestamp){
+		let timestamps = this.state.timestamps;
+		timestamps[lineNumber] = newTimestamp;
+		this.setState({timestamps: timestamps})
+		console.log("timestamp updated");
 	}
 
 	render() {
@@ -97,7 +103,8 @@ export default class MainContainer extends React.Component {
 		            
 		            <Lyrics arrayIndex = {this.state.arrayIndex} 
 		            	lyrics = {this.state.lyrics}
-		            	timestamps = {this.state.timestamps} />
+		            	timestamps = {this.state.timestamps}
+		            	updateTimestamp = {this.updateTimestamp} />
 		            <br/>
 		            <PrettyPrint timestamps = {this.state.timestamps}/>
 

@@ -15,7 +15,7 @@ export default class SearchBar extends React.Component {
 		return (
 			<div className = "row">
 				<div className = "searchDiv input-group">
-						<input className="text-center form-control" id="songSearchInput" ref="textBox" 
+						<input className="form-control" id="songSearchInput" ref="textBox" 
 							name="search" placeholder="Song Search..."  type="text"
 							onKeyUp={this.searchSongs}/>
 				</div>

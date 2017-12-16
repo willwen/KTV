@@ -3,8 +3,8 @@
 ## [Chinese Song Karaoke Web App](https://ktvgod.me)
 
 ## Description
-This is a website to learn and sing along to foreign songs, in lanaguages such as Chinese, Japanese, and Spanish.
-Search results populate based on any metadata you type into the search bar, like artist name or song title. You can also  scroll through the list of songs that appears on the home page. Clicking on a song takes you to a visualization page, displaying PinYin, Chinese characters, and English. Users can choose to automate scrolling as the song plays, see the line numbers, and see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. Enjoy singing foreign songs! :)
+This is a website to learn and sing along with foreign songs, in lanaguages such as Chinese, Japanese, and Spanish.
+Search results populate based on any metadata you type into the search bar, like artist name or song title. You can also scroll through the list of songs that appears on the home page. Clicking on a song takes you to a visualization page, displaying PinYin, Chinese characters, and English. Users can choose to automate scrolling as the song plays, see the line numbers, and see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. Enjoy singing foreign songs! :)
 
 ## How to Install Locally
 1) Install Git, Node.js, Mongodb

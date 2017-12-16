@@ -1,4 +1,4 @@
-import {HelpBlock,FormGroup, FormControl, ControlLabel} from 'react-bootstrap'
+import {FormGroup, Input, Label} from 'reactstrap'
 import axios from 'axios'
 var Recaptcha = require('react-recaptcha');
 
@@ -69,47 +69,47 @@ export default class Form extends React.Component {
       <form onSubmit={this.handleSubmit}>
           <div className="row">
               <div className="col">
-                  <FormGroup bsSize="small" controlId="song">
-                      <ControlLabel>Song Title:</ControlLabel>
-                      <FormControl type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                  <FormGroup  id="song">
+                      <Label>Song Title:</Label>
+                      <Input type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
                   </FormGroup>
               </div>
               <div className="col">
-                  <FormGroup bsSize="small" controlId="artist">
-                      <ControlLabel>Artist Name:</ControlLabel>
-                      <FormControl type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                  <FormGroup  id="artist">
+                      <Label>Artist Name:</Label>
+                      <Input type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
                   </FormGroup>
               </div>
           </div>
           <div className="row">
             <div className="col">
-              <FormGroup  bsSize="large" controlId="primaryLanguageLyrics">
-                <ControlLabel>Primary Language Lyrics:</ControlLabel>
-                <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+              <FormGroup   id="primaryLanguageLyrics">
+                <Label>Primary Language Lyrics:</Label>
+                <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
             <div className="col">
-              <FormGroup  bsSize="large" controlId="pronounciationLyrics">
-                <ControlLabel>Pronounciation Lyrics:</ControlLabel>
-                <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+              <FormGroup  id="pronounciationLyrics">
+                <Label>Pronounciation Lyrics:</Label>
+                <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
             <div className="col">
-              <FormGroup  bsSize="large" controlId="translatedLyrics">
-                <ControlLabel>Translated Lyrics (If applicable):</ControlLabel>
-                <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+              <FormGroup id="translatedLyrics">
+                <Label>Translated Lyrics (If applicable):</Label>
+                <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
           </div>
-          <FormGroup controlId="audioFile">
-            <ControlLabel>MP3 Upload</ControlLabel>
+          <FormGroup id="audioFile">
+            <Label>MP3 Upload</Label>
             <br/>
-            <FormControl type="file" accept=".mp3" disabled={this.state.request==="pending"? false:true}/>
+            <Input type="file" accept=".mp3" disabled={this.state.request==="pending"? false:true}/>
           </FormGroup>
 
-          <FormGroup  bsSize="large" controlId="times">
-            <ControlLabel>Line Timings:</ControlLabel>
-            <FormControl componentClass="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+          <FormGroup id="times">
+            <Label>Line Timings:</Label>
+            <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
           </FormGroup>
           <Recaptcha
             sitekey="6LfZ-TsUAAAAABCx4CayOkJbV_Qm9CW9qGmBUzeS"

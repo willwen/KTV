@@ -47,18 +47,17 @@ export default class UploadContainer extends React.Component {
 		return (
 			<div className="dotted-border">
 			    <div className="row" id="description">
-			        <p>
-			            This Time Picker Tool helps record the timestamp for each line of a song. <br/>
-			            Press <strong>[Enter]</strong> at the start of each line; a timestamp is generated to the line's right.<br/>
-			            Once you upload the corresponding files, the page will be filled with the lyrics and the player with the song. <br/>
-			            Click on the timestamp to edit <strong>all</strong> previously recorded timestamps.<br/>
-			            Hit the <strong>Pretty Print</strong> Button after all times have been recorded, and copy it into Submit a Song.
-			        </p>
-			    </div>
+	                <p> This Time Picker Tool helps record the timestamp for each line of a song. </p>
+	                <p> Once you upload the corresponding files, the page will be filled with the lyrics and the player with the song. </p>
+	                <p> Press <span className="keys">[Enter]</span> at the start of each line; a timestamp is generated to the line's right.</p>
+	                <p> Use <span className="keys">[ - ]</span> and <span className="keys">[ + ]</span> to control volume. 
+	                    Use <span className="keys">[left arrow]</span> and <span className="keys">[right arrow]</span> to seek by 2 seconds. </p>
+	                <p> Click on the timestamp to edit previously recorded timestamps. </p>
+	                <p> Hit the Pretty Print button after all times have been recorded, and copy it into Submit a Song. </p>
+	            </div>
 			    <div className="row text-center">
 			        <div className="col-6">
 			            Upload a .txt file for the lyrics of the song.<br/>
-			            <label htmlFor="lyricsSource" className="btn btn-outline-secondary"> Upload Lyrics</label>
 			            <input type="file"
 			            	id="lyricsSource"
 			            	ref="lyricsSource"
@@ -67,7 +66,6 @@ export default class UploadContainer extends React.Component {
 			        </div>
 			        <div className="col-6">
 			            Upload a .mp3 file for the audio of the song.<br/>
-			            <label htmlFor="audioSource" className="btn btn-outline-secondary"> Upload MP3</label>
 			            <input type="file" id="audioSource" ref="audioSource" accept=".mp3" onChange={this.audioSourceChanged}/>
 			        </div>
 			    </div>
