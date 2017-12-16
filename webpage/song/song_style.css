@@ -152,6 +152,11 @@ ul {
 }
 
 
+.tooltip-inner {
+    background-color: #574AE2 !important;
+    color: #FFF !important;
+}
+
 #lyricsBody {
     background: rgba(0, 0, 0, 0.85);
     border-radius: 6px;
