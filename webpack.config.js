@@ -9,7 +9,8 @@ module.exports = {
         index:'./webpage/index/index.jsx',
         song: './webpage/song/index.jsx',
         submit: './webpage/submit/index.jsx',
-        about: './webpage/about/index.jsx'
+        about: './webpage/about/index.jsx',
+        timepicker: './webpage/timepicker/index.jsx'
     },
     output: {path: __dirname + '/dist', filename: '[name].bundle.js', pathinfo: true},
     watch: true,

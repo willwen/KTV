@@ -1,5 +1,5 @@
 import Constants from './Constants.jsx'
-import AudioAnimations from './AudioAnimations.jsx'
+import AudioAnimations from '../SharedReactComponents/AudioAnimations.jsx'
 // import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
 import $ from 'jquery'		
 import scrollTo from 'jquery.scrollTo'
@@ -91,7 +91,6 @@ export default class AudioPlayer extends React.Component {
 
 
 	increaseVolume(){
-		var that = this
 		this.setState({action : "vol_up"});
 		setTimeout(function(){
 				this.setState({"action": "none"})

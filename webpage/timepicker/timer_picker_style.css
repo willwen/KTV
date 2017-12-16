@@ -1,28 +1,17 @@
-.upload, #lyrics {
+.dotted-border {
 	border-style: dotted;
 	border-color: #8332AC;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.7);
 }
+.currentLine{
+	font-weight: 700;
+    text-decoration: underline;
 
+}
 #description {
 	padding-right:40px;
 	padding-left: 40px;
-}
-
-#prettyPrint{
-	margin-top: 20px;
-}
-
-#prettyPrint .btn{
-	background-color: #8332AC;
-	color: white;
-	margin-top: 3%;
-}
-
-#prettyPrint .btn:hover{
-	background-color: white;
-	color: #8332AC;
 }
 
 .btn {
@@ -39,6 +28,30 @@ input[type="file"] {
     display: none;
 }
 
+.audioContainer{
+	margin: 10px auto;
+}
 audio {
 	width: 100%;
+}
+
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    /*show in the front*/
+}
+
+@-webkit-keyframes fadein{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.transition{
+    -webkit-animation: fadein 2s ease 1 normal forwards;
+
 }
