@@ -1,5 +1,5 @@
 import Constants from './Constants.jsx'
-import {Tooltip} from 'reactstrap'
+import {UncontrolledTooltip } from 'reactstrap'
 // import {OverlayTrigger} from 'reactstrap'
 // import Scroll from 'react-scroll'; // Imports all Mixins
 // var Element = Scroll.Element;
@@ -72,23 +72,14 @@ export default class LyricsBody extends React.Component {
 				//each lyric line takes up a row
 				let tooltip;
 				let overlayTrigger;
-				let time = this.state.roundedTimeStamps[i]
-				if((lineNumber == 1 || time != "0:00") && time!="NaN:NaN"){
-					tooltip = (<Tooltip id= {time ? time : "tooltip" + i} className = "tooltip" target={"lineNumber"+ lineNumber}><strong>{time}</strong></Tooltip>);
-					overlayTrigger = (
-								<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" 
-								onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)}>{lineNumber}</a>)
-					// 		</OverlayTrigger>)
-				}
-				else{
-					overlayTrigger = (<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>)
-				}
+				let time = this.state.roundedTimeStamps[i];
 				var rowDiv = 
 					(<div key= {"rowNumber"+ lineNumber} style={
 							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
 						<div className= {Constants.ConstsClass.lyricLine + "  row"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
-							{overlayTrigger}
+							<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)} >{lineNumber}</a>
+							<UncontrolledTooltip  className = "tooltip" target={"lineNumber"+ lineNumber} placement="top"><strong>{time}</strong></UncontrolledTooltip >
 						</div>
 						<div className= "col-11 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
 							{
