@@ -152,10 +152,7 @@ ul {
 }
 
 
-.tooltip-inner {
-    background-color: #574AE2 !important;
-    color: #FFF !important;
-}
+
 
 #lyricsBody {
     background: rgba(0, 0, 0, 0.85);
@@ -243,11 +240,21 @@ table {
     }
 }
 
+
 .tooltip-inner {
-    background-color: #FD971F;
-    color: #272822;
-    font-size: 1.75em;
+    background-color: #574AE2 !important;
+    color: #FFF !important;
 }
+/* https://stackoverflow.com/questions/44955201/bootstrap-4-change-tooltip-arrow-color */ 
+
+.tooltip.bs-tooltip-bottom .tooltip-inner {
+    background:#574AE2 !important;
+}
+
+.tooltip .arrow:before {
+ border-bottom-color:#574AE2 !important;
+ border-top-color:#574AE2 !important;
+ }
 
 
 /**
