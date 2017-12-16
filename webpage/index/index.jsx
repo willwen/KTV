@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import PageHeader from '../SharedReactComponents/Header.jsx'
 import SearchPanel from './SearchPanel.jsx'
 
-
 export default class MainContainer extends React.Component {
 	constructor(){
 		super();
