@@ -129,7 +129,7 @@ app.get('/submit', function(req, res) {
 })
 app.get('/uploadComplete', function(req, res) {
     res.sendFile(__dirname + '/webpage/uploadComplete/index.html')
-    getIP();
+    // getIP();
 })
 
 
@@ -378,12 +378,8 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
     var times = xssfilters.inHTMLData(payload.times)
 
     verifyCaptcha(captcha, userIP)
-        .catch((err)=>{
-            if (!res.headersSent)
-                res.send({ message: "Your Captcha was incorrect. Please retry submitting" })
-            })
         .then((response)=>{
-            console.log("Captcha Response: " + JSON.stringify(response))
+            console.log("Captcha Response: " + response.statusText)
             
             var lineSeparator = "\n=========================================================================\n"
             var submitDate = Date.now()
@@ -422,6 +418,10 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
                     return;
                 })
         })
+        .catch((err)=>{
+            if (!res.headersSent)
+                res.send({ message: "Your Captcha was incorrect. Please retry submitting" })
+            })
 })
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -559,16 +559,17 @@ function createZipDirectory() {
 ///////////////////////////////////////////////////////////
 //getting client's IP address
 ///https://stackoverflow.com/questions/8107856/how-to-determine-a-users-ip-address-in-node
-function getIP(){
-    var ip;
-    if (req.headers['x-forwarded-for']) {
-        ip = req.headers['x-forwarded-for'].split(",")[0];
-    } else if (req.connection && req.connection.remoteAddress) {
-        ip = req.connection.remoteAddress;
-    } else {
-        ip = req.ip;
-    }console.log("client IP is" + ip);
-}
+// function getIP(){
+//     var ip;
+//     if (req.headers['x-forwarded-for']) {
+//         ip = req.headers['x-forwarded-for'].split(",")[0];
+//     } else if (req.connection && req.connection.remoteAddress) {
+//         ip = req.connection.remoteAddress;
+//     } else {
+//         ip = req.ip;
+//     }
+//     console.log("client IP is" + ip);
+// }
 
 ///////////////////////////////////////////////////////////
 // Process Cleanup on signal interrupt

@@ -69,47 +69,47 @@ export default class Form extends React.Component {
       <form onSubmit={this.handleSubmit}>
           <div className="row">
               <div className="col">
-                  <FormGroup  id="song">
+                  <FormGroup>
                       <Label>Song Title:</Label>
-                      <Input type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                      <Input id="song" type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
                   </FormGroup>
               </div>
               <div className="col">
-                  <FormGroup  id="artist">
+                  <FormGroup>
                       <Label>Artist Name:</Label>
-                      <Input type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
+                      <Input id="artist" type="text" onChange={this.handleChange} disabled={this.state.request==="pending" ? false:true} />
                   </FormGroup>
               </div>
           </div>
           <div className="row">
             <div className="col">
-              <FormGroup   id="primaryLanguageLyrics">
+              <FormGroup>
                 <Label>Primary Language Lyrics:</Label>
-                <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+                <Input id="primaryLanguageLyrics" type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
             <div className="col">
-              <FormGroup  id="pronounciationLyrics">
+              <FormGroup>
                 <Label>Pronounciation Lyrics:</Label>
-                <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+                <Input id="pronounciationLyrics" type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
             <div className="col">
-              <FormGroup id="translatedLyrics">
+              <FormGroup >
                 <Label>Translated Lyrics (If applicable):</Label>
-                <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+                <Input id="translatedLyrics" type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
               </FormGroup>
             </div>
           </div>
-          <FormGroup id="audioFile">
+          <FormGroup>
             <Label>MP3 Upload</Label>
             <br/>
-            <Input type="file" accept=".mp3" disabled={this.state.request==="pending"? false:true}/>
+            <Input id="audioFile" type="file" accept=".mp3" disabled={this.state.request==="pending"? false:true}/>
           </FormGroup>
 
-          <FormGroup id="times">
+          <FormGroup >
             <Label>Line Timings:</Label>
-            <Input type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
+            <Input id="times" type="textarea" onChange={this.handleChange} disabled={this.state.request==="pending"? false:true}/>
           </FormGroup>
           <Recaptcha
             sitekey="6LfZ-TsUAAAAABCx4CayOkJbV_Qm9CW9qGmBUzeS"
