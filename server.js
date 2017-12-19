@@ -372,9 +372,9 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
     var captcha = xssfilters.inHTMLData(payload.captcha)
     var songName = xssfilters.inHTMLData(payload.song)
     var artist = xssfilters.inHTMLData(payload.artist)
-    var cnLyrics = xssfilters.inHTMLData(payload.cnLyrics)
-    var pinyinLyrics = xssfilters.inHTMLData(payload.pinyinLyrics)
-    var engLyrics = xssfilters.inHTMLData(payload.engLyrics)
+    var primaryLanguageLyrics = xssfilters.inHTMLData(payload.primaryLanguageLyrics)
+    var pronounciationLyrics = xssfilters.inHTMLData(payload.pronounciationLyrics)
+    var translatedLyrics = xssfilters.inHTMLData(payload.translatedLyrics)
     var times = xssfilters.inHTMLData(payload.times)
 
     verifyCaptcha(captcha, userIP)
@@ -384,10 +384,10 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
             var lineSeparator = "\n=========================================================================\n"
             var submitDate = Date.now()
             var fileName = submitDate + ' ' + songName + '-' + artist + '.txt'
-            // var fileContent = cnLyrics + lineSeparator + pinyinLyrics + lineSeparator + engLyrics + lineSeparator + times
-            var primaryLanguageFile = fs.writeFile(uploadDirectory + "/" + "PrimaryLanguage " + fileName, cnLyrics)
-            var pronounciationLanguageFile = fs.writeFile(uploadDirectory + "/" + "PronounciationLanguage " + fileName, pinyinLyrics)
-            var translationLanguageFile = fs.writeFile(uploadDirectory + "/" + "TranslatedLanguage " + fileName, engLyrics)
+
+            var primaryLanguageFile = fs.writeFile(uploadDirectory + "/" + "PrimaryLanguage " + fileName, primaryLanguageLyrics)
+            var pronounciationLanguageFile = fs.writeFile(uploadDirectory + "/" + "PronounciationLanguage " + fileName, pronounciationLyrics)
+            var translationLanguageFile = fs.writeFile(uploadDirectory + "/" + "TranslatedLanguage " + fileName, translatedLyrics)
             var timesFile = fs.writeFile(uploadDirectory + "/" + "Timestamps " + fileName, times)
 
             Promise.all([primaryLanguageFile, pronounciationLanguageFile, translationLanguageFile, timesFile])
