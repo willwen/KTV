@@ -78,8 +78,18 @@ export default class LyricsBody extends React.Component {
 							this.props.currentLine === lineNumber ? {"color" : Constants.ConstsClass.highlightColor} : {"color" : Constants.ConstsClass.foregroundColor}}>
 						<div className= {Constants.ConstsClass.lyricLine + "  row"} id= {Constants.ConstsClass.lyricLine + lineNumber}>
 						<div className="col-1 lineIndex vertical-center" style = {this.state.lineNumberStyling}>
-							<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)} >{lineNumber}</a>
-							<UncontrolledTooltip delay="0" className = "tooltip purple" target={"lineNumber"+ lineNumber} placement="top">{time}</UncontrolledTooltip >
+							{
+								((lineNumber == 1 || time != "0:00") && time!="NaN:NaN") ? 
+									(
+										<span>
+										<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)} >{lineNumber}</a>
+										<UncontrolledTooltip delay="0" className = "tooltip purple" target={"lineNumber"+ lineNumber} placement="top">{time}</UncontrolledTooltip>
+										</span>
+									)
+									: (
+										<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor">{lineNumber}</a>
+									)
+							}
 						</div>
 						<div className= "col-11 lyricWords" id = {Constants.ConstsClass.genericLinePrefix + lineNumber}>
 							{
