@@ -17,8 +17,8 @@ export default class UploadContainer extends React.Component {
 	}
 
 	lyricsChanged(e){
-		this.refs.lyricsSource.disabled = true
-		var file = this.refs.lyricsSource.files[0]
+		this.refs.lyricsSource.disabled = true;
+		var file = this.refs.lyricsSource.files[0];
 		var reader = new FileReader();
         reader.readAsText(file);
 
@@ -29,9 +29,7 @@ export default class UploadContainer extends React.Component {
 	}
 
 	audioSourceChanged(){
-		var fileType = this.refs.audioSource;
-        
-        fileType.disabled = true;
+        this.refs.audioSource.disabled = true;
         var sound = this.refs.audioPlayer;
         this.props.setAudioSource(URL.createObjectURL(fileType.files[0]));
 		window.addEventListener("keydown", (e) => { //this event only fires when file uploaded
@@ -39,8 +37,11 @@ export default class UploadContainer extends React.Component {
                 e.preventDefault(); // and prevent enter default
                 this.props.recordTime();
             }
+            //add AudioPlayer here (componentDidMount) in order to prevent pressing play/pause/vol up down if the audio hasnt loaded yet
         });	
 	}
+
+	//add AudioPlayer other methods here to support ^
 	
 
 	render() {
@@ -61,12 +62,13 @@ export default class UploadContainer extends React.Component {
 			            <input type="file"
 			            	id="lyricsSource"
 			            	ref="lyricsSource"
+			            	className='btn'
 			            	accept=".txt"
 			            	onChange={(e)=>this.lyricsChanged(e)} />
 			        </div>
 			        <div className="col-6">
 			            Upload a .mp3 file for the audio of the song.<br/>
-			            <input type="file" id="audioSource" ref="audioSource" accept=".mp3" onChange={this.audioSourceChanged}/>
+			            <input type="file" id="audioSource" ref="audioSource" className='btn' accept=".mp3" onChange={this.audioSourceChanged}/>
 			        </div>
 			    </div>
 			</div>

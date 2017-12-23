@@ -8,8 +8,8 @@ import ReactDOM from 'react-dom';
 import {createMathRounding} from './round.js';
 
 
-const englishRegex = /^[A-Za-z0-9 \n]*$/
-const timestampFormatRegex = /[0-9]:[0-5][0-9]/
+const englishRegex = /^[A-Za-z0-9 \n]*$/;
+const timestampFormat = /[0-9]:[0-5][0-9]/;
 const newline = /\n/;
 
 export default class MainContainer extends React.Component {
@@ -70,7 +70,7 @@ export default class MainContainer extends React.Component {
 	        secondsTimestamp = "0" + secondsTimestamp;
 
 	    //cant do +, otherwise it just adds the two numbers
-	    var time = "" + minuteTimestamp + secondsTimestamp;
+	    var time = "" + minuteTimestamp + ":" + secondsTimestamp;
 	    return time;
 	}
 
@@ -92,15 +92,11 @@ export default class MainContainer extends React.Component {
 	render() {
 		return (
 			<div>
-				
 				<PageHeader/>
 				<div className = "container">
 		    		<UploadContainer recordTime = {this.recordTime}
 		    			setLyrics = {this.setLyrics} setAudioSource = {this.setAudioSource}/>
 		    		<AudioPlayer ref = "audioPlayer" src= {this.state.audioSource}/>
-		      	
-					
-		            
 		            <Lyrics arrayIndex = {this.state.arrayIndex} 
 		            	lyrics = {this.state.lyrics}
 		            	timestamps = {this.state.timestamps}

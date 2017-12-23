@@ -9,7 +9,6 @@ export default class AudioPlayer extends React.Component {
 		this.toggleAudioPlayer = this.toggleAudioPlayer.bind(this);
 		this.play = this.play.bind(this)
 		this.pause = this.pause.bind(this)
-
 		this.getCurrentTime = this.getCurrentTime.bind(this)
 	}
 
@@ -17,7 +16,7 @@ export default class AudioPlayer extends React.Component {
 	}
 
 	componentDidMount(){
-	 	window.addEventListener("keydown", (e) => { //this event only fires when file uploaded
+	 	window.addEventListener("keydown", (e) => { 
 		    if (e.keyCode == 32 && e.target == document.body) {
 	            this.toggleAudioPlayer(); // space bar to toggle audio player
 	            e.preventDefault(); // and prevent scrolling

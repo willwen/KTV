@@ -17,6 +17,8 @@ export default class PrettyPrint extends React.Component {
 	
 	}
 
+	//
+
 	// <div id="prettyPrint">
 	// 	<input data-toggle="collapse" data-target="#timesOutput" id="print" type="button" class="btn btn-lg" value="PrettyPrint times">
 	// </div>
@@ -33,7 +35,7 @@ export default class PrettyPrint extends React.Component {
                 			if(time.length == 0){
                 				return (<br key = {"timestamp " + index}/>)	
                 			}
-		            		return (<div key = {"timestamp " + index} className = "row">{time}</div>)
+		            		return (<div key = {"timestamp " + index} className = "row">{time.replace(/:/g, "")}</div>)
 
 			           	})
                 	}
