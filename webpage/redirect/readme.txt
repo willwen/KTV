@@ -1,0 +1,1 @@
+this folder is used to forward traffic from ktvgod.me to ktvlegend.com

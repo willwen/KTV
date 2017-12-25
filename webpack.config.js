@@ -3,6 +3,9 @@ var webpack = require('webpack');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // var CompressionPlugin = require("compression-webpack-plugin");
 
+// const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 // https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579
 module.exports = {
     entry: {
@@ -12,19 +15,24 @@ module.exports = {
         about: './webpage/about/index.jsx',
         timepicker: './webpage/timepicker/index.jsx'
     },
-    output: {path: __dirname + '/dist', filename: '[name].bundle.js', pathinfo: true},
+    output: {
+    	path: __dirname + '/dist',
+    	filename: '[name].bundle.js',
+    	pathinfo: true
+    },
     watch: true,
-    // devtool: 'cheap-source-map', // https://webpack.github.io/docs/configuration.html#devtool
-    devtool: "eval",
     module: {
-        loaders: [
+        rules: [
             {
-                test: /.jsx?$/,
-                loader: 'babel-loader',
-                exclude: /node-modules/,
-                query: {
-                    presets: ['env', 'react']
-                }
+                test: /\.jsx?$/,
+                use:[{
+                	loader:'babel-loader',
+	                query: {
+	                    presets: ['env', 'react']
+	                }
+                }],
+				exclude: /node-modules/
+             
             }
         ]
     },

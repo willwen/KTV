@@ -119,8 +119,12 @@ ul {
     padding: 15px 30px;
     background: rgba(0, 0, 0, 0.7);
     color: #FFFFFF;
-
 }
+
+input[type=checkbox]{
+    margin: 0 5px;
+}
+
 
 .displayLanguages {
     font-weight: bold;

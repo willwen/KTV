@@ -3,7 +3,6 @@ import {UncontrolledTooltip } from 'reactstrap'
 // import {OverlayTrigger} from 'reactstrap'
 // import Scroll from 'react-scroll'; // Imports all Mixins
 // var Element = Scroll.Element;
-const uuidv1 = require('uuid/v1');
 
 export default class LyricsBody extends React.Component {
 	constructor(props){
@@ -83,7 +82,7 @@ export default class LyricsBody extends React.Component {
 									(
 										<span>
 										<a id = {"lineNumber"+ lineNumber}  className= "lineAnchor" onClick={this.props.anchorClickUpdateLine.bind(this,lineNumber)} >{lineNumber}</a>
-										<UncontrolledTooltip delay="0" className = "tooltip purple" target={"lineNumber"+ lineNumber} placement="top">{time}</UncontrolledTooltip>
+										<UncontrolledTooltip className = "tooltip purple" target={"lineNumber"+ lineNumber} placement="top">{time}</UncontrolledTooltip>
 										</span>
 									)
 									: (

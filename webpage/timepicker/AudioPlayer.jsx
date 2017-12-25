@@ -41,6 +41,25 @@ export default class AudioPlayer extends React.Component {
 				e.preventDefault();
 			}
         });
+
+		// $("#jquery_jplayer_1").jPlayer({
+		// 	ready: function () {
+		// 		$(this).jPlayer("setMedia", {
+		// 			title: "Bubble",
+		// 			m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+		// 			oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+		// 		});
+		// },
+		// cssSelectorAncestor: "#jp_container_1",
+		// swfPath: "/js",
+		// supplied: "m4a, oga",
+		// useStateClassSkin: true,
+		// autoBlur: false,
+		// smoothPlayBar: true,
+		// keyEnabled: true,
+		// remainingDuration: true,
+		// toggleDuration: true
+		// });
 	}
 	componentWillUnmount(){
 		URL.revokeObjectURL(this.refs.audioPlayer.src);
@@ -96,6 +115,8 @@ export default class AudioPlayer extends React.Component {
 	render() {
 		return (
 			<div>
+				
+
 				<div className="text-center">
 				    <div className="audioContainer">
 				        <audio controls="true" ref="audioPlayer" id="audioPlayer" src={this.props.src}></audio>
@@ -106,3 +127,35 @@ export default class AudioPlayer extends React.Component {
 		);
 	}
 }
+// <div id="jquery_jplayer_1" className="jp-jplayer"></div>
+// <div id="jp_container_1" className="jp-audio" role="application" aria-label="media player">
+//     <div className="jp-type-single">
+//         <div className="jp-gui jp-interface">
+//             <div className="jp-controls">
+//                 <a className="jp-play"><i className="fa fa-play"></i></a>
+//                 <a className="jp-pause"><i className="fa fa-pause"></i></a>
+//                 <a className="jp-stop"><i className="fa fa-stop"></i></a>
+//             </div>
+//             <div className="jp-progress">
+//                 <div className="jp-seek-bar">
+//                     <div className="jp-play-bar"></div>
+//                 </div>
+//             </div>
+//             <div className="jp-volume-controls">
+//                 <a className="jp-mute"><i className="fa fa-volume-off"></i></a>
+//                 <a className="jp-volume-max"><i className="fa fa-volume-up"></i></a>
+//                 <div className="jp-volume-bar">
+//                     <div className="jp-volume-bar-value"></div>
+//                 </div>
+//             </div>
+//             <div className="jp-time-holder">
+//                 <div className="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+//                 <div className="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+//             </div>
+//         </div>
+//         <div className="jp-no-solution">
+//             <span>Update Required</span>
+//             To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+//         </div>
+//     </div>
+// </div>
