@@ -21,6 +21,7 @@ module.exports = {
     	pathinfo: true
     },
     watch: true,
+    devtool: "eval",
     module: {
         rules: [
             {

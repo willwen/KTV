@@ -66,14 +66,24 @@ input:-moz-placeholder {
 #resultsList {
 	list-style-type: none;
 	padding: 0;
-	display: none;
 	font-size: 1.8em;
 	font-weight: bold;
 }
 
-#resultsList li a {
+.list-group-item{
 	background-color: rgba(0, 0, 0, 0.1);
+}
+.anchors {
 	color: #222A68;
-	display: block;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
+}
+.anchors:hover{
+	color: #000;
+}
+
+.instrumental{
+	font-size: .7em;
+	color: #5a0404;
+	float:right;
+	text-align: center;
 }

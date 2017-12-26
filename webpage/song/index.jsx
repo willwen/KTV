@@ -60,9 +60,11 @@ export default class MainContainer extends React.Component {
 	}
 	componentDidMount(){
 		var id = this.getParameterByName('id');
-		var addInstrumental = this.getParameterByName('instru')
-		this.setState({"instru":addInstrumental})
-		this.getSongLyrics(id);
+		var instru = parseInt(this.getParameterByName('instru'));
+		//Not sure why, but calling set State here doesnt change the state...., so I am
+		//setting state in ajax callback instead.
+		this.getSongLyrics(id, instru);
+		
 
 		window.addEventListener("resize", this.onWindowResized);
   		
@@ -87,9 +89,9 @@ export default class MainContainer extends React.Component {
 	    return decodeURIComponent(results[2].replace(/\+/g, " "));
 	}
 
-	getSongLyrics(id){
+	getSongLyrics(id, instru){
 		let params;
-		if(this.state.addInstrumental){
+		if(instru){
 			params = {params: {'id': id, 'instru' : 1}}
 		}
 		else{
@@ -120,9 +122,12 @@ export default class MainContainer extends React.Component {
 				pronounciationLanguageLyrics : response.data.PronounciationLanguageLyrics,
 				timestamps : response.data.TimestampsLyrics
 			},
-			songPath : response.data.songPath,
-			instrumentalPath: response.data.instrumentalPath
+			songPath : response.data.songPath
 		});
+		if(response.data.instrumentalPath)
+			this.setState({
+				addInstrumental: 1
+				,instrumentalPath: response.data.instrumentalPath})
 	}
 
 	scaleScrolling(){
@@ -132,7 +137,6 @@ export default class MainContainer extends React.Component {
 	}
 
 	anchorClickUpdateLine(lineToSet){
-		console.log("anchor clicked")
 		this.setState({currentLine : lineToSet});
 		this.refs.audioPlayer.setCurrentTime(lineToSet);
 	}
