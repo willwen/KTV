@@ -21,7 +21,7 @@ export default class SearchResults extends React.Component {
                             {
                                 (result.instrumentalPath ? 
                                     <a className = "anchors instrumental" href={path + "&instru=1"}>
-                                        <span>or Instrumental Only (Beta)</span>
+                                        <span> Instrumental Version (Beta)</span>
                                     </a>
                                     :
                                     null

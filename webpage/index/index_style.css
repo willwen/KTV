@@ -83,7 +83,8 @@ input:-moz-placeholder {
 
 .instrumental{
 	font-size: .7em;
-	color: #5a0404;
 	float:right;
 	text-align: center;
+	letter-spacing: 0px;
+	opacity: 0.7;
 }
