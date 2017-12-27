@@ -41,7 +41,7 @@ a:hover {
 
 
 
-.fa {
+.jumbotron >.fa {
     margin: 5px;
     padding: 20px;
     font-size: 1.5em;
