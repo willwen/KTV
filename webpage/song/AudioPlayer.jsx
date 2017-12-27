@@ -135,20 +135,20 @@ export default class AudioPlayer extends React.Component {
 
 	changeTime(newTime){
 		this.refs.audioHTML.currentTime = newTime;
-		if(this.props.instrumentalPath)
-			this.refs.audioHTMLinstru.currentTime = newTime;
+		// if(this.props.instrumentalPath)
+		// 	this.refs.audioHTMLinstru.currentTime = newTime;
 	}
 
 	play(){
 		this.refs.audioHTML.play()
-		if(this.props.instrumentalPath)
-			this.refs.audioHTMLinstru.play()
+		// if(this.props.instrumentalPath)
+		// 	this.refs.audioHTMLinstru.play()
 	}
 
 	pause(){
 		this.refs.audioHTML.pause();
-		if(this.props.instrumentalPath)
-			this.refs.audioHTMLinstru.pause()
+		// if(this.props.instrumentalPath)
+		// 	this.refs.audioHTMLinstru.pause()
 	}
 
 
@@ -166,19 +166,12 @@ export default class AudioPlayer extends React.Component {
 	render() {
 		return (
 			<div>
-				{this.props.addInstrumental ? 
-					(<div className="audioContainer">
-						<audio controls="true" ref="audioHTMLinstru" id="instrumentalAudioPlayer" src={this.props.instrumentalPath} controls controlsList="nodownload noremoteplayback"></audio>
-					</div>)
-					:
-					null
-				}
 				<div className="audioContainer">
 					<audio crossOrigin = "anonymous"
 						controls="true"
 						ref="audioHTML"
 						id="audioPlayer"
-						src={this.props.currentSong}
+						src={this.props.addInstrumental ? this.props.instrumentalPath : this.props.currentSong}
 						controls
 						controlsList="nodownload"
 						

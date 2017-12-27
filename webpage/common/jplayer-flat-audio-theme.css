@@ -1,0 +1,175 @@
+/* jPlayer Flat Audio Theme CSS
+ * For use with jPlayer: http://jplayer.org
+ * Inspired by https://github.com/dolatabadi/jPlayer-Flat-Theme
+ */
+
+.jp-audio {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  color:#ECF0F1;
+}
+
+/* Absolute positioning, left-to-right:
+ *  - 80px jp-controls
+ *  - Expanding jp-progress
+ *  - Expanding jp-time-holder overlaying jp-progress
+ *  - 80px on right jp-volume-controls
+ */
+
+.jp-audio .jp-controls {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background-color: #2C3E50;
+}
+.jp-audio .jp-controls a {
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 12px;
+  line-height: 42px;
+  color: #ECF0F1;
+  cursor: pointer;
+}
+.jp-audio .jp-controls a:hover {
+  color: #2980B9;
+}
+.jp-audio .jp-controls a:before {
+  display: inline-block;
+  font-family: flat-audio;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  width: 80px;
+  line-height: 42px;
+  opacity: 1;
+}
+
+/* Time Stamps */
+.jp-audio .jp-time-holder {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  right: 90px;
+  height: 0; /* 0 height so seek bar is clickable. */
+  z-index: 2; /* Above progress bar display */
+}
+.jp-audio .jp-current-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 12px;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: left;
+  pointer-events:none;
+}
+.jp-audio .jp-duration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 12px;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: right;
+  pointer-events:none;
+}
+
+/* progress bar */
+.jp-audio .jp-progress {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  right: 80px;
+  height: 100%;
+  background-color: #2C3E50;
+}
+.jp-audio .jp-progress .jp-seek-bar {
+  background: #1e2e3e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.jp-audio .jp-progress .jp-seek-bar .jp-play-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2980B9;
+}
+
+/* Volume Controls */
+.jp-audio .jp-volume-controls {
+  background-color: #2C3E50;
+  height: 100%;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 80px;
+}
+.jp-audio .jp-volume-controls a {
+  text-decoration: none;
+  font-size: 15px;
+  position: absolute;
+  top: 3px;
+  padding-left: 6px;
+  line-height: 21px;
+  color: #ECF0F1;
+  cursor: pointer;
+}
+.jp-audio .jp-volume-controls a:hover {
+  color: #2980B9;
+}
+.jp-audio .jp-volume-controls .jp-volume-max {
+  right: 0px;
+  padding-right: 6px;
+}
+.jp-audio .jp-volume-controls .jp-volume-bar {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  height: 30%;
+  width: 60px;
+  cursor: pointer;
+}
+.jp-audio .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {
+  height: 100%;
+  background-color: #2980B9;
+}
+
+/* Fallback */
+.jp-audio .jp-no-solution {
+  position: absolute;
+  top: 0;
+  left: 42px;
+  right: 0;
+  height: 42px;
+  padding: 8px 0;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  display: none;
+  color: #ffd850;
+  background-color: #b28282;
+}
+
+/* Mobile Volume Controls */
+.jp-state-no-volume .jp-volume-controls {
+  display: none;
+}
+
+.jp-state-no-volume .jp-progress,
+.jp-state-no-volume .jp-time-holder {
+  right: 0;
+}

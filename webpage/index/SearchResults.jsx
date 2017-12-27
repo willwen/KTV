@@ -14,18 +14,27 @@ export default class SearchResults extends React.Component {
 
             resultItems = this.props.results.map(result => {
                 let path = "/song?id="+result.file_name
-                return ( <li key = {result.file_name}>
-                            <a className = "list-group-item list-group-item-action" href={path}>
-                                {result.cn_char} - {result.artist} 
-                            </a> 
+                return ( <li className = "list-group-item" key = {result.file_name}>
+                            <a className = "anchors" href={path}>
+                                <span>{result.cn_char} - {result.artist}</span>
+                            </a>
+                            {
+                                (result.instrumentalPath ? 
+                                    <a className = "anchors instrumental" href={path + "&instru=1"}>
+                                        <span>or Instrumental Only (Beta)</span>
+                                    </a>
+                                    :
+                                    null
+                                )
+                            }
                         </li >)
             })
         }
         return (
             <div>
-                <ol className = "list-group" style = {this.props.styling} id = "resultsList" > 
+                <ul className = "list-group" style = {this.props.styling} id = "resultsList" > 
                     {resultItems} 
-                </ol> 
+                </ul> 
             </div>
 
         );

@@ -92,7 +92,7 @@ var server = app.listen(process.env.PORT || port, function() {
 app.use(function(req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', ' s3.us-east-2.amazonaws.com/ktv.songs/');
+    res.setHeader('Access-Control-Allow-Origin', 's3.us-east-2.amazonaws.com/ktv.songs/');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET');
@@ -148,7 +148,7 @@ app.get('/getSong', function(req, res) {
         .then((db) => {
             var collection = db.collection('songs');
             var query = { "file_name": id }
-            var findOnePromise = collection.findOne(query, { file_name: 1, cn_char: 1, artist: 1, PrimaryLanguage: 1, PronounciationLanguage: 1, TranslatedLanguage: 1, songPath: 1 })
+            var findOnePromise = collection.findOne(query, { file_name: 1, cn_char: 1, artist: 1, PrimaryLanguage: 1, PronounciationLanguage: 1, TranslatedLanguage: 1, songPath: 1, instrumentalPath: 1 })
             findOnePromise.then((result) => {
                 console.log(result)
                 db.close();
@@ -165,6 +165,8 @@ app.get('/getSong', function(req, res) {
                     TimestampsLyrics: [],
                     songPath: s3SongsBucketURL + result.songPath
                 };
+                if(instru)
+                	songPayload["instrumentalPath"] = s3SongsBucketURL + result.instrumentalPath
                 var fileNames = ['PronounciationLanguage.txt', 'PrimaryLanguage.txt', 'TranslatedLanguage.txt', 'Timestamps.txt'];
                 //dont use traditional for loop or else you'll have closure problems :)
 
@@ -210,27 +212,27 @@ app.get('/getSong', function(req, res) {
                 //     })
                 // }
                 // getFilesPromises.push(fetchSongPromise(instru))
-                if (instru) {
-                    //grab the mp3
-                    var fetchInstrumentalPromise = (instru) => {
-                        new Promise((resolve, reject) => {
-                            let searchGlob;
-                            searchGlob = 'songs/' + id + '*/Instrumental/*.mp3'
+                // if (instru) {
+                //     //grab the mp3
+                //     var fetchInstrumentalPromise = (instru) => {
+                //         new Promise((resolve, reject) => {
+                //             let searchGlob;
+                //             searchGlob = 'songs/' + id + '*/Instrumental/*.mp3'
 
-                            glob(searchGlob)
-                                .then((contents) => {
-                                    songPayload['instrumentalPath'] = contents[0].split("songs/")[1];
-                                    resolve();
-                                })
-                                .catch((err) => {
-                                    console.log(searchGlob + " most likely DOES NOT exist.")
-                                    songPayload['instrumentalPath'] = "mp3 file not found";
-                                    resolve()
-                                })
-                        })
-                    }
-                    getFilesPromises.push(fetchInstrumentalPromise(instru))
-                }
+                //             glob(searchGlob)
+                //                 .then((contents) => {
+                //                     songPayload['instrumentalPath'] = contents[0].split("songs/")[1];
+                //                     resolve();
+                //                 })
+                //                 .catch((err) => {
+                //                     console.log(searchGlob + " most likely DOES NOT exist.")
+                //                     songPayload['instrumentalPath'] = "mp3 file not found";
+                //                     resolve()
+                //                 })
+                //         })
+                //     }
+                //     getFilesPromises.push(fetchInstrumentalPromise(instru))
+                // }
 
 
                 Promise.all(getFilesPromises).then(() => {
@@ -340,7 +342,7 @@ app.get('/query', function(req, res) {
             var collection = db.collection('songs');
             var regexValue = '\.*' + cleansedQuery + '\.';
             var query = { "searchTerm": { $regex: new RegExp(regexValue, 'i') } }
-            var cursor = collection.find(query, { file_name: 1, cn_char: 1, artist: 1 }).sort({ cn_char: 1 })
+            var cursor = collection.find(query, { file_name: 1, cn_char: 1, artist: 1, instrumentalPath: 1}).sort({ cn_char: 1 })
             cursor.toArray().then((result) => {
                 res.send(result);
                 db.close();
