@@ -86,5 +86,7 @@ input:-moz-placeholder {
 	float:right;
 	text-align: center;
 	letter-spacing: 0px;
-	opacity: 0.7;
+	border: dashed 2px #574AE2 ;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
 }

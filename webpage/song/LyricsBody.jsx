@@ -167,7 +167,7 @@ export default class LyricsBody extends React.Component {
 	splitPrimaryLang(primaryLine, lineNumber){
 		var primaryLangChars = [...primaryLine]
 		return primaryLangChars.map((primaryLangChar, index)=>{
-			return <td key={lineNumber + " primaryLangChar " + index}>{primaryLangChar}</td>
+			return <td key={lineNumber + " primaryLangChar " + index}>{primaryLangChar + " "}</td>
 		})	
 	}
 }
