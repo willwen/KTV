@@ -70,44 +70,6 @@
 }
 
 
-/**
-  Results List Stylings
-**/
-
-#resultsList {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    font-size: 1.4em;
-}
-
-ul {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#resultsList li a {
-    border: 1px solid #ddd;
-    margin-top: -1px;
-    /* Prevent double borders */
-    background-color: #f6f6f6;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 1.8em;
-    color: black;
-    display: block
-}
-
-#resultsList li a.header {
-    background-color: #e2e2e2;
-    cursor: default;
-}
-
-#resultsList li a:hover:not(.header) {
-    background-color: #eee;
-}
-
 
 /**
   Options Stylings
@@ -194,20 +156,21 @@ input[type=checkbox]{
     }
 }
 
-tr{
-    text-align: center;
-}
-td{
-    /*white-space: nowrap;*/
-}
 
 table {
-    /*width: 100%;*/
+    display: block;
     border-spacing: 4px;
     table-layout: auto;
     border-collapse: separate;
 }
+table td {
+    display: inline-block;
+}
+table tr {
+    text-align: center;
+}
 
+}
 .pronounciationLine {
     /*font-style: italic;*/
 }
