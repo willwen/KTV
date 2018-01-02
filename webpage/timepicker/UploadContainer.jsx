@@ -31,7 +31,7 @@ export default class UploadContainer extends React.Component {
 	audioSourceChanged(){
         this.refs.audioSource.disabled = true;
         var sound = this.refs.audioPlayer;
-        this.props.setAudioSource(URL.createObjectURL(fileType.files[0]));
+        this.props.setAudioSource(URL.createObjectURL(this.refs.audioSource.files[0]));
 		window.addEventListener("keydown", (e) => { //this event only fires when file uploaded
             if (e.keyCode == 13 && e.target == document.body) { //enter
                 e.preventDefault(); // and prevent enter default

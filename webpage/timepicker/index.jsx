@@ -97,7 +97,8 @@ export default class MainContainer extends React.Component {
 		    		<UploadContainer recordTime = {this.recordTime}
 		    			setLyrics = {this.setLyrics} setAudioSource = {this.setAudioSource}/>
 		    		<AudioPlayer ref = "audioPlayer" src= {this.state.audioSource}/>
-		            <Lyrics arrayIndex = {this.state.arrayIndex} 
+		            <Lyrics 
+		            	arrayIndex = {this.state.arrayIndex} 
 		            	lyrics = {this.state.lyrics}
 		            	timestamps = {this.state.timestamps}
 		            	updateTimestamp = {this.updateTimestamp} />
