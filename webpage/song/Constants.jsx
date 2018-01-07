@@ -1,28 +1,26 @@
-function timestampToSeconds(timestamp){
-	return Math.floor(timestamp/100) * 60 + timestamp%100;
+function timestampToSeconds(timestamp) {
+	return Math.floor(timestamp / 100) * 60 + timestamp % 100;
 }
 
 const ConstsClass = {
-	searchBarID : "songSearchInput",
-	resultsListID : "resultsList",
+	searchBarID: "songSearchInput",
+	resultsListID: "resultsList",
 
-	allSongsAnchorID : "allSongsAnchor",
+	allSongsAnchorID: "allSongsAnchor",
 
-	titleLineID : "titleLine",
-
+	titleLineID: "titleLine",
 
 	//Checkboxes:
 	//langauges
-	pronounciationCheckBoxID : "pronounciationCB",
-	primaryCheckBoxID : "primaryCB",
-	translatedCheckBoxID : "translatedCB",
+	pronounciationCheckBoxID: "pronounciationCB",
+	primaryCheckBoxID: "primaryCB",
+	translatedCheckBoxID: "translatedCB",
 	//options:
-	optionsID : "options",
-	wantScrollCheckBoxID : "wantScrolling",
+	optionsID: "options",
+	wantScrollCheckBoxID: "wantScrolling",
 	wantLineNumbersCheckBoxID: "lineNumbers",
 
-
-	lyricsBodyID : "lyricsBody",
+	lyricsBodyID: "lyricsBody",
 	//whole line of lyric with line number
 	lyricLine: "lyricLine",
 
@@ -30,21 +28,16 @@ const ConstsClass = {
 	lineNumberID: "lineIndex",
 
 	//lyricRight Lines: pronounciation, primary, translated
-	pronounciationLyricsLineClass : "pronounciationLine",
-	primaryLyricsLineClass : "primaryLine",
-	translatedLyricsLineClass : "translatedLine",
+	pronounciationLyricsLineClass: "pronounciationLine",
+	primaryLyricsLineClass: "primaryLine",
+	translatedLyricsLineClass: "translatedLine",
 
+	genericLinePrefix: "line",
 
-
-
-	genericLinePrefix : "line",
-
-
-	audioPlayerID : "audioPlayer",
+	audioPlayerID: "audioPlayer",
 
 	//colors
-	foregroundColor : "rgba(255,255,255,0.5)",
-	highlightColor : "rgb(255, 238, 6)"
-
-}
-export default {ConstsClass, timestampToSeconds}
+	foregroundColor: "rgba(255,255,255,0.5)",
+	highlightColor: "rgb(255, 238, 6)"
+};
+export default { ConstsClass, timestampToSeconds };

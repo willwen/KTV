@@ -1,5 +1,14 @@
-import React from 'react';
-import {Collapse,Dropdown,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink} from 'reactstrap';
+import React from "react";
+import {
+  Collapse,
+  Dropdown,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from "reactstrap";
 
 export default class PageHeader extends React.Component {
   constructor(props) {
@@ -19,10 +28,12 @@ export default class PageHeader extends React.Component {
     return (
       <div>
         <Navbar dark expand="md">
-          <NavbarBrand href="/"><img src="logo.png" alt="logo" width="50"/></NavbarBrand>
+          <NavbarBrand href="/">
+            <img src="logo.png" alt="logo" width="50" />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={!this.state.isOpen} navbar>
-            <Nav  className="ml-auto" navbar >
+            <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
@@ -32,7 +43,7 @@ export default class PageHeader extends React.Component {
               <NavItem>
                 <NavLink href="/treefind">Search</NavLink>
               </NavItem>
-			  <NavItem>
+              <NavItem>
                 <NavLink href="/submit">Submit a Song</NavLink>
               </NavItem>
               <NavItem>
@@ -42,11 +53,21 @@ export default class PageHeader extends React.Component {
           </Collapse>
         </Navbar>
         <div className="text-center jumbotron welcome">
-			<h1>Become a Karaoke Legend</h1>
-			<h2>A Website to Learn Foreign Songs<br/>by Will Wen</h2>
-			<a href="https://github.com/willwen/KTV" target="_blank" className="fa fa-github"></a>
-			<a href="https://www.linkedin.com/in/will-wen-52480559/" target="_blank" className="fa fa-linkedin"></a>
-		</div>
+          <h1>Become a Karaoke Legend</h1>
+          <h2>
+            A Website to Learn Foreign Songs<br />by Will Wen
+          </h2>
+          <a
+            href="https://github.com/willwen/KTV"
+            target="_blank"
+            className="fa fa-github"
+          />
+          <a
+            href="https://www.linkedin.com/in/will-wen-52480559/"
+            target="_blank"
+            className="fa fa-linkedin"
+          />
+        </div>
       </div>
     );
   }

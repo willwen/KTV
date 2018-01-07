@@ -19,18 +19,19 @@ export default class Form extends React.Component {
 
 	componentDidMount() {
 		// window.addEventListener("beforeunload", this.onUnload);
-		console.log("ok")
+		console.log("ok");
 		if (
 			window.localStorage.getItem("timestamps") &&
 			window.localStorage.getItem("timestamps").length > 1
 		) {
-			var timestamps = JSON.parse(window.localStorage.getItem("timestamps"))
-			var timeStampString = timestamps.reduce((totalString, line)=>{
-				return totalString + line + "\n"
-			}, "")
+			var timestamps = JSON.parse(
+				window.localStorage.getItem("timestamps")
+			);
+			var timeStampString = timestamps.reduce((totalString, line) => {
+				return totalString + line + "\n";
+			}, "");
 			this.setState({
 				times: timeStampString
-
 			});
 		}
 	}
@@ -215,7 +216,7 @@ export default class Form extends React.Component {
 										? false
 										: true
 								}
-								value = {this.state.times}
+								value={this.state.times}
 							/>
 						</FormGroup>
 					</div>
