@@ -32,7 +32,11 @@ function addSpacesChineseCharactersFile() {
 function addSpacesBetweenPinyin(){
 
 	var pinyinfile = 'songs/6\ 再见/6\ PronounciationLanguage.txt';
-	var arrayPinYin = fs.readFileSync(pinyinfile).toString().split(" ");
+	var arrayPinYinLines = fs.readFileSync(pinyinfile).toString().split("\n");
+	var arrayPinYin = []; 
+	for (l in arrayPinYinLines){
+		arrayPinYin = arrayPinYin.concat(arrayPinYinLines[l].toString().split(" "));
+	}
 	var newpinyin = ''; 
 	var pinyinresult = '';
 	for(i in arrayPinYin) {
