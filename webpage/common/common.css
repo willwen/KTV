@@ -28,10 +28,9 @@ a {
 }
 
 a:hover {
-    text-decoration: none !important;
+    text-decoration: none;
     opacity: 1;
     color: #FFF;
-    
 }
 
 
