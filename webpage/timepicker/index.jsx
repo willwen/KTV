@@ -21,23 +21,46 @@ export default class MainContainer extends React.Component {
 			arrayIndex: 0,
 		}
 		createMathRounding();
-
+		this.clearLocalStorage = this.clearLocalStorage.bind(this)
 		this.recordTime = this.recordTime.bind(this)
 		this.secondsToTimestamp = this.secondsToTimestamp.bind(this)
 		this.setLyrics = this.setLyrics.bind(this);
 		this.setAudioSource = this.setAudioSource.bind(this);
 		this.updateTimestamp = this.updateTimestamp.bind(this);
+		this.onUnload = this.onUnload.bind(this);
+
 	}
 	componentWillMount(){
 	  	
 	}
 	componentDidMount(){
-	   
+	    window.addEventListener("beforeunload", this.onUnload)
+	    if(window.localStorage.getItem("timestamps") && 
+	    	window.localStorage.getItem("timestamps").length > 1){
+	   		this.setState(
+	   			{
+	   				timestamps: JSON.parse(window.localStorage.getItem("timestamps"))
+	   			})
+	   		window.localStorage.clear()
+	    }
+
 	}
 	componentWillUnmount(){
-	
+   		window.removeEventListener("beforeunload", this.onUnload)
 	}
 
+ 	onUnload(event) { // the method that will be used for both add and remove event
+        window.localStorage.setItem("timestamps", JSON.stringify(this.state.timestamps))
+    }
+
+    clearLocalStorage(){
+	   	window.localStorage.clear();
+	   	this.setState(
+	   		{
+	   			timestamps: []
+	   		})
+	}
+	
 	recordTime(){
 		let time = this.secondsToTimestamp();
 		let timestamps = this.state.timestamps;
@@ -53,7 +76,6 @@ export default class MainContainer extends React.Component {
 		//apparently "" is a length of 1....
 		while (this.state.lyrics[arrayIndex].length == 1){
 			timestamps[arrayIndex] = "";
-			console.log("nextLine is empty")
 			arrayIndex++;
 		}
     	this.setState({timestamps: timestamps, arrayIndex: arrayIndex})
@@ -81,12 +103,15 @@ export default class MainContainer extends React.Component {
 	setAudioSource(objectUrl){
 		this.setState({audioSource: objectUrl});
 	}
+	
+	transferOver(){
+		window.location.href='/submit'
+	}
 
 	updateTimestamp(lineNumber, newTimestamp){
 		let timestamps = this.state.timestamps;
 		timestamps[lineNumber] = newTimestamp;
 		this.setState({timestamps: timestamps})
-		console.log("timestamp updated");
 	}
 
 	render() {
@@ -103,7 +128,9 @@ export default class MainContainer extends React.Component {
 		            	timestamps = {this.state.timestamps}
 		            	updateTimestamp = {this.updateTimestamp} />
 		            <br/>
-		            <PrettyPrint timestamps = {this.state.timestamps}/>
+		            <PrettyPrint timestamps = {this.state.timestamps}
+		            	transferOver = {this.transferOver}
+		            	clearLocalStorage = {this.clearLocalStorage}/>
 
 		        </div>
 		  	</div>

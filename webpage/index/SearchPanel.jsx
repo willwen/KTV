@@ -1,48 +1,63 @@
-import SearchBar from './SearchBar.jsx'
-import SearchResults from './SearchResults.jsx'
-import axios from 'axios'
+import SearchBar from "./SearchBar.jsx";
+import SearchResults from "./SearchResults.jsx";
+import axios from "axios";
 
 export default class SearchPanel extends React.Component {
-	constructor (){
+	constructor() {
 		super();
 		this.state = {
-			dbResults : [],
-            resultsStyling: {
-                display: "hidden"
-            }
-		}
+			dbResults: [],
+			resultsStyling: {
+				display: "hidden"
+			}
+		};
 		this.showSearchResults = this.showSearchResults.bind(this);
-
 	}
 
-	componentDidMount(){
+	componentDidMount() {
 		this.sendAjaxSearch("");
 	}
 
-	sendAjaxSearch(queryText){
-		axios.get("query", {params: {'search': queryText}} ).then(this.showSearchResults).catch(error => console.log(error));;
-
+	sendAjaxSearch(queryText) {
+		axios
+			.get("query", { params: { search: queryText } })
+			.then(this.showSearchResults)
+			.catch(error => console.log(error));
 	}
-	showSearchResults(response){
-		this.setState({dbResults:response.data, resultsStyling: {display: "inline"}});
+	showSearchResults(response) {
+		this.setState({
+			dbResults: response.data,
+			resultsStyling: { display: "inline" }
+		});
 	}
 
-	retrieveAll(e){
+	retrieveAll(e) {
 		e.preventDefault();
-		axios.get("query", {params: {'search': ""}} ).then(this.showSearchResults).catch(error => console.log(error));;
+		axios
+			.get("query", { params: { search: "" } })
+			.then(this.showSearchResults)
+			.catch(error => console.log(error));
 	}
 
-    render() {
-    	return (
-	    	<div>
-		  	<SearchBar onTextChanged = {this.sendAjaxSearch.bind(this)}/>
-		  	<div className = "clearfix"></div>
-			<div className = "allSongsDiv">
-				<a id="allSongsAnchor" onClick={this.retrieveAll.bind(this)}>All Songs</a>
+	render() {
+		return (
+			<div>
+				<SearchBar onTextChanged={this.sendAjaxSearch.bind(this)} />
+				<div className="clearfix" />
+				<div className="allSongsDiv">
+					<a
+						id="allSongsAnchor"
+						onClick={this.retrieveAll.bind(this)}
+					>
+						All Songs
+					</a>
+				</div>
+				<SearchResults
+					results={this.state.dbResults}
+					styling={this.state.resultsStyling}
+				/>
+				<div className="clearfix" />
 			</div>
-		  	<SearchResults results={this.state.dbResults} styling = {this.state.resultsStyling} />
-			<div className = "clearfix"></div>
-			</div>
-	    );
-    }
+		);
+	}
 }

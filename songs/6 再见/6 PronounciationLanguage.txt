@@ -1,1 +1,46 @@
-Ài qíng de qǐ diǎn dōu shì zuì měi de shùn jiān shén me tiě dá ní de jīng diǎn luō mì 'ōu gēn zhū lì yènà xiē zuì shān qíng de diàn yǐng qíng jiédōu shuō ài néng chāo yuè shēngsǐ lí biécéng jīng wǒ men dōu hěn jiān jué ài le jiù bù gǎi biàn bù yào duì wǒ shuō zài jiàn yī jù zài jiàn jiù jiéshù zhè yī qiènéng fǒu bù yào shuō zài jiàn nǐ de zài jiàn shuō dé nà me míng quèzěn me wǒ hé nǐ zhī jiān liǎng gè shì jièzài yě méi yǒu jiāo jiē rú guǒ gào bié néng bù néng zài jiàn wǒ men de zhào piàn jì lù xìng fú dào yǒng yuǎn zhǐshì zài xìng fú de huà miàn zhǐ dìng gé zài yī shùn jiān nà xiē màn tūn tūn bēi qíng de yīn yuèzǎo shuō guò ài guò zhī hòu jiùshì lí biézǎo gāi xiāng xìn nà xiē yù yán wǒ men yě méi yǒu duō tè biébù yào duì wǒ shuō zài jiàn yī jù zài jiàn  ràng ài biàn dé biǎo miàn zhēn de bù yòng shuō zài jiàn jiùsuàn zài jiàn jié jú bù néng gǎi biàn jiùsuàn wǒ hé nǐ zhī jiān liǎng gè shì jièzài yě méi yǒu jiāo jiēbù yòng bào qiàn jiù zhēn de zài jiàn  rú guǒ yǒu yuán wǒ men huì zài yù jiàn fǎn zhèng dì qiú běn lái jiù hěn yuán jiùsuàn jīn tiān nǐ yào zǒu dé duō yuǎn fǎn zhèng jiùshì yī tiáo dì píng xiàn fǎn zhèng yuànwàng bù yī dìng huì shí xiàn fǎn zhèng chéng nuò bù yī dìng yào duì xiàn fǎn zhèng shuì xǐng shì xīn de yī tiān bié duì wǒ shuō zài jiàn yī jù zài jiàn  ràng ài biàn dé biǎo miàn zhēn de bù yòng shuō zài jiàn jiùsuàn zài jiàn jié jú bù néng gǎi biàn jiù suàn wǒ hé nǐ zhī jiān liǎng gè shì jièzài yě méi yǒu jiāo jiēbù yòng bào qiàn jiù zhēn de zài jiàn ài qíng dào zhōng diǎn wǒ men zhǐ néng shuō zài jiàn   
+<<<<<<< HEAD
+Ài qíng de qǐ diǎn dōu shì zuì měi de shùn jiān 
+shén me tiě dá ní de jīng diǎn luō mì 'ōu gēn zhū lì yè
+nà xiē zuì shān qíng de diàn yǐng qíng jié
+dōu shuō ài néng chāo yuè shēngsǐ lí bié
+céng jīng wǒ men dōu hěn jiān jué ài le jiù bù gǎi biàn 
+
+bù yào duì wǒ shuō zài jiàn yī jù zài jiàn 
+jiù jiéshù zhè yī qiè
+néng fǒu bù yào shuō zài jiàn nǐ de zài jiàn 
+shuō dé nà me míng què
+zěn me wǒ hé nǐ zhī jiān liǎng gè shì jiè
+zài yě méi yǒu jiāo jiē
+ rú guǒ gào bié néng bù néng zài jiàn 
+
+wǒ men de zhào piàn jì lù xìng fú dào yǒng yuǎn 
+zhǐshì zài xìng fú de huà miàn zhǐ dìng gé zài yī shùn jiān 
+nà xiē màn tūn tūn bēi qíng de yīn yuè
+zǎo shuō guò ài guò zhī hòu jiùshì lí bié
+zǎo gāi xiāng xìn nà xiē yù yán wǒ men yě méi yǒu duō tè bié
+
+bù yào duì wǒ shuō zài jiàn yī jù zài jiàn 
+ ràng ài biàn dé biǎo miàn 
+zhēn de bù yòng shuō zài jiàn jiùsuàn zài jiàn 
+jié jú bù néng gǎi biàn 
+jiùsuàn wǒ hé nǐ zhī jiān liǎng gè shì jiè
+zài yě méi yǒu jiāo jiē
+bù yòng bào qiàn jiù zhēn de zài jiàn 
+
+ rú guǒ yǒu yuán wǒ men huì zài yù jiàn 
+fǎn zhèng dì qiú běn lái jiù hěn yuán 
+jiùsuàn jīn tiān nǐ yào zǒu dé duō yuǎn 
+fǎn zhèng jiùshì yī tiáo dì píng xiàn 
+fǎn zhèng yuànwàng bù yī dìng huì shí xiàn 
+fǎn zhèng chéng nuò bù yī dìng yào duì xiàn 
+fǎn zhèng shuì xǐng shì xīn de yī tiān 
+
+bié duì wǒ shuō zài jiàn yī jù zài jiàn 
+ ràng ài biàn dé biǎo miàn 
+zhēn de bù yòng shuō zài jiàn jiùsuàn zài jiàn 
+jié jú bù néng gǎi biàn 
+jiù suàn wǒ hé nǐ zhī jiān liǎng gè shì jiè
+zài yě méi yǒu jiāo jiē
+bù yòng bào qiàn jiù zhēn de zài jiàn 
+
+ài qíng dào zhōng diǎn wǒ men zhǐ néng shuō zài jiàn   

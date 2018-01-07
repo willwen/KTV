@@ -1,8 +1,4 @@
 
-.help-block {
-    color:#ff7a7a;
-}
-
 label {
     font-size: 1.25em;
 }
@@ -72,10 +68,6 @@ form {
 }
 
 
-/**
-  Lyric Display Stylings
-**/
-
 .gradient {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 6px;
@@ -89,4 +81,15 @@ form {
     transform: translate(-50%, -50%);
     z-index: 5;
     /*show in the front*/
+}
+
+#redirect{
+    color: #365899;
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#redirect:hover {
+    text-decoration: underline;
 }

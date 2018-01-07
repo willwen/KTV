@@ -1,23 +1,27 @@
 export default class SearchBar extends React.Component {
-
-	constructor(){
+	constructor() {
 		super();
-		this.state = {
-		}
+		this.state = {};
 		this.searchSongs = this.searchSongs.bind(this);
 	}
 
-	searchSongs(){
+	searchSongs() {
 		this.props.onTextChanged(this.refs.textBox.value);
 	}
-	
+
 	render() {
 		return (
-			<div className = "row">
-				<div className = "searchDiv input-group">
-						<input className="form-control" id="songSearchInput" ref="textBox" 
-							name="search" placeholder="Song Search..."  type="text"
-							onKeyUp={this.searchSongs}/>
+			<div className="row">
+				<div className="searchDiv input-group">
+					<input
+						className="form-control"
+						id="songSearchInput"
+						ref="textBox"
+						name="search"
+						placeholder="Song Search..."
+						type="text"
+						onKeyUp={this.searchSongs}
+					/>
 				</div>
 			</div>
 		);
