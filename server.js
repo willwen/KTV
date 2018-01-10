@@ -192,49 +192,6 @@ app.get('/getSong', function(req, res) {
                     }))
                 })
 
-                // //grab the mp3
-                // let fetchSongPromise = (instru)=>{
-                //     new Promise((resolve, reject) => {
-                //         let searchGlob;
-                //         searchGlob = 'songs/' + id + '*/*.mp3'    
-
-                //         glob(searchGlob)
-                //             .then((contents) => {
-                //                 // songPayload['songPath'] = contents[0].split("songs/")[1];
-                //                 songPayload['songPath'] = "https://s3.us-east-2.amazonaws.com/ktv.songs/Backstreet+Freestyle+-+Kendrick+Lamar.mp3"
-                //                 resolve();
-                //             })
-                //             .catch((err) => {
-                //                 console.log(searchGlob + " most likely DOES NOT exist.")
-                //                 songPayload['songPath'] = "mp3 file not found";
-                //                 resolve()
-                //             })
-                //     })
-                // }
-                // getFilesPromises.push(fetchSongPromise(instru))
-                // if (instru) {
-                //     //grab the mp3
-                //     var fetchInstrumentalPromise = (instru) => {
-                //         new Promise((resolve, reject) => {
-                //             let searchGlob;
-                //             searchGlob = 'songs/' + id + '*/Instrumental/*.mp3'
-
-                //             glob(searchGlob)
-                //                 .then((contents) => {
-                //                     songPayload['instrumentalPath'] = contents[0].split("songs/")[1];
-                //                     resolve();
-                //                 })
-                //                 .catch((err) => {
-                //                     console.log(searchGlob + " most likely DOES NOT exist.")
-                //                     songPayload['instrumentalPath'] = "mp3 file not found";
-                //                     resolve()
-                //                 })
-                //         })
-                //     }
-                //     getFilesPromises.push(fetchInstrumentalPromise(instru))
-                // }
-
-
                 Promise.all(getFilesPromises).then(() => {
                         res.end(JSON.stringify(songPayload, 'utf-8'));
                     })

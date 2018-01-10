@@ -28,7 +28,7 @@ export default class Form extends React.Component {
 				window.localStorage.getItem("timestamps")
 			);
 			var timeStampString = timestamps.reduce((totalString, line) => {
-				return totalString + line + "\n";
+				return totalString + line.replace(':', '') + "\n";
 			}, "");
 			this.setState({
 				times: timeStampString
