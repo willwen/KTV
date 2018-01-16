@@ -6,8 +6,7 @@
 }
 .currentLine{
 	font-weight: 700;
-    text-decoration: underline;
-
+	font-size: 20px;
 }
 #description {
 	padding-right:40px;

@@ -68,6 +68,7 @@ export default class Lyrics extends React.Component {
                                     size="4"
                                 />
                             </div>
+
                         </div>
                     );
                 })}

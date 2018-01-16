@@ -4,6 +4,7 @@ export default class UploadContainer extends React.Component {
 		this.state = {};
 		this.lyricsChanged = this.lyricsChanged.bind(this);
 		this.audioSourceChanged = this.audioSourceChanged.bind(this);
+		this.clear = this.clear.bind(this);
 	}
 	componentWillMount() {}
 	componentDidMount() {}
@@ -40,6 +41,10 @@ export default class UploadContainer extends React.Component {
 
 	//add AudioPlayer other methods here to support ^
 
+	clear() {
+		window.location.reload();
+	}
+
 	render() {
 		return (
 			<div className="dotted-border">
@@ -75,12 +80,12 @@ export default class UploadContainer extends React.Component {
 					</p>
 					<p>
 						{" "}
-						Hit the Pretty Print button after all times have been
-						recorded, and copy it into Submit a Song.{" "}
+						Click 'Transfer' to transfer all recorded times into 
+						Line Timings' textbox of Submit a Song's page.{" "}
 					</p>
 				</div>
 				<div className="row text-center">
-					<div className="col-6">
+					<div className="col-5">
 						Upload a .txt file for the lyrics of the song.<br />
 						<input
 							type="file"
@@ -91,7 +96,7 @@ export default class UploadContainer extends React.Component {
 							onChange={e => this.lyricsChanged(e)}
 						/>
 					</div>
-					<div className="col-6">
+					<div className="col-5">
 						Upload a .mp3 file for the audio of the song.<br />
 						<input
 							type="file"
@@ -100,6 +105,15 @@ export default class UploadContainer extends React.Component {
 							className="btn"
 							accept=".mp3"
 							onChange={this.audioSourceChanged}
+						/>
+					</div>
+					<div className="col-2">
+					<br />
+						<input
+							type="button"
+							className="btn"
+							value="Clear"
+							onClick={this.clear}
 						/>
 					</div>
 				</div>

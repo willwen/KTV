@@ -31,8 +31,8 @@ export default class MainContainer extends React.Component {
 
 	}
 	componentWillMount(){
-	  	
 	}
+	
 	componentDidMount(){
 	    window.addEventListener("beforeunload", this.onUnload)
 	    if(window.localStorage.getItem("timestamps") && 
@@ -49,9 +49,9 @@ export default class MainContainer extends React.Component {
    		window.removeEventListener("beforeunload", this.onUnload)
 	}
 
- 	onUnload(event) { // the method that will be used for both add and remove event
-        window.localStorage.setItem("timestamps", JSON.stringify(this.state.timestamps))
-    }
+	onUnload(event) { // the method that will be used for both add and remove event
+		window.localStorage.setItem("timestamps", JSON.stringify(this.state.timestamps))
+	}                                                                                                                                         
 
     clearLocalStorage(){
 	   	window.localStorage.clear();

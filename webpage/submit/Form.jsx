@@ -7,7 +7,15 @@ export default class Form extends React.Component {
 		super(props);
 		this.state = {
 			request: "pending",
-			captchaAnswered: false
+			captchaAnswered: false,
+
+			song: "",
+			artist: "",
+			primaryLanguageLyrics: "",
+			pronounciationLyrics: "",
+			translatedLyrics: ""
+
+
 		};
 
 		this.handleChange = this.handleChange.bind(this);
@@ -34,17 +42,50 @@ export default class Form extends React.Component {
 				times: timeStampString
 			});
 		}
+		if (
+			window.localStorage.getItem("song") &&
+			window.localStorage.getItem("song").length > 1
+		) { 
+			this.setState({
+				song: window.localStorage.getItem("song")})
+		}
+		if (
+			window.localStorage.getItem("artist") &&
+			window.localStorage.getItem("artist").length > 1
+		) { 
+			this.setState({
+				artist: window.localStorage.getItem("artist")})
+		}
+		if (
+			window.localStorage.getItem("primaryLanguageLyrics") &&
+			window.localStorage.getItem("primaryLanguageLyrics").length > 1
+		) { 
+			this.setState({
+				primaryLanguageLyrics: window.localStorage.getItem("primaryLanguageLyrics")})
+		}
+		if (
+			window.localStorage.getItem("pronounciationLyrics") &&
+			window.localStorage.getItem("pronounciationLyrics").length > 1
+		) { 
+			this.setState({
+				pronounciationLyrics: window.localStorage.getItem("pronounciationLyrics")})
+		}
+		if (
+			window.localStorage.getItem("translatedLyrics") &&
+			window.localStorage.getItem("translatedLyrics").length > 1
+		) { 
+			this.setState({
+				translatedLyrics: window.localStorage.getItem("translatedLyrics")})
+		}
 	}
+
 	componentWillUnmount() {
 		// window.removeEventListener("beforeunload", this.onUnload);
 	}
 
 	onUnload(event) {
 		// the method that will be used for both add and remove event
-		// window.localStorage.setItem(
-		// 	"timestamps",
-		// 	JSON.stringify(this.state.timestamps)
-		// );
+		//window.localStorage.setItem("timestamps", JSON.stringify(this.state.timestamps));
 	}
 
 	handleChange(event) {
@@ -55,6 +96,7 @@ export default class Form extends React.Component {
 			//braces mean eval of 'name'
 			[name]: value
 		});
+		window.localStorage.setItem([name],value);
 	}
 
 	setCaptchaToken(token) {
@@ -104,6 +146,7 @@ export default class Form extends React.Component {
 							<Input
 								id="song"
 								type="text"
+								value={this.state.song}
 								onChange={this.handleChange}
 								disabled={
 									this.state.request === "pending"
@@ -119,6 +162,7 @@ export default class Form extends React.Component {
 							<Input
 								id="artist"
 								type="text"
+								value={this.state.artist}
 								onChange={this.handleChange}
 								disabled={
 									this.state.request === "pending"
@@ -136,6 +180,7 @@ export default class Form extends React.Component {
 							<Input
 								id="primaryLanguageLyrics"
 								type="textarea"
+								value={this.state.primaryLanguageLyrics}
 								onChange={this.handleChange}
 								disabled={
 									this.state.request === "pending"
@@ -151,6 +196,7 @@ export default class Form extends React.Component {
 							<Input
 								id="pronounciationLyrics"
 								type="textarea"
+								value={this.state.pronounciationLyrics}
 								onChange={this.handleChange}
 								disabled={
 									this.state.request === "pending"
@@ -166,6 +212,7 @@ export default class Form extends React.Component {
 							<Input
 								id="translatedLyrics"
 								type="textarea"
+								value={this.state.translatedLyrics}
 								onChange={this.handleChange}
 								disabled={
 									this.state.request === "pending"
