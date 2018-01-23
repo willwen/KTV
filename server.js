@@ -35,7 +35,13 @@ environment === "production" ?
 
 //Express Setup//////////////////////////////////////////////////////////////////////////////////////////////////
 var app = express();
-
+app.get('/', (req, res)=>{
+    res.send("saV2Z_NmBhtyrn_xQ6KD3JAdf6n-s0sw7qebxL8o58s.zPZRJbebpojmPKLyveLzPkJD9vA1zMX6tOONhhCecag")
+})
+var server = app.listen(process.env.PORT || port, function() {
+    console.log('Listening on port %s!', server.address().port)
+})
+return;
 app.use(express.static('webpage/index'))
 app.use(express.static('webpage/submit'))
 app.use(express.static('webpage/song'))
