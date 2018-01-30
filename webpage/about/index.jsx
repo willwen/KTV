@@ -18,8 +18,15 @@ export default class MainContainer extends React.Component {
 					<PageHeader />
 				</div>
 				<div className="container">
-					<h3>About the Project</h3>
-					<h5>
+					<div className = "pimg1">
+						<div className = "ptext">
+							<span className = "border">
+								Hangzhou 2015
+							</span>
+						</div>
+					</div>
+					<div className = "section section-light">
+						<h2>About the Project</h2>
 						<div className="row about">
 							When I visited China back in 2015, Karaoke was a big
 							thing there. People were killin' the songs and I
@@ -30,10 +37,16 @@ export default class MainContainer extends React.Component {
 							That way, non-natives can still follow along and
 							slowly learn their favorite songs.
 						</div>
-					</h5>
-					<br />
-					<h3>Copyright / Licensing</h3>
-					<h5>
+					</div>
+					<div className = "pimg2">
+						<div className = "ptext">
+							<span className = "border trans">
+								hey2
+							</span>
+						</div>
+					</div>
+					<div className = "section section-dark">
+						<h2>Copyright / Licensing</h2>
 						<div className="row about">
 							I do not own any of the songs present on this
 							website. All music rights belong to their respective
@@ -47,7 +60,14 @@ export default class MainContainer extends React.Component {
 							educational or personal use tips the balance in
 							favor of fair"
 						</div>
-					</h5>
+					</div>
+					<div className = "pimg3">
+						<div className = "ptext">
+							<span className = "border trans">
+								hey3
+							</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		);
