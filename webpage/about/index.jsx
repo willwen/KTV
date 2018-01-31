@@ -1,3 +1,4 @@
+import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
 import PageHeader from "../SharedReactComponents/Header.jsx";
 import ReactDOM from "react-dom";
 
@@ -15,6 +16,7 @@ export default class MainContainer extends React.Component {
 		return (
 			<div>
 				<div>
+					<PageNavbar/>
 					<PageHeader />
 				</div>
 				<div className="container">

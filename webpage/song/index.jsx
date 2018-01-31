@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 
-import PageHeader from "../SharedReactComponents/Header.jsx";
+import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
 
 import OptionsMenu from "./OptionsMenu.jsx";
 import SongTitle from "./SongTitle.jsx";
@@ -154,7 +154,7 @@ export default class MainContainer extends React.Component {
 		return (
 			<div>
 				<div>
-					<PageHeader />
+					<PageNavbar />
 					<div className="container">
 						<OptionsMenu
 							primaryLanguage={this.state.primaryLanguage}

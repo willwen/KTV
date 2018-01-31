@@ -127,6 +127,9 @@ body {
     flex-wrap: wrap;
 }
 
+.navbar-margin-bottom{
+    margin-bottom: 20px;
+}
 
 /*https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
 */

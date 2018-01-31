@@ -1,4 +1,4 @@
-import PageHeader from '../SharedReactComponents/Header.jsx'
+import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
 import UploadContainer from './UploadContainer.jsx'
 import AudioPlayer from './AudioPlayer.jsx'
 import Lyrics from './Lyrics.jsx'
@@ -117,7 +117,7 @@ export default class MainContainer extends React.Component {
 	render() {
 		return (
 			<div>
-				<PageHeader/>
+				<PageNavbar/>
 				<div className = "container">
 		    		<UploadContainer recordTime = {this.recordTime}
 		    			setLyrics = {this.setLyrics} setAudioSource = {this.setAudioSource}/>

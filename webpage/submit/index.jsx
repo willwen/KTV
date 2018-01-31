@@ -1,4 +1,5 @@
-import PageHeader from "../SharedReactComponents/Header.jsx";
+import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
+
 import Form from "./Form.jsx";
 import ReactDOM from "react-dom";
 import axios from "axios";
@@ -14,9 +15,7 @@ export default class MainContainer extends React.Component {
 	render() {
 		return (
 			<div>
-				<div>
-					<PageHeader />
-				</div>
+				<PageNavbar/>
 				<div className="container">
 					<div className="form">
 						<Form />
