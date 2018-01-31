@@ -14,7 +14,8 @@ var port = 8080,
     mlabUser = process.env.MLAB_USER,
     mlabPass = process.env.MLAB_PASS
 
-
+const bucketName = require('./constants.js').bucketName
+const s3SongsBucketURL = require('./constants.js').s3SongsBucketURL
 
 var mongoURL;
 environment === "production" ?

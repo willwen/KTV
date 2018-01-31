@@ -15,8 +15,8 @@ var fromEmail = process.env.EMAIL,
     captchaSecret = process.env.CAPTCHA_SECRET
 
 
-const bucketName = "ktvuploads"
-const s3SongsBucketURL = " https://s3.us-east-2.amazonaws.com/ktv.songs/"
+const bucketName = require('./constants.js').bucketName
+const s3SongsBucketURL = require('./constants.js').s3SongsBucketURL
 
 // Amazon SDK Setup //////////////////////////////////////////////////////////////////////////////////////////
 //config region. SES is not in us-east-2
