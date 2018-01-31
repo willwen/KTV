@@ -44,7 +44,7 @@ export default class PageNavbar extends React.Component {
                 <NavLink href="/treefind">Search</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/submit">Submit a Song</NavLink>
+                <NavLink href="/contribution/submit">Submit a Song</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/timepicker">TimePicker</NavLink>

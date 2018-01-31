@@ -77,14 +77,14 @@ export default class Form extends React.Component {
 		formData.append("audioFile", audioFile.files[0]);
 		formData.append("payload", JSON.stringify(this.state));
 		axios
-			.post("upload", formData, {
+			.post("/contribution/upload", formData, {
 				headers: {
 					"Content-Type": "multipart/form-data"
 				}
 			})
 			.then(response => {
 				this.setState({ request: "done" });
-				if (response.data.redirect === "/uploadComplete") {
+				if (response.data.redirect === "/contribution/uploadComplete") {
 					// data.redirect contains the string URL to redirect to
 					window.location.href = response.data.redirect;
 				} else {

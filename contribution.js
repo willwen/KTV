@@ -1,12 +1,22 @@
 var archiver = require('archiver'), // zip up uploads
     aws = require('aws-sdk'), // s3 and SES
     nodemailer = require('nodemailer'), // contains SES Transporter
-    path = require('path') //used to resolve __dirname
+    path = require('path'), //used to resolve __dirname
+    multer = require('multer'), // https://github.com/expressjs/multer ; Multer is a node.js middleware for handling multipart/form-data
+    fs = require('fs-extra'),
+	express = require('express'),
+	xssfilters = require('xss-filters'),
+    axios = require ('axios'), // http request library
+    qs = require('qs') //encode data to application/x-www-form-urlencoded format
 
-    var fromEmail = process.env.EMAIL,
-        uploadDirectory = path.join(__dirname, "uploads"),
-        zipDirectory = path.join(__dirname, "/zip"),
-        captchaSecret = process.env.CAPTCHA_SECRET,
+var fromEmail = process.env.EMAIL,
+    uploadDirectory = path.join(__dirname, "uploads"),
+    zipDirectory = path.join(__dirname, "/zip"),
+    captchaSecret = process.env.CAPTCHA_SECRET
+
+
+const bucketName = "ktvuploads"
+const s3SongsBucketURL = " https://s3.us-east-2.amazonaws.com/ktv.songs/"
 
 // Amazon SDK Setup //////////////////////////////////////////////////////////////////////////////////////////
 //config region. SES is not in us-east-2
@@ -23,7 +33,37 @@ let transporter = nodemailer.createTransport({
 s3 = new aws.S3({ apiVersion: '2006-03-01' });
 
 
-app.post('/upload', upload.single('audioFile'), function(req, res) {
+var router = express.Router();
+
+//express middleware
+var storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, uploadDirectory)
+    },
+    filename: function(req, file, cb) {
+        cb(null, Date.now() + ".mp3")
+    }
+})
+var upload = multer({ storage: storage })
+
+router.use(express.static(path.join(__dirname ,'dist')))
+router.use(express.static(path.join(__dirname ,'images')))
+router.use(express.static(path.join(__dirname ,'webpage/common')))
+router.use(express.static(path.join(__dirname ,'webpage/submit')))
+
+
+router.get('/submit', function(req, res) {
+    createUploadDirectory()
+    createZipDirectory();
+    res.sendFile(__dirname + '/webpage/submit/index.html')
+})
+router.get('/uploadComplete', function(req, res) {
+    res.sendFile(__dirname + '/webpage/uploadComplete/index.html')
+    // getIP();
+})
+
+
+router.post('/upload', upload.single('audioFile'), function(req, res) {
 
     var payload = JSON.parse(req.body.payload)
     var userIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -36,9 +76,9 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
     var times = xssfilters.inHTMLData(payload.times)
 
     verifyCaptcha(captcha, userIP)
-        .then((response)=>{
+        .then((response) => {
             console.log("Captcha Response: " + response.statusText)
-            
+
             var lineSeparator = "\n=========================================================================\n"
             var submitDate = Date.now()
             var fileName = submitDate + ' ' + songName + '-' + artist + '.txt'
@@ -50,7 +90,7 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
 
             Promise.all([primaryLanguageFile, pronounciationLanguageFile, translationLanguageFile, timesFile])
                 .then(() => {
-                    res.send({ redirect: "/uploadComplete" })
+                    res.send({ redirect: "/contribution/uploadComplete" })
                     return zipFiles(songName, artist, submitDate)
                 })
                 .then((absoluteFilePath) => {
@@ -76,18 +116,18 @@ app.post('/upload', upload.single('audioFile'), function(req, res) {
                     return;
                 })
         })
-        .catch((err)=>{
+        .catch((err) => {
             if (!res.headersSent)
                 res.send({ message: "Your Captcha was incorrect. Please retry submitting" })
-            })
+        })
 })
 
 ////////////////////////////////////////////////////////////////////////////////////////
 //Verify Captcha User inputted against Google Server.
 //return a promise
-function verifyCaptcha(captcha, userIP){
+function verifyCaptcha(captcha, userIP) {
     const endpoint = "https://www.google.com/recaptcha/api/siteverify"
-    var payload = {secret: captchaSecret, response: captcha, remoteip: userIP}
+    var payload = { secret: captchaSecret, response: captcha, remoteip: userIP }
     return axios.post(endpoint, qs.stringify(payload))
 }
 
@@ -213,3 +253,4 @@ function createZipDirectory() {
         }
     })
 }
+module.exports = router;

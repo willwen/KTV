@@ -105,7 +105,7 @@ export default class MainContainer extends React.Component {
 	}
 	
 	transferOver(){
-		window.location.href='/submit'
+		window.location.href='/contribution/submit'
 	}
 
 	updateTimestamp(lineNumber, newTimestamp){

@@ -3,11 +3,8 @@ var fs = require('fs-extra'),
     express = require('express'),
     path = require('path'), //used to resolve __dirname
     mongodb = require('mongodb'),
-    axios = require ('axios'), // http request library
-    qs = require('qs'), //encode data to application/x-www-form-urlencoded format
     xssfilters = require('xss-filters'),
     // bodyParser = require('body-parser'),
-    multer = require('multer'), // https://github.com/expressjs/multer ; Multer is a node.js middleware for handling multipart/form-data
     glob = require("glob-promise"), // see linux file globbing
     escapeStringRegexp = require('escape-string-regexp'); // using regex query against mongodb, make sure it is escaped first
 
@@ -15,13 +12,13 @@ var fs = require('fs-extra'),
 var port = 8080,
     environment = process.env.NODE_ENV,
     mlabUser = process.env.MLAB_USER,
-    mlabPass = process.env.MLAB_PASS,
+    mlabPass = process.env.MLAB_PASS
 
 
-const bucketName = "ktvuploads"
-const s3SongsBucketURL = " https://s3.us-east-2.amazonaws.com/ktv.songs/"
+
+var mongoURL;
 environment === "production" ?
-    const mongoURL = "mongodb://" + mlabUser + ":" + mlabPass + "@ds127872.mlab.com:27872/heroku_0kfm3lp6" : const mongoURL = "mongodb://localhost:27017/songs"
+    mongoURL = "mongodb://" + mlabUser + ":" + mlabPass + "@ds127872.mlab.com:27872/heroku_0kfm3lp6" : mongoURL = "mongodb://localhost:27017/songs"
 //Usign Docker? Use this:
 // mongoURL= "mongodb://mongodb:27017/songs"
 
@@ -30,7 +27,7 @@ environment === "production" ?
 var app = express();
 
 app.use(express.static(path.join(__dirname ,'webpage/index')))
-app.use(express.static(path.join(__dirname ,'webpage/submit'))
+app.use(express.static(path.join(__dirname ,'webpage/submit')))
 app.use(express.static(path.join(__dirname ,'webpage/song')))
 app.use(express.static(path.join(__dirname ,'webpage/treesearch')))
 app.use(express.static(path.join(__dirname ,'webpage/common')))
@@ -42,15 +39,6 @@ app.use(express.static(path.join(__dirname ,'dist')))
 app.use(express.static(path.join(__dirname ,'images')))
 
 //Express Middleware //////////////////////////////////////////////////////////////////////////////////////////////
-var storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, uploadDirectory)
-    },
-    filename: function(req, file, cb) {
-        cb(null, Date.now() + ".mp3")
-    }
-})
-var upload = multer({ storage: storage })
 
 // configure the app to use bodyParser()
 // app.use(bodyParser.urlencoded({
@@ -101,16 +89,8 @@ app.get('/about', function(req, res) {
 app.get('/song', function(req, res) {
     res.sendFile(__dirname + '/webpage/song/index.html')
 });
-app.get('/submit', function(req, res) {
-    createUploadDirectory()
-    createZipDirectory();
-    res.sendFile(__dirname + '/webpage/submit/index.html')
-})
-app.get('/uploadComplete', function(req, res) {
-    res.sendFile(__dirname + '/webpage/uploadComplete/index.html')
-    // getIP();
-})
 
+app.use('/contribution', require('./contribution.js'))
 
 
 // send back a song.
