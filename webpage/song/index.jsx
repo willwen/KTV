@@ -6,6 +6,7 @@ import OptionsMenu from "./OptionsMenu.jsx";
 import SongTitle from "./SongTitle.jsx";
 import LyricsBody from "./LyricsBody.jsx";
 import AudioPlayer from "./AudioPlayer.jsx";
+import ScrollUp from "./ScrollUp.jsx";
 
 import axios from "axios";
 
@@ -152,7 +153,7 @@ export default class MainContainer extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className = "offset-navbar">
 				<div>
 					<PageNavbar />
 					<div className="container">
@@ -186,6 +187,7 @@ export default class MainContainer extends React.Component {
 						/>
 					</div>
 				</div>
+				<ScrollUp/>
 				<AudioPlayer
 					ref="audioPlayer"
 					currentSong={this.state.songPath}

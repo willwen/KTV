@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+import $ from "jquery"
 
 export default class PageNavbar extends React.Component {
   constructor(props) {
@@ -16,18 +17,40 @@ export default class PageNavbar extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: true
+      isOpen: true,
+      navbarClass: ""
     };
   }
+  componentDidMount(){
+    document.addEventListener("scroll", ()=>{
+      let top = $(document).scrollTop();
+
+      let height = 300;
+          //alert(batas);
+
+      if (top > height) {
+          this.setState({
+            navbarClass : 'menu-scroll'
+          });
+      } else {
+          this.setState({
+            navbarClass : ''
+          });
+      }    
+    })
+    
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
+
   render() {
     return (
-      <div className = "navbar-margin-bottom">
-        <Navbar dark expand="md">
+        <Navbar fixed="top" dark expand="md" className={this.state.navbarClass}>
           <NavbarBrand href="/">
             <img src="logo.png" alt="logo" width="50" />
           </NavbarBrand>
@@ -52,8 +75,7 @@ export default class PageNavbar extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
-        
+       
     );
   }
 }

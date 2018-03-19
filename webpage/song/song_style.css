@@ -249,6 +249,42 @@ Visualizer Canvas
     stroke-dashoffset: 314;
 }
 
+/** Scroll Up Button
+**/
+.scrollup {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.scrollup i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none;
+}
+
+.scrollup:hover {
+    background: #07ff0e;
+    opacity: 1;
+}
 
 /**
   Footer and Audio Player Stylings

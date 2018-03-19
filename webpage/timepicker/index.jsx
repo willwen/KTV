@@ -118,7 +118,7 @@ export default class MainContainer extends React.Component {
 		return (
 			<div>
 				<PageNavbar/>
-				<div className = "container">
+				<div className = "container offset-navbar">
 		    		<UploadContainer recordTime = {this.recordTime}
 		    			setLyrics = {this.setLyrics} setAudioSource = {this.setAudioSource}/>
 		    		<AudioPlayer ref = "audioPlayer" src= {this.state.audioSource}/>

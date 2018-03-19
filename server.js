@@ -38,6 +38,7 @@ app.use(express.static(path.join(__dirname ,'songs')))
 app.use(express.static(path.join(__dirname ,'favicons')))
 app.use(express.static(path.join(__dirname ,'dist')))
 app.use(express.static(path.join(__dirname ,'images')))
+app.use('/contribution', require('./contribution.js'))
 
 //Express Middleware //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -91,7 +92,7 @@ app.get('/song', function(req, res) {
     res.sendFile(__dirname + '/webpage/song/index.html')
 });
 
-app.use('/contribution', require('./contribution.js'))
+
 
 
 // send back a song.

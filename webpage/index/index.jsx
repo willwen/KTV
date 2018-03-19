@@ -26,8 +26,9 @@ export default class MainContainer extends React.Component {
 	render() {
 		return (
 			<div>
-			  <div className="container-fluid">
 			  	<PageNavbar/>
+			  <div className="container-fluid">
+
 		      	<PageHeader/>
 		      </div>
 		      <div className="container">

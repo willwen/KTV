@@ -16,7 +16,7 @@ export default class MainContainer extends React.Component {
 		return (
 			<div>
 				<PageNavbar/>
-				<div className="container">
+				<div className="container offset-navbar">
 					<div className="form">
 						<Form />
 					</div>

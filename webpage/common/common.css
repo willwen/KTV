@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700');
 
 
+
 /*Set Border Box and Font
   Border Box means elements should have padding and border included in the element's total width and height
 */
@@ -19,8 +20,11 @@ html {
 }
 
 
+
 /*When Links are hovered over, give that funny pointer*/
+
 a {
+    text-align: center;
     color: #fff;
     opacity: 0.8;
     text-transform: none;
@@ -35,12 +39,10 @@ a:hover {
 
 
 
+
 /*Header Styles*/
 
-
-
-
-.jumbotron >.fa {
+.jumbotron>.fa {
     margin: 5px;
     padding: 20px;
     font-size: 1.5em;
@@ -56,6 +58,8 @@ nav {
     background-color: #8332AC;
     padding-left: 20px;
     padding-right: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 
 .nav {
@@ -63,6 +67,7 @@ nav {
     float: right;
     font-size: 20px;
 }
+
 
 /*.nav p {
     display: inline;
@@ -83,10 +88,10 @@ body {
 }
 
 
+
 /**
   Bootstrap Overrides
  */
-
 
 .jumbotron {
     background: transparent;
@@ -107,7 +112,28 @@ body {
 }
 
 .container-fluid {
-     padding:0;
+    padding: 0;
+}
+
+
+/** Navbar
+**/
+
+.menu-scroll {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-color: rgba(136, 70, 197, .64);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    /* height: 75px; */
 }
 
 
@@ -117,8 +143,12 @@ body {
 
 .welcome {
     font-size: 2em;
+    padding-top: 150px;
 }
 
+.offset-navbar {
+    padding-top: 120px;
+}
 
 
 .equal {
@@ -127,9 +157,10 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar-margin-bottom{
+.navbar-margin-bottom {
     margin-bottom: 20px;
 }
+
 
 /*https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
 */
@@ -145,14 +176,13 @@ body {
 }
 
 
-::selection { 
-    background: #574AE2; 
+::selection {
+    background: #574AE2;
     color: white;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: white;
     background: #574AE2;
 }
-
-

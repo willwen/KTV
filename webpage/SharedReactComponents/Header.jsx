@@ -7,7 +7,6 @@ export default class PageHeader extends React.Component {
 
   render() {
     return (
-      <div>
         <div className="text-center jumbotron welcome">
           <h1>Become a Karaoke Legend</h1>
           <h2>
@@ -24,7 +23,6 @@ export default class PageHeader extends React.Component {
             className="fa fa-linkedin"
           />
         </div>
-      </div>
     );
   }
 }

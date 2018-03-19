@@ -1,5 +1,5 @@
 {
-  "name": "song_web",
+  "name": "KTV_Legend",
   "version": "1.0.0",
   "description": "Chinese Song Lyrics Database",
   "main": "server.js",
@@ -14,7 +14,7 @@
     "webpack": "webpack",
     "less": "less-watch-compiler --config webpage/less-watch-compiler.config.json"
   },
-  "author": "",
+  "author": "Will Wen <will.wen1@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "archiver": "^2.1.0",
@@ -40,10 +40,7 @@
     "uuid": "^3.1.0",
     "xss-filters": "^1.2.7"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/willwen/KTV.git"
-  },
+  "repository": "git+https://github.com/willwen/KTV.git",
   "bugs": {
     "url": "https://github.com/willwen/KTV/issues"
   },
