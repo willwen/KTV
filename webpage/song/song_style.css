@@ -253,9 +253,9 @@ Visualizer Canvas
 **/
 .scrollup {
     display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
     opacity: .3;
     position: fixed;
     bottom: 25px;
@@ -298,7 +298,7 @@ need to define with of 90% so the margin knows how much to cut*/
     display: block;
     margin: 0 auto;
     width: 95%;
-    height: 300px;
+    /* height: 300px; */
 }
 
 

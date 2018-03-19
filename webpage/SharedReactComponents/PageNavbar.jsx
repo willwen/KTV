@@ -21,13 +21,13 @@ export default class PageNavbar extends React.Component {
       navbarClass: ""
     };
   }
+
   componentDidMount(){
     document.addEventListener("scroll", ()=>{
+      //value of the vertical scroll bar
       let top = $(document).scrollTop();
 
       let height = 300;
-          //alert(batas);
-
       if (top > height) {
           this.setState({
             navbarClass : 'menu-scroll'
@@ -71,6 +71,9 @@ export default class PageNavbar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/timepicker">TimePicker</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/login">Login</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

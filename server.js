@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname ,'favicons')))
 app.use(express.static(path.join(__dirname ,'dist')))
 app.use(express.static(path.join(__dirname ,'images')))
 app.use('/contribution', require('./contribution.js'))
-
+app.use('/login', require('./login.js'))
 //Express Middleware //////////////////////////////////////////////////////////////////////////////////////////////
 
 // configure the app to use bodyParser()

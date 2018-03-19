@@ -13,7 +13,8 @@ module.exports = {
         song: './webpage/song/index.jsx',
         submit: './webpage/submit/index.jsx',
         about: './webpage/about/index.jsx',
-        timepicker: './webpage/timepicker/index.jsx'
+        timepicker: './webpage/timepicker/index.jsx',
+        login: './webpage/login/index.jsx'
     },
     output: {
     	path: __dirname + '/dist',

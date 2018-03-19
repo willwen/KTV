@@ -7,10 +7,10 @@ This is a website to learn and sing along with foreign songs, in lanaguages such
 Search results populate based on any metadata you type into the search bar, like artist name or song title. You can also scroll through the list of songs that appears on the home page. Clicking on a song takes you to a visualization page, displaying PinYin, Chinese characters, and English. Users can choose to automate scrolling as the song plays, see the line numbers, and see the visualizer. To control the audio player, you can press space to play or pause the song, press - for volume down and press = for volume up. Enjoy singing foreign songs! :)
 
 ## How to Install Locally
-1) Install Git, Node.js, Mongodb
+1) Install Git, Node.js, Mongodb, and yarn (yes it's that much better)
 2) ``` git clone "https://github.com/willwen/KTV.git" ```
 3) ``` cd $KTV/KTV/ ```
-4) ```npm install ```
+4) ```yarn install ```
 5) The mongodb can be local or remote (heroku's mlab server).
 
 	In server.js , we see:
@@ -30,11 +30,11 @@ Search results populate based on any metadata you type into the search bar, like
 	Import the songs.json file:
   		``` mongoimport --db songs --collection songs --file songs.json```
 		
-6) If you want to use local mongodb run ```npm run dev ``` <br/>
-If you want to use mlab (production) mongodb run ```npm run perf```
+6) If you want to use local mongodb run ```yarn run dev ``` <br/>
+If you want to use mlab (production) mongodb run ```yarn run perf```
 7) In web browser, go to localhost:8080
 8) If you want to do react development (aka mess with the code in webpage/)
-``` npm run webpack ```<br/>
+``` yarn run webpack ```<br/>
 It will detect any file changes in webpage/* and generate a dist/bundle.js file, which is what index.html uses
 
 ## Authors

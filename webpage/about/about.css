@@ -4,14 +4,6 @@ body, html{
 	background: none;
 }
 
-.special-navbar{
-	position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    opacity: 1;
-
-}
 
 .about {
 	padding: 30px;
