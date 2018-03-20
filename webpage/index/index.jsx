@@ -1,6 +1,5 @@
 import ReactDOM from 'react-dom';
 import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
-
 import PageHeader from '../SharedReactComponents/Header.jsx'
 import SearchPanel from './SearchPanel.jsx'
 

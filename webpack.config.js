@@ -14,7 +14,8 @@ module.exports = {
         submit: './webpage/submit/index.jsx',
         about: './webpage/about/index.jsx',
         timepicker: './webpage/timepicker/index.jsx',
-        login: './webpage/login/index.jsx'
+        login: './webpage/login/index.jsx',
+        treesearch: './webpage/treesearch/index.jsx'
     },
     output: {
     	path: __dirname + '/dist',
