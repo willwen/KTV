@@ -3,24 +3,27 @@ import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
 import axios from 'axios';
 const uuidv4 = require('uuid/v4');
 import {Collapse} from 'react-bootstrap'
-
+import AnchorHover from './AnchorHover.jsx'
 
 
 export default class MainContainer extends React.Component {
 	constructor(){
 		super();
 		this.state={
-			elements : {
-			},
-			maxLevel: 0
+			searchCategories : {}
 		};
 		this.getArtists = this.getArtists.bind(this);
 		this.handleArtists = this.handleArtists.bind(this);
 		this.createTree = this.createTree.bind(this);
-		
+		this.getLanguages = this.getLanguages.bind(this);
+		// this.createAnchor = this.createAnchor.bind(this);
+		// this.createIcon = this.createIcon.bind(this);
+		// this.createTextLabel = this.createTextLabel.bind(this);
+
+
 	}
 	componentWillMount(){
-	  	this.getArtists()
+	  	this.getArtists();
 	}
 	componentDidMount(){
 		
@@ -30,63 +33,75 @@ export default class MainContainer extends React.Component {
 		
 	}
 
+	getLanguages(){
+		// axios.get("language")
+		// 	.then((response)=>this.handleArtists(response["data"]))
+		// 	.catch(error => console.log(error));
+	}
 	
-	getArtists(id, title, artist){
+	getArtists(){
 		axios.get("artists")
 			.then((response)=>this.handleArtists(response["data"]))
 			.catch(error => console.log(error));
 	}
 	//called when a user clicks on a new song
 	handleArtists(data){
-		var elements = {
-	        artists: []
+		var artists = {
+	        id: "allArtists",
+	        elements: []
 	    }
+	    var songs = []
 	    for (var i = 0; i < data.length; i++) {
-	        let artistInfo = data[i]
-	        let artistName = artistInfo["_id"]
-	        let artistIcon = artistInfo["_id"]+".png"
-	        let artistID = uuidv4()
-	        let songsID = uuidv4();
-	        let artistSongs = artistInfo["songs"]
+	        var artist = data[i]
+	        var artistID = uuidv4()
+	        var songID = uuidv4();
 
-	        var songsByArtist = { //child div, has a parent of an artist, is an array of songs
-	            id: songsID, //selfID
-	            parentId: artistID, //parent ID
-	            songs: [ //the list of songs by this artist
-	            ]
+	        var child = {
+	            id: songID,
+	            parentId: artistID,
+	            elements: []
 
 	        }
-	        for (var j = 0; j < artistSongs.length; j++) {
-	        	let songTitle = artistSongs[j]["cn_char"];
-	            songsByArtist.songs.push({
-	                name: songTitle,
-	                icon: artistIcon,
-	                linkTo: "/song?id=" + artistSongs[j]["file_name"] + "&title=" + songTitle + "&artist=" + artistName
+	        for (var j = 0; j < artist.songs.length; j++) {
+	            child.elements.push({
+	                name: artist.songs[j].cn_char,
+	                icon: artist.songs[j]["artist_pinyin"] + ".png",
+	                linkTo: "/song?id=" + artist.songs[j]["file_name"]
 	            })
 	        }
-
-	        elements.artists.push({
-	            name: artistName,
-	            icon: artistIcon,
-	            child: songsByArtist,
+	        songs.push(child)
+	        artists.elements.push({
+	            name: artist["_id"],
+	            icon: artist.songs[0]["artist_pinyin"] + ".png",
+	            child: songs[i],
 	        })
 	    }
+	    //{name: "Language", icon: "Language.png", child: languages},
 		this.setState({
-			elements: elements
+			searchCategories : {
+					elements:  [ 
+         				{
+         					name: "All Artists", 
+         					icon: "Artist.png", 
+         					child: artists 
+         				}
+    				]
+				}
 		});
-		console.log(elements)
+		console.log(artists)
 	}
 
 
 
 	//using BFS, create nodes and append them to root.
- 	createTree() {
+ 	createTree(searchCategories) {
  		//axios hasnt given the list of artists yet
- 		if(this.state.elements.id == null){
+ 		if(this.state.searchCategories.elements == null){
  			return null
  		}
- 		var rootNode = (<div></div>);
- 		var root = this.state.elements;
+ 		var domLevels = []
+ 		var maxLevel = 1;
+ 		var root = this.state.searchCategories;
  		var level = 1;
 	    var queue = [];
 	    queue.push(root);
@@ -107,46 +122,45 @@ export default class MainContainer extends React.Component {
 	        var id = node.id;
 	        var elements = node.elements;
 
-	        var collapseDivAttrs = {}
-	        collapseDivAttrs[id] = id
-	        //create a div to hold all nodes in a level
-	        var levelContainer = (<div className = {level + "_level level"}></div>);
 
-	        // if (node.id) {
-	        //     collapseDiv.addClass("collapse");
-	        // }
+	       domLevels.push((
+	        	<Collapse id = {id}>
+		        	<div className = {level + "_level level"}>
+		        		{
+		        			elements.map(function(element, index) {
+								var anchorAttributes = {}
+								anchorAttributes["className"] = "item"
+								//if this element just needs to link to a dashboard
+								if (element.linkTo) {
+								    anchorAttributes["href"] = element.linkTo;
+								} else if (element.child) {
+								    anchorAttributes["href"] = "#";
+						       }
+							    //attatch and ID if it has one
+							    if (element.id)
+							        anchorAttributes["id"] = element.id;
 
-	        //create a div with unique ID to be toggled with collapse()
-	        var collapseDiv = (<Collapse {...collapseDivAttrs}></Collapse>);
+						    	if (element.child)
+					                queue.push(element.child);
 
-	        elements.forEach(function(element) {
-	            var anchor = createAnchor(element, level);
-	            var iconDiv = createIcon(element, level);
-	            var textLabel = createTextLabel(element);
-
-	            // if (element.child) {
-	            //     queue.push(element.child);
-	            //     //if this element has children, and a user hovers over this, show a bottom border to denote
-	            //     // this element will expand its children if clicked.
-	            //     anchor.hover(function() {
-	            //         //when a mouse enters
-	            //         $(this).css("border-bottom", "medium outset #9c8585")
-	            //     }, function() {
-	            //         //when a mouse leaves
-	            //         $(this).css("border-bottom", "medium solid rgba(255,255,255,0)")
-	            //     })
-	            // }
-	            anchor.append(iconDiv);
-	            anchor.append(textLabel);
-	            levelContainer.append(anchor);
-
-	        });
-	        let node =  React.findDOMNode(collapseDiv)
-	        node.append(levelContainer)
-	        rootNode.append(collapseDiv);
+							    return (
+							    	<AnchorHover 
+							    		key = {"level_" + level + "_index_" + index} 
+							    		{...anchorAttributes}
+										image = {(<div>
+								    		<img className={"icon childLevelIcon"} src={element.icon}></img>
+							    		</div>)}
+							    		textLabel = {
+							    			(<div className="textLabel nowrap">{element.name}</div>)	
+							    		}/>
+							    	);
+							})
+		        		}
+					</div>
+	        	</Collapse>));
 	    }
 	    maxLevel = level;
-	    return;
+	    return domLevels;
 
 	}
 
@@ -155,69 +169,61 @@ export default class MainContainer extends React.Component {
 		return (
 			<div>
 			  	<PageNavbar/>
-		      <div className="container navbar-offset">
-		      	{this.createTree()}
+		      <div className="container offset-navbar">
+		      	{this.createTree(this.state.searchCategories)}
 			  </div>
 			</div>
 		);
 	}
 
 
-	//create a link to either a dashboard location, or to trigger a collapse on a previous state and expand its child row.
-	createAnchor(element, level) {
-	    //create element
-	    var anchorAttributes = {}
-	    anchorAttributes["className"] = "item"
-	    //if this element just needs to link to a dashboard
-	    if (element.linkTo) {
-	        anchorAttributes["href"] = element.linkTo;
-	    } else if (element.child) {
-	        anchorAttributes["href"] = "#";
-	        anchorAttributes["onClick"] = function() {
-	            //hide all panels BELOW this level
-	            // for (var i = level + 1; i <= this.state.maxLevel; i++) {
-	            //     $("." + i + "_level").each(function() {
-	            //         $(this).parent().collapse({ toggle: false })
-	            //         $(this).parent().collapse("hide");
-	            //     })
-	            // }
-	            //show this node's children
-	            // $("#" + element.child.id).collapse("show");
+	// //create a link to either a dashboard location, or to trigger a collapse on a previous state and expand its child row.
+	// createAnchor(element, level) {
 
-	            //clear all highlight color at or below this level
-	            // for (var i = level; i <= maxLevel; i++) {
-	            //     $("." + i + "_level").each(function() {
-	            //         $(this).children().each(function() {
-	            //             $(this).css("background-color", "")
-	            //         })
-	            //     })
-	            // }
-	            //highlight myself
-	            // $(this).css("background-color", "#00000080");
-	        }
-	    }
-	    //attatch and ID if it has one
-	    if (element.id)
-	        anchorAttributes["id"] = element.id;
 
-	    return (<a {...anchorAttributes}></a>);
-	}
+	//     } else if (element.child) {
+	//         anchorAttributes["href"] = "#";
+	//         anchorAttributes["onClick"] = function() {
+	//             //hide all panels BELOW this level
+	//             // for (var i = level + 1; i <= this.state.maxLevel; i++) {
+	//             //     $("." + i + "_level").each(function() {
+	//             //         $(this).parent().collapse({ toggle: false })
+	//             //         $(this).parent().collapse("hide");
+	//             //     })
+	//             // }
+	//             //show this node's children
+	//             // $("#" + element.child.id).collapse("show");
 
-	//returns a div that wraps an img (icon)
-	createIcon(element, level) {
-	    var iconDiv = (<div></div>);
-	    // if (level == 1) //css makes these icons at this level slightly larger
-	    //     var iconLevel = "topLevelIcon";
-	    // else
-	    var iconLevel = "childLevelIcon";
-	    var icon = (<img className={"icon " + iconLevel} src={element.icon}></img>);
-	    iconDiv.append(icon);
-	    return iconDiv;
-	}
+	//             //clear all highlight color at or below this level
+	//             // for (var i = level; i <= maxLevel; i++) {
+	//             //     $("." + i + "_level").each(function() {
+	//             //         $(this).children().each(function() {
+	//             //             $(this).css("background-color", "")
+	//             //         })
+	//             //     })
+	//             // }
+	//             //highlight myself
+	//             // $(this).css("background-color", "#00000080");
+	//         }
+	//     }
+	//     //attatch and ID if it has one
+	//     if (element.id)
+	//         anchorAttributes["id"] = element.id;
 
-	createTextLabel(element) {
-    	return (<div className="textLabel nowrap">{element.name}</div>)
-	}
+	//     return (<a {...anchorAttributes}></a>);
+	// }
+
+	// //returns a div that wraps an img (icon)
+	// createIcon(element, level) {
+	//     var iconDiv = (<div></div>);
+	//     // if (level == 1) //css makes these icons at this level slightly larger
+	//     //     var iconLevel = "topLevelIcon";
+	//     // else
+	//     var iconLevel = "childLevelIcon";
+	//     var icon = (<img className={"icon " + iconLevel} src={element.icon}></img>);
+	//     iconDiv.append(icon);
+	//     return iconDiv;
+	// }
 
 }
 
