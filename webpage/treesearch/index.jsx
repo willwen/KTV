@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import PageNavbar from "../SharedReactComponents/PageNavbar.jsx";
 import axios from 'axios';
 const uuidv4 = require('uuid/v4');
-import {Collapse} from 'react-bootstrap'
+// import {Collapse} from 'reactstrap'
 import AnchorHover from './AnchorHover.jsx'
 
 
@@ -10,42 +10,121 @@ export default class MainContainer extends React.Component {
 	constructor(){
 		super();
 		this.state={
-			searchCategories : {}
+			searchCategories : {},
+			maxLevel: 0
 		};
-		this.getArtists = this.getArtists.bind(this);
-		this.handleArtists = this.handleArtists.bind(this);
+		this.getData = this.getData.bind(this);
+		
+		this.formatArtists = this.formatArtists.bind(this);
+		this.formatLanguages = this.formatLanguages.bind(this);
+
 		this.createTree = this.createTree.bind(this);
-		this.getLanguages = this.getLanguages.bind(this);
-		// this.createAnchor = this.createAnchor.bind(this);
-		// this.createIcon = this.createIcon.bind(this);
-		// this.createTextLabel = this.createTextLabel.bind(this);
-
-
 	}
+
 	componentWillMount(){
-	  	this.getArtists();
-	}
-	componentDidMount(){
-		
-
-	}
-	componentWillUnmount(){
-		
+	  	this.getData();
 	}
 
-	getLanguages(){
-		// axios.get("language")
-		// 	.then((response)=>this.handleArtists(response["data"]))
-		// 	.catch(error => console.log(error));
+	getData(){
+		var getArtistPromise = axios.get("artists")
+		var getLanguagesPromise = axios.get("language")
+
+		Promise.all([getArtistPromise, getLanguagesPromise]).then((values)=>{
+			let artistsData = this.formatArtists(values[0].data);
+			let languagesData = this.formatLanguages(values[1].data);
+			this.setState({
+					searchCategories : {
+							elements:  [ 
+		         				{
+		         					name: "All Artists", 
+		         					icon: "Artist.png", 
+		         					child: artistsData 
+		         				},
+		         				{	
+		         					name: "Language",
+		         					icon: "Language.png",
+		         					child: languagesData
+		         				}
+		    				]
+						}
+				});
+			this.getMaxLevel(this.state.searchCategories);
+
+		})
+
 	}
-	
-	getArtists(){
-		axios.get("artists")
-			.then((response)=>this.handleArtists(response["data"]))
-			.catch(error => console.log(error));
+	getMaxLevel(root){
+		if(root == null)
+			return 0;
+		var queue = []
+		var maxLevel = 1;
+		queue.push(root)
+		queue.push(null)
+		while (queue.length > 0){
+			var node = queue.shift();
+			if(node == null){
+				maxLevel++;
+				//if next element is also null
+				if(queue[0]==null){
+					this.setState({
+						maxLevel: maxLevel
+					})
+					// console.log(maxLevel)
+					return maxLevel
+				}
+				continue
+			}
+			if(node.elements){
+				node.elements.forEach((element, i)=>{
+					if(element.child)
+						queue.push(element.child)
+				})
+				queue.push(null)
+				
+			}
+
+		}
+
 	}
+
+	formatLanguages(data) {
+	    var languages = {
+	        id: "allLanguages",
+	        elements: []
+	    }
+	    var artists = []
+	    for (var i = 0; i < data.length; i++) {
+	        var language = data[i]
+	        var languageID = uuidv4()
+	        var artistID = uuidv4();
+
+	        var child = {
+	            id: artistID,
+	            parentId: languageID,
+	            elements: []
+
+	        }
+	        for (var j = 0; j < language.artist.length; j++) {
+	            child.elements.push({
+	                name: language.artist[j]["cn_char"],
+	                icon: language.artist[j]["artist_pinyin"] + ".png",
+	                linkTo: "/song?id=" + language.artist[j]["file_name"],
+	            })
+	        }
+	        artists.push(child)
+	        languages.elements.push({
+	            name: language["_id"],
+	            icon: language["_id"] + ".png",
+	            child: artists[i],
+	        })
+	    }
+	    return languages
+
+	}
+
+
 	//called when a user clicks on a new song
-	handleArtists(data){
+	formatArtists(data){
 		var artists = {
 	        id: "allArtists",
 	        elements: []
@@ -76,19 +155,9 @@ export default class MainContainer extends React.Component {
 	            child: songs[i],
 	        })
 	    }
-	    //{name: "Language", icon: "Language.png", child: languages},
-		this.setState({
-			searchCategories : {
-					elements:  [ 
-         				{
-         					name: "All Artists", 
-         					icon: "Artist.png", 
-         					child: artists 
-         				}
-    				]
-				}
-		});
+
 		console.log(artists)
+		return artists
 	}
 
 
@@ -96,12 +165,11 @@ export default class MainContainer extends React.Component {
 	//using BFS, create nodes and append them to root.
  	createTree(searchCategories) {
  		//axios hasnt given the list of artists yet
- 		if(this.state.searchCategories.elements == null){
+ 		if(searchCategories.elements == null){
  			return null
  		}
  		var domLevels = []
- 		var maxLevel = 1;
- 		var root = this.state.searchCategories;
+ 		var root = searchCategories;
  		var level = 1;
 	    var queue = [];
 	    queue.push(root);
@@ -123,11 +191,11 @@ export default class MainContainer extends React.Component {
 	        var elements = node.elements;
 
 
-	       domLevels.push((
-	        	<Collapse id = {id}>
+	       	domLevels.push((
+	        	<div key = {"outer div" + id} id = {id} name = {id} className = {node.id ? "collapse": ""}>
 		        	<div className = {level + "_level level"}>
 		        		{
-		        			elements.map(function(element, index) {
+		        			elements.map((element, index) => {
 								var anchorAttributes = {}
 								anchorAttributes["className"] = "item"
 								//if this element just needs to link to a dashboard
@@ -144,22 +212,31 @@ export default class MainContainer extends React.Component {
 					                queue.push(element.child);
 
 							    return (
-							    	<AnchorHover 
-							    		key = {"level_" + level + "_index_" + index} 
+							    	<AnchorHover
+							    		level={level}
+							    		child = {element.child}
+							    		maxLevel = {this.state.maxLevel}
+							    		key = {"anchor level_" + level + "_index_" + index} 
 							    		{...anchorAttributes}
 										image = {(<div>
-								    		<img className={"icon childLevelIcon"} src={element.icon}></img>
+								    		<img 
+								    			className={"icon childLevelIcon"}
+								    			src={element.icon}
+							    			/>
 							    		</div>)}
 							    		textLabel = {
-							    			(<div className="textLabel nowrap">{element.name}</div>)	
+							    			(<div className="textLabel nowrap"
+							    				>
+							    				{element.name}
+							    				</div>)	
 							    		}/>
 							    	);
 							})
 		        		}
 					</div>
-	        	</Collapse>));
+	        	</div>));
 	    }
-	    maxLevel = level;
+	    
 	    return domLevels;
 
 	}
@@ -184,26 +261,7 @@ export default class MainContainer extends React.Component {
 	//     } else if (element.child) {
 	//         anchorAttributes["href"] = "#";
 	//         anchorAttributes["onClick"] = function() {
-	//             //hide all panels BELOW this level
-	//             // for (var i = level + 1; i <= this.state.maxLevel; i++) {
-	//             //     $("." + i + "_level").each(function() {
-	//             //         $(this).parent().collapse({ toggle: false })
-	//             //         $(this).parent().collapse("hide");
-	//             //     })
-	//             // }
-	//             //show this node's children
-	//             // $("#" + element.child.id).collapse("show");
 
-	//             //clear all highlight color at or below this level
-	//             // for (var i = level; i <= maxLevel; i++) {
-	//             //     $("." + i + "_level").each(function() {
-	//             //         $(this).children().each(function() {
-	//             //             $(this).css("background-color", "")
-	//             //         })
-	//             //     })
-	//             // }
-	//             //highlight myself
-	//             // $(this).css("background-color", "#00000080");
 	//         }
 	//     }
 	//     //attatch and ID if it has one
