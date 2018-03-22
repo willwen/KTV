@@ -85,7 +85,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     /*fixed = parallax , scroll = normal*/
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-image: url('./taylor_swift.jpg');
     min-height: 100%;
     margin-bottom: 50px;
