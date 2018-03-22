@@ -18,6 +18,10 @@
 	width: 65%;
 }
 
+#allSongsAnchor{
+	color: #36665a;
+}
+
 
 /* webkit solution */
 
@@ -74,11 +78,11 @@ input:-moz-placeholder {
 	background-color: rgba(0, 0, 0, 0.1);
 }
 .anchors {
-	color: #222A68;
+	color: #36665a;
 	letter-spacing: 3px;
 }
 .anchors:hover{
-	color: #000;
+	color: #6dcfb6;
 }
 
 .instrumental{

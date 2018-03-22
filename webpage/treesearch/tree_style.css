@@ -50,7 +50,11 @@
   .item  { flex-basis: 50%; }
 }
 
-a:focus, a:hover {
-    color: #FFF !important;
+a.item:focus, a.item:hover {
+    color: #36665a !important;
     text-decoration: underline;
+}
+
+a.item{
+	color: #000;
 }

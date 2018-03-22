@@ -50,7 +50,7 @@ export default class PageNavbar extends React.Component {
 
   render() {
     return (
-        <Navbar fixed="top" dark expand="md" className={this.state.navbarClass}>
+        <Navbar fixed="top" dark expand="md" className={this.state.navbarClass + " no-top-bottom-padding"} >
           <NavbarBrand href="/">
             <img src="logo.png" alt="logo" width="50" />
           </NavbarBrand>

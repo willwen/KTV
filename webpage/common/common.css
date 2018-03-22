@@ -23,6 +23,11 @@ html {
 
 /*When Links are hovered over, give that funny pointer*/
 
+a.fa {
+    margin: 5px;
+    color: #FFF;
+}
+
 a {
     text-align: center;
     color: #fff;
@@ -51,11 +56,11 @@ a:hover {
     text-decoration: none;
     border-radius: 50%;
     border-color: white;
-    color: white;
+    color: #36665a;
 }
 
 nav {
-    background-color: #8332AC;
+    background-color: #36665a;
     padding-left: 20px;
     padding-right: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
@@ -68,6 +73,44 @@ nav {
     font-size: 20px;
 }
 
+.half-height {
+    height: 100%;
+    min-height: 100%;
+}
+
+.header_img{
+    position: relative;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*fixed = parallax , scroll = normal*/
+    background-attachment: fixed;
+    background-image: url('./taylor_swift.jpg');
+    min-height: 100%;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+}
+
+.ptext{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
 
 /*.nav p {
     display: inline;
@@ -76,15 +119,18 @@ nav {
    
     color: white;
 }*/
+.no-top-bottom-padding {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
 
 
 /*Give a Margin so the musicplayer has space*/
 
 body {
-    color: #654597;
+    color: #000;
     margin-bottom: 40px;
-    /*background: #654597;*/
-    background: linear-gradient(135deg, #E2ADF2 0%, #B760E6 100%);
+    background: #ebfaf6;
 }
 
 
@@ -129,7 +175,7 @@ body {
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    background-color: rgba(136, 70, 197, .64);
+    background-color: rgba(54, 102, 90, .64);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -142,8 +188,18 @@ body {
 **/
 
 .welcome {
-    font-size: 2em;
+    font-size: 2.3em;
+    color: #fff;
     padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+}
+
+.welcome>h1{
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .offset-navbar {

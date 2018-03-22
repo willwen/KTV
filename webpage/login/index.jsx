@@ -18,7 +18,7 @@ export default class MainContainer extends React.Component {
 				
 				<PageNavbar/>
 				<div className="container">
-					<div className="fb-login-button" data-width="400" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
+					
 				</div>
 			</div>
 		);
